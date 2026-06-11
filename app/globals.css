@@ -1,0 +1,195 @@
+/* @font-face{
+ font-family: KertaseLight;
+ src: url('./fonts/KertaseLight.otf');
+}
+@font-face{
+ font-family: KertaseBold;
+ src: url('./fonts/KertaseBold.otf');
+}
+
+@font-face{
+ font-family: MyriadProRegular;
+ src: url('./fonts/MyriadProRegular.otf');
+} */
+@font-face{
+ font-family: MyriadHebrew;
+ src: url('./fonts/MyriadHebrew.ttf');
+}
+@font-face{
+ font-family: NeueHaasDisplayThin;
+ src: url('./fonts/NeueHaasDisplayThin.ttf');
+}
+@font-face{
+ font-family: NeueHaasDisplayLight;
+ src: url('./fonts/NeueHaasDisplayLight.ttf');
+}
+
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+ font-family:"MyriadHebrew";
+ font-family:"NeueHaasDisplayThin";
+ /* color:transparent; */
+ /* color:red; */
+ font-size:11px;
+ letter-spacing: 0.5px;
+}
+.modal{
+ width:100%;
+ height:100vh;
+ background:#F3EEE7;
+ display:none;
+ place-content: center;
+ position: fixed;
+ inset:0;
+ text-align: left;
+ z-index: 100;
+ overflow: hidden ;
+ padding: 5px;
+}
+.close-button{
+ font-size: 50px;
+ position: absolute;
+ right:10px;
+ top:10px;
+ cursor: pointer;
+}
+.modal img{
+ max-width:100%;
+ max-height: 50vh;
+}
+.webpage{
+ position: relative;
+}
+.name{
+ font-family:"MyriadHebrew";
+ /* font-family:"MyriadProRegular"; */
+ font-weight: 900;
+}
+body,.webpage{
+ background:lightgrey;
+ /* border:1px solid red; */
+}
+.webpage{
+ width:100vw;
+ min-height: 100vh;
+ padding-bottom: 25px;
+}
+.letter-paper{
+ width:8.5in;
+ height:11in;
+ background:beige;
+ z-index: 1;
+ margin: 20px auto;
+ padding-top:30px;
+ /* padding-left:142px; */
+ padding-bottom: 50px;
+ display:flex;
+ flex-direction: column;
+ position: relative;
+ line-height: 15.653px;
+}
+/* .letter-paper::after{
+ transform: rotate(-2deg);
+ position: absolute;
+ content:'';
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ z-index: -1;
+ background-image:url("/scan-dinner-3.jpg");
+ background-size:8.5in;
+} */
+.section,.legal{
+ display:flex;
+ width:5.25in;
+ margin:0 auto;
+}
+.section{
+ margin-bottom:30px
+}
+.legal{
+ display: block;
+ margin-top: auto;
+}
+.legal div{
+ font-size: 8px;
+ line-height:15px;
+}
+.right-column{
+ width:3.5in;
+}
+.left-column{
+ font-size: 14px;
+ width:1.75in;
+ line-height: 25px;
+}
+.name-price,.upgrade{
+ display: flex;
+ justify-content: space-between;
+}
+.price{
+ font-size: 13px;
+}
+.upgrade-price{
+ font-style: italic;
+ font-size: 13px;
+}
+.upgrade-description{
+ font-style: italic;
+}
+.dinner-menu-item{
+ margin-bottom:20px;
+}
+.nigiri{
+ margin-bottom:0;
+}
+.allergies{
+ margin-left:5px;
+ font-size: 7px;
+ font-family: NeueHaasDisplayLight;
+ /* font-family: KertaseBold; */
+}
+@media(max-width:8.5in){
+ .letter-paper{
+   width:100vw;
+ }
+}
+@media(max-width:540px){
+ .section{
+   flex-direction: column;
+   align-items: center;
+   gap:20px;
+   width:100%;
+ }
+ .left-column,.right-column{
+   width:85vw;
+ }
+ .letter-paper{
+   min-height:11in;
+   height:auto;
+   /* width:100vw; */
+ }
+ .legal{
+   width:90%;
+ }
+}
+form{
+  border:1px solid black;
+  border-radius: 10px;
+  padding:10px;
+}
+input[type="text"]{
+  /* background-color:red; */
+  /* color:blue; */
+  padding: 5px;
+}
+h1{
+  width:100%;
+  text-align: center;
+  font-size: 20px;
+  /* color:pink; */
+}

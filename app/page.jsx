@@ -3177,7 +3177,7 @@ export default function Home() {
                           <br/>
                           3pcs? charcoal grilled lamb chops<br/>
                           soy koji moromi<br/>
-                          wasani oil<br/>
+                          wasabi oil<br/>
                           grilled vegetables<br/>
                           <br/><br/>
               </div>

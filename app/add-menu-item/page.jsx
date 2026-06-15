@@ -7,16 +7,16 @@ export default function AddMenuItem(){
     const router = useRouter()
 
     async function addMenuItem(formData){
-        const response = await fetch('/api/menu-items',{
-            method:'POST',
-            headers:{'Content-Type':'application/json'},
-            body:JSON.stringify(formData.get('name'))
-        })
-        if(response.ok){
-            router.push('/')
-        }else{
-            alert('error')
-        }
+        // const response = await fetch('/api/menu-items',{
+        //     method:'POST',
+        //     headers:{'Content-Type':'application/json'},
+        //     body:JSON.stringify(formData.get('name'))
+        // })
+        // if(response.ok){
+        //     router.push('/')
+        // }else{
+        //     alert('error')
+        // }
     }
 
     return(

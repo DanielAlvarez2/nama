@@ -1268,6 +1268,51 @@ export default function Home() {
                   <div className="description2">Spicy Mayo, Teriyaki Sauce</div>
                 </div>
 
+<hr/><br/>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Hōjicha Banana Roulade</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">??</span>
+                  </div>
+                  <div className="description1">Hōjicha Sponge Cake, Roasted Banana Cream, </div>
+                  <div className="description2">Caramelized Banana, Vanilla Ice Cream</div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('melon-parfait')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Melon Parfait</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">??</span>
+                  </div>
+                  <div className="description1">Seasonal Melon, Chamomille Jelly, </div>
+                  <div className="description2">Honey Ice Cream</div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('black-sesame-cheesecake')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Kurogama Cheesecake</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">??</span>
+                  </div>
+                  <div className="description1">Black Sesame Cheesecake, Blackberry Compote, </div>
+                  <div className="description2">Vanilla Ice Cream</div>
+                </div>
+
+
 
 
 
@@ -3235,25 +3280,82 @@ export default function Home() {
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Spider Roll</span>
+                              <span className="name">Hōjicha Banana Roulade</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">45</span>
+                            <span className="price">??</span>
                           </div>
-                          <div className="description1">Softshell Crab, Napa Cabbage, </div>
-                          <div className="description2">Spicy Mayo, Teriyaki Sauce</div>
+                          <div className="description1">Hōjicha Sponge Cake, Banana, </div>
+                          <div className="description2">Vanilla Ice Cream</div>
                           
                           <hr/>
                           <br/>
-                          5pcs<br/>
-                          softshell crab<br/>
-                          pickled napa cabbage<br/>
-                          spicy mayo<br/>
-                          teriyaki sauce<br/>
+                          hōjicha sponge cake<br/>
+                          roasted banana cream filling<br/>
+                          caramelized banana<br/>
+                          vanilla ice cream<br/>
                           <br/><br/>
               </div>
       </div>
     </div>{/* #hojicha-banana-roulade */}
+
+    <div id="melon-parfait" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='melon-parfait.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Melon Parfait</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">??</span>
+                          </div>
+                          <div className="description1">Seasonal Melon, Chamomille Jelly, </div>
+                          <div className="description2">Honey Ice Cream</div>
+                          
+                          <hr/>
+                          <br/>
+                          seasonal melon<br/>
+                          chamomille jelly<br/>
+                          chamomille granita<br/>
+                          vanilla cream<br/>
+                          milk foam<br/>
+                          vanilla ice cream<br/>
+                          meringue sticks<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #melon-parfait */}
+
+    <div id="black-sesame-cheesecake" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='black-sesame-cheesecake.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Kurogama Cheesecake</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">??</span>
+                          </div>
+                          <div className="description1">Black Sesame Cheesecake, Blackberry Compote, </div>
+                          <div className="description2">Vanilla Ice Cream</div>
+                          
+                          <hr/>
+                          <br/>
+                          black sesame cheesecake<br/>
+                          blackberry compote<br/>
+                          vanilla ice cream<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #black-sesame-cheesecake */}
 
     {/* .webpage */}
     </div>    

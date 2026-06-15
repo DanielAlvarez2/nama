@@ -3323,8 +3323,8 @@ export default function Home() {
                           chamomille jelly<br/>
                           chamomille granita<br/>
                           vanilla cream<br/>
-                          milk foam<br/>
                           vanilla ice cream<br/>
+                          milk foam<br/>
                           meringue sticks<br/>
                           <br/><br/>
               </div>

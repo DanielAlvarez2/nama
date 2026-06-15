@@ -1146,6 +1146,201 @@ export default function Home() {
 
 
 
+      <div className="letter-paper">
+
+
+                                            
+          <div className="menu-items">
+            <div className="section">
+              <div className="left-column">新<br/>New</div>
+
+              <div className="right-column">
+              
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('shima-aji-tataki')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Shima Aji Tataki</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">35</span>
+                  </div>
+                  <div className="description1">Seared Striped Jack, Tosazu Jelly</div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('nasu-agebitashi')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Nasu Agebitashi</span>
+                      <span className="allergies">(V, GF)</span>
+                    </span>
+                    <span className="price">17</span>
+                  </div>
+                  <div className="description1">Eggplant, Soy Konbu</div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('suzuki-tatsuta-age')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Suzuki Tatsuta Age</span>
+                      <span className="allergies">(GF)</span>
+                    </span>
+                    <span className="price">48</span>
+                  </div>
+                  <div className="description1">Branzino, Shiso Mayo</div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('softshell-crab')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Softshell Crab Kara Age</span>
+                      <span className="allergies">(GF)</span>
+                    </span>
+                    <span className="price">54</span>
+                  </div>
+                  <div className="description1">Softshell Crab, Tomato Relish</div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('lamb-chops')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Moromi Lamb Sumibiyaki</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">98</span>
+                  </div>
+                  <div className="description1">Charcoal Grilled Lamb Chops, Soy Koji Moromi</div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('nasu-dengaku')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Nasu Dengaku</span>
+                      <span className="allergies">(V, GF)</span>
+                    </span>
+                    <span className="price">38</span>
+                  </div>
+                  <div className="description1">Charcoal Grilled Eggplant, Saikyo Miso,</div>
+                  <div className="description2">Candied Walnuts</div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('zaru-soba')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Zaru Soba</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">28</span>
+                  </div>
+                  <div className="description1">Chilled Soba Noodles, Karajiru,</div>
+                  <div className="description2">Tokyo Negi</div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('spider-roll')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Spider Roll</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">45</span>
+                  </div>
+                  <div className="description1">Softshell Crab, Napa Cabbage,</div>
+                  <div className="description2">Spicy Mayo, Teriyaki Sauce</div>
+                </div>
+
+
+
+
+
+
+              </div>
+            </div>
+
+            
+           </div> {/* .menu-items */}
+
+          <div className="legal">
+            <div>(V) Vegan (N) Nuts (D) Dairy (GF) Gluten Free</div>
+            <div>All prices are in USD and subject to a 20% service charge and 8.875% government tax</div>
+            <div>Please let us know if you have any allergies or special dietary requirements, or if you require any further information</div>
+            <div>Our choice of suppliers and local produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability</div>
+          </div>
+
+       </div> {/* .letter-paper */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="miso-soup" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
@@ -2799,6 +2994,266 @@ export default function Home() {
               </div>
       </div>
     </div>{/* #yakishabu-gohan */}
+
+    <div id="shima-aji-tataki" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='shima-aji-tataki.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Shima Aji Tataki</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">35</span>
+                          </div>
+                          <div className="description1">Seared Striped Jack, Tosazu Jelly</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          ?pcs seared shima aji/striped jack<br/>
+                          tosazu jelly<br/>
+                          shredded radish<br/>
+                          shiso leaf<br/>
+                          hanaho flowers<br/>
+                          wakame seaweed<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #shima-aji-tataki */}
+
+    <div id="nasu-agebitashi" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='nasu-agebitashi.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Nasu Agebitashi</span>
+                              <span className="allergies">(V, GF)</span>
+                            </span>
+                            <span className="price">17</span>
+                          </div>
+                          <div className="description1">Eggplant, Soy Konbu</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          flash fried eggplant<br/>
+                          soy konbu broth<br/>
+                          chives<br/>
+                          ginger<br/>
+                          shichimi<br/>
+                          julienned chili<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #nasu-agebitashi */}
+
+    <div id="suzuki-tatsuta-age" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='suzuki-tatsuta-age.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Suzuki Tatsuta Age</span>
+                              <span className="allergies">(GF)</span>
+                            </span>
+                            <span className="price">48</span>
+                          </div>
+                          <div className="description1">Branzino, Shiso Mayo</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          crispy fried branzino<br/>
+                          ginger soy marinade<br/>
+                          shiso mayo<br/>
+                          shishito peppers<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #suzuki-tatsuta-age */}
+
+    <div id="softshell-crab" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='softshell-crab.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Softshell Crab Kara Age</span>
+                              <span className="allergies">(GF)</span>
+                            </span>
+                            <span className="price">54</span>
+                          </div>
+                          <div className="description1">Softshell Crab, Tomato Relish</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          deep fried live softshell crab<br/>
+                          potato starch<br/>
+                          tomato relish<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #softshell-crab */}
+
+    <div id="lamb-chops" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='lamb-chops.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Moromi Lamb Sumibiyaki</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">98</span>
+                          </div>
+                          <div className="description1">Charcoal Grilled Lamb Chops, Soy Koji Moromi</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          3pcs? charcoal grilled lamb chops<br/>
+                          soy koji moromi<br/>
+                          wasani oil<br/>
+                          grilled vegetables<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #lamb-chops */}
+
+    <div id="nasu-dengaku" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='nasu-dengaku.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Nasu Dengaku</span>
+                              <span className="allergies">(V, GF)</span>
+                            </span>
+                            <span className="price">38</span>
+                          </div>
+                          <div className="description1">Charcoal Grilled Eggplant, Saikyo Miso,</div>
+                          <div className="description2">Candied Walnuts</div>
+                          
+                          <hr/>
+                          <br/>
+                          charcoal grilled eggplant<br/>
+                          saikyo miso<br/>
+                          tomato<br/>
+                          zucchini<br/>
+                          candied walnuts<br/>
+                          hanaho flowers<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #nasu-dengaku */}
+
+    <div id="zaru-soba" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='zaru-soba.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Zaru Soba</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">28</span>
+                          </div>
+                          <div className="description1">Chilled Soba Noodles, Karajiru,</div>
+                          <div className="description2">Tokyo Negi</div>
+                          
+                          <hr/>
+                          <br/>
+                          chilled soba/buckwheat noodles<br/>
+                          karajiru dipping sauce<br/>
+                          tokyo negi scallions<br/>
+                          wasabi<br/>
+                          nori seaweed<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #zaru-soba */}
+
+    <div id="spider-roll" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='spider-roll.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Spider Roll</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">45</span>
+                          </div>
+                          <div className="description1">Softshell Crab, Napa Cabbage, </div>
+                          <div className="description2">Spicy Mayo, Teriyaki Sauce</div>
+                          
+                          <hr/>
+                          <br/>
+                          5pcs<br/>
+                          softshell crab<br/>
+                          pickled napa cabbage<br/>
+                          spicy mayo<br/>
+                          teriyaki sauce<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #spider-roll */}
+
+    <div id="hojicha-banana-roulade" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='hojicha-banana-roulade.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Spider Roll</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">45</span>
+                          </div>
+                          <div className="description1">Softshell Crab, Napa Cabbage, </div>
+                          <div className="description2">Spicy Mayo, Teriyaki Sauce</div>
+                          
+                          <hr/>
+                          <br/>
+                          5pcs<br/>
+                          softshell crab<br/>
+                          pickled napa cabbage<br/>
+                          spicy mayo<br/>
+                          teriyaki sauce<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #hojicha-banana-roulade */}
 
     {/* .webpage */}
     </div>    

@@ -1303,7 +1303,7 @@ export default function Home() {
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Kurogama Cheesecake</span>
+                      <span className="name">Kurog<span style={{color:'red'}}>o</span>ma Cheesecake</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">??</span>
@@ -3340,7 +3340,7 @@ export default function Home() {
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Kurogama Cheesecake</span>
+                              <span className="name">Kurog<span style={{color:'red'}}>o</span>ma Cheesecake</span>
                               <span className="allergies"></span>
                             </span>
                             <span className="price">??</span>

@@ -1156,6 +1156,11 @@ export default function Home() {
 
               <div className="right-column">
               
+              <span style={{color:'red'}}>
+              The following menu items will go live on<br/>
+              Friday June 19, 2026<br/><br/>
+              </span>
+
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('shima-aji-tataki')}
                 >

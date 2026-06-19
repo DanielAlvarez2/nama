@@ -26,9 +26,10 @@ export default function Home() {
         </svg>
       </div>
 
-      <nav style={{width:'100%',textAlign:'center',fontSize:'30px !important'}}>
-        <Link href='/' style={{fontSize:'30px'}}>Dinner</Link> | 
-        <Link href='/dessert-menu' style={{fontSize:'30px'}} >Dessert</Link>
+      <nav>
+        <Link href='/'>Dinner</Link> | 
+        <Link href='/dessert-menu'>Dessert</Link> | 
+        <Link href='/drinks'>Drinks</Link>
       </nav>
     
       <div className="letter-paper">

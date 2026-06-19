@@ -60,8 +60,14 @@
  max-width:100%;
  max-height: 50vh;
 }
+nav{
+   width:100%;
+   text-align:center;
+   font-size:17px;
+}
 nav a{
-  font-size: 13px !important;
+  font-size: inherit;
+  /* font-size: 13px; */
   padding:0 5px;
   text-decoration: none;
   cursor: pointer;
@@ -193,7 +199,7 @@ body,.webpage{
   .small-paper .left-column,
   .small-paper .right-column{
     width:85vw;
-    background:'pink'
+    /* background:'pink' */
   }
 }
 @media(max-width:540px){

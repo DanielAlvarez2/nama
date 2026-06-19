@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 
-export default function DessertMenu(){
+export default function DrinksMenu(){
 
     function showModal(menuItem){
         document.querySelector(`#${menuItem}`).style.display = 'grid'
@@ -31,151 +31,254 @@ export default function DessertMenu(){
         <Link href='/drinks'>Drinks</Link> 
       </nav>
     
-      <div className="small-paper">
+      <div className="small-paper" style={{paddingTop:'25px'}}>
         
           <div className="menu-items">
-            <div className="section section-dessert">
-              <div className="left-column">デザート<br/>Desserts</div>
+
+            <div  className="section section-dessert"
+                  style={{marginBottom:'0px'}}
+            >
+              <div className="left-column">COCKTAILS</div>
 
               <div className="right-column">
               
+
+
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('yuzu-crepe-cake')}
+                      onClick={()=>showModal('ume-spritz')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Yuzu Crêpe Cake</span>
-                      <span className="allergies">(D)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Yuzu Cream, Candied Zest</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('sakura-monaka')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Sakura Monaka</span>
-                      <span className="allergies">(D, N)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Red Bean Paste, Sakura Ice Cream,</div>
-                  <div className="description2">Sour Cherries</div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('matcha-misu')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Matcha-Misu</span>
-                      <span className="allergies">(D)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Mascarpone Cream, Chestnut Pudding</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('miso-banana-profiterole')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Miso Banana Profiterole</span>
-                      <span className="allergies">(D)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Caramelized Banana, Chocolate Foam,</div>
-                  <div className="description2">Puffed Buckwheat</div>
-                </div>
-
-              </div>{/* .right-column */}
-            </div>{/* .section */}
-
-
-
-
-
-
-
-
-
-
-
-            <div className="section section-dessert">
-              <div className="left-column">デザートのお供に<br/>
-                Dessert & Fortified Wines By The Glass</div>
-
-              <div className="right-column">
-              
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('chateau-suduiraut')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Château Suduiraut</span>
+                      <span className="name">Ume Spritz</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">24</span>
+                    <span className="price">31</span>
                   </div>
-                  <div className="description1">Sauternes, Bordeaux</div>
-                  <div className="description2"></div>
+                  <div className="description1">Kagatsuru Umeshu, Mondino </div>
+                  <div className="description2">Aperitivo, Cremant d'Alsace</div>
                 </div>
 
+
+
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('domaine-de-rancy')}
+                      onClick={()=>showModal('yuzu-sour')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Domaine de Rancy</span>
+                      <span className="name">Yuzu Sour</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">30</span>
+                  </div>
+                  <div className="description1">Mal Bien Mezcal, Daiyame Shochu, Yuzu Kosho, Lime</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('foxs-wedding')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">A Fox's Wedding</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">28</span>
+                  </div>
+                  <div className="description1">Osuzuyama Gin, Summer Snow Nigori, Cinnamon</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('okusuri')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Okusuri</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">32</span>
                   </div>
-                  <div className='name2'>Rivesaltes, Ambré, Vin Doux Naturel</div>
-                  <div className="description1">Roussillon, France 2000</div>
-                  <div className="description2"></div>
+                  <div className="description1">Ichiro's Malt & Grain Whiskey, Port Askaig Single Malt, </div>
+                  <div className="description2">Lemon, Pickled Honey</div>
                 </div>
 
+
+
+
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('weingut-sattlerhof')}
+                      onClick={()=>showModal('budo-panther')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Weingut Sattlerhof</span>
+                      <span className="name">Budo Panther</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">38</span>
+                    <span className="price">29</span>
                   </div>
-                  <div className='name2'>Beerenauslese</div>
-                  <div className="description1">Südsteiermark, Austria</div>
-                  <div className="description2"></div>
+                  <div className="description1">Kana Shochu, Genever, Concord </div>
+                  <div className="description2">Grape, Lemon, Sorghum</div>
                 </div>
 
+
+
+
+
+
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('grahams-port')}
+                      onClick={()=>showModal('ringo-no-mitai')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Graham's Port, Quinta dos Malvedos</span>
+                      <span className="name">Ringo No Mitai</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">40</span>
+                    <span className="price">28</span>
                   </div>
-                  <div className='name2'></div>
-                  <div className="description1">Vintage Port, Douro, Portugal, 2005</div>
+                  <div className="description1">Nikka Sencha Gin, Centum Herbus, Midori, Lemon</div>
                   <div className="description2"></div>
                 </div>
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('improved-yokohama')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Improved Yokohama Cocktail</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">50</span>
+                  </div>
+                  <div className="description1">Hakushu 12 Year Single Malt, Marasca,</div>
+                  <div className="description2">Benedictine, Absinthe</div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('hot-wassail')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Hot Wassail</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">29</span>
+                  </div>
+                  <div className="description1">Bordelet Poire, Hakurakusei Ginjo Sake, Apples, </div>
+                  <div className="description2">Prune Brandy, Pimento Dram, Amontillado Sherry</div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
               </div>{/* .right-column */}
             </div>{/* .section */}
+
+
+            <div className="section section-dessert">
+
+              <div className="left-column" style={{ display:'flex',
+                                                    width:'3.5in',
+                                                    // background:'pink',
+                                                    justifyContent:'space-between'}}>
+                <span style={{fontSize:'inherit'}}>ZERO PROOF COCKTAILS</span>
+                <span className='price'>14</span>
+
+              </div>
+
+              <div className="right-column">
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('pepper-buck')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Pepper Buck</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price"></span>
+                  </div>
+                  <div className="description1">Lime, Spiced Ginger, Jalape<span style={{color:'red'}}>ñ</span>o</div>
+                  <div className="description2"></div>
+                </div>
+
+              
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('phony-negroni')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Phony Negroni</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price"></span>
+                  </div>
+                  <div className="description1">Juniper, Orange, Gentian</div>
+                  <div className="description2"></div>
+                </div>
+
+              
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('straw-hat')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Straw Hat</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price"></span>
+                  </div>
+                  <div className="description1">Houjicha, Thai Coconut, Lime</div>
+                  <div className="description2"></div>
+                </div>
+
+              
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('souchong-sour')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Souchong Sour</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price"></span>
+                  </div>
+                  <div className="description1">Passionfruit, Falernum, Lapsang Souchong Kombucha</div>
+                  <div className="description2"></div>
+                </div>
+
+              
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+
+
+
           </div>{/* .menu-items */}
 
 
@@ -185,12 +288,6 @@ export default function DessertMenu(){
 
 
 
-
-          <div className="legal legal-dessert">
-            <div>(V) Vegan (N) Nuts (D) Dairy (GF) Gluten Free</div>
-            Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase<br/>
-            your risk of foodborne illness. Kindly inform server of any dietary restriction.
-          </div>
       </div>{/* .small-paper */}
 
 

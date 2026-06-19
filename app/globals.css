@@ -193,6 +193,7 @@ body,.webpage{
   .small-paper .left-column,
   .small-paper .right-column{
     width:85vw;
+    background:'pink'
   }
 }
 @media(max-width:540px){

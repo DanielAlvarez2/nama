@@ -295,80 +295,220 @@ export default function DrinksMenu(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div className="small-paper">
 
 
                                             
           <div className="menu-items">
+
+
+
             <div className="section section-dessert">
-              <div className="left-column">新<br/>New</div>
+              <div className="left-column">Sake by the glass</div>
 
               <div className="right-column">
               
-              <span style={{color:'red'}}>
-              The following menu items will go live on<br/>
-              Friday June 19, 2026<br/><br/>
-              </span>
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('hojicha-banana-roulade')}
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Hōjicha Banana Roulade</span>
+                      <span className="name">Aman, Hakurakusei, Junmai Ginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">??</span>
+                    <span className="price">25</span>
                   </div>
-                  <div className="description1">Hōjicha Sponge Cake, Roasted Banana Cream, </div>
-                  <div className="description2">Caramelized Banana, Vanilla Ice Cream</div>
+                  <div className="description1">Miyagi, Japan NV</div>
+                  <div className="description2"></div>
                 </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('melon-parfait')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Melon Parfait</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">??</span>
-                  </div>
-                  <div className="description1">Seasonal Melon, Chamomille Jelly, </div>
-                  <div className="description2">Honey Ice Cream</div>
-                </div>
+
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('black-sesame-cheesecake')}
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Kurog<span style={{color:'red'}}>o</span>ma Cheesecake</span>
+                      <span className="name">Aman, Hakurakusei, Junmai Daiginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">??</span>
+                    <span className="price">35</span>
                   </div>
-                  <div className="description1">Black Sesame Cheesecake, Blackberry Compote, </div>
-                  <div className="description2">Vanilla Ice Cream</div>
+                  <div className="description1">Miyagi, Japan NV</div>
+                  <div className="description2"></div>
                 </div>
 
 
 
 
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Zaku, "Kaizan Ittekisui", Junmai Daiginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">49</span>
+                  </div>
+                  <div className="description1">Mie, Japan NV</div>
+                  <div className="description2"></div>
+                </div>
 
 
 
-              </div>
-            </div>
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Izumibashi, Umeshu, Junmai Daiginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">35</span>
+                  </div>
+                  <div className="description1">Kanagawa, Japan NV</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Carafe 8oz</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">68</span>
+                  </div>
+                  <div className="description1">Aman, Hakurakusei, Junmai Diginjo</div>
+                  <div className="description2">Miyagi, Japan NV</div>
+                </div>
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
 
             
+
+            <div className="section section-dessert">
+              <div className="left-column">Beer</div>
+
+              <div className="right-column">
+              
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Sapporo Lager</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">12</span>
+                  </div>
+                  <div className="description1">Hokkaido, Japan</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Koshihikari Rice Ale</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">12</span>
+                  </div>
+                  <div className="description1">Niigata, Japan</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Hitachino Nest White Ale</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">12</span>
+                  </div>
+                  <div className="description1">Naka, Japan</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Non-Alcoholic Pilsner & India Pale Ale</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">12</span>
+                  </div>
+                  <div className="description1">Beacon, New York</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+
+
+
+
+
            </div> {/* .menu-items */}
 
-          <div className="legal legal-dessert">
-            <div>(V) Vegan (N) Nuts (D) Dairy (GF) Gluten Free</div>
-            Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase<br/>
-            your risk of foodborne illness. Kindly inform server of any dietary restriction.
-          </div>
 
        </div> {/* .small-paper */}
 
@@ -390,187 +530,328 @@ export default function DrinksMenu(){
 
 
 
-    <div id="hojicha-banana-roulade" className='modal'>
+    <div id="ume-spritz" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='hojicha-banana-roulade.jpg' />
+            <img src='ume-spritz.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Hōjicha Banana Roulade</span>
+                              <span className="name">Ume Spritz</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">??</span>
+                            <span className="price">31</span>
                           </div>
-                          <div className="description1">Hōjicha Sponge Cake, Banana, </div>
-                          <div className="description2">Vanilla Ice Cream</div>
+                          <div className="description1">Kagatsuru Umeshu, Mondino </div>
+                          <div className="description2">Aperitivo, Cremant d'Alsace</div>
                           
                           <hr/>
                           <br/>
-                          hōjicha sponge cake<br/>
-                          roasted banana cream filling<br/>
-                          caramelized banana<br/>
-                          vanilla ice cream<br/>
+                          Kagatsuru Umeshu<br/>
+                          Mondino Aperitivo<br/>
+                          Cremant d'Alsace
                           <br/><br/>
               </div>
       </div>
-    </div>{/* #hojicha-banana-roulade */}
+    </div>{/* #ume-spritz */}
 
-    <div id="melon-parfait" className='modal'>
+
+    <div id="yuzu-sour" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='melon-parfait.jpg' />
+            <img src='yuzu-sour.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Melon Parfait</span>
+                              <span className="name">Yuzu Sour</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">??</span>
+                            <span className="price">30</span>
                           </div>
-                          <div className="description1">Seasonal Melon, Chamomille Jelly, </div>
-                          <div className="description2">Honey Ice Cream</div>
-                          
-                          <hr/>
-                          <br/>
-                          seasonal melon<br/>
-                          chamomille jelly<br/>
-                          chamomille granita<br/>
-                          vanilla cream<br/>
-                          vanilla ice cream<br/>
-                          milk foam<br/>
-                          meringue sticks<br/>
-                          <br/><br/>
-              </div>
-      </div>
-    </div>{/* #melon-parfait */}
-
-    <div id="black-sesame-cheesecake" className='modal'>
-      <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='black-sesame-cheesecake.jpg' />
-              <br/><br/>
-              MENU DESCRIPTION:
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Kurog<span style={{color:'red'}}>o</span>ma Cheesecake</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">??</span>
-                          </div>
-                          <div className="description1">Black Sesame Cheesecake, Blackberry Compote, </div>
-                          <div className="description2">Vanilla Ice Cream</div>
-                          
-                          <hr/>
-                          <br/>
-                          black sesame cheesecake<br/>
-                          blackberry compote<br/>
-                          vanilla ice cream<br/>
-                          <br/><br/>
-              </div>
-      </div>
-    </div>{/* #black-sesame-cheesecake */}
-
-    <div id="yuzu-crepe-cake" className='modal'>
-      <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='yuzu-crepe-cake.jpg' />
-              <br/><br/>
-              MENU DESCRIPTION:
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Yuzu Crêpe Cake</span>
-                              <span className="allergies">(D)</span>
-                            </span>
-                            <span className="price">22</span>
-                          </div>
-                          <div className="description1">Yuzu Cream, Candied Zest`</div>
+                          <div className="description1">Mal Bien Mezcal, Daiyame Shochu, Yuzu Kosho, Lime</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
+                          Mal Bien Mezcal<br/>
+                          Daiyame Shochu<br/>
+                          Yuzu Kosho<br/>
+                          Lime<br/>
                           <br/><br/>
               </div>
       </div>
-    </div>{/* #yuzu-crepe-cake */}
+    </div>{/* #yuzu-sour */}
 
-    <div id="sakura-monaka" className='modal'>
+
+
+    <div id="foxs-wedding" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='sakura-monaka.jpg' />
+            <img src='foxs-wedding.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Sakura Monaka</span>
-                              <span className="allergies">(D, N)</span>
+                              <span className="name">A Fox's Wedding</span>
+                              <span className="allergies"></span>
                             </span>
-                            <span className="price">22</span>
+                            <span className="price">28</span>
                           </div>
-                          <div className="description1">Red Bean Paste, Sakura Ice Cream,</div>
-                          <div className="description2">Sour Cherries</div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
-      </div>
-    </div>{/* #sakura-monaka */}
-
-    <div id="matcha-misu" className='modal'>
-      <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='matcha-misu.jpg' />
-              <br/><br/>
-              MENU DESCRIPTION:
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Matcha-Misu</span>
-                              <span className="allergies">(D)</span>
-                            </span>
-                            <span className="price">22</span>
-                          </div>
-                          <div className="description1">Mascarpone Cream, Chestnut Pudding</div>
+                          <div className="description1">Osuzuyama Gin, Summer Snow Nigori, Cinnamon</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
+                          Osuzuyama Gin<br/>
+                          Summer Snow Nigori<br/>
+                          Cinnamon<br/>
                           <br/><br/>
               </div>
       </div>
-    </div>{/* #matcha-misu */}
+    </div>{/* #foxs-wedding */}
 
-    <div id="miso-banana-profiterole" className='modal'>
+
+
+    <div id="okusuri" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='miso-banana-profiterole.jpg' />
+            <img src='okusuri.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Miso Banana Profiterole</span>
-                              <span className="allergies">(D)</span>
+                              <span className="name">Okusuri</span>
+                              <span className="allergies"></span>
                             </span>
-                            <span className="price">22</span>
+                            <span className="price">32</span>
                           </div>
-                          <div className="description1">Caramelized Banana, Chocolate Foam,</div>
-                          <div className="description2">Puffed Buckwheat</div>
+                          <div className="description1">Ichiro's Malt & Grain Whiskey, Port Askaig Single Malt, </div>
+                          <div className="description2">Lemon, Pickled Honey</div>
                           
                           <hr/>
                           <br/>
+                          Ichiro's Malt & Grain Whiskey<br/>
+                          Port Askaig Single Malt<br/>
+                          Lemon<br/>
+                          Pickled Honey<br/>
                           <br/><br/>
               </div>
       </div>
-    </div>{/* #miso-banana-profiterole */}
+    </div>{/* #okusuri */}
+
+
+
+    <div id="budo-panther" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='budo-panther.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Budo Panther</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">29</span>
+                          </div>
+                          <div className="description1">Kana Shochu, Genever, Concord </div>
+                          <div className="description2">Grape, Lemon, Sorghum</div>
+                          
+                          <hr/>
+                          <br/>
+                          Kana Shochu<br/>
+                          Genever<br/>
+                          Concord Grape<br/>
+                          Lemon<br/>
+                          Sorghum<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #budo-panther */}
+
+
+
+    <div id="ringo-no-mitai" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='ringo-no-mitai.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Ringo No Mitai</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">28</span>
+                          </div>
+                          <div className="description1">Nikka Sencha Gin, Centum Herbus, Midori, Lemon</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          Nikka Sencha Gin<br/>
+                          Centum Herbus<br/>
+                          Midori: Melon Liqueur<br/>
+                          Lemon<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #ringo-no-mitai */}
+
+
+
+    <div id="improved-yokohama" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='improved-yokohama.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Improved Yokohama Cocktail</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">50</span>
+                          </div>
+                          <div className="description1">Hakushu 12 Year Single Malt, Marasca, </div>
+                          <div className="description2">Benedictine, Absinthe</div>
+                          
+                          <hr/>
+                          <br/>
+                          Hakushu 12 Year Single Malt WHISKY<br/>
+                          Marasca<br/>
+                          Benedictine<br/>
+                          Absinthe<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #improved-yokohama */}
+
+
+
+    <div id="pepper-buck" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='pepper-buck.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Pepper Buck</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price"></span>
+                          </div>
+                          <div className="description1">Lime, Spiced Ginger, Jalape<span style={{color:'red'}}>ñ</span>o</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          Lime<br/>
+                          Spiced Ginger<br/>
+                          Jalapeño<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #pepper-buck */}
+
+
+
+    <div id="phony-negroni" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='phony-negroni.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Phony Negroni</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price"></span>
+                          </div>
+                          <div className="description1">Juniper, Orange, Gentian</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          Juniper<br/>
+                          Orange<br/>
+                          Gentian<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #phony-negroni */}
+
+
+
+    <div id="straw-hat" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='straw-hat.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Straw Hat</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price"></span>
+                          </div>
+                          <div className="description1">Houjicha, Thai Coconut, Lime</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          Houjicha GREEN TEA<br/>
+                          Thai Coconut<br/>
+                          Lime<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #straw-hat */}
+
+
+
+    <div id="souchong-sour" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+            <img src='souchong-sour.jpg' />
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Souchong Sour</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price"></span>
+                          </div>
+                          <div className="description1">Passionfruit, Falernum, Lapsang Souchong Kombucha</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          Passionfruit<br/>
+                          Falernum<br/>
+                          Lapsang Souchong Kombucha<br/>
+                          <br/><br/>
+              </div>
+      </div>
+    </div>{/* #souchong-sour */}
+
 
 
     </div>

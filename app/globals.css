@@ -190,6 +190,10 @@ body,.webpage{
   .small-paper{
     width:100vw;
   }
+  .small-paper .left-column,
+  .small-paper .right-column{
+    width:85vw;
+  }
 }
 @media(max-width:540px){
  .section{

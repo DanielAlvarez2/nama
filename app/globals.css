@@ -60,6 +60,12 @@
  max-width:100%;
  max-height: 50vh;
 }
+nav a{
+  font-size: 13px !important;
+  padding:0 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
 .webpage{
  position: relative;
 }
@@ -77,7 +83,8 @@ body,.webpage{
  min-height: 100vh;
  padding-bottom: 25px;
 }
-.letter-paper{
+.letter-paper,
+.small-paper{
  width:8.5in;
  height:11in;
  background:beige;
@@ -90,6 +97,10 @@ body,.webpage{
  flex-direction: column;
  position: relative;
  line-height: 15.653px;
+}
+.small-paper{
+  height:8.5in;
+  width:5in;
 }
 /* .letter-paper::after{
  transform: rotate(-2deg);
@@ -152,6 +163,22 @@ body,.webpage{
  font-size: 7px;
  font-family: NeueHaasDisplayLight;
  /* font-family: KertaseBold; */
+}
+.section-dessert{
+  flex-direction: column;
+  gap:20px;
+  width:3.25in;
+}
+.section-dessert .left-column{
+  width:100%;
+}
+.legal-dessert{
+  width:3.25in;
+  font-size: 8px;
+}
+.name2{
+  font-family: MyriadHebrew;
+  font-weight: 900;
 }
 @media(max-width:8.5in){
  .letter-paper{

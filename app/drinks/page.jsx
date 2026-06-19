@@ -519,6 +519,188 @@ export default function DrinksMenu(){
 
 
 
+      <div className="small-paper">
+
+
+                                            
+          <div className="menu-items">
+
+
+
+            <div className="section section-dessert">
+              <div className="left-column">By The Glass</div>
+              <div className="left-column">Sparkling</div>
+
+              <div className="right-column">
+              
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Bollinger, "Special Cuvée", Brut</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">39</span>
+                  </div>
+                  <div className="description1">Champagne, France NV</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Laherte Frères</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">47</span>
+                  </div>
+                  <div className="description1">"Rosé de Meunier", Extra Brut</div>
+                  <div className="description2">Rosé Champagne, France, NV</div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Aman, "Cuvée Spéciale", Brut</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">75</span>
+                  </div>
+                  <div className="description1">Champagne<span style={{color:'red'}}>,</span> France NV</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Taittinger, "Comtes de Champagne"</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">120</span>
+                  </div>
+                  <div className="description1">Blanc de Blancs, Brut</div>
+                  <div className="description2">Champagne, France 2014</div>
+                </div>
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+            <div className="section section-dessert">
+              <div className="left-column">White</div>
+
+              <div className="right-column">
+              
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Rennaisance</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">27</span>
+                  </div>
+                  <div className='name'>Sancerre "La Magie des Caillottes"</div>
+                  <div className="description1">Loire Valley, France 2025</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Kollwentz, Chardonnay "Leithakalk"</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">29</span>
+                  </div>
+                  <div className="description1">Burgenland, Austria 2022</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Bernard Gripa, Saint-Péray "Les Pins"</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">28</span>
+                  </div>
+                  <div className="description1">Rhône Valley, France 2021</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+
+
+
+
+
+           </div> {/* .menu-items */}
+
+
+       </div> {/* .small-paper */}
+
+
+
+
+
+
+
+
 
 
 

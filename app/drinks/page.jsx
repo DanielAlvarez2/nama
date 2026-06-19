@@ -1053,6 +1053,193 @@ export default function DrinksMenu(){
 
 
 
+      <div className="small-paper">
+
+
+                                            
+          <div className="menu-items">
+
+
+
+            <div className="section section-dessert">
+              <div className="left-column">Coffee & Matcha</div>
+              
+
+              <div className="right-column">
+              
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Coffee</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">10</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Espresso</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">8</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Cappuccino</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">12</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Latte</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">12</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Chai Latte</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">12</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Matcha Latte</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">12</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Iced Matcha Latte</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">15</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Matcha Bowl</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+            
+
+
+
+
+
+
+           </div> {/* .menu-items */}
+
+
+       </div> {/* .small-paper */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

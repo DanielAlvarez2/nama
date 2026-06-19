@@ -65,6 +65,7 @@ nav a{
   padding:0 5px;
   text-decoration: none;
   cursor: pointer;
+  color: black;
 }
 .webpage{
  position: relative;
@@ -184,6 +185,11 @@ body,.webpage{
  .letter-paper{
    width:100vw;
  }
+}
+@media(max-width:5in){
+  .small-paper{
+    width:100vw;
+  }
 }
 @media(max-width:540px){
  .section{

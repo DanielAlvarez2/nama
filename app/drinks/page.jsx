@@ -695,6 +695,128 @@ export default function DrinksMenu(){
        </div> {/* .small-paper */}
 
 
+      <div className="small-paper">
+
+
+                                            
+          <div className="menu-items">
+
+
+
+            <div className="section section-dessert">
+              <div className="left-column">By The Glass</div>
+              <div className="left-column">Rosé</div>
+
+              <div className="right-column">
+              
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Château d'Esclans, Côtes de Provence</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">27</span>
+                  </div>
+                  <div className="description1">Provence, France 2024</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+            <div className="section section-dessert">
+              <div className="left-column">Red</div>
+
+              <div className="right-column">
+              
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Peay Vineyards, Pinot Noir</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">32</span>
+                  </div>
+                  <div className="description1">Sonoma Coast, California 2023</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Bodegas Alto Moncayo, Garnacha</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">28</span>
+                  </div>
+                  <div className="description1">Campo de Borja, Spain 2022</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Grgich Hills, Cabernet Sauvignon</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">42</span>
+                  </div>
+                  <div className="description1">Napa Valley, California 2020</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+
+
+
+
+
+           </div> {/* .menu-items */}
+
+
+       </div> {/* .small-paper */}
+
+
 
 
 

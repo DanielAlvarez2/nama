@@ -197,7 +197,8 @@ body,.webpage{
     width:100vw;
   }
   .small-paper .left-column,
-  .small-paper .right-column{
+  .small-paper .right-column,
+  .legal-dessert{
     width:85vw !important;
     /* background:'pink' */
   }

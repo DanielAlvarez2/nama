@@ -830,6 +830,228 @@ export default function DrinksMenu(){
 
 
 
+      <div className="small-paper">
+
+
+                                            
+          <div className="menu-items">
+
+
+
+            <div className="section section-dessert">
+              <div className="left-column">Kettl Teas</div>
+              
+
+              <div className="right-column">
+              
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Sencha Jou</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Incredibly fragrant green tea, hint of </div>
+                  <div className="description2">fresh cut grass and marine notes</div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Genmaimatcha</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Select sencha blended with matcha and </div>
+                  <div className="description2">roasted brown rice, toasty, lingering sweetness</div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Gyokuro</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Refined sweet green tea, hint of </div>
+                  <div className="description2">toasted hazelnut and umami tang</div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Houjicha</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Low-caffeine green tea, deep fragrances of </div>
+                  <div className="description2">toasted hazelnut and caramelized sugar</div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Yame Black</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Indian-style bright breakfast tea </div>
+                  <div className="description2">with a mild malty finish</div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Yame Oolong</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Delicately roasted tea with layers </div>
+                  <div className="description2">of toffee-like sweetness</div>
+                </div>
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+            <div className="section section-dessert">
+              <div className="left-column">Soba and Tis<span style={{color:'red',fontSize:'inherit'}}>s</span>anes</div>
+
+              <div className="right-column">
+              
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Soba Tea</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Nutty, caffeine-free, warm, and toasty</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Chamomile</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Soothing natural blend made only from </div>
+                  <div className="description2">caffeine-free chamomile flowers</div>
+                </div>
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Peppermint</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Caffeine-free herbal tea, spicy aroma </div>
+                  <div className="description2">and cool, penetrating taste</div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+
+
+
+
+
+           </div> {/* .menu-items */}
+
+
+       </div> {/* .small-paper */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

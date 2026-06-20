@@ -292,8 +292,14 @@ export default function DessertMenu(){
 
     <div id="hojicha-banana-roulade" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
             <img src='hojicha-banana-roulade.jpg' />
+          </div>      
+          <div className='modal-text'>
+          
               <br/><br/>
               MENU DESCRIPTION:
               <div className="right-column">
@@ -315,14 +321,22 @@ export default function DessertMenu(){
                           vanilla ice cream<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
       </div>
     </div>{/* #hojicha-banana-roulade */}
 
     <div id="melon-parfait" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />
+          <div className='modal-content'>
+             
+          <div>
             <img src='melon-parfait.jpg' />
-              <br/><br/>
+          </div>          
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -346,14 +360,22 @@ export default function DessertMenu(){
                           meringue sticks<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}   
       </div>
     </div>{/* #melon-parfait */}
 
     <div id="black-sesame-cheesecake" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />     
+          <div className='modal-content'>
+          
+          <div>
             <img src='black-sesame-cheesecake.jpg' />
-              <br/><br/>
+          </div>     
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -373,14 +395,22 @@ export default function DessertMenu(){
                           vanilla ice cream<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
       </div>
     </div>{/* #black-sesame-cheesecake */}
 
     <div id="yuzu-crepe-cake" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='yuzu-crepe-cake.jpg' />
-              <br/><br/>
+          </div>         
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -397,14 +427,22 @@ export default function DessertMenu(){
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
       </div>
     </div>{/* #yuzu-crepe-cake */}
 
     <div id="sakura-monaka" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='sakura-monaka.jpg' />
-              <br/><br/>
+          </div>        
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -421,14 +459,22 @@ export default function DessertMenu(){
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
       </div>
     </div>{/* #sakura-monaka */}
 
     <div id="matcha-misu" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
             <img src='matcha-misu.jpg' />
-              <br/><br/>
+          </div>      
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -445,14 +491,22 @@ export default function DessertMenu(){
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
       </div>
     </div>{/* #matcha-misu */}
 
     <div id="miso-banana-profiterole" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='miso-banana-profiterole.jpg' />
-              <br/><br/>
+          </div>        
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -469,6 +523,8 @@ export default function DessertMenu(){
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
       </div>
     </div>{/* #miso-banana-profiterole */}
 

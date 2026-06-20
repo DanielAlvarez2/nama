@@ -1242,7 +1242,10 @@ export default function DrinksMenu(){
 
     <div id="ume-spritz" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>
             <img src='ume-spritz.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1270,7 +1273,10 @@ export default function DrinksMenu(){
 
     <div id="yuzu-sour" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>        
             <img src='yuzu-sour.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1300,7 +1306,10 @@ export default function DrinksMenu(){
 
     <div id="foxs-wedding" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>      
             <img src='foxs-wedding.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1329,7 +1338,10 @@ export default function DrinksMenu(){
 
     <div id="okusuri" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>         
             <img src='okusuri.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1359,7 +1371,10 @@ export default function DrinksMenu(){
 
     <div id="budo-panther" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>         
             <img src='budo-panther.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1390,7 +1405,10 @@ export default function DrinksMenu(){
 
     <div id="ringo-no-mitai" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>       
             <img src='ringo-no-mitai.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1420,7 +1438,10 @@ export default function DrinksMenu(){
 
     <div id="improved-yokohama" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>        
             <img src='improved-yokohama.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1450,7 +1471,10 @@ export default function DrinksMenu(){
 
     <div id="pepper-buck" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>        
             <img src='pepper-buck.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1479,7 +1503,10 @@ export default function DrinksMenu(){
 
     <div id="phony-negroni" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />      
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>    
             <img src='phony-negroni.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1508,7 +1535,10 @@ export default function DrinksMenu(){
 
     <div id="straw-hat" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>       
             <img src='straw-hat.jpg' />
               <br/><br/>
               MENU DESCRIPTION:
@@ -1537,7 +1567,10 @@ export default function DrinksMenu(){
 
     <div id="souchong-sour" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />      
+          <div className='modal-content'></div>{/* .modal-content */}         
+          <div className='modal-text'></div>{/* .modal-text */}         
+          <div></div>    
             <img src='souchong-sour.jpg' />
               <br/><br/>
               MENU DESCRIPTION:

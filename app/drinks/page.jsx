@@ -1243,11 +1243,14 @@ export default function DrinksMenu(){
     <div id="ume-spritz" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>
+          <div className='modal-content'>
+          
+          <div>
             <img src='ume-spritz.jpg' />
-              <br/><br/>
+          </div>
+              
+          <div className='modal-text'>
+                 
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1267,6 +1270,8 @@ export default function DrinksMenu(){
                           Cremant d'Alsace
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
       </div>
     </div>{/* #ume-spritz */}
 
@@ -1274,11 +1279,14 @@ export default function DrinksMenu(){
     <div id="yuzu-sour" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>        
+          <div className='modal-content'>
+          
+          <div>
             <img src='yuzu-sour.jpg' />
-              <br/><br/>
+          </div>        
+          <div className='modal-text'>
+                 
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1299,6 +1307,8 @@ export default function DrinksMenu(){
                           Lime<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
       </div>
     </div>{/* #yuzu-sour */}
 
@@ -1307,11 +1317,14 @@ export default function DrinksMenu(){
     <div id="foxs-wedding" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>      
+          <div className='modal-content'>
+          
+          <div>
             <img src='foxs-wedding.jpg' />
-              <br/><br/>
+          </div>      
+              
+          <div className='modal-text'>
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1331,6 +1344,8 @@ export default function DrinksMenu(){
                           Cinnamon<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}     
+          </div>{/* .modal-content */}         
       </div>
     </div>{/* #foxs-wedding */}
 
@@ -1339,11 +1354,14 @@ export default function DrinksMenu(){
     <div id="okusuri" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>         
+          <div className='modal-content'>
+          
+          <div>
             <img src='okusuri.jpg' />
-              <br/><br/>
+          </div>         
+              
+          <div className='modal-text'>
+                 
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1364,6 +1382,8 @@ export default function DrinksMenu(){
                           Pickled Honey<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
       </div>
     </div>{/* #okusuri */}
 
@@ -1372,11 +1392,14 @@ export default function DrinksMenu(){
     <div id="budo-panther" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>         
+          <div className='modal-content'>
+          
+          <div>
             <img src='budo-panther.jpg' />
-              <br/><br/>
+          </div>         
+              
+          <div className='modal-text'>
+             
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1398,6 +1421,8 @@ export default function DrinksMenu(){
                           Sorghum<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}      
+          </div>{/* .modal-content */}         
       </div>
     </div>{/* #budo-panther */}
 
@@ -1406,11 +1431,14 @@ export default function DrinksMenu(){
     <div id="ringo-no-mitai" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>       
+          <div className='modal-content'>
+               
+          <div>
             <img src='ringo-no-mitai.jpg' />
-              <br/><br/>
+          </div>       
+              
+          <div className='modal-text'>
+                  
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1431,6 +1459,8 @@ export default function DrinksMenu(){
                           Lemon<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}    
       </div>
     </div>{/* #ringo-no-mitai */}
 
@@ -1439,11 +1469,14 @@ export default function DrinksMenu(){
     <div id="improved-yokohama" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>        
+          <div className='modal-content'>
+          
+          <div>
             <img src='improved-yokohama.jpg' />
-              <br/><br/>
+          </div>        
+              
+          <div className='modal-text'>
+                  
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1464,6 +1497,8 @@ export default function DrinksMenu(){
                           Absinthe<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}         
       </div>
     </div>{/* #improved-yokohama */}
 
@@ -1472,11 +1507,14 @@ export default function DrinksMenu(){
     <div id="pepper-buck" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>        
+          <div className='modal-content'>
+              
+          <div>
             <img src='pepper-buck.jpg' />
-              <br/><br/>
+          </div>        
+              
+          <div className='modal-text'>
+                  
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1496,6 +1534,8 @@ export default function DrinksMenu(){
                           Jalapeño<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}     
       </div>
     </div>{/* #pepper-buck */}
 
@@ -1504,11 +1544,14 @@ export default function DrinksMenu(){
     <div id="phony-negroni" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />      
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>    
+          <div className='modal-content'>
+                 
+          <div>
             <img src='phony-negroni.jpg' />
-              <br/><br/>
+          </div>    
+              
+          <div className='modal-text'>
+                  
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1528,6 +1571,8 @@ export default function DrinksMenu(){
                           Gentian<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #phony-negroni */}
 
@@ -1536,11 +1581,14 @@ export default function DrinksMenu(){
     <div id="straw-hat" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>       
+          <div className='modal-content'>
+          
+          <div>
             <img src='straw-hat.jpg' />
-              <br/><br/>
+          </div>       
+              
+          <div className='modal-text'>
+                  
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1560,6 +1608,8 @@ export default function DrinksMenu(){
                           Lime<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}         
       </div>
     </div>{/* #straw-hat */}
 
@@ -1568,11 +1618,14 @@ export default function DrinksMenu(){
     <div id="souchong-sour" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />      
-          <div className='modal-content'></div>{/* .modal-content */}         
-          <div className='modal-text'></div>{/* .modal-text */}         
-          <div></div>    
+          <div className='modal-content'>
+          
+          <div>
             <img src='souchong-sour.jpg' />
-              <br/><br/>
+          </div>    
+              
+          <div className='modal-text'>
+                  
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -1592,6 +1645,8 @@ export default function DrinksMenu(){
                           Lapsang Souchong Kombucha<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}         
       </div>
     </div>{/* #souchong-sour */}
 

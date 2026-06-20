@@ -1350,10 +1350,12 @@ export default function Home() {
     <div id="miso-soup" className='modal'>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
       <div className='modal-content'>
-            <img src='miso-soup.jpg' />
+            <div>
+              <img src='miso-soup.jpg' />
+            </div>
             <div className='modal-text'>
 
-              <br/><br/>
+            
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">

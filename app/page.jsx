@@ -24,7 +24,7 @@ export default function Home() {
       </div>
 
       <nav>
-        <Link href='/'>Dinner</Link> | 
+        <Link href='/' style={{textDecoration:'underline',cursor:'default'}}>Dinner</Link> | 
         <Link href='/dessert-menu'>Dessert</Link> | 
         <Link href='/drinks'>Drinks</Link>
       </nav>
@@ -1348,9 +1348,11 @@ export default function Home() {
 
 
     <div id="miso-soup" className='modal'>
-      <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+      <div className='modal-content'>
             <img src='miso-soup.jpg' />
+            <div className='modal-text'>
+
               <br/><br/>
               MENU DESCRIPTION:
               <div className="right-column">
@@ -1374,7 +1376,9 @@ export default function Home() {
                           sansho pepper
                           <br/><br/>
               </div>
-      </div>
+            </div>{/* .modal-text */}
+
+      </div>{/* .modal-content */}
     </div>{/* #miso-soup */}
 
     <div id="surinagashi" className='modal'>

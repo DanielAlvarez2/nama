@@ -49,6 +49,19 @@
  overflow: hidden ;
  padding: 5px;
 }
+.modal-content{
+  display:'flex'
+}
+@media(orientation:portrait){
+  .modal-content{
+    flex-direction: column;
+  }
+}
+@media(orientation:landscape){
+  .modal-content{
+    flex-direction: row;
+  }
+}
 .close-button{
  font-size: 50px;
  position: absolute;

@@ -1385,9 +1385,13 @@ export default function Home() {
 
     <div id="surinagashi" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='surinagashi.jpg' />
-              <br/><br/>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />
+          <div className='modal-content'>
+            <div>
+              <img src='surinagashi.jpg' />
+            </div>
+            <div className='modal-text'>
+
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1408,14 +1412,20 @@ export default function Home() {
                           salted cherry blossom
                           <br/><br/>
               </div>
+                        </div>{/* .modal-text */}
+
+          </div>{/* .modal-content */}          
       </div>
     </div>{/* #surinagashi */}
 
     <div id="edamame" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='edamame.jpg' />
-              <br/><br/>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />     
+          <div className='modal-content'>
+            <div>
+              <img src='edamame.jpg' />
+            </div>
+              <div className='modal-text'>
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1436,14 +1446,19 @@ export default function Home() {
                           sansho pepper, aionori seaweed, shiso
                           <br/><br/>
               </div>
+              </div>{/* .modal-text */}
+          </div>{/* .modal-content */}                           
       </div>
     </div>{/* #edamame */}
 
     <div id="nama-tofu" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='nama-tofu.jpg' />
-              <br/><br/>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />
+          <div className='modal-content'>
+            <div>
+              <img src='nama-tofu.jpg' />
+            </div>
+            <div className='modal-text'>
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1463,14 +1478,19 @@ export default function Home() {
                           ginger paste, scallion, bonito powder
                           <br/><br/>
               </div>
+              </div>{/* .modal-text */}
+            </div>{/* .modal-content */}          
       </div>
     </div>{/* #nama-tofu */}
 
     <div id="shishitos" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
-            <img src='shishitos.jpg' />
-              <br/><br/>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+            <div>
+              <img src='shishitos.jpg' />
+            </div>        
+              <div className='modal-text'>
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1490,14 +1510,20 @@ export default function Home() {
                           soy sauce
                           <br/><br/>
               </div>
+              </div>{/* .modal-text */}
+            </div>{/* .modal-content */}
       </div>
     </div>{/* #shishitos */}
 
     <div id="goma-ae" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          <div>
             <img src='goma-ae.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+          
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1518,14 +1544,23 @@ export default function Home() {
                           toasted white sesame seeds
                           <br/><br/>
               </div>
+              </div>{/* .modal-text */}      
+            </div>{/* .modal-content */} 
+
       </div>
     </div>{/* #goma-ae */}
 
     <div id="tsukemono-moriawase" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='tsukemono-moriawase.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1543,14 +1578,22 @@ export default function Home() {
                           housemade japanese pickled vegetables
                           <br/><br/>
               </div>
+              </div>{/* .modal-text */}                             
+            </div>{/* .modal-content */} 
       </div>
     </div>{/* #tsukemono-moriawase */}
 
     <div id="hamachi-usuzukuri" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='hamachi-usuzukuri.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1573,14 +1616,22 @@ export default function Home() {
                           shiso leaf
                           <br/><br/>
               </div>
+              </div>{/* .modal-text */}               
+            </div>{/* .modal-content */}     
       </div>
     </div>{/* #tsukemono-moriawase */}
 
     <div id="yasai-shiraae" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />      
+          <div className='modal-content'>
+          
+          <div>
             <img src='yasai-shiraae.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1599,14 +1650,22 @@ export default function Home() {
                           ponzu jelly
                           <br/><br/>
               </div>
+              </div>{/* .modal-text */}                
+            </div>{/* .modal-content */}
       </div>
     </div>{/* #yasai-shiraae */}
 
     <div id="wagyu-tataki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />     
+          <div className='modal-content'>
+          
+          <div>
             <img src='wagyu-tataki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                       
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1629,15 +1688,23 @@ export default function Home() {
                           shiso leaf
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}    
       </div>
     </div>{/* #wagyu-tataki */}
 
 
     <div id="sakura-tai-ikomi" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='sakura-tai-ikomi.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1655,14 +1722,22 @@ export default function Home() {
                           ume dashi jelly (ume=plum)
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}                 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #sakura-tai-ikomi */}
 
     <div id="aigamo-roast" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='aigamo-roast.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1682,14 +1757,22 @@ export default function Home() {
                           cooked shishitos
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}                 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #aigamo-roast */}
 
     <div id="greenmarket-salad" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />         
+          <div className='modal-content'>
+          
+          <div>
             <img src='greenmarket-salad.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1728,14 +1811,22 @@ export default function Home() {
                           goma=sesame seed
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}      
+          </div>{/* .modal-content */}       
       </div>
     </div>{/* #greenmarket-salad */}
 
     <div id="caesar-salad" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
             <img src='caesar-salad.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1771,15 +1862,23 @@ export default function Home() {
                           parmesan cheese
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}                
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #caesar-salad */}
 
 
     <div id="yasai-tempura" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='yasai-tempura.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1790,7 +1889,7 @@ export default function Home() {
                     <span className="price">27</span>
                   </div>
                   <div className="description1">Spring Vegetables</div>
-                  <div className="description2"></div>                          <hr/>
+                  <div className="description2"></div>                          
                           <hr/>
                           <br/>
                           8 spring vegetables<br/>
@@ -1798,14 +1897,22 @@ export default function Home() {
                           mojio salt
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #yasai-tempura */}
 
     <div id="tempura-moriawase" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+             
+          <div>
             <img src='tempura-moriawase.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                         
+            
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1826,14 +1933,22 @@ export default function Home() {
                           mojio salt
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #tempura-moriawase */}
 
     <div id="shrimp-tempura" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='shrimp-tempura.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                              
+            
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1852,14 +1967,22 @@ export default function Home() {
                           mojio salt
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}
       </div>
     </div>{/* #shrimp-tempura */}
 
     <div id="sakuramasu-katsu" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='sakuramasu-katsu.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                 
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1882,14 +2005,22 @@ export default function Home() {
                           katsu = breaded, deep-fried
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}   
+          </div>{/* .modal-content */}           
       </div>
     </div>{/* #sakuramasu-katsu */}
 
     <div id="lobster-tempura" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='lobster-tempura.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                         
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1908,14 +2039,22 @@ export default function Home() {
                           shishito peppers
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}     
       </div>
     </div>{/* #lobster-tempura */}
 
     <div id="gindara" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+             
+          <div>
             <img src='gindara.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                       
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1935,14 +2074,22 @@ export default function Home() {
                           maruju / japanese sweet potato
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #gindara */}
 
     <div id="hamachi-kama" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='hamachi-kama.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1963,14 +2110,22 @@ export default function Home() {
                           maruju / japanese sweet potato
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}   
       </div>
     </div>{/* #hamachi-kama */}
 
     <div id="lobster-uni-ogonyaki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='lobster-uni-ogonyaki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                              
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -1991,14 +2146,22 @@ export default function Home() {
                           shredded shiso leaf
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}
       </div>
     </div>{/* #lobster-uni-ogonyaki */}
 
     <div id="jidori-chicken" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
             <img src='jidori-chicken.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2017,14 +2180,22 @@ export default function Home() {
                           daikon oroshi (grated daikon radish)
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #jidori-chicken */}
 
     <div id="tenderloin" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='tenderloin.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2043,14 +2214,22 @@ export default function Home() {
                           grilled vegetables
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #tenderloin */}
 
     <div id="sirloin" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='sirloin.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2069,14 +2248,22 @@ export default function Home() {
                           grilled vegetables
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #sirloin */}
 
     <div id="kamo-miso-yaki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='kamo-miso-yaki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2095,14 +2282,22 @@ export default function Home() {
                           grilled vegetables
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #kamo-miso-yaki */}
 
     <div id="tofu-miso-yaki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='tofu-miso-yaki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2121,14 +2316,22 @@ export default function Home() {
                           grilled vegetables
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #tofu-miso-yaki */}
 
     <div id="grilled-vegetables" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='grilled-vegetables.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2146,14 +2349,22 @@ export default function Home() {
                           nira miso (menu:"tama miso")
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #grilled-vegetables */}
 
     <div id="hamachi" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='hamachi.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2167,14 +2378,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #hamachi */}
 
     <div id="madai" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='madai.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                       
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2190,14 +2409,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
       </div>
     </div>{/* #madai */}
 
     <div id="kinme-dai" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='kinme-dai.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2211,14 +2438,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #kinme-dai */}
 
     <div id="akami" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='akami.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2232,14 +2467,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #akami */}
 
     <div id="chutoro" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='chutoro.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2253,14 +2496,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}   
       </div>
     </div>{/* #chutoro */}
 
     <div id="otoro" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='otoro.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2274,14 +2525,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #otoro */}
 
     <div id="ora" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='ora.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                        
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2295,14 +2554,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}    
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #ora */}
 
     <div id="unagi" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='unagi.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                      
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2316,14 +2583,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}     
       </div>
     </div>{/* #unagi */}
 
     <div id="hotate" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='hotate.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2337,14 +2612,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}   
       </div>
     </div>{/* #hotate */}
 
     <div id="sakuramasu" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+           
+          <div>
             <img src='sakuramasu.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                        
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2358,14 +2641,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}   
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #sakuramasu */}
 
     <div id="kasugodai" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='kasugodai.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2379,14 +2670,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #kasugodai */}
 
     <div id="ebi" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='ebi.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                        
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2400,14 +2699,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}    
       </div>
     </div>{/* #ebi */}
 
     <div id="santa-barbara-uni" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='santa-barbara-uni.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                             
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2421,14 +2728,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #santa-barbara-uni */}
 
     <div id="hokkaido-uni" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='hokkaido-uni.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                         
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2442,14 +2757,22 @@ export default function Home() {
                           <br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}    
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #hokkaido-uni */}
 
     <div id="kappa-maki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='kappa-maki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                         
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2467,14 +2790,22 @@ export default function Home() {
                           cucumber
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}   
       </div>
     </div>{/* #kappa-maki */}
 
     <div id="oshinko-maki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='oshinko-maki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                      
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2492,14 +2823,22 @@ export default function Home() {
                           pickled daikon radish
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}    
+          </div>{/* .modal-content */}   
       </div>
     </div>{/* #oshinko-maki */}
 
     <div id="ume-shiso-maki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='ume-shiso-maki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                         
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2519,14 +2858,22 @@ export default function Home() {
                           cucumber
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}     
       </div>
     </div>{/* #ume-shiso-maki */}
 
     <div id="avocado-maki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='avocado-maki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2544,14 +2891,22 @@ export default function Home() {
                           avocado<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #avocado-maki */}
 
     <div id="unagi-cucumber-maki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='unagi-cucumber-maki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2570,14 +2925,22 @@ export default function Home() {
                           cucumber
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}   
       </div>
     </div>{/* #unagi-cucumber-maki */}
 
     <div id="tekka-maki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='tekka-maki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2595,14 +2958,22 @@ export default function Home() {
                           tuna
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #tekka-maki */}
 
     <div id="vegetable-roll" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='vegetable-roll.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2617,7 +2988,7 @@ export default function Home() {
                           <hr/>
                           <br/>
                           8pcs<br/>
-                          napa cabbage<br/>
+                          napa cabbage(hakusai)<br/>
                           spinach<br/>
                           carrot<br/>
                           daikon radish<br/>
@@ -2625,14 +2996,22 @@ export default function Home() {
                           yuzu zest
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}   
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #vegetable-roll */}
 
     <div id="spicy-tuna-roll" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='spicy-tuna-roll.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2655,14 +3034,22 @@ export default function Home() {
                           black & white sesame seeds
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #spicy-tuna-roll */}
 
     <div id="negi-hama-roll" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='negi-hama-roll.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                               
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2673,20 +3060,31 @@ export default function Home() {
                     <span className="price">25</span>
                   </div>
                   <div className="description1">Hamachi, Scallion</div>
-                  <div className="description2"></div>                          <br/>
+                  <div className="description2"></div>                          
+                  <hr/>
+                  <br/>
+
                           8pcs<br/>
                           negi / scallions<br/>
                           hamachi / yellowtail
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}
       </div>
     </div>{/* #negi-hama-roll */}
 
     <div id="salmon-avocado-roll" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='salmon-avocado-roll.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                            
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2703,14 +3101,22 @@ export default function Home() {
                           <div style={{color:'red'}}>missing from food bible</div>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #salmon-avocado-roll */}
 
     <div id="california-roll" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='california-roll.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                       
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2731,14 +3137,22 @@ export default function Home() {
                           shiso leaf<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}      
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #california-roll */}
 
     <div id="lobster-tempura-roll" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='lobster-tempura-roll.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+            
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2760,14 +3174,22 @@ export default function Home() {
                           chives
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}   
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #lobster-tempura-roll */}
 
     <div id="aman-ny-roll" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='aman-ny-roll.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2796,14 +3218,22 @@ export default function Home() {
                           pickled lotus root
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}   
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #aman-ny-roll */}
 
     <div id="wagyu-roll" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='wagyu-roll.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2827,14 +3257,22 @@ export default function Home() {
                           shallot chips
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}   
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #wagyu-roll */}
 
     <div id="yakimeshi" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='yakimeshi.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                        
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2862,14 +3300,22 @@ export default function Home() {
                           garlic chips
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}    
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #yakimeshi */}
 
     <div id="unagi-gohan" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='unagi-gohan.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2889,14 +3335,22 @@ export default function Home() {
                           side of sansho pepper
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #unagi-gohan */}
 
     <div id="kake-soba" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='kake-soba.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                            
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2943,14 +3397,22 @@ export default function Home() {
                           tokyo negi scallion<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #kake-soba */}
 
     <div id="kamatama-udon" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
             <img src='kamatama-udon.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                      
+              
               MENU DESCRIPTION:
               <div className="right-column">
                   <div className="name-price">
@@ -2973,14 +3435,22 @@ export default function Home() {
                           side of chili oil
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}        
       </div>
     </div>{/* #kamatama-udon */}
 
     <div id="yakishabu-gohan" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />      
+          <div className='modal-content'>
+          
+          <div>
             <img src='yakishabu-gohan.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                        
+            
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -3004,14 +3474,22 @@ export default function Home() {
                           chives<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #yakishabu-gohan */}
 
     <div id="shima-aji-tataki" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='shima-aji-tataki.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -3034,14 +3512,22 @@ export default function Home() {
                           wakame seaweed<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #shima-aji-tataki */}
 
     <div id="nasu-agebitashi" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />     
+          <div className='modal-content'>
+          
+          <div>
             <img src='nasu-agebitashi.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                         
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -3064,14 +3550,22 @@ export default function Home() {
                           julienned chili<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #nasu-agebitashi */}
 
     <div id="suzuki-tatsuta-age" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />     
+          <div className='modal-content'>
+          
+          <div>
             <img src='suzuki-tatsuta-age.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                           
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -3092,14 +3586,22 @@ export default function Home() {
                           shishito peppers<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}
       </div>
     </div>{/* #suzuki-tatsuta-age */}
 
     <div id="softshell-crab" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
             <img src='softshell-crab.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                          
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -3120,14 +3622,22 @@ export default function Home() {
                           tomato relish<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #softshell-crab */}
 
     <div id="lamb-chops" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
             <img src='lamb-chops.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                         
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -3142,20 +3652,28 @@ export default function Home() {
                           
                           <hr/>
                           <br/>
-                          3pcs? charcoal grilled lamb chops<br/>
+                          3pcs charcoal grilled lamb chops<br/>
                           soy koji moromi<br/>
                           wasabi oil<br/>
                           grilled vegetables<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #lamb-chops */}
 
     <div id="nasu-dengaku" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
             <img src='nasu-dengaku.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                         
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -3178,14 +3696,22 @@ export default function Home() {
                           hanaho flowers<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */} 
       </div>
     </div>{/* #nasu-dengaku */}
 
     <div id="zaru-soba" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
             <img src='zaru-soba.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                        
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -3207,14 +3733,22 @@ export default function Home() {
                           nori seaweed<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}   
+          </div>{/* .modal-content */}  
       </div>
     </div>{/* #zaru-soba */}
 
     <div id="spider-roll" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
             <img src='spider-roll.jpg' />
-              <br/><br/>
+          </div>
+          <div className='modal-text'>
+                         
+              
               MENU DESCRIPTION:
               <div className="right-column">
                           <div className="name-price">
@@ -3236,6 +3770,8 @@ export default function Home() {
                           teriyaki sauce<br/>
                           <br/><br/>
               </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}    
       </div>
     </div>{/* #spider-roll */}
 

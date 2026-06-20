@@ -16,9 +16,6 @@ export default function Home() {
   return (
 
     <div className="webpage">
-      <div id='modal'>
-        <img id='modal-pic' />
-      </div>{/* #modal */}
 
       <div style={{width:'100%',textAlign:'center',marginTop:'15px'}}>
         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="60">

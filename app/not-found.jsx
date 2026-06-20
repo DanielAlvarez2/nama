@@ -4,9 +4,6 @@ export default function PageNotFound404(){
 
     return(
     <div className='webpage'>
-            <div id='modal'>
-                <img id='modal-pic' />
-            </div>{/* #modal */}
 
 
       <div style={{width:'100%',textAlign:'center',marginTop:'15px'}}>

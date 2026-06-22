@@ -229,7 +229,7 @@ export default function Home() {
 
 
 
-                <div  className="dinner-menu-item"
+                {/* <div  className="dinner-menu-item"
                       onClick={()=>showModal('sakura-tai-ikomi')}
                 >
                   <div className="name-price">
@@ -241,7 +241,7 @@ export default function Home() {
                   </div>
                   <div className="description1">Spring Vegetable, Ume Jelly</div>
                   <div className="description2"></div>
-                </div>
+                </div> */}
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('aigamo-roast')}
@@ -276,7 +276,7 @@ export default function Home() {
                     </span>
                     <span className="price">29</span>
                   </div>
-                  <div className="description1">Spring Vegetables, Goma Miso</div>
+                  <div className="description1">Summer Vegetables, Goma Miso</div>
                   <div className="description2"></div>
                   <div className="upgrade">
                     <span>
@@ -288,7 +288,7 @@ export default function Home() {
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>with Warm Mushrooms</span>
-                      <span className='allergies'>(V, GF)</span>
+                      <span className='allergies' style={{color:'red'}}>(V, GF)</span>
                     </span>
                     <span className="upgrade-price">40</span>
                   </div>
@@ -309,14 +309,14 @@ export default function Home() {
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>with Warm Mushrooms</span>
-                      <span className='allergies'>(GF)</span>
+                      <span className='allergies'>(<span style={{color:'red',fontSize:'inherit'}}>D</span>, GF)</span>
                     </span>
                     <span className="upgrade-price">35</span>
                   </div>
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>with Hokkaido "Unibushi"</span>
-                      <span className='allergies'>(V, GF)</span>
+                      <span className='allergies' style={{color:'red'}}>(D, GF)</span>
                     </span>
                     <span className="upgrade-price">44</span>
                   </div>
@@ -362,7 +362,7 @@ export default function Home() {
                     </span>
                     <span className="price">27</span>
                   </div>
-                  <div className="description1">Spring Vegetables</div>
+                  <div className="description1">Summer Vegetables</div>
                   <div className="description2"></div>
                 </div>
 
@@ -1829,7 +1829,7 @@ export default function Home() {
                     </span>
                     <span className="price">29</span>
                   </div>
-                  <div className="description1">Spring Vegetables, Goma Miso</div>
+                  <div className="description1">Summer Vegetables, Goma Miso</div>
                   <div className="description2"></div>
                   <div className="upgrade">
                     <span>
@@ -1888,14 +1888,14 @@ export default function Home() {
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>with Warm Mushrooms</span>
-                      <span className='allergies'>(GF)</span>
+                      <span className='allergies'>(D, GF)</span>
                     </span>
                     <span className="upgrade-price">35</span>
                   </div>
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>with Hokkaido "Unibushi"</span>
-                      <span className='allergies'>(V, GF)</span>
+                      <span className='allergies'>(D, GF)</span>
                     </span>
                     <span className="upgrade-price">44</span>
                   </div>
@@ -1935,11 +1935,11 @@ export default function Home() {
                     </span>
                     <span className="price">27</span>
                   </div>
-                  <div className="description1">Spring Vegetables</div>
+                  <div className="description1">Summer Vegetables</div>
                   <div className="description2"></div>                          
                           <hr/>
                           <br/>
-                          8 spring vegetables<br/>
+                          8 seasonal vegetables<br/>
                           tempura sauce/grated daikon radish<br/>
                           mojio salt
                           <br/><br/>

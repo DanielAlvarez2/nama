@@ -124,7 +124,7 @@ export default function DessertMenu(){
                     <span className="price">22</span>
                   </div>
                   <div className="description1">Blackberry Compote, Vanilla Ice Cream</div>
-                  <div className="description2"></div>
+                  <div className="description2" style={{color:'red'}}>Black Sesame Cheesecake</div>
                 </div>
 
                 {/* <div  className="dinner-menu-item"

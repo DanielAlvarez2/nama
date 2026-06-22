@@ -53,7 +53,7 @@ export default function Home() {
                   <div className="description2"></div>
                 </div>
 
-                <div  className="dinner-menu-item"
+                {/* <div  className="dinner-menu-item"
                       onClick={()=>showModal('surinagashi')}
                 >
                   <div className="name-price">
@@ -65,7 +65,7 @@ export default function Home() {
                   </div>
                   <div className="description1">Green Pea, Tamago Tofu, White Asparagus</div>
                   <div className="description2"></div>
-                </div>
+                </div> */}
 
 
 
@@ -146,6 +146,25 @@ export default function Home() {
                   <div className="description2"></div>
                 </div>
 
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('nasu-agebitashi')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Nasu Agebitashi</span>
+                      <span className="allergies">(V, GF)</span>
+                    </span>
+                    <span className="price">17</span>
+                  </div>
+                  <div className="description1">Chilled Eggplant, Ginger</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('hamachi-usuzukuri')}
                 >
@@ -187,6 +206,28 @@ export default function Home() {
                   <div className="description1">A5 Miyazaki Wagyu, Grated Daikon Ponzu</div>
                   <div className="description2"></div>
                 </div>
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('shima-aji-tataki')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Shimaaji Tataki</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">35</span>
+                  </div>
+                  <div className="description1">Seared Striped<span style={{color:'red'}}>&diams;</span>Jack, Tosazu Jelly</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('sakura-tai-ikomi')}
@@ -1164,38 +1205,12 @@ export default function Home() {
 
 
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('shima-aji-tataki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Shima Aji Tataki</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">35</span>
-                  </div>
-                  <div className="description1">Seared Striped Jack, Tosazu Jelly</div>
-                  <div className="description2"></div>
-                </div>
 
 
 
 
 
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('nasu-agebitashi')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Nasu Agebitashi</span>
-                      <span className="allergies">(V, GF)</span>
-                    </span>
-                    <span className="price">17</span>
-                  </div>
-                  <div className="description1">Eggplant, Soy Konbu</div>
-                  <div className="description2"></div>
-                </div>
 
 
 
@@ -3536,7 +3551,7 @@ export default function Home() {
                           
                           <hr/>
                           <br/>
-                          ?pcs seared shima aji/striped jack<br/>
+                          5pcs seared shima aji/striped jack<br/>
                           tosazu jelly<br/>
                           shredded radish<br/>
                           shiso leaf<br/>
@@ -3569,15 +3584,15 @@ export default function Home() {
                             </span>
                             <span className="price">17</span>
                           </div>
-                          <div className="description1">Eggplant, Soy Konbu</div>
+                          <div className="description1">Chilled Eggplant, Ginger</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
                           flash fried eggplant<br/>
                           soy konbu broth<br/>
-                          chives<br/>
                           ginger<br/>
+                          chives<br/>
                           shichimi<br/>
                           julienned chili<br/>
                           <br/><br/>

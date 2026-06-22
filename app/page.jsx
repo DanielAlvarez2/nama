@@ -1160,6 +1160,10 @@ export default function Home() {
               Friday June 19, 2026<br/><br/>
               </span>
 
+
+
+
+
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('shima-aji-tataki')}
                 >
@@ -1173,6 +1177,11 @@ export default function Home() {
                   <div className="description1">Seared Striped Jack, Tosazu Jelly</div>
                   <div className="description2"></div>
                 </div>
+
+
+
+
+
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('nasu-agebitashi')}
@@ -1188,6 +1197,9 @@ export default function Home() {
                   <div className="description2"></div>
                 </div>
 
+
+
+
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('suzuki-tatsuta-age')}
                 >
@@ -1201,6 +1213,10 @@ export default function Home() {
                   <div className="description1">Branzino, Shiso Mayo</div>
                   <div className="description2"></div>
                 </div>
+
+
+
+
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('softshell-crab')}
@@ -1216,6 +1232,10 @@ export default function Home() {
                   <div className="description2"></div>
                 </div>
 
+
+
+
+
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('lamb-chops')}
                 >
@@ -1229,6 +1249,10 @@ export default function Home() {
                   <div className="description1">Charcoal Grilled Lamb Chops, Soy Koji Moromi</div>
                   <div className="description2"></div>
                 </div>
+
+
+
+
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('nasu-dengaku')}
@@ -1244,6 +1268,10 @@ export default function Home() {
                   <div className="description2">Candied Walnuts</div>
                 </div>
 
+
+
+
+
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('zaru-soba')}
                 >
@@ -1257,6 +1285,10 @@ export default function Home() {
                   <div className="description1">Chilled Soba Noodles, Karajiru,</div>
                   <div className="description2">Tokyo Negi</div>
                 </div>
+
+
+
+
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('spider-roll')}

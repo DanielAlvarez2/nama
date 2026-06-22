@@ -36,7 +36,7 @@ export default function DessertMenu(){
 
               <div className="right-column">
               
-                <div  className="dinner-menu-item"
+                {/* <div  className="dinner-menu-item"
                       onClick={()=>showModal('yuzu-crepe-cake')}
                 >
                   <div className="name-price">
@@ -48,21 +48,52 @@ export default function DessertMenu(){
                   </div>
                   <div className="description1">Yuzu Cream, Candied Zest</div>
                   <div className="description2"></div>
-                </div>
+                </div> */}
+
+
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('sakura-monaka')}
+                      onClick={()=>showModal('hojicha-banana-roulade')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Sakura Monaka</span>
-                      <span className="allergies">(D, N)</span>
+                      <span className="name">Hojicha Banana Roulade</span>
+                      <span className="allergies">(D, N, GF)</span>
                     </span>
                     <span className="price">22</span>
                   </div>
-                  <div className="description1">Red Bean Paste, Sakura Ice Cream,</div>
-                  <div className="description2">Sour Cherries</div>
+                  <div className="description1">Hojicha Sponge <span style={{color:'red'}}>Cake</span>, Roasted Banana Cream</div>
+                  <div className="description2"></div>
                 </div>
+
+
+
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('melon-parfait')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Melon Parfait</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">22</span>
+                  </div>
+                  <div className="description1">Seasonal Melon, Chamomille Jelly, </div>
+                  <div className="description2">Honey Ice Cream</div>
+                </div>
+
+
+
+
+
+
+
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('matcha-misu')}
@@ -78,7 +109,25 @@ export default function DessertMenu(){
                   <div className="description2"></div>
                 </div>
 
+
+
+
+
                 <div  className="dinner-menu-item"
+                      onClick={()=>showModal('black-sesame-cheesecake')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Kurogoma Cheesecake</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">22</span>
+                  </div>
+                  <div className="description1">Black Sesame Cheesecake, Blackberry Compote, </div>
+                  <div className="description2">Vanilla Ice Cream</div>
+                </div>
+
+                {/* <div  className="dinner-menu-item"
                       onClick={()=>showModal('miso-banana-profiterole')}
                 >
                   <div className="name-price">
@@ -90,7 +139,7 @@ export default function DessertMenu(){
                   </div>
                   <div className="description1">Caramelized Banana, Chocolate Foam,</div>
                   <div className="description2">Puffed Buckwheat</div>
-                </div>
+                </div> */}
 
               </div>{/* .right-column */}
             </div>{/* .section */}
@@ -210,47 +259,8 @@ export default function DessertMenu(){
               Friday June 19, 2026<br/><br/>
               </span>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Hōjicha Banana Roulade</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">??</span>
-                  </div>
-                  <div className="description1">Hōjicha Sponge Cake, Roasted Banana Cream, </div>
-                  <div className="description2">Caramelized Banana, Vanilla Ice Cream</div>
-                </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('melon-parfait')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Melon Parfait</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">??</span>
-                  </div>
-                  <div className="description1">Seasonal Melon, Chamomille Jelly, </div>
-                  <div className="description2">Honey Ice Cream</div>
-                </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('black-sesame-cheesecake')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Kurog<span style={{color:'red'}}>o</span>ma Cheesecake</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">??</span>
-                  </div>
-                  <div className="description1">Black Sesame Cheesecake, Blackberry Compote, </div>
-                  <div className="description2">Vanilla Ice Cream</div>
-                </div>
 
 
 
@@ -270,7 +280,7 @@ export default function DessertMenu(){
             your risk of foodborne illness. Kindly inform server of any dietary restriction.
           </div>
 
-       </div> {/* .small-paper */}
+       </div> .small-paper
 
 
 
@@ -306,16 +316,16 @@ export default function DessertMenu(){
                           <div className="name-price">
                             <span>
                               <span className="name">Hōjicha Banana Roulade</span>
-                              <span className="allergies"></span>
+                              <span className="allergies">(D, N, GF)</span>
                             </span>
-                            <span className="price">??</span>
+                            <span className="price">22</span>
                           </div>
-                          <div className="description1">Hōjicha Sponge Cake, Banana, </div>
-                          <div className="description2">Vanilla Ice Cream</div>
+                          <div className="description1">Hōjicha Sponge <span style={{color:'red'}}>Cake</span>, Roasted Banana Cream</div>
+                          <div className="description2"></div>
                           
                           <hr/>
                           <br/>
-                          hōjicha sponge cake<br/>
+                          hōjicha green tea sponge cake<br/>
                           roasted banana cream filling<br/>
                           caramelized banana<br/>
                           vanilla ice cream<br/>
@@ -344,7 +354,7 @@ export default function DessertMenu(){
                               <span className="name">Melon Parfait</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">??</span>
+                            <span className="price">22</span>
                           </div>
                           <div className="description1">Seasonal Melon, Chamomille Jelly, </div>
                           <div className="description2">Honey Ice Cream</div>
@@ -380,10 +390,10 @@ export default function DessertMenu(){
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Kurog<span style={{color:'red'}}>o</span>ma Cheesecake</span>
+                              <span className="name">Kurogoma Cheesecake</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">??</span>
+                            <span className="price">22</span>
                           </div>
                           <div className="description1">Black Sesame Cheesecake, Blackberry Compote, </div>
                           <div className="description2">Vanilla Ice Cream</div>

@@ -3578,8 +3578,8 @@ export default function Home() {
                           tosazu jelly<br/>
                           shredded radish<br/>
                           shiso leaf<br/>
-                          hanaho flowers<br/>
                           wakame seaweed<br/>
+                          hanaho flowers<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 

@@ -418,7 +418,7 @@ export default function Home() {
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Suzuki Tatsuta Age</span>
+                      <span className="name">Suzuki Tatsutaage</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">48</span>

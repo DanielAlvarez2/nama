@@ -80,12 +80,12 @@ export default function DessertMenu(){
                   <div className="name-price">
                     <span>
                       <span className="name">Melon Parfait</span>
-                      <span className="allergies"></span>
+                      <span className="allergies">(D, GF)</span>
                     </span>
                     <span className="price">22</span>
                   </div>
-                  <div className="description1">Seasonal Melon, Chamomille Jelly, </div>
-                  <div className="description2">Honey Ice Cream</div>
+                  <div className="description1">Chamomille Jelly, Honey Ice Cream, Meringue</div>
+                  <div className="description2"></div>
                 </div>
 
 
@@ -352,12 +352,12 @@ export default function DessertMenu(){
                           <div className="name-price">
                             <span>
                               <span className="name">Melon Parfait</span>
-                              <span className="allergies"></span>
+                              <span className="allergies">(D, GF)</span>
                             </span>
                             <span className="price">22</span>
                           </div>
-                          <div className="description1">Seasonal Melon, Chamomille Jelly, </div>
-                          <div className="description2">Honey Ice Cream</div>
+                          <div className="description1">Chamomille Jelly, Honey Ice Cream, Meringue</div>
+                          <div className="description2"></div>
                           
                           <hr/>
                           <br/>
@@ -365,7 +365,7 @@ export default function DessertMenu(){
                           chamomille jelly<br/>
                           chamomille granita<br/>
                           vanilla cream<br/>
-                          vanilla ice cream<br/>
+                          honey ice cream<br/>
                           milk foam<br/>
                           meringue sticks<br/>
                           <br/><br/>
@@ -499,6 +499,10 @@ export default function DessertMenu(){
                           
                           <hr/>
                           <br/>
+                          green tea sponge cake<br/>
+                          mascarpone cheese mousse<br/>
+                          chestnut cremeux<br/>
+                          matcha green tea powder on top<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}

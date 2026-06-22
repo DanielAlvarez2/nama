@@ -376,7 +376,7 @@ export default function Home() {
                     </span>
                     <span className="price">37</span>
                   </div>
-                  <div className="description1">Ebi, Spring Vegetables</div>
+                  <div className="description1">Ebi, Summer Vegetables</div>
                   <div className="description2"></div>
                 </div>
 
@@ -395,7 +395,28 @@ export default function Home() {
                 </div>
 
 
+
+
                 <div  className="dinner-menu-item"
+                      onClick={()=>showModal('suzuki-tatsuta-age')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Suzuki Tatsuta Age</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">48</span>
+                  </div>
+                  <div className="description1">Fried Branzino, Shiso Aioli</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+                {/* <div  className="dinner-menu-item"
                       onClick={()=>showModal('sakuramasu-katsu')}
                 >
                   <div className="name-price">
@@ -407,7 +428,7 @@ export default function Home() {
                   </div>
                   <div className="description1">Cherry Trout, Asparagus</div>
                   <div className="description2"></div>
-                </div>
+                </div> */}
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('lobster-tempura')}
@@ -1215,20 +1236,6 @@ export default function Home() {
 
 
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('suzuki-tatsuta-age')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Suzuki Tatsuta Age</span>
-                      <span className="allergies">(GF)</span>
-                    </span>
-                    <span className="price">48</span>
-                  </div>
-                  <div className="description1">Branzino, Shiso Mayo</div>
-                  <div className="description2"></div>
-                </div>
-
 
 
 
@@ -1238,12 +1245,12 @@ export default function Home() {
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Softshell Crab Kara Age</span>
+                      <span className="name">Soft Shell Crab Karaage</span>
                       <span className="allergies">(GF)</span>
                     </span>
                     <span className="price">54</span>
                   </div>
-                  <div className="description1">Softshell Crab, Tomato Relish</div>
+                  <div className="description1">Fried Soft Shell Crab, Tomato Relish</div>
                   <div className="description2"></div>
                 </div>
 
@@ -1969,7 +1976,7 @@ export default function Home() {
                     </span>
                     <span className="price">37</span>
                   </div>
-                  <div className="description1">Ebi, Spring Vegetables</div>
+                  <div className="description1">Ebi, Summer Vegetables</div>
                   <div className="description2"></div>  
                           <hr/>
                           <br/>
@@ -3617,19 +3624,19 @@ export default function Home() {
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Suzuki Tatsuta Age</span>
-                              <span className="allergies">(GF)</span>
+                              <span className="name">Suzuki Tatsutaage</span>
+                              <span className="allergies"></span>
                             </span>
                             <span className="price">48</span>
                           </div>
-                          <div className="description1">Branzino, Shiso Mayo</div>
+                          <div className="description1">Fried Branzino, Shiso Aioli</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
-                          crispy fried branzino<br/>
+                          crispy fried branzino ~7pcs<br/>
                           ginger soy marinade<br/>
-                          shiso mayo<br/>
+                          shiso aioli<br/>
                           shishito peppers<br/>
                           <br/><br/>
               </div>
@@ -3653,18 +3660,18 @@ export default function Home() {
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Softshell Crab Kara Age</span>
+                              <span className="name">Soft Shell Crab Karaage</span>
                               <span className="allergies">(GF)</span>
                             </span>
                             <span className="price">54</span>
                           </div>
-                          <div className="description1">Softshell Crab, Tomato Relish</div>
+                          <div className="description1">Fried Soft Shell Crab, Tomato Relish</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
-                          how many crabs?<br/>
                           deep fried live softshell crab<br/>
+                          ONE crab<br/>
                           potato starch<br/>
                           tomato relish<br/>
                           <br/><br/>

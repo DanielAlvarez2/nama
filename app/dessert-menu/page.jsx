@@ -36,20 +36,6 @@ export default function DessertMenu(){
 
               <div className="right-column">
               
-                {/* <div  className="dinner-menu-item"
-                      onClick={()=>showModal('yuzu-crepe-cake')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Yuzu Crêpe Cake</span>
-                      <span className="allergies">(D)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Yuzu Cream, Candied Zest</div>
-                  <div className="description2"></div>
-                </div> */}
-
 
 
                 <div  className="dinner-menu-item"
@@ -238,6 +224,146 @@ export default function DessertMenu(){
             your risk of foodborne illness. Kindly inform server of any dietary restriction.
           </div>
       </div>{/* .small-paper */}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div className='small-paper'>
+          <div className="menu-items">
+            <div className="section section-dessert">
+              <div className="left-column">Coffee & Tea</div>
+
+              <div className="right-column">
+              
+
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Drip Coffee</span>
+                    <span className="price">10</span>
+                  </div>
+                </div>
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Iced Coffee</span>
+                    <span className="price">11</span>
+                  </div>
+                </div>
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Espresso</span>
+                    <span className="price">8</span>
+                  </div>
+                </div>
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Cappuccino</span>
+                    <span className="price">12</span>
+                  </div>
+                </div>
+
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Latte</span>
+                    <span className="price">12</span>
+                  </div>
+                </div>
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Matcha Latte</span>
+                    <span className="price">12</span>
+                  </div>
+                </div>
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Iced Matcha Latte</span>
+                    <span className="price">15</span>
+                  </div>
+                </div>
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Matcha Bowl</span>
+                    <span className="price">16</span>
+                  </div>
+                </div>
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Iced Green Tea</span>
+                    <span className="price">15</span>
+                  </div>
+                </div>
+
+                <div  className="dinner-menu-item">
+                  <div className="name-price">
+                    <span className="name">Iced Black Tea</span>
+                    <span className="price">15</span>
+                  </div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      style={{marginBottom:'10px',marginTop:'50px'}}
+                >
+                  <div className="name-price">
+                    <span className="name">Kettl Teas</span>
+                    <span className="price">16</span>
+                  </div>
+                </div>
+                Sencha Jou<br/>
+                Genmaimatcha<br/>
+                Gyokuro<br/>
+                Houjicha<br/>
+                Yame Black<br/>
+                Yame Oolong<br/>
+
+                <br/><br/>
+
+                <div  className="dinner-menu-item"
+                      style={{marginBottom:'10px'}}
+                >
+                  <div className="name-price">
+                    <span className="name">Soba and Tis<span style={{color:'red'}}>s</span>anes</span>
+                    <span className="price">16</span>
+                  </div>
+                </div>
+                Soba Tea<br/>
+                Chamomile<br/>
+                Peppermint<br/>
+
+
+            </div>{/* .right-column */}
+          </div>{/* .section */}
+        </div>{/* .menu-items */}
+      </div>{/* .small-paper */}
 
 
 
@@ -254,6 +380,14 @@ export default function DessertMenu(){
 
 
 
+
+
+
+
+
+
+
+          
 
 
 

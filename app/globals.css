@@ -153,6 +153,9 @@ body,.webpage{
 .section{
  margin-bottom:30px
 }
+.mains .section{
+  margin-bottom:20px;
+}
 .legal{
  display: block;
  margin-top: auto;

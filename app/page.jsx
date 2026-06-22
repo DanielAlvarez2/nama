@@ -342,7 +342,23 @@ export default function Home() {
 
 
 
-      <div className="letter-paper">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="letter-paper mains">
 
 
                                             
@@ -411,6 +427,20 @@ export default function Home() {
                   <div className="description2"></div>
                 </div>
 
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('softshell-crab')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Soft Shell Crab Karaage</span>
+                      <span className="allergies">(GF)</span>
+                    </span>
+                    <span className="price">54</span>
+                  </div>
+                  <div className="description1">Fried Soft Shell Crab, Tomato Relish</div>
+                  <div className="description2"></div>
+                </div>
 
 
 
@@ -527,9 +557,35 @@ export default function Home() {
                     </span>
                     <span className="price">70</span>
                   </div>
-                  <div className="description1">Charcoal Grilled Duck Breast, Ramps Miso</div>
+                  <div className="description1">Charcoal Grilled Duck Breast, Shiso Miso</div>
                   <div className="description2"></div>
                 </div>
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('lamb-chops')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Moromi Lamb Sumibi Yaki</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">98</span>
+                  </div>
+                  <div className="description1">Moromi Marinated Lamb, Wasabi Oil</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('tenderloin')}
@@ -550,7 +606,7 @@ export default function Home() {
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">A5 Charcoal Grilled Sirloin</span>
+                      <span className="name">A5 Kobe Charcoal Grilled Sirloin</span>
                       <span className="allergies">(GF)</span>
                     </span>
                     <span className="price">205</span>
@@ -579,23 +635,52 @@ export default function Home() {
                     </span>
                     <span className="price">30</span>
                   </div>
-                  <div className="description1">Charcoal Grilled Tofu, Ramps Miso</div>
+                  <div className="description1">Charcoal Grilled Tofu, Shiso Miso</div>
                   <div className="description2"></div>
                 </div>
+
+
+
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('grilled-vegetables')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Grilled Spring Vegetables</span>
+                      <span className="name">Grilled Summer Vegetables</span>
                       <span className="allergies">(GF)</span>
                     </span>
                     <span className="price">35</span>
                   </div>
-                  <div className="description1">Sakura Salt, Tama Miso</div>
+                  <div className="description1">Yukari Salt, Shiso Miso</div>
                   <div className="description2"></div>
                 </div>
+
+
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('nasu-dengaku')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Nasu Dengaku</span>
+                      <span className="allergies">(V, GF)</span>
+                    </span>
+                    <span className="price">38</span>
+                  </div>
+                  <div className="description1">Grilled Eggplant, Saikyo Miso</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
 
 
 
@@ -746,16 +831,18 @@ export default function Home() {
                       <span className="name">Hotate (Scallop)</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">19</span>
+                    <span className="price" style={{color:'red'}}>$19/$15???</span>
                   </div>
                 </div>
 
+
+
                 <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('sakuramasu')}
+                      // onClick={()=>showModal('ebi')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Sakuramasu (Cherry Salmon)</span>
+                      <span className="name">Shimaaji (Striped Jack)</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">19</span>
@@ -763,14 +850,14 @@ export default function Home() {
                 </div>
 
                 <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('kasugodai')}
+                      // onClick={()=>showModal('ebi')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Kasugodai (Baby Sea Bream)</span>
+                      <span className="name">Samekarai (Sharkskin Flounder)</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">19</span>
+                    <span className="price">20</span>
                   </div>
                 </div>
 
@@ -803,7 +890,7 @@ export default function Home() {
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Hokkaido Uni (Sea Urchin)</span>
+                      <span className="name">Hokkaido Uni (Japanese Sea Urchin)</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">MP:35</span>
@@ -813,22 +900,13 @@ export default function Home() {
                 <div className="dinner-menu-item nigiri">
                   <div className="name-price">
                     <span>
-                      <span className="name">Chef's Selection of 5</span>
+                      <span className="name">Chef's Selection of 5/8</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">60</span>
+                    <span className="price">60/92</span>
                   </div>
                 </div>
 
-                <div className="dinner-menu-item nigiri">
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Chef's Selection of 8</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">92</span>
-                  </div>
-                </div>
 
 
 
@@ -836,6 +914,26 @@ export default function Home() {
 
               </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div className="section">
               <div className="left-column">巻物<br/>Sushi Roll</div>
@@ -902,12 +1000,12 @@ export default function Home() {
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Unagi Cucumber Maki</span>
+                      <span className="name">Eel Cucumber Maki</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">21</span>
                   </div>
-                  <div className="description1">Eel, Cucumber</div>
+                  <div className="description1"></div>
                   <div className="description2"></div>
                 </div>
 
@@ -1008,6 +1106,32 @@ export default function Home() {
                   <div className="description1">Napa Cabbage, Lobster Butter Aioli</div>
                   <div className="description2"></div>
                 </div>
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('spider-roll')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Spider Roll</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">45</span>
+                  </div>
+                  <div className="description1">Soft Shell Crab, Spicy Mayo</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('aman-ny-roll')}
@@ -1240,55 +1364,13 @@ export default function Home() {
 
 
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('softshell-crab')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Soft Shell Crab Karaage</span>
-                      <span className="allergies">(GF)</span>
-                    </span>
-                    <span className="price">54</span>
-                  </div>
-                  <div className="description1">Fried Soft Shell Crab, Tomato Relish</div>
-                  <div className="description2"></div>
-                </div>
 
 
 
 
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('lamb-chops')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Moromi Lamb Sumibiyaki</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">98</span>
-                  </div>
-                  <div className="description1">Charcoal Grilled Lamb Chops, Soy Koji Moromi</div>
-                  <div className="description2"></div>
-                </div>
 
 
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('nasu-dengaku')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Nasu Dengaku</span>
-                      <span className="allergies">(V, GF)</span>
-                    </span>
-                    <span className="price">38</span>
-                  </div>
-                  <div className="description1">Charcoal Grilled Eggplant, Saikyo Miso,</div>
-                  <div className="description2">Candied Walnuts</div>
-                </div>
 
 
 
@@ -1312,19 +1394,6 @@ export default function Home() {
 
 
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('spider-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Spider Roll</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">45</span>
-                  </div>
-                  <div className="description1">Softshell Crab, Napa Cabbage,</div>
-                  <div className="description2">Spicy Mayo, Teriyaki Sauce</div>
-                </div>
 
 
 
@@ -2263,8 +2332,8 @@ export default function Home() {
                   <div className="description2"></div>
                           <hr/>
                           <br/>
-                          5oz A5 kobe beef tenderloin<br/>
                           charcoal grilled<br/>
+                          5oz A5 kobe beef tenderloin<br/>
                           grilled vegetables
                           <br/><br/>
               </div>
@@ -2288,7 +2357,7 @@ export default function Home() {
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">A5 Charcoal Grilled Sirloin</span>
+                      <span className="name">A5 Kobe Charcoal Grilled Sirloin</span>
                       <span className="allergies">(GF)</span>
                     </span>
                     <span className="price">205</span>
@@ -2297,8 +2366,8 @@ export default function Home() {
                   <div className="description2"></div>
                           <hr/>
                           <br/>
-                          5oz A5 kobe beef sirloin<br/>
                           charcoal grilled<br/>
+                          5oz A5 kobe beef sirloin<br/>
                           grilled vegetables
                           <br/><br/>
               </div>
@@ -2327,12 +2396,12 @@ export default function Home() {
                     </span>
                     <span className="price">70</span>
                   </div>
-                  <div className="description1">Charcoal Grilled Duck Breast, Ramps Miso</div>
+                  <div className="description1">Charcoal Grilled Duck Breast, Shiso Miso</div>
                   <div className="description2"></div>
                           <hr/>
                           <br/>
                           charcoal grilled duck breast<br/>
-                          ramps miso<br/>
+                          shiso miso<br/>
                           grilled vegetables
                           <br/><br/>
               </div>
@@ -2361,12 +2430,12 @@ export default function Home() {
                     </span>
                     <span className="price">30</span>
                   </div>
-                  <div className="description1">Charcoal Grilled Tofu, Ramps Miso</div>
+                  <div className="description1">Charcoal Grilled Tofu, Shiso Miso</div>
                   <div className="description2"></div>
                           <hr/>
                           <br/>
                           charcoal grilled tofu<br/>
-                          ramps miso<br/>
+                          shiso miso<br/>
                           grilled vegetables
                           <br/><br/>
               </div>
@@ -2390,17 +2459,17 @@ export default function Home() {
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Grilled Spring Vegetables</span>
+                      <span className="name">Grilled Summer Vegetables</span>
                       <span className="allergies">(GF)</span>
                     </span>
                     <span className="price">35</span>
                   </div>
-                  <div className="description1">Sakura Salt, Tama Miso</div>
+                  <div className="description1">Yukari Salt, Shiso Miso</div>
                   <div className="description2"></div>
                           <hr/>
                           <br/>
-                          sakura salt<br/>
-                          nira miso (menu:"tama miso")
+                          yukari salt<br/>
+                          shiso miso
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -2802,7 +2871,7 @@ export default function Home() {
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Hokkaido Uni (Sea Urchin)</span>
+                      <span className="name">Hokkaido Uni (Japanese Sea Urchin)</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">MP:35</span>
@@ -3696,12 +3765,12 @@ export default function Home() {
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Moromi Lamb Sumibiyaki</span>
+                              <span className="name">Moromi Lamb Sumibi Yaki</span>
                               <span className="allergies"></span>
                             </span>
                             <span className="price">98</span>
                           </div>
-                          <div className="description1">Charcoal Grilled Lamb Chops, Soy Koji Moromi</div>
+                          <div className="description1">Moromi Marinated Lamb, Wasabi Oil</div>
                           <div className="description2"></div>
                           
                           <hr/>
@@ -3737,8 +3806,8 @@ export default function Home() {
                             </span>
                             <span className="price">38</span>
                           </div>
-                          <div className="description1">Charcoal Grilled Eggplant, Saikyo Miso,</div>
-                          <div className="description2">Candied Walnuts</div>
+                          <div className="description1">Grilled Eggplant, Saikyo Miso</div>
+                          <div className="description2"></div>
                           
                           <hr/>
                           <br/>
@@ -3812,13 +3881,13 @@ export default function Home() {
                             </span>
                             <span className="price">45</span>
                           </div>
-                          <div className="description1">Softshell Crab, Napa Cabbage, </div>
-                          <div className="description2">Spicy Mayo, Teriyaki Sauce</div>
+                          <div className="description1">Soft Shell Crab, Spicy Mayo</div>
+                          <div className="description2"></div>
                           
                           <hr/>
                           <br/>
                           5pcs<br/>
-                          softshell crab<br/>
+                          soft shell crab<br/>
                           pickled napa cabbage<br/>
                           spicy mayo<br/>
                           teriyaki sauce<br/>

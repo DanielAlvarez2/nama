@@ -220,7 +220,7 @@ export default function Home() {
                       <span className="name">Shimaaji Tataki</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">35</span>
+                    <span className="price">46</span>
                   </div>
                   <div className="description1">Seared Striped<span style={{color:'red'}}>&diams;</span>Jack, Tosazu Jelly</div>
                   <div className="description2"></div>
@@ -3544,7 +3544,7 @@ export default function Home() {
                               <span className="name">Shima Aji Tataki</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">35</span>
+                            <span className="price">46</span>
                           </div>
                           <div className="description1">Seared Striped Jack, Tosazu Jelly</div>
                           <div className="description2"></div>

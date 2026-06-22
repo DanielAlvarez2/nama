@@ -244,45 +244,6 @@ export default function DessertMenu(){
 
 
 
-      <div className="small-paper">
-
-
-                                            
-          <div className="menu-items">
-            <div className="section section-dessert">
-              <div className="left-column">新<br/>New</div>
-
-              <div className="right-column">
-              
-              <span style={{color:'red'}}>
-              The following menu items will go live on<br/>
-              Friday June 19, 2026<br/><br/>
-              </span>
-
-
-
-
-
-
-
-
-
-
-              </div>
-            </div>
-
-            
-           </div> {/* .menu-items */}
-
-          <div className="legal legal-dessert">
-            <div>(V) Vegan (N) Nuts (D) Dairy (GF) Gluten Free</div>
-            Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase<br/>
-            your risk of foodborne illness. Kindly inform server of any dietary restriction.
-          </div>
-
-       </div> {/* .small-paper */}
-
-
 
 
 

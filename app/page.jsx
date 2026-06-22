@@ -1238,6 +1238,54 @@ export default function Home() {
 
 
 
+
+
+
+
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('zaru-soba')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Zaru Soba</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">28</span>
+                  </div>
+                  <div className="description1">Cold Soba, Karajiru</div>
+                  <div className="description2"></div>
+                  <div className="upgrade">
+                    <span>
+                      <span className='upgrade-description'>with Vegetable Tempura</span>
+                      <span className='allergies'></span>
+                    </span>
+                    <span className="upgrade-price">38</span>
+                  </div>
+                  <div className="upgrade">
+                    <span>
+                      <span className='upgrade-description'>with Tempura Moriawase</span>
+                      <span className='allergies'></span>
+                    </span>
+                    <span className="upgrade-price">42</span>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('kake-soba')}
                 >
@@ -1246,37 +1294,30 @@ export default function Home() {
                       <span className="name">Kake Soba</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">26</span>
+                    <span className="price">28</span>
                   </div>
                   <div className="description1">Hot Soba, Amajiru</div>
                   <div className="description2"></div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Tempura Moriawase</span>
+                      <span className='upgrade-description'>with Kamo (Duck)</span>
                       <span className='allergies'></span>
                     </span>
-                    <span className="upgrade-price">39</span>
+                    <span className="upgrade-price">42</span>
                   </div>
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>with Vegetable Tempura</span>
                       <span className='allergies'></span>
                     </span>
-                    <span className="upgrade-price">35</span>
+                    <span className="upgrade-price">38</span>
                   </div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Aosa (Premium Seaweed)</span>
+                      <span className='upgrade-description'>with Tempura Moriawase</span>
                       <span className='allergies'></span>
                     </span>
-                    <span className="upgrade-price">34</span>
-                  </div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>with Kamo (Duck)</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">40</span>
+                    <span className="upgrade-price">42</span>
                   </div>
 
                 </div>
@@ -1330,92 +1371,6 @@ export default function Home() {
 
 
 
-
-      <div className="letter-paper">
-
-
-                                            
-          <div className="menu-items">
-            <div className="section">
-              <div className="left-column">新<br/>New</div>
-
-              <div className="right-column">
-              
-              <span style={{color:'red'}}>
-              The following menu items will go live on<br/>
-              Friday June 19, 2026<br/><br/>
-              </span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('zaru-soba')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Zaru Soba</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">28</span>
-                  </div>
-                  <div className="description1">Chilled Soba Noodles, Karajiru,</div>
-                  <div className="description2">Tokyo Negi</div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-              </div>
-            </div>
-
-            
-           </div> {/* .menu-items */}
-
-          <div className="legal">
-            <div>(V) Vegan (N) Nuts (D) Dairy (GF) Gluten Free</div>
-            <div>All prices are in USD and subject to a 20% service charge and 8.875% government tax</div>
-            <div>Please let us know if you have any allergies or special dietary requirements, or if you require any further information</div>
-            <div>Our choice of suppliers and local produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability</div>
-          </div>
-
-       </div> {/* .letter-paper */}
 
 
 
@@ -3481,37 +3436,30 @@ export default function Home() {
                       <span className="name">Kake Soba</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">26</span>
+                    <span className="price">28</span>
                   </div>
                   <div className="description1">Hot Soba, Amajiru</div>
                   <div className="description2"></div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Tempura Moriawase</span>
+                      <span className='upgrade-description'>with Kamo (Duck)</span>
                       <span className='allergies'></span>
                     </span>
-                    <span className="upgrade-price">39</span>
+                    <span className="upgrade-price">42</span>
                   </div>
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>with Vegetable Tempura</span>
                       <span className='allergies'></span>
                     </span>
-                    <span className="upgrade-price">35</span>
+                    <span className="upgrade-price">38</span>
                   </div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Aosa (Premium Seaweed)</span>
+                      <span className='upgrade-description'>with Tempura Moriawase</span>
                       <span className='allergies'></span>
                     </span>
-                    <span className="upgrade-price">34</span>
-                  </div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>with Kamo (Duck)</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">40</span>
+                    <span className="upgrade-price">42</span>
                   </div>
                           <hr/>
                           <br/>
@@ -3844,12 +3792,27 @@ export default function Home() {
                             </span>
                             <span className="price">28</span>
                           </div>
-                          <div className="description1">Chilled Soba Noodles, Karajiru,</div>
-                          <div className="description2">Tokyo Negi</div>
+                          <div className="description1">Cold Soba, Karajiru,</div>
+                          <div className="description2"></div>
+                          <div className="upgrade">
+                            <span>
+                              <span className='upgrade-description'>with Vegetable Tempura</span>
+                              <span className='allergies'></span>
+                            </span>
+                            <span className="upgrade-price">38</span>
+                          </div>
+                          <div className="upgrade">
+                            <span>
+                              <span className='upgrade-description'>with Tempura Moriawase</span>
+                              <span className='allergies'></span>
+                            </span>
+                            <span className="upgrade-price">42</span>
+                          </div>
+
                           
                           <hr/>
                           <br/>
-                          chilled soba/buckwheat noodles<br/>
+                          cold soba/buckwheat noodles<br/>
                           karajiru dipping sauce<br/>
                           tokyo negi scallions<br/>
                           wasabi<br/>

@@ -189,7 +189,7 @@ export default function Home() {
                     </span>
                     <span className="price">29</span>
                   </div>
-                  <div className="description1">Spring Vegetables, Tofu Dip</div>
+                  <div className="description1">Summer Vegetables, Tofu Dip</div>
                   <div className="description2"></div>
                 </div>
 
@@ -1718,7 +1718,7 @@ export default function Home() {
                     </span>
                     <span className="price">29</span>
                   </div>
-                  <div className="description1">Spring Vegetables, Tofu Dip</div>
+                  <div className="description1">Summer Vegetables, Tofu Dip</div>
                   <div className="description2"></div>                          <br/>
                           <hr/>
                           <br/>

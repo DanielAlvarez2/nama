@@ -280,7 +280,7 @@ export default function DessertMenu(){
             your risk of foodborne illness. Kindly inform server of any dietary restriction.
           </div>
 
-       </div> .small-paper
+       </div> {/* .small-paper */}
 
 
 

@@ -831,7 +831,7 @@ export default function Home() {
                       <span className="name">Hotate (Scallop)</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price" style={{color:'red'}}>$19/$15???</span>
+                    <span className="price">15</span>
                   </div>
                 </div>
 

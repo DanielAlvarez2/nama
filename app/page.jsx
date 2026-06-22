@@ -937,7 +937,7 @@ export default function Home() {
 
             <div className="section">
               <div className="left-column">巻物<br/>Sushi Roll</div>
-              <div className="right-column">
+              <div className="right-column sushi-rolls">
 
                 <div className="dinner-menu-item"
                       onClick={()=>showModal('kappa-maki')}
@@ -950,7 +950,6 @@ export default function Home() {
                     <span className="price">16</span>
                   </div>
                   <div className="description1">Cucumber</div>
-                  <div className="description2"></div>
                 </div>
 
                 <div  className="dinner-menu-item"

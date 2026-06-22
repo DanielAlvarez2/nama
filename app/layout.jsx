@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Nama @ Aman NYC",
+  title: "Nama @ Aman Hotel NYC",
   description: "Nama Restaurant @ Aman Hotel NYC",
 };
 

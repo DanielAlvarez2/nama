@@ -3612,7 +3612,7 @@ export default function Home() {
                           
                           <hr/>
                           <br/>
-                          flash fried eggplant<br/>
+                          flash fried eggplant served cold<br/>
                           soy konbu broth<br/>
                           ginger<br/>
                           chives<br/>

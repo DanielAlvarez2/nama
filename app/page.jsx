@@ -53,19 +53,6 @@ export default function Home() {
                   <div className="description2"></div>
                 </div>
 
-                {/* <div  className="dinner-menu-item"
-                      onClick={()=>showModal('surinagashi')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Surinagashi</span>
-                      <span className="allergies">(GF)</span>
-                    </span>
-                    <span className="price">18</span>
-                  </div>
-                  <div className="description1">Green Pea, Tamago Tofu, White Asparagus</div>
-                  <div className="description2"></div>
-                </div> */}
 
 
 
@@ -229,19 +216,6 @@ export default function Home() {
 
 
 
-                {/* <div  className="dinner-menu-item"
-                      onClick={()=>showModal('sakura-tai-ikomi')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Sakura Tai Ikomi</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">35</span>
-                  </div>
-                  <div className="description1">Spring Vegetable, Ume Jelly</div>
-                  <div className="description2"></div>
-                </div> */}
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('aigamo-roast')}
@@ -446,19 +420,6 @@ export default function Home() {
 
 
 
-                {/* <div  className="dinner-menu-item"
-                      onClick={()=>showModal('sakuramasu-katsu')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Sakuramasu Katsu</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">48</span>
-                  </div>
-                  <div className="description1">Cherry Trout, Asparagus</div>
-                  <div className="description2"></div>
-                </div> */}
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('lobster-tempura')}

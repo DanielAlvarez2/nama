@@ -3650,7 +3650,7 @@ export default function Home() {
                           
                           <hr/>
                           <br/>
-                          crispy fried branzino ~7pcs<br/>
+                          crispy fried branzino 8pcs<br/>
                           ginger soy marinade<br/>
                           shiso aioli<br/>
                           shishito peppers<br/>

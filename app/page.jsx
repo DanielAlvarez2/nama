@@ -26,7 +26,8 @@ export default function Home() {
       <nav>
         <Link href='/' style={{textDecoration:'underline',cursor:'default'}}>Dinner</Link> | 
         <Link href='/dessert-menu'>Dessert</Link> | 
-        <Link href='/drinks'>Drinks</Link>
+        <Link href='/drinks'>Drinks</Link> | 
+        <Link href='/sake'>Sake</Link>
       </nav>
     
       <div className="letter-paper">

@@ -348,3 +348,46 @@ h1{
 .bin-mobile{
   display:none;
 }
+@media(max-width:8.5in){
+  .sake-page{
+    width:95%;
+  }
+}
+@media(max-width:6.75in){
+  .bin-left{
+    display:none;
+  }
+  .bin-mobile{
+    display:block;
+  }
+  .sake{
+    flex-direction: column;
+    width:409px;
+  }
+  .sake-page{
+    height:auto;
+  }
+  .sake,
+  .sake-producer,
+  .sake-section,
+  .sake-content,
+  .sake-producer-name,
+  .sake-description{
+    width:75vw;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+@media(max-width:5.5in){
+  .sake,
+  .sake-producer,
+  .sake-section,
+  .sake-content,
+  .sake-producer-name,
+  .sake-description{
+    width:85vw;
+    /* background:pink; */
+    margin-left:auto;
+    margin-right:auto;
+  }
+}

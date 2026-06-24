@@ -16,12 +16,12 @@ export default function Sake(){
         <Link href='/drinks'>Drinks</Link>
       </nav>
     
-      <div className="letter-paper"
-            style={{backgroundImage:'url("scan-sake-1.jpg")',backgroundSize:'8.5in'}}
+      <div className="letter-paper sake-page"
+            // style={{backgroundImage:'url("scan-sake-1.jpg")',backgroundSize:'8.5in'}}
       >
         <div className='sake-content'
                 style={{
-                    color:'blue',
+                    // color:'blue',
                     // color:'transparent'
                 }}
         >
@@ -155,6 +155,58 @@ export default function Sake(){
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
 
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='left-bin'></span>Kurosawa</div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <span className='left-bin'>3209</span>
+                            <span className='sake-description'>Junmai Kimoto, Nagano</span>
+                            <span className='sake-size'>720 ml</span>
+                            <span className='sake-price'>90</span>
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='left-bin'></span>
+                            Taka
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <span className='left-bin'>3208</span>
+                            <span className='sake-description'>Noble Arrow Tokubetsu Junmai, Yamaguchi</span>
+                            <span className='sake-size'>720 ml</span>
+                            <span className='sake-price'>135</span>
+                        </div>{/* .sake */}
+                        <div className='sake'>
+                            <span className='left-bin'>3205</span>
+                            <span className='sake-description'>Noble Arrow Namazake Tokubetsu Junmai, Yamaguchi</span>
+                            <span className='sake-size'>720 ml</span>
+                            <span className='sake-price'>145</span>
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='left-bin'></span>
+                            Tenzan
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <span className='left-bin'>3207</span>
+                            <span className='sake-description'>Shichida Natsujun, Yamagata</span>
+                            <span className='sake-size'>720 ml</span>
+                            <span className='sake-price'>170</span>
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='left-bin'></span>
+                            Uchigasaki
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <span className='left-bin'>3201</span>
+                            <span className='sake-description'>Hoyo Sawayaka Summer Breeze Junmai, Miyagi</span>
+                            <span className='sake-size'>720 ml</span>
+                            <span className='sake-price'>85</span>
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
 
 
             </div>{/* .sake-section */}
@@ -166,12 +218,12 @@ export default function Sake(){
 
 
         </div>{/* .sake-content */}
+            <footer>13</footer>
       
       
       
       
-      
-      </div>{/* .letter-paper */}
+      </div>{/* .letter-paper .sake-page */}
 
     {/* .webpage */}
     </div>        

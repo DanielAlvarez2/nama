@@ -337,6 +337,427 @@ export default function Sake(){
       
       </div>{/* .letter-paper .sake-page */}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="letter-paper sake-page"
+            // style={{backgroundImage:'url("scan-sake-1.jpg")',backgroundSize:'8.5in'}}
+      >
+        <div className='sake-content'
+                style={{
+                    // color:'blue',
+                    // color:'transparent'
+                }}
+        >
+
+
+            <div className='sake-section'>
+                <h3>DAIGINJO</h3>
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Dewazakura Shuzo
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3600</span>
+                                <span className='sake-description'>
+                                    Sakura Boy Mini-Daiginjo, Yamagata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3600</span>
+                                <span className='sake-size'>300 ml</span>
+                                <span className='sake-price'>85</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+                    
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Kokuryu
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3300</span>
+                                <span className='sake-description'>
+                                    Ryu Gold Dragon, Fukui
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3300</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>395</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Midorikawa
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3301</span>
+                                <span className='sake-description'>
+                                    Daiginjo, Niigata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3301</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>750</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Suehiro
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3302</span>
+                                <span className='sake-description'>
+                                    Ken, Fukushima
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3302</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>335</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+            </div>{/* .sake-section */}
+        
+
+            <div className='sake-section'>
+                <h3>JUNMAI DAIGINJO</h3>
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Akabu Shuzo
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3404</span>
+                                <span className='sake-description'>
+                                    Gokujo no Kire, Iwate
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3404</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>655</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Asahi Shuzo
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3411</span>
+                                <span className='sake-description'>
+                                    Senshin Junmai Daiginjo, Niigata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3411</span>
+                                <span className='sake-size'>750 ml</span>
+                                <span className='sake-price'>365</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3405</span>
+                                <span className='sake-description'>
+                                    Souju Kubota Seppou, Niigata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3405</span>
+                                <span className='sake-size'>500 ml</span>
+                                <span className='sake-price'>200</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Daishichi
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3416</span>
+                                <span className='sake-description'>
+                                    Minowamon Kimoto, Fukushima
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3416</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>250</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Dassai
+                        </div>{/* .sake-producer-name */}
+
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3418</span>
+                                <span className='sake-description'>
+                                    Dassai 23 Hayata, Yamaguchi
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3418</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>715</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3606</span>
+                                <span className='sake-description'>
+                                    Dassai 23 Junmai Daiginjo, Yamaguchi
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3606</span>
+                                <span className='sake-size'>300 ml</span>
+                                <span className='sake-price'>135</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3400</span>
+                                <span className='sake-description'>
+                                    Dassai 23 Junmai Daiginjo, Yamaguchi
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3400</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>295</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Dewazakura Shuzo
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3421</span>
+                                <span className='sake-description'>
+                                    Captain<span style={{color:'red'}}>'</span>s Table Junmai Daiginjo Genshu, Yamagata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3421</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>315</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Doi Shuzō
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3604</span>
+                                <span className='sake-description'>
+                                    Takatenjin Soul of the Sensei Junmai Daiginjo, Shizuoka
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3604</span>
+                                <span className='sake-size'>300 ml</span>
+                                <span className='sake-price'>90</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Fukumitsuya
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3406</span>
+                                <span className='sake-description'>
+                                    Kagatobi Sennichi Kakoi Junmai Daiginjo Koshu, Ishikawa
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3406</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>335</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Hakkaisan
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3420</span>
+                                <span className='sake-description'>
+                                    45 Kouwa Gura, Niigata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3420</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>450</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3422</span>
+                                <span className='sake-description'>
+                                    Kongoshin Winter Black Limited Edition, Niigata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3422</span>
+                                <span className='sake-size'>800 ml</span>
+                                <span className='sake-price'>895</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Hamakawa
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3414</span>
+                                <span className='sake-description'>
+                                    Bijofu Yumebakari Dreamweaver Junmai Daiginjo, Kōchi
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3414</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>385</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Higashiyama Shuzo
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3603</span>
+                                <span className='sake-description'>
+                                    Konteki Pearls of Simplicity Junmai Daiginjo, Kyoto
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3603</span>
+                                <span className='sake-size'>300 ml</span>
+                                <span className='sake-price'>75</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Imanishi
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3413</span>
+                                <span className='sake-description'>
+                                    Mimurosugi Yamadanishiki Junmai Daiginjo, Nara
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3413</span>
+                                <span className='sake-size'>7200 ml</span>
+                                <span className='sake-price'>195</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Isojiman Shuzo
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake'>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3407</span>
+                                <span className='sake-description'>
+                                    50 Junmai Daiginjo, Shizuoka
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3407</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>360</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+
+            </div>{/* .sake-section */}
+        
+        
+        
+        
+
+
+
+
+
+        </div>{/* .sake-content */}
+        
+        <footer>14</footer>
+      
+      
+      
+      
+      </div>{/* .letter-paper .sake-page */}
+
+
     {/* .webpage */}
     </div>        
     )

@@ -327,12 +327,12 @@ h1{
   text-align: center;
   font-size: 16px;
   letter-spacing: -1px;
-  position:absolute;
-  bottom:40px;
   width:100%;
+  margin-top: auto;
 }
 .sake-page{
-  position:relative;
+  display: flex;
+  flex-direction: column;
 }
 .sake{
   display:flex;

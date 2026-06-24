@@ -83,7 +83,7 @@ export default function Sake(){
                             <span className='sake-price'>165</span>
                         </div>{/* .sake */}
                         <div className='sake'>
-                            <span className='left-bin'>3103</span>
+                            <span className='left-bin'>3102</span>
                             <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu Namazake, Shimane Prefecture</span>
                             <span className='sake-size'>720 ml</span>
                             <span className='sake-price'>175</span>

@@ -132,6 +132,9 @@ body,.webpage{
  position: relative;
  line-height: 15.653px;
 }
+.sake-page{
+  padding-top:0px;
+}
 .small-paper{
   height:8.5in;
   width:5in;

@@ -652,7 +652,7 @@ export default function Sake(){
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3404</span>
                                 <span className='sake-description'>
-                                    Gokujo no Kire <span style='typo'>Junmai Daiginjo</span>, Iwate
+                                    Gokujo no Kire <span className='typo'>Junmai Daiginjo</span>, Iwate
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

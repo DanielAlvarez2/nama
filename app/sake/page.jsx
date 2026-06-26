@@ -25,7 +25,7 @@ export default function Sake(){
 
         <div id='sake-modal'>
             <div id='sake-modal-content' style={{width:'6in'}}>
-                <AiTwotoneCloseCircle   size='30'
+                <AiTwotoneCloseCircle   
                                         className='close-button'
                                         onClick={closeModal} />
                 <div style={{width:'100%',textAlign:'center'}}>

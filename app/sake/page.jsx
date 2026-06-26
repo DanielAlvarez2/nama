@@ -577,7 +577,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Midorikawa
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'DAIGINJO',
+                                                                    'Midorikawa',
+                                                                    '3301',
+                                                                    '720 ml',
+                                                                    '750',
+                                                                    'Daiginjo, Niigata',
+                                                                    'midorikawa.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3301</span>
                                 <span className='sake-description'>

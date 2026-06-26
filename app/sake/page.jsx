@@ -334,10 +334,19 @@ export default function Sake(){
                                 <span className='sake-price'>295</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Kokuryu',
+                                                                    '3206',
+                                                                    '720 ml',
+                                                                    '135',
+                                                                    'Kuzuryu Junmai <span class="typo">Nine-Headed Dragon</span>, Fukui',
+                                                                    'nine-headed-dragon.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3206</span>
-                                <span className='sake-description'>Kuzuryu Junmai, Fukui</span>
+                                <span className='sake-description'>Kuzuryu Junmai <span className='typo'>Nine-Headed Dragon</span>, Fukui</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3206</span>

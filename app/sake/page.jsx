@@ -98,7 +98,7 @@ export default function Sake(){
                                                                         '750 ml',
                                                                         '425',
                                                                         'Masumi Sparkling Grand Prix, Nagano',
-                                                                        '/masumi.jpg'
+                                                                        'masumi.jpg'
                                                         )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3001</span>

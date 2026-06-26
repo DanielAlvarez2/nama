@@ -260,7 +260,7 @@ export default function Sake(){
 
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
-                        Kato <span style={{color:'red',fontSize:'inherit'}}>Sake</span> Works
+                            Kato <span style={{color:'red',fontSize:'inherit'}}>Sake</span> Works
                         </div>{/* .sake-producer-name */}
                         <div className='sake'>
                             <div className='sake-flexbox-left'>
@@ -290,7 +290,15 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                         Kenbishi
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Kenbishi',
+                                                                    '3204',
+                                                                    '720 ml',
+                                                                    '150',
+                                                                    'Mizuho Junmai, Hyōgo',
+                                                                    'kenbishi-mizuho.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3204</span>
                                 <span className='sake-description'>Mizuho Junmai, Hyōgo</span>

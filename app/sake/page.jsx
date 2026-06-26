@@ -695,8 +695,8 @@ export default function Sake(){
                                                                     'Asahi Shuzo',
                                                                     '3405',
                                                                     '500 ml',
-                                                                    '200'
-                                                                    ,'Soujo Kubota Seppou <span class="typo">(Snow Peak) Junmai Daiginjo</span>, Niigata',
+                                                                    '200',
+                                                                    'Soujo Kubota Seppou <span class="typo">(Snow Peak) Junmai Daiginjo</span>, Niigata',
                                                                     'asahi-soujo.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>

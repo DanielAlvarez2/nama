@@ -18,6 +18,14 @@ export default function Sake(){
     }
     function closeModal(){
         document.querySelector('#sake-modal').style.display = 'none'
+        document.querySelector('#sake-modal-section').innerText = ''
+        document.querySelector('#sake-modal-producer-name').innerText = ''
+        document.querySelector('.sake-modal-bin-left').innerText = ''
+        document.querySelector('.sake-modal-bin-mobile').innerText = ''
+        document.querySelector('.sake-modal-size').innerText = ''
+        document.querySelector('.sake-modal-price').innerText = ''
+        document.querySelector('.sake-modal-description').innerText = ''
+        document.querySelector('#sake-modal-image').src = ''
     }
 
     return(
@@ -116,10 +124,18 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Kamoizumi
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'NIGORI',
+                                                                    'Kamoizumi',
+                                                                    '3100',
+                                                                    '500 ml',
+                                                                    '90',
+                                                                    'Summer Snow - Nigori Ginjo, Hiroshima',
+                                                                    'summer-snow.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3100</span>
-                                <span className='sake-description'>Summer Snow - Nigori Ginjo, Hiroshima</span>
+                                <span className='sake-description'>Summer Snow <span className='typo'>-</span> Nigori Ginjo, Hiroshima</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3100</span>

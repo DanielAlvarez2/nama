@@ -652,7 +652,7 @@ export default function Sake(){
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3404</span>
                                 <span className='sake-description'>
-                                    Gokujo no Kire, Iwate
+                                    Gokujo no Kire <span style='typo'>Junmai Daiginjo</span>, Iwate
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -696,13 +696,13 @@ export default function Sake(){
                                                                     '3405',
                                                                     '500 ml',
                                                                     '200'
-                                                                    ,'Soujo Kubota Seppou <span class="typo">(Snow Peak)</span>, Niigata',
+                                                                    ,'Soujo Kubota Seppou <span class="typo">(Snow Peak) Junmai Daiginjo</span>, Niigata',
                                                                     'asahi-soujo.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3405</span>
                                 <span className='sake-description'>
-                                    Soujo Kubota Seppou <span className='typo'>(Snow Peak)</span>, Niigata
+                                    Soujo Kubota Seppou <span className='typo'>(Snow Peak) Junmai Daiginjo</span>, Niigata
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

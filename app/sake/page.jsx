@@ -149,7 +149,15 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Kikusui
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'NIGORI',
+                                                                    'Kikusui',
+                                                                    '3602',
+                                                                    '300 ml',
+                                                                    '60',
+                                                                    'Perfect Snow Nigori Genshu, Niigata',
+                                                                    'perfect-snow.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3602</span>
                                 <span className='sake-description'>Perfect Snow Nigori Genshu, Niigata</span>

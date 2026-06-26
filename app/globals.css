@@ -421,4 +421,5 @@ h1{
   max-height:55vh;
   margin:0 auto;
   display: inline-block;
+  border-radius: 10px;
 }

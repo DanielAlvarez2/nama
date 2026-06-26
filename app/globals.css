@@ -36,7 +36,9 @@
  font-size:11px;
  letter-spacing: 0.5px;
 }
-.sake-content *{
+.sake-content *,
+#sake-modal *
+{
   font-family: serif;
 }
 .modal{
@@ -282,14 +284,18 @@ h1{
   margin:40px auto 0;
   /* margin-left:180px; */
 }
-.sake-content h2{
+.sake-content h2,
+#sake-modal h2{
   text-align: center;
-  font-size:16px;
+  font-size:17px;
+  /* color:red; */
   font-weight: 100;
   margin-bottom: 26px;
 }
-.sake-section h3{
+.sake-section h3,
+#sake-modal h3{
   text-align: center;
+  /* width:100%; */
   font-size:15px;
   font-weight: 100;
   margin-bottom: 15px;
@@ -396,4 +402,23 @@ h1{
     margin-left:auto;
     margin-right:auto;
   }
+}
+#sake-modal{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100vh;
+  background:#f3eee7;
+  z-index: 100;
+  display: none;
+  place-content: center;
+}
+.sake-webpage{
+  position:relative;
+}
+#sake-modal-image{
+  max-width:95%;
+  max-height:75vh;
+  margin:0 auto;
+  display: inline-block;
 }

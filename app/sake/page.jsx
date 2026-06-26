@@ -174,7 +174,15 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Nagurayama
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'NIGORI',
+                                                                    'Nagurayama',
+                                                                    '3101',
+                                                                    '720 ml',
+                                                                    '115',
+                                                                    'Snow White Nigori Ginjo, Fukushima',
+                                                                    'snow-white.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3101</span>
                                 <span className='sake-description'>Snow White Nigori Ginjo, Fukushima</span>

@@ -237,7 +237,7 @@ export default function Sake(){
                         <div className='sake'>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3211</span>
-                                <span className='sake-description'>Amanoto Heaven's Door Tokubetsu, Akita</span>
+                                <span className='sake-description'>Amanoto Heaven's Door Tokubetsu <span className='typo'>Junmai</span>, Akita</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3211</span>
@@ -248,7 +248,7 @@ export default function Sake(){
                         <div className='sake'>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3213</span>
-                                <span className='sake-description'>Amanoto Heaven's Door Tokubetsu Namazake, Akita</span>
+                                <span className='sake-description'>Amanoto Heaven's Door Tokubetsu <span className='typo'>Junmai</span> Namazake, Akita</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3213</span>
@@ -276,7 +276,7 @@ export default function Sake(){
                         <div className='sake'>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3215</span>
-                                <span className='sake-description'>Shizuku Droplets, New York</span>
+                                <span className='sake-description'>Shizuku Droplets <span className='typo'>Junmai</span>, New York</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3215</span>
@@ -341,12 +341,12 @@ export default function Sake(){
                                                                     '3206',
                                                                     '720 ml',
                                                                     '135',
-                                                                    'Kuzuryu Junmai <span class="typo">Nine-Headed Dragon</span>, Fukui',
+                                                                    'Kuzuryu <span class="typo">Nine-Headed Dragon</span> Junmai, Fukui',
                                                                     'nine-headed-dragon.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3206</span>
-                                <span className='sake-description'>Kuzuryu Junmai <span className='typo'>Nine-Headed Dragon</span>, Fukui</span>
+                                <span className='sake-description'>Kuzuryu <span className='typo'>Nine-Headed Dragon</span> Junmai, Fukui</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3206</span>
@@ -556,13 +556,13 @@ export default function Sake(){
                                                                     '3300',
                                                                     '720 ml',
                                                                     '395',
-                                                                    'Ryu Gold Dragon, Fukui',
+                                                                    'Ryu Gold Dragon <span class="typo">Daiginjo</span>, Fukui',
                                                                     'gold-dragon.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3300</span>
                                 <span className='sake-description'>
-                                    Ryu Gold Dragon, Fukui
+                                    Ryu Gold Dragon <span className='typo'>Daiginjo</span>, Fukui
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -612,13 +612,13 @@ export default function Sake(){
                                                                     '3302',
                                                                     '720 ml',
                                                                     '335',
-                                                                    'Ken, Fukushima',
+                                                                    'Ken <span class="typo">Daiginjo</span>, Fukushima',
                                                                     'suehiro-ken.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3302</span>
                                 <span className='sake-description'>
-                                    Ken, Fukushima
+                                    Ken <span className='typo'>Daiginjo</span>, Fukushima
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

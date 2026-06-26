@@ -12,7 +12,7 @@ export default function Sake(){
         document.querySelector('.sake-modal-bin-mobile').innerText = bin
         document.querySelector('.sake-modal-size').innerText = size
         document.querySelector('.sake-modal-price').innerText = price
-        document.querySelector('.sake-modal-description').innerText = description
+        document.querySelector('.sake-modal-description').innerHTML = description
         document.querySelector('#sake-modal-image').src = image
 
     }
@@ -24,7 +24,7 @@ export default function Sake(){
         document.querySelector('.sake-modal-bin-mobile').innerText = ''
         document.querySelector('.sake-modal-size').innerText = ''
         document.querySelector('.sake-modal-price').innerText = ''
-        document.querySelector('.sake-modal-description').innerText = ''
+        document.querySelector('.sake-modal-description').innerHTML = ''
         document.querySelector('#sake-modal-image').src = ''
     }
 
@@ -315,10 +315,18 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Kokuryu
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Kokuryu',
+                                                                    '3303',
+                                                                    '720 ml',
+                                                                    '295',
+                                                                    'Kuzuryu Silk Dragon <span class="typo">Daiginjo</span>, Fukui',
+                                                                    'silk-dragon.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3303</span>
-                                <span className='sake-description'>Kuzuryu Silk Dragon, Fukui</span>
+                                <span className='sake-description'>Kuzuryu Silk Dragon <span className='typo'>Daiginjo</span>, Fukui</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3303</span>

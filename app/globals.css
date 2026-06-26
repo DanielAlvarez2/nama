@@ -424,6 +424,6 @@ h1{
   border-radius: 10px;
 }
 .typo{
-  color:red;
+  color:red !important;
   font-size:inherit;
 }

@@ -7,7 +7,7 @@ export default function Sake(){
     function openModal(section,producer,bin,size,price,description,image){
         document.querySelector('#sake-modal').style.display = 'grid'
         document.querySelector('#sake-modal-section').innerText = section
-        document.querySelector('#sake-modal-producer-name').innerText = producer
+        document.querySelector('#sake-modal-producer-name').innerHTML = producer
         document.querySelector('.sake-modal-bin-left').innerText = bin
         document.querySelector('.sake-modal-bin-mobile').innerText = bin
         document.querySelector('.sake-modal-size').innerText = size
@@ -19,7 +19,7 @@ export default function Sake(){
     function closeModal(){
         document.querySelector('#sake-modal').style.display = 'none'
         document.querySelector('#sake-modal-section').innerText = ''
-        document.querySelector('#sake-modal-producer-name').innerText = ''
+        document.querySelector('#sake-modal-producer-name').innerHTML = ''
         document.querySelector('.sake-modal-bin-left').innerText = ''
         document.querySelector('.sake-modal-bin-mobile').innerText = ''
         document.querySelector('.sake-modal-size').innerText = ''
@@ -377,7 +377,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Taka
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Taka',
+                                                                    '3208',
+                                                                    '720 ml',
+                                                                    '135',
+                                                                    'Noble Arrow Tokubetsu Junmai, Yamaguchi',
+                                                                    'noble-arrow.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3208</span>
                                 <span className='sake-description'>Noble Arrow Tokubetsu Junmai, Yamaguchi</span>
@@ -388,6 +397,7 @@ export default function Sake(){
                                 <span className='sake-price'>135</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
+                        
                         <div className='sake'>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3205</span>

@@ -521,7 +521,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Dewazakura Shuzo
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'DAIGINJO',
+                                                                    'Dewazakura Shuzo',
+                                                                    '3600',
+                                                                    '300 ml',
+                                                                    '85',
+                                                                    'Sakura Boy Mini-Daiginjo, Yamagata',
+                                                                    'sakura-boy.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3600</span>
                                 <span className='sake-description'>

@@ -1042,13 +1042,13 @@ export default function Sake(){
                                                                     '3407',
                                                                     '720 ml',
                                                                     '360',
-                                                                    '<span class="typo">Pride of Coast</span> 50 Junmai Daiginjo, Shizuoka',
+                                                                    '<span class="typo">Pride of Coast</span> <span style="text-decoration:line-through">50</span> Junmai Daiginjo 50, Shizuoka',
                                                                     'pride-of-coast.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3407</span>
                                 <span className='sake-description'>
-                                    <span className='typo'>Pride of Coast</span> 50 Junmai Daiginjo, Shizuoka
+                                    <span className='typo'>Pride of Coast</span> <span style={{textDecoration:'line-through'}}>50</span> Junmai Daiginjo 50, Shizuoka
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

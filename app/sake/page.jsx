@@ -923,11 +923,20 @@ export default function Sake(){
                                 <span className='sake-price'>450</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Hakkaisan',
+                                                                    '3422',
+                                                                    '800 ml',
+                                                                    '895',
+                                                                    'Kongoshin Winter Black Limited Edition <span class="typo">Junmai Daiginjo</span>, Niigata',
+                                                                    'kongoshin.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3422</span>
                                 <span className='sake-description'>
-                                    Kongoshin Winter Black Limited Edition, Niigata
+                                    Kongoshin Winter Black Limited Edition <span className='typo'>Junmai Daiginjo</span>, Niigata
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

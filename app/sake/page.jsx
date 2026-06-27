@@ -1193,11 +1193,20 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Kiyasho Shuzo
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Kiyasho Shuzo',
+                                                                    '3415',
+                                                                    '720 ml',
+                                                                    '595',
+                                                                    'Jikon Nabari <span class="typo">Junmai Daiginjo</span>, Mie',
+                                                                    'jikon-nabari.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3415</span>
                                 <span className='sake-description'>
-                                    Jikon Nabari, Mie
+                                    Jikon Nabari <span className='typo'>Junmai Daiginjo</span>, Mie
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1212,11 +1221,20 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Kojima
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Kojima',
+                                                                    '3401',
+                                                                    '720 ml',
+                                                                    '440',
+                                                                    'Toko Ultraluxe <span class="typo">Junmai Daiginjo Fukurotsuri</span>, Yamagata',
+                                                                    'ultraluxe.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3401</span>
                                 <span className='sake-description'>
-                                    Toko Ultraluxe, Yamagata
+                                    Toko Ultraluxe <span className='typo'>Junmai Daiginjo Fukurotsuri</span>, Yamagata
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1231,7 +1249,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Niizawa
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Niizawa',
+                                                                    '7041',
+                                                                    '720 ml',
+                                                                    '150',
+                                                                    'Aman Hakurakusei Junmai Daiginjo, Miyagi',
+                                                                    'aman-junmai-daiginjo.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>7041</span>
                                 <span className='sake-description'>

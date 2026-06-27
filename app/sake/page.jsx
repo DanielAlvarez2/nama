@@ -746,11 +746,19 @@ export default function Sake(){
                             Dassai
                         </div>{/* .sake-producer-name */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Dassai',
+                                                                    '3418',
+                                                                    '720 ml',
+                                                                    '715',
+                                                                    'Dassai 23 Hayata <span class="typo">Junmai Daiginjo</span>, Yamaguchi',
+                                                                    'dassai-23-hayata.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3418</span>
                                 <span className='sake-description'>
-                                    Dassai 23 Hayata, Yamaguchi
+                                    Dassai 23 Hayata <span className='typo'>Junmai Daiginjo</span>, Yamaguchi
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

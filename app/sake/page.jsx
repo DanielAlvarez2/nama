@@ -1900,7 +1900,7 @@ export default function Sake(){
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>4018</span>
                                 <span className='sake-description'>
-                                    Black Samurai, Toyama
+                                    Black Samurai <span className='typo'>Junmai Daiginjo</span>, Toyama
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1975,7 +1975,7 @@ export default function Sake(){
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>4005</span>
                                 <span className='sake-description'>
-                                    Iwa 5 Assemblage 5, Toyama
+                                    Iwa 5 Assemblage 5 <span className='typo'>Junmai Daiginjo</span>, Toyama
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

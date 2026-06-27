@@ -979,7 +979,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Higashiyama Shuzo
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Higashiyama Shuzo',
+                                                                    '3603',
+                                                                    '300 ml',
+                                                                    '75',
+                                                                    'Konteki Pearls of Simplicity Junmai Daiginjo, Kyoto',
+                                                                    'pearls-of-simplicity.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3603</span>
                                 <span className='sake-description'>

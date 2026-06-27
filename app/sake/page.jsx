@@ -10,7 +10,7 @@ export default function Sake(){
         document.querySelector('#sake-modal-producer-name').innerHTML = producer
         document.querySelector('.sake-modal-bin-left').innerText = bin
         document.querySelector('.sake-modal-bin-mobile').innerText = bin
-        document.querySelector('.sake-modal-size').innerText = size
+        document.querySelector('.sake-modal-size').innerHTML = size
         document.querySelector('.sake-modal-price').innerText = price
         document.querySelector('.sake-modal-description').innerHTML = description
         document.querySelector('#sake-modal-image').src = image
@@ -22,7 +22,7 @@ export default function Sake(){
         document.querySelector('#sake-modal-producer-name').innerHTML = ''
         document.querySelector('.sake-modal-bin-left').innerText = ''
         document.querySelector('.sake-modal-bin-mobile').innerText = ''
-        document.querySelector('.sake-modal-size').innerText = ''
+        document.querySelector('.sake-modal-size').innerHTML = ''
         document.querySelector('.sake-modal-price').innerText = ''
         document.querySelector('.sake-modal-description').innerHTML = ''
         document.querySelector('#sake-modal-image').src = ''
@@ -1275,13 +1275,22 @@ export default function Sake(){
 
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
-                            Ohmine Shuzo<span style={{color:'red',fontSize:'inherit'}}>u</span>
+                            Ohmine Shuzo<span className='typo'>u</span>
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Ohmine Shuzo',
+                                                                    '3417',
+                                                                    '720 ml',
+                                                                    '550',
+                                                                    '2<span class="typo">_</span>Grain <span class="typo">Yamadanishiki</span>, Yamaguchi',
+                                                                    '2-grain.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3417</span>
                                 <span className='sake-description'>
-                                    2Grain <span style={{color:'red',fontSize:'inherit'}}>Yamadanishiki</span>, Yamaguchi
+                                    2<span className='typo'>_</span>Grain <span className='typo'>Yamadanishiki</span>, Yamaguchi
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1296,11 +1305,20 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Sanyohai
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Sanyohai',
+                                                                    '3409',
+                                                                    '720 ml',
+                                                                    '415',
+                                                                    '<span style="text-decoration:line-through"}}>Banshu</span> <span class="typo">Bansyu</span> Ikkon <span class="typo">Yamada Nishiki</span> Junmai Daiginjo, Hyōgo',
+                                                                    'banshu-ikkon.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3409</span>
                                 <span className='sake-description'>
-                                    Banshu Ikkon <span style={{color:'red',fontSize:'inherit'}}>Yamada Nishiki</span> Junmai Daiginjo, Hyōgo
+                                    <span style={{textDecoration:'line-through'}}>Banshu</span> <span className='typo'>Bansyu</span> Ikkon <span className='typo'>Yamada Nishiki</span> Junmai Daiginjo, Hyōgo
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1316,11 +1334,19 @@ export default function Sake(){
                             Shimizu Seizaburo Shoten
                         </div>{/* .sake-producer-name */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Shimizu Seizaburo Shoten',
+                                                                    '3402',
+                                                                    '720 ml',
+                                                                    '575',
+                                                                    'Zaku Selection N Junmai Daiginjo <span class="typo">Genshu</span>, Mie',
+                                                                    'selection-n.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3402</span>
                                 <span className='sake-description'>
-                                    Zaku Selection N Junmai Daiginjo, Mie
+                                    Zaku Selection N Junmai Daiginjo <span className='typo'>Genshu</span>, Mie
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1330,7 +1356,15 @@ export default function Sake(){
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Shimizu Seizaburo Shoten',
+                                                                    '3408',
+                                                                    '<span class="typo">750 ml</span>',
+                                                                    '305',
+                                                                    'Zaku Kaizan Ittekisui Junmai Daiginjo, Mie',
+                                                                    'kaizan-ittekisui.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3408</span>
                                 <span className='sake-description'>
@@ -1339,16 +1373,24 @@ export default function Sake(){
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3408</span>
-                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-size typo'>750 ml</span>
                                 <span className='sake-price'>305</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Shimizu Seizaburo Shoten',
+                                                                    '7042',
+                                                                    '300 ml',
+                                                                    '60',
+                                                                    'Za<span class="typo">K</span>u Miyabi no Tomo Amanemu <span class="typo">Junmai Daiginjo</span>, Mie',
+                                                                    'zaku-miyabi-no-tomo.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>7042</span>
                                 <span className='sake-description'>
-                                    Za<span style={{color:'red',fontSize:'inherit'}}>K</span>u Miyabi no Tomo Amanemu, Mie
+                                    Za<span className='typo'>K</span>u Miyabi no Tomo Amanemu <span className='typo'>Junmai Daiginjo</span>, Mie
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1363,6 +1405,7 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Suigei
                         </div>{/* .sake-producer-name */}
+
                         <div className='sake'>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3419</span>
@@ -1382,11 +1425,20 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Tamanohikari
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Tamanohikari',
+                                                                    '3607',
+                                                                    '300 ml',
+                                                                    '70',
+                                                                    'Bizen-Ōmachi Junmai Daiginj<span class="typo">ō</span>, Kyoto',
+                                                                    'tamanohikari.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3607</span>
                                 <span className='sake-description'>
-                                    Bizen-Ōmachi Junmai Daiginj<span style={{color:'red',fontSize:'inherit'}}>ō</span>, Kyoto    
+                                    Bizen-Ōmachi Junmai Daiginj<span className='typo'>ō</span>, Kyoto    
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

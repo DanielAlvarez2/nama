@@ -1126,7 +1126,15 @@ export default function Sake(){
                             Izumibashi Shuzo
                         </div>{/* .sake-producer-name */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Izumibashi',
+                                                                    '3404',
+                                                                    '720 ml',
+                                                                    '375',
+                                                                    'Tokusen Junmai Daiginjo, Kanagawa',
+                                                                    'izumibashi-tokusen.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3404</span>
                                 <span className='sake-description'>

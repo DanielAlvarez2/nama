@@ -713,12 +713,12 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Château d'Esclans, Côtes de Provence</span>
+                      <span className="name">VieVité</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">27</span>
+                    <span className="price">22</span>
                   </div>
-                  <div className="description1">Provence, France 2024</div>
+                  <div className="description1">Côtes de Provence, France 2025</div>
                   <div className="description2"></div>
                 </div>
 

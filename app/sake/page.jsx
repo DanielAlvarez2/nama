@@ -450,7 +450,15 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Uchigasaki
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Uchigasaki',
+                                                                    '3201',
+                                                                    '720 ml',
+                                                                    '85',
+                                                                    'Hoyo Sawayaka Summer Breeze Junmai, Miyagi',
+                                                                    'summer-breeze.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3201</span>
                                 <span className='sake-description'>Hoyo Sawayaka Summer Breeze Junmai, Miyagi</span>

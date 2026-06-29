@@ -77,6 +77,8 @@ export default function Sake(){
         <Link href='/drinks'>Drinks</Link> | 
         <Link href='/sake' style={{textDecoration:'underline',cursor:'default'}}>Sake</Link>
       </nav>
+
+      <br className='no-print' />
     
       <div className="letter-paper sake-page"
             // style={{backgroundImage:'url("scan-sake-1.jpg")',backgroundSize:'8.5in'}}
@@ -349,6 +351,7 @@ export default function Sake(){
       
       </div>{/* .letter-paper .sake-page */}
 
+      <br className='no-print' />
 
 
 

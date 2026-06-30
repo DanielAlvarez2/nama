@@ -502,6 +502,7 @@ export default function DessertMenu(){
                           <br/>
                           black sesame cheesecake<br/>
                           blackberry compote<br/>
+                          chocolate crumble<br/>
                           vanilla ice cream<br/>
                           <br/><br/>
               </div>

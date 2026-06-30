@@ -468,6 +468,7 @@ export default function DessertMenu(){
                           honey ice cream<br/>
                           milk foam<br/>
                           meringue sticks<br/>
+                          (jelly does NOT contain pork)
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}

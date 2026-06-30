@@ -2244,7 +2244,7 @@ export default function Sake(){
                                                                     '3503',
                                                                     '500 ml',
                                                                     '170',
-                                                                    'Umeshu Yamada <span style="textDecoration:line-through">Jyuro</span> <span class="typo">Juro</span> Junmai Daiginjo, Kanagawa',
+                                                                    'Umeshu Yamada <span style="text-decoration:line-through">Jyuro</span> <span class="typo">Juro</span> Junmai Daiginjo, Kanagawa',
                                                                     'yamada-juro.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>

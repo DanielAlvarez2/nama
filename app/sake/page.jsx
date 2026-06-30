@@ -201,7 +201,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Rihaku
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'NIGORI',
+                                                                    'Rihaku',
+                                                                    '3103',
+                                                                    '720 ml',
+                                                                    '165',
+                                                                    'Dreamy Clouds Nigori Tokubetsu, Shimane Prefecture',
+                                                                    'dreamy-clouds.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3103</span>
                                 <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu, Shimane Prefecture</span>

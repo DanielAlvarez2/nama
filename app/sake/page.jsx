@@ -1397,13 +1397,13 @@ export default function Sake(){
                                                                     '3409',
                                                                     '720 ml',
                                                                     '415',
-                                                                    '<span style="text-decoration:line-through"}}>Banshu</span> <span class="typo">Bansyu</span> Ikkon <span class="typo">Yamada Nishiki</span> Junmai Daiginjo, Hyōgo',
+                                                                    '<span style="text-decoration:line-through"}}>Banshu</span> <span class="typo">Bansyu-</span>Ikkon <span class="typo">Yamada Nishiki</span> Junmai Daiginjo, Hyōgo',
                                                                     'banshu-ikkon.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3409</span>
                                 <span className='sake-description'>
-                                    <span style={{textDecoration:'line-through'}}>Banshu</span> <span className='typo'>Bansyu</span> Ikkon <span className='typo'>Yamada Nishiki</span> Junmai Daiginjo, Hyōgo
+                                    <span style={{textDecoration:'line-through'}}>Banshu</span> <span className='typo'>Bansyu-</span>Ikkon <span className='typo'>Yamada Nishiki</span> Junmai Daiginjo, Hyōgo
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

@@ -221,7 +221,16 @@ export default function Sake(){
                                 <span className='sake-price'>165</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'NIGORI',
+                                                                    'Rihaku',
+                                                                    '3102',
+                                                                    '720 ml',
+                                                                    '175',
+                                                                    'Dreamy Clouds Nigori Tokubetsu Namazake, Shimane Prefecture',
+                                                                    'dreamy-clouds-namazake.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3102</span>
                                 <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu Namazake, Shimane Prefecture</span>

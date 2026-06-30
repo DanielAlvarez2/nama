@@ -3694,6 +3694,7 @@ export default function Home() {
                           soy koji moromi<br/>
                           wasabi oil<br/>
                           grilled vegetables<br/>
+                          medium rare unless otherwise requested<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  

@@ -274,7 +274,16 @@ export default function Sake(){
                                 <span className='sake-price'>165</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Asamaï Shuzō',
+                                                                    '3213',
+                                                                    '720 ml',
+                                                                    '185',
+                                                                    `Amanoto Heaven's Door Tokubetsu <span className='typo'>Junmai</span> Namazake, Akita`,
+                                                                    'heavens-door-namazake.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3213</span>
                                 <span className='sake-description'>Amanoto Heaven's Door Tokubetsu <span className='typo'>Junmai</span> Namazake, Akita</span>
@@ -291,7 +300,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Kato <span style={{color:'red',fontSize:'inherit'}}>Sake</span> Works
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Kato Sake Works',
+                                                                    '3214',
+                                                                    '750 ml',
+                                                                    '140',
+                                                                    'Pure Rice Junmai, New York',
+                                                                    'pure-rice.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3214</span>
                                 <span className='sake-description'>Pure Rice Junmai, New York</span>
@@ -302,6 +320,7 @@ export default function Sake(){
                                 <span className='sake-price'>140</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
+
                         <div className='sake'>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3215</span>

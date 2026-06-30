@@ -1491,7 +1491,15 @@ export default function Sake(){
                             Suigei
                         </div>{/* .sake-producer-name */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Suigei',
+                                                                    '3419',
+                                                                    '720 ml',
+                                                                    '890',
+                                                                    'Daito Junmai Daiginjo, Kōchi',
+                                                                    'suigei-daito.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3419</span>
                                 <span className='sake-description'>
@@ -1611,7 +1619,15 @@ export default function Sake(){
                             Imada
                         </div>{/* .sake-producer-name */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI GINJO',
+                                                                    'Imada',
+                                                                    '3210',
+                                                                    '720 ml',
+                                                                    '195',
+                                                                    `Moon on the Water <span class='typo'>Junmai Ginjo</span>, Hiroshima`,
+                                                                    'moon-on-the-water.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left typo'>3210</span>
                                 <span className='sake-description'>
@@ -1625,7 +1641,15 @@ export default function Sake(){
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI GINJO',
+                                                                    'Imada',
+                                                                    '3212',
+                                                                    '720 ml',
+                                                                    '215',
+                                                                    `Moon on the Water Namazake <span class='typo'>Junmai Ginjo</span>, Hiroshima`,
+                                                                    'moon-on-the-water-namazake.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3212</span>
                                 <span className='sake-description'>
@@ -1982,7 +2006,15 @@ export default function Sake(){
                             Masuda
                         </div>{/* .sake-producer-name */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'SPECIALTY',
+                                                                    'Masuda',
+                                                                    '4018',
+                                                                    '750 ml',
+                                                                    '750',
+                                                                    `Black Samurai <span class='typo'>Junmai Daiginjo</span>, Toyama`,
+                                                                    'black-samurai.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>4018</span>
                                 <span className='sake-description'>
@@ -2057,7 +2089,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Shiraiwa K.K.
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'SPECIALTY',
+                                                                    'Shiraiwa K.K.',
+                                                                    '4005',
+                                                                    '720 ml',
+                                                                    '750',
+                                                                    `Iwa 5 Assemblage 5 <span class='typo'>Junmai Daiginjo</span>, Toyama`,
+                                                                    'iwa-5.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>4005</span>
                                 <span className='sake-description'>

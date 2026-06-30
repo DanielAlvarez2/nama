@@ -429,6 +429,7 @@ export default function DessertMenu(){
                           roasted banana cream filling<br/>
                           caramelized banana<br/>
                           vanilla ice cream<br/>
+                          contains egg
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}
@@ -468,7 +469,9 @@ export default function DessertMenu(){
                           honey ice cream<br/>
                           milk foam<br/>
                           meringue sticks<br/>
-                          (jelly does NOT contain pork)
+                          jelly does NOT contain pork<br/>
+                          FISH gelatin<br/>
+                          contains egg
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}
@@ -505,6 +508,7 @@ export default function DessertMenu(){
                           blackberry compote<br/>
                           chocolate crumble<br/>
                           vanilla ice cream<br/>
+                          contains egg<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}
@@ -605,6 +609,7 @@ export default function DessertMenu(){
                           mascarpone cheese mousse<br/>
                           chestnut cremeux<br/>
                           matcha green tea powder on top<br/>
+                          contains egg<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}

@@ -254,7 +254,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Asamaï Shuzō
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Asamaï Shuzō',
+                                                                    '3211',
+                                                                    '720 ml',
+                                                                    '165',
+                                                                    `Amanoto Heaven's Door Tokubetsu <span className='typo'>Junmai</span>, Akita`,
+                                                                    'heavens-door.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3211</span>
                                 <span className='sake-description'>Amanoto Heaven's Door Tokubetsu <span className='typo'>Junmai</span>, Akita</span>

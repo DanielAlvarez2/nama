@@ -261,7 +261,7 @@ export default function Sake(){
                                                                     '3211',
                                                                     '720 ml',
                                                                     '165',
-                                                                    `Amanoto Heaven's Door Tokubetsu <span className='typo'>Junmai</span>, Akita`,
+                                                                    `Amanoto Heaven's Door Tokubetsu <span class='typo'>Junmai</span>, Akita`,
                                                                     'heavens-door.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
@@ -281,7 +281,7 @@ export default function Sake(){
                                                                     '3213',
                                                                     '720 ml',
                                                                     '185',
-                                                                    `Amanoto Heaven's Door Tokubetsu <span className='typo'>Junmai</span> Namazake, Akita`,
+                                                                    `Amanoto Heaven's Door Tokubetsu <span class='typo'>Junmai</span> Namazake, Akita`,
                                                                     'heavens-door-namazake.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
@@ -321,7 +321,15 @@ export default function Sake(){
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
-                        <div className='sake'>
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Kato Sake Works',
+                                                                    '3215',
+                                                                    '750 ml',
+                                                                    '295',
+                                                                    `Shizuku Droplets <span class='typo'>Junmai</span>, New York`,
+                                                                    'shizuku-droplets.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3215</span>
                                 <span className='sake-description'>Shizuku Droplets <span className='typo'>Junmai</span>, New York</span>
@@ -408,7 +416,16 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Kurosawa
                         </div>{/* .sake-producer-name */}
-                        <div className='sake'>
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI',
+                                                                    'Kurosawa',
+                                                                    '3209',
+                                                                    '720 ml',
+                                                                    '90',
+                                                                    'Junmai Kimoto, Nagano',
+                                                                    'kurosawa.jpg'
+                                                                    )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3209</span>
                                 <span className='sake-description'>Junmai Kimoto, Nagano</span>

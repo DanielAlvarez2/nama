@@ -1369,13 +1369,13 @@ export default function Sake(){
                                                                     '3417',
                                                                     '720 ml',
                                                                     '550',
-                                                                    '2<span class="typo">_</span>Grain <span class="typo">Yamadanishiki</span>, Yamaguchi',
+                                                                    '2grain <span class="typo">Yamadanishiki</span>, Yamaguchi',
                                                                     '2-grain.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3417</span>
                                 <span className='sake-description'>
-                                    2<span className='typo'>_</span>Grain <span className='typo'>Yamadanishiki</span>, Yamaguchi
+                                    2grain <span className='typo'>Yamadanishiki</span>, Yamaguchi
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

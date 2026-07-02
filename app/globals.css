@@ -446,10 +446,12 @@ form{
   width:400px !important;
   background:lightgreen;
   margin:0 auto 100px;
+  padding-bottom: 50px;
 }
 form h1{
   font-size:30px;
   font-weight: 900;
+  margin-top:20px;
 }
 form label{
   font-size:20px;

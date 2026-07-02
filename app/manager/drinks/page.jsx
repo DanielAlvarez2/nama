@@ -22,11 +22,13 @@ export default function DrinksMenu(){
         </svg>
       </div>
 
+      <h1 className='menu-manager'>MENU MANAGER</h1>
+
       <nav className='no-print'>
-        <Link href='/'>Dinner</Link> | 
-        <Link href='/dessert'>Dessert</Link> | 
-        <Link href='/drinks' className='current-page'>Drinks</Link> | 
-        <Link href='/sake'>Sake</Link> 
+        <Link href='/manager'>Dinner</Link> | 
+        <Link href='/manager/dessert'>Dessert</Link> | 
+        <Link href='/manager/drinks' className='current-page'>Drinks</Link> | 
+        <Link href='/manager/sake'>Sake</Link> 
       </nav>
 
       <br className='no-print' />

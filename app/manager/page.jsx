@@ -23,11 +23,13 @@ export default function Home() {
         </svg>
       </div>
 
+      <h1 className='menu-manager'>MENU MANAGER</h1>
+
       <nav className='no-print'>
-        <Link href='/' className='current-page'>Dinner</Link> | 
-        <Link href='/dessert'>Dessert</Link> | 
-        <Link href='/drinks'>Drinks</Link> | 
-        <Link href='/sake'>Sake</Link>
+        <Link href='/manager' className='current-page'>Dinner</Link> | 
+        <Link href='/manager/dessert'>Dessert</Link> | 
+        <Link href='/manager/drinks'>Drinks</Link> | 
+        <Link href='/manager/sake'>Sake</Link>
       </nav>
 
       <br className='no-print' />

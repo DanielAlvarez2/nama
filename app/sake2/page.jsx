@@ -73,9 +73,9 @@ export default function Sake(){
 
       <nav className='no-print'>
         <Link href='/'>Dinner</Link> | 
-        <Link href='/dessert-menu'>Dessert</Link> | 
+        <Link href='/dessert'>Dessert</Link> | 
         <Link href='/drinks'>Drinks</Link> | 
-        <Link href='/sake' style={{textDecoration:'underline',cursor:'default'}}>Sake</Link>
+        <Link href='/sake' className='current-page'>Sake</Link>
       </nav>
 
       <br className='no-print' />

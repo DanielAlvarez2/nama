@@ -434,3 +434,11 @@ h1{
   color:red !important;
   font-size:inherit;
 }
+.current-page{
+  text-decoration: underline;
+  cursor:default;
+  text-underline-offset: 5px;
+}
+.menu-manager{
+  color:red;
+}

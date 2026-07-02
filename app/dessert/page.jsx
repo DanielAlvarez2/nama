@@ -24,7 +24,7 @@ export default function DessertMenu(){
 
       <nav className='no-print'>
         <Link href='/'>Dinner</Link> | 
-        <Link href='/dessert-menu' style={{textDecoration:'underline',cursor:'default'}}>Dessert</Link> | 
+        <Link href='/dessert' className='current-page' >Dessert</Link> | 
         <Link href='/drinks'>Drinks</Link> | 
         <Link href='/sake'>Sake</Link>
       </nav>

@@ -1,7 +1,8 @@
-'use client'
+// 'use client'
 
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
+import DessertForm from './components/DessertForm';
 
 export default function DessertMenu(){
 
@@ -44,7 +45,7 @@ export default function DessertMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('hojicha-banana-roulade')}
+                    //   onClick={()=>showModal('hojicha-banana-roulade')}
                 >
                   <div className="name-price">
                     <span>
@@ -66,7 +67,7 @@ export default function DessertMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('melon-parfait')}
+                    //   onClick={()=>showModal('melon-parfait')}
                 >
                   <div className="name-price">
                     <span>
@@ -87,7 +88,7 @@ export default function DessertMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('matcha-misu')}
+                    //   onClick={()=>showModal('matcha-misu')}
                 >
                   <div className="name-price">
                     <span>
@@ -105,7 +106,7 @@ export default function DessertMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('black-sesame-cheesecake')}
+                    //   onClick={()=>showModal('black-sesame-cheesecake')}
                 >
                   <div className="name-price">
                     <span>
@@ -118,19 +119,6 @@ export default function DessertMenu(){
                   <div className="description2" style={{color:'red'}}>Black Sesame Cheesecake</div>
                 </div>
 
-                {/* <div  className="dinner-menu-item"
-                      onClick={()=>showModal('miso-banana-profiterole')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Miso Banana Profiterole</span>
-                      <span className="allergies">(D)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Caramelized Banana, Chocolate Foam,</div>
-                  <div className="description2">Puffed Buckwheat</div>
-                </div> */}
 
               </div>{/* .right-column */}
             </div>{/* .section */}
@@ -152,7 +140,7 @@ export default function DessertMenu(){
               <div className="right-column">
               
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('chateau-suduiraut')}
+                    //   onClick={()=>showModal('chateau-suduiraut')}
                 >
                   <div className="name-price">
                     <span>
@@ -166,7 +154,7 @@ export default function DessertMenu(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('domaine-de-rancy')}
+                    //   onClick={()=>showModal('domaine-de-rancy')}
                 >
                   <div className="name-price">
                     <span>
@@ -181,7 +169,7 @@ export default function DessertMenu(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('weingut-sattlerhof')}
+                    //   onClick={()=>showModal('weingut-sattlerhof')}
                 >
                   <div className="name-price">
                     <span>
@@ -196,7 +184,7 @@ export default function DessertMenu(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('grahams-port')}
+                    //   onClick={()=>showModal('grahams-port')}
                 >
                   <div className="name-price">
                     <span>
@@ -404,7 +392,9 @@ export default function DessertMenu(){
 
     <div id="hojicha-banana-roulade" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <AiTwotoneCloseCircle className="close-button" 
+                                // onClick={closeModals} 
+                                />    
           <div className='modal-content'>
           
           <div>
@@ -441,7 +431,9 @@ export default function DessertMenu(){
 
     <div id="melon-parfait" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />
+          <AiTwotoneCloseCircle className="close-button" 
+        //   onClick={closeModals} 
+          />
           <div className='modal-content'>
              
           <div>
@@ -483,7 +475,9 @@ export default function DessertMenu(){
 
     <div id="black-sesame-cheesecake" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />     
+          <AiTwotoneCloseCircle className="close-button" 
+        //   onClick={closeModals} 
+          />     
           <div className='modal-content'>
           
           <div>
@@ -520,7 +514,9 @@ export default function DessertMenu(){
 
     <div id="yuzu-crepe-cake" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <AiTwotoneCloseCircle className="close-button" 
+        //   onClick={closeModals} 
+          /> 
           <div className='modal-content'>
           
           <div>
@@ -552,7 +548,9 @@ export default function DessertMenu(){
 
     <div id="sakura-monaka" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <AiTwotoneCloseCircle className="close-button" 
+        //   onClick={closeModals} 
+          />  
           <div className='modal-content'>
           
           <div>
@@ -584,7 +582,9 @@ export default function DessertMenu(){
 
     <div id="matcha-misu" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <AiTwotoneCloseCircle className="close-button" 
+        //   onClick={closeModals} 
+          />    
           <div className='modal-content'>
           
           <div>
@@ -621,7 +621,9 @@ export default function DessertMenu(){
 
     <div id="miso-banana-profiterole" className='modal'>
       <div>
-          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <AiTwotoneCloseCircle className="close-button" 
+        //   onClick={closeModals} 
+          />  
           <div className='modal-content'>
           
           <div>
@@ -652,6 +654,7 @@ export default function DessertMenu(){
     </div>{/* #miso-banana-profiterole */}
 
 
+        <DessertForm />
     </div>
 
     )

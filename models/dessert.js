@@ -1,10 +1,10 @@
 import mongoose, {Schema} from 'mongoose'
 
 const DessertSchema = new Schema({
-    name: {String, required},
+    name: {String, required:true},
     description1: String,
     description2: String,
-    price: {String,required},
+    price: {String,required:true},
     allergies: String,
     sequence: Number,
     cloudinary_public_id: String,

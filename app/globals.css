@@ -267,11 +267,6 @@ body,.webpage{
    width:90%;
  }
 }
-form{
-  border:1px solid black;
-  border-radius: 10px;
-  padding:10px;
-}
 input[type="text"]{
   /* background-color:red; */
   /* color:blue; */
@@ -443,6 +438,9 @@ h1{
   color:red;
 }
 form{
+  border:1px solid black;
+  border-radius: 10px;
+  padding:10px;
   width:400px !important;
   background:lightgreen;
   margin:0 auto 100px;

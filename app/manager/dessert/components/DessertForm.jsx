@@ -37,8 +37,14 @@ export default function DessertForm(){
                 </label>
                 <br/><br/>
 
+                <label>
+                    Image File: (optional)<br/>
+                    <input type='file' />
+                </label>
                 <br/><br/>
-                <button>+ Add New Dessert</button>
+
+                <br/><br/>
+                <button>+ New Dessert</button>
                 <br/>
 
             </form>

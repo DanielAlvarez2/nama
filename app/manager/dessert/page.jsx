@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import DessertForm from './components/DessertForm';
 import {addDessert} from '@/app/actions.js'
-import connectMongoDB from '@/libs/mongodb';
+import connectMongoDB from '@/libs/mongodb'
 import Dessert from '@/models/Dessert.js'
 
 export default async function DessertMenu(){

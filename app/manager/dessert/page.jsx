@@ -1,5 +1,3 @@
-// 'use client'
-
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import DessertForm from './components/DessertForm';

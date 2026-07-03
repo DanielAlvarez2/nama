@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import DessertForm from './components/DessertForm';
+import {addDessert} from '@/app/actions.js'
 
 export default function DessertMenu(){
 
@@ -491,7 +492,7 @@ export default function DessertMenu(){
                           <div className="name-price">
                             <span>
                               <span className="name">Kurogoma Cheesecake</span>
-                              <span className="allergies"></span>
+                              <span className="allergies">(D, N)</span>
                             </span>
                             <span className="price">22</span>
                           </div>
@@ -654,7 +655,7 @@ export default function DessertMenu(){
     </div>{/* #miso-banana-profiterole */}
 
 
-        <DessertForm />
+        <DessertForm addDessert={addDessert} />
     </div>
 
     )

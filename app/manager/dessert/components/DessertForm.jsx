@@ -2,7 +2,7 @@
 
 import {addDessert} from '@/app/actions.js'
 
-export default function DessertForm(){
+export default function DessertForm({addDessert}){
     return(
         <>
             <form action={addDessert}>
@@ -16,6 +16,7 @@ export default function DessertForm(){
                 <label>
                     Name: <span className="required">*REQUIRED</span><br/>
                     <input  type='text' 
+                            required
                             name='name'
                             id='name-dessert'
                             style={{width:'100%'}} />
@@ -53,8 +54,17 @@ export default function DessertForm(){
                     Price: <span className="required">*REQUIRED</span><br/>
                     <input  type='text' 
                             name='price'
+                            required
                             id='price-dessert'
                             style={{width:'35%'}} />
+                </label>
+                <br/><br/>
+
+                <label>
+                    Staff Info:<br/>
+                    <textarea   style={{width:'100%',height:'150px'}}
+                                id='staff-info'
+                                name='staff-info' />
                 </label>
                 <br/><br/>
 

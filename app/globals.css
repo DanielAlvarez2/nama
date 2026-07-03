@@ -267,10 +267,12 @@ body,.webpage{
    width:90%;
  }
 }
-input[type="text"]{
+input[type="text"],
+textarea{
   /* background-color:red; */
   /* color:blue; */
   padding: 5px;
+  font-size:20px;
 }
 h1{
   width:100%;

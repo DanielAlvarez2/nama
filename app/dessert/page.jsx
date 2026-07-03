@@ -495,7 +495,7 @@ export default function DessertMenu(){
                           <div className="name-price">
                             <span>
                               <span className="name">Kurogoma Cheesecake</span>
-                              <span className="allergies"></span>
+                              <span className="allergies">(D, N)</span>
                             </span>
                             <span className="price">22</span>
                           </div>

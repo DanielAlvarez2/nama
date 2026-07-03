@@ -14,8 +14,9 @@ export default function PageNotFound404(){
 
       <nav>
         <Link href='/'>Dinner</Link> | 
-        <Link href='/dessert-menu'>Dessert</Link> | 
-        <Link href='/drinks'>Drinks</Link> 
+        <Link href='/dessert'>Dessert</Link> | 
+        <Link href='/drinks'>Drinks</Link> | 
+        <Link href='/sake'>Sake</Link>
       </nav>
     
       <div className="small-paper" style={{height:'auto',paddingTop:"90px"}}>

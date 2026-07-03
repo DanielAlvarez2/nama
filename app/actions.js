@@ -5,9 +5,6 @@ import { NextResponse } from 'next/server'
 import Dessert from '@/models/Dessert.js'
 import {revalidatePath} from 'next/cache'
 
-const BASE_URL = (process.env.NODE_ENV == 'production') ? 
-                    'https://nama-nyc.onrender.com' :
-                    'http://localhost:3000'
 
 
 export async function addDessert(formData){

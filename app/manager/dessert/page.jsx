@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
-import DessertForm from './components/DessertForm';
+import DessertForm from './components/DessertForm.jsx';
+import DessertItem from './components/DessertItem.jsx';
 import {addDessert} from '@/app/actions.js'
 import connectMongoDB from '@/libs/mongodb'
 import Dessert from '@/models/Dessert.js'
@@ -50,85 +51,17 @@ export default async function DessertMenu(){
                 {desserts.map(data=>{
                   return(
                     <div key={data._id}>
-                      {data.name}
+                      <DessertItem  id={data._id.toString()}
+                                    name={data.name} 
+                                    allergies={data.allergies}
+                                    description1={data.description1}
+                                    description2={data.description2}
+                                    price={data.price}
+                      />
+                      
                     </div>
                   )
                 })}
-
-                <div  className="dinner-menu-item"
-                    //   onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Hojicha Banana Roulade</span>
-                      <span className="allergies">(D, N, GF)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Hojicha Sponge <span style={{color:'red'}}>Cake</span>, Roasted Banana Cream</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                    //   onClick={()=>showModal('melon-parfait')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Melon Parfait</span>
-                      <span className="allergies">(D, GF)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Chamomille Jelly, Honey Ice Cream, Meringue</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                    //   onClick={()=>showModal('matcha-misu')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Matcha-Misu</span>
-                      <span className="allergies">(D)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Mascarpone Cream, Chestnut Pudding</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                    //   onClick={()=>showModal('black-sesame-cheesecake')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Kurogoma Cheesecake</span>
-                      <span className="allergies">(D, N)</span>
-                    </span>
-                    <span className="price">22</span>
-                  </div>
-                  <div className="description1">Blackberry Compote, Vanilla Ice Cream</div>
-                  <div className="description2" style={{color:'red'}}>Black Sesame Cheesecake</div>
-                </div>
 
 
               </div>{/* .right-column */}

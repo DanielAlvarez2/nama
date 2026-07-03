@@ -1,9 +1,17 @@
 'use client'
 
+import { addDessert } from "@/app/actions"
+import { useActionState } from "react"
+
+async function handleSubmit(formData){
+    await addDessert(formData)
+    document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
+}
+
 export default function DessertForm({addDessert}){
     return(
         <>
-            <form action={addDessert}>
+            <form action={handleSubmit}>
                 <h1>ADD NEW DESSERT</h1>
                 <br/><br/>
 

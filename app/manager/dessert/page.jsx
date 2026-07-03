@@ -19,7 +19,6 @@ export default async function DessertMenu(){
         document.querySelectorAll('.modal').forEach(item=>item.style.display = 'none')
     }
 
-
     return(
     <div className='webpage'>
 
@@ -40,11 +39,15 @@ export default async function DessertMenu(){
 
       <br className='no-print'/>
     
-      <div className="small-paper">
+      <div className="small-paper" style={{height:'auto'}}>
         
           <div className="menu-items">
             <div className="section section-dessert">
-              <div className="left-column">デザート<br/>Desserts</div>
+              <div  className="left-column"
+                    id='desserts-section'
+              >
+                デザート<br/>Desserts
+              </div>
 
               <div className="right-column">
               

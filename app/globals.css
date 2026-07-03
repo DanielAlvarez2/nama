@@ -479,3 +479,24 @@ input[type='text']{
   font-size:10px;
   font-weight: 900;
 }
+.delete-button{
+  background:red;
+  color:white;
+}
+.edit-button{
+  background:blue;
+  color:white;
+}
+.arrow-button{
+  background:grey;
+  color:white;
+}
+.item-button{
+  padding:3px 7px;
+  border-radius: 5px;
+  margin-top: 1px;
+  margin-right:15px;
+  font-weight:900;
+  display: inline-block; 
+  cursor:pointer !important; 
+}

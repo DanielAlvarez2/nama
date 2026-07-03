@@ -1,7 +1,5 @@
 'use client'
 
-import {addDessert} from '@/app/actions.js'
-
 export default function DessertForm({addDessert}){
     return(
         <>

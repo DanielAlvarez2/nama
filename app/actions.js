@@ -2,7 +2,7 @@
 
 import connectMongoDB from '@/libs/mongodb.js'
 import { NextResponse } from 'next/server'
-import Dessert from '@/models/dessert.js'
+import Dessert from '@/models/Dessert.js'
 import {revalidatePath} from 'next/cache'
 
 const BASE_URL = (process.env.NODE_ENV == 'production') ? 

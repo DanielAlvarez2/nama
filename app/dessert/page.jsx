@@ -73,7 +73,7 @@ export default function DessertMenu(){
                     </span>
                     <span className="price">22</span>
                   </div>
-                  <div className="description1">Chamomille Jelly, Honey Ice Cream, Meringue</div>
+                  <div className="description1">Chamomile Jelly, Honey Ice Cream, Meringue</div>
                   <div className="description2"></div>
                 </div>
 
@@ -457,14 +457,14 @@ export default function DessertMenu(){
                             </span>
                             <span className="price">22</span>
                           </div>
-                          <div className="description1">Chamomille Jelly, Honey Ice Cream, Meringue</div>
+                          <div className="description1">Chamomile Jelly, Honey Ice Cream, Meringue</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
                           seasonal melon<br/>
-                          chamomille jelly<br/>
-                          chamomille granita<br/>
+                          chamomile jelly<br/>
+                          chamomile granita<br/>
                           vanilla cream<br/>
                           honey ice cream<br/>
                           milk foam<br/>

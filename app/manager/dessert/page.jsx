@@ -4,8 +4,14 @@ import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import DessertForm from './components/DessertForm';
 import {addDessert} from '@/app/actions.js'
+import connectMongoDB from '@/libs/mongodb';
+import Dessert from '@/models/Dessert.js'
 
-export default function DessertMenu(){
+export default async function DessertMenu(){
+    
+      await connectMongoDB()
+      const desserts = await Dessert.find()
+    
 
     function showModal(menuItem){
         document.querySelector(`#${menuItem}`).style.display = 'grid'
@@ -43,7 +49,13 @@ export default function DessertMenu(){
 
               <div className="right-column">
               
-
+                {desserts.map(data=>{
+                  return(
+                    <div key={data._id}>
+                      {data.name}
+                    </div>
+                  )
+                })}
 
                 <div  className="dinner-menu-item"
                     //   onClick={()=>showModal('hojicha-banana-roulade')}

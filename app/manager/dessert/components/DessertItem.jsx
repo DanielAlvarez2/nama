@@ -1,6 +1,6 @@
 'use client'
 
-import { deleteDessert } from "@/app/actions.js"
+import { deleteItem } from "@/app/actions.js"
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 
@@ -23,7 +23,7 @@ export default function Dessert(props){
                   <div className="description2" dangerouslySetInnerHTML={{__html:props.description2}}></div>
                     <span   className="item-button edit-button">EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteDessert(props.id)}
+                            onClick={()=>deleteItem('Dessert',props.id)}
                     >
                         DELETE
                     </span>

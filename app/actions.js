@@ -29,10 +29,10 @@ export async function addDessert(formData){
         console.log(err)
     }
 }
-export async function deleteDessert(id){
+export async function deleteItem(Model,id){
     if(!id) return
     await connectMongoDB()
-    await Dessert.findByIdAndDelete(id)
+    await mongoose.model(Model).findByIdAndDelete(id)
     revalidatePath('/manager/dessert')
     return
 }

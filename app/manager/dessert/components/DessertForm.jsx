@@ -20,6 +20,17 @@ async function handleSubmit(formData){
     document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
 }
 
+function resetForm(){
+    document.querySelector('#id-dessert').value = ''
+    document.querySelector('#name-dessert').value = ''
+    document.querySelector('#allergies-dessert').value = ''
+    document.querySelector('#description1-dessert').value = ''
+    document.querySelector('#description2-dessert').value = ''
+    document.querySelector('#price-dessert').value = ''
+    document.querySelector('#staff-info').value = ''
+
+}
+
 export default function DessertForm({addDessert}){
     return(
         <>
@@ -96,7 +107,12 @@ export default function DessertForm({addDessert}){
                 <br/><br/>
 
                 <br/><br/>
-                <button>+ New Dessert</button>
+                <div style={{display:'flex'}}>
+                    <button type='submit'>+ New Dessert</button>
+                    <button type='button'
+                            onClick={resetForm} 
+                            style={{background:'red'}}>Cancel</button>
+                </div>
                 
 
             </form>

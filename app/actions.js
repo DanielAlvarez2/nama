@@ -15,13 +15,16 @@ export async function addDessert(formData){
     }
     try{
         await connectMongoDB()
+        const highestSequenceDessert = await Dessert.find().sort({sequence:-1})
+        console.log(highestSequenceDessert)
         await Dessert.create({
             name: formData.get('name').trim(),
             allergies: formData.get('allergies').trim(),
             description1: formData.get('description1').trim(),
             description2: formData.get('description2').trim(),
             price: formData.get('price').trim(),
-            staffInfo: formData.get('staff-info').trim()
+            staffInfo: formData.get('staff-info').trim(),
+            sequence: highestSequenceDessert[0] ? highestSequenceDessert[0].sequence + 1 : 1
         })
         revalidatePath('/manager/dessert')
         return 

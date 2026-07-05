@@ -4,6 +4,18 @@ import { addDessert } from "@/app/actions"
 import { useActionState } from "react"
 
 async function handleSubmit(formData){
+    if (!formData.get('name').trim() || !formData.get('price').trim()) {
+        alert('Name and Price are required')
+        setTimeout(()=>{
+            document.querySelector('#name-dessert').value = formData.get('name')
+            document.querySelector('#allergies-dessert').value = formData.get('allergies')
+            document.querySelector('#description1-dessert').value = formData.get('description1')
+            document.querySelector('#description2-dessert').value = formData.get('description2')
+            document.querySelector('#price-dessert').value = formData.get('price')
+            document.querySelector('#staff-info').value = formData.get('staff-info')
+        },10)
+        return
+    }
     await addDessert(formData)
     document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
 }

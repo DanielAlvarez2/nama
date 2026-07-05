@@ -33,8 +33,15 @@ export async function addDessert(formData){
     }
 }
 export async function deleteItem(Model,id){
-    if(!id) return
+    if(!Model || !id) return
     await connectMongoDB()
+    const target = await mongoose.model(Model).findById(id)
+    const maxSequenceItem = await mongoose.model(Model).find().sort({sequence:-1})
+    if(target.sequence != maxSequenceItem[0].sequence){
+        for(let i=target.sequence+1;i<=maxSequenceItem[0].sequence;i++){
+            await mongoose.model(Model).findOneAndUpdate({sequence:i},{$set:{sequence:i-1}})
+        }
+    }
     await mongoose.model(Model).findByIdAndDelete(id)
     revalidatePath('/manager/dessert')
     return

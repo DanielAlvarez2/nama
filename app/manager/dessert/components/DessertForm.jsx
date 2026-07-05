@@ -2,39 +2,50 @@
 
 import { addDessert } from "@/app/actions"
 import { useActionState } from "react"
-
-async function handleSubmit(formData){
-    if (!formData.get('name').trim() || !formData.get('price').trim()) {
-        alert('Name and Price are required')
-        setTimeout(()=>{
-            document.querySelector('#name-dessert').value = formData.get('name')
-            document.querySelector('#allergies-dessert').value = formData.get('allergies')
-            document.querySelector('#description1-dessert').value = formData.get('description1')
-            document.querySelector('#description2-dessert').value = formData.get('description2')
-            document.querySelector('#price-dessert').value = formData.get('price')
-            document.querySelector('#staff-info').value = formData.get('staff-info')
-        },10)
-        return
-    }
-    await addDessert(formData)
-    document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
-}
-
-function resetForm(){
-    document.querySelector('#id-dessert').value = ''
-    document.querySelector('#name-dessert').value = ''
-    document.querySelector('#allergies-dessert').value = ''
-    document.querySelector('#description1-dessert').value = ''
-    document.querySelector('#description2-dessert').value = ''
-    document.querySelector('#price-dessert').value = ''
-    document.querySelector('#staff-info').value = ''
-
-}
+import { useState } from "react"
 
 export default function DessertForm({addDessert}){
+
+    const [editMode, setEditMode] = useState(false)
+
+    async function handleSubmit(formData){
+        if (!formData.get('name').trim() || !formData.get('price').trim()) {
+            alert('Name and Price are required')
+            setTimeout(()=>{
+                document.querySelector('#name-dessert').value = formData.get('name')
+                document.querySelector('#allergies-dessert').value = formData.get('allergies')
+                document.querySelector('#description1-dessert').value = formData.get('description1')
+                document.querySelector('#description2-dessert').value = formData.get('description2')
+                document.querySelector('#price-dessert').value = formData.get('price')
+                document.querySelector('#staff-info').value = formData.get('staff-info')
+            },10)
+            return
+        }
+        await addDessert(formData)
+        document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
+    }
+
+    function resetForm(){
+        document.querySelector('#id-dessert').value = ''
+        document.querySelector('#name-dessert').value = ''
+        document.querySelector('#allergies-dessert').value = ''
+        document.querySelector('#description1-dessert').value = ''
+        document.querySelector('#description2-dessert').value = ''
+        document.querySelector('#price-dessert').value = ''
+        document.querySelector('#staff-info').value = ''
+        document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT'
+        document.querySelector('#form-dessert').style.background = 'lightgreen'
+        document.querySelector('#submit-button-dessert-form').innerHTML = `+ Add New Dessert`
+
+    }
+
+
+
     return(
         <>
-            <form action={handleSubmit}>
+            <form   action={handleSubmit}
+                    id='form-dessert'
+            >
                 <h1>ADD NEW DESSERT</h1>
                 <br/><br/>
 
@@ -108,7 +119,7 @@ export default function DessertForm({addDessert}){
 
                 <br/><br/>
                 <div style={{display:'flex'}}>
-                    <button type='submit'>+ New Dessert</button>
+                    <button id='submit-button-dessert-form' type='submit'>+ New Dessert</button>
                     <button type='button'
                             onClick={resetForm} 
                             style={{background:'red'}}>Cancel</button>

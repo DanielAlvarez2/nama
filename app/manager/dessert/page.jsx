@@ -11,7 +11,8 @@ export default async function DessertMenu(){
       await connectMongoDB()
       const desserts = await Dessert.find().sort({sequence:1})
       const maxSequence = await Dessert.find().sort({sequence:-1})
-    
+
+      // const [editMode, setEditMode] = useState(false)
 
     function showModal(menuItem){
         document.querySelector(`#${menuItem}`).style.display = 'grid'
@@ -61,6 +62,7 @@ export default async function DessertMenu(){
                                     description1={data.description1}
                                     description2={data.description2}
                                     price={data.price}
+                                    staffInfo={data.staffInfo}
                                     sequence={data.sequence}
                                     maxSequence={maxSequence[0].sequence}
                       />
@@ -604,7 +606,8 @@ export default async function DessertMenu(){
     </div>{/* #miso-banana-profiterole */}
 
 
-        <DessertForm addDessert={addDessert} />
+        <DessertForm addDessert={addDessert}
+        />
     </div>
 
     )

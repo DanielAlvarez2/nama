@@ -9,7 +9,7 @@ import Dessert from '@/models/Dessert.js'
 export default async function DessertMenu(){
     
       await connectMongoDB()
-      const desserts = await Dessert.find()
+      const desserts = await Dessert.find().sort({sequence:1})
       const maxSequence = await Dessert.find().sort({sequence:-1})
     
 

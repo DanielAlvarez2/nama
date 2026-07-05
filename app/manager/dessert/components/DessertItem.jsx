@@ -1,6 +1,6 @@
 'use client'
 
-import { deleteItem } from "@/app/actions.js"
+import { deleteItem,moveDown,moveUp } from "@/app/actions.js"
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 
@@ -27,12 +27,14 @@ export default function Dessert(props){
                     >
                         DELETE
                     </span>
-                    <span className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
+                    <span onClick={()=>moveUp('Dessert',props.id)}
+                          className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
                         <ImArrowUp style={{ position:'relative',
                                             
                                             top:'1px'}} />
                     </span>
-                    <span className={`item-button arrow-button ${props.sequence == props.maxSequence ? 'visibility-hidden' : ''}`}>
+                    <span onClick={()=>moveDown('Dessert',props.id)}
+                          className={`item-button arrow-button ${props.sequence == props.maxSequence ? 'visibility-hidden' : ''}`}>
                         <ImArrowDown style={{position:'relative',top:'2px'}} />
                     </span>
                 </div>

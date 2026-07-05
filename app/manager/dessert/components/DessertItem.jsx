@@ -27,10 +27,12 @@ export default function Dessert(props){
                     >
                         DELETE
                     </span>
-                    <span className="item-button arrow-button">
-                        <ImArrowUp style={{position:'relative',top:'1px'}} />
+                    <span className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
+                        <ImArrowUp style={{ position:'relative',
+                                            
+                                            top:'1px'}} />
                     </span>
-                    <span className="item-button arrow-button">
+                    <span className={`item-button arrow-button ${props.sequence == props.maxSequence ? 'visibility-hidden' : ''}`}>
                         <ImArrowDown style={{position:'relative',top:'2px'}} />
                     </span>
                 </div>

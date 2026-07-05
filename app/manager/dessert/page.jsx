@@ -10,6 +10,7 @@ export default async function DessertMenu(){
     
       await connectMongoDB()
       const desserts = await Dessert.find()
+      const maxSequence = await Dessert.find().sort({sequence:-1})
     
 
     function showModal(menuItem){
@@ -60,6 +61,8 @@ export default async function DessertMenu(){
                                     description1={data.description1}
                                     description2={data.description2}
                                     price={data.price}
+                                    sequence={data.sequence}
+                                    maxSequence={maxSequence[0].sequence}
                       />
                       
                     </div>

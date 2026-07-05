@@ -3690,7 +3690,9 @@ export default function Home() {
                           
                           <hr/>
                           <br/>
-                          3pcs charcoal grilled lamb chops<br/>
+                          charcoal grilled lamb chops<br/>
+                          3-4 pieces<br/>
+                          6-7 ounces<br/>
                           soy koji moromi<br/>
                           wasabi oil<br/>
                           grilled vegetables<br/>

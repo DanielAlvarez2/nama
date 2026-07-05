@@ -6,7 +6,8 @@ import { ImArrowDown } from "react-icons/im";
 
 export default function DessertItem(props){
 
-    function editDessert(name,allergies,description1,description2,price,staffInfo){
+    function editDessert(id,name,allergies,description1,description2,price,staffInfo){
+        document.getElementById('id-dessert').value = id  
         document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'})        
         document.querySelector('#name-dessert').value = name
         document.querySelector('#allergies-dessert').value = allergies
@@ -17,6 +18,7 @@ export default function DessertItem(props){
         document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightblue'
         document.querySelector('#submit-button-dessert-form').innerHTML = `Update Dessert`
+        document.querySelector('#edit-boolean').value = 'true'
     }
     return(
         <> 
@@ -35,7 +37,8 @@ export default function DessertItem(props){
                   <div className="description1" dangerouslySetInnerHTML={{__html:props.description1}}></div>
                   <div className="description2" dangerouslySetInnerHTML={{__html:props.description2}}></div>
                     <span   className="item-button edit-button"
-                            onClick={()=>editDessert(   props.name,
+                            onClick={()=>editDessert(   props.id,
+                                                        props.name,
                                                         props.allergies,
                                                         props.description1,
                                                         props.description2,

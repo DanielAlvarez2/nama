@@ -6,7 +6,6 @@ import { useState } from "react"
 
 export default function DessertForm({addDessert}){
 
-    const [editMode, setEditMode] = useState(false)
 
     async function handleSubmit(formData){
         if (!formData.get('name').trim() || !formData.get('price').trim()) {
@@ -21,7 +20,13 @@ export default function DessertForm({addDessert}){
             },10)
             return
         }
-        await addDessert(formData)
+        if(formData.get('edit-boolean') == 'true'){
+            alert('update dessert')
+        }else{
+            alert('add new dessert')
+        }
+        // await addDessert(formData)
+        resetForm()
         document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
     }
 
@@ -36,7 +41,7 @@ export default function DessertForm({addDessert}){
         document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightgreen'
         document.querySelector('#submit-button-dessert-form').innerHTML = `+ Add New Dessert`
-
+        document.querySelector('#edit-boolean').value = 'false'
     }
 
 
@@ -52,6 +57,11 @@ export default function DessertForm({addDessert}){
                 <input  type='hidden' 
                         name='id' 
                         id='id-dessert' />
+
+                <input  type='hidden'
+                        name='edit-boolean'
+                        id='edit-boolean'
+                        value='false' />
 
                 <label>
                     Name: <span className="required">*REQUIRED</span><br/>

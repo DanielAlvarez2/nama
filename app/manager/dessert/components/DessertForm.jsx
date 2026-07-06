@@ -6,6 +6,16 @@ import { useState } from "react"
 
 export default function DessertForm({addDessert,editDessert}){
 
+    const [previewImage, setPreviewImage] = useState()
+    function handleFileInputChange(e){
+        const file = e.target.files[0]
+        previewFile(file)
+    }
+    function previewFile(file){
+        const reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onloadend = ()=> setPreviewImage(reader.result)
+    }
 
     async function handleSubmit(formData){
         if (!formData.get('name').trim() || !formData.get('price').trim()) {
@@ -124,9 +134,13 @@ export default function DessertForm({addDessert,editDessert}){
                     <input  type='file' 
                             name='image-file'
                             id='image-file-dessert'
+                            onChange={handleFileInputChange}
                     />
                 </label>
                 <br/><br/>
+
+                {previewImage && <img src={previewImage} style={{maxWidth:'100%',maxHeight:'300px'}} />}
+
 
                 <br/><br/>
                 <div style={{display:'flex'}}>

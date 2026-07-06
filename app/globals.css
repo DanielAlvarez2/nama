@@ -503,3 +503,7 @@ input[type='text']{
 .visibility-hidden{
   visibility:hidden;
 }
+.sake-abv{
+  width:5ch;
+  /* display:none; */
+}

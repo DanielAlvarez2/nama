@@ -96,7 +96,7 @@ export default function Sake(){
                 <h3>SPARKLING</h3>
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
-                        Masumi
+                        <span style={{textDecoration:'line-through'}}>Masumi</span> <span className='typo'>Miyasaka</span>
                         </div>{/* .sake-producer-name */}
                         <div className='sake' onClick={()=>openModal(   'SPARKLING',
                                                                         'Masumi',
@@ -114,6 +114,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3001</span>
                                 <span className='sake-size'>750 ml</span>
                                 <span className='sake-price'>425</span>
+                                <span className='sake-abv'>12%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -143,6 +144,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3100</span>
                                 <span className='sake-size'>500 ml</span>
                                 <span className='sake-price'>90</span>
+                                <span className='sake-abv'>18.1%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -168,6 +170,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3602</span>
                                 <span className='sake-size'>300 ml</span>
                                 <span className='sake-price'>60</span>
+                                <span className='sake-abv'>21%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -194,6 +197,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3102</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>175</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -227,6 +231,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3211</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>165</span>
+                                <span className='sake-abv'>15.7%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -247,6 +252,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3213</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>185</span>
+                                <span className='sake-abv'>15.7%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -273,6 +279,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3214</span>
                                 <span className='sake-size'>750 ml</span>
                                 <span className='sake-price'>140</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -293,6 +300,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3215</span>
                                 <span className='sake-size'>750 ml</span>
                                 <span className='sake-price'>295</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -318,6 +326,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3204</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>150</span>
+                                <span className='sake-abv'>17.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -343,6 +352,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3303</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>295</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -363,6 +373,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3206</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>135</span>
+                                <span className='sake-abv'>14.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -389,6 +400,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3209</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>90</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -415,6 +427,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3208</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>135</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                         
@@ -435,6 +448,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3205</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>145</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -462,6 +476,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3207</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>170</span>
+                                <span className='sake-abv'>14%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -487,6 +502,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3201</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>85</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -525,6 +541,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3600</span>
                                 <span className='sake-size'>300 ml</span>
                                 <span className='sake-price'>85</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -608,6 +625,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3300</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>395</span>
+                                <span className='sake-abv'>15.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -636,6 +654,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3301</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>750</span>
+                                <span className='sake-abv'>17.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -664,6 +683,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3302</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>335</span>
+                                <span className='sake-abv'>15.9%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -698,6 +718,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3404</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>655</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -726,6 +747,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3411</span>
                                 <span className='sake-size'>750 ml</span>
                                 <span className='sake-price'>365</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -748,6 +770,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3405</span>
                                 <span className='sake-size'>500 ml</span>
                                 <span className='sake-price'>200</span>
+                                <span className='sake-abv'>14%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -776,6 +799,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3416</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>250</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -804,6 +828,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3418</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>715</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -826,6 +851,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3606</span>
                                 <span className='sake-size'>300 ml</span>
                                 <span className='sake-price'>135</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -848,6 +874,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3400</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>295</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -876,6 +903,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3421</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>315</span>
+                                <span className='sake-abv'>17%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -904,6 +932,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3604</span>
                                 <span className='sake-size'>300 ml</span>
                                 <span className='sake-price'>90</span>
+                                <span className='sake-abv'>16.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -932,6 +961,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3406</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>335</span>
+                                <span className='sake-abv'>17.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -960,6 +990,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3420</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>450</span>
+                                <span className='sake-abv'>17%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -982,6 +1013,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3422</span>
                                 <span className='sake-size'>800 ml</span>
                                 <span className='sake-price'>895</span>
+                                <span className='sake-abv'>17%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1010,6 +1042,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3414</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>385</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1038,6 +1071,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3603</span>
                                 <span className='sake-size'>300 ml</span>
                                 <span className='sake-price'>75</span>
+                                <span className='sake-abv'>15.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1066,6 +1100,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3413</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>195</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1094,6 +1129,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3407</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>360</span>
+                                <span className='sake-abv'>16.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1122,6 +1158,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3403</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>375</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1150,6 +1187,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3412</span>
                                 <span className='sake-size'>500 ml</span>
                                 <span className='sake-price'>115</span>
+                                <span className='sake-abv'>16.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1233,6 +1271,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3410</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>1295</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1261,6 +1300,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3415</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>595</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1289,6 +1329,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3401</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>440</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1317,6 +1358,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>7041</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>150</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1345,6 +1387,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3417</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>550</span>
+                                <span className='sake-abv'>14%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1373,6 +1416,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3409</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>415</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1401,6 +1445,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3402</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>575</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -1423,6 +1468,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3408</span>
                                 <span className='sake-size typo'>750 ml</span>
                                 <span className='sake-price'>305</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -1445,6 +1491,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>7042</span>
                                 <span className='sake-size'>300 ml</span>
                                 <span className='sake-price'>60</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1473,6 +1520,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3419</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>890</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1501,6 +1549,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3607</span>
                                 <span className='sake-size'>300 ml</span>
                                 <span className='sake-price'>70</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1537,6 +1586,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3203</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>160</span>
+                                <span className='sake-abv'>18.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1573,6 +1623,7 @@ export default function Sake(){
                                 <span className='bin-mobile typo'>3210</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>160</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1601,6 +1652,7 @@ export default function Sake(){
                                 <span className='bin-mobile typo'>3210</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>195</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -1623,6 +1675,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3212</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>215</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1655,6 +1708,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3202</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>295</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -1684,6 +1738,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>7040</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>105</span>
+                                <span className='sake-abv'>15.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1721,6 +1776,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4007</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>1375</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1793,6 +1849,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4010</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>450</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1821,6 +1878,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4014</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>1695</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1849,6 +1907,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4004</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>1625</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1877,6 +1936,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4003</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>2995</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1905,6 +1965,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4016</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>1565</span>
+                                <span className='sake-abv'>17.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -1927,6 +1988,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4011</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>645</span>
+                                <span className='sake-abv'>17.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1955,6 +2017,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4018</span>
                                 <span className='sake-size'>750 ml</span>
                                 <span className='sake-price'>750</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -1983,6 +2046,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4000</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>2790</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -2011,6 +2075,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4012</span>
                                 <span className='sake-size'>770 ml</span>
                                 <span className='sake-price'>2150</span>
+                                <span className='sake-abv'>17%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -2039,6 +2104,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4005</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>750</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -2067,6 +2133,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4013</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>395</span>
+                                <span className='sake-abv'>15.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -2095,6 +2162,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4015</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>985</span>
+                                <span className='sake-abv'>15.5%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -2123,6 +2191,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>4008</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>995</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -2159,6 +2228,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3502</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>750</span>
+                                <span className='sake-abv'>8%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -2187,6 +2257,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3503</span>
                                 <span className='sake-size'>500 ml</span>
                                 <span className='sake-price'>170</span>
+                                <span className='sake-abv'>10%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -2215,6 +2286,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3501</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>280</span>
+                                <span className='sake-abv'>12%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -2245,6 +2317,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3504</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>195</span>
+                                <span className='sake-abv'>11%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -2274,6 +2347,7 @@ export default function Sake(){
                                 <span className='bin-mobile'>3500</span>
                                 <span className='sake-size'>500 ml</span>
                                 <span className='sake-price'>110</span>
+                                <span className='sake-abv'>7%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 

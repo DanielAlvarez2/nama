@@ -150,7 +150,7 @@ export default function DessertMenu(){
               <div className="right-column">
               
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('chateau-suduiraut')}
+                      // onClick={()=>showModal('chateau-suduiraut')}
                 >
                   <div className="name-price">
                     <span>
@@ -164,7 +164,7 @@ export default function DessertMenu(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('domaine-de-rancy')}
+                      // onClick={()=>showModal('domaine-de-rancy')}
                 >
                   <div className="name-price">
                     <span>
@@ -179,7 +179,7 @@ export default function DessertMenu(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('weingut-sattlerhof')}
+                      // onClick={()=>showModal('weingut-sattlerhof')}
                 >
                   <div className="name-price">
                     <span>
@@ -189,12 +189,12 @@ export default function DessertMenu(){
                     <span className="price">38</span>
                   </div>
                   <div className='name2'>Beerenauslese</div>
-                  <div className="description1">Südsteiermark, Austria</div>
+                  <div className="description1">Südsteiermark, Austria <span className='typo'>2021</span></div>
                   <div className="description2"></div>
                 </div>
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('grahams-port')}
+                      // onClick={()=>showModal('grahams-port')}
                 >
                   <div className="name-price">
                     <span>

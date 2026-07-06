@@ -131,7 +131,7 @@ export default async function DessertMenu(){
                     <span className="price">38</span>
                   </div>
                   <div className='name2'>Beerenauslese</div>
-                  <div className="description1">Südsteiermark, Austria</div>
+                  <div className="description1">Südsteiermark, Austria <span className='typo'>2021</span></div>
                   <div className="description2"></div>
                 </div>
 

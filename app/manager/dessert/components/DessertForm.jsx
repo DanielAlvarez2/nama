@@ -139,7 +139,9 @@ export default function DessertForm({addDessert,editDessert}){
                 </label>
                 <br/><br/>
 
-                {previewImage && <img src={previewImage} style={{maxWidth:'100%',maxHeight:'300px'}} />}
+                {previewImage &&    <div style={{width:'100%',textAlign:'center'}}> 
+                                        <img src={previewImage} style={{maxWidth:'100%',maxHeight:'300px'}} />
+                                    </div>}
 
 
                 <br/><br/>

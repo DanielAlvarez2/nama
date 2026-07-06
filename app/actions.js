@@ -9,14 +9,9 @@ import {revalidatePath} from 'next/cache'
 
 
 export async function addDessert(formData){
-    if (!formData.get('name').trim() || !formData.get('price').trim()){
-        console.log(`Name and Price are Required`)
-        return
-    }
     try{
         await connectMongoDB()
         const highestSequenceDessert = await Dessert.find().sort({sequence:-1})
-        console.log(highestSequenceDessert)
         await Dessert.create({
             name: formData.get('name').trim(),
             allergies: formData.get('allergies').trim(),
@@ -25,6 +20,23 @@ export async function addDessert(formData){
             price: formData.get('price').trim(),
             staffInfo: formData.get('staff-info').trim(),
             sequence: highestSequenceDessert[0] ? highestSequenceDessert[0].sequence + 1 : 1
+        })
+        revalidatePath('/manager/dessert')
+        return 
+    }catch(err){
+        console.log(err)
+    }
+}
+export async function editDessert(formData){
+    try{
+        await connectMongoDB()
+        await Dessert.findByIdAndUpdate(formData.get('id'),{
+            name: formData.get('name').trim(),
+            allergies: formData.get('allergies').trim(),
+            description1: formData.get('description1').trim(),
+            description2: formData.get('description2').trim(),
+            price: formData.get('price').trim(),
+            staffInfo: formData.get('staff-info').trim(),
         })
         revalidatePath('/manager/dessert')
         return 

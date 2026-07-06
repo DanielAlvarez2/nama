@@ -4,7 +4,7 @@ import { addDessert } from "@/app/actions"
 import { useActionState } from "react"
 import { useState } from "react"
 
-export default function DessertForm({addDessert}){
+export default function DessertForm({addDessert,editDessert}){
 
 
     async function handleSubmit(formData){
@@ -21,11 +21,12 @@ export default function DessertForm({addDessert}){
             return
         }
         if(formData.get('edit-boolean') == 'true'){
-            alert('update dessert')
+            // alert('update dessert')
+            await editDessert(formData)
         }else{
-            alert('add new dessert')
+            // alert('add new dessert')
+            await addDessert(formData)
         }
-        // await addDessert(formData)
         resetForm()
         document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
     }

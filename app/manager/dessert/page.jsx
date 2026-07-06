@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import DessertForm from './components/DessertForm.jsx';
 import DessertItem from './components/DessertItem.jsx';
-import {addDessert} from '@/app/actions.js'
+import {addDessert,editDessert} from '@/app/actions.js'
 import connectMongoDB from '@/libs/mongodb'
 import Dessert from '@/models/Dessert.js'
 
@@ -606,7 +606,8 @@ export default async function DessertMenu(){
     </div>{/* #miso-banana-profiterole */}
 
 
-        <DessertForm addDessert={addDessert}
+        <DessertForm  addDessert={addDessert}
+                      editDessert={editDessert}
         />
     </div>
 

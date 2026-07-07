@@ -65,6 +65,7 @@ export default async function DessertMenu(){
                                     staffInfo={data.staffInfo}
                                     sequence={data.sequence}
                                     maxSequence={maxSequence[0].sequence}
+                                    cloudinary_secure_url={data.cloudinary_secure_url}
                       />
                       
                     </div>

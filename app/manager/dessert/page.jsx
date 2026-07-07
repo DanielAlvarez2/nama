@@ -6,6 +6,8 @@ import {addDessert,editDessert} from '@/app/actions.js'
 import connectMongoDB from '@/libs/mongodb'
 import Dessert from '@/models/Dessert.js'
 
+export const dynamic = 'force-dynamic'
+
 export default async function DessertMenu(){
     
       await connectMongoDB()

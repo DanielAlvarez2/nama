@@ -13,11 +13,11 @@ export async function addDessert(formData){
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''    
 
-        console.log('preview-image' + formData.get('preview-image'))
+        // console.log('preview-image' + formData.get('preview-image'))
         if(formData.get('preview-image')){
                 const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
-                console.log('cloudinaryResponse:')
-                console.log(cloudinaryResponse)
+                // console.log('cloudinaryResponse:')
+                // console.log(cloudinaryResponse)
                 cloudinary_public_id = cloudinaryResponse.public_id
                 cloudinary_secure_url = cloudinaryResponse.secure_url
         }
@@ -42,7 +42,13 @@ export async function addDessert(formData){
 }
 export async function editDessert(formData){
     try{
+        let cloudinary_public_id = ''
+        let cloudinary_secure_url = ''    
         await connectMongoDB()
+        // NO PIC -> NEW PIC
+        // OLD PIC -> NEW PIC
+        // OLD PIC -> NO PIC
+
         await Dessert.findByIdAndUpdate(formData.get('id'),{
             name: formData.get('name').trim(),
             allergies: formData.get('allergies').trim(),

@@ -6,14 +6,17 @@ import { ImArrowDown } from "react-icons/im";
 
 export default function DessertItem(props){
 
-    function editDessert(id,name,allergies,description1,description2,price,staffInfo){
+    function editDessert(id,name,allergies,description1,description2,price,staffInfo,currentImage){
         document.getElementById('id-dessert').value = id  
         document.querySelector('#name-dessert').value = name
         document.querySelector('#allergies-dessert').value = allergies
         document.querySelector('#description1-dessert').value = description1
         document.querySelector('#description2-dessert').value = description2
         document.querySelector('#price-dessert').value = price
-        document.querySelector('#staff-info').value = staffInfo
+        document.querySelector('#staff-info').value = staffInfo 
+        document.querySelector('#current-img').src = currentImage ? currentImage : 'no-image.jpg'
+        document.querySelector('#current-image').value = currentImage
+        document.querySelector('#current-image-label').style.display = 'block'
         document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightblue'
         document.querySelector('#submit-button-dessert-form').innerHTML = `Update Dessert`
@@ -47,7 +50,8 @@ export default function DessertItem(props){
                                                         props.description1,
                                                         props.description2,
                                                         props.price,
-                                                        props.staffInfo
+                                                        props.staffInfo,
+                                                        props.cloudinary_secure_url
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"

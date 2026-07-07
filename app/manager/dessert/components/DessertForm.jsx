@@ -49,6 +49,9 @@ export default function DessertForm({addDessert,editDessert}){
         document.querySelector('#description2-dessert').value = ''
         document.querySelector('#price-dessert').value = ''
         document.querySelector('#staff-info').value = ''
+        document.querySelector('#current-img').src = ''
+        document.querySelector('#current-image').value = ''
+        document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightgreen'
         document.querySelector('#submit-button-dessert-form').innerHTML = `+ Add New Dessert`
@@ -130,6 +133,17 @@ export default function DessertForm({addDessert,editDessert}){
                                 name='staff-info' />
                 </label>
                 <br/><br/>
+
+                <label id='current-image-label' style={{display:'none'}}>
+                    Current Image:<br/>
+                    <img    id='current-img' 
+                            style={{maxWidth:'100%',maxHeight:'300px',display:'block',margin:'0 auto'}}
+                    />
+                    <input  type='hidden'
+                            id='current-image' 
+                            name='current-image' />
+                <br/><br/>
+                </label>
 
                 <label>
                     Image File: (optional)<br/>

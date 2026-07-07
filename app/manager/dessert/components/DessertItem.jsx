@@ -8,7 +8,6 @@ export default function DessertItem(props){
 
     function editDessert(id,name,allergies,description1,description2,price,staffInfo){
         document.getElementById('id-dessert').value = id  
-        document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'})        
         document.querySelector('#name-dessert').value = name
         document.querySelector('#allergies-dessert').value = allergies
         document.querySelector('#description1-dessert').value = description1
@@ -19,6 +18,8 @@ export default function DessertItem(props){
         document.querySelector('#form-dessert').style.background = 'lightblue'
         document.querySelector('#submit-button-dessert-form').innerHTML = `Update Dessert`
         document.querySelector('#edit-boolean').value = 'true'
+        setTimeout(()=>document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'}),10)
+                
     }
     return(
         <> 

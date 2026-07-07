@@ -37,7 +37,7 @@ export default function DessertForm({addDessert,editDessert}){
             // alert('add new dessert')
             await addDessert(formData)
         }
-        document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
+        setTimeout(()=>document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'}),10)        
         resetForm()
     }
 

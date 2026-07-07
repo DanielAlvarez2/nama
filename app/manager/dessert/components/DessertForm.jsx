@@ -141,6 +141,10 @@ export default function DessertForm({addDessert,editDessert}){
                 </label>
                 <br/><br/>
 
+                <input  type='hidden'
+                        defaultValue={previewImage} 
+                        name='preview-image' />
+
                 {previewImage &&    <div style={{width:'100%',textAlign:'center'}}> 
                                         <img src={previewImage} style={{maxWidth:'100%',maxHeight:'300px'}} />
                                     </div>}

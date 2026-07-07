@@ -6,10 +6,21 @@ import { NextResponse } from 'next/server'
 import Dessert from '@/models/Dessert.js'
 import {revalidatePath} from 'next/cache'
 
-
+import {cloudinary} from '@/libs/cloudinary.js'
 
 export async function addDessert(formData){
     try{
+        let cloudinary_public_id = ''
+        let cloudinary_secure_url = ''    
+
+        console.log('preview-image' + formData.get('preview-image'))
+        if(formData.get('preview-image')){
+                const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
+                console.log('cloudinaryResponse:')
+                console.log(cloudinaryResponse)
+                cloudinary_public_id = cloudinaryResponse.public_id
+                cloudinary_secure_url = cloudinaryResponse.secure_url
+        }
         await connectMongoDB()
         const highestSequenceDessert = await Dessert.find().sort({sequence:-1})
         await Dessert.create({
@@ -19,7 +30,9 @@ export async function addDessert(formData){
             description2: formData.get('description2').trim(),
             price: formData.get('price').trim(),
             staffInfo: formData.get('staff-info').trim(),
-            sequence: highestSequenceDessert[0] ? highestSequenceDessert[0].sequence + 1 : 1
+            sequence: highestSequenceDessert[0] ? highestSequenceDessert[0].sequence + 1 : 1,
+            cloudinary_public_id,
+            cloudinary_secure_url
         })
         revalidatePath('/manager/dessert')
         return 

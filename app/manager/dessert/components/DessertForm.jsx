@@ -53,6 +53,8 @@ export default function DessertForm({addDessert,editDessert}){
         document.querySelector('#form-dessert').style.background = 'lightgreen'
         document.querySelector('#submit-button-dessert-form').innerHTML = `+ Add New Dessert`
         document.querySelector('#edit-boolean').value = 'false'
+        document.querySelector('#image-file-dessert').value = ''
+        setPreviewImage('')
     }
 
 

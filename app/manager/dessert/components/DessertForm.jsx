@@ -51,6 +51,7 @@ export default function DessertForm({addDessert,editDessert}){
         document.querySelector('#staff-info').value = ''
         document.querySelector('#current-img').src = ''
         document.querySelector('#current-image').value = ''
+        document.querySelector('#image-text').textContent = ''
         document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightgreen'
@@ -142,11 +143,11 @@ export default function DessertForm({addDessert,editDessert}){
                     <input  type='hidden'
                             id='current-image' 
                             name='current-image' />
-                <br/><br/>
+                <br/>
                 </label>
 
                 <label>
-                    Image File: (optional)<br/>
+                    <span id='image-text' style={{fontSize:'inherit'}}></span>Image File: (optional)<br/>
                     <input  type='file' 
                             name='image-file'
                             id='image-file-dessert'

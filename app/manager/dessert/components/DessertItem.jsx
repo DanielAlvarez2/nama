@@ -15,6 +15,7 @@ export default function DessertItem(props){
         document.querySelector('#price-dessert').value = price
         document.querySelector('#staff-info').value = staffInfo 
         document.querySelector('#current-img').src = currentImage ? currentImage : '/no-image.jpg'
+        document.querySelector('#image-text').textContent = currentImage ? 'Replace ' : 'Add '
         document.querySelector('#current-image').value = currentImage
         document.querySelector('#current-image-label').style.display = 'block'
         document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'

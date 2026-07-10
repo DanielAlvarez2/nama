@@ -13,7 +13,6 @@ export async function addDessert(formData){
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''    
 
-        // console.log('preview-image' + formData.get('preview-image'))
         if(formData.get('preview-image')){
                 const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
                 // console.log('cloudinaryResponse:')
@@ -46,6 +45,9 @@ export async function editDessert(formData){
         let cloudinary_secure_url = ''    
         await connectMongoDB()
         // NO PIC -> NEW PIC
+        if(!formData.get('current-image') && formData.get('preview-image')){
+            console.log('NO PIC -> NEW PIC')
+        }
         // OLD PIC -> NEW PIC
         // OLD PIC -> NO PIC
 

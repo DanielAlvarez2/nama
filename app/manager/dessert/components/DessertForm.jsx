@@ -7,6 +7,7 @@ import { useState } from "react"
 export default function DessertForm({addDessert,editDessert}){
 
     const [previewImage, setPreviewImage] = useState()
+    
     function handleFileInputChange(e){
         const file = e.target.files[0]
         previewFile(file)
@@ -18,6 +19,7 @@ export default function DessertForm({addDessert,editDessert}){
     }
 
     async function handleSubmit(formData){
+        alert(formData.get('edit-state'))
         if (!formData.get('name').trim() || !formData.get('price').trim()) {
             alert('Name and Price are required')
             setTimeout(()=>{
@@ -30,14 +32,16 @@ export default function DessertForm({addDessert,editDessert}){
             },10)
             return
         }
-        if(formData.get('edit-boolean') == 'true'){
-            // alert('update dessert')
+        if(formData.get('edit-state') == 'true'){
+            alert('edit-state: ' + formData.get('edit-state'))
             await editDessert(formData)
         }else{
-            // alert('add new dessert')
+            alert('edit-state: ' + formData.get('edit-state'))
             await addDessert(formData)
         }
-        setTimeout(()=>document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'}),10)        
+        setTimeout(()=>{
+            document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
+        },10)        
         resetForm()
     }
 
@@ -56,7 +60,7 @@ export default function DessertForm({addDessert,editDessert}){
         document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightgreen'
         document.querySelector('#submit-button-dessert-form').innerHTML = `+ Add New Dessert`
-        document.querySelector('#edit-boolean').value = 'false'
+        document.querySelector('#edit-state').value = 'false'
         document.querySelector('#image-file-dessert').value = ''
         setPreviewImage('')
     }
@@ -76,8 +80,8 @@ export default function DessertForm({addDessert,editDessert}){
                         id='id-dessert' />
 
                 <input  type='hidden'
-                        name='edit-boolean'
-                        id='edit-boolean'
+                        name='edit-state'
+                        id='edit-state'
                         value='false' />
 
                 <label>

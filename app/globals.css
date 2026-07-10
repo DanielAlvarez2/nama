@@ -23,6 +23,14 @@
  font-family: NeueHaasDisplayLight;
  src: url('./fonts/NeueHaasDisplayLight.ttf');
 }
+@font-face{
+ font-family: GaramondPremierProMediumCaption;
+ src: url('./fonts/GaramondPremierProMediumCaption.otf');
+}
+@font-face{
+ font-family: NovelProRegular;
+ src: url('./fonts/NovelProRegular.otf');
+}
 
 
 *{
@@ -46,7 +54,7 @@
 .sake-content *,
 #sake-modal *
 {
-  font-family: serif;
+  font-family: NovelProRegular;
 }
 .modal{
  width:100%;
@@ -419,6 +427,7 @@ h1{
 }
 .sake-webpage{
   position:relative;
+  font-family:GaramondPremierProMediumCaption !important;
 }
 #sake-modal-image{
   max-width:95%;

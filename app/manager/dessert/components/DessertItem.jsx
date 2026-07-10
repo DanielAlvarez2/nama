@@ -3,8 +3,11 @@
 import { deleteItem,moveDown,moveUp } from "@/app/actions.js"
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
+import { useState } from "react";
 
 export default function DessertItem(props){
+
+    const [editMode, setEditMode] = useState(false)
 
     function editDessert(id,name,allergies,description1,description2,price,staffInfo,currentImage){
         document.getElementById('id-dessert').value = id  
@@ -21,9 +24,10 @@ export default function DessertItem(props){
         document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightblue'
         document.querySelector('#submit-button-dessert-form').innerHTML = `Update Dessert`
-        document.querySelector('#edit-boolean').value = 'true'
+        setEditMode(true)
+        document.querySelector('#edit-state').value = editMode
+        alert('edit-state set to true? : ' + document.querySelector('#edit-state').value)
         setTimeout(()=>document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'}),10)
-                
     }
     return(
         <> 

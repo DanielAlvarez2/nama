@@ -211,6 +211,7 @@ body,.webpage{
 }
 .dinner-menu-item{
  margin-bottom:20px;
+ cursor:pointer !important;
 }
 .nigiri{
  margin-bottom:0;

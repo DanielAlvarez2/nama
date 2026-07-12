@@ -4,10 +4,11 @@ import { deleteItem,moveDown,moveUp } from "@/app/actions.js"
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 import { useState } from "react";
+import {editMode, useEditMode, updateEditMode} from '@/context/EditModeContext'
 
 export default function DessertItem(props){
 
-    const [editMode, setEditMode] = useState(false)
+    const {editMode,updateEditMode} = useEditMode()
 
     function editDessert(id,name,allergies,description1,description2,price,staffInfo,currentImage){
         document.getElementById('id-dessert').value = id  
@@ -24,9 +25,8 @@ export default function DessertItem(props){
         document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightblue'
         document.querySelector('#submit-button-dessert-form').innerHTML = `Update Dessert`
-        setEditMode(true)
-        document.querySelector('#edit-state').value = editMode
-        alert('edit-state set to true? : ' + document.querySelector('#edit-state').value)
+        updateEditMode(true)
+        alert(editMode)
         setTimeout(()=>document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'}),10)
     }
     return(
@@ -34,7 +34,7 @@ export default function DessertItem(props){
                 <div  className="dinner-menu-item"
                     //   onClick={()=>showModal('hojicha-banana-roulade')}
                 >
-                  <img  src={props.cloudinary_secure_url} 
+                  <img  src={props.cloudinary_secure_url ? props.cloudinary_secure_url : null} 
                         style={{maxWidth:'100%',maxHeight:'100px'}}
                   />
                   <div className="name-price">

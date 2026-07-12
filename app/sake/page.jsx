@@ -98,6 +98,7 @@ export default function Sake(){
                         <div className='sake-producer-name'><span className='bin-left'></span>
                         <span style={{textDecoration:'line-through'}}>Masumi</span> <span className='typo'>Miyasaka</span>
                         </div>{/* .sake-producer-name */}
+                        
                         <div className='sake' onClick={()=>openModal(   'SPARKLING',
                                                                         'Masumi',
                                                                         '3001',

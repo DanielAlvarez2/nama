@@ -357,6 +357,7 @@ h1{
 }
 .sake{
   display:flex;
+  cursor:pointer;
 }
 .sake-flexbox-left{
   display:flex;

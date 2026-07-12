@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import {EditModeProvider} from '@/context/EditModeContext.jsx'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <EditModeProvider>
+          {children}
+        </EditModeProvider>
+      </body>
     </html>
   );
 }

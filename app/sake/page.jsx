@@ -100,7 +100,7 @@ export default function Sake(){
                         </div>{/* .sake-producer-name */}
                         
                         <div className='sake' onClick={()=>openModal(   'SPARKLING',
-                                                                        'Masumi',
+                                                                        `<span style='text-decoration:line-through;'>Masumi</span> <span class='typo'>Miyasaka</span>`,
                                                                         '3001',
                                                                         '750 ml',
                                                                         '425',
@@ -706,7 +706,7 @@ export default function Sake(){
                                                                     '3404',
                                                                     '720 ml',
                                                                     '655',
-                                                                    'Gokujo no Kire, Iwate',
+                                                                    `Gokujo no Kire <span class='typo'>Junmai Daiginjo</span>, Iwate`,
                                                                     'akabu.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>

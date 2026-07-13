@@ -3695,6 +3695,7 @@ export default function Home() {
                           6-7 ounces<br/>
                           soy koji moromi<br/>
                           wasabi oil<br/>
+                          mashed potatoes<br/>
                           grilled vegetables<br/>
                           medium rare unless otherwise requested<br/>
                           <br/><br/>

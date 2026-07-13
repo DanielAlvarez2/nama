@@ -1608,20 +1608,20 @@ export default function Sake(){
                         <div className='sake' onClick={()=>openModal(
                                                                     'JUNMAI GINJO',
                                                                     '<span style="text-decoration:line-through;font-size:inherit"}}>Hirataka</span> <span class="typo">Hirako Shuzo</span>',
-                                                                    '3210',
+                                                                    '3216',
                                                                     '720 ml',
                                                                     '160',
                                                                     'Hitakami Yasuke Houjun Karakuchi Junmai Ginjo, Miyagi',
                                                                     'hitakami.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
-                                <span className='bin-left typo'>3210</span>
+                                <span className='bin-left'>3216</span>
                                 <span className='sake-description'>
                                     Hitakami Yasuke Houjun Karakuchi Junmai Ginjo, Miyagi
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
-                                <span className='bin-mobile typo'>3210</span>
+                                <span className='bin-mobile'>3216</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>160</span>
                                 <span className='sake-abv'>16%abv</span>
@@ -1644,13 +1644,13 @@ export default function Sake(){
                                                                     'moon-on-the-water.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
-                                <span className='bin-left typo'>3210</span>
+                                <span className='bin-left'>3210</span>
                                 <span className='sake-description'>
                                     Moon on the Water <span className='typo'>Junmai Ginjo</span>, Hiroshima
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
-                                <span className='bin-mobile typo'>3210</span>
+                                <span className='bin-mobile'>3210</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>195</span>
                                 <span className='sake-abv'>15%abv</span>

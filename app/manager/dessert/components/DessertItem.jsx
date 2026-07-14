@@ -4,13 +4,13 @@ import { deleteItem,moveDown,moveUp } from "@/app/actions.js"
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 import { useState } from "react";
-import {editMode, useEditMode, updateEditMode} from '@/context/EditModeContext'
+import {useEditModeContext} from '@/context/EditModeContext'
 
 export default function DessertItem(props){
 
-    const {editMode,updateEditMode} = useEditMode()
+    const {editMode,setEditMode} = useEditModeContext()
 
-    function editDessert(id,name,allergies,description1,description2,price,staffInfo,currentImage){
+    function editDessert(id,name,allergies,description1,description2,price,staffInfo,currentImageURL,currentImageID){
         document.getElementById('id-dessert').value = id  
         document.querySelector('#name-dessert').value = name
         document.querySelector('#allergies-dessert').value = allergies
@@ -18,16 +18,19 @@ export default function DessertItem(props){
         document.querySelector('#description2-dessert').value = description2
         document.querySelector('#price-dessert').value = price
         document.querySelector('#staff-info').value = staffInfo 
-        document.querySelector('#current-img').src = currentImage ? currentImage : '/no-image.jpg'
-        document.querySelector('#image-text').textContent = currentImage ? 'Replace ' : 'Add '
-        document.querySelector('#current-image').value = currentImage
+        document.querySelector('#current-img').src = currentImageURL ? currentImageURL : '/no-image.jpg'
+        document.querySelector('#current-image-url').value = currentImageURL
+        document.querySelector('#current-image-id').value = currentImageID
+        document.querySelector('#image-text').textContent = currentImageURL ? 'Replace ' : 'Add '
         document.querySelector('#current-image-label').style.display = 'block'
         document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightblue'
         document.querySelector('#submit-button-dessert-form').innerHTML = `Update Dessert`
-        updateEditMode(true)
-        alert(editMode)
-        setTimeout(()=>document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'}),10)
+        setEditMode(true)
+        setTimeout(()=>{
+          document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'})
+        }
+          ,10)
     }
     return(
         <> 
@@ -56,7 +59,8 @@ export default function DessertItem(props){
                                                         props.description2,
                                                         props.price,
                                                         props.staffInfo,
-                                                        props.cloudinary_secure_url
+                                                        props.cloudinary_secure_url,
+                                                        props.cloudinary_secure_id,
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"

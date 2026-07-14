@@ -15,8 +15,6 @@ export async function addDessert(formData){
 
         if(formData.get('preview-image')){
                 const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
-                // console.log('cloudinaryResponse:')
-                // console.log(cloudinaryResponse)
                 cloudinary_public_id = cloudinaryResponse.public_id
                 cloudinary_secure_url = cloudinaryResponse.secure_url
         }
@@ -44,10 +42,27 @@ export async function editDessert(formData){
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''    
         await connectMongoDB()
+
+            // NO PIC -> NO PIC COMPLETE
+            
+            // NO PIC -> ADD PIC
+            if(!formData.get('current-image-url') && formData.get('preview-image')){
+                const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
+                cloudinary_public_id = cloudinaryResponse.public_id
+                cloudinary_secure_url = cloudinaryResponse.secure_url                
+            }
+            // PIC -> NEW PIC
+            // PIC -> NO PIC
+            // formData.set('price','NEW PRICE')
+            // formData.get('image-file') is form:file-preview
+            // formData.get('current-image-url')
+            // formData.get('current-image-id') 
+            
+
         // NO PIC -> NEW PIC
-        if(!formData.get('current-image') && formData.get('preview-image')){
-            console.log('NO PIC -> NEW PIC')
-        }
+        // if(!formData.get('current-image') && formData.get('preview-image')){
+        //     console.log('NO PIC -> NEW PIC')
+        // }
         // OLD PIC -> NEW PIC
         // OLD PIC -> NO PIC
 
@@ -58,6 +73,8 @@ export async function editDessert(formData){
             description2: formData.get('description2').trim(),
             price: formData.get('price').trim(),
             staffInfo: formData.get('staff-info').trim(),
+            cloudinary_public_id,
+            cloudinary_secure_url
         })
         revalidatePath('/manager/dessert')
         return 

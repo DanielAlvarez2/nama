@@ -6,16 +6,14 @@ const EditModeContext = createContext()
 
 export function EditModeProvider({children}){
     const [editMode, setEditMode] = useState(false)
-    const updateEditMode = ()=> setEditMode()
     
     return(
-        <EditModeContext.Provider value={{editMode, updateEditMode}}>
+        <EditModeContext.Provider value={{editMode, setEditMode}}>
             {children}
         </EditModeContext.Provider>
     )
 }
 
-export function useEditMode(){
-    const context = useContext(EditModeContext)
-    return context
+export function useEditModeContext(){
+    return useContext(EditModeContext)
 }

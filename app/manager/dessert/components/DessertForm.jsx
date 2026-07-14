@@ -3,11 +3,11 @@
 import { addDessert } from "@/app/actions"
 import { useActionState } from "react"
 import { useState } from "react"
-import {editMode, updateEditMode,useEditMode} from '@/context/EditModeContext'
+import {useEditModeContext} from '@/context/EditModeContext'
 
 export default function DessertForm({addDessert,editDessert}){
 
-    const {editMode,updateEditMode} = useEditMode()    
+    const {editMode,setEditMode} = useEditModeContext()    
 
     const [previewImage, setPreviewImage] = useState()
 
@@ -36,7 +36,7 @@ export default function DessertForm({addDessert,editDessert}){
         }
         if(editMode){
             await editDessert(formData)
-            updateEditMode(false)
+            setEditMode(false)
         }else{
             await addDessert(formData)
         }
@@ -55,13 +55,14 @@ export default function DessertForm({addDessert,editDessert}){
         document.querySelector('#price-dessert').value = ''
         document.querySelector('#staff-info').value = ''
         document.querySelector('#current-img').src = ''
-        document.querySelector('#current-image').value = ''
+        document.querySelector('#current-image-url').value = ''
+        document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
         document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightgreen'
         document.querySelector('#submit-button-dessert-form').innerHTML = `+ Add New Dessert`
-        updateEditMode(false)
+        setEditMode(false)
         document.querySelector('#image-file-dessert').value = ''
         setPreviewImage('')
     }
@@ -141,8 +142,11 @@ export default function DessertForm({addDessert,editDessert}){
                             style={{maxWidth:'100%',maxHeight:'300px',display:'block',margin:'0 auto'}}
                     />
                     <input  type='hidden'
-                            id='current-image' 
+                            id='current-image-url' 
                             name='current-image' />
+                    <input  type='hidden'
+                            id='current-image-id' 
+                            name='current-image-id' />
                 <br/>
                 </label>
 

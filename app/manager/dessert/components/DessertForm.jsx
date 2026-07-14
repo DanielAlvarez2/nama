@@ -3,13 +3,17 @@
 import { addDessert } from "@/app/actions"
 import { useActionState } from "react"
 import { useState } from "react"
+import { TiDeleteOutline } from "react-icons/ti";
 import {useEditModeContext} from '@/context/EditModeContext'
+import {useExistingImageContext} from '@/context/ExistingImageContext'
 
 export default function DessertForm({addDessert,editDessert}){
 
-    const {editMode,setEditMode} = useEditModeContext()    
+    const {editMode,setEditMode} = useEditModeContext()   
+    const {existingImage,setExistingImage} = useExistingImageContext() 
 
     const [previewImage, setPreviewImage] = useState()
+    // const [existingImage, setExistingImage] = useState()
 
     function handleFileInputChange(e){
         const file = e.target.files[0]
@@ -47,6 +51,7 @@ export default function DessertForm({addDessert,editDessert}){
     }
 
     function resetForm(){
+        document.querySelector('#delete-image-checkbox') && (document.querySelector('#delete-image-checkbox').checked = false)
         document.querySelector('#id-dessert').value = ''
         document.querySelector('#name-dessert').value = ''
         document.querySelector('#allergies-dessert').value = ''
@@ -54,20 +59,27 @@ export default function DessertForm({addDessert,editDessert}){
         document.querySelector('#description2-dessert').value = ''
         document.querySelector('#price-dessert').value = ''
         document.querySelector('#staff-info').value = ''
-        document.querySelector('#current-img').src = ''
+        // document.querySelector('#current-img').src = ''
         document.querySelector('#current-image-url').value = ''
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
-        document.querySelector('#current-image-label').style.display = 'none'
+        // document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightgreen'
-        document.querySelector('#submit-button-dessert-form').innerHTML = `+ Add New Dessert`
+        document.querySelector('#submit-button-dessert-form').innerHTML = `+ New Dessert`
         setEditMode(false)
         document.querySelector('#image-file-dessert').value = ''
         setPreviewImage('')
+        setExistingImage(null)
     }
 
-
+function toggleCheckbox(){
+    if(document.querySelector('#delete-image-checkbox').checked == true){
+        document.querySelector('#delete-icon').style.color = 'red'
+    }else{
+        document.querySelector('#delete-icon').style.color = 'transparent'
+    }
+}
 
     return(
         <>
@@ -136,19 +148,35 @@ export default function DessertForm({addDessert,editDessert}){
                 </label>
                 <br/><br/>
 
-                <label id='current-image-label' style={{display:'none'}}>
-                    Current Image:<br/>
-                    <img    id='current-img' 
-                            style={{maxWidth:'100%',maxHeight:'300px',display:'block',margin:'0 auto'}}
-                    />
-                    <input  type='hidden'
-                            id='current-image-url' 
-                            name='current-image' />
-                    <input  type='hidden'
-                            id='current-image-id' 
-                            name='current-image-id' />
-                <br/>
-                </label>
+                {existingImage && 
+                    <label id='current-image-label'>
+                        Current Image:<br/>
+                        <div style={{position:'relative'}}>
+                            <img    id='current-img' 
+                                    src={existingImage ? existingImage : null}
+                                    style={{maxWidth:'100%',maxHeight:'300px',display:'block',margin:'0 auto'}}
+                            />
+                            <TiDeleteOutline    size={150} 
+                                                id='delete-icon'
+                                                style={{color:'transparent',
+                                                        position:'absolute',
+                                                        bottom:'50%',
+                                                        left:'50%',
+                                                        transform:'translate(-50%,50%)',
+                                                        // transform:'translateY(50%)',
+                                                }}
+                            />
+                        </div>
+                       
+                       <br/>
+                    </label>
+                }
+                        <input  type='hidden'
+                                id='current-image-url' 
+                                name='current-image' />
+                        <input  type='hidden'
+                                id='current-image-id' 
+                                name='current-image-id' />
 
                 <label>
                     <span id='image-text' style={{fontSize:'inherit'}}></span>Image File: (optional)<br/>
@@ -167,8 +195,15 @@ export default function DessertForm({addDessert,editDessert}){
                 {previewImage &&    <div style={{width:'100%',textAlign:'center'}}> 
                                         <img src={previewImage} style={{maxWidth:'100%',maxHeight:'300px'}} />
                                     </div>}
-
-
+                {editMode && existingImage &&
+                    <span style={{fontSize:'20px',display:'flex',alignItems:'center'}}>
+                        <input  type='checkbox' 
+                                onClick={toggleCheckbox}
+                                id='delete-image-checkbox'
+                                name='delete-image-checkbox' />  
+                        &nbsp;Delete Current Image (optional)
+                    </span>
+                    }
                 <br/><br/>
                 <div style={{display:'flex'}}>
                     <button id='submit-button-dessert-form' type='submit'>+ New Dessert</button>

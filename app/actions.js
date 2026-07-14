@@ -59,8 +59,12 @@ export async function editDessert(formData){
                 cloudinary_public_id = cloudinaryResponse.public_id
                 cloudinary_secure_url = cloudinaryResponse.secure_url                
             }
-
+            
             // OLD PIC -> NO PIC
+            if(formData.get('current-image-url') && !formData.get('preview-image')){
+                await cloudinary.uploader.destroy(formData.get(cloudinary_public_id))
+            }
+
             // formData.set('price','NEW PRICE')
             // formData.get('image-file') is form:file-preview
             // formData.get('current-image-url')

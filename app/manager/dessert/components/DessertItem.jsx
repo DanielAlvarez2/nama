@@ -5,10 +5,12 @@ import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 import { useState } from "react";
 import {useEditModeContext} from '@/context/EditModeContext'
+import {useExistingImageContext} from '@/context/ExistingImageContext'
 
 export default function DessertItem(props){
 
     const {editMode,setEditMode} = useEditModeContext()
+    const {existingImage,setExistingImage} = useExistingImageContext()
 
     function editDessert(id,name,allergies,description1,description2,price,staffInfo,currentImageURL,currentImageID){
         document.getElementById('id-dessert').value = id  
@@ -18,15 +20,17 @@ export default function DessertItem(props){
         document.querySelector('#description2-dessert').value = description2
         document.querySelector('#price-dessert').value = price
         document.querySelector('#staff-info').value = staffInfo 
-        document.querySelector('#current-img').src = currentImageURL ? currentImageURL : '/no-image.jpg'
+        // document.querySelector('#current-img').src = currentImageURL ? currentImageURL : '/no-image.jpg'
         document.querySelector('#current-image-url').value = currentImageURL
         document.querySelector('#current-image-id').value = currentImageID
         document.querySelector('#image-text').textContent = currentImageURL ? 'Replace ' : 'Add '
-        document.querySelector('#current-image-label').style.display = 'block'
+        // document.querySelector('#current-image-label').style.display = 'block'
         document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightblue'
         document.querySelector('#submit-button-dessert-form').innerHTML = `Update Dessert`
         setEditMode(true)
+        setExistingImage(currentImageURL ? currentImageURL : null)
+        document.querySelector('#delete-image-checkbox') && (document.querySelector('#delete-image-checkbox').checked = false)
         setTimeout(()=>{
           document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'})
         }

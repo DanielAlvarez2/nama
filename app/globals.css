@@ -28,8 +28,8 @@
  src: url('./fonts/GaramondPremierProMediumCaption.otf');
 }
 @font-face{
- font-family: NovelProLight;
- src: url('./fonts/NovelProLight.otf');
+ font-family: NovelProExtraLight;
+ src: url('./fonts/NovelProExtraLight.otf');
 }
 
 
@@ -54,7 +54,7 @@
 .sake-content *,
 #sake-modal *
 {
-  font-family: NovelProLight;
+  font-family: NovelProExtraLight;
   font-weight: 100;
 }
 .modal{

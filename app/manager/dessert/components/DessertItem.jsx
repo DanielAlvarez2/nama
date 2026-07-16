@@ -12,7 +12,15 @@ export default function DessertItem(props){
     const {editMode,setEditMode} = useEditModeContext()
     const {existingImage,setExistingImage} = useExistingImageContext()
 
-    function editDessert(id,name,allergies,description1,description2,price,staffInfo,currentImageURL,currentImageID){
+    function editDessert( id,
+                          name,
+                          allergies,
+                          description1,
+                          description2,
+                          price,
+                          staffInfo,
+                          currentImageURL,
+                          currentImageID){
         document.getElementById('id-dessert').value = id  
         document.querySelector('#name-dessert').value = name
         document.querySelector('#allergies-dessert').value = allergies
@@ -23,6 +31,7 @@ export default function DessertItem(props){
         // document.querySelector('#current-img').src = currentImageURL ? currentImageURL : '/no-image.jpg'
         document.querySelector('#current-image-url').value = currentImageURL
         document.querySelector('#current-image-id').value = currentImageID
+        // document.querySelector('#current-image-id').value = 'TESTING123'
         document.querySelector('#image-text').textContent = currentImageURL ? 'Replace ' : 'Add '
         // document.querySelector('#current-image-label').style.display = 'block'
         document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'
@@ -64,7 +73,7 @@ export default function DessertItem(props){
                                                         props.price,
                                                         props.staffInfo,
                                                         props.cloudinary_secure_url,
-                                                        props.cloudinary_secure_id,
+                                                        props.cloudinary_public_id,
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"

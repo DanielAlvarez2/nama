@@ -39,6 +39,10 @@ export async function addDessert(formData){
 }
 export async function editDessert(formData){
     try{
+        console.log('formData:')
+        console.log(formData)
+        console.log('checkbox:')
+        console.log(formData.get('delete-image-checkbox') != null)
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''    
         await connectMongoDB()
@@ -54,15 +58,18 @@ export async function editDessert(formData){
             
             // OLD PIC -> NEW PIC COMPLETE
             if(formData.get('current-image-url') && formData.get('preview-image')){
-                await cloudinary.uploader.destroy(formData.get(cloudinary_public_id))
+                console.log('OLD PIC -> NEW PIC')
+                await cloudinary.uploader.destroy(formData.get('current-image-id'))
                 const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
                 cloudinary_public_id = cloudinaryResponse.public_id
                 cloudinary_secure_url = cloudinaryResponse.secure_url                
             }
             
             // OLD PIC -> NO PIC
-            if(formData.get('current-image-url') && !formData.get('preview-image')){
-                await cloudinary.uploader.destroy(formData.get(cloudinary_public_id))
+            console.log(formData.get('current-image-url'))
+            if(formData.get('current-image-url') && formData.get('delete-image-checkbox') != null){
+                // await cloudinary.uploader.destroy(formData.get('cloudinary_public_id'))
+                console.log('OLD PIC -> NO PIC')
             }
 
             // formData.set('price','NEW PRICE')

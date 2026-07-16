@@ -76,6 +76,8 @@ export default function DessertForm({addDessert,editDessert}){
 function toggleCheckbox(){
     if(document.querySelector('#delete-image-checkbox').checked == true){
         document.querySelector('#delete-icon').style.color = 'red'
+        document.querySelector('#image-file-dessert').value = ''
+        setPreviewImage('')
     }else{
         document.querySelector('#delete-icon').style.color = 'transparent'
     }
@@ -173,7 +175,7 @@ function toggleCheckbox(){
                 }
                         <input  type='hidden'
                                 id='current-image-url' 
-                                name='current-image' />
+                                name='current-image-url' />
                         <input  type='hidden'
                                 id='current-image-id' 
                                 name='current-image-id' />
@@ -197,6 +199,7 @@ function toggleCheckbox(){
                                     </div>}
                 {editMode && existingImage &&
                     <span style={{fontSize:'20px',display:'flex',alignItems:'center'}}>
+                        <br/><br/>
                         <input  type='checkbox' 
                                 onClick={toggleCheckbox}
                                 id='delete-image-checkbox'

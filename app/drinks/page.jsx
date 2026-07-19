@@ -203,6 +203,26 @@ export default function DrinksMenu(){
             </div>{/* .section */}
 
 
+
+
+
+
+          </div>{/* .menu-items */}
+
+
+
+
+
+
+
+
+      </div>{/* .small-paper */}
+
+      <br className='no-print' />
+
+
+      <div className='small-paper'>
+        <div className='menu-items'>
             <div className="section section-dessert">
 
               <div className="left-column" style={{ display:'flex',
@@ -311,26 +331,11 @@ export default function DrinksMenu(){
               
               </div>{/* .right-column */}
             </div>{/* .section */}
-
-
-
-
-          </div>{/* .menu-items */}
-
-
-
-
-
-
-
-
+            
+        </div>{/* .menu-items */}
       </div>{/* .small-paper */}
 
       <br className='no-print' />
-
-
-
-
 
 
 

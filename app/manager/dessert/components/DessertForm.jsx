@@ -7,10 +7,11 @@ import { TiDeleteOutline } from "react-icons/ti";
 import {useEditModeContext} from '@/context/EditModeContext'
 import {useExistingImageContext} from '@/context/ExistingImageContext'
 
+
 export default function DessertForm({addDessert,editDessert}){
 
     const {editMode,setEditMode} = useEditModeContext()   
-    const {existingImage,setExistingImage} = useExistingImageContext() 
+    const {existingImage,setExistingImage} = useExistingImageContext()
 
     const [previewImage, setPreviewImage] = useState()
     // const [existingImage, setExistingImage] = useState()

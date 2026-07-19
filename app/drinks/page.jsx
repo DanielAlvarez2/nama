@@ -52,45 +52,63 @@ export default function DrinksMenu(){
                       <span className="name">Ume Spritz</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">31</span>
+                    <span className="price">28</span>
                   </div>
-                  <div className="description1">Kagatsuru Umeshu, Mondino </div>
-                  <div className="description2">Aperitivo, Cremant d'Alsace</div>
+                  <div className="description1">Sour Plum, Strawberry, Peach, Sparkling Wine</div>
+                  <div className="description2"></div>
                 </div>
 
 
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('yuzu-sour')}
+                      // onClick={()=>showModal('yuzu-sour')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Yuzu Sour</span>
+                      <span className="name">Lychee Martini</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">30</span>
                   </div>
-                  <div className="description1">Mal Bien Mezcal, Daiyame Shochu, Yuzu Kosho, Lime</div>
+                  <div className="description1">Vodka, Daiyame Shochu, Lemon, Lychee, Shiso</div>
                   <div className="description2"></div>
                 </div>
 
 
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('foxs-wedding')}
+                      // onClick={()=>showModal('foxs-wedding')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">A Fox's Wedding</span>
+                      <span className="name">Banana Club</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">28</span>
+                    <span className="price">29</span>
                   </div>
-                  <div className="description1">Osuzuyama Gin, Summer Snow Nigori, Cinnamon</div>
-                  <div className="description2"></div>
+                  <div className="description1">Hana Shochu, Four Roses Single Barrel </div>
+                  <div className="description2">Bourbon, Nikka Malt Whiskey, Banana, Soda</div>
                 </div>
 
 
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('budo-panther')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Akarita</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">30</span>
+                  </div>
+                  <div className="description1">Mal Bien Mezcal, Red Yuzu Kosho, Lime, Shochu</div>
+                  <div className="description2"></div>
+                </div>
 
 
                 <div  className="dinner-menu-item"
@@ -103,28 +121,33 @@ export default function DrinksMenu(){
                     </span>
                     <span className="price">32</span>
                   </div>
-                  <div className="description1">Ichiro's Malt & Grain Whiskey, Port Askaig Single Malt, </div>
-                  <div className="description2">Lemon, Pickled Honey</div>
+                  <div className="description1">Ichiro Malt & Grain Whiskey, Port Askaig Peated </div>
+                  <div className="description2">Scotch, Lemon, Ginger, Pickled Honey</div>
                 </div>
+
+
+
+
+
+
 
 
 
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('budo-panther')}
+                      // onClick={()=>showModal('improved-yokohama')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Budo Panther</span>
+                      <span className="name">Shiitake Sazerac</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">29</span>
+                    <span className="price">30</span>
                   </div>
-                  <div className="description1">Kana Shochu, Genever, Concord </div>
-                  <div className="description2">Grape, Lemon, Sorghum</div>
+                  <div className="description1">Paul Sutton 6yr Bourbon, Dad's Hat Oloroso Cask, </div>
+                  <div className="description2">Hyakunen No Kodoku Shochu, </div>
+                  <div className="description3">Peychaud's and Chocolate Bitters</div>
                 </div>
-
-
 
 
 
@@ -139,27 +162,8 @@ export default function DrinksMenu(){
                     </span>
                     <span className="price">28</span>
                   </div>
-                  <div className="description1">Nikka Sencha Gin, Centum Herbus, Midori, Lemon</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('improved-yokohama')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Improved Yokohama Cocktail</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">50</span>
-                  </div>
-                  <div className="description1">Hakushu 12 Year Single Malt, Marasca,</div>
-                  <div className="description2">Benedictine, Absinthe</div>
+                  <div className="description1">Nikka Coffey <span className='typo'>Pot</span> Gin, Lime, Midori, Leopold </div>
+                  <div className="description2">Sour Apple, Bordiga Centum Herbis</div>
                 </div>
 
 
@@ -167,17 +171,17 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      onClick={()=>showModal('hot-wassail')}
+                      // onClick={()=>showModal('hot-wassail')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Hot Wassail</span>
+                      <span className="name">Hojicha Colada</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">29</span>
+                    <span className="price">32</span>
                   </div>
-                  <div className="description1">Bordelet Poire, Hakurakusei Ginjo Sake, Apples, </div>
-                  <div className="description2">Prune Brandy, Pimento Dram, Amontillado Sherry</div>
+                  <div className="description1">Rums of Mexico Cana Criola, El Dorado Enmore, </div>
+                  <div className="description2">Worthy Park, Lime, Coconut, Hojicha</div>
                 </div>
 
 
@@ -206,7 +210,7 @@ export default function DrinksMenu(){
                                                     // background:'pink',
                                                     justifyContent:'space-between'}}>
                 <span style={{fontSize:'inherit'}}>ZERO PROOF COCKTAILS</span>
-                <span className='price'>14</span>
+                <span className='price'></span>
 
               </div>
 
@@ -221,13 +225,29 @@ export default function DrinksMenu(){
                       <span className="name">Pepper Buck</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price"></span>
+                    <span className="price">16</span>
                   </div>
-                  <div className="description1">Lime, Spiced Ginger, Jalape<span style={{color:'red'}}>ñ</span>o</div>
+                  <div className="description1">Ginger, Jalape<span style={{color:'red'}}>ñ</span>o, Lime</div>
                   <div className="description2"></div>
                 </div>
 
               
+              
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('straw-hat')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Genmai Horchata</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Genmaimatcha, Rice, Cinnamon, Kokuto</div>
+                  <div className="description2"></div>
+                </div>
+
+
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('phony-negroni')}
                 >
@@ -236,28 +256,14 @@ export default function DrinksMenu(){
                       <span className="name">Phony Negroni</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price"></span>
+                    <span className="price">16</span>
                   </div>
-                  <div className="description1">Juniper, Orange, Gentian</div>
+                  <div className="description1">Gentian, Orange, Juniper</div>
                   <div className="description2"></div>
                 </div>
 
-              
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('straw-hat')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Straw Hat</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price"></span>
-                  </div>
-                  <div className="description1">Houjicha, Thai Coconut, Lime</div>
-                  <div className="description2"></div>
-                </div>
 
-              
+
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('souchong-sour')}
                 >
@@ -266,10 +272,40 @@ export default function DrinksMenu(){
                       <span className="name">Souchong Sour</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price"></span>
+                    <span className="price">16</span>
                   </div>
-                  <div className="description1">Passionfruit, Falernum, Lapsang Souchong Kombucha</div>
+                  <div className="description1">Passionfruit, Falernu<span className='typo'>m</span>, Unified </div>
+                  <div className="description2">Ferments Lapsang Souchong</div>
+                </div>
+
+              
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('souchong-sour')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Soba Arnold Palmer</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Yuzu, Lemon, Soba</div>
                   <div className="description2"></div>
+                </div>
+
+              
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('souchong-sour')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Unified Ferments Kombucha</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Snow Chrysanthemum, Lapsang </div>
+                  <div className="description2">Souchong, Rhododendron, Soba</div>
                 </div>
 
               
@@ -1271,16 +1307,17 @@ export default function DrinksMenu(){
                               <span className="name">Ume Spritz</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">31</span>
+                            <span className="price">28</span>
                           </div>
-                          <div className="description1">Kagatsuru Umeshu, Mondino </div>
-                          <div className="description2">Aperitivo, Cremant d'Alsace</div>
+                          <div className="description1">Sour Plum, Strawberry, Peach, Sparkling Wine</div>
+                          <div className="description2"></div>
                           
                           <hr/>
                           <br/>
-                          Kagatsuru Umeshu<br/>
-                          Mondino Aperitivo<br/>
-                          Cremant d'Alsace
+                          Sour Plum<br/>
+                          Strawberry<br/>
+                          Peach<br/>
+                          Sparkling Wine<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  
@@ -1384,14 +1421,15 @@ export default function DrinksMenu(){
                             </span>
                             <span className="price">32</span>
                           </div>
-                          <div className="description1">Ichiro's Malt & Grain Whiskey, Port Askaig Single Malt, </div>
-                          <div className="description2">Lemon, Pickled Honey</div>
+                          <div className="description1">Ichiro Malt & Grain Whiskey, Port Askaig Peated </div>
+                          <div className="description2">Scotch, Lemon, Ginger, Pickled Honey</div>
                           
                           <hr/>
                           <br/>
-                          Ichiro's Malt & Grain Whiskey<br/>
-                          Port Askaig Single Malt<br/>
+                          Ichiro Malt & Grain Whiskey<br/>
+                          Port Askaig Peated Scotch<br/>
                           Lemon<br/>
+                          Ginger<br/>
                           Pickled Honey<br/>
                           <br/><br/>
               </div>
@@ -1461,8 +1499,8 @@ export default function DrinksMenu(){
                             </span>
                             <span className="price">28</span>
                           </div>
-                          <div className="description1">Nikka Sencha Gin, Centum Herbus, Midori, Lemon</div>
-                          <div className="description2"></div>
+                          <div className="description1">Nikka Coffey <span className='typo'>Pot</span> Gin, Lime, Midori, Leopold </div>
+                          <div className="description2">Sour Apple, Bordiga Centum Herbis</div>
                           
                           <hr/>
                           <br/>

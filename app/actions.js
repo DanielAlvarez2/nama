@@ -37,12 +37,9 @@ export async function addDessert(formData){
         console.log(err)
     }
 }
+
 export async function editDessert(formData){
     try{
-        console.log('formData:')
-        console.log(formData)
-        console.log('checkbox:')
-        console.log(formData.get('delete-image-checkbox') != null)
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''    
         await connectMongoDB()
@@ -66,24 +63,10 @@ export async function editDessert(formData){
             }
             
             // OLD PIC -> NO PIC
-            console.log(formData.get('current-image-url'))
             if(formData.get('current-image-url') && formData.get('delete-image-checkbox') != null){
-                // await cloudinary.uploader.destroy(formData.get('cloudinary_public_id'))
                 console.log('OLD PIC -> NO PIC')
+                await cloudinary.uploader.destroy(formData.get('current-image-id'))
             }
-
-            // formData.set('price','NEW PRICE')
-            // formData.get('image-file') is form:file-preview
-            // formData.get('current-image-url')
-            // formData.get('current-image-id') 
-            
-
-        // NO PIC -> NEW PIC
-        // if(!formData.get('current-image') && formData.get('preview-image')){
-        //     console.log('NO PIC -> NEW PIC')
-        // }
-        // OLD PIC -> NEW PIC
-        // OLD PIC -> NO PIC
 
         await Dessert.findByIdAndUpdate(formData.get('id'),{
             name: formData.get('name').trim(),
@@ -95,8 +78,10 @@ export async function editDessert(formData){
             cloudinary_public_id,
             cloudinary_secure_url
         })
+        
         revalidatePath('/manager/dessert')
         return 
+
     }catch(err){
         console.log(err)
     }

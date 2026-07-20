@@ -99,7 +99,7 @@ export default function Home() {
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Shishito Pepper</span>
+                      <span className="name">Shishito Peppers</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">17</span>
@@ -1540,7 +1540,7 @@ export default function Home() {
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Shishito Pepper</span>
+                      <span className="name">Shishito Peppers</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">17</span>

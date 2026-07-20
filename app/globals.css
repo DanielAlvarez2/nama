@@ -219,6 +219,9 @@ body,.webpage{
 .nigiri{
  margin-bottom:0;
 }
+.nigiri .name{
+  font-weight: 100 !important;
+}
 .sushi-rolls .dinner-menu-item{
   margin-bottom:17px;
 }

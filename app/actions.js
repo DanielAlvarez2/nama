@@ -41,7 +41,8 @@ export async function addDessert(formData){
 export async function editDessert(formData){
     try{
         let cloudinary_public_id = ''
-        let cloudinary_secure_url = ''    
+        let cloudinary_secure_url = ''  
+        let return_id = ''  
         await connectMongoDB()
 
             // NO PIC -> NO PIC COMPLETE
@@ -66,6 +67,7 @@ export async function editDessert(formData){
             if(formData.get('current-image-url') && formData.get('delete-image-checkbox') != null){
                 console.log('OLD PIC -> NO PIC')
                 await cloudinary.uploader.destroy(formData.get('current-image-id'))
+                return_id = formData.get('id')
             }
 
         await Dessert.findByIdAndUpdate(formData.get('id'),{
@@ -80,7 +82,7 @@ export async function editDessert(formData){
         })
         
         revalidatePath('/manager/dessert')
-        return 
+        return return_id
 
     }catch(err){
         console.log(err)

@@ -50,8 +50,10 @@ export default function DessertItem(props){
                 <div  className="dinner-menu-item"
                     //   onClick={()=>showModal('hojicha-banana-roulade')}
                 >
-                  <img  src={props.cloudinary_secure_url ? props.cloudinary_secure_url : null} 
-                        style={{maxWidth:'100%',maxHeight:'100px'}}
+                  <img  src={props.cloudinary_secure_url ? props.cloudinary_secure_url : '/no-image.jpg'} 
+                        style={{maxWidth: props.cloudinary_secure_url ? '100%' : '0',
+                                maxHeight: props.cloudinary_secure_url ? '100px' : '0'}}
+                        id={`img-${props.id}`}
                   />
                   <div className="name-price">
                     <span>

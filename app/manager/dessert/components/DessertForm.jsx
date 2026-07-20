@@ -40,7 +40,7 @@ export default function DessertForm({addDessert,editDessert}){
             return
         }
         if(editMode){
-            await editDessert(formData)
+            const return_id = await editDessert(formData)
             setEditMode(false)
         }else{
             await addDessert(formData)

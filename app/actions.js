@@ -42,10 +42,15 @@ export async function editDessert(formData){
     try{
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''  
-        let return_id = ''  
         await connectMongoDB()
 
             // NO PIC -> NO PIC COMPLETE
+
+            // OLD PIC -> SAME PIC
+            if(formData.get('current-image-url') && !formData.get('preview-image')){
+                cloudinary_secure_url = formData.get('current-image-url')
+                cloudinary_public_id = formData.get('current-image-id')
+            }
             
             // NO PIC -> ADD PIC COMPLETE
             if(!formData.get('current-image-url') && formData.get('preview-image')){
@@ -63,11 +68,10 @@ export async function editDessert(formData){
                 cloudinary_secure_url = cloudinaryResponse.secure_url                
             }
             
-            // OLD PIC -> NO PIC
+            // OLD PIC -> NO PIC COMPLETE
             if(formData.get('current-image-url') && formData.get('delete-image-checkbox') != null){
                 console.log('OLD PIC -> NO PIC')
                 await cloudinary.uploader.destroy(formData.get('current-image-id'))
-                return_id = formData.get('id')
             }
 
         await Dessert.findByIdAndUpdate(formData.get('id'),{
@@ -82,7 +86,7 @@ export async function editDessert(formData){
         })
         
         revalidatePath('/manager/dessert')
-        return return_id
+        return
 
     }catch(err){
         console.log(err)

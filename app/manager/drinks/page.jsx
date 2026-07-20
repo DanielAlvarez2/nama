@@ -406,7 +406,7 @@ export default function DrinksMenu(){
                     </span>
                     <span className="price">68</span>
                   </div>
-                  <div className="description1">Aman, Hakurakusei, Junmai Diginjo</div>
+                  <div className="description1">Aman, Hakurakusei, Junmai Daiginjo</div>
                   <div className="description2">Miyagi, Japan NV</div>
                 </div>
 

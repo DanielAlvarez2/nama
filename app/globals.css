@@ -533,3 +533,8 @@ input[type='text']{
 .tasting-menu-flexbox{
   margin-top: 50px !important;
 }
+@media (max-width:550px){
+  .tasting-menu-flexbox{
+    padding:0 5px;
+  }
+}

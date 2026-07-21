@@ -41,6 +41,7 @@ export default function Home() {
             <div className='tasting-menu-flexbox' 
                   style={{maxWidth:'5.25in',
                           margin:'0 auto',
+                          marginTop:'50px',
                           display:'flex',
                           // border:'1px solid red'
                   }}

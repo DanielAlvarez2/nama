@@ -531,7 +531,7 @@ input[type='text']{
   width:100px;
 }
 .tasting-menu-flexbox{
-  margin-top: 50px !important;
+  margin-bottom: 150px !important;
 }
 @media (max-width:550px){
   .tasting-menu-flexbox{

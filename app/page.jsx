@@ -75,7 +75,7 @@ export default function Home() {
 An individually served sushi-focused tasting 
 menu highlighting the freshest seasonal 
 fish from Toyosu Market, paired with Nama 
-appetizers, seasonal plates, snd dessert. 
+appetizers, seasonal plates, and dessert. 
               </div>
 
               <span className="tasting-right" style={{width:'20ch',textAlign:'right'}}>288</span>

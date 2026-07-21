@@ -292,7 +292,7 @@ appetizers, seasonal plates, and dessert.
                     </span>
                     <span className="price">46</span>
                   </div>
-                  <div className="description1">Seared Striped<span style={{color:'red'}}>&diams;</span>Jack, Tosazu Jelly</div>
+                  <div className="description1">Seared Striped<span style={{color:'red'}}>&#9608;</span>Jack, Tosazu Jelly</div>
                   <div className="description2"></div>
                 </div>
 

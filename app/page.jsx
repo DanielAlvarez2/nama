@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 
@@ -31,7 +30,87 @@ export default function Home() {
       </nav>
 
       <br className='no-print' />
-    
+      
+
+        <div className="letter-paper">
+
+
+                                            
+          <div className="menu-items">
+
+            <div className='tasting-menu-flexbox' 
+                  style={{maxWidth:'5.25in',
+                          margin:'0 auto',
+                          display:'flex',
+                          border:'1px solid red'
+                  }}
+            >
+              
+              <div className="tasting-left" style={{width:'400px',alignSelf:'center'}}>Chef's Tasting Menu</div>
+
+              <div className="tasting-middle">
+                    A Japanese expression and theme in art representing 
+                    the moon, and the flowers and their beauty in 
+                    nature. The Nama Chefs will hand curate a menu 
+                    for you, featuring Nama staples alongside seasonal 
+                    dishes composed of the freshest products available 
+                    this week at Toyosu Market in Tokyo, Japan.
+              </div>
+
+              <span className="tasting-right" style={{width:'20ch'}}></span>
+
+            </div>{/* .tasting-menu-flexbox */}
+            
+            <div className='tasting-menu-flexbox' 
+                  style={{maxWidth:'5.25in',
+                          margin:'0 auto',
+                          display:'flex',
+                          border:'1px solid red'
+                  }}
+            >
+              
+              <div className="tasting-left" style={{width:'400px',alignSelf:'center'}}>月<br/>Tsuki/Moon</div>
+
+              <div className="tasting-middle">
+An individually served sushi-focused tasting 
+menu highlighting the freshest seasonal 
+fish from Toyosu Market, paired with Nama 
+appetizers, seasonal plates, snd dessert. 
+              </div>
+
+              <span className="tasting-right" style={{width:'20ch',textAlign:'right'}}>288</span>
+
+            </div>{/* .tasting-menu-flexbox */}
+            
+            <div className='tasting-menu-flexbox' 
+                  style={{maxWidth:'5.25in',
+                          margin:'0 auto',
+                          display:'flex',
+                          border:'1px solid red'
+                  }}
+            >
+              
+              <div className="tasting-left" style={{width:'400px',alignSelf:'center'}}>花<br/>Hana/Flower</div>
+
+              <div className="tasting-middle">
+                    The most comprehensive seasonal tasting menu, 
+                    inspired by Chef Takuma's experience in Japan with a 
+                    modern luxury touch, featuring premium ingredients, 
+                    raw fish, composed dishes, sushi, entrée, and dessert. 
+              </div>
+
+              <span className="tasting-right" style={{width:'20ch',textAlign:'right'}}>388</span>
+
+            </div>{/* .tasting-menu-flexbox */}
+            
+            
+
+
+          </div>{/* .menu-items */}
+        </div>{/* .letter-paper */}
+
+      <br className='no-print' />
+
       <div className="letter-paper">
 
 

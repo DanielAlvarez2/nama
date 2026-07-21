@@ -135,7 +135,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('improved-yokohama')}
+                      onClick={()=>showModal('shiitake-sazerac')}
                 >
                   <div className="name-price">
                     <span>
@@ -1522,13 +1522,13 @@ export default function DrinksMenu(){
 
 
 
-    <div id="improved-yokohama" className='modal'>
+    <div id="shiitake-sazerac" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
           <div className='modal-content'>
           
           <div>
-            <img src='improved-yokohama.jpg' />
+            <img src='shiitake-sazerac.jpg' />
           </div>        
               
           <div className='modal-text'>
@@ -1537,26 +1537,27 @@ export default function DrinksMenu(){
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Improved Yokohama Cocktail</span>
+                              <span className="name">Shiitake Sazerac</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">50</span>
+                            <span className="price">30</span>
                           </div>
-                          <div className="description1">Hakushu 12 Year Single Malt, Marasca, </div>
-                          <div className="description2">Benedictine, Absinthe</div>
+                          <div className="description1">Paul Sutton 6yr Bourbon, Dad's Hat Oloroso Cask, </div>
+                          <div className="description2">Hyakunen No Kodoku Shochu, </div>
+                          <div className="description3">Peychaud's and Chocolate Bitters</div>
                           
                           <hr/>
                           <br/>
-                          Hakushu 12 Year Single Malt WHISKY<br/>
-                          Marasca<br/>
-                          Benedictine<br/>
-                          Absinthe<br/>
+                          Bourbon<br/>
+                          Rye<br/>
+                          Shochu<br/>
+                          Chocolate Bitters<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
           </div>{/* .modal-content */}         
       </div>
-    </div>{/* #improved-yokohama */}
+    </div>{/* #shiitake-sazerac */}
 
 
 

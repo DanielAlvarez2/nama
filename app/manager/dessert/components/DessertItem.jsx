@@ -48,11 +48,19 @@ export default function DessertItem(props){
     return(
         <> 
                 <div  className="dinner-menu-item"
+                      style={{border:'1px solid #888',
+                              borderRadius:'10px',
+                              padding:'5px'
+                      }}
                     //   onClick={()=>showModal('hojicha-banana-roulade')}
                 >
-                  <img  src={props.cloudinary_secure_url ? props.cloudinary_secure_url : '/no-image.jpg'} 
+                  <img  src={props.cloudinary_secure_url ? props.cloudinary_secure_url : '/pixel-transparent.png'} 
                         style={{maxWidth: props.cloudinary_secure_url ? '100%' : '0',
-                                maxHeight: props.cloudinary_secure_url ? '100px' : '0'}}
+                                maxHeight: props.cloudinary_secure_url ? '100px' : '0',
+                                margin:'0 auto',
+                                display:'block',
+                                // border:'5px solid pink'
+                              }}
                         id={`img-${props.id}`}
                   />
                   <div className="name-price">

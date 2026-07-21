@@ -525,3 +525,8 @@ input[type='text']{
   display:none;
   /* display:none; */
 }
+.tasting-left{
+  background:pink;
+  flex-shrink: 0;
+  width:100px;
+}

@@ -46,14 +46,16 @@ export async function editDessert(formData){
 
             // NO PIC -> NO PIC COMPLETE
 
-            // OLD PIC -> SAME PIC
-            if(formData.get('current-image-url') && !formData.get('preview-image')){
+            // OLD PIC -> SAME PIC COMPLETE
+            if(formData.get('current-image-url') && !formData.get('preview-image') && !formData.get('delete-image-checkbox')){
+                console.log('OLD PIC -> SAME PIC')
                 cloudinary_secure_url = formData.get('current-image-url')
                 cloudinary_public_id = formData.get('current-image-id')
             }
             
             // NO PIC -> ADD PIC COMPLETE
             if(!formData.get('current-image-url') && formData.get('preview-image')){
+                console.log('NO PIC => ADD PIC')
                 const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
                 cloudinary_public_id = cloudinaryResponse.public_id
                 cloudinary_secure_url = cloudinaryResponse.secure_url                
@@ -69,8 +71,9 @@ export async function editDessert(formData){
             }
             
             // OLD PIC -> NO PIC COMPLETE
-            if(formData.get('current-image-url') && formData.get('delete-image-checkbox') != null){
+            if(formData.get('current-image-url') && formData.get('delete-image-checkbox')){
                 console.log('OLD PIC -> NO PIC')
+                console.log('cloudinary.destroy: ' + formData.get('current-image-id'))
                 await cloudinary.uploader.destroy(formData.get('current-image-id'))
             }
 

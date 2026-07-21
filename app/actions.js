@@ -25,6 +25,7 @@ export async function addDessert(formData){
             allergies: formData.get('allergies').trim(),
             description1: formData.get('description1').trim(),
             description2: formData.get('description2').trim(),
+            typos: formData.get('typos').trim(),
             price: formData.get('price').trim(),
             staffInfo: formData.get('staff-info').trim(),
             sequence: highestSequenceDessert[0] ? highestSequenceDessert[0].sequence + 1 : 1,
@@ -72,8 +73,8 @@ export async function editDessert(formData){
             
             // OLD PIC -> NO PIC COMPLETE
             if(formData.get('current-image-url') && formData.get('delete-image-checkbox')){
-                console.log('OLD PIC -> NO PIC')
-                console.log('cloudinary.destroy: ' + formData.get('current-image-id'))
+                // console.log('OLD PIC -> NO PIC')
+                // console.log('cloudinary.destroy: ' + formData.get('current-image-id'))
                 await cloudinary.uploader.destroy(formData.get('current-image-id'))
             }
 
@@ -82,6 +83,7 @@ export async function editDessert(formData){
             allergies: formData.get('allergies').trim(),
             description1: formData.get('description1').trim(),
             description2: formData.get('description2').trim(),
+            typos: formData.get('typos').trim(),
             price: formData.get('price').trim(),
             staffInfo: formData.get('staff-info').trim(),
             cloudinary_public_id,

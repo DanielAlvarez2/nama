@@ -5,6 +5,7 @@ const DessertSchema = new Schema({
     allergies: String,
     description1: String,
     description2: String,
+    typos: String,
     price: String,
     staffInfo: String,
     sequence: Number,

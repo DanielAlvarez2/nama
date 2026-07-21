@@ -17,6 +17,7 @@ export default function DessertItem(props){
                           allergies,
                           description1,
                           description2,
+                          typos,
                           price,
                           staffInfo,
                           currentImageURL,
@@ -26,6 +27,7 @@ export default function DessertItem(props){
         document.querySelector('#allergies-dessert').value = allergies
         document.querySelector('#description1-dessert').value = description1
         document.querySelector('#description2-dessert').value = description2
+        document.querySelector('#typos').value = typos ? typos : ''
         document.querySelector('#price-dessert').value = price
         document.querySelector('#staff-info').value = staffInfo 
         // document.querySelector('#current-img').src = currentImageURL ? currentImageURL : '/no-image.jpg'
@@ -74,12 +76,14 @@ export default function DessertItem(props){
                   </div>
                   <div className="description1" dangerouslySetInnerHTML={{__html:props.description1}}></div>
                   <div className="description2" dangerouslySetInnerHTML={{__html:props.description2}}></div>
+                  <div className="typos" style={{color:'red'}} dangerouslySetInnerHTML={{__html:props.typos}}></div>
                     <span   className="item-button edit-button"
                             onClick={()=>editDessert(   props.id,
                                                         props.name,
                                                         props.allergies,
                                                         props.description1,
                                                         props.description2,
+                                                        props.typos,
                                                         props.price,
                                                         props.staffInfo,
                                                         props.cloudinary_secure_url,

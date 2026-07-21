@@ -63,6 +63,7 @@ export default async function DessertMenu(){
                                     allergies={data.allergies}
                                     description1={data.description1}
                                     description2={data.description2}
+                                    typos={data.typos}
                                     price={data.price}
                                     staffInfo={data.staffInfo}
                                     sequence={data.sequence}

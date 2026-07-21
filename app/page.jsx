@@ -42,11 +42,11 @@ export default function Home() {
                   style={{maxWidth:'5.25in',
                           margin:'0 auto',
                           display:'flex',
-                          border:'1px solid red'
+                          // border:'1px solid red'
                   }}
             >
               
-              <div className="tasting-left" style={{width:'400px',alignSelf:'center'}}>Chef's Tasting Menu</div>
+              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>Chef's Tasting Menu</div>
 
               <div className="tasting-middle">
                     A Japanese expression and theme in art representing 
@@ -65,11 +65,11 @@ export default function Home() {
                   style={{maxWidth:'5.25in',
                           margin:'0 auto',
                           display:'flex',
-                          border:'1px solid red'
+                          // border:'1px solid red'
                   }}
             >
               
-              <div className="tasting-left" style={{width:'400px',alignSelf:'center'}}>月<br/>Tsuki/Moon</div>
+              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>月<br/>Tsuki/Moon</div>
 
               <div className="tasting-middle">
 An individually served sushi-focused tasting 
@@ -86,11 +86,11 @@ appetizers, seasonal plates, snd dessert.
                   style={{maxWidth:'5.25in',
                           margin:'0 auto',
                           display:'flex',
-                          border:'1px solid red'
+                          // border:'1px solid red'
                   }}
             >
               
-              <div className="tasting-left" style={{width:'400px',alignSelf:'center'}}>花<br/>Hana/Flower</div>
+              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>花<br/>Hana/Flower</div>
 
               <div className="tasting-middle">
                     The most comprehensive seasonal tasting menu, 

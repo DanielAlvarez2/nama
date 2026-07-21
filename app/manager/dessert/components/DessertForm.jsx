@@ -134,6 +134,16 @@ function toggleCheckbox(){
                 <br/><br/>
 
                 <label>
+                    Typos:<br/>
+                    <input  type='text'
+                            name='typos'
+                            id='typos'
+                            style={{width:'100%', color:'red'}}
+                    />
+                </label>
+                <br/><br/>
+
+                <label>
                     Price: <span className="required">*REQUIRED</span><br/>
                     <input  type='text' 
                             name='price'

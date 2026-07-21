@@ -526,7 +526,10 @@ input[type='text']{
   /* display:none; */
 }
 .tasting-left{
-  background:pink;
+  /* background:pink; */
   flex-shrink: 0;
   width:100px;
+}
+.tasting-menu-flexbox{
+  margin-top: 50px !important;
 }

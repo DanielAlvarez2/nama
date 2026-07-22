@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar.jsx'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 
 
-export default function DessertMenu({desserts,maxSequence}){
+export default function DessertMenu({desserts}){
 
     function closeModals(){
         document.querySelectorAll('.modal').forEach(item=>item.style.display = 'none')

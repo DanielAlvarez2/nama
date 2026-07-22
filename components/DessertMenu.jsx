@@ -1,68 +1,75 @@
-import Link from 'next/link'
+'use client'
+
+import Navbar from '@/components/Navbar.jsx'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
-import DessertForm from './components/DessertForm.jsx';
-import DessertItem from './components/DessertItem.jsx';
-import {addDessert,editDessert} from '@/app/actions.js'
-import {addDessertWine,editDessertWine} from '@/app/actions.js'
-import connectMongoDB from '@/libs/mongodb'
-import Dessert from '@/models/Dessert.js'
-import DessertWine from '@/models/DessertWine.js'
-import DessertWineForm from './components/DessertWineForm.jsx';
-import NavbarMenuManager from '@/components/NavbarMenuManager.jsx';
 
-export const dynamic = 'force-dynamic'
 
-export default async function ManagerDessertPage(){
-    
-      await connectMongoDB()
-      const desserts = await Dessert.find().sort({sequence:1})
-      const maxSequence = await Dessert.find().sort({sequence:-1})
+export default function DessertMenu({desserts,maxSequence}){
 
-      // const [editMode, setEditMode] = useState(false)
-
-    function showModal(menuItem){
-        document.querySelector(`#${menuItem}`).style.display = 'grid'
-    }
     function closeModals(){
         document.querySelectorAll('.modal').forEach(item=>item.style.display = 'none')
+    }
+
+    function openModalDessert(name,
+                              allergies,
+                              price,
+                              description1,
+                              description2,
+                              typos,
+                              staffInfo,
+                              img_src
+    ){
+      document.querySelector('#modal-dessert-name').innerHTML = name
+      document.querySelector('#modal-dessert-description1').innerHTML = description1
+      document.querySelector('#modal-dessert-description2').innerHTML = description2
+      document.querySelector('#modal-dessert-typos').innerHTML = typos ? typos : ''
+      document.querySelector('#modal-dessert-staff-info').innerHTML = staffInfo
+      document.querySelector('#modal-dessert-img').src = img_src
+      document.querySelector('#modal-dessert-price').innerHTML = price
+      document.querySelector('#modal-dessert-allergies').innerHTML = `(${allergies})`
+      document.querySelector('#modal-dessert').style.display = 'grid'
     }
 
     return(
     <div className='webpage'>
 
-      <NavbarMenuManager page='dessert' />
-      <div className="small-paper" style={{height:'auto'}}>
+      <Navbar page='dessert' />
+    
+      <div className="small-paper">
         
           <div className="menu-items">
             <div className="section section-dessert">
-              <div  className="left-column"
-                    id='desserts-section'
-              >
-                デザート<br/>Desserts
-              </div>
+              <div className="left-column">デザート<br/>Desserts</div>
 
               <div className="right-column">
               
-                {desserts.map(data=>{
-                  return(
-                    <div key={data._id}>
-                      <DessertItem  id={data._id.toString()}
-                                    name={data.name} 
-                                    allergies={data.allergies}
-                                    description1={data.description1}
-                                    description2={data.description2}
-                                    typos={data.typos}
-                                    price={data.price}
-                                    staffInfo={data.staffInfo}
-                                    sequence={data.sequence}
-                                    maxSequence={maxSequence[0].sequence}
-                                    cloudinary_secure_url={data.cloudinary_secure_url}
-                                    cloudinary_public_id={data.cloudinary_public_id}
-                      />
-                      
+                {desserts.map(item=>(
+                  <div  key={item._id} 
+                        className='dinner-menu-item'
+                        onClick={()=>openModalDessert(item.name,
+                                                      item.allergies,
+                                                      item.price,
+                                                      item.description1,
+                                                      item.description2,
+                                                      item.typos,
+                                                      item.staffInfo,
+                                                      item.cloudinary_secure_url
+                                                    )}
+                  >
+                    <div className="name-price">
+                      <span>
+                        <span className="name">{item.name}</span>
+                        <span className="allergies">({item.allergies})</span>
+                      </span>
+                      <span className="price">{item.price}</span>
                     </div>
-                  )
-                })}
+                    <div className="description1">{item.description1}</div>
+                    <div className="description2">{item.description2}</div>
+                    <div className='typo'>{item.typos}</div>
+                  </div>
+                  
+                ))}
+
 
 
               </div>{/* .right-column */}
@@ -85,7 +92,7 @@ export default async function ManagerDessertPage(){
               <div className="right-column">
               
                 <div  className="dinner-menu-item"
-                    //   onClick={()=>showModal('chateau-suduiraut')}
+                      // onClick={()=>showModal('chateau-suduiraut')}
                 >
                   <div className="name-price">
                     <span>
@@ -99,7 +106,7 @@ export default async function ManagerDessertPage(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                    //   onClick={()=>showModal('domaine-de-rancy')}
+                      // onClick={()=>showModal('domaine-de-rancy')}
                 >
                   <div className="name-price">
                     <span>
@@ -114,7 +121,7 @@ export default async function ManagerDessertPage(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                    //   onClick={()=>showModal('weingut-sattlerhof')}
+                      // onClick={()=>showModal('weingut-sattlerhof')}
                 >
                   <div className="name-price">
                     <span>
@@ -129,7 +136,7 @@ export default async function ManagerDessertPage(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                    //   onClick={()=>showModal('grahams-port')}
+                      // onClick={()=>showModal('grahams-port')}
                 >
                   <div className="name-price">
                     <span>
@@ -326,6 +333,38 @@ export default async function ManagerDessertPage(){
 
 
 
+    <div id="modal-dessert" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
+            <img id='modal-dessert-img' />
+          </div>      
+          <div className='modal-text'>
+          
+              <br/><br/>
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name" id='modal-dessert-name'></span>
+                              <span className="allergies" id='modal-dessert-allergies'></span>
+                            </span>
+                            <span className="price" id='modal-dessert-price'></span>
+                          </div>
+                          <div className="description1" id='modal-dessert-description1'></div>
+                          <div className="description2" id='modal-dessert-description2'></div>
+                          <div id='modal-dessert-typos' className='typo'></div>
+                          <hr/>
+                          <br/>
+                            <div id='modal-dessert-staff-info' style={{whiteSpace:'pre-line'}}></div>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
+      </div>
+    </div>{/* #modal-dessert */}
 
           
 
@@ -337,14 +376,6 @@ export default async function ManagerDessertPage(){
 
 
 
-        <DessertForm  addDessert={addDessert}
-                      editDessert={editDessert}
-        />
-
-        <DessertWineForm  addDessertWine={addDessertWine}
-                          editDessertWine={editDessertWine}
-        
-        />
     </div>
 
     )

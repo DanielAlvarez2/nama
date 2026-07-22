@@ -8,7 +8,7 @@ import {useEditModeContext} from '@/context/EditModeContext'
 import {useExistingImageContext} from '@/context/ExistingImageContext'
 
 
-export default function DessertForm({addDessert,editDessert}){
+export default function DessertWineForm({addDessertWine,editDessertWine}){
 
     const {editMode,setEditMode} = useEditModeContext()   
     const {existingImage,setExistingImage} = useExistingImageContext()
@@ -27,14 +27,14 @@ export default function DessertForm({addDessert,editDessert}){
     }
 
     async function handleSubmit(formData){
-        if (!formData.get('name').trim() || !formData.get('price').trim()) {
+        if (!formData.get('name1').trim() || !formData.get('price').trim()) {
             alert('Name and Price are required')
             setTimeout(()=>{
-                document.querySelector('#name-dessert').value = formData.get('name')
-                document.querySelector('#allergies-dessert').value = formData.get('allergies')
-                document.querySelector('#description1-dessert').value = formData.get('description1')
-                document.querySelector('#description2-dessert').value = formData.get('description2')
-                document.querySelector('#price-dessert').value = formData.get('price')
+                document.querySelector('#name1').value = formData.get('name1')
+                document.querySelector('#name2').value = formData.get('name1')
+                document.querySelector('#description1').value = formData.get('description1')
+                document.querySelector('#description2').value = formData.get('description2')
+                document.querySelector('#price').value = formData.get('price')
                 document.querySelector('#staff-info').value = formData.get('staff-info')
             },10)
             return
@@ -53,23 +53,21 @@ export default function DessertForm({addDessert,editDessert}){
 
     function resetForm(){
         document.querySelector('#delete-image-checkbox') && (document.querySelector('#delete-image-checkbox').checked = false)
-        document.querySelector('#id-dessert').value = ''
-        document.querySelector('#name-dessert').value = ''
-        document.querySelector('#allergies-dessert').value = ''
-        document.querySelector('#description1-dessert').value = ''
-        document.querySelector('#description2-dessert').value = ''
-        document.querySelector('#price-dessert').value = ''
+        document.querySelector('#id').value = ''
+        document.querySelector('#name1').value = ''
+        document.querySelector('#name2').value = ''
+        document.querySelector('#description1').value = ''
+        document.querySelector('#description2').value = ''
+        document.querySelector('#price').value = ''
         document.querySelector('#staff-info').value = ''
-        // document.querySelector('#current-img').src = ''
         document.querySelector('#current-image-url').value = ''
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
-        // document.querySelector('#current-image-label').style.display = 'none'
-        document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT'
-        document.querySelector('#form-dessert').style.background = 'lightgreen'
-        document.querySelector('#submit-button-dessert-form').innerHTML = `+ New Dessert`
+        document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT WINE'
+        document.querySelector('#form-dessert-wine').style.background = 'lightgreen'
+        document.querySelector('#submit-button-dessert-wine-form').innerHTML = `+ New Dessert Wine`
         setEditMode(false)
-        document.querySelector('#image-file-dessert').value = ''
+        document.querySelector('#image-file-dessert-wine').value = ''
         setPreviewImage('')
         setExistingImage(null)
     }
@@ -77,7 +75,7 @@ export default function DessertForm({addDessert,editDessert}){
 function toggleCheckbox(){
     if(document.querySelector('#delete-image-checkbox').checked == true){
         document.querySelector('#delete-icon').style.color = 'red'
-        document.querySelector('#image-file-dessert').value = ''
+        document.querySelector('#image-file-dessert-wine').value = ''
         setPreviewImage('')
     }else{
         document.querySelector('#delete-icon').style.color = 'transparent'
@@ -87,31 +85,32 @@ function toggleCheckbox(){
     return(
         <>
             <form   action={handleSubmit}
-                    id='form-dessert'
+                    id='form-dessert-wine'
             >
-                <h1>ADD NEW DESSERT</h1>
+                <h1>ADD NEW DESSERT WINE</h1>
                 <br/><br/>
 
                 <input  type='hidden' 
                         name='id' 
-                        id='id-dessert' />
+                        id='id' />
 
                 <label>
-                    Name: <span className="required">*REQUIRED</span><br/>
+                    Name (line 1): <span className="required">*REQUIRED</span><br/>
                     <input  type='text' 
                             required
-                            name='name'
-                            id='name-dessert'
+                            name='name1'
+                            id='name2'
                             style={{width:'100%'}} />
                 </label>
                 <br/><br/>
 
                 <label>
-                    Allergies:<br/>
+                    Name (line 2):<br/>
                     <input  type='text' 
-                            name='allergies'
-                            id='allergies-dessert'
-                            style={{width:'35%'}} />
+                            required
+                            name='name2'
+                            id='name2'
+                            style={{width:'100%'}} />
                 </label>
                 <br/><br/>
 
@@ -119,7 +118,7 @@ function toggleCheckbox(){
                     Description Line 1:<br/>
                     <input  type='text' 
                             name='description1'
-                            id='description1-dessert'
+                            id='description1'
                             style={{width:'100%'}} />
                 </label>
                 <br/><br/>
@@ -128,7 +127,7 @@ function toggleCheckbox(){
                     Description Line 2:<br/>
                     <input  type='text' 
                             name='description2'
-                            id='description2-dessert'
+                            id='description2'
                             style={{width:'100%'}} />
                 </label>
                 <br/><br/>
@@ -148,7 +147,7 @@ function toggleCheckbox(){
                     <input  type='text' 
                             name='price'
                             required
-                            id='price-dessert'
+                            id='price'
                             style={{width:'35%'}} />
                 </label>
                 <br/><br/>
@@ -176,7 +175,6 @@ function toggleCheckbox(){
                                                         bottom:'50%',
                                                         left:'50%',
                                                         transform:'translate(-50%,50%)',
-                                                        // transform:'translateY(50%)',
                                                 }}
                             />
                         </div>
@@ -195,7 +193,7 @@ function toggleCheckbox(){
                     <span id='image-text' style={{fontSize:'inherit'}}></span>Image File: (optional)<br/>
                     <input  type='file' 
                             name='image-file'
-                            id='image-file-dessert'
+                            id='image-file'
                             onChange={handleFileInputChange}
                     />
                 </label>
@@ -220,7 +218,7 @@ function toggleCheckbox(){
                     }
                 <br/><br/>
                 <div style={{display:'flex'}}>
-                    <button id='submit-button-dessert-form' type='submit'>+ New Dessert</button>
+                    <button id='submit-button-dessert-wine-form' type='submit'>+ New Dessert</button>
                     <button type='button'
                             onClick={resetForm} 
                             style={{background:'red'}}>Cancel</button>

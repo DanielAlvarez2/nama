@@ -2162,7 +2162,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
              
           <div>
-            <img src='gindara.jpg' />
+            <img src={`gindara.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                        

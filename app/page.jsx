@@ -3666,7 +3666,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='suzuki-tatsuta-age.jpg' />
+            <img src={`suzuki-tatsuta-age.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                            

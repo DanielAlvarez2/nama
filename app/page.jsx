@@ -1539,7 +1539,7 @@ appetizers, seasonal plates, and dessert.
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />     
           <div className='modal-content'>
             <div>
-              <img src='edamame.jpg' />
+              <img src={`edamame.jpg?v={Date.now()}`} />
             </div>
               <div className='modal-text'>
               MENU DESCRIPTION:

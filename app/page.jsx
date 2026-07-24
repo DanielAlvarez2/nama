@@ -3551,7 +3551,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='yakishabu-gohan.jpg' />
+            <img src={`yakishabu-gohan.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                         

@@ -2226,7 +2226,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='tenderloin.jpg' />
+            <img src={`tenderloin.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                            
@@ -2280,7 +2280,8 @@ export default function ManagerDinnerPage() {
                           <br/>
                           charcoal grilled<br/>
                           5oz A5 kobe beef sirloin<br/>
-                          grilled vegetables
+                          grilled vegetables<br/>
+                          cooked shishitos
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  

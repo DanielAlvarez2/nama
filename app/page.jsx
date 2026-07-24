@@ -2303,7 +2303,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='tenderloin.jpg' />
+            <img src={`tenderloin.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                            

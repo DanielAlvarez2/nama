@@ -1463,11 +1463,7 @@ appetizers, seasonal plates, and dessert.
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
       <div className='modal-content'>
             <div>
-              <img 
-              // src='miso-soup.jpg'
-              src={`miso-soup.jpg?v=${Date.now()}`} 
-              // key={Date.now()}
-              />
+              <img src={`miso-soup.jpg?v={Date.now()}`} />
             </div>
             <div className='modal-text'>
 
@@ -1604,7 +1600,7 @@ appetizers, seasonal plates, and dessert.
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
           <div className='modal-content'>
             <div>
-              <img src='shishitos.jpg' />
+              <img src={`shishitos.jpg?v={Date.now()}`} />
             </div>        
               <div className='modal-text'>
               MENU DESCRIPTION:

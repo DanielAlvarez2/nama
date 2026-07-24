@@ -2139,6 +2139,7 @@ export default function ManagerDinnerPage() {
                           <br/>
                           charcoal grilled yellowtail collar<br/>
                           side of yuzu ponzu<br/>
+                          grated daikon radish<br/>
                           myoga / japanese ginger<br/>
                           renkon / lotus root<br/>
                           maruju / japanese sweet potato
@@ -2155,7 +2156,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='lobster-uni-ogonyaki.jpg' />
+            <img src={`lobster-uni-ogonyaki.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                               

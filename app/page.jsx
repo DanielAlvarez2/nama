@@ -2233,7 +2233,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='lobster-uni-ogonyaki.jpg' />
+            <img src={`lobster-uni-ogonyaki.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                               

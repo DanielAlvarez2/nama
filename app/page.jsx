@@ -3628,7 +3628,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='nasu-agebitashi.jpg' />
+            <img src={`nasu-agebitashi.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                          

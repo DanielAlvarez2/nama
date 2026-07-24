@@ -1590,7 +1590,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='tsukemono-moriawase.jpg' />
+            <img src={`tsukemono-moriawase.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
           

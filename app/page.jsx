@@ -1986,7 +1986,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='yasai-tempura.jpg' />
+            <img src={`yasai-tempura.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                            

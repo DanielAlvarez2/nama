@@ -2020,7 +2020,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
              
           <div>
-            <img src='tempura-moriawase.jpg' />
+            <img src={`tempura-moriawase.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                          

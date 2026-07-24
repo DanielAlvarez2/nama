@@ -1880,7 +1880,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='greenmarket-salad.jpg' />
+            <img src={`greenmarket-salad.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
           

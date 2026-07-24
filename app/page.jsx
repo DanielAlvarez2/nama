@@ -3816,7 +3816,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='zaru-soba.jpg' />
+            <img src={`zaru-soba.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                         

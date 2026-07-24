@@ -2382,8 +2382,8 @@ export default function ManagerDinnerPage() {
                   <div className="description2"></div>
                           <hr/>
                           <br/>
+                          shiso miso<br/>
                           yukari salt<br/>
-                          shiso miso
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -3738,7 +3738,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='zaru-soba.jpg' />
+            <img src={`zaru-soba.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                         

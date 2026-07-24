@@ -2119,7 +2119,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='hamachi-kama.jpg' />
+            <img src={`hamachi-kama.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                            

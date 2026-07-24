@@ -1490,7 +1490,7 @@ export default function ManagerDinnerPage() {
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />
           <div className='modal-content'>
             <div>
-              <img src='nama-tofu.jpg' />
+              <img src={`nama-tofu.jpg?v={Date.now()}`} />
             </div>
             <div className='modal-text'>
               MENU DESCRIPTION:

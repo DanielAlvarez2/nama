@@ -3609,7 +3609,7 @@ export default function ManagerDinnerPage() {
                           <br/>
                           crispy fried branzino 8pcs<br/>
                           ginger soy marinade<br/>
-                          shiso aioli<br/>
+                          shiso mayo<br/>
                           shishito peppers<br/>
                           <br/><br/>
               </div>
@@ -3624,7 +3624,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='softshell-crab.jpg' />
+            <img src={`softshell-crab.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                           

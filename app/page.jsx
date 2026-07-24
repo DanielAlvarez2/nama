@@ -3702,7 +3702,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='softshell-crab.jpg' />
+            <img src={`softshell-crab.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                           

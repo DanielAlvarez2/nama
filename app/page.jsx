@@ -2269,7 +2269,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='jidori-chicken.jpg' />
+            <img src={`jidori-chicken.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                           

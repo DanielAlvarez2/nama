@@ -3423,7 +3423,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='unagi-gohan.jpg' />
+            <img src={`unagi-gohan.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                           

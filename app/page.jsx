@@ -3380,7 +3380,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='yakimeshi.jpg' />
+            <img src={`yakimeshi.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                         

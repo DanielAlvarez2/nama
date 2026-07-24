@@ -2246,7 +2246,8 @@ export default function ManagerDinnerPage() {
                           <br/>
                           charcoal grilled<br/>
                           5oz A5 kobe beef tenderloin<br/>
-                          grilled vegetables
+                          grilled vegetables<br/>
+                          cooked shishito peppers
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  
@@ -2281,7 +2282,7 @@ export default function ManagerDinnerPage() {
                           charcoal grilled<br/>
                           5oz A5 kobe beef sirloin<br/>
                           grilled vegetables<br/>
-                          cooked shishitos
+                          cooked shishito peppers
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  
@@ -3662,7 +3663,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='lamb-chops.jpg' />
+            <img src={`lamb-chops.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                          

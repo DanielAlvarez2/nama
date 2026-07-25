@@ -871,7 +871,7 @@ appetizers, seasonal plates, and dessert.
 
 
                 <div  className="dinner-menu-item nigiri"
-                      // onClick={()=>showModal('ebi')}
+                      onClick={()=>showModal('shima-aji')}
                 >
                   <div className="name-price">
                     <span>
@@ -883,7 +883,7 @@ appetizers, seasonal plates, and dessert.
                 </div>
 
                 <div  className="dinner-menu-item nigiri"
-                      // onClick={()=>showModal('ebi')}
+                      onClick={()=>showModal('same-karai')}
                 >
                   <div className="name-price">
                     <span>
@@ -2466,13 +2466,44 @@ appetizers, seasonal plates, and dessert.
       </div>
     </div>{/* #grilled-vegetables */}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="hamachi" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
           <div className='modal-content'>
           
           <div>
-            <img src='hamachi.jpg' />
+            <img src={`hamachi.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                           
@@ -2494,6 +2525,35 @@ appetizers, seasonal plates, and dessert.
           </div>{/* .modal-content */}  
       </div>
     </div>{/* #hamachi */}
+
+    <div id="same-karai" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`same-karai.jpg?v={Date.now()}`} />
+          </div>
+          <div className='modal-text'>
+                          
+              
+              MENU DESCRIPTION:
+              <div className="right-column">
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Samekarai (Sharkskin Flounder)</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">20</span>
+                  </div>
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
+      </div>
+    </div>{/* #same-karai */}
 
     <div id="madai" className='modal'>
       <div>
@@ -2787,13 +2847,13 @@ appetizers, seasonal plates, and dessert.
       </div>
     </div>{/* #kasugodai */}
 
-    <div id="ebi" className='modal'>
+    <div id="shima-aji" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
           <div className='modal-content'>
           
           <div>
-            <img src='ebi.jpg' />
+            <img src={`shima-aji.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                         
@@ -2802,7 +2862,7 @@ appetizers, seasonal plates, and dessert.
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Botan Ebi (Shrimp)</span>
+                      <span className="name">Shimaaji (Striped Jack)</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">19</span>
@@ -2814,7 +2874,7 @@ appetizers, seasonal plates, and dessert.
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}    
       </div>
-    </div>{/* #ebi */}
+    </div>{/* #shima-aji */}
 
     <div id="santa-barbara-uni" className='modal'>
       <div>
@@ -2880,7 +2940,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='kappa-maki.jpg' />
+            <img src={`kappa-maki.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                          

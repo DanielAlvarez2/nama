@@ -793,7 +793,7 @@ export default function ManagerDinnerPage() {
 
 
                 <div  className="dinner-menu-item nigiri"
-                      // onClick={()=>showModal('ebi')}
+                      onClick={()=>showModal('shima-aji')}
                 >
                   <div className="name-price">
                     <span>
@@ -2397,7 +2397,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='hamachi.jpg' />
+            <img src={`hamachi.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                           
@@ -2712,13 +2712,13 @@ export default function ManagerDinnerPage() {
       </div>
     </div>{/* #kasugodai */}
 
-    <div id="ebi" className='modal'>
+    <div id="shima-aji" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
           <div className='modal-content'>
           
           <div>
-            <img src='ebi.jpg' />
+            <img src={`shima-aji.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                         
@@ -2805,7 +2805,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='kappa-maki.jpg' />
+            <img src={`kappa-maki.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                          

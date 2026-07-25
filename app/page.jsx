@@ -3074,7 +3074,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='unagi-cucumber-maki.jpg' />
+            <img src={`unagi-cucumber-maki.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                            
@@ -3083,12 +3083,12 @@ appetizers, seasonal plates, and dessert.
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Unagi Cucumber Maki</span>
+                      <span className="name">Eel Cucumber Maki</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">21</span>
                   </div>
-                  <div className="description1">Eel, Cucumber</div>
+                  <div className="description1"></div>
                   <div className="description2"></div>
                           <hr/>
                           <br/>

@@ -3044,7 +3044,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='spicy-tuna-roll.jpg' />
+            <img src={`spicy-tuna-roll.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                            

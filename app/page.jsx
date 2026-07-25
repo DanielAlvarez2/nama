@@ -3928,7 +3928,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='spider-roll.jpg' />
+            <img src={`spider-roll.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                          

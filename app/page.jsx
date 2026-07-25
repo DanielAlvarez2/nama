@@ -3006,7 +3006,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='ume-shiso-maki.jpg' />
+            <img src={`ume-shiso-maki.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                          

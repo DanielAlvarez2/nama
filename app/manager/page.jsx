@@ -2838,7 +2838,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='oshinko-maki.jpg' />
+            <img src={`oshinko-maki.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                       

@@ -3141,7 +3141,7 @@ appetizers, seasonal plates, and dessert.
           <div className='modal-content'>
           
           <div>
-            <img src='vegetable-roll.jpg' />
+            <img src={`vegetable-roll.jpg?v={Date.now()}`} />
           </div>
           <div className='modal-text'>
                           

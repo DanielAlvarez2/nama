@@ -2570,7 +2570,7 @@ appetizers, seasonal plates, and dessert.
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Botan Ebi (Spot Prawn)</span>
+                      <span className="name">Botan Ebi (Shrimp)</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">19</span>

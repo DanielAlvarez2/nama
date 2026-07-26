@@ -817,7 +817,7 @@ export default function ManagerDinnerPage() {
                 </div>
 
                 <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('ebi')}
+                      // onClick={()=>showModal('ebi')}
                 >
                   <div className="name-price">
                     <span>
@@ -2727,7 +2727,7 @@ export default function ManagerDinnerPage() {
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Botan Ebi (Shrimp)</span>
+                      <span className="name">Shimaaji (Striped Jack)</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">19</span>
@@ -2739,7 +2739,7 @@ export default function ManagerDinnerPage() {
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}    
       </div>
-    </div>{/* #ebi */}
+    </div>{/* #shima-aji */}
 
     <div id="santa-barbara-uni" className='modal'>
       <div>
@@ -3546,6 +3546,44 @@ export default function ManagerDinnerPage() {
           </div>{/* .modal-content */}  
       </div>
     </div>{/* #shima-aji-tataki */}
+
+    <div id="ebi" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`ebi.jpg?v={Date.now()}`} />
+          </div>
+          <div className='modal-text'>
+                          
+              
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Botan Ebi (Spot Prawn)</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">19</span>
+                          </div>
+                          <div className="description1"></div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          5pcs seared shima aji/striped jack<br/>
+                          tosazu jelly<br/>
+                          shredded radish<br/>
+                          shiso leaf<br/>
+                          wakame seaweed<br/>
+                          hanaho flowers<br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
+      </div>
+    </div>{/* #ebi */}
 
     <div id="nasu-agebitashi" className='modal'>
       <div>

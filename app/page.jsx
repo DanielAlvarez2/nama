@@ -2555,6 +2555,35 @@ appetizers, seasonal plates, and dessert.
       </div>
     </div>{/* #same-karai */}
 
+    <div id="ebi" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`ebi.jpg?v={Date.now()}`} />
+          </div>
+          <div className='modal-text'>
+                          
+              
+              MENU DESCRIPTION:
+              <div className="right-column">
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Botan Ebi (Spot Prawn)</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">19</span>
+                  </div>
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
+      </div>
+    </div>{/* #ebi */}
+
     <div id="madai" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   

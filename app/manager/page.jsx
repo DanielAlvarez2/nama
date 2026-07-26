@@ -805,7 +805,7 @@ export default function ManagerDinnerPage() {
                 </div>
 
                 <div  className="dinner-menu-item nigiri"
-                      // onClick={()=>showModal('ebi')}
+                      onClick={()=>showModal('same-karai')}
                 >
                   <div className="name-price">
                     <span>
@@ -817,7 +817,7 @@ export default function ManagerDinnerPage() {
                 </div>
 
                 <div  className="dinner-menu-item nigiri"
-                      // onClick={()=>showModal('ebi')}
+                      onClick={()=>showModal('ebi')}
                 >
                   <div className="name-price">
                     <span>
@@ -1516,6 +1516,66 @@ export default function ManagerDinnerPage() {
             </div>{/* .modal-content */}          
       </div>
     </div>{/* #nama-tofu */}
+
+
+    <div id="same-karai" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`same-karai.jpg?v={Date.now()}`} />
+          </div>
+          <div className='modal-text'>
+                          
+              
+              MENU DESCRIPTION:
+              <div className="right-column">
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Samekarai (Sharkskin Flounder)</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">20</span>
+                  </div>
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
+      </div>
+    </div>{/* #same-karai */}
+
+    <div id="ebi" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`ebi.jpg?v={Date.now()}`} />
+          </div>
+          <div className='modal-text'>
+                          
+              
+              MENU DESCRIPTION:
+              <div className="right-column">
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Botan Ebi (Spot Prawn)</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">19</span>
+                  </div>
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}  
+      </div>
+    </div>{/* #ebi */}
+
 
     <div id="shishitos" className='modal'>
       <div>

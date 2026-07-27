@@ -39,12 +39,12 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Ume Spritz</span>
+                      <span className="name">Ume Melon Spritz</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">28</span>
                   </div>
-                  <div className="description1">Sour Plum, Strawberry, Peach, Sparkling Wine</div>
+                  <div className="description1">Sour Plum, Bonnie Melon, Apricot, Sparkling Wine</div>
                   <div className="description2"></div>
                 </div>
 
@@ -65,6 +65,20 @@ export default function DrinksMenu(){
                 </div>
 
 
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('foxs-wedding')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Sakura Martini</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">30</span>
+                  </div>
+                  <div className="description1">Hakurakusei Junmai Ginjo, Ki No Bi Gin, Sakura</div>
+                  <div className="description2"></div>
+                </div>
 
                 <div  className="dinner-menu-item"
                       // onClick={()=>showModal('foxs-wedding')}
@@ -134,9 +148,9 @@ export default function DrinksMenu(){
                     </span>
                     <span className="price">30</span>
                   </div>
-                  <div className="description1">Paul Sutton 6yr Bourbon, Dad's Hat Oloroso Cask, </div>
-                  <div className="description2">Hyakunen No Kodoku Shochu, </div>
-                  <div className="description3">Peychaud's and Chocolate Bitters</div>
+                  <div className="description1">Pinhook 9yr Bourbon, Dad's Hat Oloroso Cask, </div>
+                  <div className="description2">Hyakunen No Kodoku Shochu, Bitters</div>
+                  
                 </div>
 
 
@@ -152,7 +166,7 @@ export default function DrinksMenu(){
                     </span>
                     <span className="price">28</span>
                   </div>
-                  <div className="description1">Nikka Coffey <span className='typo'>Pot</span> Gin, Lime, Midori, Leopold </div>
+                  <div className="description1">Nikka Coffey Gin, Lime, Midori, Leopold </div>
                   <div className="description2">Sour Apple, Bordiga Centum Herbis</div>
                 </div>
 

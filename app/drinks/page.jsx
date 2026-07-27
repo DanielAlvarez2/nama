@@ -51,7 +51,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('yuzu-sour')}
+                      onClick={()=>showModal('lychee-martini')}
                 >
                   <div className="name-price">
                     <span>
@@ -81,7 +81,7 @@ export default function DrinksMenu(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('foxs-wedding')}
+                      onClick={()=>showModal('banana-club')}
                 >
                   <div className="name-price">
                     <span>
@@ -1314,20 +1314,16 @@ export default function DrinksMenu(){
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Ume Spritz</span>
+                              <span className="name">Ume Melon Spritz</span>
                               <span className="allergies"></span>
                             </span>
                             <span className="price">28</span>
                           </div>
-                          <div className="description1">Sour Plum, Strawberry, Peach, Sparkling Wine</div>
+                          <div className="description1">Sour Plum, Bonnie Melon, Apricot, Sparkling Wine</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
-                          Sour Plum<br/>
-                          Strawberry<br/>
-                          Peach<br/>
-                          Sparkling Wine<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  
@@ -1371,6 +1367,70 @@ export default function DrinksMenu(){
           </div>{/* .modal-content */}         
       </div>
     </div>{/* #yuzu-sour */}
+
+    <div id="banana-club" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
+            <img src='banana-club.jpg' />
+          </div>        
+          <div className='modal-text'>
+                 
+              
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Banana Club</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">29</span>
+                          </div>
+                          <div className="description1">Hana Shochu, Four Roses Single Barrel </div>
+                          <div className="description2">Bourbon, Nikka Malt Whiskey, Banana, Soda</div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #banana-club */}
+
+    <div id="lychee-martini" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />  
+          <div className='modal-content'>
+          
+          <div>
+            <img src='lychee-martini.jpg' />
+          </div>        
+          <div className='modal-text'>
+                 
+              
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Lychee Martini</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">30</span>
+                          </div>
+                          <div className="description1">Vodka, Daiyame Shochu, Lemon, Lychee, Shiso</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #lychee-martini */}
 
 
 

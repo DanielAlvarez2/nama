@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import Navbar from '@/components/Navbar.jsx'
+import NavbarFooter from '@/components/NavbarFooter.jsx'
 
 export default function Home() {
 
@@ -3988,7 +3989,7 @@ appetizers, seasonal plates, and dessert.
       </div>
     </div>{/* #spider-roll */}
 
-
+    <NavbarFooter page='dinner' />
     {/* .webpage */}
     </div>    
   )

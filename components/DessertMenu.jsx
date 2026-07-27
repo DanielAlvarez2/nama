@@ -1,6 +1,7 @@
 'use client'
 
 import Navbar from '@/components/Navbar.jsx'
+import NavbarFooter from '@/components/NavbarFooter.jsx'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 
 
@@ -311,6 +312,7 @@ export default function DessertMenu({desserts}){
         </div>{/* .menu-items */}
       </div>{/* .small-paper */}
 
+      <NavbarFooter page='dessert' />
       <br className='no-print'/>
 
 

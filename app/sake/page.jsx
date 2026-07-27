@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import Navbar from '@/components/Navbar.jsx'
+import NavbarFooter from '@/components/NavbarFooter';
 
 export default function ManagerSakePage(){
 
@@ -67,6 +68,7 @@ export default function ManagerSakePage(){
         </div>{/* .sake-modal */}
 
       <Navbar page='sake' />
+      
     
       <div className="letter-paper sake-page"
             // style={{backgroundImage:'url("scan-sake-1.jpg")',backgroundSize:'8.5in'}}
@@ -138,31 +140,6 @@ export default function ManagerSakePage(){
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
 
-                    <div className='sake-producer'>    
-                        <div className='sake-producer-name'><span className='bin-left'></span>
-                            Kikusui
-                        </div>{/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'NIGORI',
-                                                                    'Kikusui',
-                                                                    '3602',
-                                                                    '300 ml',
-                                                                    '60',
-                                                                    'Perfect Snow Nigori Genshu, Niigata',
-                                                                    'perfect-snow.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3602</span>
-                                <span className='sake-description'>Perfect Snow Nigori Genshu, Niigata</span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3602</span>
-                                <span className='sake-size'>300 ml</span>
-                                <span className='sake-price'>60</span>
-                                <span className='sake-abv'>21%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
-                    </div>{/* .sake-producer */}
 
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
@@ -740,28 +717,6 @@ export default function ManagerSakePage(){
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'JUNMAI DAIGINJO',
-                                                                    'Asahi Shuzo',
-                                                                    '3405',
-                                                                    '500 ml',
-                                                                    '200',
-                                                                    'Soujo Kubota Seppou <span class="typo">(Snow Peak) Junmai Daiginjo</span>, Niigata',
-                                                                    'asahi-soujo.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3405</span>
-                                <span className='sake-description'>
-                                    Soujo Kubota Seppou <span className='typo'>(Snow Peak) Junmai Daiginjo</span>, Niigata
-                                </span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3405</span>
-                                <span className='sake-size'>500 ml</span>
-                                <span className='sake-price'>200</span>
-                                <span className='sake-abv'>14%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
                     </div>{/* .sake-producer */}
 
                     <div className='sake-producer'>    
@@ -2370,7 +2325,7 @@ export default function ManagerSakePage(){
 
 
 
-
+    <NavbarFooter page='sake' />                                                                
 
 
 

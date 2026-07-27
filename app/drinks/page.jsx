@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import Navbar from '@/components/Navbar.jsx'
+import NavbarFooter from '@/components/NavbarFooter';
 
 export default function DrinksMenu(){
 
@@ -18,6 +19,7 @@ export default function DrinksMenu(){
     <div className='webpage'>
 
       <Navbar page='drinks' />
+      
     
       <div className="small-paper" style={{paddingTop:'25px'}}>
         
@@ -323,6 +325,7 @@ export default function DrinksMenu(){
         </div>{/* .menu-items */}
       </div>{/* .small-paper */}
 
+      
       <br className='no-print' />
 
 
@@ -1263,7 +1266,7 @@ export default function DrinksMenu(){
 
        </div> {/* .small-paper */}
 
-      <br className='no-print' />
+      <NavbarFooter page='drinks' />
 
 
 

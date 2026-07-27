@@ -175,7 +175,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hot-wassail')}
+                      onClick={()=>showModal('hojicha-colada')}
                 >
                   <div className="name-price">
                     <span>
@@ -184,7 +184,7 @@ export default function DrinksMenu(){
                     </span>
                     <span className="price">32</span>
                   </div>
-                  <div className="description1">Rums of Mexico Cana Criola, El Dorado Enmore, </div>
+                  <div className="description1">Rums of Mexico Ca<span className='typo'>ñ</span>a Crio<span className='typo'>l</span>la, El Dorado Enmore<span className='typo'>,</span> </div>
                   <div className="description2">Worthy Park, Lime, Coconut, Hojicha</div>
                 </div>
 
@@ -1548,6 +1548,42 @@ export default function DrinksMenu(){
     </div>{/* #budo-panther */}
 
 
+
+    <div id="hojicha-colada" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
+          <div className='modal-content'>
+               
+          <div>
+            <img src={`hojicha-colada.jpg?v=${Date.now()}`} />
+          </div>       
+              
+          <div className='modal-text'>
+                  
+              MENU DESCRIPTION:
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Hojicha Colada</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">32</span>
+                          </div>
+                          <div className="description1">Rums of Mexico Ca<span className='typo'>ñ</span>a Crio<span className='typo'>l</span>la, El Dorado Enmore<span className='typo'>,</span> </div>
+                          <div className="description2">Worthy Park, Lime, Coconut, Hojicha</div>
+                          
+                          <hr/>
+                          <br/>
+                          Nikka Sencha Gin<br/>
+                          Centum Herbus<br/>
+                          Midori: Melon Liqueur<br/>
+                          Lemon<br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */} 
+          </div>{/* .modal-content */}    
+      </div>
+    </div>{/* #hojicha-colada */}
 
     <div id="ringo-no-mitai" className='modal'>
       <div>

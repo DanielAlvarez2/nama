@@ -1305,7 +1305,7 @@ export default function DrinksMenu(){
           <div className='modal-content'>
           
           <div>
-            <img src='ume-spritz.jpg' />
+            <img src={`ume-spritz.jpg?v=${Date.now()}`} />
           </div>
               
           <div className='modal-text'>
@@ -1374,7 +1374,7 @@ export default function DrinksMenu(){
           <div className='modal-content'>
           
           <div>
-            <img src='banana-club.jpg' />
+            <img src={`banana-club.jpg?v=${Date.now()}`} />
           </div>        
           <div className='modal-text'>
                  
@@ -1406,7 +1406,7 @@ export default function DrinksMenu(){
           <div className='modal-content'>
           
           <div>
-            <img src='lychee-martini.jpg' />
+            <img src={`lychee-martini.jpg?v=${Date.now()}`} />
           </div>        
           <div className='modal-text'>
                  

@@ -1591,7 +1591,7 @@ export default function DrinksMenu(){
           <div className='modal-content'>
                
           <div>
-            <img src='ringo-no-mitai.jpg' />
+            <img src={`ringo-no-mitai.jpg?v=${Date.now()}`} />
           </div>       
               
           <div className='modal-text'>

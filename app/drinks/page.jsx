@@ -1378,7 +1378,7 @@ export default function DrinksMenu(){
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Rennaisance</span>
+                              <span className="name">Rennaisance</span><br/>
                               <span className="name">Sancerre "La Magie des Caillotes"</span>
                               <span className="allergies"></span>
                             </span>

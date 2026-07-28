@@ -7,6 +7,10 @@ import { AiTwotoneCloseCircle } from "react-icons/ai";
 
 export default function DessertMenu({desserts}){
 
+    function showModal(menuItem){
+        document.querySelector(`#${menuItem}`).style.display = 'grid'
+    }
+
     function closeModals(){
         document.querySelectorAll('.modal').forEach(item=>item.style.display = 'none')
     }
@@ -93,7 +97,7 @@ export default function DessertMenu({desserts}){
               <div className="right-column">
               
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('chateau-suduiraut')}
+                      onClick={()=>showModal('sauternes')}
                 >
                   <div className="name-price">
                     <span>
@@ -107,7 +111,7 @@ export default function DessertMenu({desserts}){
                 </div>
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('domaine-de-rancy')}
+                      onClick={()=>showModal('macabeu')}
                 >
                   <div className="name-price">
                     <span>
@@ -122,7 +126,7 @@ export default function DessertMenu({desserts}){
                 </div>
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('weingut-sattlerhof')}
+                      onClick={()=>showModal('sattlerhof')}
                 >
                   <div className="name-price">
                     <span>
@@ -346,7 +350,7 @@ export default function DessertMenu({desserts}){
           <div className='modal-text'>
           
               <br/><br/>
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -376,6 +380,103 @@ export default function DessertMenu({desserts}){
 
 
 
+    <div id="sauternes" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`sauternes.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Château Suduiraut</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">24</span>
+                          </div>
+                          <div className="description1">Sauternes, Bordeaux</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #sauternes */}
+
+    <div id="macabeu" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`macabeu.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Domaine de Rancy</span><br/>
+                              <span className="name">Rivesaltes, Ambré, Vin Doux Naturel</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">32</span>
+                          </div>
+                          <div className="description1">Roussillon, France 2000</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #macabeu */}
+
+    <div id="sattlerhof" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`sattlerhof.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Weingut Sattlerhof</span><br/>
+                              <span className="name">Beerenauslese</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">38</span>
+                          </div>
+                          <div className="description1">Südsteiermark Austria <span className='typo'>2021</span></div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #sattlerhof */}
 
 
     </div>

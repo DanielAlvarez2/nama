@@ -583,7 +583,7 @@ export default function DrinksMenu(){
               
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('bollinger')}
                 >
                   <div className="name-price">
                     <span>
@@ -618,7 +618,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('aman-champagne-btg')}
                 >
                   <div className="name-price">
                     <span>
@@ -1330,6 +1330,70 @@ export default function DrinksMenu(){
           </div>{/* .modal-content */}         
       </div>
     </div>{/* #ume-spritz */}
+
+    <div id="bollinger" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`bollinger.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Bollinger, "Special Cuvée", Brut</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">39</span>
+                          </div>
+                          <div className="description1">Champagne, France NV</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #bollinger */}
+
+    <div id="aman-champagne-btg" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`aman-champagne-btg.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Aman, "Cuvée Spéciale", Brut</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">75</span>
+                          </div>
+                          <div className="description1">Champagne, France NV</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #aman-champagne-btg */}
 
 
     <div id="yuzu-sour" className='modal'>

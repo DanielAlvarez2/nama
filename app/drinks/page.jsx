@@ -1496,11 +1496,6 @@ export default function DrinksMenu(){
                           
                           <hr/>
                           <br/>
-                          Ichiro Malt & Grain Whiskey<br/>
-                          Port Askaig Peated Scotch<br/>
-                          Lemon<br/>
-                          Ginger<br/>
-                          Pickled Honey<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  
@@ -1605,15 +1600,11 @@ export default function DrinksMenu(){
                             </span>
                             <span className="price">28</span>
                           </div>
-                          <div className="description1">Nikka Coffey <span className='typo'>Pot</span> Gin, Lime, Midori, Leopold </div>
+                          <div className="description1">Nikka Coffey Gin, Lime, Midori, Leopold </div>
                           <div className="description2">Sour Apple, Bordiga Centum Herbis</div>
                           
                           <hr/>
                           <br/>
-                          Nikka Sencha Gin<br/>
-                          Centum Herbus<br/>
-                          Midori: Melon Liqueur<br/>
-                          Lemon<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -1643,9 +1634,9 @@ export default function DrinksMenu(){
                             </span>
                             <span className="price">30</span>
                           </div>
-                          <div className="description1">Paul Sutton 6yr Bourbon, Dad's Hat Oloroso Cask, </div>
-                          <div className="description2">Hyakunen No Kodoku Shochu, </div>
-                          <div className="description3">Peychaud's and Chocolate Bitters</div>
+                          <div className="description1">Pinhook 9yr Bourbon, Dad's Hat Oloroso Cask, </div>
+                          <div className="description2">Hyakunen No Kodoku Shochu, Bitters</div>
+                          
                           
                           <hr/>
                           <br/>

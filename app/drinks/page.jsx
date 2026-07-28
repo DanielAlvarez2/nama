@@ -636,7 +636,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('taittinger')}
                 >
                   <div className="name-price">
                     <span>
@@ -1330,6 +1330,38 @@ export default function DrinksMenu(){
           </div>{/* .modal-content */}         
       </div>
     </div>{/* #ume-spritz */}
+
+    <div id="taittinger" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`taittinger.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Taittinger, "Comtes de Champagne"</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">120</span>
+                          </div>
+                          <div className="description1">Blanc de Blancs, Brut</div>
+                          <div className="description2">Champagne, France 2014</div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #taittinger */}
 
     <div id="bollinger" className='modal'>
       <div>

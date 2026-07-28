@@ -703,7 +703,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('saint-peray')}
                 >
                   <div className="name-price">
                     <span>
@@ -1402,7 +1402,7 @@ export default function DrinksMenu(){
           <div className='modal-content'>
           
           <div>
-            <img src={`sancerre.jpg?v=${Date.now()}`} />
+            <img src={`chardonnay.jpg?v=${Date.now()}`} />
           </div>
               
           <div className='modal-text'>
@@ -1412,7 +1412,7 @@ export default function DrinksMenu(){
                           <div className="name-price">
                             <span>
                               
-                              <span className="name">Kollwentz, Chardonnay ":eithkalk"</span>
+                              <span className="name">Kollwentz, Chardonnay "Leithkalk"</span>
                               <span className="allergies"></span>
                             </span>
                             <span className="price">29</span>
@@ -1428,6 +1428,39 @@ export default function DrinksMenu(){
           </div>{/* .modal-content */}         
       </div>
     </div>{/* #chardonnay */}
+
+    <div id="saint-peray" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`saint-peray.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              
+                              <span className="name">Bernard Gripa, Saint-Péray "Les Pins"</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">28</span>
+                          </div>
+                          <div className="description1">Rhône Valley, France 2021</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #saint-peray */}
 
     <div id="laherte-freres" className='modal'>
       <div>

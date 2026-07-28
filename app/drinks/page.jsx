@@ -666,7 +666,7 @@ export default function DrinksMenu(){
               
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('sancerre')}
                 >
                   <div className="name-price">
                     <span>
@@ -1362,6 +1362,39 @@ export default function DrinksMenu(){
           </div>{/* .modal-content */}         
       </div>
     </div>{/* #taittinger */}
+
+    <div id="sancerre" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`sancerre.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Rennaisance</span>
+                              <span className="name">Sancerre "La Magie des Caillotes"</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">27</span>
+                          </div>
+                          <div className="description1">Loire Valley, France 2025</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #sancerre */}
 
     <div id="laherte-freres" className='modal'>
       <div>

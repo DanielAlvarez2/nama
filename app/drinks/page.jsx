@@ -600,7 +600,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('laherte-freres')}
                 >
                   <div className="name-price">
                     <span>
@@ -1362,6 +1362,38 @@ export default function DrinksMenu(){
           </div>{/* .modal-content */}         
       </div>
     </div>{/* #taittinger */}
+
+    <div id="laherte-freres" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`laherte-freres.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Laherte Frères, "Comtes de Champagne"</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">47</span>
+                          </div>
+                          <div className="description1">"Rosé de Meunier", Extra Brut</div>
+                          <div className="description2">Rosé Champagne, France NV</div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #laherte-freres */}
 
     <div id="bollinger" className='modal'>
       <div>

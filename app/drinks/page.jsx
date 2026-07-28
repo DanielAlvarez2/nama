@@ -794,7 +794,7 @@ export default function DrinksMenu(){
               
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('pinot-noir')}
                 >
                   <div className="name-price">
                     <span>
@@ -811,7 +811,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('garnacha')}
                 >
                   <div className="name-price">
                     <span>
@@ -830,7 +830,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('cabernet')}
                 >
                   <div className="name-price">
                     <span>
@@ -1428,6 +1428,105 @@ export default function DrinksMenu(){
           </div>{/* .modal-content */}         
       </div>
     </div>{/* #chardonnay */}
+
+    <div id="garnacha" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`garnacha.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              
+                              <span className="name">Bodegas Alto Moncayo, Garnacha</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">28</span>
+                          </div>
+                          <div className="description1">Campo de Borja, Spain 2022</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #garnacha */}
+
+    <div id="cabernet" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`cabernet.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              
+                              <span className="name">Grgich Hills, Cabernet Sauvignon</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">42</span>
+                          </div>
+                          <div className="description1">Napa Valley, California 2020</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #cabernet */}
+
+    <div id="pinot-noir" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`pinot-noir.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              
+                              <span className="name">Peay Vineyards, Pinot Noir</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="price">32</span>
+                          </div>
+                          <div className="description1">Sonoma Coast, California 2023</div>
+                          <div className="description2"></div>
+                          
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #pinot-noir */}
 
     <div id="saint-peray" className='modal'>
       <div>

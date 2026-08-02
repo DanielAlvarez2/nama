@@ -101,7 +101,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('budo-panther')}
+                      onClick={()=>showModal('akarita')}
                 >
                   <div className="name-price">
                     <span>
@@ -1831,13 +1831,13 @@ export default function DrinksMenu(){
 
 
 
-    <div id="budo-panther" className='modal'>
+    <div id="akarita" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
           <div className='modal-content'>
           
           <div>
-            <img src={`budo-panther.jpg?v=${Date.now()}`} />
+            <img src={`akarita.jpg?v=${Date.now()}`} />
           </div>         
               
           <div className='modal-text'>
@@ -1846,27 +1846,22 @@ export default function DrinksMenu(){
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Budo Panther</span>
+                              <span className="name">Akarita</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">29</span>
+                            <span className="price">30</span>
                           </div>
-                          <div className="description1">Kana Shochu, Genever, Concord </div>
-                          <div className="description2">Grape, Lemon, Sorghum</div>
+                          <div className="description1">Mal Bien Mezcal, Red Yuzu Kosho, Lime, Shochu</div>
+                          <div className="description2"></div>
                           
                           <hr/>
                           <br/>
-                          Kana Shochu<br/>
-                          Genever<br/>
-                          Concord Grape<br/>
-                          Lemon<br/>
-                          Sorghum<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}      
           </div>{/* .modal-content */}         
       </div>
-    </div>{/* #budo-panther */}
+    </div>{/* #akarita */}
 
 
 

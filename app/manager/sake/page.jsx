@@ -1,5 +1,6 @@
 'use client'
 import NavbarMenuManager from '@/components/NavbarMenuManager';
+import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager';
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 
@@ -2306,6 +2307,7 @@ export default function ManagerSakePage(){
       <br className='no-print' />
 
 
+    <NavbarFooterMenuManager page='sake' />
 
 
 

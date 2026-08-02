@@ -85,6 +85,7 @@ function toggleCheckbox(){
     return(
         <>
             <form   action={handleSubmit}
+                    style={{marginBottom:'0px'}}
                     id='form-dessert-wine'
             >
                 <h1>ADD NEW DESSERT WINE</h1>

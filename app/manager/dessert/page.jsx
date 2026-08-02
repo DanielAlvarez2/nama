@@ -9,6 +9,7 @@ import Dessert from '@/models/Dessert.js'
 import DessertWine from '@/models/DessertWine.js'
 import DessertWineForm from './components/DessertWineForm.jsx';
 import NavbarMenuManager from '@/components/NavbarMenuManager.jsx';
+import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager.jsx';
 
 export const dynamic = 'force-dynamic'
 
@@ -31,6 +32,7 @@ export default async function ManagerDessertPage(){
     <div className='webpage'>
 
       <NavbarMenuManager page='dessert' />
+
       <div className="small-paper" style={{height:'auto'}}>
         
           <div className="menu-items">
@@ -304,7 +306,6 @@ export default async function ManagerDessertPage(){
         </div>{/* .menu-items */}
       </div>{/* .small-paper */}
 
-      <br className='no-print'/>
 
 
 
@@ -345,6 +346,9 @@ export default async function ManagerDessertPage(){
                           editDessertWine={editDessertWine}
         
         />
+
+              <NavbarFooterMenuManager page='dessert' />
+
     </div>
 
     )

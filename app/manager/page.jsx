@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import NavbarMenuManager from '@/components/NavbarMenuManager.jsx'
+import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager.jsx'
 
 export default function ManagerDinnerPage() {
 
@@ -1324,6 +1325,7 @@ export default function ManagerDinnerPage() {
 
       <br className='no-print' />
 
+<NavbarFooterMenuManager page='dinner' />
 
 
 

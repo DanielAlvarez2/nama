@@ -410,7 +410,7 @@ produce.               </div>
                   </div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Hokkaido "Unibushi"</span>
+                      <span className='upgrade-description'>With Hokkaido "Unibushi"</span>
                       <span className='allergies'>(GF)</span>
                     </span>
                     <span className="upgrade-price">44</span>

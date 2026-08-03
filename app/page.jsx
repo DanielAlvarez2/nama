@@ -35,15 +35,18 @@ export default function Home() {
                   }}
             >
               
-              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>Chef's Tasting Menu</div>
+              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>
+                Chef's Tasting Menu<br/>
+                テイスティング
+              </div>
 
               <div className="tasting-middle">
-                    A Japanese expression and theme in art representing 
-                    the moon, and the flowers and their beauty in 
-                    nature. The Nama Chefs will hand curate a menu 
-                    for you, featuring Nama staples alongside seasonal 
-                    dishes composed of the freshest products available 
-                    this week at Toyosu Market in Tokyo, Japan.
+                    Akari's Tasting Menu presents two seasonal expressions, 
+                    crafted with the finest ingredients selected daily from the 
+                    Tokyo Toyosu Market. Named Tsuki (Moon) and Hana 
+                    (Flower), each menu draws inspiration from enduring motifs 
+                    in Japanese aesthetics that honour nature's perpetual cycle 
+                    and the beauty found in every fleeting moment. 
               </div>
 
               <span className="tasting-right" style={{width:'20ch'}}></span>
@@ -63,9 +66,7 @@ export default function Home() {
               <div className="tasting-middle">
 An individually served sushi-focused tasting 
 menu highlighting the freshest seasonal 
-fish from Toyosu Market, paired with Nama 
-appetizers, seasonal plates, and dessert. 
-              </div>
+produce.               </div>
 
               <span className="tasting-right" style={{width:'20ch',textAlign:'right'}}>288</span>
 
@@ -82,10 +83,8 @@ appetizers, seasonal plates, and dessert.
               <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>花<br/>Hana/Flower</div>
 
               <div className="tasting-middle">
-                    The most comprehensive seasonal tasting menu, 
-                    inspired by Chef Takuma's experience in Japan with a 
-                    modern luxury touch, featuring premium ingredients, 
-                    raw fish, composed dishes, sushi, entrée, and dessert. 
+                    A comprehensive tasting menu, transforming ingredients 
+                    sourced at their peak into expertly crafted dishes.  
               </div>
 
               <span className="tasting-right" style={{width:'20ch',textAlign:'right'}}>388</span>
@@ -96,6 +95,11 @@ appetizers, seasonal plates, and dessert.
 
 
           </div>{/* .menu-items */}
+          <div className='legal'>
+            All prices are in USD and subject to 8.875% government tax. Please let us know if you have any 
+            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
+            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
+          </div>
         </div>{/* .letter-paper */}
 
       <br className='no-print' />

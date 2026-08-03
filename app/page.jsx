@@ -61,7 +61,7 @@ export default function Home() {
                   }}
             >
               
-              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>月<br/>Tsuki/Moon</div>
+              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>Tsuki/Moon<br/>月</div>
 
               <div className="tasting-middle">
 An individually served sushi-focused tasting 
@@ -80,7 +80,7 @@ produce.               </div>
                   }}
             >
               
-              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>花<br/>Hana/Flower</div>
+              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>Hana/Flower<br/>花</div>
 
               <div className="tasting-middle">
                     A comprehensive tasting menu, transforming ingredients 
@@ -102,7 +102,14 @@ produce.               </div>
           </div>
         </div>{/* .letter-paper */}
 
+
+
+
       <br className='no-print' />
+
+
+
+
 
       <div className="letter-paper">
 
@@ -110,7 +117,7 @@ produce.               </div>
                                             
           <div className="menu-items">
             <div className="section">
-              <div className="left-column">椀物<br/>Soup</div>
+              <div className="left-column">Soup<br/>椀物</div>
 
               <div className="right-column">
               
@@ -135,7 +142,7 @@ produce.               </div>
             </div>
 
             <div className="section">
-              <div className="left-column">前菜<br/>Small Plates</div>
+              <div className="left-column">Small Plates<br/>前菜</div>
               <div className="right-column">
 
                 <div  className="dinner-menu-item"
@@ -157,12 +164,12 @@ produce.               </div>
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Nama Tofu</span>
+                      <span className="name">Akari Tofu</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">19</span>
                   </div>
-                  <div className="description1">Housemade Tofu, Dashi, Shoyu, Ginger</div>
+                  <div className="description1">House Made Tofu, Dashi, Shoyu, Ginger</div>
                   <div className="description2"></div>
                 </div>
 
@@ -204,7 +211,7 @@ produce.               </div>
                     </span>
                     <span className="price">16</span>
                   </div>
-                  <div className="description1">Housemade Pickles</div>
+                  <div className="description1">House Made Pickles</div>
                   <div className="description2"></div>
                 </div>
 
@@ -247,7 +254,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Yasai Shiraae</span>
-                      <span className="allergies">(GF, D)</span>
+                      <span className="allergies">(D, GF)</span>
                     </span>
                     <span className="price">29</span>
                   </div>
@@ -279,7 +286,7 @@ produce.               </div>
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Shimaaji Tataki</span>
+                      <span className="name">Shim<span className='typo'>a</span>aji Tataki</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">46</span>
@@ -379,10 +386,11 @@ produce.               </div>
            </div> {/* .menu-items */}
 
           <div className="legal">
-            <div>(V) Vegan (N) Nuts (D) Dairy (GF) Gluten Free</div>
-            <div>All prices are in USD and subject to a 20% service charge and 8.875% government tax</div>
-            <div>Please let us know if you have any allergies or special dietary requirements, or if you require any further information</div>
-            <div>Our choice of suppliers and local produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability</div>
+            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V<span className='typo'>G</span>)Vegan</div>
+            <br/>
+            <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
+            <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>
+            <div>produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.</div>
           </div>
 
        </div> {/* .letter-paper */}

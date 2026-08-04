@@ -28,7 +28,7 @@ export default function DrinksMenu(){
             <div  className="section section-dessert"
                   style={{marginBottom:'0px'}}
             >
-              <div className="left-column">COCKTAILS</div>
+              <div className="left-column">Specialty Cocktails<br/>スペシャルティカクテル</div>
 
               <div className="right-column">
               
@@ -211,10 +211,13 @@ export default function DrinksMenu(){
 
 
 
+
+
           </div>{/* .menu-items */}
 
-
-
+          <div className='legal' style={{width:'3.25in'}}>
+            All prices are in USD and subject to 8.875% government tax.
+          </div>
 
 
 
@@ -222,7 +225,18 @@ export default function DrinksMenu(){
 
       </div>{/* .small-paper */}
 
+
+
+
+
+
       <br className='no-print' />
+
+
+
+
+
+
 
 
       <div className='small-paper'>
@@ -233,7 +247,7 @@ export default function DrinksMenu(){
                                                     width:'3.5in',
                                                     // background:'pink',
                                                     justifyContent:'space-between'}}>
-                <span style={{fontSize:'inherit'}}>ZERO PROOF COCKTAILS</span>
+                <span style={{fontSize:'inherit'}}>Non-Alcoholic Cocktails<br/>ノンアルコールカクテル</span>
                 <span className='price'></span>
 
               </div>
@@ -256,22 +270,6 @@ export default function DrinksMenu(){
                 </div>
 
               
-              
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('straw-hat')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Genmai Horchata</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Genmaimatcha, Rice, Cinnamon, Kokuto</div>
-                  <div className="description2"></div>
-                </div>
-
-
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('phony-negroni')}
                 >
@@ -287,8 +285,25 @@ export default function DrinksMenu(){
                 </div>
 
 
-
                 <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('straw-hat')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Genmai Horchata</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1">Genmaimatcha, Rice, Cinnamon, Kokuto</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+                {/* <div  className="dinner-menu-item"
                       onClick={()=>showModal('souchong-sour')}
                 >
                   <div className="name-price">
@@ -300,7 +315,7 @@ export default function DrinksMenu(){
                   </div>
                   <div className="description1">Passionfruit, Falernu<span className='typo'>m</span>, Unified </div>
                   <div className="description2">Ferments Lapsang Souchong</div>
-                </div>
+                </div> */}
 
               
                 <div  className="dinner-menu-item"
@@ -337,6 +352,12 @@ export default function DrinksMenu(){
             </div>{/* .section */}
             
         </div>{/* .menu-items */}
+
+          <div className='legal' style={{width:'3.25in'}}>
+            All prices are in USD and subject to 8.875% government tax.
+          </div>
+
+
       </div>{/* .small-paper */}
 
       
@@ -364,108 +385,8 @@ export default function DrinksMenu(){
                                             
           <div className="menu-items">
 
-
-
             <div className="section section-dessert">
-              <div className="left-column">Sake by the glass</div>
-
-              <div className="right-column">
-              
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Aman, Hakurakusei, Junmai Ginjo</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">25</span>
-                  </div>
-                  <div className="description1">Miyagi, Japan NV</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Aman, Hakurakusei, Junmai Daiginjo</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">35</span>
-                  </div>
-                  <div className="description1">Miyagi, Japan NV</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Zaku, "Kaizan Ittekisui", Junmai Daiginjo</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">49</span>
-                  </div>
-                  <div className="description1">Mie, Japan NV</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Izumibashi, Umeshu, Junmai Daiginjo</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">35</span>
-                  </div>
-                  <div className="description1">Kanagawa, Japan NV</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Carafe 8oz</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">68</span>
-                  </div>
-                  <div className="description1">Aman, Hakurakusei, Junmai Daiginjo</div>
-                  <div className="description2">Miyagi, Japan NV</div>
-                </div>
-
-
-
-
-
-
-              </div>{/* .right-column */}
-            </div>{/* .section */}
-
-            
-
-            <div className="section section-dessert">
-              <div className="left-column">Beer</div>
+              <div className="left-column">Beer<br/>ビール</div>
 
               <div className="right-column">
               
@@ -529,251 +450,40 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Non-Alcoholic Pilsner & India Pale Ale</span>
+                      <span className="name">Hakkaissan Rydeen IPA</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">12</span>
                   </div>
-                  <div className="description1">Beacon, New York</div>
+                  <div className="description1">Niigata, Japan</div>
                   <div className="description2"></div>
                 </div>
-
-
-
-
-
-
-
-              </div>{/* .right-column */}
-            </div>{/* .section */}
-
-            
-
-
-
-
-
-
-           </div> {/* .menu-items */}
-
-
-       </div> {/* .small-paper */}
-
-      <br className='no-print' />
-
-
-
-
-
-
-
-      <div className="small-paper">
-
-
-                                            
-          <div className="menu-items">
-
-
-
-            <div className="section section-dessert">
-              <div className="left-column">By The Glass</div>
-              <div className="left-column">Sparkling</div>
-
-              <div className="right-column">
-              
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('bollinger')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Bollinger, "Special Cuvée", Brut</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">39</span>
-                  </div>
-                  <div className="description1">Champagne, France NV</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('laherte-freres')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Laherte Frères</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">47</span>
-                  </div>
-                  <div className="description1">"Rosé de Meunier", Extra Brut</div>
-                  <div className="description2">Rosé Champagne, France, NV</div>
-                </div>
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('aman-champagne-btg')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Aman, "Cuvée Spéciale", Brut</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">75</span>
-                  </div>
-                  <div className="description1">Champagne<span style={{color:'red'}}>,</span> France NV</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('taittinger')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Taittinger, "Comtes de Champagne"</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">120</span>
-                  </div>
-                  <div className="description1">Blanc de Blancs, Brut</div>
-                  <div className="description2">Champagne, France 2014</div>
-                </div>
-
-
-
-
-
-
-              </div>{/* .right-column */}
-            </div>{/* .section */}
-
-            
-
-            <div className="section section-dessert">
-              <div className="left-column">White</div>
-
-              <div className="right-column">
-              
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('sancerre')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Rennaisance</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">27</span>
-                  </div>
-                  <div className='name'>Sancerre "La Magie des Caillottes"</div>
-                  <div className="description1">Loire Valley, France 2025</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('chardonnay')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Kollwentz, Chardonnay "Leithakalk"</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">29</span>
-                  </div>
-                  <div className="description1">Burgenland, Austria 2022</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('saint-peray')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Bernard Gripa, Saint-Péray "Les Pins"</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">28</span>
-                  </div>
-                  <div className="description1">Rhône Valley, France 2021</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-              </div>{/* .right-column */}
-            </div>{/* .section */}
-
-            
-
-
-
-
-
-
-           </div> {/* .menu-items */}
-
-
-       </div> {/* .small-paper */}
-
-      <br className='no-print' />
-
-
-
-
-
-      <div className="small-paper">
-
-
-                                            
-          <div className="menu-items">
-
-
-
-            <div className="section section-dessert">
-              <div className="left-column">By The Glass</div>
-              <div className="left-column">Rosé</div>
-
-              <div className="right-column">
-              
 
                 <div  className="dinner-menu-item"
                       // onClick={()=>showModal('hojicha-banana-roulade')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">VieVité</span>
+                      <span className="name">BERO Non-Alcoholic Pilsner</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">22</span>
+                    <span className="price">12</span>
                   </div>
-                  <div className="description1">Côtes de Provence, France 2025</div>
+                  <div className="description1">Pennsylvania</div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Baladin Botanic Non-Alcoholic Ale</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">12</span>
+                  </div>
+                  <div className="description1">Cuneo, Italy</div>
                   <div className="description2"></div>
                 </div>
 
@@ -782,80 +492,20 @@ export default function DrinksMenu(){
 
 
 
+
               </div>{/* .right-column */}
             </div>{/* .section */}
+
+
+
+
+
+
+
+
 
             
 
-            <div className="section section-dessert">
-              <div className="left-column">Red</div>
-
-              <div className="right-column">
-              
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('pinot-noir')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Peay Vineyards, Pinot Noir</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">32</span>
-                  </div>
-                  <div className="description1">Sonoma Coast, California 2023</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('garnacha')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Bodegas Alto Moncayo, Garnacha</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">28</span>
-                  </div>
-                  <div className="description1">Campo de Borja, Spain 2022</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('cabernet')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Grgich Hills, Cabernet Sauvignon</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">42</span>
-                  </div>
-                  <div className="description1">Napa Valley, California 2020</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-              </div>{/* .right-column */}
-            </div>{/* .section */}
 
             
 
@@ -866,8 +516,19 @@ export default function DrinksMenu(){
 
            </div> {/* .menu-items */}
 
+          <div className='legal' style={{width:'3.25in'}}>
+            All prices are in USD and subject to 8.875% government tax.
+          </div>
 
        </div> {/* .small-paper */}
+
+
+
+
+
+
+
+
 
       <br className='no-print' />
 
@@ -891,10 +552,8 @@ export default function DrinksMenu(){
           <div className="menu-items">
 
 
-
             <div className="section section-dessert">
-              <div className="left-column">Kettl Teas</div>
-              
+              <div className="left-column">Sake by the Glass<br/>グラスでの酒</div>
 
               <div className="right-column">
               
@@ -904,234 +563,10 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Sencha Jou</span>
+                      <span className="name">Niizawa, Aman Hakurakusei, Junmai Ginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Incredibly fragrant green tea, hint of </div>
-                  <div className="description2">fresh cut grass and marine notes</div>
-                </div>
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Genmaimatcha</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Select sencha blended with matcha and </div>
-                  <div className="description2">roasted brown rice, toasty, lingering sweetness</div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Gyokuro</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Refined sweet green tea, hint of </div>
-                  <div className="description2">toasted hazelnut and umami tang</div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Houjicha</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Low-caffeine green tea, deep fragrances of </div>
-                  <div className="description2">toasted hazelnut and caramelized sugar</div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Yame Black</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Indian-style bright breakfast tea </div>
-                  <div className="description2">with a mild malty finish</div>
-                </div>
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Yame Oolong</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Delicately roasted tea with layers </div>
-                  <div className="description2">of toffee-like sweetness</div>
-                </div>
-
-
-
-
-
-
-              </div>{/* .right-column */}
-            </div>{/* .section */}
-
-            
-
-            <div className="section section-dessert">
-              <div className="left-column">Soba and Tis<span style={{color:'red',fontSize:'inherit'}}>s</span>anes</div>
-
-              <div className="right-column">
-              
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Soba Tea</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Nutty, caffeine-free, warm, and toasty</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Chamomile</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Soothing natural blend made only from </div>
-                  <div className="description2">caffeine-free chamomile flowers</div>
-                </div>
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Peppermint</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Caffeine-free herbal tea, spicy aroma </div>
-                  <div className="description2">and cool, penetrating taste</div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-              </div>{/* .right-column */}
-            </div>{/* .section */}
-
-            
-
-
-
-
-
-
-           </div> {/* .menu-items */}
-
-
-       </div> {/* .small-paper */}
-
-      <br className='no-print' />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div className="small-paper">
-
-
-                                            
-          <div className="menu-items">
-
-
-
-            <div className="section section-dessert">
-              <div className="left-column">Coffee & Matcha</div>
-              
-
-              <div className="right-column">
-              
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Coffee</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">10</span>
+                    <span className="price">25</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1139,6 +574,389 @@ export default function DrinksMenu(){
 
 
 
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Niizawa, Aman Hakurakusei, Junmai Daiginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">35</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Zaku, Kaizan Ittekisui, Junmai Daiginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">49</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Izumibashi Shuzo, Umeshu, Junmai Daiginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">35</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Carafe 8oz</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">68</span>
+                  </div>
+                  <div className="description1">Niizawa, Aman Hakurakusei, Junmai Daiginjo</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+           </div> {/* .menu-items */}
+
+          <div className='legal' style={{width:'3.25in'}}>
+            All prices are in USD and subject to 8.875% government tax.
+          </div>
+
+       </div> {/* .small-paper */}
+
+
+
+
+
+
+
+
+
+
+      <br className='no-print' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="small-paper">
+
+
+                                            
+          <div className="menu-items">
+
+
+
+            <div className="section section-dessert">
+              <div className="left-column">Wines by the Glass<br/>グラスワイン</div>
+              <div className="left-column">Champagne<br/>シャンパン</div>
+
+              <div className="right-column">
+              
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('bollinger')}
+                >
+                  <div className='dessert-wine-vintage'>NV</div>
+                  <div className='dessert-wine-name'>Bollinger, Special Cuvée, Brut</div>
+                  <div>39</div>
+                </div>{/* .dessert-wine */}
+
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('laherte-freres')}
+                >
+                  <div className='dessert-wine-vintage'>NV</div>
+                  <div className='dessert-wine-name'>Laherte Frères, Rosé de Meunier, Extra Brut</div>
+                  <div>47</div>
+                </div>{/* .dessert-wine */}
+
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('aman-champagne-btg')}
+                >
+                  <div className='dessert-wine-vintage'>NV</div>
+                  <div className='dessert-wine-name'>Aman, Cuvée Spéciale, Brut</div>
+                  <div>75</div>
+                </div>{/* .dessert-wine */}
+
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('taittinger')}
+                >
+                  <div className='dessert-wine-vintage'>2014</div>
+                  <div className='dessert-wine-name'>Taittinger, Comtes de Champagne Blanc de Blancs, Brut</div>
+                  <div>120</div>
+                </div>{/* .dessert-wine */}
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+
+
+
+
+
+
+           </div> {/* .menu-items */}
+
+          <div className='legal' style={{width:'3.25in'}}>
+            All prices are in USD and subject to 8.875% government tax.
+          </div>
+
+
+       </div> {/* .small-paper */}
+
+
+
+
+
+
+
+
+      <br className='no-print' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="small-paper">
+
+
+                                            
+          <div className="menu-items">
+
+
+
+            
+            <div className="section section-dessert">
+              <div className="left-column">White<br/>白ワイン</div>
+
+              <div className="right-column">
+              
+
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('sancerre')}
+                >
+                  <div className='dessert-wine-vintage'>2025</div>
+                  <div className='dessert-wine-name'>Renaissance, Sancerre<br/>Loire Valley, FR</div>
+                  <div>27</div>
+                </div>{/* .dessert-wine */}
+
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('chardonnay')}
+                >
+                  <div className='dessert-wine-vintage'>2022</div>
+                  <div className='dessert-wine-name'>Kollwentz, Chardonnay Leithakalk<br/>Burgenland, AUT</div>
+                  <div>29</div>
+                </div>{/* .dessert-wine */}
+
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('saint-peray')}
+                >
+                  <div className='dessert-wine-vintage'>2021</div>
+                  <div className='dessert-wine-name'>Bernard Gripa, Saint-Péray Les Pins<br/>Rhône Valley, FR</div>
+                  <div>28</div>
+                </div>{/* .dessert-wine */}
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+
+
+            <div className="section section-dessert">
+              <div className="left-column">Rosé<br/>ロゼワイン</div>
+
+              <div className="right-column">
+              
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('saint-peray')}
+                >
+                  <div className='dessert-wine-vintage'>*2025</div>
+                  <div className='dessert-wine-name'>VieVité<br/>Côtes de Provence, FR</div>
+                  <div>22</div>
+                </div>{/* .dessert-wine */}
+
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+            <div className="section section-dessert">
+              <div className="left-column">Red<br/>赤ワイン</div>
+
+              <div className="right-column">
+              
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('pinot-noir')}
+                >
+                  <div className='dessert-wine-vintage'>2023</div>
+                  <div className='dessert-wine-name'>Peay Vineyards<br/>Sonoma Coast, CA</div>
+                  <div>32</div>
+                </div>{/* .dessert-wine */}
+
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('garnacha')}
+                >
+                  <div className='dessert-wine-vintage'>2022</div>
+                  <div className='dessert-wine-name'>Bodegas Alto Moncayo, Garnacha<br/>Aragon, ESP</div>
+                  <div>28</div>
+                </div>{/* .dessert-wine */}
+
+                <div  className='dessert-wine' 
+                      onClick={()=>showModal('cabernet')}
+                >
+                  <div className='dessert-wine-vintage'>2020</div>
+                  <div className='dessert-wine-name'>Grgich Hills, Cabernet Sauvignon<br/>Napa Valley, CA</div>
+                  <div>42</div>
+                </div>{/* .dessert-wine */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+            
+
+
+
+
+
+
+           </div> {/* .menu-items */}
+
+          <div className='legal' style={{width:'3.25in'}}>
+            All prices are in USD and subject to 8.875% government tax.
+          </div>
+
+
+
+       </div> {/* .small-paper */}
+
+      <br className='no-print' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="small-paper">
+
+
+                                            
+          <div className="menu-items">
+
+
+
+            <div className="section section-dessert">
+              <div className="left-column">Coffee & Tea<br/>コーヒーとお茶</div>
+              
+
+              <div className="right-column">
+              
 
                 <div  className="dinner-menu-item"
                       // onClick={()=>showModal('hojicha-banana-roulade')}
@@ -1157,13 +975,30 @@ export default function DrinksMenu(){
 
 
 
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Coffee</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">10</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
 
                 <div  className="dinner-menu-item"
                       // onClick={()=>showModal('hojicha-banana-roulade')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Cappuccino</span>
+                      <span className="name">Cappuccino | Latte</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">12</span>
@@ -1180,42 +1015,7 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Latte</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">12</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Chai Latte</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">12</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Matcha Latte</span>
+                      <span className="name">Matcha Latte | Chai Latte</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">12</span>
@@ -1262,6 +1062,139 @@ export default function DrinksMenu(){
 
 
 
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Sencha Jou</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Genmaimatcha</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Gyokuro</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Hojicha</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Yame Black</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Yame Oolong</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Soba</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Chamomile</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Peppermint</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">16</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+
+
 
               </div>{/* .right-column */}
             </div>{/* .section */}
@@ -1277,6 +1210,10 @@ export default function DrinksMenu(){
 
            </div> {/* .menu-items */}
 
+          <div className='legal' style={{width:'3.25in'}}>
+            All prices are in USD and subject to 8.875% government tax.<br/>
+            Our coffee and tea are green certified and come from Fairtrade partnerships.
+          </div>
 
        </div> {/* .small-paper */}
 
@@ -1343,21 +1280,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Taittinger, "Comtes de Champagne"</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">120</span>
-                          </div>
-                          <div className="description1">Blanc de Blancs, Brut</div>
-                          <div className="description2">Champagne, France 2014</div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('taittinger')}
+                >
+                  <div className='dessert-wine-vintage'>2014</div>
+                  <div className='dessert-wine-name'>Taittinger, Comtes de Champagne Blanc de Blancs, Brut</div>
+                  <div>120</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1375,22 +1305,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Rennaisance</span><br/>
-                              <span className="name">Sancerre "La Magie des Caillotes"</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">27</span>
-                          </div>
-                          <div className="description1">Loire Valley, France 2025</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('sancerre')}
+                >
+                  <div className='dessert-wine-vintage'>2025</div>
+                  <div className='dessert-wine-name'>Renaissance, Sancerre<br/>Loire Valley, FR</div>
+                  <div>27</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1408,22 +1330,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              
-                              <span className="name">Kollwentz, Chardonnay "Leithkalk"</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">29</span>
-                          </div>
-                          <div className="description1">Burgenland, Austria 2022</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('chardonnay')}
+                >
+                  <div className='dessert-wine-vintage'>2022</div>
+                  <div className='dessert-wine-name'>Kollwentz, Chardonnay Leithakalk<br/>Burgenland, AUT</div>
+                  <div>29</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1441,22 +1355,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              
-                              <span className="name">Bodegas Alto Moncayo, Garnacha</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">28</span>
-                          </div>
-                          <div className="description1">Campo de Borja, Spain 2022</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('garnacha')}
+                >
+                  <div className='dessert-wine-vintage'>2022</div>
+                  <div className='dessert-wine-name'>Bodegas Alto Moncayo, Garnacha<br/>Aragon, ESP</div>
+                  <div>28</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1474,22 +1380,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              
-                              <span className="name">Grgich Hills, Cabernet Sauvignon</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">42</span>
-                          </div>
-                          <div className="description1">Napa Valley, California 2020</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('cabernet')}
+                >
+                  <div className='dessert-wine-vintage'>2020</div>
+                  <div className='dessert-wine-name'>Grgich Hills, Cabernet Sauvignon<br/>Napa Valley, CA</div>
+                  <div>42</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1507,22 +1405,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              
-                              <span className="name">Peay Vineyards, Pinot Noir</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">32</span>
-                          </div>
-                          <div className="description1">Sonoma Coast, California 2023</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('pinot-noir')}
+                >
+                  <div className='dessert-wine-vintage'>2023</div>
+                  <div className='dessert-wine-name'>Peay Vineyards<br/>Sonoma Coast, CA</div>
+                  <div>32</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1540,22 +1430,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              
-                              <span className="name">Bernard Gripa, Saint-Péray "Les Pins"</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">28</span>
-                          </div>
-                          <div className="description1">Rhône Valley, France 2021</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('saint-peray')}
+                >
+                  <div className='dessert-wine-vintage'>2021</div>
+                  <div className='dessert-wine-name'>Bernard Gripa, Saint-Péray Les Pins<br/>Rhône Valley, FR</div>
+                  <div>28</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1573,21 +1455,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Laherte Frères, "Comtes de Champagne"</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">47</span>
-                          </div>
-                          <div className="description1">"Rosé de Meunier", Extra Brut</div>
-                          <div className="description2">Rosé Champagne, France NV</div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('laherte-freres')}
+                >
+                  <div className='dessert-wine-vintage'>NV</div>
+                  <div className='dessert-wine-name'>Laherte Frères, Rosé de Meunier, Extra Brut</div>
+                  <div>47</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1605,21 +1480,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Bollinger, "Special Cuvée", Brut</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">39</span>
-                          </div>
-                          <div className="description1">Champagne, France NV</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('bollinger')}
+                >
+                  <div className='dessert-wine-vintage'>NV</div>
+                  <div className='dessert-wine-name'>Bollinger, Special Cuvée, Brut</div>
+                  <div>39</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1637,21 +1505,14 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Aman, "Cuvée Spéciale", Brut</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">75</span>
-                          </div>
-                          <div className="description1">Champagne, France NV</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('aman-champagne-btg')}
+                >
+                  <div className='dessert-wine-vintage'>NV</div>
+                  <div className='dessert-wine-name'>Aman, Cuvée Spéciale, Brut</div>
+                  <div>75</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>

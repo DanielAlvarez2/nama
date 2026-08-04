@@ -549,7 +549,15 @@ input[type='text']{
 .dessert-wine{
   display:flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+  cursor:pointer;
 }
 .dessert-wine-name{
   width:95%;
+}
+.dessert-wine-vintage{
+  width:40px;
+}
+.modal-text .dessert-wine{
+  cursor:default;
 }

@@ -49,7 +49,7 @@ export default function DessertMenu({desserts}){
         
           <div className="menu-items">
             <div className="section section-dessert">
-              <div className="left-column">Desserts<br/>デザート</div>
+              <div className="left-column">Desserts<br/>カクテル</div>
 
               <div className="right-column">
               
@@ -138,95 +138,45 @@ export default function DessertMenu({desserts}){
 
             <div className="section section-dessert">
               <div className="left-column">
-                Dessert & Fortified Wines By The Glass<br/>デザートのお供に</div>
+                Dessert & Fortified Wines By The Glass<br/>デザートワイン</div>
 
               <div className="right-column">
               
-                <div className='dessert-wine'>
-                  <div>2022</div>
-                  <div className='dessert-wine-name'>Chateau Suduiraut, SA</div>
+                <div className='dessert-wine'
+                      onClick={()=>showModal('sauternes')}
+                >
+                  <div className='dessert-wine-vintage'>2022</div>
+                  <div className='dessert-wine-name'>Chateau Suduiraut, <span className='typo'>SA</span></div>
                   <div>24</div>
                 </div>{/* .dessert-wine */}
 
-                <div className='dessert-wine'>
-                  <div>2000</div>
+                <div  className='dessert-wine'
+                      onClick={()=>showModal('macabeu')}
+                >
+                  <div className='dessert-wine-vintage'>2000</div>
                   <div className='dessert-wine-name'>Domaine de Rancy Rivesaltes,<br/>
                         Ambré, Vin Doux Naturel, FR
                   </div>
                   <div>32</div>
                 </div>{/* .dessert-wine */}
 
-                <div className='dessert-wine'>
-                  <div>2021</div>
+                <div className='dessert-wine' onClick={()=>showModal('sattlerhof')}>
+                  <div className='dessert-wine-vintage'>2021</div>
                   <div className='dessert-wine-name'>Weingut Sattlerhof, AUT</div>
                   <div>38</div>
                 </div>{/* .dessert-wine */}
 
-                <div className='dessert-wine'>
-                  <div>2005</div>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('grahams-port')}
+                >
+                  <div className='dessert-wine-vintage'>*2005</div>
                   <div className='dessert-wine-name'>Graham's Port, Quinta Dos Malvedos, PT</div>
                   <div>40</div>
                 </div>{/* .dessert-wine */}
 
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('sauternes')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Château Suduiraut</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">24</span>
-                  </div>
-                  <div className="description1">Sauternes, Bordeaux</div>
-                  <div className="description2"></div>
-                </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('macabeu')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Domaine de Rancy</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">32</span>
-                  </div>
-                  <div className='name2'>Rivesaltes, Ambré, Vin Doux Naturel</div>
-                  <div className="description1">Roussillon, France 2000</div>
-                  <div className="description2"></div>
-                </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('sattlerhof')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Weingut Sattlerhof</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">38</span>
-                  </div>
-                  <div className='name2'>Beerenauslese</div>
-                  <div className="description1">Südsteiermark, Austria <span className='typo'>2021</span></div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('grahams-port')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Graham's Port, Quinta dos Malvedos</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">40</span>
-                  </div>
-                  <div className='name2'></div>
-                  <div className="description1">Vintage Port, Douro, Portugal, 2005</div>
-                  <div className="description2"></div>
-                </div>
 
 
               </div>{/* .right-column */}
@@ -413,21 +363,12 @@ export default function DessertMenu({desserts}){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Château Suduiraut</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">24</span>
-                          </div>
-                          <div className="description1">Sauternes, Bordeaux</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div className='dessert-wine'>
+                  <div className='dessert-wine-vintage'>2022</div>
+                  <div className='dessert-wine-name'>Chateau Suduiraut, <span className='typo'>SA</span></div>
+                  <div>24</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -445,23 +386,16 @@ export default function DessertMenu({desserts}){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Domaine de Rancy</span><br/>
-                              <span className="name">Rivesaltes, Ambré, Vin Doux Naturel</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">32</span>
-                          </div>
-                          <div className="description1">Roussillon, France 2000</div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div  className='dessert-wine'>
+                  <div className='dessert-wine-vintage'>2000</div>
+                  <div className='dessert-wine-name'>Domaine de Rancy Rivesaltes,<br/>
+                        Ambré, Vin Doux Naturel, FR
+                  </div>
+                  <div>32</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
             </div>{/* .modal-text */}  
+            
           </div>{/* .modal-content */}         
       </div>
     </div>{/* #macabeu */}
@@ -478,22 +412,13 @@ export default function DessertMenu({desserts}){
           <div className='modal-text'>
                  
               MENU DESCRIPTION:<br/><br/>
-              <div className="right-column">
-                          <div className="name-price">
-                            <span>
-                              <span className="name">Weingut Sattlerhof</span><br/>
-                              <span className="name">Beerenauslese</span>
-                              <span className="allergies"></span>
-                            </span>
-                            <span className="price">38</span>
-                          </div>
-                          <div className="description1">Südsteiermark Austria <span className='typo'>2021</span></div>
-                          <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          <br/><br/>
-              </div>
+                <div className='dessert-wine'>
+                  <div className='dessert-wine-vintage'>2021</div>
+                  <div className='dessert-wine-name'>Weingut Sattlerhof, AUT</div>
+                  <div>38</div>
+                </div>{/* .dessert-wine */}
+                <hr/>
+
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>

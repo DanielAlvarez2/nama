@@ -731,7 +731,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Grilled Summer Vegetables</span>
-                      <span className="allergies">(GF)<span className='typo'>???</span></span>
+                      <span className="allergies">(V, GF)<span className='typo'>???</span></span>
                     </span>
                     <span className="price">35</span>
                   </div>
@@ -1653,17 +1653,17 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Nama Tofu</span>
+                      <span className="name">Akari Tofu</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">19</span>
                   </div>
-                  <div className="description1">Housemade Tofu, Dashi, Shoyu, Ginger</div>
+                  <div className="description1">House Made Tofu, Dashi, Shoyu, Ginger</div>
                   <div className="description2"></div>
                           <br/>
                           <hr/>
                           <br/>
-                          house-made tofu<br/>
+                          house made tofu<br/>
                           dashi nikiri soy sauce on the side<br/>
                           ginger paste, scallion, bonito powder
                           <br/><br/>
@@ -1760,12 +1760,12 @@ produce.               </div>
                     </span>
                     <span className="price">16</span>
                   </div>
-                  <div className="description1">Housemade Pickles</div>
+                  <div className="description1">House Made Pickles</div>
                   <div className="description2"></div>
                           <br/>
                           <hr/>
                           <br/>
-                          housemade japanese pickled vegetables
+                          house made japanese pickled vegetables
                           <br/><br/>
               </div>
               </div>{/* .modal-text */}                             
@@ -1827,12 +1827,13 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Yasai Shiraae</span>
-                      <span className="allergies">(GF, D)</span>
+                      <span className="allergies">(D, GF)</span>
                     </span>
                     <span className="price">29</span>
                   </div>
                   <div className="description1">Summer Vegetables, Tofu Dip</div>
-                  <div className="description2"></div>                          <br/>
+                  <div className="description2"></div>                          
+                          <br/>
                           <hr/>
                           <br/>
                           seasonal vegetables<br/>
@@ -1967,7 +1968,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Greenmarket Salad</span>
+                      <span className="name">Green Market</span>
                       <span className="allergies">(V, GF)</span>
                     </span>
                     <span className="price">29</span>
@@ -1976,14 +1977,14 @@ produce.               </div>
                   <div className="description2"></div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Tofu</span>
+                      <span className='upgrade-description'>With Tofu</span>
                       <span className='allergies'>(V, GF)</span>
                     </span>
                     <span className="upgrade-price">38</span>
                   </div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Warm Mushrooms</span>
+                      <span className='upgrade-description'>With Warm Mushrooms</span>
                       <span className='allergies'>(V, GF)</span>
                     </span>
                     <span className="upgrade-price">40</span>
@@ -2021,7 +2022,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Nama Caesar Salad</span>
+                      <span className="name">Caesar</span>
                       <span className="allergies">(D, GF)</span>
                     </span>
                     <span className="price">24</span>
@@ -2030,15 +2031,15 @@ produce.               </div>
                   <div className="description2"></div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Warm Mushrooms</span>
-                      <span className='allergies'>(D, GF)</span>
+                      <span className='upgrade-description'>With Warm Mushrooms</span>
+                      <span className='allergies'>(GF)</span>
                     </span>
                     <span className="upgrade-price">35</span>
                   </div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Hokkaido "Unibushi"</span>
-                      <span className='allergies'>(D, GF)</span>
+                      <span className='upgrade-description'>With Hokkaido "Unibushi"</span>
+                      <span className='allergies'>(GF)</span>
                     </span>
                     <span className="upgrade-price">44</span>
                   </div>
@@ -2112,7 +2113,7 @@ produce.               </div>
                     </span>
                     <span className="price">37</span>
                   </div>
-                  <div className="description1">Ebi, Summer Vegetables</div>
+                  <div className="description1">Shrimp, Summer Vegetables</div>
                   <div className="description2"></div>  
                           <hr/>
                           <br/>
@@ -2148,7 +2149,7 @@ produce.               </div>
                     </span>
                     <span className="price">41</span>
                   </div>
-                  <div className="description1">Shrimp Tempura</div>
+                  <div className="description1">Shrimp</div>
                   <div className="description2"></div>
                           <hr/>
                           <br/>
@@ -2361,8 +2362,8 @@ produce.               </div>
                     </span>
                     <span className="price">38</span>
                   </div>
-                  <div className="description1">Charcoal Grilled Chicken,</div>
-                  <div className="description2">Yuzu Sesame Ponzu, Daikon Oroshi</div>
+                  <div className="description1">Charcoal Grilled Chicken, Yuzu Sesame Ponzu, Daikon Oroshi</div>
+                  <div className="description2"></div>
                           <hr/>
                           <br/>
                           charcoal grilled chicken<br/>
@@ -2527,7 +2528,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Grilled Summer Vegetables</span>
-                      <span className="allergies">(GF)</span>
+                      <span className="allergies">(V, GF)</span>
                     </span>
                     <span className="price">35</span>
                   </div>
@@ -3056,7 +3057,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Kappa Maki</span>
+                      <span className="name">Kappa</span>
                       <span className="allergies">(V)</span>
                     </span>
                     <span className="price">16</span>
@@ -3089,7 +3090,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Oshinko Maki</span>
+                      <span className="name">Oshinko</span>
                       <span className="allergies">(V)</span>
                     </span>
                     <span className="price">18</span>
@@ -3122,7 +3123,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Ume Shiso Maki</span>
+                      <span className="name">Ume Shiso</span>
                       <span className="allergies">(V)</span>
                     </span>
                     <span className="price">18</span>
@@ -3157,7 +3158,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Avocado Maki</span>
+                      <span className="name">Avocado</span>
                       <span className="allergies">(V)</span>
                     </span>
                     <span className="price">18</span>
@@ -3190,7 +3191,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Eel Cucumber Maki</span>
+                      <span className="name">Eel Cucumber</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">21</span>
@@ -3224,7 +3225,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Tekka Maki</span>
+                      <span className="name">Tekka</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">21</span>
@@ -3257,7 +3258,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Vegetable Roll</span>
+                      <span className="name">Vegetable</span>
                       <span className="allergies">(V)</span>
                     </span>
                     <span className="price">25</span>
@@ -3295,7 +3296,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Spicy Tuna Roll</span>
+                      <span className="name">Spicy Tuna</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">25</span>
@@ -3333,7 +3334,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Negi Hama Roll</span>
+                      <span className="name">Negi Hama</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">25</span>
@@ -3368,7 +3369,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Salmon Avocado Roll</span>
+                      <span className="name">Salmon Avocado</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">26</span>
@@ -3400,7 +3401,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">King Crab California Roll</span>
+                      <span className="name">King Crab California</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">36</span>
@@ -3517,12 +3518,12 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Miyazaki Wagyu Roll</span>
+                      <span className="name">Miyazaki Wagyu</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">78</span>
                   </div>
-                  <div className="description1">Seared Wagyu Beef, Nama Garlic Chili, Sesame Oil</div>
+                  <div className="description1">Seared Wagyu Beef, Garlic Chili, Sesame Oil</div>
                   <div className="description2"></div>
                           <hr/>
                           <br/>
@@ -3561,11 +3562,11 @@ produce.               </div>
                     </span>
                     <span className="price">28</span>
                   </div>
-                  <div className="description1">Vegetable Mixed Rice</div>
+                  <div className="description1">Vegetable Fried Rice</div>
                   <div className="description2"></div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Onsen Tamago</span>
+                      <span className='upgrade-description'>With Onsen Tamago</span>
                       <span className='allergies'></span>
                     </span>
                     <span className="upgrade-price">33</span>
@@ -3643,21 +3644,21 @@ produce.               </div>
                   <div className="description2"></div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Kamo (Duck)</span>
+                      <span className='upgrade-description'>With Kamo (Duck)</span>
                       <span className='allergies'></span>
                     </span>
                     <span className="upgrade-price">42</span>
                   </div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Vegetable Tempura</span>
+                      <span className='upgrade-description'>With Vegetable Tempura</span>
                       <span className='allergies'></span>
                     </span>
                     <span className="upgrade-price">38</span>
                   </div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with Tempura Moriawase</span>
+                      <span className='upgrade-description'>With Tempura Moriawase</span>
                       <span className='allergies'></span>
                     </span>
                     <span className="upgrade-price">42</span>
@@ -3766,7 +3767,7 @@ produce.               </div>
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Shima Aji Tataki</span>
+                              <span className="name">Shimaaji Tataki</span>
                               <span className="allergies"></span>
                             </span>
                             <span className="price">46</span>
@@ -3955,7 +3956,7 @@ produce.               </div>
                           <div className="name-price">
                             <span>
                               <span className="name">Nasu Dengaku</span>
-                              <span className="allergies">(V, GF)</span>
+                              <span className="allergies">(V, N, GF)</span>
                             </span>
                             <span className="price">38</span>
                           </div>
@@ -4001,14 +4002,14 @@ produce.               </div>
                           <div className="description2"></div>
                           <div className="upgrade">
                             <span>
-                              <span className='upgrade-description'>with Vegetable Tempura</span>
+                              <span className='upgrade-description'>With Vegetable Tempura</span>
                               <span className='allergies'></span>
                             </span>
                             <span className="upgrade-price">38</span>
                           </div>
                           <div className="upgrade">
                             <span>
-                              <span className='upgrade-description'>with Tempura Moriawase</span>
+                              <span className='upgrade-description'>With Tempura Moriawase</span>
                               <span className='allergies'></span>
                             </span>
                             <span className="upgrade-price">42</span>

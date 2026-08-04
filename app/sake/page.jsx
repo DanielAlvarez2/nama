@@ -41,6 +41,7 @@ export default function ManagerSakePage(){
                 <div style={{width:'100%',textAlign:'center'}}>
                     <img id='sake-modal-image' />
                 </div>
+                <br/>
                 <div id='sake-modal-info'>
                     <h2 style={{width:'100%',textAlign:'center',marginBottom:'0px'}}>SAKE</h2>
                     <div className='sake-section'>
@@ -114,6 +115,7 @@ export default function ManagerSakePage(){
 
             <div className='sake-section'>
                 <h3>NIGORI</h3>
+
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Kamoizumi
@@ -140,11 +142,58 @@ export default function ManagerSakePage(){
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
 
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Nagurayama
+                        </div>{/* .sake-producer-name */}
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'NIGORI',
+                                                                    'Nagurayama',
+                                                                    '*3101',
+                                                                    '720 ml',
+                                                                    '125',
+                                                                    'Snow White Nigori Ginjo, Fukushima',
+                                                                    'no-image.jpg'
+                                                                    )}>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>*3101</span>
+                                <span className='sake-description'>Snow White Nigori Ginjo, Fukushima</span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>*3101</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>125</span>
+                                <span className='sake-abv'>???%abv</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
 
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
                             Rihaku
                         </div>{/* .sake-producer-name */}
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'NIGORI',
+                                                                    'Rihaku',
+                                                                    '*3601',
+                                                                    '300 ml',
+                                                                    '75',
+                                                                    'Dreamy Clouds Nigori Tokubetsu, Shimane Prefecture',
+                                                                    'no-image.jpg'
+                                                                    )}>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>*3601</span>
+                                <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu, Shimane Prefecture</span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>*3601</span>
+                                <span className='sake-size'>300 ml</span>
+                                <span className='sake-price'>75</span>
+                                <span className='sake-abv'>??%abv</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
 
                         <div className='sake' onClick={()=>openModal(
                                                                     'NIGORI',
@@ -166,6 +215,7 @@ export default function ManagerSakePage(){
                                 <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
+
                     </div>{/* .sake-producer */}
 
 
@@ -717,6 +767,29 @@ export default function ManagerSakePage(){
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Asahi Shuzo',
+                                                                    '*3405',
+                                                                    '500 ml',
+                                                                    '200',
+                                                                    'Soujo Kubota Seppou, Niigata',
+                                                                    'no-image.jpg'
+                                                                    )}>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>*3405</span>
+                                <span className='sake-description'>
+                                    Soujo Kubota Seppou, Niigata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>*3405</span>
+                                <span className='sake-size'>500 ml</span>
+                                <span className='sake-price'>200</span>
+                                <span className='sake-abv'>???%abv</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+
                     </div>{/* .sake-producer */}
 
                     <div className='sake-producer'>    
@@ -729,7 +802,7 @@ export default function ManagerSakePage(){
                                                                     'Daishichi',
                                                                     '3416',
                                                                     '720 ml',
-                                                                    '250',
+                                                                    '270',
                                                                     'Minowamon Kimoto <span class="typo">Junmai Daiginjo</span>, Fukushima',
                                                                     'daishichi.jpg'
                                                                     )}>
@@ -742,7 +815,7 @@ export default function ManagerSakePage(){
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3416</span>
                                 <span className='sake-size'>720 ml</span>
-                                <span className='sake-price'>250</span>
+                                <span className='sake-price'>270</span>
                                 <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
@@ -1428,7 +1501,7 @@ export default function ManagerSakePage(){
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>7042</span>
                                 <span className='sake-description'>
-                                    Za<span className='typo'>K</span>u Miyabi no Tomo Amanemu <span className='typo'>Junmai Daiginjo</span>, Mie
+                                    Zaku Miyabi no Tomo Amanemu <span className='typo'>Junmai Daiginjo</span>, Mie
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1858,7 +1931,7 @@ export default function ManagerSakePage(){
 
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
-                            Isojiman Shuz<span className='typo'>o</span>
+                            Isojiman Shuzo
                         </div>{/* .sake-producer-name */}
 
                         <div className='sake' onClick={()=>openModal(

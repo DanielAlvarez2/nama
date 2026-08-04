@@ -6,6 +6,7 @@ import { AiTwotoneCloseCircle } from "react-icons/ai";
 import {useRouter} from 'next/navigation'
 import {useEffect} from 'react'
 
+export const dynamic = 'force-dynamic'
 
 export default function DessertMenu({desserts}){
     const router = useRouter()

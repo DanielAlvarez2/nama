@@ -1,6 +1,9 @@
+export const dynamic = 'force-dynamic'
+
 import DessertMenu from '@/components/DessertMenu.jsx'
 import connectMongoDB from '@/libs/mongodb'
 import Dessert from '@/models/Dessert.js'
+
 
 export default async function DessertPage(){
 

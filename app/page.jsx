@@ -53,15 +53,20 @@ export default function Home() {
 
             </div>{/* .tasting-menu-flexbox */}
             
-            <div className='tasting-menu-flexbox' 
+            <div  className='tasting-menu-flexbox' 
+                  onClick={()=>showModal('moon')}
                   style={{maxWidth:'5.25in',
                           margin:'0 auto',
+                          cursor:'pointer',
                           display:'flex',
                           // border:'1px solid red'
                   }}
             >
               
-              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>Tsuki/Moon<br/>月</div>
+              <div  className="tasting-left" 
+                    style={{width:'150px',alignSelf:'center'}}>
+                Tsuki/Moon<br/>月
+              </div>
 
               <div className="tasting-middle">
 An individually served sushi-focused tasting 
@@ -1536,6 +1541,44 @@ produce.               </div>
 
 
 
+
+    <div id="moon" className='modal'>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+      <div className='modal-content'>
+        <div className='tasting-wrapper'>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'></div>
+            <div className='tasting-right-micros' style={{background:'#779bda',fontWeight:'900'}}>Sushi Tasting $288 (Individual)<br/>Tsuki/Moon</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>1st Course</div>
+            <div className='tasting-right-micros'>Hassun or Cold Appetizer</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>2nd Course</div>
+            <div className='tasting-right-micros'>Cooked Fish or Tempura</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>3rd Course</div>
+            <div className='tasting-right-micros'>Sushi Platter 3pcs x3 or 9pcs<br/>Maki Roll(Half Roll)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>4th Course</div>
+            <div className='tasting-right-micros'>Hand Roll<br/>Miso Soup</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>5th Course</div>
+            <div className='tasting-right-micros'>Tamago</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>6th Course</div>
+            <div className='tasting-right-micros'>Dessert</div>
+          </div>
+        </div>{/* .tasting-wrapper */}
+
+
+      </div>{/* .modal-content */}
+    </div>{/* #moon */}
 
     <div id="miso-soup" className='modal'>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          

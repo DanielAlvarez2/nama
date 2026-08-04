@@ -6,7 +6,7 @@ export default async function DessertPage(){
 
     await connectMongoDB() 
     const desserts = JSON.parse(JSON.stringify(await Dessert.find().sort({sequence:1})))
-
+    
     return(
 
 <>

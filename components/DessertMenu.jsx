@@ -3,10 +3,14 @@
 import Navbar from '@/components/Navbar.jsx'
 import NavbarFooter from '@/components/NavbarFooter.jsx'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
+import {useRouter} from 'next/navigation'
+import {useEffect} from 'react'
 
 
 export default function DessertMenu({desserts}){
-
+    const router = useRouter()
+    useEffect(()=> router.refresh(),[])
+    // router.refresh()
     function showModal(menuItem){
         document.querySelector(`#${menuItem}`).style.display = 'grid'
     }

@@ -570,7 +570,8 @@ input[type='text']{
 }
 .tasting-left-micros{
   text-align: right;
-  width:100px;
+  width:65px;
+  /* border:1px solid red; */
 }
 .tasting-right-micros{
   border:1px solid #779bda;

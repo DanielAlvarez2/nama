@@ -71,7 +71,7 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Sakura Martini</span>
+                      <span className="name">*Sakura Martini</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">30</span>
@@ -260,7 +260,7 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Pepper Buck</span>
+                      <span className="name">*Pepper Buck</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">16</span>
@@ -290,7 +290,7 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Genmai Horchata</span>
+                      <span className="name">*Genmai Horchata</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">16</span>
@@ -323,7 +323,7 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Soba Arnold Palmer</span>
+                      <span className="name">*Soba Arnold Palmer</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">16</span>
@@ -338,7 +338,7 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Unified Ferments Kombucha</span>
+                      <span className="name">*Unified Ferments Kombucha</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">16</span>
@@ -559,7 +559,7 @@ export default function DrinksMenu(){
               
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('aman-ginjo')}
                 >
                   <div className="name-price">
                     <span>
@@ -575,7 +575,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('aman-daiginjo')}
                 >
                   <div className="name-price">
                     <span>
@@ -592,7 +592,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('zaku-daiginjo')}
                 >
                   <div className="name-price">
                     <span>
@@ -609,7 +609,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('umeshu')}
                 >
                   <div className="name-price">
                     <span>
@@ -627,7 +627,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('carafe')}
                 >
                   <div className="name-price">
                     <span>
@@ -1417,6 +1417,171 @@ export default function DrinksMenu(){
           </div>{/* .modal-content */}         
       </div>
     </div>{/* #pinot-noir */}
+
+    <div id="aman-ginjo" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`aman-ginjo.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('aman-ginjo')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Niizawa, Aman Hakurakusei, Junmai Ginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">25</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+                <hr/>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #aman-ginjo */}
+
+    <div id="aman-daiginjo" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`aman-daiginjo.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('aman-ginjo')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Niizawa, Aman Hakurakusei, Junmai Daiginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">35</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+                <hr/>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #aman-daiginjo */}
+
+    <div id="carafe" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`aman-daiginjo.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('aman-ginjo')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Carafe 8oz<br/>Niizawa, Aman Hakurakusei, Junmai Daiginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">68</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+                <hr/>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #carafe */}
+
+    <div id="zaku-daiginjo" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`zaku-daiginjo.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('aman-ginjo')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Zaku, Kaizan Ittekisui, Junmai Daiginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">49</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+                <hr/>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #zaku-daiginjo */}
+
+    <div id="umeshu" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`umeshu.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+                <div  className="dinner-menu-item"
+                      // onClick={()=>showModal('aman-ginjo')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Izumibashi Shuzo, Umeshu, Junmai Daiginjo</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">35</span>
+                  </div>
+                  <div className="description1"></div>
+                  <div className="description2"></div>
+                </div>
+
+
+                <hr/>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #umeshu */}
 
     <div id="saint-peray" className='modal'>
       <div>

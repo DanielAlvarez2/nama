@@ -2050,7 +2050,8 @@ produce.               </div>
                           onsen tamago<br/>
                           katsuo bushi/bonito flakes<br/>
                           aonori seaweed<br/>
-                          parmesan cheese
+                          parmesan cheese<br/>
+                          <span className='typo'>TOFU CROUTONS</span>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}                

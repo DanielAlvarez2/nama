@@ -77,15 +77,19 @@ produce.               </div>
 
             </div>{/* .tasting-menu-flexbox */}
             
-            <div className='tasting-menu-flexbox' 
+            <div  className='tasting-menu-flexbox' 
+                  onClick={()=>showModal('flower')}
                   style={{maxWidth:'5.25in',
                           margin:'0 auto',
+                          cursor:'pointer',
                           display:'flex',
                           // border:'1px solid red'
                   }}
             >
               
-              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>Hana/Flower<br/>花</div>
+              <div  className="tasting-left" 
+                    style={{width:'150px',alignSelf:'center'}}>
+                Hana/Flower<br/>花</div>
 
               <div className="tasting-middle">
                     A comprehensive tasting menu, transforming ingredients 
@@ -1579,6 +1583,44 @@ produce.               </div>
 
       </div>{/* .modal-content */}
     </div>{/* #moon */}
+
+    <div id="flower" className='modal'>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+      <div className='modal-content'>
+        <div className='tasting-wrapper'>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'></div>
+            <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
+              Kitchen Tasting $388 (For 1)
+              <br/>
+              Hana/Flower
+            </div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>1st Course</div>
+            <div className='tasting-right-micros'>Chawanmushi<br/>Shima Aji Tataki (3pc)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>2nd Course</div>
+            <div className='tasting-right-micros'>Uni Soba<br/>Yasai Tempura (Half)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>3rd Course</div>
+            <div className='tasting-right-micros'>Pre Platter<br/>ZEel Q Hand Roll</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>4th Course</div>
+            <div className='tasting-right-micros'>Gindara<br/>Miyazaki Steak or Moromi Lamb</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>5th Course</div>
+            <div className='tasting-right-micros'>Dessert</div>
+          </div>
+        </div>{/* .tasting-wrapper */}
+
+
+      </div>{/* .modal-content */}
+    </div>{/* #flower */}
 
     <div id="miso-soup" className='modal'>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          

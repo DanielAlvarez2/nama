@@ -623,9 +623,12 @@ input[type='text']{
   /* border:1px solid red; */
 }
 .tasting-right-micros{
-  border:1px solid #779bda;
   width:200px;
+  border:1px solid #779bda;
   padding-left:5px;
+}
+#flower .tasting-right-micros{
+  border:1px solid pink;
 }
 .dessert-menu{
   font-family: QuireSans !important;

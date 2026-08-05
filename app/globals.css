@@ -653,6 +653,8 @@ input[type='text']{
 @media(max-width:5.5in){
   dessert-menu-page{
     width:100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
     /* margin-right:0; */
   }
 }

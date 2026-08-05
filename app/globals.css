@@ -651,7 +651,7 @@ input[type='text']{
   font-size: 10.8px;
 }
 @media(max-width:5.5in){
-  dessert-menu-page{
+  .dessert-menu-page{
     width:100vw;
     padding-left: 5vw;
     padding-right: 5vw;

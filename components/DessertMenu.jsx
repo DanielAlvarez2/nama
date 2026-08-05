@@ -45,13 +45,24 @@ export default function DessertMenu({desserts}){
 
       <Navbar page='dessert' />
     
-      <div className="small-paper">
+      <div  className="dessert-menu-page" 
+            // style={{backgroundImage:'url(akari-dessert-1.jpg)',backgroundSize:'5.5in'}}
+      >
         
-          <div className="menu-items">
-            <div className="section section-dessert">
-              <div className="left-column">Desserts<br/>カクテル</div>
+          <div 
+          // className="menu-items"
+          >
+            <div 
+            // className="section section-dessert"
+            
+            >
+              <div className="left-column">
+                <div className='dessert-menu-h1'>Desserts</div>
+                <div className='kanji'>カクテル</div>
+              
+              </div>
 
-              <div className="right-column">
+              <div className="right-column" style={{width:'100%',lineHeight:'1.25'}}>
               
                 {desserts.map(item=>(
                   <div  key={item._id} 
@@ -66,15 +77,15 @@ export default function DessertMenu({desserts}){
                                                       item.cloudinary_secure_url
                                                     )}
                   >
-                    <div className="name-price">
+                    <div className="dessert-name-price">
                       <span>
-                        <span className="name">{item.name}</span>
-                        <span className="allergies">({item.allergies})</span>
+                        <span className="dessert-name">{item.name}</span>
+                        <span className="dessert-allergies"> ({item.allergies})</span>
                       </span>
-                      <span className="price">{item.price}</span>
+                      <span className="dessert-price">{item.price}</span>
                     </div>
-                    <div className="description1">{item.description1}</div>
-                    <div className="description2">{item.description2}</div>
+                    <div className="dessert-description">{item.description1}</div>
+                    <div className="dessert-description">{item.description2}</div>
                     <div className='typo'>{item.typos}</div>
                   </div>
                   
@@ -105,7 +116,7 @@ export default function DessertMenu({desserts}){
 
 
 
-      </div>{/* .small-paper */}
+      </div>{/* .dessert-menu-page */}
       
       <br className='no-print'/>
       
@@ -133,21 +144,30 @@ export default function DessertMenu({desserts}){
       
       
       
-      <div className='small-paper'>
+      <div  className='dessert-menu-page'
+            // style={{backgroundImage:'url("akari-dessert-2.jpg")',backgroundSize:'5.5in'}}
+      >
           <div className="menu-items">
 
-            <div className="section section-dessert">
+            <div className="section-dessert"
+                  style={{width:'100%'}}
+            >
               <div className="left-column">
-                Dessert & Fortified Wines By The Glass<br/>デザートワイン</div>
+                <div className='dessert-menu-h1'>Dessert & Fortified Wines By The Glass</div>
+                <div className='kanji'>デザートワイン</div>
+                
+              </div>
 
-              <div className="right-column">
+              <div className="right-column"
+                    style={{width:'100%'}}
+              >
               
                 <div className='dessert-wine'
                       onClick={()=>showModal('sauternes')}
                 >
                   <div className='dessert-wine-vintage'>2022</div>
                   <div className='dessert-wine-name'>Chateau Suduiraut, <span className='typo'>SA</span></div>
-                  <div>24</div>
+                  <div className='dessert-price'>24</div>
                 </div>{/* .dessert-wine */}
 
                 <div  className='dessert-wine'
@@ -157,13 +177,13 @@ export default function DessertMenu({desserts}){
                   <div className='dessert-wine-name'>Domaine de Rancy Rivesaltes,<br/>
                         Ambré, Vin Doux Naturel, FR
                   </div>
-                  <div>32</div>
+                  <div className='dessert-price'>32</div>
                 </div>{/* .dessert-wine */}
 
                 <div className='dessert-wine' onClick={()=>showModal('sattlerhof')}>
                   <div className='dessert-wine-vintage'>2021</div>
                   <div className='dessert-wine-name'>Weingut Sattlerhof, AUT</div>
-                  <div>38</div>
+                  <div className='dessert-price'>38</div>
                 </div>{/* .dessert-wine */}
 
                 <div  className='dessert-wine' 
@@ -171,7 +191,7 @@ export default function DessertMenu({desserts}){
                 >
                   <div className='dessert-wine-vintage'>*2005</div>
                   <div className='dessert-wine-name'>Graham's Port, Quinta Dos Malvedos, PT</div>
-                  <div>40</div>
+                  <div className='dessert-price'>40</div>
                 </div>{/* .dessert-wine */}
 
 
@@ -182,96 +202,105 @@ export default function DessertMenu({desserts}){
               </div>{/* .right-column */}
             </div>{/* .section */}
 
+<br/>
+            <div className="section-dessert section-coffee"
+                  style={{width:'100%'}}
+            >
+              <div className="left-column">
+                <div className='dessert-menu-h1'>Coffee & Tea</div>
+                <div className='kanji'>カクテテル</div>
+                
+                
+              </div>
 
-            <div className="section section-dessert section-coffee">
-              <div className="left-column">Coffee & Tea<br/>カクテテル</div>
-
-              <div className="right-column">
+              <div className="right-column" 
+                    style={{width:'100%'}}
+              >
               
 
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Espresso</span>
-                    <span className="price">8</span>
+                    <span className="dessert-name">Espresso</span>
+                    <span className="dessert-price">8</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Coffee</span>
-                    <span className="price">10</span>
+                    <span className="dessert-name">Coffee</span>
+                    <span className="dessert-price">10</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Latte | Matcha Latte</span>
-                    <span className="price">12</span>
+                    <span className="dessert-name">Latte | Matcha Latte</span>
+                    <span className="dessert-price">12</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Iced Green Tea | Iced Black Tea</span>
-                    <span className="price">15</span>
+                    <span className="dessert-name">Iced Green Tea | Iced Black Tea</span>
+                    <span className="dessert-price">15</span>
                   </div>
                 </div>
 
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Sencha Jou</span>
-                    <span className="price">16</span>
+                    <span className="dessert-name">Sencha Jou</span>
+                    <span className="dessert-price">16</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Genmaimatcha</span>
-                    <span className="price">16</span>
+                    <span className="dessert-name">Genmaimatcha</span>
+                    <span className="dessert-price">16</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Hojicha</span>
-                    <span className="price">16</span>
+                    <span className="dessert-name">Hojicha</span>
+                    <span className="dessert-price">16</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Yame Black</span>
-                    <span className="price">16</span>
+                    <span className="dessert-name">Yame Black</span>
+                    <span className="dessert-price">16</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Yame Oolong</span>
-                    <span className="price">16</span>
+                    <span className="dessert-name">Yame Oolong</span>
+                    <span className="dessert-price">16</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Soba Tea</span>
-                    <span className="price">16</span>
+                    <span className="dessert-name">Soba Tea</span>
+                    <span className="dessert-price">16</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Chamomile</span>
-                    <span className="price">16</span>
+                    <span className="dessert-name">Chamomile</span>
+                    <span className="dessert-price">16</span>
                   </div>
                 </div>
 
                 <div  className="dinner-menu-item">
                   <div className="name-price">
-                    <span className="name">Peppermint</span>
-                    <span className="price">16</span>
+                    <span className="dessert-name">Peppermint</span>
+                    <span className="dessert-price">16</span>
                   </div>
                 </div>
 
@@ -280,12 +309,17 @@ export default function DessertMenu({desserts}){
             </div>{/* .right-column */}
           </div>{/* .section */}
         </div>{/* .menu-items */}
-          <div className="legal legal-dessert">
-                All prices are in USD and subject to 8.875% geovernment tax.<br/>
+          <div className="legal legal-dessert"
+                style={{textAlign:'left',margin:'0',fontSize:'5.6px'}}
+          >
+            <br/>
+                All prices are in USD and subject to 8.875% government tax.<br/>
                 Our coffee and tea are green certified and come from Fairtrade partnerships.
           </div>
 
       </div>{/* .small-paper */}
+
+      <br className='no-print' />
 
       <NavbarFooter page='dessert' />
       <br className='no-print'/>

@@ -9,7 +9,7 @@ export default function NavbarFooter({page}){
                   style={{width:'100%',textAlign:'center',marginBottom:'15px'}}>
                 <br/>        
                 <NavbarLinks page={page} />
-                
+                <br/>
                 <Logo />
             </div>
         

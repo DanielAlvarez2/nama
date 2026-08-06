@@ -21,14 +21,24 @@ export default function DrinksMenu(){
       <Navbar page='drinks' />
       
     
-      <div className="small-paper" style={{paddingTop:'25px'}}>
+      <div  className="drink-menu-page" 
+            style={{
+                    
+                    // backgroundImage:'url("akari-drinks-1.jpg")',
+                    backgroundSize:'5.5in',
+                    // color:'blue'
+                    }}>
         
           <div className="menu-items">
 
             <div  className="section section-dessert"
                   style={{marginBottom:'0px'}}
             >
-              <div className="left-column">Specialty Cocktails<br/>スペシャルティカクテル</div>
+              <div className="left-column">
+                
+                <div className='drink-menu-h1'>Specialty Cocktails</div>
+                <div className='kanji'>スペシャルティカクテル</div>
+              </div>
 
               <div className="right-column">
               
@@ -42,7 +52,7 @@ export default function DrinksMenu(){
                       <span className="name">Ume Melon Spritz</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">28</span>
+                    <span className="dessert-price">28</span>
                   </div>
                   <div className="description1">Sour Plum, Bonnie Melon, Apricot, Sparkling Wine</div>
                   <div className="description2"></div>
@@ -58,7 +68,7 @@ export default function DrinksMenu(){
                       <span className="name">Lychee Martini</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">30</span>
+                    <span className="dessert-price">30</span>
                   </div>
                   <div className="description1">Vodka, Daiyame Shochu, Lemon, Lychee, Shiso</div>
                   <div className="description2"></div>
@@ -74,7 +84,7 @@ export default function DrinksMenu(){
                       <span className="name">*Sakura Martini</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">30</span>
+                    <span className="dessert-price">30</span>
                   </div>
                   <div className="description1">Hakurakusei Junmai Ginjo, Ki No Bi Gin, Sakura</div>
                   <div className="description2"></div>
@@ -88,7 +98,7 @@ export default function DrinksMenu(){
                       <span className="name">Banana Club</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">29</span>
+                    <span className="dessert-price">29</span>
                   </div>
                   <div className="description1">Hana Shochu, Four Roses Single Barrel </div>
                   <div className="description2">Bourbon, Nikka Malt Whiskey, Banana, Soda</div>
@@ -108,7 +118,7 @@ export default function DrinksMenu(){
                       <span className="name">Akarita</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">30</span>
+                    <span className="dessert-price">30</span>
                   </div>
                   <div className="description1">Mal Bien Mezcal, Red Yuzu Kosho, Lime, Shochu</div>
                   <div className="description2"></div>
@@ -123,7 +133,7 @@ export default function DrinksMenu(){
                       <span className="name">Okusuri</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">32</span>
+                    <span className="dessert-price">32</span>
                   </div>
                   <div className="description1">Ichiro Malt & Grain Whiskey, Port Askaig Peated </div>
                   <div className="description2">Scotch, Lemon, Ginger, Pickled Honey</div>
@@ -146,7 +156,7 @@ export default function DrinksMenu(){
                       <span className="name">Shiitake Sazerac</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">30</span>
+                    <span className="dessert-price">30</span>
                   </div>
                   <div className="description1">Pinhook 9yr Bourbon, Dad's Hat Oloroso Cask, </div>
                   <div className="description2">Hyakunen No Kodoku Shochu, Bitters</div>
@@ -164,7 +174,7 @@ export default function DrinksMenu(){
                       <span className="name">Ringo No Mitai</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">28</span>
+                    <span className="dessert-price">28</span>
                   </div>
                   <div className="description1">Nikka Coffey Gin, Lime, Midori, Leopold </div>
                   <div className="description2">Sour Apple, Bordiga Centum Herbis</div>
@@ -182,7 +192,7 @@ export default function DrinksMenu(){
                       <span className="name">Hojicha Colada</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">32</span>
+                    <span className="dessert-price">32</span>
                   </div>
                   <div className="description1">Rums of Mexico Ca<span className='typo'>ñ</span>a Crio<span className='typo'>l</span>la, El Dorado Enmore<span className='typo'>,</span> </div>
                   <div className="description2">Worthy Park, Lime, Coconut, Hojicha</div>
@@ -215,7 +225,15 @@ export default function DrinksMenu(){
 
           </div>{/* .menu-items */}
 
-          <div className='legal' style={{width:'3.25in'}}>
+          <div  className='legal' 
+                style={{
+                        width:'3.25in',
+                        fontFamily:'AnagoBook',
+                        letterSpacing:'0',
+                        marginTop:'auto',
+                        paddingBottom:'50px',
+                        fontSize:'7px'
+                        }}>
             All prices are in USD and subject to 8.875% government tax.
           </div>
 
@@ -223,7 +241,7 @@ export default function DrinksMenu(){
 
 
 
-      </div>{/* .small-paper */}
+      </div>{/* .drink-menu-page-paper */}
 
 
 
@@ -263,7 +281,7 @@ export default function DrinksMenu(){
                       <span className="name">*Pepper Buck</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1">Ginger, Jalape<span style={{color:'red'}}>ñ</span>o, Lime</div>
                   <div className="description2"></div>
@@ -278,7 +296,7 @@ export default function DrinksMenu(){
                       <span className="name">Phony Negroni</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1">Gentian, Orange, Juniper</div>
                   <div className="description2"></div>
@@ -293,7 +311,7 @@ export default function DrinksMenu(){
                       <span className="name">*Genmai Horchata</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1">Genmaimatcha, Rice, Cinnamon, Kokuto</div>
                   <div className="description2"></div>
@@ -311,7 +329,7 @@ export default function DrinksMenu(){
                       <span className="name">Souchong Sour</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1">Passionfruit, Falernu<span className='typo'>m</span>, Unified </div>
                   <div className="description2">Ferments Lapsang Souchong</div>
@@ -326,7 +344,7 @@ export default function DrinksMenu(){
                       <span className="name">*Soba Arnold Palmer</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1">Yuzu, Lemon, Soba</div>
                   <div className="description2"></div>
@@ -341,7 +359,7 @@ export default function DrinksMenu(){
                       <span className="name">*Unified Ferments Kombucha</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1">Snow Chrysanthemum, Lapsang </div>
                   <div className="description2">Souchong, Rhododendron, Soba</div>
@@ -399,7 +417,7 @@ export default function DrinksMenu(){
                       <span className="name">Sapporo Lager</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">12</span>
+                    <span className="dessert-price">12</span>
                   </div>
                   <div className="description1">Hokkaido, Japan</div>
                   <div className="description2"></div>
@@ -416,7 +434,7 @@ export default function DrinksMenu(){
                       <span className="name">Koshihikari Rice Ale</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">12</span>
+                    <span className="dessert-price">12</span>
                   </div>
                   <div className="description1">Niigata, Japan</div>
                   <div className="description2"></div>
@@ -435,7 +453,7 @@ export default function DrinksMenu(){
                       <span className="name">Hitachino Nest White Ale</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">12</span>
+                    <span className="dessert-price">12</span>
                   </div>
                   <div className="description1">Naka, Japan</div>
                   <div className="description2"></div>
@@ -453,7 +471,7 @@ export default function DrinksMenu(){
                       <span className="name">Hakkaissan Rydeen IPA</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">12</span>
+                    <span className="dessert-price">12</span>
                   </div>
                   <div className="description1">Niigata, Japan</div>
                   <div className="description2"></div>
@@ -467,7 +485,7 @@ export default function DrinksMenu(){
                       <span className="name">BERO Non-Alcoholic Pilsner</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">12</span>
+                    <span className="dessert-price">12</span>
                   </div>
                   <div className="description1">Pennsylvania</div>
                   <div className="description2"></div>
@@ -481,7 +499,7 @@ export default function DrinksMenu(){
                       <span className="name">Baladin Botanic Non-Alcoholic Ale</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">12</span>
+                    <span className="dessert-price">12</span>
                   </div>
                   <div className="description1">Cuneo, Italy</div>
                   <div className="description2"></div>
@@ -566,7 +584,7 @@ export default function DrinksMenu(){
                       <span className="name">Niizawa, Aman Hakurakusei, Junmai Ginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">25</span>
+                    <span className="dessert-price">25</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -582,7 +600,7 @@ export default function DrinksMenu(){
                       <span className="name">Niizawa, Aman Hakurakusei, Junmai Daiginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">35</span>
+                    <span className="dessert-price">35</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -599,7 +617,7 @@ export default function DrinksMenu(){
                       <span className="name">Zaku, Kaizan Ittekisui, Junmai Daiginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">49</span>
+                    <span className="dessert-price">49</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -616,7 +634,7 @@ export default function DrinksMenu(){
                       <span className="name">Izumibashi Shuzo, Umeshu, Junmai Daiginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">35</span>
+                    <span className="dessert-price">35</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -634,7 +652,7 @@ export default function DrinksMenu(){
                       <span className="name">Carafe 8oz</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">68</span>
+                    <span className="dessert-price">68</span>
                   </div>
                   <div className="description1">Niizawa, Aman Hakurakusei, Junmai Daiginjo</div>
                   <div className="description2"></div>
@@ -966,7 +984,7 @@ export default function DrinksMenu(){
                       <span className="name">Espresso</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">8</span>
+                    <span className="dessert-price">8</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -983,7 +1001,7 @@ export default function DrinksMenu(){
                       <span className="name">Coffee</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">10</span>
+                    <span className="dessert-price">10</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1001,7 +1019,7 @@ export default function DrinksMenu(){
                       <span className="name">Cappuccino | Latte</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">12</span>
+                    <span className="dessert-price">12</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1018,7 +1036,7 @@ export default function DrinksMenu(){
                       <span className="name">Matcha Latte | Chai Latte</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">12</span>
+                    <span className="dessert-price">12</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1035,7 +1053,7 @@ export default function DrinksMenu(){
                       <span className="name">Iced Matcha Latte</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">15</span>
+                    <span className="dessert-price">15</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1053,7 +1071,7 @@ export default function DrinksMenu(){
                       <span className="name">Matcha Bowl</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1070,7 +1088,7 @@ export default function DrinksMenu(){
                       <span className="name">Sencha Jou</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1088,7 +1106,7 @@ export default function DrinksMenu(){
                       <span className="name">Genmaimatcha</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1102,7 +1120,7 @@ export default function DrinksMenu(){
                       <span className="name">Gyokuro</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1116,7 +1134,7 @@ export default function DrinksMenu(){
                       <span className="name">Hojicha</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1130,7 +1148,7 @@ export default function DrinksMenu(){
                       <span className="name">Yame Black</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1144,7 +1162,7 @@ export default function DrinksMenu(){
                       <span className="name">Yame Oolong</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1158,7 +1176,7 @@ export default function DrinksMenu(){
                       <span className="name">Soba</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1172,7 +1190,7 @@ export default function DrinksMenu(){
                       <span className="name">Chamomile</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1186,7 +1204,7 @@ export default function DrinksMenu(){
                       <span className="name">Peppermint</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">16</span>
+                    <span className="dessert-price">16</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1254,7 +1272,7 @@ export default function DrinksMenu(){
                               <span className="name">Ume Melon Spritz</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">28</span>
+                            <span className="dessert-price">28</span>
                           </div>
                           <div className="description1">Sour Plum, Bonnie Melon, Apricot, Sparkling Wine</div>
                           <div className="description2"></div>
@@ -1438,7 +1456,7 @@ export default function DrinksMenu(){
                       <span className="name">Niizawa, Aman Hakurakusei, Junmai Ginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">25</span>
+                    <span className="dessert-price">25</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1471,7 +1489,7 @@ export default function DrinksMenu(){
                       <span className="name">Niizawa, Aman Hakurakusei, Junmai Daiginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">35</span>
+                    <span className="dessert-price">35</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1504,7 +1522,7 @@ export default function DrinksMenu(){
                       <span className="name">Carafe 8oz<br/>Niizawa, Aman Hakurakusei, Junmai Daiginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">68</span>
+                    <span className="dessert-price">68</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1537,7 +1555,7 @@ export default function DrinksMenu(){
                       <span className="name">Zaku, Kaizan Ittekisui, Junmai Daiginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">49</span>
+                    <span className="dessert-price">49</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1570,7 +1588,7 @@ export default function DrinksMenu(){
                       <span className="name">Izumibashi Shuzo, Umeshu, Junmai Daiginjo</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">35</span>
+                    <span className="dessert-price">35</span>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
@@ -1702,7 +1720,7 @@ export default function DrinksMenu(){
                               <span className="name">Yuzu Sour</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">30</span>
+                            <span className="dessert-price">30</span>
                           </div>
                           <div className="description1">Mal Bien Mezcal, Daiyame Shochu, Yuzu Kosho, Lime</div>
                           <div className="description2"></div>
@@ -1738,7 +1756,7 @@ export default function DrinksMenu(){
                               <span className="name">Banana Club</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">29</span>
+                            <span className="dessert-price">29</span>
                           </div>
                           <div className="description1">Hana Shochu, Four Roses Single Barrel </div>
                           <div className="description2">Bourbon, Nikka Malt Whiskey, Banana, Soda</div>
@@ -1770,7 +1788,7 @@ export default function DrinksMenu(){
                               <span className="name">Lychee Martini</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">30</span>
+                            <span className="dessert-price">30</span>
                           </div>
                           <div className="description1">Vodka, Daiyame Shochu, Lemon, Lychee, Shiso</div>
                           <div className="description2"></div>
@@ -1804,7 +1822,7 @@ export default function DrinksMenu(){
                               <span className="name">A Fox's Wedding</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">28</span>
+                            <span className="dessert-price">28</span>
                           </div>
                           <div className="description1">Osuzuyama Gin, Summer Snow Nigori, Cinnamon</div>
                           <div className="description2"></div>
@@ -1841,7 +1859,7 @@ export default function DrinksMenu(){
                               <span className="name">Okusuri</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">32</span>
+                            <span className="dessert-price">32</span>
                           </div>
                           <div className="description1">Ichiro Malt & Grain Whiskey, Port Askaig Peated </div>
                           <div className="description2">Scotch, Lemon, Ginger, Pickled Honey</div>
@@ -1875,7 +1893,7 @@ export default function DrinksMenu(){
                               <span className="name">Akarita</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">30</span>
+                            <span className="dessert-price">30</span>
                           </div>
                           <div className="description1">Mal Bien Mezcal, Red Yuzu Kosho, Lime, Shochu</div>
                           <div className="description2"></div>
@@ -1909,7 +1927,7 @@ export default function DrinksMenu(){
                               <span className="name">Hojicha Colada</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">32</span>
+                            <span className="dessert-price">32</span>
                           </div>
                           <div className="description1">Rums of Mexico Ca<span className='typo'>ñ</span>a Crio<span className='typo'>l</span>la, El Dorado Enmore<span className='typo'>,</span> </div>
                           <div className="description2">Worthy Park, Lime, Coconut, Hojicha</div>
@@ -1945,7 +1963,7 @@ export default function DrinksMenu(){
                               <span className="name">Ringo No Mitai</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">28</span>
+                            <span className="dessert-price">28</span>
                           </div>
                           <div className="description1">Nikka Coffey Gin, Lime, Midori, Leopold </div>
                           <div className="description2">Sour Apple, Bordiga Centum Herbis</div>
@@ -1979,7 +1997,7 @@ export default function DrinksMenu(){
                               <span className="name">Shiitake Sazerac</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price">30</span>
+                            <span className="dessert-price">30</span>
                           </div>
                           <div className="description1">Pinhook 9yr Bourbon, Dad's Hat Oloroso Cask, </div>
                           <div className="description2">Hyakunen No Kodoku Shochu, Bitters</div>
@@ -2018,7 +2036,7 @@ export default function DrinksMenu(){
                               <span className="name">Pepper Buck</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price"></span>
+                            <span className="dessert-price"></span>
                           </div>
                           <div className="description1">Lime, Spiced Ginger, Jalape<span style={{color:'red'}}>ñ</span>o</div>
                           <div className="description2"></div>
@@ -2055,7 +2073,7 @@ export default function DrinksMenu(){
                               <span className="name">Phony Negroni</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price"></span>
+                            <span className="dessert-price"></span>
                           </div>
                           <div className="description1">Juniper, Orange, Gentian</div>
                           <div className="description2"></div>
@@ -2092,7 +2110,7 @@ export default function DrinksMenu(){
                               <span className="name">Straw Hat</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price"></span>
+                            <span className="dessert-price"></span>
                           </div>
                           <div className="description1">Houjicha, Thai Coconut, Lime</div>
                           <div className="description2"></div>
@@ -2129,7 +2147,7 @@ export default function DrinksMenu(){
                               <span className="name">Souchong Sour</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="price"></span>
+                            <span className="dessert-price"></span>
                           </div>
                           <div className="description1">Passionfruit, Falernum, Lapsang Souchong Kombucha</div>
                           <div className="description2"></div>

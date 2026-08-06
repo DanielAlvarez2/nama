@@ -626,6 +626,7 @@ input[type='text']{
   width:270px;
   border:1px solid #779bda;
   padding-left:5px;
+  background: white;
 }
 #flower .tasting-right-micros,
 #flower2 .tasting-right-micros,

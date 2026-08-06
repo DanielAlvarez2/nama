@@ -8,6 +8,7 @@ import NavbarFooter from '@/components/NavbarFooter.jsx'
 export default function Home() {
 
   function showModal(menuItem){
+    closeModals()
     document.querySelector(`#${menuItem}`).style.display = 'grid'
   }
   function closeModals(){
@@ -1606,7 +1607,7 @@ produce.               </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>3rd Course</div>
-            <div className='tasting-right-micros'>Pre Platter<br/>ZEel Q Hand Roll</div>
+            <div className='tasting-right-micros'>Pre Platter<br/>Eel Q Hand Roll</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>4th Course</div>
@@ -1616,11 +1617,267 @@ produce.               </div>
             <div className='tasting-left-micros'>5th Course</div>
             <div className='tasting-right-micros'>Dessert</div>
           </div>
+
+          <br/>
+          <div style={{display:'flex',justifyContent:'space-around'}}>
+            <div className='hana-button' onClick={()=>showModal('flower')} >For 1</div>
+            <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
+            <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
+            <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
+          </div>
+          <div style={{textAlign:'center'}}>
+            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
+          </div>
         </div>{/* .tasting-wrapper */}
 
 
       </div>{/* .modal-content */}
     </div>{/* #flower */}
+
+    <div id="flower2" className='modal'>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+      <div className='modal-content'>
+        <div className='tasting-wrapper'>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'></div>
+            <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
+              Kitchen Tasting $388 (For 2)
+              <br/>
+              Hana/Flower
+            </div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>1st Course</div>
+            <div className='tasting-right-micros'>Chawanmushi (Individual)<br/>Shima Aji Tataki (6pc)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>2nd Course</div>
+            <div className='tasting-right-micros'>Caviar Soba (Individual)<br/>Tempura Moriawase</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>3rd Course</div>
+            <div className='tasting-right-micros'>Pre Platter (Individual)<br/>Wagyu Roll</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>4th Course</div>
+            <div className='tasting-right-micros'>SSC<br/>Miyazaki Steak or Moromi Lamb</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>5th Course</div>
+            <div className='tasting-right-micros'>Dessert</div>
+          </div>
+
+          <br/>
+          <div style={{display:'flex',justifyContent:'space-around'}}>
+            <div className='hana-button' onClick={()=>showModal('flower')} >For 1</div>
+            <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
+            <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
+            <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
+          </div>
+          <div style={{textAlign:'center'}}>
+            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
+          </div>
+        </div>{/* .tasting-wrapper */}
+
+
+      </div>{/* .modal-content */}
+    </div>{/* #flower2 */}
+
+    <div id="flower2noShellfish" className='modal'>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+      <div className='modal-content'>
+        <div className='tasting-wrapper'>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'></div>
+            <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
+              Kitchen Tasting $388 (For 2, No Shellfish)
+              <br/>
+              Hana/Flower
+            </div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>1st Course</div>
+            <div className='tasting-right-micros'>Chawanmushi (Individual)<br/>Shima Aji Tataki (6pc)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>2nd Course</div>
+            <div className='tasting-right-micros'>Caviar Soba (Individual)<br/>Yasai Tempura</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>3rd Course</div>
+            <div className='tasting-right-micros'>Pre Platter (Individual)<br/>Wagyu Roll</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>4th Course</div>
+            <div className='tasting-right-micros'>Gindara<br/>Miyazaki Steak or Moromi Lamb</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>5th Course</div>
+            <div className='tasting-right-micros'>Dessert</div>
+          </div>
+
+          <br/>
+          <div style={{display:'flex',justifyContent:'space-around'}}>
+            <div className='hana-button' onClick={()=>showModal('flower')} >For 1</div>
+            <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
+            <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
+            <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
+          </div>
+          <div style={{textAlign:'center'}}>
+            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
+          </div>
+        </div>{/* .tasting-wrapper */}
+
+
+      </div>{/* .modal-content */}
+    </div>{/* #flower2noShellfish */}
+
+    <div id="flower2" className='modal'>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+      <div className='modal-content'>
+        <div className='tasting-wrapper'>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'></div>
+            <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
+              Kitchen Tasting $388 (For 2)
+              <br/>
+              Hana/Flower
+            </div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>1st Course</div>
+            <div className='tasting-right-micros'>Chawanmushi (Individual)<br/>Shima Aji Tataki (6pc)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>2nd Course</div>
+            <div className='tasting-right-micros'>Caviar Soba (Individual)<br/>Tempura Moriawase</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>3rd Course</div>
+            <div className='tasting-right-micros'>Pre Platter (Individual)<br/>Wagyu Roll</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>4th Course</div>
+            <div className='tasting-right-micros'>SSC<br/>Miyazaki Steak or Moromi Lamb</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>5th Course</div>
+            <div className='tasting-right-micros'>Dessert</div>
+          </div>
+
+          <br/>
+          <div style={{display:'flex',justifyContent:'space-around'}}>
+            <div className='hana-button' onClick={()=>showModal('flower')} >For 1</div>
+            <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
+            <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
+            <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
+          </div>
+          <div style={{textAlign:'center'}}>
+            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
+          </div>
+        </div>{/* .tasting-wrapper */}
+
+
+      </div>{/* .modal-content */}
+    </div>{/* #flower2 */}
+
+    <div id="flower3" className='modal'>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+      <div className='modal-content'>
+        <div className='tasting-wrapper'>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'></div>
+            <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
+              Kitchen Tasting $388 (For 3)
+              <br/>
+              Hana/Flower
+            </div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>1st Course</div>
+            <div className='tasting-right-micros'>Chawanmushi (Individual)<br/>Shima Aji Tataki (6pc)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>2nd Course</div>
+            <div className='tasting-right-micros'>Caviar Soba (Individual)<br/>Tempura Moriawase (3pc Ebi)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>3rd Course</div>
+            <div className='tasting-right-micros'>Pre Platter (Individual)<br/>Wagyu Roll<br/>Aman NY Roll</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>4th Course</div>
+            <div className='tasting-right-micros'>Kamo Miso Yaki<br/>SSC<br/>Miyazaki Steak or Moromi Lamb</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>5th Course</div>
+            <div className='tasting-right-micros'>Dessert</div>
+          </div>
+
+          <br/>
+          <div style={{display:'flex',justifyContent:'space-around'}}>
+            <div className='hana-button' onClick={()=>showModal('flower')} >For 1</div>
+            <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
+            <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
+            <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
+          </div>
+          <div style={{textAlign:'center'}}>
+            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
+          </div>
+        </div>{/* .tasting-wrapper */}
+
+
+      </div>{/* .modal-content */}
+    </div>{/* #flower3 */}
+
+    <div id="flower5" className='modal'>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+      <div className='modal-content'>
+        <div className='tasting-wrapper'>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'></div>
+            <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
+              Kitchen Tasting $388 (For 5)
+              <br/>
+              Hana/Flower
+            </div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>1st Course</div>
+            <div className='tasting-right-micros'>2x Aigamo (5pc)<br/>2x Shima Aji Tataki (5pc)<br/>2x Hamachi Usuzukuri (5pc)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>2nd Course</div>
+            <div className='tasting-right-micros'>Caviar Soba (Individual)<br/>2x Tempura Moriawase (5pc Ebi)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>3rd Course</div>
+            <div className='tasting-right-micros'>Pre Platter (Individual)<br/>Aman NY Roll<br/>Lobster Roll<br/>Spider Roll</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>4th Course</div>
+            <div className='tasting-right-micros'>2x Yakimeshi<br/>Gindara (5pc)<br/>2x Miyazaki Steak or Moromi Lamb</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>5th Course</div>
+            <div className='tasting-right-micros'>Dessert</div>
+          </div>
+
+          <br/>
+          <div style={{display:'flex',justifyContent:'space-around'}}>
+            <div className='hana-button' onClick={()=>showModal('flower')} >For 1</div>
+            <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
+            <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
+            <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
+          </div>
+          <div style={{textAlign:'center'}}>
+            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
+          </div>
+        </div>{/* .tasting-wrapper */}
+
+
+      </div>{/* .modal-content */}
+    </div>{/* #flower5 */}
 
     <div id="miso-soup" className='modal'>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          

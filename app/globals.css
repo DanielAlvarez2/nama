@@ -623,11 +623,16 @@ input[type='text']{
   /* border:1px solid red; */
 }
 .tasting-right-micros{
-  width:200px;
+  width:270px;
   border:1px solid #779bda;
   padding-left:5px;
 }
-#flower .tasting-right-micros{
+#flower .tasting-right-micros,
+#flower2 .tasting-right-micros,
+#flower3 .tasting-right-micros,
+#flower5 .tasting-right-micros,
+#flower2noShellfish .tasting-right-micros
+{
   border:1px solid pink;
 }
 .dessert-menu{
@@ -661,4 +666,12 @@ input[type='text']{
     padding-right: 5vw;
     /* margin-right:0; */
   }
+}
+.hana-button{
+  background:pink;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor:pointer;
+  margin-bottom: 10px;
 }

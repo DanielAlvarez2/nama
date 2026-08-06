@@ -149,14 +149,14 @@ export default function ManagerSakePage(){
                         <div className='sake' onClick={()=>openModal(
                                                                     'NIGORI',
                                                                     'Nagurayama',
-                                                                    '*3101',
+                                                                    '3101',
                                                                     '720 ml',
                                                                     '125',
                                                                     'Snow White Nigori Ginjo, Fukushima',
-                                                                    'no-image.jpg'
+                                                                    'snow-white.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
-                                <span className='bin-left'>*3101</span>
+                                <span className='bin-left'>3101</span>
                                 <span className='sake-description'>Snow White Nigori Ginjo, Fukushima</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -770,16 +770,16 @@ export default function ManagerSakePage(){
                         <div className='sake' onClick={()=>openModal(
                                                                     'JUNMAI DAIGINJO',
                                                                     'Asahi Shuzo',
-                                                                    '*3405',
+                                                                    '3405',
                                                                     '500 ml',
                                                                     '200',
                                                                     'Soujo Kubota Seppou, Niigata',
-                                                                    'no-image.jpg'
+                                                                    'asahi-soujo.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
-                                <span className='bin-left'>*3405</span>
+                                <span className='bin-left'>3405</span>
                                 <span className='sake-description'>
-                                    Soujo Kubota Seppou, Niigata
+                                    Soujo Kubota Seppou <span class='typo'>Junmai Daiginjo</span>, Niigata
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

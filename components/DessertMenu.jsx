@@ -117,6 +117,18 @@ export default function DessertMenu({desserts}){
 
 
       </div>{/* .dessert-menu-page */}
+
+
+
+
+
+
+
+
+
+
+
+
       
       <br className='no-print'/>
       
@@ -145,7 +157,12 @@ export default function DessertMenu({desserts}){
       
       
       <div  className='dessert-menu-page'
-            // style={{backgroundImage:'url("akari-dessert-2.jpg")',backgroundSize:'5.5in'}}
+            style={{display:'flex',
+                    flexDirection:'column',
+                    paddingBottom:'70px',
+                    // backgroundImage:'url("akari-dessert-2.jpg")',
+                    backgroundSize:'5.5in'
+                  }}
       >
           <div className="menu-items">
 
@@ -309,15 +326,22 @@ export default function DessertMenu({desserts}){
             </div>{/* .right-column */}
           </div>{/* .section */}
         </div>{/* .menu-items */}
+
           <div className="legal legal-dessert"
-                style={{textAlign:'left',margin:'0',fontSize:'5.6px'}}
+                style={{textAlign:'left',
+                        margin:'0',
+                        marginTop:'auto',
+                        lineHeight:'1.8',
+                        letterSpacing:'0',
+                        fontFamily:'AnagoBook',
+                        fontSize:'7px'}}
           >
             <br/>
                 All prices are in USD and subject to 8.875% government tax.<br/>
                 Our coffee and tea are green certified and come from Fairtrade partnerships.
           </div>
 
-      </div>{/* .small-paper */}
+      </div>{/* .dessert-menu-page */}
 
       <br className='no-print' />
 

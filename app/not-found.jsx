@@ -13,7 +13,11 @@ export default function PageNotFound404(){
         
           <div className="menu-items">
             <div className="section section-dessert">
-              <div className="left-column">Error<br/>Page Not Found</div>
+              <div className="left-column">
+                <span className='typo'>ERROR:</span>
+                <br/>
+                Page Not Found
+              </div>
 
               <div className="right-column">
               
@@ -23,7 +27,7 @@ export default function PageNotFound404(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">The Page You Were Looking For Could Not Be Found</span>
+                      <span className="name">The Page You Were Looking For<br/>Could Not Be Found</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">404</span>

@@ -160,10 +160,10 @@ export default function ManagerSakePage(){
                                 <span className='sake-description'>Snow White Nigori Ginjo, Fukushima</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>*3101</span>
+                                <span className='bin-mobile'>3101</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>125</span>
-                                <span className='sake-abv'>???%abv</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
@@ -177,21 +177,21 @@ export default function ManagerSakePage(){
                         <div className='sake' onClick={()=>openModal(
                                                                     'NIGORI',
                                                                     'Rihaku',
-                                                                    '*3601',
+                                                                    '3601',
                                                                     '300 ml',
                                                                     '75',
                                                                     'Dreamy Clouds Nigori Tokubetsu, Shimane Prefecture',
-                                                                    'no-image.jpg'
+                                                                    'rihaku-dreamy-clouds-300ml.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
-                                <span className='bin-left'>*3601</span>
+                                <span className='bin-left'>3601</span>
                                 <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu, Shimane Prefecture</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>*3601</span>
+                                <span className='bin-mobile'>3601</span>
                                 <span className='sake-size'>300 ml</span>
                                 <span className='sake-price'>75</span>
-                                <span className='sake-abv'>??%abv</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -783,10 +783,10 @@ export default function ManagerSakePage(){
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>*3405</span>
+                                <span className='bin-mobile'>3405</span>
                                 <span className='sake-size'>500 ml</span>
                                 <span className='sake-price'>200</span>
-                                <span className='sake-abv'>???%abv</span>
+                                <span className='sake-abv'>14%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 

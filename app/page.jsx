@@ -527,7 +527,7 @@ produce.               </div>
                       <span className="name">Lobster Tempura</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">41</span>
+                    <span className="price"><span className='typo'>41</span> 66</span>
                   </div>
                   <div className="description1">Lobster, Yuzu Aioli</div>
                   <div className="description2"></div>
@@ -579,7 +579,7 @@ produce.               </div>
                       <span className="name">Lobster & Uni Ogonyaki</span>
                       <span className="allergies">(GF)</span>
                     </span>
-                    <span className="price">41</span>
+                    <span className="price"><span className='typo'>41</span> 86</span>
                   </div>
                   <div className="description1">Grilled Lobster, Uni Miso, Lobster Oil</div>
                   <div className="description2"></div>
@@ -593,7 +593,7 @@ produce.               </div>
            </div> {/* .menu-items */}
 
           <div className="legal">
-            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V<span className='typo'>G</span>)Vegan</div>
+            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan</div>
             <br/>
             <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
             <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>
@@ -699,7 +699,7 @@ produce.               </div>
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">A5 Kobe Charcoal Grilled Salmon <span className='typo'>Sirloin</span></span>
+                      <span className="name">A5 Kobe Charcoal Grilled Sirloin</span>
                       <span className="allergies">(GF)</span>
                     </span>
                     <span className="price">205</span>
@@ -741,7 +741,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Grilled Summer Vegetables</span>
-                      <span className="allergies">(V, GF)<span className='typo'>???</span></span>
+                      <span className="allergies typo">(V, GF)</span>
                     </span>
                     <span className="price">35</span>
                   </div>
@@ -899,7 +899,7 @@ produce.               </div>
 
            </div> {/* .menu-items */}
           <div className="legal">
-            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V<span className='typo'>G</span>)Vegan</div>
+            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan</div>
             <br/>
             <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
             <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>
@@ -1004,55 +1004,8 @@ produce.               </div>
                   <div className="description2"></div>
                 </div>
 
-                {/* <div  className="dinner-menu-item"
-                      onClick={()=>showModal('lobster-tempura-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Lobster Tempura Roll</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">55</span>
-                  </div>
-                  <div className="description1">Napa Cabbage, Lobster Butter Aioli</div>
-                  <div className="description2"></div>
-                </div> */}
 
-                {/* <div  className="dinner-menu-item"
-                      onClick={()=>showModal('spider-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Spider Roll</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">45</span>
-                  </div>
-                  <div className="description1">Soft Shell Crab, Spicy Mayo</div>
-                  <div className="description2"></div>
-                </div> */}
 
-                {/* <div  className="dinner-menu-item"
-                      onClick={()=>showModal('aman-ny-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Aman NY Roll</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">72</span>
-                  </div>
-                  <div className="description1">Toro, King Crab, Uni</div>
-                  <div className="description2"></div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>with 10 grams of Ossetra Caviar</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">132</span>
-                  </div>
-
-                </div> */}
 
                 <div  className="dinner-menu-item"
                       onClick={()=>showModal('wagyu-roll')}
@@ -1068,6 +1021,55 @@ produce.               </div>
                   <div className="description2"></div>
                 </div>
 
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('lobster-tempura-roll')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Lobster Tempura</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">55</span>
+                  </div>
+                  <div className="description1">Napa Cabbage, Lobster Butter Aioli</div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('spider-roll')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Spider</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">45</span>
+                  </div>
+                  <div className="description1">Soft Shell Crab, Spicy Mayo</div>
+                  <div className="description2"></div>
+                </div>
+
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('aman-ny-roll')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">Aman New York</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">72</span>
+                  </div>
+                  <div className="description1">Toro, King Crab, Uni</div>
+                  <div className="description2"></div>
+                  <div className="upgrade">
+                    <span>
+                      <span className='upgrade-description'>With 10 grams of Ossetra Caviar</span>
+                      <span className='allergies'></span>
+                    </span>
+                    <span className="upgrade-price">132</span>
+                  </div>
+
+                </div>
 
               </div>{/* .right-column */}
             </div>{/* .section */}
@@ -1272,7 +1274,7 @@ produce.               </div>
            </div> {/* .menu-items */}
 
           <div className="legal">
-            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V<span className='typo'>G</span>)Vegan</div>
+            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan</div>
             <br/>
             <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
             <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>
@@ -1305,7 +1307,7 @@ produce.               </div>
                       <span className="name">Yakimeshi</span>
                       <span className="allergies">(V, GF)</span>
                     </span>
-                    <span className="price">28<span className='typo'>38???</span></span>
+                    <span className="price">28</span>
                   </div>
                   <div className="description1">Vegetable Fried Rice</div>
                   <div className="description2"></div>
@@ -1354,21 +1356,8 @@ produce.               </div>
 
 
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('kamatama-udon')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">A5 Kobe Kamatama Udon<span className='typo'>RICE SECTION???</span></span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">84</span>
-                  </div>
-                  <div className="description1">Ontama, Takana</div>
-                  <div className="description2"></div>
-                </div>
 
-                {/* <div  className="dinner-menu-item"
+                <div  className="dinner-menu-item"
                       onClick={()=>showModal('yakishabu-gohan')}
                 >
                   <div className="name-price">
@@ -1380,7 +1369,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Ontama, Takana</div>
                   <div className="description2"></div>
-                </div> */}
+                </div>
 
 
 
@@ -1471,6 +1460,22 @@ produce.               </div>
 
 
 
+                <div  className="dinner-menu-item"
+                      onClick={()=>showModal('kamatama-udon')}
+                >
+                  <div className="name-price">
+                    <span>
+                      <span className="name">A5 Kobe Kamatama Udon</span>
+                      <span className="allergies"></span>
+                    </span>
+                    <span className="price">84</span>
+                  </div>
+                  <div className="description1">Ontama, Mushrooms, Non-Soup Udon Noodles</div>
+                  <div className="description2"></div>
+                </div>
+
+
+
 
               </div>
             </div>
@@ -1479,7 +1484,7 @@ produce.               </div>
            </div> {/* .menu-items */}
 
           <div className="legal">
-            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V<span className='typo'>G</span>)Vegan</div>
+            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan</div>
             <br/>
             <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
             <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>

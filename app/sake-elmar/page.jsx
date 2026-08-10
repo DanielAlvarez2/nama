@@ -185,7 +185,7 @@ export default function SakeElmarPage(){
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3601</span>
-                                <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu, Shimane Prefecture</span>
+                                <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu <span className='typo'>Junmai</span>, Shimane Prefecture</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3601</span>
@@ -206,7 +206,7 @@ export default function SakeElmarPage(){
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3102</span>
-                                <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu Namazake, Shimane Prefecture</span>
+                                <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu <span className='typo'>Junmai</span> Namazake, Shimane Prefecture</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3102</span>
@@ -362,7 +362,7 @@ export default function SakeElmarPage(){
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3303</span>
-                                <span className='sake-description'>Kuzuryu Silk Dragon <span className='typo'>Daiginjo</span>, Fukui</span>
+                                <span className='sake-description'>Kuzuryu Silk Dragon <span className='typo'>DAIGINJO</span>, Fukui</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3303</span>

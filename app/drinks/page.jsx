@@ -120,7 +120,7 @@ export default function DrinksMenu(){
                     </span>
                     <span className="dessert-price">30</span>
                   </div>
-                  <div className="description1">Mal Bien Mezcal, Red Yuzu Kosho, Lime, Shochu</div>
+                  <div className="description1">Mal B<span className='typo'>i</span>en Mezcal, Red Yuzu Kosho, Lime, Shochu</div>
                   <div className="description2"></div>
                 </div>
 
@@ -283,7 +283,7 @@ export default function DrinksMenu(){
                     </span>
                     <span className="dessert-price">16</span>
                   </div>
-                  <div className="description1">Ginger, Jalape<span style={{color:'red'}}>ñ</span>o, Lime</div>
+                  <div className="description1">Ginger, Jalapeño, Lime</div>
                   <div className="description2"></div>
                 </div>
 
@@ -882,7 +882,7 @@ export default function DrinksMenu(){
                       onClick={()=>showModal('pinot-noir')}
                 >
                   <div className='dessert-wine-vintage'>2023</div>
-                  <div className='dessert-wine-name'>Peay Vineyards<br/>Sonoma Coast, CA</div>
+                  <div className='dessert-wine-name'>Peay Vineyards, Pinot Noir,<br/>Sonoma Coast, CA</div>
                   <div>32</div>
                 </div>{/* .dessert-wine */}
 
@@ -1381,6 +1381,7 @@ export default function DrinksMenu(){
                   <div>28</div>
                 </div>{/* .dessert-wine */}
                 <hr/>
+                16%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1406,6 +1407,7 @@ export default function DrinksMenu(){
                   <div>42</div>
                 </div>{/* .dessert-wine */}
                 <hr/>
+                14.1%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1431,6 +1433,7 @@ export default function DrinksMenu(){
                   <div>32</div>
                 </div>{/* .dessert-wine */}
                 <hr/>
+                13%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>

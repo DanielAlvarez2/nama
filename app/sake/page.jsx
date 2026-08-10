@@ -180,17 +180,38 @@ export default function SakePage(){
                                                                     '3601',
                                                                     '300 ml',
                                                                     '75',
-                                                                    'Dreamy Clouds Nigori Tokubetsu, Shimane Prefecture',
+                                                                    'Dreamy Clouds Tokubetsu Junmai Nigori, Shimane Prefecture',
                                                                     'rihaku-dreamy-clouds-300ml.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3601</span>
-                                <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu, Shimane Prefecture</span>
+                                <span className='sake-description'>Dreamy Clouds Tokubetsu Junmai Nigori, Shimane Prefecture</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3601</span>
                                 <span className='sake-size'>300 ml</span>
                                 <span className='sake-price'>75</span>
+                                <span className='sake-abv'>15%abv</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'NIGORI',
+                                                                    'Rihaku',
+                                                                    '3103',
+                                                                    '720 ml',
+                                                                    '165',
+                                                                    'Dreamy Clouds Tokubetsu Junmai Nigori, Shimane Prefecture',
+                                                                    'dreamy-clouds.jpg'
+                                                                    )}>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3103</span>
+                                <span className='sake-description'>Dreamy Clouds Tokubetsu Junmai Nigori, Shimane Prefecture</span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3102</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>165</span>
                                 <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
@@ -206,7 +227,7 @@ export default function SakePage(){
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3102</span>
-                                <span className='sake-description'>Dreamy Clouds Nigori Tokubetsu Namazake, Shimane Prefecture</span>
+                                <span className='sake-description'>Dreamy Clouds Tokubetsu Junmai Nigori Namazake, Shimane Prefecture</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3102</span>

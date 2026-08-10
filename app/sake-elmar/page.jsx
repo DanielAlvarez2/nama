@@ -4,7 +4,7 @@ import { AiTwotoneCloseCircle } from "react-icons/ai";
 import Navbar from '@/components/Navbar.jsx'
 import NavbarFooter from '@/components/NavbarFooter';
 
-export default function SakePage(){
+export default function SakeElmarPage(){
 
     function openModal(section,producer,bin,size,price,description,image){
         document.querySelector('#sake-modal').style.display = 'grid'
@@ -87,7 +87,7 @@ export default function SakePage(){
                 <h3>SPARKLING</h3>
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
-                        <span style={{textDecoration:'line-through'}}>Masumi</span> <span className='typo'>Miyasaka</span>
+                        <span>Masumi</span> 
                         </div>{/* .sake-producer-name */}
                         
                         <div className='sake' onClick={()=>openModal(   'SPARKLING',
@@ -131,7 +131,7 @@ export default function SakePage(){
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3100</span>
-                                <span className='sake-description'>Summer Snow <span className='typo'>-</span> Nigori Ginjo, Hiroshima</span>
+                                <span className='sake-description'>Summer Snow Nigori Ginjo, Hiroshima</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>3100</span>
@@ -1139,7 +1139,7 @@ export default function SakePage(){
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3407</span>
                                 <span className='sake-description'>
-                                    <span className='typo'>Pride of Coast</span> <span style={{textDecoration:'line-through'}}>50</span> Junmai Daiginjo 50, Shizuoka
+                                    <span className='typo'>Pride of Coast</span> Junmai Daiginjo 50, Shizuoka
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1382,7 +1382,7 @@ export default function SakePage(){
 
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
-                            Ohmine Shuzo<span className='typo'>u</span>
+                            Ohmine Shuzo
                         </div>{/* .sake-producer-name */}
 
                         <div className='sake' onClick={()=>openModal(
@@ -1495,7 +1495,7 @@ export default function SakePage(){
                                                                     '7042',
                                                                     '300 ml',
                                                                     '60',
-                                                                    'Za<span class="typo">K</span>u Miyabi no Tomo Amanemu <span class="typo">Junmai Daiginjo</span>, Mie',
+                                                                    'Zaku Miyabi no Tomo Amanemu <span class="typo">Junmai Daiginjo</span>, Mie',
                                                                     'zaku-miyabi-no-tomo.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
@@ -1786,7 +1786,7 @@ export default function SakePage(){
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>4007</span>
                                 <span className='sake-description'>
-                                    Myoka Rangyoku <span className='typo'>Heavenly Flower Junmai Daiginjo</span> Genshu Kimoto, Fukushima
+                                    Myoka Rangyoku <span className='typo'>Junmai Daiginjo</span> Genshu Kimoto, Fukushima
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
@@ -1902,7 +1902,7 @@ export default function SakePage(){
 
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
-                            Heiwa Shuz<span className='typo'>ō</span>
+                            Heiwa Shuzō
                         </div>{/* .sake-producer-name */}
 
                         <div className='sake' onClick={()=>openModal(
@@ -2201,7 +2201,7 @@ export default function SakePage(){
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>4008</span>
                                 <span className='sake-description'>
-                                    Tedorigawa Mangekyo <span className='typo'>Kaleidoscope Junmai Daiginjo</span>, Ishikawa
+                                    Tedorigawa Mangekyo <span className='typo'>Junmai Daiginjo</span>, Ishikawa
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

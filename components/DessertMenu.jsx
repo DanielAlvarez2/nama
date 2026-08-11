@@ -46,11 +46,12 @@ export default function DessertMenu({desserts}){
       <Navbar page='dessert' />
     
       <div  className="dessert-menu-page" 
+            style={{display:'flex',flexDirection:'column'}}
             // style={{backgroundImage:'url(akari-dessert-1.jpg)',backgroundSize:'5.5in'}}
       >
         
           <div 
-          // className="menu-items"
+          className="menu-items"
           >
             <div 
             // className="section section-dessert"
@@ -112,6 +113,26 @@ export default function DessertMenu({desserts}){
 
 
 
+          <div className="legal legal-dessert"
+                style={{textAlign:'left',
+                        margin:'0',
+                        marginTop:'auto',
+                        paddingBottom:'50px',
+                        lineHeight:'1.8',
+                        letterSpacing:'0',
+                        fontFamily:'AnagoBook',
+                        fontSize:'7px'}}
+          >
+            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
+            <br/><br/>
+
+                All prices are in USD and subject to 8.875% government tax. 
+                Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs 
+                may increase your risk of foodborne illness. 
+                Please let us know if you have any allergies or special dietary requirements, 
+                or if you require any further information. Our choice of suppliers and local produce 
+                - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
+          </div>
 
 
 
@@ -183,7 +204,7 @@ export default function DessertMenu({desserts}){
                       onClick={()=>showModal('sauternes')}
                 >
                   <div className='dessert-wine-vintage'>2022</div>
-                  <div className='dessert-wine-name'>Chateau Suduiraut, <span className='typo'>SA</span></div>
+                  <div className='dessert-wine-name'>Chateau Suduiraut, FR</div>
                   <div className='dessert-price'>24</div>
                 </div>{/* .dessert-wine */}
 

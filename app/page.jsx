@@ -36,7 +36,7 @@ export default function Home() {
                   }}
             >
               
-              <div className="tasting-left" style={{width:'150px',alignSelf:'center'}}>
+              <div className="tasting-left" style={{width:'150px',alignSelf:'flex-start'}}>
                 Chef's Tasting Menu<br/>
                 テイスティング
               </div>
@@ -65,7 +65,7 @@ export default function Home() {
             >
               
               <div  className="tasting-left" 
-                    style={{width:'150px',alignSelf:'center'}}>
+                    style={{width:'150px',alignSelf:'flex-start'}}>
                 Tsuki/Moon<br/>月
               </div>
 
@@ -89,7 +89,7 @@ produce.               </div>
             >
               
               <div  className="tasting-left" 
-                    style={{width:'150px',alignSelf:'center'}}>
+                    style={{width:'150px',alignSelf:'flex-start'}}>
                 Hana/Flower<br/>花</div>
 
               <div className="tasting-middle">
@@ -106,7 +106,9 @@ produce.               </div>
 
           </div>{/* .menu-items */}
           <div className='legal'>
-            All prices are in USD and subject to 8.875% government tax. Please let us know if you have any 
+            All prices are in USD and subject to 8.875% government tax. 
+            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
+            Please let us know if you have any 
             allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
             produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
           </div>
@@ -296,12 +298,12 @@ produce.               </div>
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Shim<span className='typo'>a</span>aji Tataki</span>
+                      <span className="name">Shimaaji Tataki</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">46</span>
                   </div>
-                  <div className="description1">Seared Striped<span style={{color:'red'}}>&#9608;</span>Jack, Tosazu Jelly</div>
+                  <div className="description1">Seared Striped Jack, Tosazu Jelly</div>
                   <div className="description2"></div>
                 </div>
 
@@ -331,11 +333,13 @@ produce.               </div>
            </div> {/* .menu-items */}
 
           <div className="legal">
-            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V<span className='typo'>G</span>)Vegan</div>
+            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan<br/><br/>
             <br/>
-            <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
-            <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>
-            <div>produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.</div>
+            All prices are in USD and subject to 8.875% government tax. 
+              Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
+              Please let us know if you have any 
+            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
+            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
           </div>
 
        </div> {/* .letter-paper */}
@@ -392,7 +396,7 @@ produce.               </div>
                   </div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>With Warm Mushrooms</span>
+                      <span className='upgrade-description'>With Warm Mushroom<span className='typo'>s</span></span>
                       <span className='allergies'>(V, GF)</span>
                     </span>
                     <span className="upgrade-price">40</span>
@@ -527,7 +531,7 @@ produce.               </div>
                       <span className="name">Lobster Tempura</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price"><span className='typo'>41</span> 66</span>
+                    <span className="price">66</span>
                   </div>
                   <div className="description1">Lobster, Yuzu Aioli</div>
                   <div className="description2"></div>
@@ -579,7 +583,7 @@ produce.               </div>
                       <span className="name">Lobster & Uni Ogonyaki</span>
                       <span className="allergies">(GF)</span>
                     </span>
-                    <span className="price"><span className='typo'>41</span> 86</span>
+                    <span className="price">86</span>
                   </div>
                   <div className="description1">Grilled Lobster, Uni Miso, Lobster Oil</div>
                   <div className="description2"></div>
@@ -593,11 +597,13 @@ produce.               </div>
            </div> {/* .menu-items */}
 
           <div className="legal">
-            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan</div>
-            <br/>
-            <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
-            <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>
-            <div>produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.</div>
+            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
+            <br/><br/>
+            All prices are in USD and subject to 8.875% government tax. 
+            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
+            Please let us know if you have any 
+            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
+            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
           </div>
 
        </div> {/* .letter-paper */}
@@ -741,7 +747,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Grilled Summer Vegetables</span>
-                      <span className="allergies typo">(V, GF)</span>
+                      <span className="allergies">(V, GF)</span>
                     </span>
                     <span className="price">35</span>
                   </div>
@@ -899,11 +905,13 @@ produce.               </div>
 
            </div> {/* .menu-items */}
           <div className="legal">
-            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan</div>
-            <br/>
-            <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
-            <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>
-            <div>produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.</div>
+            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
+            <br/><br/>
+            All prices are in USD and subject to 8.875% government tax. 
+            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
+            Please let us know if you have any 
+            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
+            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
           </div>
 
 
@@ -930,7 +938,7 @@ produce.               </div>
 
 
             <div className="section">
-              <div className="left-column">Sushi Roll<br/>ロール</div>
+              <div className="left-column">Sushi Roll<span className='typo'>s</span><br/>ロール</div>
 
               <div className="right-column">
 
@@ -981,7 +989,7 @@ produce.               </div>
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Salmon Avocado</span>
+                      <span className="name">*Salmon Avocado</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">26</span>
@@ -1274,11 +1282,13 @@ produce.               </div>
            </div> {/* .menu-items */}
 
           <div className="legal">
-            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan</div>
-            <br/>
-            <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
-            <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>
-            <div>produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.</div>
+            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
+            <br/><br/>
+            All prices are in USD and subject to 8.875% government tax. 
+            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
+            Please let us know if you have any 
+            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
+            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
           </div>
 
        </div> {/* .letter-paper */}
@@ -1484,11 +1494,13 @@ produce.               </div>
            </div> {/* .menu-items */}
 
           <div className="legal">
-            <div>(D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan</div>
-            <br/>
-            <div>All prices are in USD and subject to 8.875% government tax. Please let us know if you have any </div>
-            <div>allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local </div>
-            <div>produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.</div>
+            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
+            <br/><br/>
+            All prices are in USD and subject to 8.875% government tax. 
+            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
+            Please let us know if you have any 
+            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
+            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
           </div>
 
        </div> {/* .letter-paper */}

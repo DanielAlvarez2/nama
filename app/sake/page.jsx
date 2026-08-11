@@ -811,6 +811,52 @@ export default function SakePage(){
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Asahi Shuzo',
+                                                                    '*3425',
+                                                                    '500 ml',
+                                                                    '195',
+                                                                    'Kubota Seppou Yamahai Seasonal Limited, Niigata',
+                                                                    'no-image.jpg'
+                                                                    )}>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>*3425</span>
+                                <span className='sake-description'>
+                                    Kubota Seppou Yamahai Seasonal Limited, Niigata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>*3425</span>
+                                <span className='sake-size'>500 ml</span>
+                                <span className='sake-price'>195</span>
+                                <span className='sake-abv'>??%abv</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Asahi Shuzo',
+                                                                    '*3423',
+                                                                    '720 ml',
+                                                                    '595',
+                                                                    'Kubota Manjyo Jishakobo Jikomi Original Yeast YX Edition, Niigata',
+                                                                    'no-image.jpg'
+                                                                    )}>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>*3423</span>
+                                <span className='sake-description'>
+                                    Kubota Manjyo Jishakobo Jikomi Original Yeast YX Edition, Niigata
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>*3423</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>595</span>
+                                <span className='sake-abv'>??%abv</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+
                     </div>{/* .sake-producer */}
 
                     <div className='sake-producer'>    
@@ -1009,28 +1055,6 @@ export default function SakePage(){
                             Hakkaisan
                         </div>{/* .sake-producer-name */}
 
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'JUNMAI DAIGINJO',
-                                                                    'Hakkaisan',
-                                                                    '3420',
-                                                                    '720 ml',
-                                                                    '450',
-                                                                    '45 Kouwa Gura <span class="typo">Junmai Daiginjo</span>, Niigata',
-                                                                    'hakkaisan-45.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3420</span>
-                                <span className='sake-description'>
-                                    45 Kouwa Gura <span className='typo'>Junmai Daiginjo</span>, Niigata
-                                </span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3420</span>
-                                <span className='sake-size'>720 ml</span>
-                                <span className='sake-price'>450</span>
-                                <span className='sake-abv'>17%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
 
                         <div className='sake' onClick={()=>openModal(
                                                                     'JUNMAI DAIGINJO',
@@ -1201,34 +1225,6 @@ export default function SakePage(){
                         </div>{/* .sake */}
                     </div>{/* .sake-producer */}
                     
-                    <div className='sake-producer'>    
-                        <div className='sake-producer-name'><span className='bin-left'></span>
-                            Kamoizumi
-                        </div>{/* .sake-producer-name */}
-
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'JUNMAI DAIGINJO',
-                                                                    'Kamoizumi',
-                                                                    '3412',
-                                                                    '500 ml',
-                                                                    '115',
-                                                                    'Autumn<span class="typo">al</span> Elixir Junmai Daiginjo, Hiroshima',
-                                                                    'kamoizumi.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3412</span>
-                                <span className='sake-description'>
-                                    Autumn<span className='typo'>al</span> Elixir Junmai Daiginjo, Hiroshima
-                                </span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3412</span>
-                                <span className='sake-size'>500 ml</span>
-                                <span className='sake-price'>115</span>
-                                <span className='sake-abv'>16.5%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
-                    </div>{/* .sake-producer */}
 
             </div>{/* .sake-section */}
         

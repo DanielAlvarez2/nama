@@ -261,7 +261,7 @@ body,.webpage{
  font-size: 13px;
 }
 .upgrade-description{
- font-style: italic;
+ /* font-style: italic; */
 }
 .dinner-menu-item{
  margin-bottom:20px;

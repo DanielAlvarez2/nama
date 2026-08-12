@@ -800,7 +800,7 @@ export default function SakePage(){
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3405</span>
                                 <span className='sake-description'>
-                                    Soujo Kubota Seppou <span class='typo'>Junmai Daiginjo</span>, Niigata
+                                    Soujo Kubota Seppou <span className='typo'>Junmai Daiginjo</span>, Niigata
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>

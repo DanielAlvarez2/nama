@@ -43,6 +43,10 @@
  font-family: AnagoBook;
  src: url('./fonts/AnagoBook.ttf');
 }
+@font-face{
+ font-family: WhitneyBook;
+ src: url('./fonts/WhitneyBook.otf');
+}
 
 
 *{
@@ -51,6 +55,7 @@
  box-sizing: border-box;
  font-family:"MyriadHebrew";
  font-family:QuireSans;
+ font-family:WhitneyBook;
  /* color:transparent; */
  /* color:red; */
  font-size:13.0px;
@@ -236,10 +241,11 @@ body,.webpage{
 .legal{
  display: block;
  margin-top: auto;
+ font-size: 8px;
+ line-height:15px;
 }
 .legal div{
  font-size: 8px;
- line-height:15px;
 }
 .right-column{
  width:3.5in;
@@ -257,7 +263,7 @@ body,.webpage{
  font-size: 13px;
 }
 .upgrade-price{
- font-style: italic;
+ /* font-style: italic; */
  font-size: 13px;
 }
 .upgrade-description{
@@ -265,6 +271,7 @@ body,.webpage{
 }
 .dinner-menu-item{
  margin-bottom:20px;
+ line-height: 1.5;
  cursor:pointer !important;
 }
 .nigiri{
@@ -278,8 +285,9 @@ body,.webpage{
 }
 .allergies{
  margin-left:5px;
- font-size: 7px;
- font-family: NeueHaasDisplayLight;
+ /* font-size: 7px; */
+ color:#444;
+ /* font-family: NeueHaasDisplayLight; */
  /* font-family: KertaseBold; */
 }
 .section-dessert{
@@ -694,4 +702,8 @@ input[type='text']{
 .drink-menu-page .description1,
 .drink-menu-page .description2{
   font-size: 11.5px;
+}
+.description1,
+.description2{
+  color:#444;
 }

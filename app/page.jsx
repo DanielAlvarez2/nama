@@ -333,8 +333,8 @@ produce.               </div>
            </div> {/* .menu-items */}
 
           <div className="legal">
-            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan<br/><br/>
-            <br/>
+            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
+            <br/><br/>
             All prices are in USD and subject to 8.875% government tax. 
               Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
               Please let us know if you have any 
@@ -976,7 +976,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Negi Hama</span>
-                      <span className="allergies"></span>
+                      <span className="allergies typo">(GF)</span>
                     </span>
                     <span className="price">25</span>
                   </div>
@@ -990,7 +990,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">*Salmon Avocado</span>
-                      <span className="allergies"></span>
+                      <span className="allergies typo">(GF)</span>
                     </span>
                     <span className="price">26</span>
                   </div>
@@ -1004,7 +1004,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">King Crab California</span>
-                      <span className="allergies"></span>
+                      <span className="allergies typo">(GF)</span>
                     </span>
                     <span className="price">36</span>
                   </div>
@@ -1063,7 +1063,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Aman New York</span>
-                      <span className="allergies"></span>
+                      <span className="allergies typo">(GF)</span>
                     </span>
                     <span className="price">72</span>
                   </div>

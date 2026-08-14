@@ -969,7 +969,7 @@ export default function DrinksMenu(){
 
 
 
-            <div className="section section-dessert">
+            <div className="section section-dessert" style={{marginBottom:'0'}}>
               <div className="left-column">Coffee & Tea<br/>コーヒーとお茶</div>
               
 

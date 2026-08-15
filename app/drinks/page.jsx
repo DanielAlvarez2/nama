@@ -21,7 +21,7 @@ export default function DrinksMenu(){
       <Navbar page='drinks' />
       
     
-      <div  className="drink-menu-page small-paper" 
+      <div  className="small-paper" 
             style={{
                     
                     // backgroundImage:'url("akari-drinks-1.jpg")',

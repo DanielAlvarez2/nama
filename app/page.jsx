@@ -163,7 +163,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Chamame</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">10</span>
                   </div>
@@ -205,7 +205,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Goma Ae</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">17</span>
                   </div>
@@ -219,7 +219,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Tsukemono Moriawase</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">16</span>
                   </div>
@@ -234,7 +234,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Nasu Agebitashi</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">17</span>
                   </div>
@@ -266,7 +266,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Yasai Shiraae</span>
-                      <span className="allergies">(D, GF)</span>
+                      <span className="allergies">(D,GF)</span>
                     </span>
                     <span className="price">29</span>
                   </div>
@@ -381,7 +381,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Green Market</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">29</span>
                   </div>
@@ -409,7 +409,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Caesar</span>
-                      <span className="allergies">(D, GF)</span>
+                      <span className="allergies">(D,GF)</span>
                     </span>
                     <span className="price">24</span>
                   </div>
@@ -730,7 +730,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Tofu Miso Yaki</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">30</span>
                   </div>
@@ -747,7 +747,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Grilled Summer Vegetables</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">35</span>
                   </div>
@@ -768,7 +768,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Nasu Dengaku</span>
-                      <span className="allergies">(V, N, GF)</span>
+                      <span className="allergies">(V,N,GF)</span>
                     </span>
                     <span className="price">38</span>
                   </div>
@@ -821,7 +821,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Kappa</span>
-                      <span className="allergies">(V)</span>
+                      <span className="allergies">(V,<span className='typo'>GF</span>)</span>
                     </span>
                     <span className="price">16</span>
                   </div>
@@ -848,7 +848,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Ume Shiso</span>
-                      <span className="allergies">(V)</span>
+                      <span className="allergies">(V,<span className='typo'>GF</span>)</span>
                     </span>
                     <span className="price">18</span>
                   </div>
@@ -862,7 +862,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Avocado</span>
-                      <span className="allergies">(V)</span>
+                      <span className="allergies">(V,<span className='typo'>GF</span>)</span>
                     </span>
                     <span className="price">18</span>
                   </div>
@@ -890,7 +890,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Tekka</span>
-                      <span className="allergies"></span>
+                      <span className="allergies">(<span className='typo'>GF</span>)</span>
                     </span>
                     <span className="price">21</span>
                   </div>
@@ -1315,7 +1315,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Yakimeshi</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">28</span>
                   </div>
@@ -1980,7 +1980,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Chamame</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">10</span>
                   </div>
@@ -2078,7 +2078,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Goma Ae</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">17</span>
                   </div>
@@ -2115,7 +2115,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Tsukemono Moriawase</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">16</span>
                   </div>
@@ -2186,7 +2186,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Yasai Shiraae</span>
-                      <span className="allergies">(D, GF)</span>
+                      <span className="allergies">(D,GF)</span>
                     </span>
                     <span className="price">29</span>
                   </div>
@@ -2328,7 +2328,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Green Market</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">29</span>
                   </div>
@@ -2382,7 +2382,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Caesar</span>
-                      <span className="allergies">(D, GF)</span>
+                      <span className="allergies">(D,GF)</span>
                     </span>
                     <span className="price">24</span>
                   </div>
@@ -2854,7 +2854,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Tofu Miso Yaki</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">30</span>
                   </div>
@@ -2888,7 +2888,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Grilled Summer Vegetables</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">35</span>
                   </div>
@@ -3918,7 +3918,7 @@ produce.               </div>
                   <div className="name-price">
                     <span>
                       <span className="name">Yakimeshi</span>
-                      <span className="allergies">(V, GF)</span>
+                      <span className="allergies">(V,GF)</span>
                     </span>
                     <span className="price">28</span>
                   </div>
@@ -4166,7 +4166,7 @@ produce.               </div>
                           <div className="name-price">
                             <span>
                               <span className="name">Nasu Agebitashi</span>
-                              <span className="allergies">(V, GF)</span>
+                              <span className="allergies">(V,GF)</span>
                             </span>
                             <span className="price">17</span>
                           </div>
@@ -4316,7 +4316,7 @@ produce.               </div>
                           <div className="name-price">
                             <span>
                               <span className="name">Nasu Dengaku</span>
-                              <span className="allergies">(V, N, GF)</span>
+                              <span className="allergies">(V,N,GF)</span>
                             </span>
                             <span className="price">38</span>
                           </div>

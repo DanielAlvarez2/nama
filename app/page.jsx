@@ -2369,6 +2369,7 @@ produce.               </div>
                     </span>
                     <span className="upgrade-price">40</span>
                   </div>
+                  <hr/>
                           <hr/>
                           <br/>
                           gem lettuce<br/>
@@ -2423,6 +2424,7 @@ produce.               </div>
                     </span>
                     <span className="upgrade-price">44</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           gem lettuce<br/>
@@ -2461,7 +2463,8 @@ produce.               </div>
                     <span className="price">27</span>
                   </div>
                   <div className="description1">Summer Vegetables</div>
-                  <div className="description2"></div>                          
+                  <div className="description2"></div>  
+                  <br/>                        
                           <hr/>
                           <br/>
                           8 seasonal vegetables<br/>
@@ -2496,6 +2499,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Shrimp, Summer Vegetables</div>
                   <div className="description2"></div>  
+                  <br/>
                           <hr/>
                           <br/>
                           2 ebi/shrimp<br/>
@@ -2532,6 +2536,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Shrimp</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           5 shrimp tempura<br/>
@@ -2604,6 +2609,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Lobster, Yuzu Aioli</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           lobster tempura (6-8pcs)<br/>
@@ -2638,6 +2644,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Miso Black Cod</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           charcoal grilled miso marinated black cod<br/>
@@ -2673,6 +2680,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Charcoal Grilled Yellowtail Collar</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           charcoal grilled yellowtail collar<br/>
@@ -2709,6 +2717,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Grilled Lobster, Uni Miso, Lobster Oil</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           charcoal grilled lobster(1tail+1claw)<br/>
@@ -4233,7 +4242,7 @@ produce.               </div>
                           </div>
                           <div className="description1">Fried Branzino, Shiso Aioli</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           crispy fried branzino 8pcs<br/>
@@ -4269,7 +4278,7 @@ produce.               </div>
                           </div>
                           <div className="description1">Fried Soft Shell Crab, Tomato Relish</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           deep fried live softshell crab<br/>

@@ -1304,7 +1304,7 @@ export default function DrinksMenu(){
                       // onClick={()=>showModal('taittinger')}
                 >
                   <div className='dessert-wine-vintage'>2014</div>
-                  <div className='dessert-wine-name'>Taittinger, Comtes de Champagne Blanc de Blancs, Brut</div>
+                  <div className='dessert-wine-name'>Taittinger, Comtes de Champagne<br/>Blanc de Blancs, Brut</div>
                   <div>120</div>
                 </div>{/* .dessert-wine */}
                 <hr/>

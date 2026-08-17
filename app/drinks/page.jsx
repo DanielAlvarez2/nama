@@ -257,7 +257,9 @@ export default function DrinksMenu(){
 
 
 
-      <div className='small-paper'>
+      <div  className='small-paper' 
+            // style={{backgroundImage:'url("scan-drinks-2.jpg")',backgroundSize:'5.5in'}}
+            >
         <div className='menu-items'>
             <div className="section section-dessert">
 

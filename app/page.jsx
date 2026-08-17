@@ -5,7 +5,7 @@ import { AiTwotoneCloseCircle } from "react-icons/ai";
 import Navbar from '@/components/Navbar.jsx'
 import NavbarFooter from '@/components/NavbarFooter.jsx'
 
-export default function Home() {
+export default function HomePage() {
 
   function showModal(menuItem){
     closeModals()
@@ -117,7 +117,26 @@ produce.               </div>
 
 
 
+
+
+
+
+
+
+
       <br className='no-print' />
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -390,14 +409,14 @@ produce.               </div>
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>With Tofu</span>
-                      <span className='allergies'>(V, GF)</span>
+                      <span className='allergies'>(V,GF)</span>
                     </span>
                     <span className="upgrade-price">38</span>
                   </div>
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>With Warm Mushroom<span className='typo'>s</span></span>
-                      <span className='allergies'>(V, GF)</span>
+                      <span className='allergies'>(V,GF)</span>
                     </span>
                     <span className="upgrade-price">40</span>
                   </div>
@@ -1628,7 +1647,7 @@ produce.               </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>4th Course</div>
-            <div className='tasting-right-micros'>Gindara<br/>Miyazaki Steak or Moromi Lamb</div>
+            <div className='tasting-right-micros'>Gindara (1pc)<br/>Miyazaki Steak or Moromi Lamb</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>5th Course</div>
@@ -2337,14 +2356,14 @@ produce.               </div>
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>With Tofu</span>
-                      <span className='allergies'>(V, GF)</span>
+                      <span className='allergies'>(V,GF)</span>
                     </span>
                     <span className="upgrade-price">38</span>
                   </div>
                   <div className="upgrade">
                     <span>
                       <span className='upgrade-description'>With Warm Mushrooms</span>
-                      <span className='allergies'>(V, GF)</span>
+                      <span className='allergies'>(V,GF)</span>
                     </span>
                     <span className="upgrade-price">40</span>
                   </div>

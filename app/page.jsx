@@ -2754,6 +2754,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Charcoal Grilled Chicken, Yuzu Sesame Ponzu, Daikon Oroshi</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           charcoal grilled chicken<br/>
@@ -2788,6 +2789,7 @@ produce.               </div>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           charcoal grilled<br/>
@@ -2822,6 +2824,7 @@ produce.               </div>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           charcoal grilled<br/>
@@ -2856,6 +2859,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Charcoal Grilled Duck Breast, Shiso Miso</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           charcoal grilled duck breast<br/>
@@ -2890,6 +2894,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Charcoal Grilled Tofu, Shiso Miso</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           charcoal grilled tofu<br/>
@@ -2924,6 +2929,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Yukari Salt, Shiso Miso</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           yukari salt<br/>
@@ -2986,6 +2992,7 @@ produce.               </div>
                     </span>
                     <span className="price">13</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3044,6 +3051,7 @@ produce.               </div>
                     </span>
                     <span className="price">19</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3075,6 +3083,7 @@ produce.               </div>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3104,6 +3113,7 @@ produce.               </div>
                     </span>
                     <span className="price">17</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3133,6 +3143,7 @@ produce.               </div>
                     </span>
                     <span className="price">16</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3162,6 +3173,7 @@ produce.               </div>
                     </span>
                     <span className="price">23</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3191,6 +3203,7 @@ produce.               </div>
                     </span>
                     <span className="price">29</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3220,6 +3233,7 @@ produce.               </div>
                     </span>
                     <span className="price">14</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3249,6 +3263,7 @@ produce.               </div>
                     </span>
                     <span className="price">13</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3278,6 +3293,7 @@ produce.               </div>
                     </span>
                     <span className="price">19</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3365,6 +3381,7 @@ produce.               </div>
                     </span>
                     <span className="price">19</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -3394,9 +3411,10 @@ produce.               </div>
                     </span>
                     <span className="price">MP</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
-                          MP:$28
+                          MP: $28
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -3424,6 +3442,7 @@ produce.               </div>
                     </span>
                     <span className="price">MP</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           MP: $35
@@ -3456,6 +3475,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Cucumber</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           6pcs<br/>
@@ -3489,6 +3509,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Pickled Daikon Radish</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           6pcs<br/>
@@ -3522,6 +3543,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Sour Plum, Shiso, Cucumber</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           6pcs<br/>
@@ -3557,6 +3579,7 @@ produce.               </div>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           6pcs<br/>
@@ -3590,6 +3613,7 @@ produce.               </div>
                   </div>
                   <div className="description1"></div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           6pcs<br/>
@@ -3624,6 +3648,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Tuna</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           6pcs<br/>
@@ -3657,6 +3682,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Napa Cabbage, Japanese Burdock</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           8pcs<br/>
@@ -3695,6 +3721,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Spicy Sesame Aioli, Asparagus, Chives</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           8pcs<br/>
@@ -3732,7 +3759,8 @@ produce.               </div>
                     <span className="price">25</span>
                   </div>
                   <div className="description1">Hamachi, Scallion</div>
-                  <div className="description2"></div>                          
+                  <div className="description2"></div>   
+                  <br/>                       
                   <hr/>
                   <br/>
 
@@ -3766,8 +3794,10 @@ produce.               </div>
                     </span>
                     <span className="price">26</span>
                   </div>
-                  <div className="description1">Salmon, Avocado</div>
-                  <div className="description2"></div>                          <hr/>
+                  <div className="description1"></div>
+                  <div className="description2"></div>                          
+                  <br/>
+                  <hr/>
                           <br/>
                           8pcs<br/>
                           <div style={{color:'red'}}>missing from food bible</div>
@@ -3800,6 +3830,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Avocado, Cucumber</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           8pcs<br/>
@@ -3829,13 +3860,14 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Lobster Tempura Roll</span>
+                      <span className="name">Lobster Tempura</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">55</span>
                   </div>
                   <div className="description1">Napa Cabbage, Lobster Butter Aioli</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           5pcs<br/>
@@ -3866,7 +3898,7 @@ produce.               </div>
               <div className="right-column">
                   <div className="name-price">
                     <span>
-                      <span className="name">Aman NY Roll</span>
+                      <span className="name">Aman New York</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="price">72</span>
@@ -3875,11 +3907,12 @@ produce.               </div>
                   <div className="description2"></div>
                   <div className="upgrade">
                     <span>
-                      <span className='upgrade-description'>with 10 grams of Ossetra Caviar</span>
+                      <span className='upgrade-description'>With 10 grams of Ossetra Caviar</span>
                       <span className='allergies'></span>
                     </span>
                     <span className="upgrade-price">132</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           5pcs<br/>
@@ -3917,6 +3950,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Seared Wagyu Beef, Garlic Chili, Sesame Oil</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           8pcs<br/>
@@ -3963,6 +3997,7 @@ produce.               </div>
                     </span>
                     <span className="upgrade-price">33</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           vegetable fried rice<br/>
@@ -3999,6 +4034,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Charcoal Grilled Eel</div>
                   <div className="description2"></div> 
+                  <br/>
                           <hr/>
                           <br/>
                           charcoal grilled eel<br/>
@@ -4055,6 +4091,7 @@ produce.               </div>
                     </span>
                     <span className="upgrade-price">42</span>
                   </div>
+                  <br/>
                           <hr/>
                           <br/>
                           hot soba noodles<br/>
@@ -4088,7 +4125,8 @@ produce.               </div>
                     <span className="price">84</span>
                   </div>
                   <div className="description1">Ontama, Mushrooms, Non-Soup Udon Noodles</div>
-                  <div className="description2"></div>                          
+                  <div className="description2"></div>  
+                  <br/>                        
                           <hr/>
                           <br/>
                           3oz A5 kobe striploin<br/>
@@ -4127,7 +4165,7 @@ produce.               </div>
                           </div>
                           <div className="description1">Ontama, Takana</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           3 ounces A5 Kobe Striploin<br/>
@@ -4314,7 +4352,7 @@ produce.               </div>
                           </div>
                           <div className="description1">Moromi Marinated Lamb, Wasabi Oil</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           charcoal grilled lamb chops<br/>
@@ -4354,7 +4392,7 @@ produce.               </div>
                           </div>
                           <div className="description1">Grilled Eggplant, Saikyo Miso</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           charcoal grilled eggplant<br/>
@@ -4407,7 +4445,7 @@ produce.               </div>
                             <span className="upgrade-price">42</span>
                           </div>
 
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           cold soba/buckwheat noodles<br/>
@@ -4444,7 +4482,7 @@ produce.               </div>
                           </div>
                           <div className="description1">Soft Shell Crab, Spicy Mayo</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           5pcs<br/>

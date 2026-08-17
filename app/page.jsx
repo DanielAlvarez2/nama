@@ -2246,6 +2246,7 @@ produce.               </div>
                   </div>
                   <div className="description1">A5 Miyazaki Wagyu, Grated Daikon Ponzu</div>
                   <div className="description2"></div>
+                  <br/>
                           <hr/>
                           <br/>
                           A5 Wagyu Tataki (5pcs)<br/>
@@ -2318,6 +2319,7 @@ produce.               </div>
                   </div>
                   <div className="description1">Duck Breast, Nanban Miso, Tokyo Negi</div>
                   <div className="description2"></div>
+                  <hr/>
                           <hr/>
                           <br/>
                           grilled duck breast(5pcs)<br/>
@@ -4193,7 +4195,7 @@ produce.               </div>
                           </div>
                           <div className="description1">Chilled Eggplant, Ginger</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           chilled eggplant<br/>

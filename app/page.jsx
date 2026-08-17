@@ -1251,7 +1251,7 @@ produce.               </div>
                       <span className="name">Santa Barbara Uni (Sea Urchin)</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">MP:28</span>
+                    <span className="price">MP</span>
                   </div>
                 </div>
 
@@ -1263,7 +1263,7 @@ produce.               </div>
                       <span className="name">Hokkaido Uni (Japanese Sea Urchin)</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">MP:35</span>
+                    <span className="price">MP</span>
                   </div>
                 </div>
 
@@ -3381,10 +3381,11 @@ produce.               </div>
                       <span className="name">Santa Barbara Uni (Sea Urchin)</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">MP:28</span>
+                    <span className="price">MP</span>
                   </div>
                           <hr/>
                           <br/>
+                          MP:$28
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -3410,10 +3411,11 @@ produce.               </div>
                       <span className="name">Hokkaido Uni (Japanese Sea Urchin)</span>
                       <span className="allergies"></span>
                     </span>
-                    <span className="price">MP:35</span>
+                    <span className="price">MP</span>
                   </div>
                           <hr/>
                           <br/>
+                          MP: $35
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}    

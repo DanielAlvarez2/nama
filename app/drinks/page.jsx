@@ -1267,7 +1267,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                  
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1278,7 +1278,7 @@ export default function DrinksMenu(){
                           </div>
                           <div className="description1">Sour Plum, Bonnie Melon, Apricot, Sparkling Wine</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -1763,7 +1763,7 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1772,9 +1772,9 @@ export default function DrinksMenu(){
                             </span>
                             <span className="dessert-price">29</span>
                           </div>
-                          <div className="description1">Hana Shochu, Four Roses Single Barrel </div>
-                          <div className="description2">Bourbon, Nikka Malt Whiskey, Banana, Soda</div>
-                          
+                          <div className="description1">Hana Shochu, Four Roses Single Barrel Bourbon, </div>
+                          <div className="description2">Nikka Malt Whiskey, Banana, Soda</div>
+                          <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -1795,7 +1795,7 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1806,7 +1806,7 @@ export default function DrinksMenu(){
                           </div>
                           <div className="description1">Vodka, Daiyame Shochu, Lemon, Lychee, Shiso</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -1866,7 +1866,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                  
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1875,9 +1875,9 @@ export default function DrinksMenu(){
                             </span>
                             <span className="dessert-price">32</span>
                           </div>
-                          <div className="description1">Ichiro Malt & Grain Whiskey, Port Askaig Peated </div>
-                          <div className="description2">Scotch, Lemon, Ginger, Pickled Honey</div>
-                          
+                          <div className="description1">Ichiro Malt & Grain Whiskey, Port Askaig Peated Scotch, </div>
+                          <div className="description2">Lemon, Ginger, Pickled Honey</div>
+                          <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -1900,7 +1900,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
              
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:Bourbon, 
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1911,7 +1911,7 @@ export default function DrinksMenu(){
                           </div>
                           <div className="description1">Mal Bien Mezcal, Red Yuzu Kosho, Lime, Shochu</div>
                           <div className="description2"></div>
-                          
+                          Bourbon, 
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -1934,7 +1934,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1943,9 +1943,9 @@ export default function DrinksMenu(){
                             </span>
                             <span className="dessert-price">32</span>
                           </div>
-                          <div className="description1">Rums of Mexico Ca<span className='typo'>ñ</span>a Crio<span className='typo'>l</span>la, El Dorado Enmore<span className='typo'>,</span> </div>
+                          <div className="description1">Rums of Mexico Caña Criolla, El Dorado Enmore, </div>
                           <div className="description2">Worthy Park, Lime, Coconut, Hojicha</div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           Nikka Sencha Gin<br/>
@@ -1970,7 +1970,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1979,9 +1979,9 @@ export default function DrinksMenu(){
                             </span>
                             <span className="dessert-price">28</span>
                           </div>
-                          <div className="description1">Nikka Coffey Gin, Lime, Midori, Leopold </div>
-                          <div className="description2">Sour Apple, Bordiga Centum Herbis</div>
-                          
+                          <div className="description1">Nikka Coffey Gin, Lime, Midori, Leopold Sour Apple, </div>
+                          <div className="description2">Bordiga Centum Herbis</div>
+                          <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -2004,7 +2004,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -2015,7 +2015,7 @@ export default function DrinksMenu(){
                           </div>
                           <div className="description1">Pinhook 9yr Bourbon, Dad's Hat Oloroso Cask, </div>
                           <div className="description2">Hyakunen No Kodoku Shochu, Bitters</div>
-                          
+                          <br/>
                           
                           <hr/>
                           <br/>
@@ -2050,9 +2050,9 @@ export default function DrinksMenu(){
                               <span className="name">Pepper Buck</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="dessert-price"></span>
+                            <span className="dessert-price">16</span>
                           </div>
-                          <div className="description1">Lime, Spiced Ginger, Jalape<span style={{color:'red'}}>ñ</span>o</div>
+                          <div className="description1">Ginger, Jalapeño, Lime</div>
                           <div className="description2"></div>
                           
                           <hr/>
@@ -2080,18 +2080,18 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
                               <span className="name">Phony Negroni</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="dessert-price"></span>
+                            <span className="dessert-price">16</span>
                           </div>
                           <div className="description1">Juniper, Orange, Gentian</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           Juniper<br/>

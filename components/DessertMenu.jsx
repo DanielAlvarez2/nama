@@ -412,6 +412,7 @@ export default function DessertMenu({desserts}){
                           <div className="description1" id='modal-dessert-description1'></div>
                           <div className="description2" id='modal-dessert-description2'></div>
                           <div id='modal-dessert-typos' className='typo'></div>
+                          <br/>
                           <hr/>
                           <br/>
                             <div id='modal-dessert-staff-info' style={{whiteSpace:'pre-line'}}></div>
@@ -444,7 +445,7 @@ export default function DessertMenu({desserts}){
               MENU DESCRIPTION:<br/><br/>
                 <div className='dessert-wine'>
                   <div className='dessert-wine-vintage'>2022</div>
-                  <div className='dessert-wine-name'>Chateau Suduiraut, <span className='typo'>SA</span></div>
+                  <div className='dessert-wine-name'>Chateau Suduiraut, FR</div>
                   <div>24</div>
                 </div>{/* .dessert-wine */}
                 <hr/>

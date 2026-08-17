@@ -1924,7 +1924,7 @@ produce.               </div>
             <div className='modal-text'>
 
             
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -1960,7 +1960,7 @@ produce.               </div>
             </div>
             <div className='modal-text'>
 
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -1994,7 +1994,7 @@ produce.               </div>
               <img src={`edamame.jpg?v={Date.now()}`} />
             </div>
               <div className='modal-text'>
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2027,7 +2027,7 @@ produce.               </div>
               <img src={`nama-tofu.jpg?v={Date.now()}`} />
             </div>
             <div className='modal-text'>
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2059,7 +2059,7 @@ produce.               </div>
               <img src={`shishitos.jpg?v={Date.now()}`} />
             </div>        
               <div className='modal-text'>
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2092,7 +2092,7 @@ produce.               </div>
           </div>
           <div className='modal-text'>
           
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2129,7 +2129,7 @@ produce.               </div>
           <div className='modal-text'>
           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2162,7 +2162,7 @@ produce.               </div>
           <div className='modal-text'>
           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2200,7 +2200,7 @@ produce.               </div>
           <div className='modal-text'>
           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2235,7 +2235,7 @@ produce.               </div>
           <div className='modal-text'>
                        
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2274,7 +2274,7 @@ produce.               </div>
           <div className='modal-text'>
           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2307,7 +2307,7 @@ produce.               </div>
           <div className='modal-text'>
           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2342,7 +2342,7 @@ produce.               </div>
           <div className='modal-text'>
           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2396,7 +2396,7 @@ produce.               </div>
           <div className='modal-text'>
           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2449,7 +2449,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2483,7 +2483,7 @@ produce.               </div>
           <div className='modal-text'>
                          
             
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2519,7 +2519,7 @@ produce.               </div>
           <div className='modal-text'>
                               
             
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2553,7 +2553,7 @@ produce.               </div>
           <div className='modal-text'>
                  
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2591,7 +2591,7 @@ produce.               </div>
           <div className='modal-text'>
                          
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2625,7 +2625,7 @@ produce.               </div>
           <div className='modal-text'>
                        
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2660,7 +2660,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2696,7 +2696,7 @@ produce.               </div>
           <div className='modal-text'>
                               
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2732,7 +2732,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2766,7 +2766,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2800,7 +2800,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2834,7 +2834,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2868,7 +2868,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2902,7 +2902,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2966,7 +2966,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -2995,7 +2995,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3024,7 +3024,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3053,7 +3053,7 @@ produce.               </div>
           <div className='modal-text'>
                        
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3084,7 +3084,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3113,7 +3113,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3142,7 +3142,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3171,7 +3171,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3200,7 +3200,7 @@ produce.               </div>
           <div className='modal-text'>
                         
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3229,7 +3229,7 @@ produce.               </div>
           <div className='modal-text'>
                       
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3258,7 +3258,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3287,7 +3287,7 @@ produce.               </div>
           <div className='modal-text'>
                         
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3316,7 +3316,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3345,7 +3345,7 @@ produce.               </div>
           <div className='modal-text'>
                         
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3374,7 +3374,7 @@ produce.               </div>
           <div className='modal-text'>
                              
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3404,7 +3404,7 @@ produce.               </div>
           <div className='modal-text'>
                          
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3434,7 +3434,7 @@ produce.               </div>
           <div className='modal-text'>
                          
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3467,7 +3467,7 @@ produce.               </div>
           <div className='modal-text'>
                       
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3500,7 +3500,7 @@ produce.               </div>
           <div className='modal-text'>
                          
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3535,7 +3535,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3568,7 +3568,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3602,7 +3602,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3635,7 +3635,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3673,7 +3673,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3711,7 +3711,7 @@ produce.               </div>
           <div className='modal-text'>
                                
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3746,7 +3746,7 @@ produce.               </div>
           <div className='modal-text'>
                             
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3778,7 +3778,7 @@ produce.               </div>
           <div className='modal-text'>
                        
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3814,7 +3814,7 @@ produce.               </div>
           <div className='modal-text'>
                           
             
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3851,7 +3851,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3895,7 +3895,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3934,7 +3934,7 @@ produce.               </div>
           <div className='modal-text'>
                         
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -3977,7 +3977,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -4012,7 +4012,7 @@ produce.               </div>
           <div className='modal-text'>
                             
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -4067,7 +4067,7 @@ produce.               </div>
           <div className='modal-text'>
                       
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                   <div className="name-price">
                     <span>
@@ -4105,7 +4105,7 @@ produce.               </div>
           <div className='modal-text'>
                         
             
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -4144,7 +4144,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -4182,7 +4182,7 @@ produce.               </div>
           <div className='modal-text'>
                          
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -4220,7 +4220,7 @@ produce.               </div>
           <div className='modal-text'>
                            
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -4256,7 +4256,7 @@ produce.               </div>
           <div className='modal-text'>
                           
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -4292,7 +4292,7 @@ produce.               </div>
           <div className='modal-text'>
                          
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -4332,7 +4332,7 @@ produce.               </div>
           <div className='modal-text'>
                          
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -4370,7 +4370,7 @@ produce.               </div>
           <div className='modal-text'>
                         
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -4422,7 +4422,7 @@ produce.               </div>
           <div className='modal-text'>
                          
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>

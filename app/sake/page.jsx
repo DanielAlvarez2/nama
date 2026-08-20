@@ -209,7 +209,7 @@ export default function SakePage(){
                                 <span className='sake-description'>Dreamy Clouds Tokubetsu Junmai Nigori, Shimane Prefecture</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3102</span>
+                                <span className='bin-mobile'>3103</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>165</span>
                                 <span className='sake-abv'>15%abv</span>

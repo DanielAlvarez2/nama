@@ -59,7 +59,7 @@ export default function DessertMenu({desserts}){
             >
               <div className="left-column">
                 <div className='dessert-menu-h1'>Desserts</div>
-                <div className='kanji typo'>カクテル</div>
+                <div className='kanji'>デザート</div>
               
               </div>
 
@@ -246,7 +246,7 @@ export default function DessertMenu({desserts}){
             >
               <div className="left-column">
                 <div className='dessert-menu-h1'>Coffee & Tea</div>
-                <div className='kanji typo'>カクテテル</div>
+                <div className='kanji'>コーヒーと紅茶</div>
                 
                 
               </div>

@@ -1945,10 +1945,6 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
-                          Nikka Sencha Gin<br/>
-                          Centum Herbus<br/>
-                          Midori: Melon Liqueur<br/>
-                          Lemon<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 

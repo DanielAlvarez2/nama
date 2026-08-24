@@ -1,10 +1,9 @@
 import mongoose, {Schema} from 'mongoose'
 
 const DessertWineSchema = new Schema({
+    vintage: String,
     name1: String,
     name2: String,
-    description1: String,
-    description2: String,
     typos: String,
     price: String,
     staffInfo: String,

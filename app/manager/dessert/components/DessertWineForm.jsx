@@ -115,23 +115,6 @@ function toggleCheckbox(){
                 </label>
                 <br/><br/>
 
-                <label>
-                    Description Line 1:<br/>
-                    <input  type='text' 
-                            name='description1'
-                            id='description1'
-                            style={{width:'100%'}} />
-                </label>
-                <br/><br/>
-
-                <label>
-                    Description Line 2:<br/>
-                    <input  type='text' 
-                            name='description2'
-                            id='description2'
-                            style={{width:'100%'}} />
-                </label>
-                <br/><br/>
 
                 <label>
                     Typos:<br/>

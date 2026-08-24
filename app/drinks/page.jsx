@@ -466,7 +466,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('rydeen-ipa')}
                 >
                   <div className="name-price">
                     <span>
@@ -1256,6 +1256,42 @@ export default function DrinksMenu(){
 
 
 
+    <div id="rydeen-ipa" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`rydeen-ipa.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Hakkaissan Rydeen IPA</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="dessert-price">12</span>
+                          </div>
+                          <div className="description1">Niigata, Japan</div>
+                          <div className="description2"></div>
+                          <br/>
+                          <hr/>
+                          <br/>
+                          Sarukurayama Brewery<br/>
+                          Hakkaisan Rydeen IPA<br/>
+                          Niigata, Japan
+                          6%abv<br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #rydeen-ipa */}
+
     <div id="sapporo" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
@@ -1288,7 +1324,7 @@ export default function DrinksMenu(){
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
-    </div>{/* #ume-spritz */}
+    </div>{/* #sapporo */}
 
     <div id="ume-spritz" className='modal'>
       <div>

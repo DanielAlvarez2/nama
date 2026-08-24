@@ -807,7 +807,7 @@ export default function SakePage(){
                                 <span className='bin-mobile'>3405</span>
                                 <span className='sake-size'>500 ml</span>
                                 <span className='sake-price'>200</span>
-                                <span className='sake-abv'>14%abv</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
@@ -817,43 +817,43 @@ export default function SakePage(){
                                                                     '3425',
                                                                     '500 ml',
                                                                     '195',
-                                                                    'Kubota Seppou Yamahai Seasonal Limited, Niigata',
+                                                                    'Kubota Seppou Yamahai Seasonal Limited <span class="typo">Junmai Daiginjo</span>, Niigata',
                                                                     'kubota-seppou.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>3425</span>
                                 <span className='sake-description'>
-                                    Kubota Seppou Yamahai Seasonal Limited, Niigata
+                                    Kubota Seppou Yamahai Seasonal Limited <span className='typo'>Junmai Daiginjo</span>, Niigata
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
                                 <span className='bin-mobile'>*3425</span>
                                 <span className='sake-size'>500 ml</span>
                                 <span className='sake-price'>195</span>
-                                <span className='sake-abv'>??%abv</span>
+                                <span className='sake-abv'>16%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 
                         <div className='sake' onClick={()=>openModal(
                                                                     'JUNMAI DAIGINJO',
                                                                     'Asahi Shuzo',
-                                                                    '*3423',
+                                                                    '3423',
                                                                     '720 ml',
                                                                     '595',
-                                                                    'Kubota Manjyo Jishakobo Jikomi Original Yeast YX Edition, Niigata',
-                                                                    'no-image.jpg'
+                                                                    'Kubota Manjy<span class="typo">u</span> Jishakobo Jikomi Original Yeast YX Edition, Niigata',
+                                                                    'kubota-manjyu.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
-                                <span className='bin-left'>*3423</span>
+                                <span className='bin-left'>3423</span>
                                 <span className='sake-description'>
-                                    Kubota Manjyo Jishakobo Jikomi Original Yeast YX Edition, Niigata
+                                    Kubota Manjy<span className='typo'>u</span> Jishakobo Jikomi Original Yeast YX Edition, Niigata
                                 </span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>*3423</span>
+                                <span className='bin-mobile'>3423</span>
                                 <span className='sake-size'>720 ml</span>
                                 <span className='sake-price'>595</span>
-                                <span className='sake-abv'>??%abv</span>
+                                <span className='sake-abv'>15%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 

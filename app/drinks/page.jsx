@@ -1267,7 +1267,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                  
-              MENU DESCRIPTION:<br/>
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1727,7 +1727,7 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1763,7 +1763,7 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               
-              MENU DESCRIPTION:<br/>
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1795,7 +1795,7 @@ export default function DrinksMenu(){
           <div className='modal-text'>
                  
               
-              MENU DESCRIPTION:<br/>
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1829,7 +1829,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
               
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1863,7 +1863,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                  
-              MENU DESCRIPTION:<br/>
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1897,7 +1897,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
              
-              MENU DESCRIPTION:Bourbon, 
+              MENU DESCRIPTION:<br/><br/> 
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1931,7 +1931,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:<br/>
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -1967,7 +1967,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:<br/>
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -2001,7 +2001,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:<br/>
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -2040,7 +2040,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -2077,7 +2077,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:<br/>
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -2114,7 +2114,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>
@@ -2148,7 +2148,7 @@ export default function DrinksMenu(){
               
           <div className='modal-text'>
                   
-              MENU DESCRIPTION:
+              MENU DESCRIPTION:<br/><br/>
               <div className="right-column">
                           <div className="name-price">
                             <span>

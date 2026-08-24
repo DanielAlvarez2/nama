@@ -1485,10 +1485,10 @@ export default function DrinksMenu(){
                   <div className="description1"></div>
                   <div className="description2"></div>
                 </div>
-
                 <br/>
                 <hr/>
                 <br/>
+                15.5%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1519,9 +1519,8 @@ export default function DrinksMenu(){
                   <div className="description1"></div>
                   <div className="description2"></div>
                 </div>
-
-
                 <br/><hr/><br/>
+                16%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1588,6 +1587,7 @@ export default function DrinksMenu(){
 
 
                 <br/><hr/><br/>
+                16%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>

@@ -814,14 +814,14 @@ export default function SakePage(){
                         <div className='sake' onClick={()=>openModal(
                                                                     'JUNMAI DAIGINJO',
                                                                     'Asahi Shuzo',
-                                                                    '*3425',
+                                                                    '3425',
                                                                     '500 ml',
                                                                     '195',
                                                                     'Kubota Seppou Yamahai Seasonal Limited, Niigata',
-                                                                    'no-image.jpg'
+                                                                    'kubota-seppou.jpg'
                                                                     )}>
                             <div className='sake-flexbox-left'>
-                                <span className='bin-left'>*3425</span>
+                                <span className='bin-left'>3425</span>
                                 <span className='sake-description'>
                                     Kubota Seppou Yamahai Seasonal Limited, Niigata
                                 </span>

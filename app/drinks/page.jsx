@@ -81,7 +81,7 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">*Sakura Martini</span>
+                      <span className="name">Sakura Martini</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="dessert-price">30</span>
@@ -306,11 +306,11 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('straw-hat')}
+                      onClick={()=>showModal('genmai-horchata')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">*Genmai Horchata</span>
+                      <span className="name">Genmai Horchata</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="dessert-price">16</span>
@@ -339,11 +339,11 @@ export default function DrinksMenu(){
 
               
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('souchong-sour')}
+                      onClick={()=>showModal('soba-arnold-palmer')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">*Soba Arnold Palmer</span>
+                      <span className="name">Soba Arnold Palmer</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="dessert-price">16</span>
@@ -2103,13 +2103,13 @@ export default function DrinksMenu(){
 
 
 
-    <div id="straw-hat" className='modal'>
+    <div id="genmai-horchata" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />   
           <div className='modal-content'>
           
           <div>
-            <img src={`straw-hat.jpg?v=${Date.now()}`} />
+            <img src={`genmai-horchata.jpg?v=${Date.now()}`} />
           </div>       
               
           <div className='modal-text'>
@@ -2118,19 +2118,16 @@ export default function DrinksMenu(){
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Straw Hat</span>
+                              <span className="name">Genmai Horchata</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="dessert-price"></span>
+                            <span className="dessert-price">16</span>
                           </div>
-                          <div className="description1">Houjicha, Thai Coconut, Lime</div>
+                          <div className="description1">Genmaimatcha, Rice, Cinnamon, Kokuto</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
-                          Houjicha GREEN TEA<br/>
-                          Thai Coconut<br/>
-                          Lime<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -2140,13 +2137,13 @@ export default function DrinksMenu(){
 
 
 
-    <div id="souchong-sour" className='modal'>
+    <div id="soba-arnold-palmer" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />      
           <div className='modal-content'>
           
           <div>
-            <img src={`souchong-sour.jpg?v=${Date.now()}`} />
+            <img src={`soba-arnold-palmer.jpg?v=${Date.now()}`} />
           </div>    
               
           <div className='modal-text'>
@@ -2155,19 +2152,16 @@ export default function DrinksMenu(){
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">Souchong Sour</span>
+                              <span className="name">Soba Arnold Palmer</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="dessert-price"></span>
+                            <span className="dessert-price">16</span>
                           </div>
-                          <div className="description1">Passionfruit, Falernum, Lapsang Souchong Kombucha</div>
+                          <div className="description1">Yuzu, Lemon, Soba</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
-                          Passionfruit<br/>
-                          Falernum<br/>
-                          Lapsang Souchong Kombucha<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 

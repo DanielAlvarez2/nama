@@ -412,7 +412,7 @@ export default function DrinksMenu(){
               
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('sapporo')}
                 >
                   <div className="name-price">
                     <span>
@@ -1255,6 +1255,38 @@ export default function DrinksMenu(){
 
 
 
+
+    <div id="sapporo" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`sapporo.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Sapporo</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="dessert-price">12</span>
+                          </div>
+                          <div className="description1">Hokkaido, Japan</div>
+                          <div className="description2"></div>
+                          <br/>
+                          <hr/>
+                          <br/>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #ume-spritz */}
 
     <div id="ume-spritz" className='modal'>
       <div>

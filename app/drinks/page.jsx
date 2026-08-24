@@ -1281,6 +1281,8 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          Pale Lager / Pilsner<br/>
+                          4.9%abv<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  

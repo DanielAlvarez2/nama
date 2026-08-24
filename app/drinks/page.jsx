@@ -1307,7 +1307,9 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Taittinger, Comtes de Champagne<br/>Blanc de Blancs, Brut</div>
                   <div>120</div>
                 </div>{/* .dessert-wine */}
+                <br/>
                 <hr/>
+                <br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1332,7 +1334,9 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Renaissance, Sancerre<br/>Loire Valley, FR</div>
                   <div>27</div>
                 </div>{/* .dessert-wine */}
+                <br/>
                 <hr/>
+                <br/>
                 Grape Varietal: Sauvignon Blanc
                 13%abv
             </div>{/* .modal-text */}  
@@ -1359,7 +1363,9 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Kollwentz, Chardonnay Leithakalk<br/>Burgenland, AUT</div>
                   <div>29</div>
                 </div>{/* .dessert-wine */}
+                <br/>
                 <hr/>
+                <br/>
                 Grape Varietal: Chardonnay<br/>
                 13.5%abv
             </div>{/* .modal-text */}  
@@ -1386,7 +1392,9 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Bodegas Alto Moncayo, Garnacha<br/>Aragon, ESP</div>
                   <div>28</div>
                 </div>{/* .dessert-wine */}
+                <br/>
                 <hr/>
+                <br/>
                 Grape Varietal: Garnacha<br/>
                 16%abv
             </div>{/* .modal-text */}  
@@ -1413,7 +1421,9 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Grgich Hills, Cabernet Sauvignon<br/>Napa Valley, CA</div>
                   <div>42</div>
                 </div>{/* .dessert-wine */}
+                <br/>
                 <hr/>
+                <br/>
                 Grape Varietal: Cabernet Sauvignon<br/>
                 14.1%abv
             </div>{/* .modal-text */}  
@@ -1440,7 +1450,9 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Peay Vineyards<br/>Sonoma Coast, CA</div>
                   <div>32</div>
                 </div>{/* .dessert-wine */}
+                <br/>
                 <hr/>
+                <br/>
                 Grape Varietal: Pinot Noir<br/>
                 13%abv
             </div>{/* .modal-text */}  
@@ -1474,8 +1486,9 @@ export default function DrinksMenu(){
                   <div className="description2"></div>
                 </div>
 
-
+                <br/>
                 <hr/>
+                <br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1508,7 +1521,7 @@ export default function DrinksMenu(){
                 </div>
 
 
-                <hr/>
+                <br/><hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1541,7 +1554,7 @@ export default function DrinksMenu(){
                 </div>
 
 
-                <hr/>
+                <br/><hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1574,7 +1587,7 @@ export default function DrinksMenu(){
                 </div>
 
 
-                <hr/>
+                <br/><hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1607,7 +1620,7 @@ export default function DrinksMenu(){
                 </div>
 
 
-                <hr/>
+                <br/><hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1632,7 +1645,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Bernard Gripa, Saint-Péray Les Pins<br/>Rhône Valley, FR</div>
                   <div>28</div>
                 </div>{/* .dessert-wine */}
-                <hr/>
+                <br/><hr/><br/>
                 Grape Varietals: Marsanne / Roussanne<br/>
                 13%abv
             </div>{/* .modal-text */}  
@@ -1659,7 +1672,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Laherte Frères, Rosé de Meunier, Extra Brut</div>
                   <div>47</div>
                 </div>{/* .dessert-wine */}
-                <hr/>
+                <br/><hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1684,7 +1697,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Bollinger, Special Cuvée, Brut</div>
                   <div>39</div>
                 </div>{/* .dessert-wine */}
-                <hr/>
+                <br/><hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1709,7 +1722,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Aman, Cuvée Spéciale, Brut</div>
                   <div>75</div>
                 </div>{/* .dessert-wine */}
-                <hr/>
+                <br/><hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1738,9 +1751,7 @@ export default function DrinksMenu(){
                           </div>
                           <div className="description1">Mal Bien Mezcal, Daiyame Shochu, Yuzu Kosho, Lime</div>
                           <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
+                          <br/><hr/><br/>
                           Mal Bien Mezcal<br/>
                           Daiyame Shochu<br/>
                           Yuzu Kosho<br/>
@@ -1840,7 +1851,7 @@ export default function DrinksMenu(){
                           </div>
                           <div className="description1">Hakurakusei Junmai Ginjo, Ki No Bi Gin, Sakura</div>
                           <div className="description2"></div>
-                          
+                          <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -1908,7 +1919,7 @@ export default function DrinksMenu(){
                           </div>
                           <div className="description1">Mal Bien Mezcal, Red Yuzu Kosho, Lime, Shochu</div>
                           <div className="description2"></div>
-                          Bourbon, 
+                          <br/>
                           <hr/>
                           <br/>
                           <br/><br/>
@@ -2047,12 +2058,11 @@ export default function DrinksMenu(){
                           </div>
                           <div className="description1">Ginger, Jalapeño, Lime</div>
                           <div className="description2"></div>
-                          
-                          <hr/>
-                          <br/>
-                          Lime<br/>
-                          Spiced Ginger<br/>
-                          Jalapeño<br/>
+                          <br/><hr/><br/>
+                          ginger beer 
+                          spiced ginger<br/>
+                          jalapeño<br/>
+                          lime<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -2087,9 +2097,9 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
-                          Juniper<br/>
-                          Orange<br/>
-                          Gentian<br/>
+                          juniper<br/>
+                          orange<br/>
+                          gentian: bitter plant root<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -2122,8 +2132,14 @@ export default function DrinksMenu(){
                           <div className="description1">Genmaimatcha, Rice, Cinnamon, Kokuto</div>
                           <div className="description2"></div>
                           
+                          <br/>
                           <hr/>
                           <br/>
+
+                          genmaimatcha green tea<br/>
+                          rice<br/>
+                          cinnamon<br/>
+                          kokuto: cane sugar<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -2156,8 +2172,10 @@ export default function DrinksMenu(){
                           <div className="description1">Yuzu, Lemon, Soba</div>
                           <div className="description2"></div>
                           
+                          <br/>
                           <hr/>
                           <br/>
+
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 

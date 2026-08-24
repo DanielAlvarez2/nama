@@ -77,7 +77,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('foxs-wedding')}
+                      onClick={()=>showModal('sakura-martini')}
                 >
                   <div className="name-price">
                     <span>
@@ -1818,13 +1818,13 @@ export default function DrinksMenu(){
 
 
 
-    <div id="foxs-wedding" className='modal'>
+    <div id="sakura-martini" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
           <div className='modal-content'>
           
           <div>
-            <img src={`foxs-wedding.jpg?v=${Date.now()}`} />
+            <img src={`sakura-martini.jpg?v=${Date.now()}`} />
           </div>      
               
           <div className='modal-text'>
@@ -1833,25 +1833,22 @@ export default function DrinksMenu(){
               <div className="right-column">
                           <div className="name-price">
                             <span>
-                              <span className="name">A Fox's Wedding</span>
+                              <span className="name">Sakura Martini</span>
                               <span className="allergies"></span>
                             </span>
-                            <span className="dessert-price">28</span>
+                            <span className="dessert-price">30</span>
                           </div>
-                          <div className="description1">Osuzuyama Gin, Summer Snow Nigori, Cinnamon</div>
+                          <div className="description1">Hakurakusei Junmai Ginjo, Ki No Bi Gin, Sakura</div>
                           <div className="description2"></div>
                           
                           <hr/>
                           <br/>
-                          Osuzuyama Gin<br/>
-                          Summer Snow Nigori<br/>
-                          Cinnamon<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}     
           </div>{/* .modal-content */}         
       </div>
-    </div>{/* #foxs-wedding */}
+    </div>{/* #sakura-martini */}
 
 
 

@@ -9,6 +9,7 @@ import {revalidatePath} from 'next/cache'
 
 import {cloudinary} from '@/libs/cloudinary.js'
 
+
 export async function addDessert(formData){
     try{
         let cloudinary_public_id = ''
@@ -38,8 +39,7 @@ export async function addDessert(formData){
     }catch(err){
         console.log(err)
     }
-} 
-// addDessert()
+} // addDessert()
 
 export async function editDessert(formData){
     try{
@@ -119,10 +119,9 @@ export async function addDessertWine(formData){
         await DessertWine.create({
             name1: formData.get('name1').trim(),
             name2: formData.get('name2').trim(),
-            description1: formData.get('description1').trim(),
-            description2: formData.get('description2').trim(),
             typos: formData.get('typos').trim(),
             price: formData.get('price').trim(),
+            vintage: formData.get('vintage').trim(),
             staffInfo: formData.get('staff-info').trim(),
             sequence: highestSequenceDessertWine[0] ? highestSequenceDessertWine[0].sequence + 1 : 1,
             cloudinary_public_id,
@@ -133,8 +132,7 @@ export async function addDessertWine(formData){
     }catch(err){
         console.log(err)
     }
-} 
-// addDessertWine()
+} // addDessertWine()
 
 export async function editDessertWine(formData){
     try{

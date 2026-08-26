@@ -1,9 +1,9 @@
 import DessertNavbar from './DessertNavbar.jsx'
-export default function DessertNavbarTop(){
+export default function DessertNavbarTop(props){
     return(
         <>
             <br/>
-            <DessertNavbar />
+            <DessertNavbar dessertPage={props.dessertPage} setDessertPage={props.setDessertPage} />
         </>
     )
 }

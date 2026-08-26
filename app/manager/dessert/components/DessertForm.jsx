@@ -31,6 +31,7 @@ export default function DessertForm({addDessert,editDessert}){
             alert('Name and Price are required')
             setTimeout(()=>{
                 document.querySelector('#name-dessert').value = formData.get('name')
+                document.querySelector('#typos').value = formData.get('typos')
                 document.querySelector('#allergies-dessert').value = formData.get('allergies')
                 document.querySelector('#description1-dessert').value = formData.get('description1')
                 document.querySelector('#description2-dessert').value = formData.get('description2')
@@ -99,6 +100,7 @@ function toggleCheckbox(){
                 <label>
                     Name: <span className="required">*REQUIRED</span><br/>
                     <input  type='text' 
+                            autoComplete="off"
                             required
                             name='name'
                             id='name-dessert'
@@ -110,6 +112,7 @@ function toggleCheckbox(){
                     Allergies:<br/>
                     <input  type='text' 
                             name='allergies'
+                            autoComplete="off"
                             id='allergies-dessert'
                             style={{width:'35%'}} />
                 </label>
@@ -119,6 +122,7 @@ function toggleCheckbox(){
                     Description Line 1:<br/>
                     <input  type='text' 
                             name='description1'
+                            autoComplete="off"
                             id='description1-dessert'
                             style={{width:'100%'}} />
                 </label>
@@ -128,6 +132,7 @@ function toggleCheckbox(){
                     Description Line 2:<br/>
                     <input  type='text' 
                             name='description2'
+                            autoComplete="off"
                             id='description2-dessert'
                             style={{width:'100%'}} />
                 </label>
@@ -138,6 +143,7 @@ function toggleCheckbox(){
                     <input  type='text'
                             name='typos'
                             id='typos'
+                            autoComplete="off"
                             style={{width:'100%', color:'red'}}
                     />
                 </label>
@@ -148,6 +154,7 @@ function toggleCheckbox(){
                     <input  type='text' 
                             name='price'
                             required
+                            autoComplete="off"
                             id='price-dessert'
                             style={{width:'35%'}} />
                 </label>
@@ -220,7 +227,7 @@ function toggleCheckbox(){
                     }
                 <br/><br/>
                 <div style={{display:'flex'}}>
-                    <button id='submit-button-dessert-form' type='submit'>+ New Dessert</button>
+                    <button id='submit-button-dessert-form' type='submit'>+ Dessert</button>
                     <button type='button'
                             onClick={resetForm} 
                             style={{background:'red'}}>Cancel</button>

@@ -1,6 +1,6 @@
 'use client'
 
-import { addDessert } from "@/app/actions"
+import { addDessertWine } from "@/app/actions"
 import { useActionState } from "react"
 import { useState } from "react"
 import { TiDeleteOutline } from "react-icons/ti";
@@ -32,8 +32,8 @@ export default function DessertWineForm({addDessertWine,editDessertWine}){
             setTimeout(()=>{
                 document.querySelector('#name1').value = formData.get('name1')
                 document.querySelector('#name2').value = formData.get('name1')
-                document.querySelector('#description1').value = formData.get('description1')
-                document.querySelector('#description2').value = formData.get('description2')
+                document.querySelector('#typos').value = formData.get('typos')
+                document.querySelector('#vintage').value = formData.get('vintage')
                 document.querySelector('#price').value = formData.get('price')
                 document.querySelector('#staff-info').value = formData.get('staff-info')
             },10)
@@ -43,7 +43,7 @@ export default function DessertWineForm({addDessertWine,editDessertWine}){
             await editDessert(formData)
             setEditMode(false)
         }else{
-            await addDessert(formData)
+            await addDessertWine(formData)
         }
         setTimeout(()=>{
             document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
@@ -56,14 +56,12 @@ export default function DessertWineForm({addDessertWine,editDessertWine}){
         document.querySelector('#id').value = ''
         document.querySelector('#name1').value = ''
         document.querySelector('#name2').value = ''
-        document.querySelector('#description1').value = ''
-        document.querySelector('#description2').value = ''
         document.querySelector('#price').value = ''
         document.querySelector('#staff-info').value = ''
         document.querySelector('#current-image-url').value = ''
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
-        document.querySelector('#form-dessert h1').textContent = 'ADD NEW DESSERT WINE'
+        document.querySelector('#form-dessert-wine h1').textContent = 'ADD NEW DESSERT WINE'
         document.querySelector('#form-dessert-wine').style.background = 'lightgreen'
         document.querySelector('#submit-button-dessert-wine-form').innerHTML = `+ New Dessert Wine`
         setEditMode(false)
@@ -99,8 +97,9 @@ function toggleCheckbox(){
                     Name (line 1): <span className="required">*REQUIRED</span><br/>
                     <input  type='text' 
                             required
+                            autoComplete="off"
                             name='name1'
-                            id='name2'
+                            id='name1'
                             style={{width:'100%'}} />
                 </label>
                 <br/><br/>
@@ -108,8 +107,8 @@ function toggleCheckbox(){
                 <label>
                     Name (line 2):<br/>
                     <input  type='text' 
-                            required
                             name='name2'
+                            autoComplete="off"
                             id='name2'
                             style={{width:'100%'}} />
                 </label>
@@ -120,8 +119,20 @@ function toggleCheckbox(){
                     Typos:<br/>
                     <input  type='text'
                             name='typos'
+                            autoComplete="off"
                             id='typos'
                             style={{width:'100%', color:'red'}}
+                    />
+                </label>
+                <br/><br/>
+
+                <label>
+                    Vintage:<br/>
+                    <input  type='text'
+                            name='vintage'
+                            id='vintage'
+                            autoComplete="off"
+                            style={{width:'35%'}}
                     />
                 </label>
                 <br/><br/>
@@ -131,6 +142,7 @@ function toggleCheckbox(){
                     <input  type='text' 
                             name='price'
                             required
+                            autoComplete="off"
                             id='price'
                             style={{width:'35%'}} />
                 </label>
@@ -176,8 +188,8 @@ function toggleCheckbox(){
                 <label>
                     <span id='image-text' style={{fontSize:'inherit'}}></span>Image File: (optional)<br/>
                     <input  type='file' 
-                            name='image-file'
-                            id='image-file'
+                            name='image-file-dessert-wine'
+                            id='image-file-dessert-wine'
                             onChange={handleFileInputChange}
                     />
                 </label>
@@ -202,7 +214,7 @@ function toggleCheckbox(){
                     }
                 <br/><br/>
                 <div style={{display:'flex'}}>
-                    <button id='submit-button-dessert-wine-form' type='submit'>+ New Dessert</button>
+                    <button id='submit-button-dessert-wine-form' type='submit'>+ Dessert Wine</button>
                     <button type='button'
                             onClick={resetForm} 
                             style={{background:'red'}}>Cancel</button>

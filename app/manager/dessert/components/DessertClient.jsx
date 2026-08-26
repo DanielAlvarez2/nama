@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import DessertForm from './DessertForm.jsx';
 import DessertItem from './DessertItem.jsx';
+import DessertWineItem from './DessertWineItem.jsx';
 import DessertNavbar from './DessertNavbar.jsx';
 import DessertNavbarTop from './DessertNavbarTop.jsx';
 import DessertNavbarBottom from './DessertNavbarBottom.jsx';
@@ -22,7 +23,22 @@ export default function DessertClient(props){
 
               <NavbarMenuManager page='dessert' />
               <DessertNavbarTop dessertPage={dessertPage} setDessertPage={setDessertPage} />
-
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
               {
                 dessertPage == 'Desserts' &&
               <div id='dessert-page-desserts'>
@@ -72,7 +88,7 @@ export default function DessertClient(props){
                 <br/>
 
                 <DessertForm  addDessert={addDessert}
-                                editDessert={editDessert}
+                              editDessert={editDessert}
                 />
 
               {/* #dessert-page-desserts */}
@@ -109,21 +125,20 @@ export default function DessertClient(props){
 
                         <div className="right-column">
                         
-                          {props.desserts.map(data=>{
+                          {props.dessertWines.map(data=>{
                             return(
                               <div key={data._id}>
-                                <DessertItem  id={data._id.toString()}
-                                              name={data.name} 
-                                              allergies={data.allergies}
-                                              description1={data.description1}
-                                              description2={data.description2}
-                                              typos={data.typos}
-                                              price={data.price}
-                                              staffInfo={data.staffInfo}
-                                              sequence={data.sequence}
-                                              maxSequence={props.maxSequence}
-                                              cloudinary_secure_url={data.cloudinary_secure_url}
-                                              cloudinary_public_id={data.cloudinary_public_id}
+                                <DessertWineItem  id={data._id.toString()}
+                                                  vintage={data.vintage} 
+                                                  name1={data.name1} 
+                                                  name2={data.name2} 
+                                                  typos={data.typos}
+                                                  price={data.price}
+                                                  staffInfo={data.staffInfo}
+                                                  sequence={data.sequence}
+                                                  maxSequenceDessertWines={props.maxSequenceDessertWines}
+                                                  cloudinary_secure_url={data.cloudinary_secure_url}
+                                                  cloudinary_public_id={data.cloudinary_public_id}
                                 />
                                 
                               </div>
@@ -148,7 +163,7 @@ export default function DessertClient(props){
               </div>
               }
 
-              <DessertNavbarBottom />
+              {/* <DessertNavbarBottom dessertPage={dessertPage} setDessertPage={setDessertPage} /> */}
               <NavbarFooterMenuManager page='dessert' />
 
             </div>

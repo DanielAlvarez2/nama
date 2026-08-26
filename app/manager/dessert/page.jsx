@@ -9,10 +9,14 @@ export const dynamic = 'force-dynamic'
 export default async function ManagerDessertPage(){
     
       await connectMongoDB()
-      const desserts = JSON.parse(JSON.stringify(await Dessert.find().lean().sort({sequence:1})))
+      const desserts = JSON.parse(JSON.stringify(await Dessert.find().sort({sequence:1})))
+      const dessertWines = JSON.parse(JSON.stringify(await DessertWine.find().sort({sequence:1})))
       const dessertsArray = await Dessert.find().sort({sequence:-1})
+      const dessertWinesArray = await DessertWine.find().sort({sequence:-1})
+      const maxSequenceDessertWines = dessertWinesArray[0].sequence
       const maxSequence = dessertsArray[0].sequence
-      console.log(maxSequence)
+      
+      
 
       // const [editMode, setEditMode] = useState(false)
 
@@ -25,7 +29,9 @@ export default async function ManagerDessertPage(){
 
     return(
             <DessertClient  desserts={desserts} 
+                            dessertWines={dessertWines} 
                             maxSequence={maxSequence} 
+                            maxSequenceDessertWines={maxSequenceDessertWines} 
                             />
     )
 }

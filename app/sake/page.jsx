@@ -807,7 +807,7 @@ export default function SakePage(){
                                 <span className='bin-mobile'>3405</span>
                                 <span className='sake-size'>500 ml</span>
                                 <span className='sake-price'>200</span>
-                                <span className='sake-abv'>16%abv</span>
+                                <span className='sake-abv'>14%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
 

@@ -429,11 +429,11 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('koshihikari')}
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">Koshihikari Rice Ale</span>
+                      <span className="name">Koshihikari Rice <span className='typo'>Ale</span></span>
                       <span className="allergies"></span>
                     </span>
                     <span className="dessert-price">12</span>
@@ -448,7 +448,7 @@ export default function DrinksMenu(){
 
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('nest')}
                 >
                   <div className="name-price">
                     <span>
@@ -480,7 +480,7 @@ export default function DrinksMenu(){
                 </div>
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('bero')}
                 >
                   <div className="name-price">
                     <span>
@@ -489,12 +489,12 @@ export default function DrinksMenu(){
                     </span>
                     <span className="dessert-price">12</span>
                   </div>
-                  <div className="description1">Pennsylvania</div>
+                  <div className="description1 typo">Pennsylvania</div>
                   <div className="description2"></div>
                 </div>
 
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('hojicha-banana-roulade')}
+                      onClick={()=>showModal('botanic')}
                 >
                   <div className="name-price">
                     <span>
@@ -1256,6 +1256,156 @@ export default function DrinksMenu(){
 
 
 
+    <div id="botanic" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`botanic.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Baladin Botanic Non-Alcoholic Ale</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="dessert-price">12</span>
+                          </div>
+                          <div className="description1">Cuneo, Italy</div>
+                          <div className="description2"></div>
+                          <br/>
+                          <hr/>
+                          <br/>
+                          Baladin Brewery<br/>
+                          Botanic<br/>
+                          11 oz<br/>
+                          Non-Alcoholic Malt Beverage with Coriander, Passion Flower, Chamomile & Gentian<br/>
+                          &lt;0.5%abv<br/>
+                          <br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #botanic */}
+
+    <div id="koshihikari" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`koshihikari.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Koshihikari Rice <span className='typo'>Ale</span></span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="dessert-price">12</span>
+                          </div>
+                          <div className="description1">Niigata, Japan</div>
+                          <div className="description2"></div>
+                          <br/>
+                          <hr/>
+                          <br/>
+                          Echigo Beer Co.<br/>
+                          Koshihikari<br/>
+                          Rice <span className='typo'>Lager</span><br/>
+                          Niigata, Japan<br/>
+                          11 oz<br/>
+                          5%abv<br/>
+                          <br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #koshihikari */}
+
+    <div id="nest" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`nest.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Hitachino Nest White Ale</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="dessert-price">12</span>
+                          </div>
+                          <div className="description1">Naka, Japan</div>
+                          <div className="description2"></div>
+                          <br/>
+                          <hr/>
+                          <br/>
+                          Hitachino Nest White Ale<br/>
+                          ale brewed with spices and orange juice<br/>
+                          Kiuchi Brewery<br/>
+                          12 oz<br/>
+                          5.5%abv<br/>
+                          <br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #nest */}
+
+    <div id="bero" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`bero.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">BERO Non-Alcoholic Pilsner</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="dessert-price">12</span>
+                          </div>
+                          <div className="description1 typo">Pennsylvania</div>
+                          <div className="description2"></div>
+                          <br/>
+                          <hr/>
+                          <br/>
+                          BERO Kingston Golden Pils<br/>
+                          <span className='typo'>Northglenn, Colorado</span><br/>
+                          12 oz<br/>
+                          Non-Alcoholic<br/>
+                          &lt;0.5%abv<br/><br/>
+                          Founded by actor Tom Holland(Spider-Man)
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #bero */}
+
     <div id="rydeen-ipa" className='modal'>
       <div>
           <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
@@ -1283,7 +1433,7 @@ export default function DrinksMenu(){
                           <br/>
                           Sarukurayama Brewery<br/>
                           Hakkaisan Rydeen IPA<br/>
-                          Niigata, Japan
+                          Niigata, Japan<br/>
                           6%abv<br/>
                           <br/><br/>
               </div>
@@ -1317,7 +1467,9 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          Sapporo Brewing Co.<br/>
                           Pale Lager / Pilsner<br/>
+                          12 oz<br/>
                           4.9%abv<br/>
                           <br/><br/>
               </div>

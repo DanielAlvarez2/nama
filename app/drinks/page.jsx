@@ -2170,7 +2170,12 @@ export default function DrinksMenu(){
                           red yuzu kosho<br/>
                           lime juice<br/>
                           shochu<br/>
-                          gernish: citrus zest
+                          gernish: citrus zest<br/><br/>
+                          red yuzu kosho:<br/>
+                          spicy/salty paste<br/>
+                          ripe yuzu citrus zest<br/>
+                          red chili peppers<br/>
+                          salt
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}      
@@ -2206,8 +2211,8 @@ export default function DrinksMenu(){
                           <hr/>
                           <br/>
                           rum<br/>
+                          hojicha green tea/coconut cream<br/>
                           lime juice<br/>
-                          hojicha green tea/coconut cream
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -2243,7 +2248,7 @@ export default function DrinksMenu(){
                           gin<br/>
                           midori(melon liqueur)<br/>
                           sour apple liqueur<br/>
-                          bordiga centum herbis("100 herbs") herbal liqueur<br/>
+                          centum herbis("100 herbs") herbal liqueur<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 

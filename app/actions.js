@@ -174,11 +174,11 @@ export async function editDessertWine(formData){
             }
 
         await DessertWine.findByIdAndUpdate(formData.get('id'),{
+            vintage: formData.get('vintage').trim(),
             name1: formData.get('name1').trim(),
-            description1: formData.get('description1').trim(),
-            description2: formData.get('description2').trim(),
-            typos: formData.get('typos').trim(),
+            name2: formData.get('name2').trim(),
             price: formData.get('price').trim(),
+            typos: formData.get('typos').trim(),
             staffInfo: formData.get('staff-info').trim(),
             cloudinary_public_id,
             cloudinary_secure_url

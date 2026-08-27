@@ -30,17 +30,17 @@ export default function DessertWineForm({addDessertWine,editDessertWine}){
         if (!formData.get('name1').trim() || !formData.get('price').trim()) {
             alert('Name and Price are required')
             setTimeout(()=>{
-                document.querySelector('#name1').value = formData.get('name1')
-                document.querySelector('#name2').value = formData.get('name1')
-                document.querySelector('#typos').value = formData.get('typos')
-                document.querySelector('#vintage').value = formData.get('vintage')
-                document.querySelector('#price').value = formData.get('price')
-                document.querySelector('#staff-info').value = formData.get('staff-info')
+                document.querySelector('#name1-dessert-wine').value = formData.get('name1')
+                document.querySelector('#name2-dessert-wine').value = formData.get('name1')
+                document.querySelector('#typos-dessert-wine').value = formData.get('typos')
+                document.querySelector('#vintage-dessert-wine').value = formData.get('vintage')
+                document.querySelector('#price-dessert-wine').value = formData.get('price')
+                document.querySelector('#staff-info-dessert-wine').value = formData.get('staff-info')
             },10)
             return
         }
         if(editMode){
-            await editDessert(formData)
+            await editDessertWine(formData)
             setEditMode(false)
         }else{
             await addDessertWine(formData)
@@ -48,19 +48,19 @@ export default function DessertWineForm({addDessertWine,editDessertWine}){
         setTimeout(()=>{
             document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
         },10)        
-        resetForm()
+        resetFormDessertWine()
     }
 
-    function resetForm(){
-        document.querySelector('#delete-image-checkbox') && (document.querySelector('#delete-image-checkbox').checked = false)
-        document.querySelector('#id').value = ''
-        document.querySelector('#name1').value = ''
-        document.querySelector('#name2').value = ''
-        document.querySelector('#price').value = ''
-        document.querySelector('#staff-info').value = ''
-        document.querySelector('#current-image-url').value = ''
-        document.querySelector('#current-image-id').value = ''
-        document.querySelector('#image-text').textContent = ''
+    function resetFormDessertWine(){
+        document.querySelector('#delete-image-checkbox-dessert-wine') && (document.querySelector('#delete-image-checkbox-dessert-wine').checked = false)
+        document.querySelector('#id-dessert-wine').value = ''
+        document.querySelector('#name1-dessert-wine').value = ''
+        document.querySelector('#name2-dessert-wine').value = ''
+        document.querySelector('#price-dessert-wine').value = ''
+        document.querySelector('#staff-info-dessert-wine').value = ''
+        document.querySelector('#current-image-url-dessert-wine').value = ''
+        document.querySelector('#current-image-id-dessert-wine').value = ''
+        document.querySelector('#image-text-dessert-wine').textContent = ''
         document.querySelector('#form-dessert-wine h1').textContent = 'ADD NEW DESSERT WINE'
         document.querySelector('#form-dessert-wine').style.background = 'lightgreen'
         document.querySelector('#submit-button-dessert-wine-form').innerHTML = `+ New Dessert Wine`
@@ -71,12 +71,12 @@ export default function DessertWineForm({addDessertWine,editDessertWine}){
     }
 
 function toggleCheckbox(){
-    if(document.querySelector('#delete-image-checkbox').checked == true){
-        document.querySelector('#delete-icon').style.color = 'red'
+    if(document.querySelector('#delete-image-checkbox-dessert-wine').checked == true){
+        document.querySelector('#delete-icon-dessert-wine').style.color = 'red'
         document.querySelector('#image-file-dessert-wine').value = ''
         setPreviewImage('')
     }else{
-        document.querySelector('#delete-icon').style.color = 'transparent'
+        document.querySelector('#delete-icon-dessert-wine').style.color = 'transparent'
     }
 }
 
@@ -165,7 +165,7 @@ function toggleCheckbox(){
                                     style={{maxWidth:'100%',maxHeight:'300px',display:'block',margin:'0 auto'}}
                             />
                             <TiDeleteOutline    size={150} 
-                                                id='delete-icon'
+                                                id='delete-icon-dessert-wine'
                                                 style={{color:'transparent',
                                                         position:'absolute',
                                                         bottom:'50%',
@@ -216,7 +216,7 @@ function toggleCheckbox(){
                 <div style={{display:'flex'}}>
                     <button id='submit-button-dessert-wine-form' type='submit'>+ Dessert Wine</button>
                     <button type='button'
-                            onClick={resetForm} 
+                            onClick={resetFormDessertWine} 
                             style={{background:'red'}}>Cancel</button>
                 </div>
                 

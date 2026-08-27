@@ -24,7 +24,7 @@ export default function DessertWineItem(props){
         document.querySelector('#id-dessert-wine').value = id
         document.querySelector('#vintage-dessert-wine').value = vintage
         document.querySelector('#name1-dessert-wine').value = name1
-        document.querySelector('#name2-dessert-wine').value = name2
+        document.querySelector('#name2-dessert-wine').value = name2 ? name2 : ''
         document.querySelector('#price-dessert-wine').value = price
         document.querySelector('#typos-dessert-wine').value = typos ? typos : ''
         document.querySelector('#staff-info-dessert-wine').value = staffInfo 

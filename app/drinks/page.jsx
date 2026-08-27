@@ -1503,6 +1503,10 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          sour plum wine<br/>
+                          bonnie melon juice<br/>
+                          apricot liqueur<br/>
+                          sparkling wine
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  
@@ -2010,6 +2014,12 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          hana shochu<br/>
+                          bourbon<br/>
+                          whiskey<br/>
+                          banana syrup<br/>
+                          club soda<br/>
+                          lemon twist
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  
@@ -2042,6 +2052,10 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          vodka<br/>
+                          shochu<br/>
+                          lychee juice<br/>
+                          lemon juice
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  
@@ -2076,6 +2090,10 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          sake<br/>
+                          gin<br/>
+                          cherry blossom bitters<br/>
+                          garnish: sakura/cherry blossom flower
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}     
@@ -2110,6 +2128,10 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          whiskey<br/>
+                          scotch<br/>
+                          lemon juice<br/>
+                          wasabi/ginger/pickled honey infusion
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}  
@@ -2144,6 +2166,11 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          mezcal<br/>
+                          red yuzu kosho<br/>
+                          lime juice<br/>
+                          shochu<br/>
+                          gernish: citrus zest
                           <br/><br/>
               </div>
             </div>{/* .modal-text */}      
@@ -2178,6 +2205,9 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          rum<br/>
+                          lime juice<br/>
+                          hojicha green tea/coconut cream
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -2210,6 +2240,10 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          gin<br/>
+                          midori(melon liqueur)<br/>
+                          sour apple liqueur<br/>
+                          bordiga centum herbis("100 herbs") herbal liqueur<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 
@@ -2248,7 +2282,7 @@ export default function DrinksMenu(){
                           Bourbon<br/>
                           Rye<br/>
                           Shochu<br/>
-                          Chocolate Bitters<br/>
+                          Bitters<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 

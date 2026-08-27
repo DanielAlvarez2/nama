@@ -8,7 +8,7 @@ import {useEffect} from 'react'
 
 // export const dynamic = 'force-dynamic'
 
-export default function DessertMenu({desserts}){
+export default function DessertMenu({desserts,dessertWines}){
     const router = useRouter()
     useEffect(()=> router.refresh(),[])
     // router.refresh()
@@ -38,7 +38,25 @@ export default function DessertMenu({desserts}){
       document.querySelector('#modal-dessert-price').innerHTML = price
       document.querySelector('#modal-dessert-allergies').innerHTML = `(${allergies})`
       document.querySelector('#modal-dessert').style.display = 'grid'
-    }
+    }//openModalDessert()
+
+    function openModalDessertWine(img_src,
+                                  vintage,
+                                  name1,
+                                  name2,
+                                  price,
+                                  typos,
+                                  staffInfo,
+    ){
+      document.querySelector('#modal-dessert-wine-img').src = img_src
+      document.querySelector('#modal-dessert-wine-vintage').innerHTML = vintage
+      document.querySelector('#modal-dessert-wine-name1').innerHTML = name1
+      document.querySelector('#modal-dessert-wine-name2').innerHTML = name2
+      document.querySelector('#modal-dessert-wine-price').innerHTML = price
+      document.querySelector('#modal-dessert-wine-typos').innerHTML = typos ? typos : ''
+      document.querySelector('#modal-dessert-wine-staff-info').innerHTML = staffInfo
+      document.querySelector('#modal-dessert-wine').style.display = 'grid'
+    }//openModalDessertWine()
 
     return(
     <div className='webpage'>
@@ -199,38 +217,41 @@ export default function DessertMenu({desserts}){
               <div className="right-column"
                     style={{width:'100%'}}
               >
-              
-                <div className='dessert-wine'
-                      onClick={()=>showModal('sauternes')}
-                >
-                  <div className='dessert-wine-vintage'>2022</div>
-                  <div className='dessert-wine-name'>Chateau Suduiraut, FR</div>
-                  <div className='dessert-price'>24</div>
-                </div>{/* .dessert-wine */}
 
-                <div  className='dessert-wine'
-                      onClick={()=>showModal('macabeu')}
-                >
-                  <div className='dessert-wine-vintage'>2000</div>
-                  <div className='dessert-wine-name'>Domaine de Rancy Rivesaltes,<br/>
-                        Ambré, Vin Doux Naturel, FR
+                {dessertWines.map(item=>(
+                  <div  key={item._id} 
+                        className='dinner-menu-item'
+                        onClick={()=>openModalDessertWine(
+                                                      item.cloudinary_secure_url,
+                                                      item.vintage,
+                                                      item.name1,
+                                                      item.name2,
+                                                      item.price,
+                                                      item.typos,
+                                                      item.staffInfo,
+                                                    )}
+                  >
+                    <div style={{display:'flex'}}>
+                        <div style={{width:'7ch'}}>{item.vintage}</div>
+                        
+                        <div style={{display:'flex',justifyContent:'space-between',width:'100%'}}>
+                          <div>
+                            <div className="dessert-name">{item.name1}</div>
+                            <div className="dessert-name">{item.name2}</div>
+                          </div>
+                          <div className="dessert-price">{item.price}</div>
+                        </div>  
+                    </div>
+                    <div className='typo'>{item.typos}</div>
+
+
                   </div>
-                  <div className='dessert-price'>32</div>
-                </div>{/* .dessert-wine */}
 
-                <div className='dessert-wine' onClick={()=>showModal('sattlerhof')}>
-                  <div className='dessert-wine-vintage'>2021</div>
-                  <div className='dessert-wine-name'>Weingut Sattlerhof, AUT</div>
-                  <div className='dessert-price'>38</div>
-                </div>{/* .dessert-wine */}
+                  
+                  
+                ))}
 
-                <div  className='dessert-wine' 
-                      // onClick={()=>showModal('grahams-port')}
-                >
-                  <div className='dessert-wine-vintage'>*2005</div>
-                  <div className='dessert-wine-name'>Graham's Port, Quinta Dos Malvedos, PT</div>
-                  <div className='dessert-price'>40</div>
-                </div>{/* .dessert-wine */}
+
 
 
 
@@ -422,6 +443,60 @@ export default function DessertMenu({desserts}){
           </div>{/* .modal-content */}      
       </div>
     </div>{/* #modal-dessert */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="modal-dessert-wine" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
+            <img id='modal-dessert-wine-img' />
+          </div>      
+          <div className='modal-text'>
+          
+              <br/><br/>
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+
+                    <div style={{display:'flex'}}>
+                        <div style={{width:'7ch'}} id='modal-dessert-wine-vintage'></div>
+                        
+                        <div style={{display:'flex',justifyContent:'space-between',width:'100%'}}>
+                          <div>
+                            <div id='modal-dessert-wine-name1'></div>
+                            <div id='modal-dessert-wine-name2'></div>
+                          </div>
+                          <div id='modal-dessert-wine-price'></div>
+                        </div>  
+                    </div>
+                    <div className='typo' id='modal-dessert-wine-typos'></div>
+
+                          <br/>
+                          <hr/>
+                          <br/>
+                            <div id='modal-dessert-wine-staff-info' style={{whiteSpace:'pre-line'}}></div>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
+      </div>
+    </div>{/* #modal-dessert-wine */}
 
           
 

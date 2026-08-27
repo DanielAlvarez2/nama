@@ -1356,9 +1356,9 @@ export default function DrinksMenu(){
                           <br/>
                           <hr/>
                           <br/>
+                          Kiuchi Brewery<br/>
                           Hitachino Nest White Ale<br/>
                           ale brewed with spices and orange juice<br/>
-                          Kiuchi Brewery<br/>
                           12 oz<br/>
                           5.5%abv<br/>
                           <br/>
@@ -1533,7 +1533,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Taittinger, Comtes de Champagne<br/>Blanc de Blancs, Brut</div>
                   <div>120</div>
                 </div>{/* .dessert-wine */}
-                <br/>
+                
                 <hr/>
                 <br/>
             </div>{/* .modal-text */}  
@@ -1560,10 +1560,10 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Renaissance, Sancerre<br/>Loire Valley, FR</div>
                   <div>27</div>
                 </div>{/* .dessert-wine */}
-                <br/>
+                
                 <hr/>
                 <br/>
-                Grape Varietal: Sauvignon Blanc
+                Grape Varietal: Sauvignon Blanc<br/>
                 13%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
@@ -1589,7 +1589,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Kollwentz, Chardonnay Leithakalk<br/>Burgenland, AUT</div>
                   <div>29</div>
                 </div>{/* .dessert-wine */}
-                <br/>
+                
                 <hr/>
                 <br/>
                 Grape Varietal: Chardonnay<br/>
@@ -1618,7 +1618,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Bodegas Alto Moncayo, Garnacha<br/>Aragon, ESP</div>
                   <div>28</div>
                 </div>{/* .dessert-wine */}
-                <br/>
+                
                 <hr/>
                 <br/>
                 Grape Varietal: Garnacha<br/>
@@ -1647,7 +1647,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Grgich Hills, Cabernet Sauvignon<br/>Napa Valley, CA</div>
                   <div>42</div>
                 </div>{/* .dessert-wine */}
-                <br/>
+                
                 <hr/>
                 <br/>
                 Grape Varietal: Cabernet Sauvignon<br/>
@@ -1676,7 +1676,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Peay Vineyards<br/>Sonoma Coast, CA</div>
                   <div>32</div>
                 </div>{/* .dessert-wine */}
-                <br/>
+                
                 <hr/>
                 <br/>
                 Grape Varietal: Pinot Noir<br/>
@@ -1711,7 +1711,7 @@ export default function DrinksMenu(){
                   <div className="description1"></div>
                   <div className="description2"></div>
                 </div>
-                <br/>
+                
                 <hr/>
                 <br/>
                 15.5%abv
@@ -1745,7 +1745,7 @@ export default function DrinksMenu(){
                   <div className="description1"></div>
                   <div className="description2"></div>
                 </div>
-                <br/><hr/><br/>
+                <hr/><br/>
                 16%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
@@ -1779,7 +1779,7 @@ export default function DrinksMenu(){
                 </div>
 
 
-                <br/><hr/><br/>
+                <hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1812,7 +1812,7 @@ export default function DrinksMenu(){
                 </div>
 
 
-                <br/><hr/><br/>
+                <hr/><br/>
                 16%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
@@ -1846,7 +1846,8 @@ export default function DrinksMenu(){
                 </div>
 
 
-                <br/><hr/><br/>
+                <hr/><br/>
+                10%abv
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1871,7 +1872,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Bernard Gripa, Saint-Péray Les Pins<br/>Rhône Valley, FR</div>
                   <div>28</div>
                 </div>{/* .dessert-wine */}
-                <br/><hr/><br/>
+                <hr/><br/>
                 Grape Varietals: Marsanne / Roussanne<br/>
                 13%abv
             </div>{/* .modal-text */}  
@@ -1898,7 +1899,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Laherte Frères, Rosé de Meunier, Extra Brut</div>
                   <div>47</div>
                 </div>{/* .dessert-wine */}
-                <br/><hr/><br/>
+                <hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1923,7 +1924,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Bollinger, Special Cuvée, Brut</div>
                   <div>39</div>
                 </div>{/* .dessert-wine */}
-                <br/><hr/><br/>
+                <hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -1948,7 +1949,7 @@ export default function DrinksMenu(){
                   <div className='dessert-wine-name'>Aman, Cuvée Spéciale, Brut</div>
                   <div>75</div>
                 </div>{/* .dessert-wine */}
-                <br/><hr/><br/>
+                <hr/><br/>
             </div>{/* .modal-text */}  
           </div>{/* .modal-content */}         
       </div>
@@ -2320,10 +2321,10 @@ export default function DrinksMenu(){
                           <div className="description1">Ginger, Jalapeño, Lime</div>
                           <div className="description2"></div>
                           <br/><hr/><br/>
-                          ginger beer 
+                          ginger beer<br/>
                           spiced ginger<br/>
                           jalapeño<br/>
-                          lime<br/>
+                          lime juice<br/>
                           <br/><br/>
               </div>
             </div>{/* .modal-text */} 

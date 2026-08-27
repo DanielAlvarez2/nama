@@ -93,18 +93,18 @@ export default function DessertWineItem(props){
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteItem('Dessert',props.id)}
+                            onClick={()=>deleteItem('DessertWine',props.id)}
                     >
                         DELETE
                     </span>
-                    <span onClick={()=>moveUp('Dessert',props.id)}
+                    <span onClick={()=>moveUp('DessertWine',props.id)}
                           className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
                         <ImArrowUp style={{ position:'relative',
                                             
                                             top:'1px'}} />
                     </span>
-                    <span onClick={()=>moveDown('Dessert',props.id)}
-                          className={`item-button arrow-button ${props.sequence == props.maxSequence ? 'visibility-hidden' : ''}`}>
+                    <span onClick={()=>moveDown('DessertWine',props.id)}
+                          className={`item-button arrow-button ${props.sequence == props.maxSequenceDessertWines ? 'visibility-hidden' : ''}`}>
                         <ImArrowDown style={{position:'relative',top:'2px'}} />
                     </span>
                 </div>

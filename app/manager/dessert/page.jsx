@@ -13,7 +13,7 @@ export default async function ManagerDessertPage(){
       const dessertWines = JSON.parse(JSON.stringify(await DessertWine.find().sort({sequence:1})))
       const dessertsArray = await Dessert.find().sort({sequence:-1})
       const dessertWinesArray = await DessertWine.find().sort({sequence:-1})
-      const maxSequenceDessertWines = dessertWinesArray[0].sequence
+      const maxSequenceDessertWines = dessertWinesArray[0] ? dessertWinesArray[0].sequence : 0
       const maxSequence = dessertsArray[0].sequence
       
       

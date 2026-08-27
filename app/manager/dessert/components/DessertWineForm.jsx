@@ -94,6 +94,18 @@ function toggleCheckbox(){
                         id='id' />
 
                 <label>
+                    Vintage: <span className="required">*REQUIRED</span><br/>
+                    <input  type='text'
+                            name='vintage'
+                            id='vintage'
+                            required
+                            autoComplete="off"
+                            style={{width:'35%'}}
+                    />
+                </label>
+                <br/><br/>
+
+                <label>
                     Name (line 1): <span className="required">*REQUIRED</span><br/>
                     <input  type='text' 
                             required
@@ -114,6 +126,16 @@ function toggleCheckbox(){
                 </label>
                 <br/><br/>
 
+                <label>
+                    Price: <span className="required">*REQUIRED</span><br/>
+                    <input  type='text' 
+                            name='price'
+                            required
+                            autoComplete="off"
+                            id='price'
+                            style={{width:'35%'}} />
+                </label>
+                <br/><br/>
 
                 <label>
                     Typos:<br/>
@@ -123,28 +145,6 @@ function toggleCheckbox(){
                             id='typos'
                             style={{width:'100%', color:'red'}}
                     />
-                </label>
-                <br/><br/>
-
-                <label>
-                    Vintage:<br/>
-                    <input  type='text'
-                            name='vintage'
-                            id='vintage'
-                            autoComplete="off"
-                            style={{width:'35%'}}
-                    />
-                </label>
-                <br/><br/>
-
-                <label>
-                    Price: <span className="required">*REQUIRED</span><br/>
-                    <input  type='text' 
-                            name='price'
-                            required
-                            autoComplete="off"
-                            id='price'
-                            style={{width:'35%'}} />
                 </label>
                 <br/><br/>
 

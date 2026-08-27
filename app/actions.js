@@ -168,8 +168,6 @@ export async function editDessertWine(formData){
             
             // OLD PIC -> NO PIC COMPLETE
             if(formData.get('current-image-url') && formData.get('delete-image-checkbox')){
-                // console.log('OLD PIC -> NO PIC')
-                // console.log('cloudinary.destroy: ' + formData.get('current-image-id'))
                 await cloudinary.uploader.destroy(formData.get('current-image-id'))
             }
 

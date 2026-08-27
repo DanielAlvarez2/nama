@@ -54,6 +54,7 @@ export default function DessertWineForm({addDessertWine,editDessertWine}){
     function resetFormDessertWine(){
         document.querySelector('#delete-image-checkbox-dessert-wine') && (document.querySelector('#delete-image-checkbox-dessert-wine').checked = false)
         document.querySelector('#id-dessert-wine').value = ''
+        document.querySelector('#vintage-dessert-wine').value = ''
         document.querySelector('#name1-dessert-wine').value = ''
         document.querySelector('#name2-dessert-wine').value = ''
         document.querySelector('#price-dessert-wine').value = ''

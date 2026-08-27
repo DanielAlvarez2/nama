@@ -12,39 +12,36 @@ export default function DessertWineItem(props){
     const {editMode,setEditMode} = useEditModeContext()
     const {existingImage,setExistingImage} = useExistingImageContext()
 
-    function editDessert( id,
-                          name1,
-                          name2,
-                          allergies,
-                          description1,
-                          description2,
-                          typos,
-                          price,
-                          staffInfo,
-                          currentImageURL,
-                          currentImageID){
-        document.getElementById('id-dessert').value = id  
-        document.querySelector('#name-dessert').value = name
-        document.querySelector('#allergies-dessert').value = allergies
-        document.querySelector('#description1-dessert').value = description1
-        document.querySelector('#description2-dessert').value = description2
-        document.querySelector('#typos').value = typos ? typos : ''
-        document.querySelector('#price-dessert').value = price
-        document.querySelector('#staff-info').value = staffInfo 
+    function editDessertWine( id,
+                              vintage,
+                              name1,
+                              name2,
+                              price,
+                              typos,
+                              staffInfo,
+                              currentImageURL,
+                              currentImageID){
+        document.querySelector('#id-dessert-wine').value = id
+        document.querySelector('#vintage-dessert-wine').value = vintage
+        document.querySelector('#name1-dessert-wine').value = name1
+        document.querySelector('#name2-dessert-wine').value = name2
+        document.querySelector('#price-dessert-wine').value = price
+        document.querySelector('#typos-dessert-wine').value = typos ? typos : ''
+        document.querySelector('#staff-info-dessert-wine').value = staffInfo 
         // document.querySelector('#current-img').src = currentImageURL ? currentImageURL : '/no-image.jpg'
-        document.querySelector('#current-image-url').value = currentImageURL
-        document.querySelector('#current-image-id').value = currentImageID
+        document.querySelector('#current-image-url-dessert-wine').value = currentImageURL
+        document.querySelector('#current-image-id-dessert-wine').value = currentImageID
         // document.querySelector('#current-image-id').value = 'TESTING123'
-        document.querySelector('#image-text').textContent = currentImageURL ? 'Replace ' : 'Add '
+        document.querySelector('#image-text-dessert-wine').textContent = currentImageURL ? 'Replace ' : 'Add '
         // document.querySelector('#current-image-label').style.display = 'block'
-        document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'
-        document.querySelector('#form-dessert').style.background = 'lightblue'
-        document.querySelector('#submit-button-dessert-form').innerHTML = `Update Dessert`
+        document.querySelector('#form-dessert-wine h1').textContent = 'EDIT DESSERT WINE'
+        document.querySelector('#form-dessert-wine').style.background = 'lightblue'
+        document.querySelector('#submit-button-dessert-wine-form').innerHTML = `Update Dessert Wine`
         setEditMode(true)
         setExistingImage(currentImageURL ? currentImageURL : null)
-        document.querySelector('#delete-image-checkbox') && (document.querySelector('#delete-image-checkbox').checked = false)
+        document.querySelector('#delete-image-checkbox-dessert-wine') && (document.querySelector('#delete-image-checkbox-dessert-wine').checked = false)
         setTimeout(()=>{
-          document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'})
+          document.getElementById('form-dessert-wine').scrollIntoView({behavior:'smooth'})
         }
           ,10)
     }
@@ -80,16 +77,15 @@ export default function DessertWineItem(props){
 
                   <div className="typos" style={{color:'red'}} dangerouslySetInnerHTML={{__html:props.typos}}></div>
                     <span   className="item-button edit-button"
-                            onClick={()=>editDessert(   props.id,
-                                                        props.name,
-                                                        props.allergies,
-                                                        props.description1,
-                                                        props.description2,
-                                                        props.typos,
-                                                        props.price,
-                                                        props.staffInfo,
-                                                        props.cloudinary_secure_url,
-                                                        props.cloudinary_public_id,
+                            onClick={()=>editDessertWine( props.id,
+                                                          props.vintage,
+                                                          props.name1,
+                                                          props.name2,
+                                                          props.price,
+                                                          props.typos,
+                                                          props.staffInfo,
+                                                          props.cloudinary_secure_url,
+                                                          props.cloudinary_public_id,
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"

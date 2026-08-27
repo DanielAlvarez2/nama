@@ -91,13 +91,13 @@ function toggleCheckbox(){
 
                 <input  type='hidden' 
                         name='id' 
-                        id='id' />
+                        id='id-dessert-wine' />
 
                 <label>
                     Vintage: <span className="required">*REQUIRED</span><br/>
                     <input  type='text'
                             name='vintage'
-                            id='vintage'
+                            id='vintage-dessert-wine'
                             required
                             autoComplete="off"
                             style={{width:'35%'}}
@@ -111,7 +111,7 @@ function toggleCheckbox(){
                             required
                             autoComplete="off"
                             name='name1'
-                            id='name1'
+                            id='name1-dessert-wine'
                             style={{width:'100%'}} />
                 </label>
                 <br/><br/>
@@ -121,7 +121,7 @@ function toggleCheckbox(){
                     <input  type='text' 
                             name='name2'
                             autoComplete="off"
-                            id='name2'
+                            id='name2-dessert-wine'
                             style={{width:'100%'}} />
                 </label>
                 <br/><br/>
@@ -132,7 +132,7 @@ function toggleCheckbox(){
                             name='price'
                             required
                             autoComplete="off"
-                            id='price'
+                            id='price-dessert-wine'
                             style={{width:'35%'}} />
                 </label>
                 <br/><br/>
@@ -142,7 +142,7 @@ function toggleCheckbox(){
                     <input  type='text'
                             name='typos'
                             autoComplete="off"
-                            id='typos'
+                            id='typos-dessert-wine'
                             style={{width:'100%', color:'red'}}
                     />
                 </label>
@@ -151,7 +151,7 @@ function toggleCheckbox(){
                 <label>
                     Staff Info:<br/>
                     <textarea   style={{width:'100%',height:'150px'}}
-                                id='staff-info'
+                                id='staff-info-dessert-wine'
                                 name='staff-info' />
                 </label>
                 <br/><br/>
@@ -179,14 +179,14 @@ function toggleCheckbox(){
                     </label>
                 }
                         <input  type='hidden'
-                                id='current-image-url' 
+                                id='current-image-url-dessert-wine' 
                                 name='current-image-url' />
                         <input  type='hidden'
-                                id='current-image-id' 
+                                id='current-image-id-dessert-wine' 
                                 name='current-image-id' />
 
                 <label>
-                    <span id='image-text' style={{fontSize:'inherit'}}></span>Image File: (optional)<br/>
+                    <span id='image-text-dessert-wine' style={{fontSize:'inherit'}}></span>Image File: (optional)<br/>
                     <input  type='file' 
                             name='image-file-dessert-wine'
                             id='image-file-dessert-wine'
@@ -207,7 +207,7 @@ function toggleCheckbox(){
                         <br/><br/>
                         <input  type='checkbox' 
                                 onClick={toggleCheckbox}
-                                id='delete-image-checkbox'
+                                id='delete-image-checkbox-dessert-wine'
                                 name='delete-image-checkbox' />  
                         &nbsp;Delete Current Image (optional)
                     </span>

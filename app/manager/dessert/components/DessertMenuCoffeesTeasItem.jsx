@@ -72,13 +72,13 @@ export default function DessertMenuCoffeesTeasItem(props){
                     >
                         DELETE
                     </span>
-                    <span onClick={()=>moveUp('DessertWine',props.id)}
+                    <span onClick={()=>moveUp('DessertMenuCoffeeTea',props.id)}
                           className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
                         <ImArrowUp style={{ position:'relative',
                                             
                                             top:'1px'}} />
                     </span>
-                    <span onClick={()=>moveDown('DessertWine',props.id)}
+                    <span onClick={()=>moveDown('DessertMenuCoffeeTea',props.id)}
                           className={`item-button arrow-button ${props.sequence == props.maxSequenceDessertMenuCoffeesTeas ? 'visibility-hidden' : ''}`}>
                         <ImArrowDown style={{position:'relative',top:'2px'}} />
                     </span>

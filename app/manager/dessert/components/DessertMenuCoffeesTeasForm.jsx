@@ -1,14 +1,9 @@
 'use client'
 
-import { addDessertMenuCoffeeTea } from "@/app/actions"
-import { useActionState } from "react"
-import { useState } from "react"
-import { TiDeleteOutline } from "react-icons/ti";
 import {useEditModeContext} from '@/context/EditModeContext'
-import {useExistingImageContext} from '@/context/ExistingImageContext'
 
 
-export default function DessertMenuCoffeesTeasForm({addDessertMenuCoffeeTea,editDessertWine}){
+export default function DessertMenuCoffeesTeasForm({addDessertMenuCoffeeTea,editDessertMenuCoffeeTea}){
 
     const {editMode,setEditMode} = useEditModeContext()   
 
@@ -22,7 +17,7 @@ export default function DessertMenuCoffeesTeasForm({addDessertMenuCoffeeTea,edit
             return
         }
         if(editMode){
-            await editDessertWine(formData)
+            await editDessertMenuCoffeeTea(formData)
             setEditMode(false)
         }else{
             await addDessertMenuCoffeeTea(formData)

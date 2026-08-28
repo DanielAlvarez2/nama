@@ -121,6 +121,25 @@ export async function addDessertMenuCoffeeTea(formData){
     }
 } // addDessertMenuCoffeeTea()
 
+export async function editDessertMenuCoffeeTea(formData){
+    try{
+        await connectMongoDB()
+        await DessertMenuCoffeeTea.findByIdAndUpdate(formData.get('id'),{
+            name: formData.get('name').trim(),
+            price: formData.get('price').trim(),
+        })
+        
+        revalidatePath('/manager/dessert')
+        return
+
+    }catch(err){
+        console.log(err)
+    }
+} 
+// editDessertMenuCoffeeTea() 
+
+
+
 export async function addDessertWine(formData){
     try{
         let cloudinary_public_id = ''

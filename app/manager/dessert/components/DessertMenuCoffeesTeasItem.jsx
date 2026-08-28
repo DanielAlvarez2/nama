@@ -3,14 +3,11 @@
 import { deleteItem,moveDown,moveUp } from "@/app/actions.js"
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
-import { useState } from "react";
 import {useEditModeContext} from '@/context/EditModeContext'
-import {useExistingImageContext} from '@/context/ExistingImageContext'
 
 export default function DessertMenuCoffeesTeasItem(props){
 
     const {editMode,setEditMode} = useEditModeContext()
-    const {existingImage,setExistingImage} = useExistingImageContext()
 
     function editDessertMenuCoffeeTea(id,
                                       name,

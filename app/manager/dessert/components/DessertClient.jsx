@@ -1,15 +1,14 @@
 'use client'
-import Link from 'next/link'
-import { AiTwotoneCloseCircle } from "react-icons/ai";
 import DessertForm from './DessertForm.jsx';
 import DessertItem from './DessertItem.jsx';
 import DessertWineItem from './DessertWineItem.jsx';
-import DessertNavbar from './DessertNavbar.jsx';
+import DessertMenuCoffeesTeasItem from './DessertMenuCoffeesTeasItem.jsx';
 import DessertNavbarTop from './DessertNavbarTop.jsx';
-import DessertNavbarBottom from './DessertNavbarBottom.jsx';
 import {addDessert,editDessert} from '@/app/actions.js'
 import {addDessertWine,editDessertWine} from '@/app/actions.js'
+import {addDessertMenuCoffeeTea} from '@/app/actions.js'
 import DessertWineForm from './DessertWineForm.jsx';
+import DessertMenuCoffeesTeasForm from './DessertMenuCoffeesTeasForm.jsx'
 import NavbarMenuManager from '@/components/NavbarMenuManager.jsx';
 import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager.jsx';
 import {useState} from 'react'
@@ -162,6 +161,82 @@ export default function DessertClient(props){
               {/* #dessert-page-dessert-wines */}
               </div>
               }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              {
+                dessertPage == 'Coffee & Tea' &&
+
+              <div id='dessert-page-dessert-wines'>
+
+                <div className="small-paper" style={{height:'auto'}}>
+                  
+                    <div className="menu-items">
+                      <div className="section section-dessert">
+                        <div  className="left-column"
+                              id='desserts-section'
+                        >
+                          Coffee & Tea<br/>
+                          コーヒーと紅茶
+                        </div>
+
+                        <div className="right-column">
+                        
+                          {props.coffeesTeas.map(data=>{
+                            return(
+                              <div key={data._id}>
+                                <DessertMenuCoffeesTeasItem id={data._id.toString()}                                                  
+                                                            name={data.name} 
+                                                            price={data.price}
+                                                            sequence={data.sequence}
+                                                            maxSequenceDessertMenuCoffeesTeas={props.maxSequenceDessertMenuCoffeesTeas}
+                                />
+                                
+                              </div>
+                            )
+                          })}
+
+
+                        </div>{/* .right-column */}
+                      </div>{/* .section */}
+
+
+                    </div>{/* .menu-items */}
+
+
+                </div>{/* .small-paper */}
+                <br/>
+                <DessertMenuCoffeesTeasForm  addDessertMenuCoffeeTea={addDessertMenuCoffeeTea}
+                                  editDessertWine={editDessertWine}                    
+                                  />
+
+              {/* #dessert-page-dessert-wines */}
+              </div>
+              }
+
+
+
+
+
+
+
 
               {/* <DessertNavbarBottom dessertPage={dessertPage} setDessertPage={setDessertPage} /> */}
               <NavbarFooterMenuManager page='dessert' />

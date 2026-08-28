@@ -5,6 +5,7 @@ import connectMongoDB from '@/libs/mongodb.js'
 import { NextResponse } from 'next/server'
 import Dessert from '@/models/Dessert.js'
 import DessertWine from '@/models/DessertWine.js'
+import DessertMenuCoffeeTea from '@/models/DessertMenuCoffeeTea.js'
 import {revalidatePath} from 'next/cache'
 
 import {cloudinary} from '@/libs/cloudinary.js'
@@ -103,6 +104,22 @@ export async function editDessert(formData){
 
 
 
+
+export async function addDessertMenuCoffeeTea(formData){
+    try{
+        await connectMongoDB()
+        const highestSequenceDessertMenuCoffeeTea = await DessertMenuCoffeeTea.find().sort({sequence:-1})
+        await DessertMenuCoffeeTea.create({
+            name: formData.get('name').trim(),
+            price: formData.get('price').trim(),
+            sequence: highestSequenceDessertMenuCoffeeTea[0] ? highestSequenceDessertMenuCoffeeTea[0].sequence + 1 : 1,
+        })
+        revalidatePath('/manager/dessert')
+        return 
+    }catch(err){
+        console.log(err)
+    }
+} // addDessertMenuCoffeeTea()
 
 export async function addDessertWine(formData){
     try{

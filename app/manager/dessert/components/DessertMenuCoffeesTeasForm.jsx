@@ -1,0 +1,114 @@
+'use client'
+
+import { addDessertMenuCoffeeTea } from "@/app/actions"
+import { useActionState } from "react"
+import { useState } from "react"
+import { TiDeleteOutline } from "react-icons/ti";
+import {useEditModeContext} from '@/context/EditModeContext'
+import {useExistingImageContext} from '@/context/ExistingImageContext'
+
+
+export default function DessertMenuCoffeesTeasForm({addDessertMenuCoffeeTea,editDessertWine}){
+
+    const {editMode,setEditMode} = useEditModeContext()   
+    const {existingImage,setExistingImage} = useExistingImageContext()
+
+    const [previewImage, setPreviewImage] = useState()
+    // const [existingImage, setExistingImage] = useState()
+
+    function handleFileInputChange(e){
+        const file = e.target.files[0]
+        previewFile(file)
+    }
+    function previewFile(file){
+        const reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onloadend = ()=> setPreviewImage(reader.result)
+    }
+
+    async function handleSubmit(formData){
+        if (!formData.get('name').trim() || !formData.get('price').trim()) {
+            alert('Name and Price are required')
+            setTimeout(()=>{
+                document.querySelector('#name-dessert-menu-coffee-tea').value = formData.get('name')
+                document.querySelector('#price-dessert-menu-coffee-tea').value = formData.get('price')
+            },10)
+            return
+        }
+        if(editMode){
+            await editDessertWine(formData)
+            setEditMode(false)
+        }else{
+            await addDessertMenuCoffeeTea(formData)
+        }
+        setTimeout(()=>{
+            document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
+        },10)        
+        resetFormDessertMenuTeaCoffee()
+    }
+
+    function resetFormDessertMenuTeaCoffee(){
+        document.querySelector('#id-dessert-menu-coffee-tea').value = ''
+        document.querySelector('#name-dessert-menu-coffee-tea').value = ''
+        document.querySelector('#price-dessert-menu-coffee-tea').value = ''
+        document.querySelector('#form-dessert-menu-coffees-teas h1').textContent = 'ADD NEW COFFEE/TEA'
+        document.querySelector('#form-dessert-menu-coffees-teas').style.background = 'lightgreen'
+        document.querySelector('#submit-button-dessert-wine-form').innerHTML = `+ New Coffee/Tea`
+        setEditMode(false)
+    }
+
+
+    return(
+        <>
+            <form   action={handleSubmit}
+                    style={{marginBottom:'0px'}}
+                    id='form-dessert-menu-coffees-teas'
+            >
+                <h1>ADD NEW COFFEE/TEA</h1>
+                <br/><br/>
+
+                <input  type='hidden' 
+                        name='id' 
+                        id='id-dessert-menu-coffee-tea' />
+
+
+                <label>
+                    Name: <span className="required">*REQUIRED</span><br/>
+                    <input  type='text' 
+                            required
+                            autoComplete="off"
+                            name='name'
+                            id='name-dessert-menu-coffee-tea'
+                            style={{width:'100%'}} />
+                </label>
+                <br/><br/>
+
+
+                <label>
+                    Price: <span className="required">*REQUIRED</span><br/>
+                    <input  type='text' 
+                            name='price'
+                            required
+                            autoComplete="off"
+                            id='price-dessert-menu-coffee-tea'
+                            style={{width:'35%'}} />
+                </label>
+                <br/><br/>
+
+
+
+
+
+
+                <div style={{display:'flex'}}>
+                    <button id='submit-button-dessert-wine-form' type='submit'>+ Coffee/Tea</button>
+                    <button type='button'
+                            onClick={resetFormDessertMenuTeaCoffee} 
+                            style={{background:'red'}}>Cancel</button>
+                </div>
+                
+
+            </form>
+        </>
+    )
+}

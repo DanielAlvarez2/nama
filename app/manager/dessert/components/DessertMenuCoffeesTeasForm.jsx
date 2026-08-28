@@ -11,20 +11,6 @@ import {useExistingImageContext} from '@/context/ExistingImageContext'
 export default function DessertMenuCoffeesTeasForm({addDessertMenuCoffeeTea,editDessertWine}){
 
     const {editMode,setEditMode} = useEditModeContext()   
-    const {existingImage,setExistingImage} = useExistingImageContext()
-
-    const [previewImage, setPreviewImage] = useState()
-    // const [existingImage, setExistingImage] = useState()
-
-    function handleFileInputChange(e){
-        const file = e.target.files[0]
-        previewFile(file)
-    }
-    function previewFile(file){
-        const reader = new FileReader()
-        reader.readAsDataURL(file)
-        reader.onloadend = ()=> setPreviewImage(reader.result)
-    }
 
     async function handleSubmit(formData){
         if (!formData.get('name').trim() || !formData.get('price').trim()) {
@@ -44,16 +30,16 @@ export default function DessertMenuCoffeesTeasForm({addDessertMenuCoffeeTea,edit
         setTimeout(()=>{
             document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
         },10)        
-        resetFormDessertMenuTeaCoffee()
+        resetFormDessertMenuCoffeeTea()
     }
 
-    function resetFormDessertMenuTeaCoffee(){
+    function resetFormDessertMenuCoffeeTea(){
         document.querySelector('#id-dessert-menu-coffee-tea').value = ''
         document.querySelector('#name-dessert-menu-coffee-tea').value = ''
         document.querySelector('#price-dessert-menu-coffee-tea').value = ''
         document.querySelector('#form-dessert-menu-coffees-teas h1').textContent = 'ADD NEW COFFEE/TEA'
         document.querySelector('#form-dessert-menu-coffees-teas').style.background = 'lightgreen'
-        document.querySelector('#submit-button-dessert-wine-form').innerHTML = `+ New Coffee/Tea`
+        document.querySelector('#submit-button-dessert-menu-coffees-teas').innerHTML = `+ New Coffee/Tea`
         setEditMode(false)
     }
 
@@ -101,9 +87,9 @@ export default function DessertMenuCoffeesTeasForm({addDessertMenuCoffeeTea,edit
 
 
                 <div style={{display:'flex'}}>
-                    <button id='submit-button-dessert-wine-form' type='submit'>+ Coffee/Tea</button>
+                    <button id='submit-button-dessert-menu-coffees-teas' type='submit'>+ Coffee/Tea</button>
                     <button type='button'
-                            onClick={resetFormDessertMenuTeaCoffee} 
+                            onClick={resetFormDessertMenuCoffeeTea} 
                             style={{background:'red'}}>Cancel</button>
                 </div>
                 

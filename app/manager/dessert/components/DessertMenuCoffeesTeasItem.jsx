@@ -12,36 +12,18 @@ export default function DessertMenuCoffeesTeasItem(props){
     const {editMode,setEditMode} = useEditModeContext()
     const {existingImage,setExistingImage} = useExistingImageContext()
 
-    function editDessertWine( id,
-                              vintage,
-                              name1,
-                              name2,
-                              price,
-                              typos,
-                              staffInfo,
-                              currentImageURL,
-                              currentImageID){
-        document.querySelector('#id-dessert-wine').value = id
-        document.querySelector('#vintage-dessert-wine').value = vintage
-        document.querySelector('#name1-dessert-wine').value = name1
-        document.querySelector('#name2-dessert-wine').value = name2 ? name2 : ''
-        document.querySelector('#price-dessert-wine').value = price
-        document.querySelector('#typos-dessert-wine').value = typos ? typos : ''
-        document.querySelector('#staff-info-dessert-wine').value = staffInfo 
-        // document.querySelector('#current-img').src = currentImageURL ? currentImageURL : '/no-image.jpg'
-        document.querySelector('#current-image-url-dessert-wine').value = currentImageURL
-        document.querySelector('#current-image-id-dessert-wine').value = currentImageID
-        // document.querySelector('#current-image-id').value = 'TESTING123'
-        document.querySelector('#image-text-dessert-wine').textContent = currentImageURL ? 'Replace ' : 'Add '
-        // document.querySelector('#current-image-label').style.display = 'block'
-        document.querySelector('#form-dessert-wine h1').textContent = 'EDIT DESSERT WINE'
-        document.querySelector('#form-dessert-wine').style.background = 'lightblue'
-        document.querySelector('#submit-button-dessert-wine-form').innerHTML = `Update Dessert Wine`
+    function editDessertMenuCoffeeTea(id,
+                                      name,
+                                      price,){
+        document.querySelector('#id-dessert-menu-coffee-tea').value = id
+        document.querySelector('#name-dessert-menu-coffee-tea').value = name
+        document.querySelector('#price-dessert-menu-coffee-tea').value = price
+        document.querySelector('#form-dessert-menu-coffees-teas h1').textContent = 'EDIT COFFEE/TEA'
+        document.querySelector('#form-dessert-menu-coffees-teas').style.background = 'lightblue'
+        document.querySelector('#submit-button-dessert-menu-coffees-teas').innerHTML = `Update Coffee/Tea`
         setEditMode(true)
-        setExistingImage(currentImageURL ? currentImageURL : null)
-        document.querySelector('#delete-image-checkbox-dessert-wine') && (document.querySelector('#delete-image-checkbox-dessert-wine').checked = false)
         setTimeout(()=>{
-          document.getElementById('form-dessert-wine').scrollIntoView({behavior:'smooth'})
+          document.getElementById('form-dessert-menu-coffees-teas').scrollIntoView({behavior:'smooth'})
         }
           ,10)
     }
@@ -62,9 +44,9 @@ export default function DessertMenuCoffeesTeasItem(props){
 
                   
                     <span   className="item-button edit-button"
-                            onClick={()=>editDessertWine( props.id,
-                                                          props.name,
-                                                          props.price,
+                            onClick={()=>editDessertMenuCoffeeTea(props.id,
+                                                                  props.name,
+                                                                  props.price,
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"

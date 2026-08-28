@@ -8,7 +8,7 @@ import {useEffect} from 'react'
 
 // export const dynamic = 'force-dynamic'
 
-export default function DessertMenu({desserts,dessertWines}){
+export default function DessertMenu({desserts,dessertWines,dessertMenuCoffeesTeas}){
     const router = useRouter()
     useEffect(()=> router.refresh(),[])
     // router.refresh()
@@ -277,92 +277,23 @@ export default function DessertMenu({desserts,dessertWines}){
                     style={{width:'100%'}}
               >
               
-
-
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Espresso</span>
-                    <span className="dessert-price">8</span>
+                {dessertMenuCoffeesTeas.map(item=>(
+                  <div  key={item._id} 
+                        className='dinner-menu-item'
+                  >
+                        <div style={{display:'flex',justifyContent:'space-between',width:'100%'}}>
+                          <div className="dessert-name">{item.name}</div>
+                          <div className="dessert-price">{item.price}</div>
+                        </div>  
                   </div>
-                </div>
 
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Coffee</span>
-                    <span className="dessert-price">10</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Latte | Matcha Latte</span>
-                    <span className="dessert-price">12</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Iced Green Tea | Iced Black Tea</span>
-                    <span className="dessert-price">15</span>
-                  </div>
-                </div>
+                  
+                  
+                ))}
 
 
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Sencha Jou</span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                </div>
 
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Genmaimatcha</span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                </div>
 
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Hojicha</span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Yame Black</span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Yame Oolong</span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Soba Tea</span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Chamomile</span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item">
-                  <div className="name-price">
-                    <span className="dessert-name">Peppermint</span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                </div>
 
 
 

@@ -68,7 +68,7 @@ export default function DessertMenuCoffeesTeasItem(props){
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteItem('DessertWine',props.id)}
+                            onClick={()=>deleteItem('DessertMenuCoffeeTea',props.id)}
                     >
                         DELETE
                     </span>

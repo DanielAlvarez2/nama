@@ -199,6 +199,7 @@ export default function DessertMenu({desserts,dessertWines}){
             style={{display:'flex',
                     flexDirection:'column',
                     paddingBottom:'70px',
+                    paddingTop:'40px',
                     // backgroundImage:'url("akari-dessert-2.jpg")',
                     backgroundSize:'5.5in'
                   }}

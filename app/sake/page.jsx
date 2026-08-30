@@ -2328,6 +2328,39 @@ export default function SakePage(){
 
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
+                            *Yachiya
+                        </div>{/* .sake-producer-name */}
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'SWEET',
+                                                                    'Yachiya',
+                                                                    '3504',
+                                                                    '720 ml',
+                                                                    '195',
+                                                                    'Kagatsuru Umeshu, Ishikawa',
+                                                                    'no-image.jpg'
+                                                                    )}>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3504</span>
+                                <span className='sake-description'>
+                                    Kagatsuru Umeshu, Ishikawa
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3504</span>
+                                <span className='sake-size'>720 ml</span>
+                                <span className='sake-price'>195</span>
+                                <span className='sake-abv'>??%abv</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+
+                    </div>{/* .sake-producer */}
+
+
+
+
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
                             Yamamoto Honke
                         </div>{/* .sake-producer-name */}
 

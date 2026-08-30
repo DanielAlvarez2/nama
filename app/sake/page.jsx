@@ -1281,34 +1281,6 @@ export default function SakePage(){
 
 
 
-                    <div className='sake-producer'>    
-                        <div className='sake-producer-name'><span className='bin-left'></span>
-                            Kamoizumi
-                        </div>{/* .sake-producer-name */}
-
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'JUNMAI DAIGINJO',
-                                                                    'Kiku no Sato Shuzo',
-                                                                    '3412',
-                                                                    '500 ml',
-                                                                    '115',
-                                                                    'Kamoizumi Autmn<span class="typo">al</span> Elixir Junmai Daiginjo, Hiroshima',
-                                                                    'kamoizumi.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3412</span>
-                                <span className='sake-description'>
-                                    Autumn<span className="typo">al</span> Elixir Junmai Daiginjo, Hiroshima
-                                </span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3412</span>
-                                <span className='sake-size'>500 ml</span>
-                                <span className='sake-price'>115</span>
-                                <span className='sake-abv'>15%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
-                    </div>{/* .sake-producer */}
 
                     <div className='sake-producer'>    
                         <div className='sake-producer-name'><span className='bin-left'></span>

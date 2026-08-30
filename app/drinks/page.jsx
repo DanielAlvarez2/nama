@@ -354,7 +354,7 @@ export default function DrinksMenu(){
 
               
                 <div  className="dinner-menu-item"
-                      // onClick={()=>showModal('souchong-sour')}
+                      onClick={()=>showModal('kombucha')}
                 >
                   <div className="name-price">
                     <span>
@@ -1255,6 +1255,47 @@ export default function DrinksMenu(){
 
 
 
+
+    <div id="kombucha" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`kombucha.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                          <div className="name-price">
+                            <span>
+                              <span className="name">Unified Ferments Kombucha</span>
+                              <span className="allergies"></span>
+                            </span>
+                            <span className="dessert-price">16</span>
+                          </div>
+                          <div className="description1">Snow Chrysanthemum, Lapsang Souchong, </div>
+                          <div className="description2">Rhododendron, Soba</div>
+                          <br/>
+                          <hr/>
+                          <br/>
+                          4 Flavor Options:<br/>
+                           - Snow Chrysanthemum<br/>
+                           - Lapsang Souchong<br/>
+                           - Rhododendron<br/>
+                           - Soba<br/>
+                          <br/>
+                          Kombucha: <br/>
+                          FERMENTED, slightly fizzy, sweetened tea<br/>
+                          served cold<br/>
+                          <br/>
+              </div>
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #kombucha */}
 
     <div id="botanic" className='modal'>
       <div>

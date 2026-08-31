@@ -1280,6 +1280,36 @@ export default function SakePage(){
             <div className='sake-section'>
 
 
+                    <div className='sake-producer'>    
+                        <div className='sake-producer-name'><span className='bin-left'></span>
+                            Kamoizumi
+                        </div>{/* .sake-producer-name */}
+
+                        <div className='sake' onClick={()=>openModal(
+                                                                    'JUNMAI DAIGINJO',
+                                                                    'Kamoizumi',
+                                                                    '3412',
+                                                                    '500 ml',
+                                                                    '115',
+                                                                    'Autumn<span class="typo">al</span> Elixir Junmai Daiginjo, Hiroshima',
+                                                                    'kamoizumi.jpg'
+                                                                    )}>
+                            <div className='sake-flexbox-left'>
+                                <span className='bin-left'>3412</span>
+                                <span className='sake-description'>
+                                    Autumn<span className='typo'>al</span> Elixir Junmai Daiginjo, Hiroshima
+                                </span>
+                            </div>{/* .sake-flexbox-left */}
+                            <div className='sake-flexbox-right'>
+                                <span className='bin-mobile'>3412</span>
+                                <span className='sake-size'>500 ml</span>
+                                <span className='sake-price'>115</span>
+                                <span className='sake-abv'>16.5%abv</span>
+                            </div>{/* .sake-flexbox-right */}
+                        </div>{/* .sake */}
+                    </div>{/* .sake-producer */}
+
+
 
 
                     <div className='sake-producer'>    
@@ -2325,36 +2355,6 @@ export default function SakePage(){
                     </div>{/* .sake-producer */}
 
 
-
-                    <div className='sake-producer'>    
-                        <div className='sake-producer-name'><span className='bin-left'></span>
-                            *Yachiya
-                        </div>{/* .sake-producer-name */}
-
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'SWEET',
-                                                                    'Yachiya',
-                                                                    '3504',
-                                                                    '720 ml',
-                                                                    '195',
-                                                                    'Kagatsuru Umeshu, Ishikawa',
-                                                                    'no-image.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3504</span>
-                                <span className='sake-description'>
-                                    Kagatsuru Umeshu, Ishikawa
-                                </span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3504</span>
-                                <span className='sake-size'>720 ml</span>
-                                <span className='sake-price'>195</span>
-                                <span className='sake-abv'>??%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
-
-                    </div>{/* .sake-producer */}
 
 
 

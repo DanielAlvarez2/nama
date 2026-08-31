@@ -358,7 +358,7 @@ export default function DrinksMenu(){
                 >
                   <div className="name-price">
                     <span>
-                      <span className="name">*Unified Ferments Kombucha</span>
+                      <span className="name">Unified Ferments Kombucha</span>
                       <span className="allergies"></span>
                     </span>
                     <span className="dessert-price">16</span>

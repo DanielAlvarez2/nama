@@ -4,12 +4,57 @@ import mongoose from 'mongoose'
 import connectMongoDB from '@/libs/mongodb.js'
 import { NextResponse } from 'next/server'
 import Dessert from '@/models/Dessert.js'
+import MenuItem from '@/models/MenuItem.js'
 import DessertWine from '@/models/DessertWine.js'
 import DessertMenuCoffeeTea from '@/models/DessertMenuCoffeeTea.js'
 import {revalidatePath} from 'next/cache'
 
 import {cloudinary} from '@/libs/cloudinary.js'
 
+
+export async function addMenuItem(formData){
+    try{
+        let cloudinary_public_id = ''
+        let cloudinary_secure_url = ''    
+
+        if(formData.get('preview-image')){
+                const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
+                cloudinary_public_id = cloudinaryResponse.public_id
+                cloudinary_secure_url = cloudinaryResponse.secure_url
+        }
+        await connectMongoDB()
+        const highestSequenceArray = await MenuItem.find().sort({sequence:-1})
+        const highestSequenceArrayFiltered= highestSequenceArray.filter(item=>item.menu == formData.get('menu') && formData.get('section'))
+        const highestSequence = highestSequenceArrayFiltered[0] ? highestSequenceArrayFiltered[0].sequence : 0
+        await MenuItem.create({
+            menu: formData.get('menu'),
+            section: formData.get('section'),
+            name1: formData.get('name1').trim(),
+            name2: formData.get('name2') ? formData.get('name2').trim() : null,
+            upgrade1: formData.get('upgrade1') ? formData.get('upgrade1').trim() : null,
+            upgrade2: formData.get('upgrade2') ? formData.get('upgrade2').trim() : null,
+            upgrade3: formData.get('upgrade3') ? formData.get('upgrade3').trim() : null,
+            price3: formData.get('price3') ? formData.get('price3').trim() : null,
+            price2: formData.get('price2') ? formData.get('price2').trim() : null,
+            price1: formData.get('price1') ? formData.get('price1').trim() : null,
+            abv: formData.get('abv') ? formData.get('abv').trim() : null,
+            vintage: formData.get('vintage') ? formData.get('vintage').trim() : null,
+            allergies: formData.get('allergies') ? formData.get('allergies').trim() : null,
+            description1: formData.get('description1') ? formData.get('description1').trim() : null,
+            description2: formData.get('description2') ? formData.get('description2').trim() : null,
+            typos: formData.get('typos') ? formData.get('typos').trim() : null,
+            price: formData.get('price').trim(),
+            staffInfo: formData.get('staff-info') ? formData.get('staff-info').trim() : null,
+            sequence: highestSequence + 1,
+            cloudinary_public_id,
+            cloudinary_secure_url
+        })
+        revalidatePath(formData.get('path'))
+        return 
+    }catch(err){
+        console.log(err)
+    }
+} // addMenuItem()
 
 export async function addDessert(formData){
     try{

@@ -1,6 +1,6 @@
 'use client'
 
-import { addDessert } from "@/app/actions"
+import { addMenuItem } from "@/app/actions"
 import { useActionState } from "react"
 import { useState } from "react"
 import { TiDeleteOutline } from "react-icons/ti";
@@ -27,7 +27,7 @@ export default function DessertForm({addDessert,editDessert}){
     }
 
     async function handleSubmit(formData){
-        if (!formData.get('name').trim() || !formData.get('price').trim()) {
+        if (!formData.get('name1').trim() || !formData.get('price').trim()) {
             alert('Name and Price are required')
             setTimeout(()=>{
                 document.querySelector('#name-dessert').value = formData.get('name')
@@ -44,7 +44,7 @@ export default function DessertForm({addDessert,editDessert}){
             await editDessert(formData)
             setEditMode(false)
         }else{
-            await addDessert(formData)
+            await addMenuItem(formData)
         }
         setTimeout(()=>{
             document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
@@ -97,12 +97,27 @@ function toggleCheckbox(){
                         name='id' 
                         id='id-dessert' />
 
+                <input  type='hidden' 
+                        name='menu'
+                        value='dessert'
+                />
+
+                <input  type='hidden' 
+                        name='section'
+                        value='desserts'
+                />
+
+                <input  type='hidden'
+                        name='path'
+                        value='/manager/dessert'
+                />
+
                 <label>
                     Name: <span className="required">*REQUIRED</span><br/>
                     <input  type='text' 
                             autoComplete="off"
                             required
-                            name='name'
+                            name='name1'
                             id='name-dessert'
                             style={{width:'100%'}} />
                 </label>

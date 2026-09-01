@@ -856,7 +856,7 @@ export default function DrinksMenu(){
               <div className="right-column">
               
                 <div  className='dessert-wine' 
-                      // onClick={()=>showModal('saint-peray')}
+                      onClick={()=>showModal('VieVite')}
                 >
                   <div className='dessert-wine-vintage'>*2025</div>
                   <div className='dessert-wine-name'>VieVité<br/>Côtes de Provence, FR</div>
@@ -1255,6 +1255,34 @@ export default function DrinksMenu(){
 
 
 
+
+    <div id="VieVite" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} /> 
+          <div className='modal-content'>
+          
+          <div>
+            <img src={`VieVite.jpg?v=${Date.now()}`} />
+          </div>
+              
+          <div className='modal-text'>
+                 
+              MENU DESCRIPTION:<br/><br/>
+                <div  className='dessert-wine' 
+                      // onClick={()=>showModal('saint-peray')}
+                >
+                  <div className='dessert-wine-vintage'>2025</div>
+                  <div className='dessert-wine-name'>VieVité<br/>Côtes de Provence, FR</div>
+                  <div>22</div>
+                </div>{/* .dessert-wine */}
+                <hr/><br/>
+                Grape Varietals: <br/>
+                Cinsault/Grenache/Syrah/Carignane<br/>
+                13%abv
+            </div>{/* .modal-text */}  
+          </div>{/* .modal-content */}         
+      </div>
+    </div>{/* #saint-peray */}
 
     <div id="kombucha" className='modal'>
       <div>

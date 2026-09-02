@@ -1,26 +1,26 @@
-import DessertClient from './components/DessertClient.jsx';
-import mongoose from 'mongoose'
+import DessertClient from '../dessert/components/DessertClient.jsx';
 import connectMongoDB from '@/libs/mongodb'
-import Dessert from '@/models/Dessert.js'
-import DessertWine from '@/models/DessertWine.js'
-import DessertMenuCoffeeTea from '@/models/DessertMenuCoffeeTea.js'
+import MenuItem from '@/models/MenuItem.js'
 
 export const dynamic = 'force-dynamic'
 
 export default async function ManagerDessertPage(){
     
       await connectMongoDB()
-      const desserts = JSON.parse(JSON.stringify(await Dessert.find().sort({sequence:1})))
-      const dessertWines = JSON.parse(JSON.stringify(await DessertWine.find().sort({sequence:1})))
-      const coffeesTeas = JSON.parse(JSON.stringify(await DessertMenuCoffeeTea.find().sort({sequence:1})))
+      const menuItems = JSON.parse(JSON.stringify(await MenuItem.find().sort({sequence:1})))
       
-      const dessertsArray = await Dessert.find().sort({sequence:-1})
-      const dessertWinesArray = await DessertWine.find().sort({sequence:-1})
-      const coffeesTeasArray = await DessertMenuCoffeeTea.find().sort({sequence:-1})
+      const desserts = menuItems.filter(item=>item.menu == 'dessert' && item.section == 'desserts')
+      const dessertWines = menuItems.filter(item=>item.menu == 'dessert' && item.section == 'dessert wines')
+      const coffeeTea = menuItems.filter(item=>item.menu == 'dessert' && item.section == 'coffee tea')
 
+      const menuItemsArray = await MenuItem.find().sort({sequence:-1})
+      const dessertsArray = menuItemsArray.filter(item=>item.menu == 'dessert' && item.section == 'desserts')
+      const dessertWinesArray = menuItemsArray.filter(item=>item.menu == 'dessert' && item.section == 'dessert wines')
+      const coffeeTeaArray = menuItemsArray.filter(item=>item.menu == 'dessert' && item.section == 'coffee tea')
+
+      const maxSequenceDesserts = dessertsArray[0] ? dessertsArray[0].sequence : 0
       const maxSequenceDessertWines = dessertWinesArray[0] ? dessertWinesArray[0].sequence : 0
-      const maxSequence = dessertsArray[0] ? dessertsArray[0].sequence : 0
-      const maxSequenceDessertMenuCoffeesTeas = coffeesTeasArray[0] ? coffeesTeasArray[0].sequence : 0
+      const maxSequenceCoffeeTea = coffeeTeaArray[0] ? coffeeTeaArray[0].sequence : 0
       
       
 
@@ -34,12 +34,6 @@ export default async function ManagerDessertPage(){
     }
 
     return(
-            <DessertClient  desserts={desserts} 
-                            dessertWines={dessertWines} 
-                            maxSequence={maxSequence} 
-                            maxSequenceDessertWines={maxSequenceDessertWines} 
-                            coffeesTeas={coffeesTeas}
-                            maxSequenceDessertMenuCoffeesTeas={maxSequenceDessertMenuCoffeesTeas}
-                            />
+            <DessertClient menuItems={menuItems} />
     )
 }

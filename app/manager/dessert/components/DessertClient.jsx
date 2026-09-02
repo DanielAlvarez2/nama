@@ -4,7 +4,7 @@ import DessertItem from './DessertItem.jsx';
 import DessertWineItem from './DessertWineItem.jsx';
 import DessertMenuCoffeesTeasItem from './DessertMenuCoffeesTeasItem.jsx';
 import DessertNavbarTop from './DessertNavbarTop.jsx';
-
+import {addMenuItem,editMenuItem} from '@/app/actions.js'
 import {addDessertWine,editDessertWine} from '@/app/actions.js'
 import {addDessertMenuCoffeeTea,editDessertMenuCoffeeTea} from '@/app/actions.js'
 import DessertWineForm from './DessertWineForm.jsx';
@@ -13,9 +13,11 @@ import NavbarMenuManager from '@/components/NavbarMenuManager.jsx';
 import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager.jsx';
 import {useState} from 'react'
 
-export default function DessertClient(props){
+export default function DessertClient2(props){
 
     const [dessertPage, setDessertPage] = useState('Desserts')
+    const desserts = props.menuItems.filter(item=>item.menu == 'dessert' && item.section == 'desserts')
+    const maxSequenceDesserts = desserts.length ? desserts[desserts.length - 1].sequence : 0
 
     return(
             <div className='webpage'>
@@ -53,11 +55,11 @@ export default function DessertClient(props){
 
                         <div className="right-column">
                         
-                          {props.desserts.map(data=>{
+                          {desserts.map(data=>{
                             return(
                               <div key={data._id}>
-                                <DessertItem  id={data._id.toString()}
-                                              name={data.name} 
+                                <DessertItem  id={data._id}
+                                              name={data.name1} 
                                               allergies={data.allergies}
                                               description1={data.description1}
                                               description2={data.description2}
@@ -65,7 +67,7 @@ export default function DessertClient(props){
                                               price={data.price}
                                               staffInfo={data.staffInfo}
                                               sequence={data.sequence}
-                                              maxSequence={props.maxSequence}
+                                              maxSequence={maxSequenceDesserts}
                                               cloudinary_secure_url={data.cloudinary_secure_url}
                                               cloudinary_public_id={data.cloudinary_public_id}
                                 />
@@ -87,7 +89,7 @@ export default function DessertClient(props){
                 <br/>
 
                 <DessertForm  
-                // addDessert={addDessert}
+                // addMemuItem={addMenuItem}
                               // editDessert={editDessert}
                 />
 

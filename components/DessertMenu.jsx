@@ -8,10 +8,9 @@ import {useEffect} from 'react'
 
 // export const dynamic = 'force-dynamic'
 
-export default function DessertMenu({desserts,dessertWines,dessertMenuCoffeesTeas}){
+export default function DessertMenu({menuItems}){
     const router = useRouter()
     useEffect(()=> router.refresh(),[])
-    // router.refresh()
     function showModal(menuItem){
         document.querySelector(`#${menuItem}`).style.display = 'grid'
     }
@@ -83,7 +82,8 @@ export default function DessertMenu({desserts,dessertWines,dessertMenuCoffeesTea
 
               <div className="right-column" style={{width:'100%',lineHeight:'1.25'}}>
               
-                {desserts.map(item=>(
+                {menuItems.map(item=>(
+                    item.menu == 'dessert' && item.section == 'desserts' && 
                   <div  key={item._id} 
                         className='dinner-menu-item'
                         onClick={()=>openModalDessert(item.name,
@@ -219,7 +219,8 @@ export default function DessertMenu({desserts,dessertWines,dessertMenuCoffeesTea
                     style={{width:'100%'}}
               >
 
-                {dessertWines.map(item=>(
+                {menuItems.map(item=>(
+                    item.menu == 'dessert' && item.section == 'dessert wines' &&
                   <div  key={item._id} 
                         className='dinner-menu-item'
                         onClick={()=>openModalDessertWine(
@@ -277,7 +278,8 @@ export default function DessertMenu({desserts,dessertWines,dessertMenuCoffeesTea
                     style={{width:'100%'}}
               >
               
-                {dessertMenuCoffeesTeas.map(item=>(
+                {menuItems.map(item=>(
+                    item.menu == 'dessert' && item.section == 'coffee-tea' &&
                   <div  key={item._id} 
                         className='dinner-menu-item'
                   >

@@ -314,24 +314,15 @@ export async function deleteItem(Model,id){
     return
 }
 
-export async function moveDown(Model,id){
-    if(!Model || !id) return
+export async function moveDown(id,menu,section,path){
+    if(!id || !menu || !section || !path) return
     await connectMongoDB()
-    const target = await mongoose.model(Model).findById(id)
-    await mongoose.model(Model).findOneAndUpdate({sequence:target.sequence+1},{$set:{sequence:target.sequence}})
-    await mongoose.model(Model).findByIdAndUpdate(id,{sequence:target.sequence + 1}) 
-    revalidatePath('/manager/dessert')
+    const target = await MenuItem.findById(id)
+    await MenuItem.findOneAndUpdate({sequence:target.sequence+1,menu,section},{$set:{sequence:target.sequence}})
+    await MenuItem.findByIdAndUpdate(id,{sequence:target.sequence + 1}) 
+    revalidatePath(path)
     return
 }
-// export async function moveUp(Model,id){
-//     if(!Model || !id) return
-//     await connectMongoDB()
-//     const target = await mongoose.model(Model).findById(id)
-//     await mongoose.model(Model).findOneAndUpdate({sequence:target.sequence-1},{$set:{sequence:target.sequence}})
-//     await mongoose.model(Model).findByIdAndUpdate(id,{sequence:target.sequence - 1}) 
-//     revalidatePath('/manager/dessert')
-//     return
-// }
 
 export async function moveUp(id,menu,section,path){
     if(!id || !menu || !section || !path) return

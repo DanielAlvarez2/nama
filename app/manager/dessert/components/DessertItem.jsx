@@ -101,7 +101,7 @@ export default function DessertItem(props){
                                             
                                             top:'1px'}} />
                     </span>
-                    <span onClick={()=>moveDown('Dessert',props.id)}
+                    <span onClick={()=>moveDown(props.id,'dessert','desserts','/manager/dessert2')}
                           className={`item-button arrow-button ${props.sequence == props.maxSequence ? 'visibility-hidden' : ''}`}>
                         <ImArrowDown style={{position:'relative',top:'2px'}} />
                     </span>

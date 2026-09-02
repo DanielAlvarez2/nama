@@ -86,7 +86,7 @@ export default function DessertMenu({menuItems}){
                     item.menu == 'dessert' && item.section == 'desserts' && 
                   <div  key={item._id} 
                         className='dinner-menu-item'
-                        onClick={()=>openModalDessert(item.name,
+                        onClick={()=>openModalDessert(item.name1,
                                                       item.allergies,
                                                       item.price,
                                                       item.description1,

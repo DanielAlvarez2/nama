@@ -12,7 +12,7 @@ export default function DessertItem(props){
     const {editMode,setEditMode} = useEditModeContext()
     const {existingImage,setExistingImage} = useExistingImageContext()
 
-    function editMenuItem(id,
+    function editDessert(id,
                           name,
                           allergies,
                           description1,

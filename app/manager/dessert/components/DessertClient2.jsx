@@ -4,8 +4,7 @@ import DessertItem from './DessertItem.jsx';
 import DessertWineItem from './DessertWineItem.jsx';
 import DessertMenuCoffeesTeasItem from './DessertMenuCoffeesTeasItem.jsx';
 import DessertNavbarTop from './DessertNavbarTop.jsx';
-import {addDessert,editDessert} from '@/app/actions.js'
-import {addMenuItem} from '@/app/actions.js'
+import {addMenuItem,editMenuItem} from '@/app/actions.js'
 import {addDessertWine,editDessertWine} from '@/app/actions.js'
 import {addDessertMenuCoffeeTea,editDessertMenuCoffeeTea} from '@/app/actions.js'
 import DessertWineForm from './DessertWineForm.jsx';
@@ -89,8 +88,9 @@ export default function DessertClient2(props){
 
                 <br/>
 
-                <DessertForm  addMemuItem={addMenuItem}
-                              editDessert={editDessert}
+                <DessertForm  
+                // addMemuItem={addMenuItem}
+                              // editDessert={editDessert}
                 />
 
               {/* #dessert-page-desserts */}

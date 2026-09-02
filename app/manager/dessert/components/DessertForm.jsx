@@ -1,6 +1,6 @@
 'use client'
 
-import { addMenuItem } from "@/app/actions"
+import { addMenuItem,editMenuItem } from "@/app/actions"
 import { useActionState } from "react"
 import { useState } from "react"
 import { TiDeleteOutline } from "react-icons/ti";
@@ -41,7 +41,7 @@ export default function DessertForm({addDessert,editDessert}){
             return
         }
         if(editMode){
-            await editDessert(formData)
+            await editMenuItem(formData)
             setEditMode(false)
         }else{
             await addMenuItem(formData)

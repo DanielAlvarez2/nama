@@ -79,38 +79,7 @@ export async function addMenuItem(formData){
     }
 } // addMenuItem()
 
-export async function addDessert(formData){
-    try{
-        let cloudinary_public_id = ''
-        let cloudinary_secure_url = ''    
-
-        if(formData.get('preview-image')){
-                const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
-                cloudinary_public_id = cloudinaryResponse.public_id
-                cloudinary_secure_url = cloudinaryResponse.secure_url
-        }
-        await connectMongoDB()
-        const highestSequenceDessert = await Dessert.find().sort({sequence:-1})
-        await Dessert.create({
-            name: formData.get('name').trim(),
-            allergies: formData.get('allergies').trim(),
-            description1: formData.get('description1').trim(),
-            description2: formData.get('description2').trim(),
-            typos: formData.get('typos').trim(),
-            price: formData.get('price').trim(),
-            staffInfo: formData.get('staff-info').trim(),
-            sequence: highestSequenceDessert[0] ? highestSequenceDessert[0].sequence + 1 : 1,
-            cloudinary_public_id,
-            cloudinary_secure_url
-        })
-        revalidatePath('/manager/dessert')
-        return 
-    }catch(err){
-        console.log(err)
-    }
-} // addDessert()
-
-export async function editDessert(formData){
+export async function editMenuItem(formData){
     try{
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''  
@@ -149,8 +118,9 @@ export async function editDessert(formData){
                 await cloudinary.uploader.destroy(formData.get('current-image-id'))
             }
 
-        await Dessert.findByIdAndUpdate(formData.get('id'),{
-            name: formData.get('name').trim(),
+        await MenuItem.findByIdAndUpdate(formData.get('id'),{
+            name1: formData.get('name1').trim(),
+            name2: formData.get('name2').trim(),
             allergies: formData.get('allergies').trim(),
             description1: formData.get('description1').trim(),
             description2: formData.get('description2').trim(),
@@ -161,14 +131,14 @@ export async function editDessert(formData){
             cloudinary_secure_url
         })
         
-        revalidatePath('/manager/dessert')
+        revalidatePath(formData.get('path'))
         return
 
     }catch(err){
         console.log(err)
     }
 } 
-// editDessert() 
+// editMenuItem() 
 
 
 

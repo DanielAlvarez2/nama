@@ -1,6 +1,6 @@
 'use client'
 
-import { deleteItem,moveDown,moveUp } from "@/app/actions.js"
+import { deleteMenuItem,moveDown,moveUp } from "@/app/actions.js"
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 import { useState } from "react";
@@ -91,7 +91,7 @@ export default function DessertItem(props){
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteItem('Dessert',props.id)}
+                            onClick={()=>deleteMenuItem(props.id,'dessert','desserts','/manager/dessert2')}
                     >
                         DELETE
                     </span>

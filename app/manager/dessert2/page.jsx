@@ -34,12 +34,6 @@ export default async function ManagerDessertPage2(){
     }
 
     return(
-            <DessertClient2 desserts={desserts} 
-                            dessertWines={dessertWines} 
-                            coffeeTea={coffeeTea}
-                            maxSequenceDesserts={maxSequenceDesserts} 
-                            maxSequenceDessertWines={maxSequenceDessertWines} 
-                            maxSequenceCoffeeTea={maxSequenceCoffeeTea}
-                            />
+            <DessertClient2 menuItems={menuItems} />
     )
 }

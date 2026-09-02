@@ -11,6 +11,29 @@ import {revalidatePath} from 'next/cache'
 
 import {cloudinary} from '@/libs/cloudinary.js'
 
+export async function deleteMenuItem(id,menu,section,path){
+    if(!id || !menu || !section || !path) return
+    await connectMongoDB()
+    const target = await MenuItem.findById(id)
+    if(target.cloudinary_public_id){
+        await cloudinary.uploader.destroy(target.cloudinary_public_id)
+    }
+    const allMenuItems = await MenuItem.find().sort({sequence:-1})
+    const menuSectionItems = allMenuItems.filter(item=>item.menu == menu && item.section == section) 
+    const maxSequence = menuSectionItems[0].sequence
+    const menuSectionItemsAscending = menuSectionItems.toReversed()
+
+    if(target.sequence != maxSequence){
+        for(let i=target.sequence+1;i<=maxSequence;i++){
+            await MenuItem.findOneAndUpdate({sequence:i,menu:menu,section:section},{$set:{sequence:i-1}})
+        }
+    }
+    await MenuItem.findByIdAndDelete(id)
+    revalidatePath(path)
+    return
+}
+
+
 
 export async function addMenuItem(formData){
     try{
@@ -30,21 +53,21 @@ export async function addMenuItem(formData){
             menu: formData.get('menu'),
             section: formData.get('section'),
             name1: formData.get('name1').trim(),
-            name2: formData.get('name2') ? formData.get('name2').trim() : null,
-            upgrade1: formData.get('upgrade1') ? formData.get('upgrade1').trim() : null,
-            upgrade2: formData.get('upgrade2') ? formData.get('upgrade2').trim() : null,
-            upgrade3: formData.get('upgrade3') ? formData.get('upgrade3').trim() : null,
-            price3: formData.get('price3') ? formData.get('price3').trim() : null,
-            price2: formData.get('price2') ? formData.get('price2').trim() : null,
-            price1: formData.get('price1') ? formData.get('price1').trim() : null,
-            abv: formData.get('abv') ? formData.get('abv').trim() : null,
-            vintage: formData.get('vintage') ? formData.get('vintage').trim() : null,
-            allergies: formData.get('allergies') ? formData.get('allergies').trim() : null,
-            description1: formData.get('description1') ? formData.get('description1').trim() : null,
-            description2: formData.get('description2') ? formData.get('description2').trim() : null,
-            typos: formData.get('typos') ? formData.get('typos').trim() : null,
+            name2: formData.get('name2') ? formData.get('name2').trim() : '',
+            upgrade1: formData.get('upgrade1') ? formData.get('upgrade1').trim() : '',
+            upgrade2: formData.get('upgrade2') ? formData.get('upgrade2').trim() : '',
+            upgrade3: formData.get('upgrade3') ? formData.get('upgrade3').trim() : '',
+            price3: formData.get('price3') ? formData.get('price3').trim() : '',
+            price2: formData.get('price2') ? formData.get('price2').trim() : '',
+            price1: formData.get('price1') ? formData.get('price1').trim() : '',
+            abv: formData.get('abv') ? formData.get('abv').trim() : '',
+            vintage: formData.get('vintage') ? formData.get('vintage').trim() : '',
+            allergies: formData.get('allergies') ? formData.get('allergies').trim() : '',
+            description1: formData.get('description1') ? formData.get('description1').trim() : '',
+            description2: formData.get('description2') ? formData.get('description2').trim() : '',
+            typos: formData.get('typos') ? formData.get('typos').trim() : '',
             price: formData.get('price').trim(),
-            staffInfo: formData.get('staff-info') ? formData.get('staff-info').trim() : null,
+            staffInfo: formData.get('staff-info') ? formData.get('staff-info').trim() : '',
             sequence: highestSequence + 1,
             cloudinary_public_id,
             cloudinary_secure_url
@@ -290,6 +313,7 @@ export async function deleteItem(Model,id){
     revalidatePath('/manager/dessert')
     return
 }
+
 export async function moveDown(Model,id){
     if(!Model || !id) return
     await connectMongoDB()

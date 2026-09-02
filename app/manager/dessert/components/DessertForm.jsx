@@ -30,7 +30,7 @@ export default function DessertForm({addDessert,editDessert}){
         if (!formData.get('name1').trim() || !formData.get('price').trim()) {
             alert('Name and Price are required')
             setTimeout(()=>{
-                document.querySelector('#name-dessert').value = formData.get('name')
+                document.querySelector('#name-dessert').value = formData.get('name1')
                 document.querySelector('#typos').value = formData.get('typos')
                 document.querySelector('#allergies-dessert').value = formData.get('allergies')
                 document.querySelector('#description1-dessert').value = formData.get('description1')

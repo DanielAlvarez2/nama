@@ -17,6 +17,8 @@ import {useState} from 'react'
 export default function DessertClient2(props){
 
     const [dessertPage, setDessertPage] = useState('Desserts')
+    const desserts = props.menuItems.filter(item=>item.menu == 'dessert' && item.section == 'desserts')
+    const maxSequenceDesserts = desserts.length ? desserts[desserts.length - 1].sequence : 0
 
     return(
             <div className='webpage'>
@@ -54,7 +56,7 @@ export default function DessertClient2(props){
 
                         <div className="right-column">
                         
-                          {props.desserts.map(data=>{
+                          {desserts.map(data=>{
                             return(
                               <div key={data._id}>
                                 <DessertItem  id={data._id}
@@ -66,7 +68,7 @@ export default function DessertClient2(props){
                                               price={data.price}
                                               staffInfo={data.staffInfo}
                                               sequence={data.sequence}
-                                              maxSequence={props.maxSequence}
+                                              maxSequence={maxSequenceDesserts}
                                               cloudinary_secure_url={data.cloudinary_secure_url}
                                               cloudinary_public_id={data.cloudinary_public_id}
                                 />

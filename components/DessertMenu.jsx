@@ -98,7 +98,7 @@ export default function DessertMenu({menuItems}){
                   >
                     <div className="dessert-name-price">
                       <span>
-                        <span className="dessert-name">{item.name}</span>
+                        <span className="dessert-name">{item.name1}</span>
                         <span className="dessert-allergies"> ({item.allergies})</span>
                       </span>
                       <span className="dessert-price">{item.price}</span>

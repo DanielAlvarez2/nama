@@ -3,7 +3,6 @@
 import mongoose from 'mongoose'
 import connectMongoDB from '@/libs/mongodb.js'
 import { NextResponse } from 'next/server'
-import Dessert from '@/models/Dessert.js'
 import MenuItem from '@/models/MenuItem.js'
 import DessertWine from '@/models/DessertWine.js'
 import DessertMenuCoffeeTea from '@/models/DessertMenuCoffeeTea.js'
@@ -120,9 +119,9 @@ export async function editMenuItem(formData){
 
         await MenuItem.findByIdAndUpdate(formData.get('id'),{
             name1: formData.get('name1').trim(),
-            name2:  formData.get('name2') ? formData.get('name2').trim() : '',
+            name2: formData.get('name2') ? formData.get('name2').trim() : '',
             allergies: formData.get('allergies') ? formData.get('allergies').trim() : '',
-            description1: formData.get('decription1') ? formData.get('description1').trim() : '',
+            description1: formData.get('description1') ? formData.get('description1').trim() : '',
             description2: formData.get('description2') ? formData.get('description2').trim() : '',
             typos: formData.get('typos') ? formData.get('typos').trim() : '',
             price: formData.get('price').trim(),

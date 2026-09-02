@@ -88,10 +88,7 @@ export default function DessertClient2(props){
 
                 <br/>
 
-                <DessertForm  
-                // addMemuItem={addMenuItem}
-                              // editDessert={editDessert}
-                />
+                <DessertForm />
 
               {/* #dessert-page-desserts */}
               </div>

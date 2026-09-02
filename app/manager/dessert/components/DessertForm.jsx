@@ -8,7 +8,7 @@ import {useEditModeContext} from '@/context/EditModeContext'
 import {useExistingImageContext} from '@/context/ExistingImageContext'
 
 
-export default function DessertForm({addDessert,editDessert}){
+export default function DessertForm(){
 
     const {editMode,setEditMode} = useEditModeContext()   
     const {existingImage,setExistingImage} = useExistingImageContext()

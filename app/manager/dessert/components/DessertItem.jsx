@@ -95,7 +95,7 @@ export default function DessertItem(props){
                     >
                         DELETE
                     </span>
-                    <span onClick={()=>moveUp('Dessert',props.id)}
+                    <span onClick={()=>moveUp(props.id,'dessert','desserts','/manager/dessert2')}
                           className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
                         <ImArrowUp style={{ position:'relative',
                                             

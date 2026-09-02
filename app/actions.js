@@ -120,13 +120,13 @@ export async function editMenuItem(formData){
 
         await MenuItem.findByIdAndUpdate(formData.get('id'),{
             name1: formData.get('name1').trim(),
-            name2: formData.get('name2').trim(),
-            allergies: formData.get('allergies').trim(),
-            description1: formData.get('description1').trim(),
-            description2: formData.get('description2').trim(),
-            typos: formData.get('typos').trim(),
+            name2:  formData.get('name2') ? formData.get('name2').trim() : '',
+            allergies: formData.get('allergies') ? formData.get('allergies').trim() : '',
+            description1: formData.get('') ? formData.get('description1').trim() : '',
+            description2: formData.get('') ? formData.get('description2').trim() : '',
+            typos: formData.get('') ? formData.get('typos').trim() : '',
             price: formData.get('price').trim(),
-            staffInfo: formData.get('staff-info').trim(),
+            staffInfo: formData.get('') ? formData.get('staff-info').trim() : '',
             cloudinary_public_id,
             cloudinary_secure_url
         })

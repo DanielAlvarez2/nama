@@ -1,6 +1,6 @@
 'use client'
 
-import { deleteItem,moveDown,moveUp } from "@/app/actions.js"
+import { deleteMenuItem,moveDown,moveUp } from "@/app/actions.js"
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 import { useState } from "react";
@@ -89,17 +89,17 @@ export default function DessertWineItem(props){
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteItem('DessertWine',props.id)}
+                            onClick={()=>deleteMenuItem(props.id,'dessert','dessert wines','/manager/dessert')}
                     >
                         DELETE
                     </span>
-                    <span onClick={()=>moveUp('DessertWine',props.id)}
+                    <span onClick={()=>moveUp(props.id,'dessert','dessert wines','/manager/dessert')}
                           className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
                         <ImArrowUp style={{ position:'relative',
                                             
                                             top:'1px'}} />
                     </span>
-                    <span onClick={()=>moveDown('DessertWine',props.id)}
+                    <span onClick={()=>moveDown(props.id,'dessert','dessert wines','/manager/dessert')}
                           className={`item-button arrow-button ${props.sequence == props.maxSequenceDessertWines ? 'visibility-hidden' : ''}`}>
                         <ImArrowDown style={{position:'relative',top:'2px'}} />
                     </span>

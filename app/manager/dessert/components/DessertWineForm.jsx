@@ -1,6 +1,6 @@
 'use client'
 
-import { addDessertWine } from "@/app/actions"
+import { addMenuItem } from "@/app/actions"
 import { useActionState } from "react"
 import { useState } from "react"
 import { TiDeleteOutline } from "react-icons/ti";
@@ -8,7 +8,7 @@ import {useEditModeContext} from '@/context/EditModeContext'
 import {useExistingImageContext} from '@/context/ExistingImageContext'
 
 
-export default function DessertWineForm({addDessertWine,editDessertWine}){
+export default function DessertWineForm(){
 
     const {editMode,setEditMode} = useEditModeContext()   
     const {existingImage,setExistingImage} = useExistingImageContext()
@@ -40,10 +40,10 @@ export default function DessertWineForm({addDessertWine,editDessertWine}){
             return
         }
         if(editMode){
-            await editDessertWine(formData)
+            await editMenuItem(formData)
             setEditMode(false)
         }else{
-            await addDessertWine(formData)
+            await addMenuItem(formData)
         }
         setTimeout(()=>{
             document.getElementById('desserts-section').scrollIntoView({behavior:'smooth'})
@@ -93,6 +93,18 @@ function toggleCheckbox(){
                 <input  type='hidden' 
                         name='id' 
                         id='id-dessert-wine' />
+
+                <input  type='hidden'
+                        name='menu'
+                        value='dessert' />
+
+                <input  type='hidden'
+                        name='section'
+                        value='dessert wines' />
+
+                <input  type='hidden'
+                        name='path'
+                        value='/manager/dessert' />
 
                 <label>
                     Vintage: <span className="required">*REQUIRED</span><br/>

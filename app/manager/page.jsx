@@ -2751,7 +2751,7 @@ export default function ManagerDinnerPage() {
           <div className='modal-content'>
           
           <div>
-            <img src='kasugodai.jpg' />
+            <img src='no-image.jpg' />
           </div>
           <div className='modal-text'>
                            

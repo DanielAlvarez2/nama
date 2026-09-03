@@ -13,11 +13,15 @@ import NavbarMenuManager from '@/components/NavbarMenuManager.jsx';
 import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager.jsx';
 import {useState} from 'react'
 
-export default function DessertClient2(props){
+export default function DessertClient(props){
 
     const [dessertPage, setDessertPage] = useState('Desserts')
     const desserts = props.menuItems.filter(item=>item.menu == 'dessert' && item.section == 'desserts')
+    const dessertWines = props.menuItems.filter(item=>item.menu == 'dessert' && item.section == 'dessert wines')
+    const coffee = props.menuItems.filter(item=>item.menu == 'dessert' && item.section == 'coffee')
     const maxSequenceDesserts = desserts.length ? desserts[desserts.length - 1].sequence : 0
+    const maxSequenceDessertWines = dessertWines.length ? dessertWines[dessertWines.length - 1].sequence : 0
+    const maxSequenceCoffee = coffee.length ? coffee[coffee.length - 1].sequence : 0
 
     return(
             <div className='webpage'>
@@ -124,10 +128,10 @@ export default function DessertClient2(props){
 
                         <div className="right-column">
                         
-                          {props.dessertWines.map(data=>{
+                          {dessertWines.map(data=>{
                             return(
                               <div key={data._id}>
-                                <DessertWineItem  id={data._id.toString()}
+                                <DessertWineItem  id={data._id}
                                                   vintage={data.vintage} 
                                                   name1={data.name1} 
                                                   name2={data.name2} 
@@ -135,7 +139,7 @@ export default function DessertClient2(props){
                                                   price={data.price}
                                                   staffInfo={data.staffInfo}
                                                   sequence={data.sequence}
-                                                  maxSequenceDessertWines={props.maxSequenceDessertWines}
+                                                  maxSequenceDessertWines={maxSequenceDessertWines}
                                                   cloudinary_secure_url={data.cloudinary_secure_url}
                                                   cloudinary_public_id={data.cloudinary_public_id}
                                 />
@@ -154,9 +158,7 @@ export default function DessertClient2(props){
 
                 </div>{/* .small-paper */}
                 <br/>
-                <DessertWineForm  addDessertWine={addDessertWine}
-                                  editDessertWine={editDessertWine}                    
-                                  />
+                <DessertWineForm />
 
               {/* #dessert-page-dessert-wines */}
               </div>
@@ -199,7 +201,7 @@ export default function DessertClient2(props){
 
                         <div className="right-column">
                         
-                          {props.coffeesTeas.map(data=>{
+                          {coffeesTeas.map(data=>{
                             return(
                               <div key={data._id}>
                                 <DessertMenuCoffeesTeasItem id={data._id.toString()}                                                  

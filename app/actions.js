@@ -46,7 +46,7 @@ export async function addMenuItem(formData){
         }
         await connectMongoDB()
         const highestSequenceArray = await MenuItem.find().sort({sequence:-1})
-        const highestSequenceArrayFiltered= highestSequenceArray.filter(item=>item.menu == formData.get('menu') && formData.get('section'))
+        const highestSequenceArrayFiltered= highestSequenceArray.filter(item=>(item.menu == formData.get('menu') && item.section == formData.get('section')))
         const highestSequence = highestSequenceArrayFiltered[0] ? highestSequenceArrayFiltered[0].sequence : 0
         await MenuItem.create({
             menu: formData.get('menu'),

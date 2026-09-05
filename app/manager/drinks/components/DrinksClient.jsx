@@ -4,9 +4,15 @@ import NavbarMenuManager from '@/components/NavbarMenuManager';
 import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager';
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
-import CocktailsForm from './CocktailsForm.jsx'
+import CocktailForm from './CocktailForm.jsx'
+import MocktailForm from './MocktailForm.jsx'
+import CocktailItem from './CocktailItem.jsx'
+import MocktailItem from './MocktailItem.jsx'
+import {useState} from 'react'
 
 export default function DrinksClient(props){
+
+    const [drinkPage, setDrinkPage] = useState('cocktails')
 
     function showModal(menuItem){
         document.querySelector(`#${menuItem}`).style.display = 'grid'
@@ -48,6 +54,9 @@ export default function DrinksClient(props){
             </div>
             <br/>
 
+      {
+        drinkPage == 'cocktails' && 
+          <>
       <div className="small-paper" style={{paddingTop:'25px',height:'auto'}}>
         
           <div className="menu-items">
@@ -61,21 +70,48 @@ export default function DrinksClient(props){
 
               <div className="right-column">
               
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('ume-spritz')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Ume Spritz</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">31</span>
+                {props.allDrinks.filter(item=>item.section == 'cocktails').map(item=>
+                  <div  className="dinner-menu-item"
+                        key={item._id}
+                        onClick={()=>showModal('ume-spritz')}
+                  >
+                    <div className="name-price">
+                      <span>
+                        <span className="name">{item.name1}</span>
+                      </span>
+                      <span className="price">{item.price}</span>
+                    </div>
+                    <div className="description1">{item.description1}</div>
+                    <div className="description2">{item.description2}</div>
                   </div>
-                  <div className="description1">Kagatsuru Umeshu, Mondino </div>
-                  <div className="description2">Aperitivo, Cremant d'Alsace</div>
-                </div>
+                
+                )}
+
+                          {props.allDrinks.filter(item=>item.section == 'cocktails').map(data=>{
+                            return(
+                              <div key={data._id}>
+                                <CocktailItem id={data._id}
+                                              name1={data.name1} 
+                                              description1={data.description1}
+                                              description2={data.description2}
+                                              typos={data.typos}
+                                              price={data.price}
+                                              staffInfo={data.staffInfo}
+                                              sequence={data.sequence}
+                                              maxSequence={props.allDrinks.filter(item=>item.section == data.section) ? props.allDrinks.filter(item=>item.section == data.section)[props.allDrinks.filter(item=>item.section == data.section).length - 1].sequence : 0}
+                                              cloudinary_secure_url={data.cloudinary_secure_url}
+                                              cloudinary_public_id={data.cloudinary_public_id}
+                                />
+                                
+                              </div>
+                            )
+                          })}
+
+
+
+
+
+
 
 
 
@@ -107,7 +143,89 @@ export default function DrinksClient(props){
 
       <br className='no-print' />
 
-      <CocktailsForm />
+      <CocktailForm />
+          
+          </>
+      }
+
+      {
+        drinkPage == 'mocktails' && 
+          <>
+      <div className="small-paper" style={{paddingTop:'25px',height:'auto'}}>
+        
+          <div className="menu-items">
+
+            <div  className="section section-dessert"
+                  style={{marginBottom:'0px'}}
+            >
+              <div className="left-column"></div>
+                <div><span className='name'>Non-Alcoholic Cocktails</span><br/>ノンアルコールカクテル</div>
+                
+
+              <div className="right-column">
+              
+
+                          {props.allDrinks.filter(item=>item.section == 'mocktails').map(data=>{
+                            return(
+                              <div key={data._id}>
+                                <MocktailItem id={data._id}
+                                              name1={data.name1} 
+                                              description1={data.description1}
+                                              description2={data.description2}
+                                              typos={data.typos}
+                                              price={data.price}
+                                              staffInfo={data.staffInfo}
+                                              sequence={data.sequence}
+                                              maxSequence={props.allDrinks.filter(item=>item.section == data.section) ? props.allDrinks.filter(item=>item.section == data.section)[props.allDrinks.filter(item=>item.section == data.section).length - 1].sequence : 0}
+                                              cloudinary_secure_url={data.cloudinary_secure_url}
+                                              cloudinary_public_id={data.cloudinary_public_id}
+                                />
+                                
+                              </div>
+                            )
+                          })}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+
+
+
+
+          </div>{/* .menu-items */}
+
+
+
+
+
+
+
+
+      </div>{/* .small-paper */}
+
+      <br className='no-print' />
+
+      <MocktailForm />
+          
+          </>
+      }
+
 
       <br className='no-print' />
 
@@ -138,7 +256,7 @@ export default function DrinksClient(props){
           <div className='modal-content'>
           
           <div>
-            <img src='ume-spritz.jpg' />
+            <img src='/ume-spritz.jpg' />
           </div>
               
           <div className='modal-text'>

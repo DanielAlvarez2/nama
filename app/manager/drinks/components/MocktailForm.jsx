@@ -8,7 +8,7 @@ import {useEditModeContext} from '@/context/EditModeContext'
 import {useExistingImageContext} from '@/context/ExistingImageContext'
 
 
-export default function CocktailsForm(){
+export default function MocktailForm(){
 
     const {editMode,setEditMode} = useEditModeContext()   
     const {existingImage,setExistingImage} = useExistingImageContext()
@@ -30,12 +30,13 @@ export default function CocktailsForm(){
         if (!formData.get('name1').trim() || !formData.get('price').trim()) {
             alert('Name and Price are required')
             setTimeout(()=>{
-                document.querySelector('#name1-cocktail').value = formData.get('name1')
-                document.querySelector('#typos-cocktail').value = formData.get('typos')
-                document.querySelector('#description1-cocktail').value = formData.get('description1')
-                document.querySelector('#description2-cocktail').value = formData.get('description2')
-                document.querySelector('#price-cocktail').value = formData.get('price')
-                document.querySelector('#staff-info-cocktail').value = formData.get('staff-info')
+                document.querySelector('#name1-mocktail').value = formData.get('name1')
+                document.querySelector('#typos-mocktail').value = formData.get('typos')
+                document.querySelector('#description1-mocktail').value = formData.get('description1')
+                document.querySelector('#description2-mocktail').value = formData.get('description2')
+                document.querySelector('#price-mocktail').value = formData.get('price')
+                document.querySelector('#typos-mocktail').value = formData.get('typos-cocktail')
+                document.querySelector('#staff-info-mocktail').value = formData.get('staff-info')
             },10)
             return
         }
@@ -46,29 +47,30 @@ export default function CocktailsForm(){
             await addMenuItem(formData)
         }
         setTimeout(()=>{
-            document.getElementById('section-dessert').scrollIntoView({behavior:'smooth'})
+            document.querySelector('.section-dessert').scrollIntoView({behavior:'smooth'})
         },10)        
         resetForm()
     }
 
     function resetForm(){
         document.querySelector('#delete-image-checkbox') && (document.querySelector('#delete-image-checkbox').checked = false)
-        document.querySelector('#id-cocktail').value = ''
-        document.querySelector('#name1-cocktail').value = ''
-        document.querySelector('#description1-cocktail').value = ''
-        document.querySelector('#description2-cocktail').value = ''
-        document.querySelector('#price-cocktail').value = ''
-        document.querySelector('#staff-info-cocktail').value = ''
+        document.querySelector('#id-mocktail').value = ''
+        document.querySelector('#name1-mocktail').value = ''
+        document.querySelector('#description1-mocktail').value = ''
+        document.querySelector('#description2-mocktail').value = ''
+        document.querySelector('#price-mocktail').value = ''
+        document.querySelector('#typos-mocktail').value = ''
+        document.querySelector('#staff-info-mocktail').value = ''
         // document.querySelector('#current-img').src = ''
         document.querySelector('#current-image-url').value = ''
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
         // document.querySelector('#current-image-label').style.display = 'none'
-        document.querySelector('#form-cocktail h1').textContent = 'ADD NEW COCKTAIL'
-        document.querySelector('#form-cocktail').style.background = 'lightgreen'
-        document.querySelector('#submit-button-cocktail-form').innerHTML = `+ New Cocktail`
+        document.querySelector('#form-mocktail h1').textContent = 'ADD NEW MOCKTAIL'
+        document.querySelector('#form-mocktail').style.background = 'lightgreen'
+        document.querySelector('#submit-button-mocktail-form').innerHTML = `+ New Mocktail`
         setEditMode(false)
-        document.querySelector('#image-file-cocktail').value = ''
+        document.querySelector('#image-file-mocktail').value = ''
         setPreviewImage('')
         setExistingImage(null)
     }
@@ -76,7 +78,7 @@ export default function CocktailsForm(){
 function toggleCheckbox(){
     if(document.querySelector('#delete-image-checkbox').checked == true){
         document.querySelector('#delete-icon').style.color = 'red'
-        document.querySelector('#image-file-cocktail').value = ''
+        document.querySelector('#image-file-mocktail').value = ''
         setPreviewImage('')
     }else{
         document.querySelector('#delete-icon').style.color = 'transparent'
@@ -86,14 +88,14 @@ function toggleCheckbox(){
     return(
         <>
             <form   action={handleSubmit}
-                    id='form-cocktail'
+                    id='form-mocktail'
             >
-                <h1>ADD NEW COCKTAIL</h1>
+                <h1>ADD NEW MOCKTAIL</h1>
                 <br/><br/>
 
                 <input  type='hidden' 
                         name='id' 
-                        id='id-cocktail' />
+                        id='id-mocktail' />
 
                 <input  type='hidden' 
                         name='menu'
@@ -102,7 +104,7 @@ function toggleCheckbox(){
 
                 <input  type='hidden' 
                         name='section'
-                        value='cocktails'
+                        value='mocktails'
                 />
 
                 <input  type='hidden'
@@ -116,7 +118,7 @@ function toggleCheckbox(){
                             autoComplete="off"
                             required
                             name='name1'
-                            id='name-cocktail'
+                            id='name1-mocktail'
                             style={{width:'100%'}} />
                 </label>
                 <br/><br/>
@@ -126,7 +128,7 @@ function toggleCheckbox(){
                     <input  type='text' 
                             name='description1'
                             autoComplete="off"
-                            id='description1-cocktail'
+                            id='description1-mocktail'
                             style={{width:'100%'}} />
                 </label>
                 <br/><br/>
@@ -136,7 +138,7 @@ function toggleCheckbox(){
                     <input  type='text' 
                             name='description2'
                             autoComplete="off"
-                            id='description2-cocktail'
+                            id='description2-mocktail'
                             style={{width:'100%'}} />
                 </label>
                 <br/><br/>
@@ -144,8 +146,8 @@ function toggleCheckbox(){
                 <label>
                     Typos:<br/>
                     <input  type='text'
-                            name='typos-cocktail'
-                            id='typos'
+                            name='typos'
+                            id='typos-mocktail'
                             autoComplete="off"
                             style={{width:'100%', color:'red'}}
                     />
@@ -158,7 +160,7 @@ function toggleCheckbox(){
                             name='price'
                             required
                             autoComplete="off"
-                            id='price-cocktail'
+                            id='price-mocktail'
                             style={{width:'35%'}} />
                 </label>
                 <br/><br/>
@@ -166,7 +168,7 @@ function toggleCheckbox(){
                 <label>
                     Staff Info:<br/>
                     <textarea   style={{width:'100%',height:'150px'}}
-                                id='staff-info-cocktail'
+                                id='staff-info-mocktail'
                                 name='staff-info' />
                 </label>
                 <br/><br/>
@@ -205,7 +207,7 @@ function toggleCheckbox(){
                     <span id='image-text' style={{fontSize:'inherit'}}></span>Image File: (optional)<br/>
                     <input  type='file' 
                             name='image-file'
-                            id='image-file-cocktail'
+                            id='image-file-mocktail'
                             onChange={handleFileInputChange}
                     />
                 </label>
@@ -230,7 +232,7 @@ function toggleCheckbox(){
                     }
                 <br/><br/>
                 <div style={{display:'flex'}}>
-                    <button id='submit-button-cocktail-form' type='submit'>+ Cocktail</button>
+                    <button id='submit-button-mocktail-form' type='submit'>+ Mocktail</button>
                     <button type='button'
                             onClick={resetForm} 
                             style={{background:'red'}}>Cancel</button>

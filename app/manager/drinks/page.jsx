@@ -7,8 +7,8 @@ import connectMongoDB from '@/libs/mongodb.js'
 export default async function ManagerDrinksPage(){
 
   await connectMongoDB()
-  const drinks = JSON.parse(JSON.stringify(await MenuItem.find({menu:'drink'}).sort({sequence:1})))
+  const allDrinks = JSON.parse(JSON.stringify(await MenuItem.find({menu:'drink'}).sort({sequence:1})))
   return(
-    <DrinksClient drinks={drinks} />
+    <DrinksClient allDrinks={allDrinks} />
   )
 }

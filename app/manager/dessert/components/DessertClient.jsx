@@ -2,13 +2,13 @@
 import DessertForm from './DessertForm.jsx';
 import DessertItem from './DessertItem.jsx';
 import DessertWineItem from './DessertWineItem.jsx';
-import DessertMenuCoffeesTeasItem from './DessertMenuCoffeesTeasItem.jsx';
+import DessertMenuCoffeeItem from './DessertMenuCoffeeItem.jsx';
 import DessertNavbarTop from './DessertNavbarTop.jsx';
 import {addMenuItem,editMenuItem} from '@/app/actions.js'
 import {addDessertWine,editDessertWine} from '@/app/actions.js'
 import {addDessertMenuCoffeeTea,editDessertMenuCoffeeTea} from '@/app/actions.js'
 import DessertWineForm from './DessertWineForm.jsx';
-import DessertMenuCoffeesTeasForm from './DessertMenuCoffeesForm.jsx'
+import DessertMenuCoffeesTeasForm from './DessertMenuCoffeeForm.jsx'
 import NavbarMenuManager from '@/components/NavbarMenuManager.jsx';
 import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager.jsx';
 import {useState} from 'react'
@@ -186,7 +186,7 @@ export default function DessertClient(props){
               {
                 dessertPage == 'Coffee & Tea' &&
 
-              <div id='dessert-page-dessert-wines'>
+              <div id='dessert-page-coffee'>
 
                 <div className="small-paper" style={{height:'auto'}}>
                   
@@ -200,15 +200,14 @@ export default function DessertClient(props){
                         </div>
 
                         <div className="right-column">
-                        
                           {coffees.map(data=>{
                             return(
                               <div key={data._id}>
-                                <DessertMenuCoffeesTeasItem id={data._id.toString()}                                                  
-                                                            name={data.name} 
-                                                            price={data.price}
-                                                            sequence={data.sequence}
-                                                            maxSequenceDessertMenuCoffeesTeas={props.maxSequenceDessertMenuCoffeesTeas}
+                                <DessertMenuCoffeeItem  id={data._id}                                                  
+                                                        name1={data.name1} 
+                                                        price={data.price}
+                                                        sequence={data.sequence}
+                                                        maxSequenceCoffee={maxSequenceCoffee}
                                 />
                                 
                               </div>

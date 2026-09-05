@@ -1,26 +1,26 @@
 'use client'
 
-import { deleteItem,moveDown,moveUp } from "@/app/actions.js"
+import { deleteMenuItem,moveDown,moveUp } from "@/app/actions.js"
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 import {useEditModeContext} from '@/context/EditModeContext'
 
-export default function DessertMenuCoffeesTeasItem(props){
+export default function DessertMenuCoffeeItem(props){
 
     const {editMode,setEditMode} = useEditModeContext()
 
-    function editDessertMenuCoffeeTea(id,
-                                      name,
+    function editDessertMenuCoffee(id,
+                                      name1,
                                       price,){
-        document.querySelector('#id-dessert-menu-coffee-tea').value = id
-        document.querySelector('#name-dessert-menu-coffee-tea').value = name
-        document.querySelector('#price-dessert-menu-coffee-tea').value = price
-        document.querySelector('#form-dessert-menu-coffees-teas h1').textContent = 'EDIT COFFEE/TEA'
-        document.querySelector('#form-dessert-menu-coffees-teas').style.background = 'lightblue'
-        document.querySelector('#submit-button-dessert-menu-coffees-teas').innerHTML = `Update Coffee/Tea`
+        document.querySelector('#id-dessert-menu-coffee').value = id
+        document.querySelector('#name-dessert-menu-coffee').value = name1
+        document.querySelector('#price-dessert-menu-coffee').value = price
+        document.querySelector('#form-dessert-menu-coffee h1').textContent = 'EDIT COFFEE/TEA'
+        document.querySelector('#form-dessert-menu-coffee').style.background = 'lightblue'
+        document.querySelector('#submit-button-dessert-menu-coffee').innerHTML = `Update Coffee/Tea`
         setEditMode(true)
         setTimeout(()=>{
-          document.getElementById('form-dessert-menu-coffees-teas').scrollIntoView({behavior:'smooth'})
+          document.getElementById('form-dessert-menu-coffee').scrollIntoView({behavior:'smooth'})
         }
           ,10)
     }
@@ -35,30 +35,30 @@ export default function DessertMenuCoffeesTeasItem(props){
                 >
                   
                   <div style={{display:'flex',justifyContent:'space-between'}}>
-                    <div>{props.name}</div>
+                    <div>{props.name1}</div>
                     <div className="price">{props.price}</div>  
                   </div>
 
                   
                     <span   className="item-button edit-button"
-                            onClick={()=>editDessertMenuCoffeeTea(props.id,
-                                                                  props.name,
+                            onClick={()=>editDessertMenuCoffee(props.id,
+                                                                  props.name1,
                                                                   props.price,
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteItem('DessertMenuCoffeeTea',props.id)}
+                            onClick={()=>deleteMenuItem(props.id,'dessert','coffee','/manager/dessert')}
                     >
                         DELETE
                     </span>
-                    <span onClick={()=>moveUp('DessertMenuCoffeeTea',props.id)}
+                    <span onClick={()=>moveUp(props.id,'dessert','coffee','/manager/dessert')}
                           className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
                         <ImArrowUp style={{ position:'relative',
                                             
                                             top:'1px'}} />
                     </span>
-                    <span onClick={()=>moveDown('DessertMenuCoffeeTea',props.id)}
-                          className={`item-button arrow-button ${props.sequence == props.maxSequenceDessertMenuCoffeesTeas ? 'visibility-hidden' : ''}`}>
+                    <span onClick={()=>moveDown(props.id,'dessert','coffee','/manager/dessert')}
+                          className={`item-button arrow-button ${props.sequence == props.maxSequenceCoffee ? 'visibility-hidden' : ''}`}>
                         <ImArrowDown style={{position:'relative',top:'2px'}} />
                     </span>
                 </div>

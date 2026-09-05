@@ -1,10 +1,10 @@
 'use client'
 
 import {useEditModeContext} from '@/context/EditModeContext'
-import {addMenuItem} from '@/app/actions.js'
+import {addMenuItem,editMenuItem} from '@/app/actions.js'
 
 
-export default function DessertMenuCoffeesForm({addDessertMenuCoffeeTea,editDessertMenuCoffeeTea}){
+export default function DessertMenuCoffeeForm({addDessertMenuCoffeeTea,editDessertMenuCoffeeTea}){
 
     const {editMode,setEditMode} = useEditModeContext()   
 
@@ -63,6 +63,9 @@ export default function DessertMenuCoffeesForm({addDessertMenuCoffeeTea,editDess
                         value='coffee'
                 />
 
+                <input  type='hidden'
+                        name='path'
+                        value='/manager/dessert' />
 
                 <label>
                     Name: <span className="required">*REQUIRED</span><br/>

@@ -279,12 +279,12 @@ export default function DessertMenu({menuItems}){
               >
               
                 {menuItems.map(item=>(
-                    item.menu == 'dessert' && item.section == 'coffee-tea' &&
+                    item.menu == 'dessert' && item.section == 'coffee' &&
                   <div  key={item._id} 
                         className='dinner-menu-item'
                   >
                         <div style={{display:'flex',justifyContent:'space-between',width:'100%'}}>
-                          <div className="dessert-name">{item.name}</div>
+                          <div className="dessert-name">{item.name1}</div>
                           <div className="dessert-price">{item.price}</div>
                         </div>  
                   </div>

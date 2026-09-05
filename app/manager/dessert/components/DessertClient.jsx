@@ -8,7 +8,7 @@ import {addMenuItem,editMenuItem} from '@/app/actions.js'
 import {addDessertWine,editDessertWine} from '@/app/actions.js'
 import {addDessertMenuCoffeeTea,editDessertMenuCoffeeTea} from '@/app/actions.js'
 import DessertWineForm from './DessertWineForm.jsx';
-import DessertMenuCoffeesTeasForm from './DessertMenuCoffeesTeasForm.jsx'
+import DessertMenuCoffeesTeasForm from './DessertMenuCoffeesForm.jsx'
 import NavbarMenuManager from '@/components/NavbarMenuManager.jsx';
 import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager.jsx';
 import {useState} from 'react'
@@ -18,10 +18,10 @@ export default function DessertClient(props){
     const [dessertPage, setDessertPage] = useState('Desserts')
     const desserts = props.menuItems.filter(item=>item.menu == 'dessert' && item.section == 'desserts')
     const dessertWines = props.menuItems.filter(item=>item.menu == 'dessert' && item.section == 'dessert wines')
-    const coffee = props.menuItems.filter(item=>item.menu == 'dessert' && item.section == 'coffee')
+    const coffees = props.menuItems.filter(item=>item.menu == 'dessert' && item.section == 'coffee')
     const maxSequenceDesserts = desserts.length ? desserts[desserts.length - 1].sequence : 0
     const maxSequenceDessertWines = dessertWines.length ? dessertWines[dessertWines.length - 1].sequence : 0
-    const maxSequenceCoffee = coffee.length ? coffee[coffee.length - 1].sequence : 0
+    const maxSequenceCoffee = coffees.length ? coffees[coffees.length - 1].sequence : 0
 
     return(
             <div className='webpage'>
@@ -201,7 +201,7 @@ export default function DessertClient(props){
 
                         <div className="right-column">
                         
-                          {coffeesTeas.map(data=>{
+                          {coffees.map(data=>{
                             return(
                               <div key={data._id}>
                                 <DessertMenuCoffeesTeasItem id={data._id.toString()}                                                  

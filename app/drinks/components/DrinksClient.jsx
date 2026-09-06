@@ -14,6 +14,7 @@ export default function DrinksClient(props){
     document.querySelector('#cocktail-modal-price').innerHTML = price
     document.querySelector('#cocktail-modal-description1').innerHTML = description1
     document.querySelector('#cocktail-modal-description2').innerHTML = description2
+    document.querySelector('#cocktail-modal-typos').innerHTML = typos
     document.querySelector('#cocktail-modal-staff-info').innerHTML = staffInfo
   }
 
@@ -95,6 +96,7 @@ export default function DrinksClient(props){
                                                               data.price,
                                                               data.description1,
                                                               data.description2,
+                                                              data.typos,
                                                               data.staffInfo,
                                                               data.cloudinary_secure_url
                           )}
@@ -107,6 +109,7 @@ export default function DrinksClient(props){
                       </div>
                       <div className="description1">{data.description1}</div>
                       <div className="description2">{data.description2}</div>
+                      <div className="typo">{data.typos}</div>
                     </div>                  
                   </>)
                 }

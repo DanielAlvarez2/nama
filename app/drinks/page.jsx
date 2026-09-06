@@ -1,4 +1,5 @@
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
+// adding this line to a server component breaks production
 
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";

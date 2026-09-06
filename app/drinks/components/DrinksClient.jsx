@@ -1,4 +1,5 @@
 'use client'
+export const dynamic = 'force-dynamic'
 
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
@@ -90,6 +91,7 @@ export default function DrinksClient(props){
                 {
                   props.allDrinks.map(data=><>
                     <div  className="dinner-menu-item"
+                          key={data._id}
                           onClick={()=>openCocktailModal(data.name1,
                                                               data.price,
                                                               data.description1,

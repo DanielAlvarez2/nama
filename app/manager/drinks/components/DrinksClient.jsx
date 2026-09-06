@@ -23,15 +23,6 @@ export default function DrinksClient(props){
 
     function handleDrinkPageUpdate(value){
       setDrinkPage(value)
-        // if (value == 'cocktails') setDrinkPage('cocktails')
-        // if (value == 'mocktails') setDrinkPage('mocktails')
-        // if (value == 'beer') setDrinkPage('beer')
-        // if (value == 'sake') setDrinkPage('sake')
-        // if (value == 'champagne') setDrinkPage('champagne')
-        // if (value == 'whites') setDrinkPage('whites')
-        // if (value == 'rose') setDrinkPage('rose')
-        // if (value == 'reds') setDrinkPage('reds')
-        // if (value == 'coffee') setDrinkPage('coffee')
     }
 
     return(
@@ -70,23 +61,6 @@ export default function DrinksClient(props){
 
               <div className="right-column">
               
-                {props.allDrinks.filter(item=>item.section == 'cocktails').map(item=>
-                  <div  className="dinner-menu-item"
-                        key={item._id}
-                        onClick={()=>showModal('ume-spritz')}
-                  >
-                    <div className="name-price">
-                      <span>
-                        <span className="name">{item.name1}</span>
-                      </span>
-                      <span className="price">{item.price}</span>
-                    </div>
-                    <div className="description1">{item.description1}</div>
-                    <div className="description2">{item.description2}</div>
-                  </div>
-                
-                )}
-
                           {props.allDrinks.filter(item=>item.section == 'cocktails').map(data=>{
                             return(
                               <div key={data._id}>

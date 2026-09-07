@@ -710,3 +710,6 @@ input[type='text']{
 .description2{
   color:#444;
 }
+.name-price{
+  line-height:14px;
+}

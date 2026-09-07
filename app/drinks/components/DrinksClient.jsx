@@ -88,14 +88,14 @@ export default function DrinksClient(props){
             >
               <div className="left-column">
                 
-                <div className='drink-menu-h1'>Specialty Cocktails</div>
+                <div className='drink-menu-h1' style={{marginTop:'40px'}}>Specialty Cocktails</div>
                 <div className='kanji'>スペシャルティカクテル</div>
               </div>
 
               <div className="right-column">
               
                 {
-                  props.allDrinks.map(data=><>
+                  props.allDrinks.filter(item=>item.section == 'cocktails').map(data=>
                     <div  className="dinner-menu-item"
                           key={data._id}
                           onClick={()=>openCocktailModal(data.name1,
@@ -117,7 +117,7 @@ export default function DrinksClient(props){
                       <div className="description2">{data.description2}</div>
                       <div className="typo">{data.typos}</div>
                     </div>                  
-                  </>)
+                  )
                 }
 
 
@@ -187,98 +187,34 @@ export default function DrinksClient(props){
 
               <div className="right-column">
 
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('pepper-buck')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">*Pepper Buck</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                  <div className="description1">Ginger, Jalapeño, Lime</div>
-                  <div className="description2"></div>
-                </div>
-
-              
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('phony-negroni')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Phony Negroni</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                  <div className="description1">Juniper, Orange, Gentian</div>
-                  <div className="description2"></div>
-                </div>
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('genmai-horchata')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Genmai Horchata</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                  <div className="description1">Genmaimatcha, Rice, Cinnamon, Kokuto</div>
-                  <div className="description2"></div>
-                </div>
+                {
+                  props.allDrinks.filter(item=>item.section == 'mocktails').map(data=>
+                    <div  className="dinner-menu-item"
+                          key={data._id}
+                          onClick={()=>openCocktailModal(data.name1,
+                                                              data.price,
+                                                              data.description1,
+                                                              data.description2,
+                                                              data.typos,
+                                                              data.staffInfo,
+                                                              data.cloudinary_secure_url
+                          )}
+                    >
+                      <div className="name-price">
+                        <span>
+                          <span className="name">{data.name1}</span>
+                        </span>
+                        <span className="dessert-price">{data.price}</span>
+                      </div>
+                      <div className="description1">{data.description1}</div>
+                      <div className="description2">{data.description2}</div>
+                      <div className="typo">{data.typos}</div>
+                    </div>                  
+                  )
+                }
 
 
 
-
-
-                {/* <div  className="dinner-menu-item"
-                      onClick={()=>showModal('souchong-sour')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Souchong Sour</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                  <div className="description1">Passionfruit, Falernu<span className='typo'>m</span>, Unified </div>
-                  <div className="description2">Ferments Lapsang Souchong</div>
-                </div> */}
-
-              
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('soba-arnold-palmer')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Soba Arnold Palmer</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                  <div className="description1">Yuzu, Lemon, Soba</div>
-                  <div className="description2"></div>
-                </div>
-
-              
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('kombucha')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Unified Ferments Kombucha</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">16</span>
-                  </div>
-                  <div className="description1">Snow Chrysanthemum, Lapsang Souchong, </div>
-                  <div className="description2">Rhododendron, Soba</div>
-                </div>
 
               
               </div>{/* .right-column */}

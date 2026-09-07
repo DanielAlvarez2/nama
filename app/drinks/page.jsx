@@ -12,7 +12,7 @@ export default async function DrinksMenu(){
 
 
   await connectMongoDB() 
-  const allDrinks = JSON.parse(JSON.stringify(await MenuItem.find({menu:'drink',section:'cocktails'}).sort({sequence:1})))
+  const allDrinks = JSON.parse(JSON.stringify(await MenuItem.find({menu:'drink'}).sort({sequence:1})))
 
 return(
   <DrinksClient allDrinks={allDrinks} />

@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import CocktailForm from './CocktailForm.jsx'
 import MocktailForm from './MocktailForm.jsx'
+import BeerForm from './BeerForm.jsx'
+import BeerItem from './BeerItem.jsx'
 import CocktailItem from './CocktailItem.jsx'
 import MocktailItem from './MocktailItem.jsx'
 import {useState} from 'react'
@@ -44,6 +46,26 @@ export default function DrinksClient(props){
                 </select>
             </div>
             <br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {
         drinkPage == 'cocktails' && 
@@ -125,6 +147,25 @@ export default function DrinksClient(props){
           </>
       }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {
         drinkPage == 'mocktails' && 
           <>
@@ -204,10 +245,133 @@ export default function DrinksClient(props){
       }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {
+        drinkPage == 'beer' && 
+          <>
+      <div className="small-paper" style={{paddingTop:'25px',height:'auto'}}>
+        
+          <div className="menu-items">
+
+            <div  className="section section-dessert"
+                  style={{marginBottom:'0px'}}
+            >
+              <div className="left-column">Beer<br/>ビール</div>                
+
+              <div className="right-column">
+              
+
+                          {props.allDrinks.filter(item=>item.section == 'beer').map(data=>{
+                            return(
+                              <div key={data._id}>
+                                <BeerItem id={data._id}
+                                              name1={data.name1} 
+                                              description1={data.description1}
+                                              description2={data.description2}
+                                              typos={data.typos}
+                                              price={data.price}
+                                              staffInfo={data.staffInfo}
+                                              sequence={data.sequence}
+                                              maxSequence={props.allDrinks.filter(item=>item.section == data.section) ? props.allDrinks.filter(item=>item.section == data.section)[props.allDrinks.filter(item=>item.section == data.section).length - 1].sequence : 0}
+                                              cloudinary_secure_url={data.cloudinary_secure_url}
+                                              cloudinary_public_id={data.cloudinary_public_id}
+                                />
+                                
+                              </div>
+                            )
+                          })}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+
+
+
+
+          </div>{/* .menu-items */}
+
+
+
+
+
+
+
+
+      </div>{/* .small-paper */}
+
       <br className='no-print' />
 
+      <BeerForm />
+          
+          </>
+      }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <br className='no-print' />
       <NavbarFooterMenuManager page='drinks' />
 
 

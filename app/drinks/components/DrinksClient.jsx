@@ -260,101 +260,34 @@ export default function DrinksClient(props){
               <div className="right-column">
               
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('sapporo')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Sapporo Lager</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">12</span>
-                  </div>
-                  <div className="description1">Hokkaido, Japan</div>
-                  <div className="description2"></div>
-                </div>
+                {
+                  props.allDrinks.filter(item=>item.section == 'beer').map(data=>
+                    <div  className="dinner-menu-item"
+                          key={data._id}
+                          onClick={()=>openCocktailModal(data.name1,
+                                                              data.price,
+                                                              data.description1,
+                                                              data.description2,
+                                                              data.typos,
+                                                              data.staffInfo,
+                                                              data.cloudinary_secure_url
+                          )}
+                    >
+                      <div className="name-price">
+                        <span>
+                          <span className="name">{data.name1}</span>
+                        </span>
+                        <span className="dessert-price">{data.price}</span>
+                      </div>
+                      <div className="description1">{data.description1}</div>
+                      <div className="description2">{data.description2}</div>
+                      <div className="typo">{data.typos}</div>
+                    </div>                  
+                  )
+                }
 
 
 
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('koshihikari')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Koshihikari Rice <span className='typo'>Ale</span></span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">12</span>
-                  </div>
-                  <div className="description1">Niigata, Japan</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('nest')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Hitachino Nest White Ale</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">12</span>
-                  </div>
-                  <div className="description1">Naka, Japan</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('rydeen-ipa')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Hakkaissan Rydeen IPA</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">12</span>
-                  </div>
-                  <div className="description1">Niigata, Japan</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('bero')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">BERO Non-Alcoholic Pilsner</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">12</span>
-                  </div>
-                  <div className="description1 typo">Pennsylvania</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('botanic')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Baladin Botanic Non-Alcoholic Ale</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">12</span>
-                  </div>
-                  <div className="description1">Cuneo, Italy</div>
-                  <div className="description2"></div>
-                </div>
 
 
 

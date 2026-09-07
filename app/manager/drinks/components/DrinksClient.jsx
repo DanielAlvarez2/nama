@@ -55,8 +55,11 @@ export default function DrinksClient(props){
             <div  className="section section-dessert"
                   style={{marginBottom:'0px'}}
             >
-              <div className="left-column"></div>
-                <div><span className='name'>Specialty Cocktails</span><br/>スペシャルティカクテル</div>
+              <div className="left-column">
+                <span className='name'>Specialty Cocktails</span>
+                <br/>
+                スペシャルティカクテル
+              </div>
                 
 
               <div className="right-column">

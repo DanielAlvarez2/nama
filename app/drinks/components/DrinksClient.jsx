@@ -7,7 +7,13 @@ import NavbarFooter from '@/components/NavbarFooter';
 
 export default function DrinksClient(props){
 
-  function openCocktailModal(name1,price,description1,description2,staffInfo,cloudinary_secure_url){
+  function openCocktailModal( name1,
+                              price,
+                              description1,
+                              description2,
+                              typos,
+                              staffInfo,
+                              cloudinary_secure_url){
     document.querySelector('#cocktail-modal').style.display = 'grid'
     document.querySelector('#cocktail-modal-img').src = cloudinary_secure_url
     document.querySelector('#cocktail-modal-name1').innerHTML = name1

@@ -8,7 +8,7 @@ import {useEditModeContext} from '@/context/EditModeContext'
 import {useExistingImageContext} from '@/context/ExistingImageContext'
 
 
-export default function BeerForm(){
+export default function SakeForm(){
 
     const {editMode,setEditMode} = useEditModeContext()   
     const {existingImage,setExistingImage} = useExistingImageContext()
@@ -63,9 +63,9 @@ export default function BeerForm(){
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
         // document.querySelector('#current-image-label').style.display = 'none'
-        document.querySelector('#form h1').textContent = 'ADD NEW BEER'
+        document.querySelector('#form h1').textContent = 'ADD NEW SAKE'
         document.querySelector('#form').style.background = 'lightgreen'
-        document.querySelector('#submit-button-form').innerHTML = `+ New Beer`
+        document.querySelector('#submit-button-form').innerHTML = `+ New Sake`
         setEditMode(false)
         document.querySelector('#image-file').value = ''
         setPreviewImage('')
@@ -87,7 +87,7 @@ function toggleCheckbox(){
             <form   action={handleSubmit}
                     id='form'
             >
-                <h1>ADD NEW BEER</h1>
+                <h1>ADD NEW SAKE</h1>
                 <br/><br/>
 
                 <input  type='hidden' 
@@ -101,7 +101,7 @@ function toggleCheckbox(){
 
                 <input  type='hidden' 
                         name='section'
-                        value='beer'
+                        value='sake'
                 />
 
                 <input  type='hidden'
@@ -220,7 +220,7 @@ function toggleCheckbox(){
                     }
                 <br/><br/>
                 <div style={{display:'flex'}}>
-                    <button id='submit-button-form' type='submit'>+ Mocktail</button>
+                    <button id='submit-button-form' type='submit'>+ Sake</button>
                     <button type='button'
                             onClick={resetForm} 
                             style={{background:'red'}}>Cancel</button>

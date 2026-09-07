@@ -360,87 +360,33 @@ export default function DrinksClient(props){
               <div className="right-column">
               
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('aman-ginjo')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Niizawa, Aman Hakurakusei, Junmai Ginjo</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">25</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
 
+                {
+                  props.allDrinks.filter(item=>item.section == 'sake').map(data=>
+                    <div  className="dinner-menu-item"
+                          key={data._id}
+                          onClick={()=>openCocktailModal(data.name1,
+                                                              data.price,
+                                                              data.description1,
+                                                              data.description2,
+                                                              data.typos,
+                                                              data.staffInfo,
+                                                              data.cloudinary_secure_url
+                          )}
+                    >
+                      <div className="name-price">
+                        <span>
+                          <span className="name">{data.name1}</span>
+                        </span>
+                        <span className="dessert-price">{data.price}</span>
+                      </div>
+                      <div className="description1">{data.description1}</div>
+                      <div className="description2">{data.description2}</div>
+                      <div className="typo">{data.typos}</div>
+                    </div>                  
+                  )
+                }
 
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('aman-daiginjo')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Niizawa, Aman Hakurakusei, Junmai Daiginjo</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">35</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('zaku-daiginjo')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Zaku, Kaizan Ittekisui, Junmai Daiginjo</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">49</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('umeshu')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Izumibashi Shuzo, Umeshu, Junmai Daiginjo</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">35</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('carafe')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Carafe 8oz</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="dessert-price">68</span>
-                  </div>
-                  <div className="description1">Niizawa, Aman Hakurakusei, Junmai Daiginjo</div>
-                  <div className="description2"></div>
-                </div>
 
 
 

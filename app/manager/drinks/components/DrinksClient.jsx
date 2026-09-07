@@ -8,6 +8,8 @@ import CocktailForm from './CocktailForm.jsx'
 import MocktailForm from './MocktailForm.jsx'
 import BeerForm from './BeerForm.jsx'
 import SakeForm from './SakeForm.jsx'
+import ChampagneForm from './ChampagneForm.jsx'
+import ChampagneItem from './ChampagneItem.jsx'
 import SakeItem from './SakeItem.jsx'
 import BeerItem from './BeerItem.jsx'
 import CocktailItem from './CocktailItem.jsx'
@@ -435,6 +437,104 @@ export default function DrinksClient(props){
       <br className='no-print' />
 
       <SakeForm />
+          
+          </>
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {
+        drinkPage == 'champagne' && 
+          <>
+      <div className="small-paper" style={{paddingTop:'25px',height:'auto'}}>
+        
+          <div className="menu-items">
+
+            <div  className="section section-dessert"
+                  style={{marginBottom:'0px'}}
+            >
+              <div className="left-column">Wines by the Glass<br/>グラスワイン</div>
+              <div className="left-column">Champagne<br/>シャンパン</div>
+
+              <div className="right-column">
+              
+
+                          {props.allDrinks.filter(item=>item.section == 'champagne').map(data=>{
+                            return(
+                              <div key={data._id}>
+                                <ChampagneItem id={data._id}
+                                              vintage={data.vintage} 
+                                              name1={data.name1} 
+                                              name2={data.name2} 
+                                              typos={data.typos}
+                                              price={data.price}
+                                              staffInfo={data.staffInfo}
+                                              sequence={data.sequence}
+                                              maxSequence={props.allDrinks.filter(item=>item.section == data.section) ? props.allDrinks.filter(item=>item.section == data.section)[props.allDrinks.filter(item=>item.section == data.section).length - 1].sequence : 0}
+                                              cloudinary_secure_url={data.cloudinary_secure_url}
+                                              cloudinary_public_id={data.cloudinary_public_id}
+                                />
+                                
+                              </div>
+                            )
+                          })}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+
+
+
+
+          </div>{/* .menu-items */}
+
+
+
+
+
+
+
+
+      </div>{/* .small-paper */}
+
+      <br className='no-print' />
+
+      <ChampagneForm />
           
           </>
       }

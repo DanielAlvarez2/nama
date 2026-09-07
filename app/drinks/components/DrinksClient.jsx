@@ -24,6 +24,23 @@ export default function DrinksClient(props){
     document.querySelector('#cocktail-modal-staff-info').innerHTML = staffInfo
   }
 
+  function openWineModal( vintage,
+                            name1,
+                            name2,
+                              price,
+                              typos,
+                              staffInfo,
+                              cloudinary_secure_url){
+    document.querySelector('#wine-modal').style.display = 'grid'
+    document.querySelector('#wine-modal-img').src = cloudinary_secure_url
+    document.querySelector('#wine-modal-vintage').innerHTML = vintage
+    document.querySelector('#wine-modal-name1').innerHTML = name1
+    document.querySelector('#wine-modal-name2').innerHTML = name2
+    document.querySelector('#wine-modal-price').innerHTML = price
+    document.querySelector('#wine-modal-typos').innerHTML = typos
+    document.querySelector('#wine-modal-staff-info').innerHTML = staffInfo
+  }
+
     function showModal(menuItem){
         document.querySelector(`#${menuItem}`).style.display = 'grid'
     }
@@ -66,7 +83,42 @@ export default function DrinksClient(props){
             </div>{/* .modal-text */}
           </div>{/* .modal-content */}      
       </div>
-    </div>{/* #modal-dessert */}
+    </div>{/* #cocktail-modal */}
+
+    <div id="wine-modal" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+          <div>
+            <img id='wine-modal-img' />
+          </div>      
+          <div className='modal-text'>
+          
+              <br/><br/>
+              MENU DESCRIPTION:<br/><br/>
+              <div className="right-column">
+                  <div style={{display:'flex',width:'100%'}}>
+                    <div id='wine-modal-vintage' style={{width:'7ch'}}>{props.vintage}</div>
+                    <div className="name-price" style={{width:'100%',justifyContent:'space-between'}}>
+                      <span>
+                        <span id='wine-modal-name1' className="name">{props.name1}</span><br/>
+                        <span id='wine-modal-name2' className="name">{props.name2}</span>
+                      </span>
+                      <span id='wine-modal-price' className="price">{props.price}</span>
+                    </div>
+                    <div id='wine-modal-typos' className='typo'></div>
+                  </div>
+                          <br/>
+                          <hr/>
+                          <br/>
+                            <div id='wine-modal-staff-info' style={{whiteSpace:'pre-line'}}></div>
+                          <br/><br/>
+              </div>
+            </div>{/* .modal-text */}
+          </div>{/* .modal-content */}      
+      </div>
+    </div>{/* #wine-modal */}
 
 
 
@@ -456,38 +508,29 @@ export default function DrinksClient(props){
               <div className="left-column">Champagne<br/>シャンパン</div>
 
               <div className="right-column">
-              
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('bollinger')}
-                >
-                  <div className='dessert-wine-vintage'>NV</div>
-                  <div className='dessert-wine-name'>Bollinger, Special Cuvée, Brut</div>
-                  <div>39</div>
-                </div>{/* .dessert-wine */}
 
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('laherte-freres')}
-                >
-                  <div className='dessert-wine-vintage'>NV</div>
-                  <div className='dessert-wine-name'>Laherte Frères, Rosé de Meunier, <br/>Extra Brut</div>
-                  <div>47</div>
-                </div>{/* .dessert-wine */}
+               {
+                  props.allDrinks.filter(item=>item.section == 'champagne').map(data=>
+                    <div  className="dessert-wine"
+                          key={data._id}
+                          onClick={()=>openWineModal( data.vintage,
+                                                          data.name1,
+                                                          data.name2,
+                                                          data.price,
+                                                          data.typos,
+                                                          data.staffInfo,
+                                                          data.cloudinary_secure_url
+                          )}
+                    >
+                  <div className='dessert-wine-vintage'>{data.vintage}</div>
+                  <div className='dessert-wine-name'>{data.name1}<br/>{data.name2}</div>
+                  <div>{data.price}</div>
+                    </div>                  
+                  )
+                }
 
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('aman-champagne-btg')}
-                >
-                  <div className='dessert-wine-vintage'>NV</div>
-                  <div className='dessert-wine-name'>Aman, Cuvée Spéciale, Brut</div>
-                  <div>75</div>
-                </div>{/* .dessert-wine */}
 
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('taittinger')}
-                >
-                  <div className='dessert-wine-vintage'>2014</div>
-                  <div className='dessert-wine-name'>Taittinger, Comtes de Champagne <br/>Blanc de Blancs, Brut</div>
-                  <div>120</div>
-                </div>{/* .dessert-wine */}
+
 
 
 

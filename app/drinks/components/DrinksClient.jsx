@@ -591,30 +591,27 @@ export default function DrinksClient(props){
 
               <div className="right-column">
               
+               {
+                  props.allDrinks.filter(item=>item.section == 'whites').map(data=>
+                    <div  className="dessert-wine"
+                          key={data._id}
+                          onClick={()=>openWineModal( data.vintage,
+                                                          data.name1,
+                                                          data.name2,
+                                                          data.price,
+                                                          data.typos,
+                                                          data.staffInfo,
+                                                          data.cloudinary_secure_url
+                          )}
+                    >
+                  <div className='dessert-wine-vintage'>{data.vintage}</div>
+                  <div className='dessert-wine-name'>{data.name1}<br/>{data.name2}</div>
+                  <div>{data.price}</div>
+                    </div>                  
+                  )
+                }
 
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('sancerre')}
-                >
-                  <div className='dessert-wine-vintage'>2025</div>
-                  <div className='dessert-wine-name'>Renaissance, Sancerre<br/>Loire Valley, FR</div>
-                  <div>27</div>
-                </div>{/* .dessert-wine */}
 
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('chardonnay')}
-                >
-                  <div className='dessert-wine-vintage'>2022</div>
-                  <div className='dessert-wine-name'>Kollwentz, Chardonnay Leithakalk<br/>Burgenland, AUT</div>
-                  <div>29</div>
-                </div>{/* .dessert-wine */}
-
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('saint-peray')}
-                >
-                  <div className='dessert-wine-vintage'>2021</div>
-                  <div className='dessert-wine-name'>Bernard Gripa, Saint-Péray Les Pins<br/>Rhône Valley, FR</div>
-                  <div>28</div>
-                </div>{/* .dessert-wine */}
 
               </div>{/* .right-column */}
             </div>{/* .section */}
@@ -625,14 +622,29 @@ export default function DrinksClient(props){
               <div className="left-column">Rosé<br/>ロゼワイン</div>
 
               <div className="right-column">
+
+               {
+                  props.allDrinks.filter(item=>item.section == 'rose').map(data=>
+                    <div  className="dessert-wine"
+                          key={data._id}
+                          onClick={()=>openWineModal( data.vintage,
+                                                          data.name1,
+                                                          data.name2,
+                                                          data.price,
+                                                          data.typos,
+                                                          data.staffInfo,
+                                                          data.cloudinary_secure_url
+                          )}
+                    >
+                  <div className='dessert-wine-vintage'>{data.vintage}</div>
+                  <div className='dessert-wine-name'>{data.name1}<br/>{data.name2}</div>
+                  <div>{data.price}</div>
+                    </div>                  
+                  )
+                }
+
+
               
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('VieVite')}
-                >
-                  <div className='dessert-wine-vintage'>*2025</div>
-                  <div className='dessert-wine-name'>VieVité<br/>Côtes de Provence, FR</div>
-                  <div>22</div>
-                </div>{/* .dessert-wine */}
 
 
 
@@ -650,30 +662,26 @@ export default function DrinksClient(props){
               <div className="left-column">Red<br/>赤ワイン</div>
 
               <div className="right-column">
-              
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('pinot-noir')}
-                >
-                  <div className='dessert-wine-vintage'>2023</div>
-                  <div className='dessert-wine-name'>Peay Vineyards, Pinot Noir,<br/>Sonoma Coast, CA</div>
-                  <div>32</div>
-                </div>{/* .dessert-wine */}
 
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('garnacha')}
-                >
-                  <div className='dessert-wine-vintage'>2022</div>
-                  <div className='dessert-wine-name'>Bodegas Alto Moncayo, Garnacha<br/>Aragon, ESP</div>
-                  <div>28</div>
-                </div>{/* .dessert-wine */}
-
-                <div  className='dessert-wine' 
-                      onClick={()=>showModal('cabernet')}
-                >
-                  <div className='dessert-wine-vintage'>2020</div>
-                  <div className='dessert-wine-name'>Grgich Hills, Cabernet Sauvignon<br/>Napa Valley, CA</div>
-                  <div>42</div>
-                </div>{/* .dessert-wine */}
+               {
+                  props.allDrinks.filter(item=>item.section == 'red').map(data=>
+                    <div  className="dessert-wine"
+                          key={data._id}
+                          onClick={()=>openWineModal( data.vintage,
+                                                          data.name1,
+                                                          data.name2,
+                                                          data.price,
+                                                          data.typos,
+                                                          data.staffInfo,
+                                                          data.cloudinary_secure_url
+                          )}
+                    >
+                  <div className='dessert-wine-vintage'>{data.vintage}</div>
+                  <div className='dessert-wine-name'>{data.name1}<br/>{data.name2}</div>
+                  <div>{data.price}</div>
+                    </div>                  
+                  )
+                }
 
 
 

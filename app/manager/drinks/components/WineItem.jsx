@@ -12,7 +12,7 @@ export default function ChampagneItem(props){
     const {editMode,setEditMode} = useEditModeContext()
     const {existingImage,setExistingImage} = useExistingImageContext()
 
-    function editSake(id,
+    function editChampagne(id,
                       vintage,
                       name1,
                       name2,

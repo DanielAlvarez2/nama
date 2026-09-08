@@ -759,7 +759,7 @@ export default function DrinksClient(props){
 
                {
                   props.allDrinks.filter(item=>item.section == 'coffee').map(data=>
-                    <div  className="dinner-menu-item">
+                    <div key={data._id} className="dinner-menu-item">
                       <div className="name-price">
                         <span>
                           <span className="name">{data.name1}</span>

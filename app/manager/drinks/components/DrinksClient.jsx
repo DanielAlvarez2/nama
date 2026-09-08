@@ -13,6 +13,8 @@ import WhitesForm from './WhitesForm.jsx'
 import RedsForm from './RedsForm.jsx'
 import RoseForm from './RoseForm.jsx'
 import WineItem from './WineItem.jsx'
+import CoffeeItem from './CoffeeItem.jsx'
+import CoffeeForm from './CoffeeForm.jsx'
 import SakeItem from './SakeItem.jsx'
 import BeerItem from './BeerItem.jsx'
 import CocktailItem from './CocktailItem.jsx'
@@ -722,6 +724,73 @@ export default function DrinksClient(props){
       <br className='no-print' />
 
       <RedsForm />
+          
+          </>
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {
+        drinkPage == 'coffee' && 
+          <>
+      <div className="small-paper" style={{paddingTop:'25px',height:'auto'}}>
+        
+          <div className="menu-items">
+
+            <div  className="section section-dessert"
+                  style={{marginBottom:'0px'}}
+            >
+              <div className="left-column">Coffee & Tea<br/>コーヒーとお茶</div>
+
+              <div className="right-column">
+              
+
+                          {props.allDrinks.filter(item=>item.section == 'coffee').map(data=>{
+                            return(
+                              <div key={data._id}>
+                                <CoffeeItem id={data._id}
+                                              name1={data.name1} 
+                                              price={data.price}
+                                              sequence={data.sequence}
+                                              maxSequence={props.allDrinks.filter(item=>item.section == data.section) ? props.allDrinks.filter(item=>item.section == data.section)[props.allDrinks.filter(item=>item.section == data.section).length - 1].sequence : 0}
+                                />
+                                
+                              </div>
+                            )
+                          })}
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+          </div>{/* .menu-items */}
+
+      </div>{/* .small-paper */}
+
+      <br className='no-print' />
+
+      <CoffeeForm />
           
           </>
       }

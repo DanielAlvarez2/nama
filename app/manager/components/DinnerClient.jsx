@@ -780,6 +780,160 @@ export default function DinnerClient(props){
 
 
 
+      {
+        dinnerPage == 'Sushi Rolls' && 
+          <>
+      <div className="small-paper" style={{paddingTop:'25px',height:'auto'}}>
+        
+          <div className="menu-items">
+
+            <div  className="section section-dessert"
+                  style={{marginBottom:'0px'}}
+            >
+              <div className="left-column">Sushi Roll<span className='typo'>s</span><br/>ロール</div>
+
+
+
+              <div className="right-column">
+              
+                          {props.allItems.filter(item=>item.section == 'Sushi Rolls').map(data=>{
+                            return(
+                              <div key={data._id}>
+                                <DinnerItem   
+                                              section={data.section}
+                                              id={data._id}
+                                              name1={data.name1} 
+                                              allergies={data.allergies} 
+                                              description1={data.description1}
+                                              upgrade1={data.upgrade1}
+                                              upgrade2={data.upgrade2}
+                                              upgrade3={data.upgrade3}
+                                              price={data.price}
+                                              price1={data.price1}
+                                              price2={data.price2}
+                                              price3={data.price3}
+                                              typos={data.typos}
+                                              staffInfo={data.staffInfo}
+                                              sequence={data.sequence}
+                                              maxSequence={props.allItems.filter(item=>item.section == data.section) ? props.allItems.filter(item=>item.section == data.section)[props.allItems.filter(item=>item.section == data.section).length - 1].sequence : 0}
+                                              cloudinary_secure_url={data.cloudinary_secure_url}
+                                              cloudinary_public_id={data.cloudinary_public_id}
+                                />
+                                
+                              </div>
+                            )
+                          })}
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+          </div>{/* .menu-items */}
+      </div>{/* .small-paper */}
+      <br className='no-print' />
+      <DinnerForm section={'Sushi Rolls'} />
+          </>
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {
+        dinnerPage == 'Rice' && 
+          <>
+      <div className="small-paper" style={{paddingTop:'25px',height:'auto'}}>
+        
+          <div className="menu-items">
+
+            <div  className="section section-dessert"
+                  style={{marginBottom:'0px'}}
+            >
+              <div className="left-column">Rice<br/>御飯</div>
+
+
+
+              <div className="right-column">
+              
+                          {props.allItems.filter(item=>item.section == 'Rice').map(data=>{
+                            return(
+                              <div key={data._id}>
+                                <DinnerItem   
+                                              section={data.section}
+                                              id={data._id}
+                                              name1={data.name1} 
+                                              allergies={data.allergies} 
+                                              description1={data.description1}
+                                              upgrade1={data.upgrade1}
+                                              upgrade2={data.upgrade2}
+                                              upgrade3={data.upgrade3}
+                                              price={data.price}
+                                              price1={data.price1}
+                                              price2={data.price2}
+                                              price3={data.price3}
+                                              typos={data.typos}
+                                              staffInfo={data.staffInfo}
+                                              sequence={data.sequence}
+                                              maxSequence={props.allItems.filter(item=>item.section == data.section) ? props.allItems.filter(item=>item.section == data.section)[props.allItems.filter(item=>item.section == data.section).length - 1].sequence : 0}
+                                              cloudinary_secure_url={data.cloudinary_secure_url}
+                                              cloudinary_public_id={data.cloudinary_public_id}
+                                />
+                                
+                              </div>
+                            )
+                          })}
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+          </div>{/* .menu-items */}
+      </div>{/* .small-paper */}
+      <br className='no-print' />
+      <DinnerForm section={'Rice'} />
+          </>
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

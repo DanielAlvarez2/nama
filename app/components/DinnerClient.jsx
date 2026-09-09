@@ -733,142 +733,51 @@ produce.               </div>
 
               <div className="right-column">
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('vegetable-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Vegetable</span>
-                      <span className="allergies">(V)</span>
-                    </span>
-                    <span className="price">25</span>
-                  </div>
-                  <div className="description1">Napa Cabbage, Japanese Burdock</div>
-                  <div className="description2"></div>
-                </div>
+                  {
+                    props.allItems.filter(item=>item.section == 'Sushi Rolls').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                        <div className='typo'>{data.typos}</div>
+                      </div>
+                    )
+                  }
 
-                <div className="dinner-menu-item"
-                      onClick={()=>showModal('spicy-tuna-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Spicy Tuna</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">25</span>
-                  </div>
-                  <div className="description1">Spicy Sesame Aioli, Asparagus, Chives</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('negi-hama-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Negi Hama</span>
-                      <span className="allergies typo">(GF)</span>
-                    </span>
-                    <span className="price">25</span>
-                  </div>
-                  <div className="description1">Hamachi, Scallion</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('salmon-avocado-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">*Salmon Avocado</span>
-                      <span className="allergies typo">(GF)</span>
-                    </span>
-                    <span className="price">26</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('california-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">King Crab California</span>
-                      <span className="allergies typo">(GF)</span>
-                    </span>
-                    <span className="price">36</span>
-                  </div>
-                  <div className="description1">Avocado, Cucumber</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('wagyu-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Miyazaki Wagyu</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">78</span>
-                  </div>
-                  <div className="description1">Seared Wagyu Beef, Garlic Chili, Sesame Oil</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('lobster-tempura-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Lobster Tempura</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">55</span>
-                  </div>
-                  <div className="description1">Napa Cabbage, Lobster Butter Aioli</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('spider-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Spider</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">45</span>
-                  </div>
-                  <div className="description1">Soft Shell Crab, Spicy Mayo</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('aman-ny-roll')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Aman New York</span>
-                      <span className="allergies typo">(GF)</span>
-                    </span>
-                    <span className="price">72</span>
-                  </div>
-                  <div className="description1">Toro, King Crab, Uni</div>
-                  <div className="description2"></div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With 10 grams of Ossetra Caviar</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">132</span>
-                  </div>
-
-                </div>
 
               </div>{/* .right-column */}
             </div>{/* .section */}
@@ -1099,78 +1008,52 @@ produce.               </div>
               <div className="left-column">Rice<br/>御飯</div>
 
               <div className="right-column">
-              
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('yakimeshi')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Yakimeshi</span>
-                      <span className="allergies">(V,GF)</span>
-                    </span>
-                    <span className="price">28</span>
-                  </div>
-                  <div className="description1">Vegetable Fried Rice</div>
-                  <div className="description2"></div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Onsen Tamago</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">33</span>
-                  </div>
-                </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('unagi-gohan')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Unagi Gohan</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">55</span>
-                  </div>
-                  <div className="description1">Charcoal Grilled Eel</div>
-                  <div className="description2"></div>
-                </div>
+                  {
+                    props.allItems.filter(item=>item.section == 'Rice').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                        <div className='typo'>{data.typos}</div>
+                      </div>
+                    )
+                  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('yakishabu-gohan')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">A5 Kobe Yakishabu Gohan</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">84</span>
-                  </div>
-                  <div className="description1">Ontama, Takana</div>
-                  <div className="description2"></div>
-                </div>
 
 
 

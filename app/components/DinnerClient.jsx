@@ -24,7 +24,11 @@ export default function DinnerClient(props) {
       document.querySelector('#modal-dinner-name1').innerHTML = name1
       document.querySelector('#modal-dinner-description1').innerHTML = description1
       document.querySelector('#modal-dinner-upgrade1').innerHTML = upgrade1
+      document.querySelector('#modal-dinner-upgrade2').innerHTML = upgrade2
+      document.querySelector('#modal-dinner-upgrade3').innerHTML = upgrade3
       document.querySelector('#modal-dinner-price1').innerHTML = price1
+      document.querySelector('#modal-dinner-price2').innerHTML = price2
+      document.querySelector('#modal-dinner-price3').innerHTML = price3
       document.querySelector('#modal-dinner-typos').innerHTML = typos ? typos : ''
       document.querySelector('#modal-dinner-staff-info').innerHTML = staffInfo
       document.querySelector('#modal-dinner-img').src = img_src
@@ -357,99 +361,50 @@ produce.               </div>
               <div className="left-column">Fried<br/>揚げ物</div>
 
               <div className="right-column">
-              
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('yasai-tempura')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Yasai Tempura</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">27</span>
-                  </div>
-                  <div className="description1">Summer Vegetables</div>
-                  <div className="description2"></div>
-                </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('tempura-moriawase')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Tempura Moriawase</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">37</span>
-                  </div>
-                  <div className="description1">Shrimp, Summer Vegetables</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('shrimp-tempura')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Ebi Tempura</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">41</span>
-                  </div>
-                  <div className="description1">Shrimp</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('suzuki-tatsuta-age')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Suzuki Tatsutaage</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">48</span>
-                  </div>
-                  <div className="description1">Fried Branzino, Shiso Aioli</div>
-                  <div className="description2"></div>
-                </div>
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('softshell-crab')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Soft Shell Crab Karaage</span>
-                      <span className="allergies">(GF)</span>
-                    </span>
-                    <span className="price">54</span>
-                  </div>
-                  <div className="description1">Fried Soft Shell Crab, Tomato Relish</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('lobster-tempura')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Lobster Tempura</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">66</span>
-                  </div>
-                  <div className="description1">Lobster, Yuzu Aioli</div>
-                  <div className="description2"></div>
-                </div>
+                  {
+                    props.allItems.filter(item=>item.section == 'Fried').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                      </div>
+                    )
+                  }
 
 
 
@@ -4419,6 +4374,14 @@ produce.               </div>
                           <div style={{display:'flex',justifyContent:'space-between'}}>
                             <span id='modal-dinner-upgrade1'></span>
                             <span id='modal-dinner-price1'></span>
+                          </div>
+                          <div style={{display:'flex',justifyContent:'space-between'}}>
+                            <span id='modal-dinner-upgrade2'></span>
+                            <span id='modal-dinner-price2'></span>
+                          </div>
+                          <div style={{display:'flex',justifyContent:'space-between'}}>
+                            <span id='modal-dinner-upgrade3'></span>
+                            <span id='modal-dinner-price3'></span>
                           </div>
                           <div id='modal-dinner-typos' className='typo'></div>
                           <br/>

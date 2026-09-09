@@ -642,88 +642,52 @@ produce.               </div>
               <div className="left-column">Maki<br/>巻物</div>
               <div className="right-column sushi-rolls">
 
-                <div className="dinner-menu-item"
-                      onClick={()=>showModal('kappa-maki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Kappa</span>
-                      <span className="allergies">(V,<span className='typo'>GF</span>)</span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                  <div className="description1">Cucumber</div>
-                </div>
+                  {
+                    props.allItems.filter(item=>item.section == 'Maki').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                        <div className='typo'>{data.typos}</div>
+                      </div>
+                    )
+                  }
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('oshinko-maki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Oshinko</span>
-                      <span className="allergies">(V)</span>
-                    </span>
-                    <span className="price">18</span>
-                  </div>
-                  <div className="description1">Pickled Daikon Radish</div>
-                  <div className="description2"></div>
-                </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('ume-shiso-maki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Ume Shiso</span>
-                      <span className="allergies">(V,<span className='typo'>GF</span>)</span>
-                    </span>
-                    <span className="price">18</span>
-                  </div>
-                  <div className="description1">Sour Plum, Shiso, Cucumber</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('avocado-maki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Avocado</span>
-                      <span className="allergies">(V,<span className='typo'>GF</span>)</span>
-                    </span>
-                    <span className="price">18</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('unagi-cucumber-maki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Eel Cucumber</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">21</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('tekka-maki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Tekka</span>
-                      <span className="allergies">(<span className='typo'>GF</span>)</span>
-                    </span>
-                    <span className="price">21</span>
-                  </div>
-                  <div className="description1">Tuna</div>
-                  <div className="description2"></div>
-                </div>
 
               </div>
             </div>

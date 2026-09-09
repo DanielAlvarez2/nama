@@ -31,7 +31,7 @@ export default function DinnerClient(props) {
       document.querySelector('#modal-dinner-price3').innerHTML = price3
       document.querySelector('#modal-dinner-typos').innerHTML = typos ? typos : ''
       document.querySelector('#modal-dinner-staff-info').innerHTML = staffInfo
-      document.querySelector('#modal-dinner-img').src = img_src
+      document.querySelector('#modal-dinner-img').src = img_src ? img_src : `no-image.jpg?v={Date.now()}`
       document.querySelector('#modal-dinner-price').innerHTML = price
       document.querySelector('#modal-dinner-allergies').innerHTML = allergies ? `(${allergies})` : ''
       document.querySelector('#modal-dinner').style.display = 'grid'

@@ -17,11 +17,10 @@ export async function deleteMenuItem(id,menu,section,path){
     if(target.cloudinary_public_id){
         await cloudinary.uploader.destroy(target.cloudinary_public_id)
     }
-    const allMenuItems = await MenuItem.find().sort({sequence:-1})
-    const menuSectionItems = allMenuItems.filter(item=>item.menu == menu && item.section == section) 
-    const maxSequence = menuSectionItems[0].sequence
-    const menuSectionItemsAscending = menuSectionItems.toReversed()
-
+    const allMenuItems = await MenuItem.find({menu,section}).sort({sequence:-1})
+    // console.log(allMenuItems)
+    const maxSequence = allMenuItems[0].sequence
+    
     if(target.sequence != maxSequence){
         for(let i=target.sequence+1;i<=maxSequence;i++){
             await MenuItem.findOneAndUpdate({sequence:i,menu,section},{$set:{sequence:i-1}})
@@ -123,8 +122,14 @@ export async function editMenuItem(formData){
             allergies: formData.get('allergies') ? formData.get('allergies').trim() : '',
             description1: formData.get('description1') ? formData.get('description1').trim() : '',
             description2: formData.get('description2') ? formData.get('description2').trim() : '',
-            typos: formData.get('typos') ? formData.get('typos').trim() : '',
+            upgrade1: formData.get('upgrade1') ? formData.get('upgrade1').trim() : '',
+            upgrade2: formData.get('upgrade2') ? formData.get('upgrade2').trim() : '',
+            upgrade3: formData.get('upgrade3') ? formData.get('upgrade3').trim() : '',
+            price3: formData.get('price3') ? formData.get('price3').trim() : '',
+            price2: formData.get('price2') ? formData.get('price2').trim() : '',
+            price1: formData.get('price1') ? formData.get('price1').trim() : '',
             price: formData.get('price').trim(),
+            typos: formData.get('typos') ? formData.get('typos').trim() : '',
             staffInfo: formData.get('staff-info') ? formData.get('staff-info').trim() : '',
             cloudinary_public_id,
             cloudinary_secure_url

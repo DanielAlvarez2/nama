@@ -5,6 +5,7 @@ import NavbarFooterMenuManager from '@/components/NavbarFooterMenuManager';
 import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import SoupForm from './SoupForm.jsx'
+import DinnerForm from './DinnerForm.jsx'
 import SmallPlatesForm from './SmallPlatesForm.jsx'
 import DinnerItem from './DinnerItem.jsx'
 import {useState} from 'react'
@@ -78,13 +79,20 @@ export default function DinnerClient(props){
                           {props.allItems.filter(item=>item.section == 'Soup').map(data=>{
                             return(
                               <div key={data._id}>
-                                <DinnerItem   section={data.section}
+                                <DinnerItem   
+                                              section={data.section}
                                               id={data._id}
                                               name1={data.name1} 
                                               allergies={data.allergies} 
                                               description1={data.description1}
-                                              typos={data.typos}
+                                              upgrade1={data.upgrade1}
+                                              upgrade2={data.upgrade2}
+                                              upgrade3={data.upgrade3}
                                               price={data.price}
+                                              price1={data.price1}
+                                              price2={data.price2}
+                                              price3={data.price3}
+                                              typos={data.typos}
                                               staffInfo={data.staffInfo}
                                               sequence={data.sequence}
                                               maxSequence={props.allItems.filter(item=>item.section == data.section) ? props.allItems.filter(item=>item.section == data.section)[props.allItems.filter(item=>item.section == data.section).length - 1].sequence : 0}
@@ -132,7 +140,8 @@ export default function DinnerClient(props){
 
       <br className='no-print' />
 
-      <SoupForm />
+      {/* <SoupForm /> */}
+      <DinnerForm section='Soup' />
           
           </>
       }
@@ -176,13 +185,20 @@ export default function DinnerClient(props){
                           {props.allItems.filter(item=>item.section == 'Small Plates').map(data=>{
                             return(
                               <div key={data._id}>
-                                <DinnerItem   section={data.section}
+                                <DinnerItem   
+                                              section={data.section}
                                               id={data._id}
                                               name1={data.name1} 
                                               allergies={data.allergies} 
                                               description1={data.description1}
-                                              typos={data.typos}
+                                              upgrade1={data.upgrade1}
+                                              upgrade2={data.upgrade2}
+                                              upgrade3={data.upgrade3}
                                               price={data.price}
+                                              price1={data.price1}
+                                              price2={data.price2}
+                                              price3={data.price3}
+                                              typos={data.typos}
                                               staffInfo={data.staffInfo}
                                               sequence={data.sequence}
                                               maxSequence={props.allItems.filter(item=>item.section == data.section) ? props.allItems.filter(item=>item.section == data.section)[props.allItems.filter(item=>item.section == data.section).length - 1].sequence : 0}
@@ -230,12 +246,109 @@ export default function DinnerClient(props){
 
       <br className='no-print' />
 
-      <SmallPlatesForm />
+      {/* <SmallPlatesForm /> */}
+      <DinnerForm section='Small Plates' />
           
           </>
       }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {
+        dinnerPage == 'Salad' && 
+          <>
+      <div className="small-paper" style={{paddingTop:'25px',height:'auto'}}>
+        
+          <div className="menu-items">
+
+            <div  className="section section-dessert"
+                  style={{marginBottom:'0px'}}
+            >
+              <div className="left-column">Salad<br/>サラダ</div>
+                
+
+              <div className="right-column">
+              
+                          {props.allItems.filter(item=>item.section == 'Salad').map(data=>{
+                            return(
+                              <div key={data._id}>
+                                <DinnerItem   
+                                              section={data.section}
+                                              id={data._id}
+                                              name1={data.name1} 
+                                              allergies={data.allergies} 
+                                              description1={data.description1}
+                                              upgrade1={data.upgrade1}
+                                              upgrade2={data.upgrade2}
+                                              upgrade3={data.upgrade3}
+                                              price={data.price}
+                                              price1={data.price1}
+                                              price2={data.price2}
+                                              price3={data.price3}
+                                              typos={data.typos}
+                                              staffInfo={data.staffInfo}
+                                              sequence={data.sequence}
+                                              maxSequence={props.allItems.filter(item=>item.section == data.section) ? props.allItems.filter(item=>item.section == data.section)[props.allItems.filter(item=>item.section == data.section).length - 1].sequence : 0}
+                                              cloudinary_secure_url={data.cloudinary_secure_url}
+                                              cloudinary_public_id={data.cloudinary_public_id}
+                                />
+                                
+                              </div>
+                            )
+                          })}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>{/* .right-column */}
+            </div>{/* .section */}
+
+
+
+
+
+          </div>{/* .menu-items */}
+
+
+
+
+
+
+
+
+      </div>{/* .small-paper */}
+
+      <br className='no-print' />
+
+      <DinnerForm section={'Salad'} />
+          
+          </>
+      }
 
 
 

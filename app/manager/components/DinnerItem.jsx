@@ -12,18 +12,34 @@ export default function DinnerItem(props){
     const {editMode,setEditMode} = useEditModeContext()
     const {existingImage,setExistingImage} = useExistingImageContext()
 
-    function editItem(section,
+    function editItem(
+                    section,
                         id,
                           name1,
+                          allergies,
                           description1,
-                          typos,
                           price,
+                          upgrade1,
+                          price1,
+                          upgrade2,
+                          price2,
+                          upgrade3,
+                          price3,
+                          typos,
                           staffInfo,
                           currentImageURL,
                           currentImageID){
-        document.getElementById('id').value = id  
+        document.querySelector('#id').value = id  
+        document.querySelector('#section').value = section  
         document.querySelector('#name1').value = name1
+        document.querySelector('#allergies').value = allergies
         document.querySelector('#description1').value = description1
+        document.querySelector('#upgrade1').value = upgrade1
+        document.querySelector('#price1').value = price1
+        document.querySelector('#price2').value = price2
+        document.querySelector('#price3').value = price3
+        document.querySelector('#upgrade2').value = upgrade2
+        document.querySelector('#upgrade3').value = upgrade3
         document.querySelector('#typos').value = typos
         document.querySelector('#price').value = price
         document.querySelector('#staff-info').value = staffInfo 
@@ -70,21 +86,41 @@ export default function DinnerItem(props){
                     <span className="price">{props.price}</span>
                   </div>
                   <div className="description1" dangerouslySetInnerHTML={{__html:props.description1}}></div>
+                  <div style={{display:'flex',justifyContent:'space-between'}}>
+                    <span>{props.upgrade1}</span>
+                    <span>{props.price1}</span>
+                  </div>
+                  <div style={{display:'flex',justifyContent:'space-between'}}>
+                    <span>{props.upgrade2}</span>
+                    <span>{props.price2}</span>
+                  </div>
+                  <div style={{display:'flex',justifyContent:'space-between'}}>
+                    <span>{props.upgrade3}</span>
+                    <span>{props.price3}</span>
+                  </div>
                   <div className="typos" style={{color:'red'}} dangerouslySetInnerHTML={{__html:props.typos}}></div>
                     <span   className="item-button edit-button"
-                            onClick={()=>editItem(      props.section,
-                                                        props.id,
-                                                        props.name1,
-                                                        props.description1,
-                                                        props.typos,
-                                                        props.price,
-                                                        props.staffInfo,
-                                                        props.cloudinary_secure_url,
-                                                        props.cloudinary_public_id,
+                            onClick={()=>editItem(      
+                              props.section,
+                              props.id,
+                              props.name1,
+                              props.allergies,
+                              props.description1,
+                              props.price,
+                              props.upgrade1,
+                              props.price1,
+                              props.upgrade2,
+                              props.price2,
+                              props.upgrade3,
+                              props.price3,
+                              props.typos,
+                              props.staffInfo,                                                    props.cloudinary_secure_url,
+                              props.cloudinary_secure_url,
+                              props.cloudinary_public_id,
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteMenuItem(props.id,'dinner','soup','/manager')}
+                            onClick={()=>deleteMenuItem(props.id,'dinner',props.section,'/manager')}
                     >
                         DELETE
                     </span>

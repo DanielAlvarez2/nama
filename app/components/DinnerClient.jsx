@@ -9,14 +9,22 @@ export default function DinnerClient(props) {
 
     function openDinnerModal(name1,
                               allergies,
-                              price,
                               description1,
+                              price,
+                              upgrade1,
+                              upgrade2,
+                              upgrade3,
+                              price1,
+                              price2,
+                              price3,
                               typos,
                               staffInfo,
                               img_src
     ){
       document.querySelector('#modal-dinner-name1').innerHTML = name1
       document.querySelector('#modal-dinner-description1').innerHTML = description1
+      document.querySelector('#modal-dinner-upgrade1').innerHTML = upgrade1
+      document.querySelector('#modal-dinner-price1').innerHTML = price1
       document.querySelector('#modal-dinner-typos').innerHTML = typos ? typos : ''
       document.querySelector('#modal-dinner-staff-info').innerHTML = staffInfo
       document.querySelector('#modal-dinner-img').src = img_src
@@ -289,61 +297,53 @@ produce.               </div>
               <div className="left-column">Salad<br/>サラダ</div>
               <div className="right-column">
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('greenmarket-salad')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Green Market</span>
-                      <span className="allergies">(V,GF)</span>
-                    </span>
-                    <span className="price">29</span>
-                  </div>
-                  <div className="description1">Summer Vegetables, Goma Miso</div>
-                  <div className="description2"></div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Tofu</span>
-                      <span className='allergies'>(V,GF)</span>
-                    </span>
-                    <span className="upgrade-price">38</span>
-                  </div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Warm Mushroom<span className='typo'>s</span></span>
-                      <span className='allergies'>(V,GF)</span>
-                    </span>
-                    <span className="upgrade-price">40</span>
-                  </div>
-                </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('caesar-salad')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Caesar</span>
-                      <span className="allergies">(D,GF)</span>
-                    </span>
-                    <span className="price">24</span>
-                  </div>
-                  <div className="description1">Yuzu Sesame, Ontama, Katsuo Bushi, Aonori</div>
-                  <div className="description2"></div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Warm Mushrooms</span>
-                      <span className='allergies'>(GF)</span>
-                    </span>
-                    <span className="upgrade-price">35</span>
-                  </div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Hokkaido "Unibushi"</span>
-                      <span className='allergies'>(GF)</span>
-                    </span>
-                    <span className="upgrade-price">44</span>
-                  </div>
-                </div>
+                  {
+                    props.allItems.filter(item=>item.section == 'Salad').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                      </div>
+                    )
+                  }
+
+
+
 
 
               </div>
@@ -4416,6 +4416,10 @@ produce.               </div>
                             <span className="price" id='modal-dinner-price'></span>
                           </div>
                           <div className="description1" id='modal-dinner-description1'></div>
+                          <div style={{display:'flex',justifyContent:'space-between'}}>
+                            <span id='modal-dinner-upgrade1'></span>
+                            <span id='modal-dinner-price1'></span>
+                          </div>
                           <div id='modal-dinner-typos' className='typo'></div>
                           <br/>
                           <hr/>

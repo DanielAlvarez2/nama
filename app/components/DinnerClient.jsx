@@ -566,64 +566,49 @@ produce.               </div>
               <div className="left-column">Market<br/>野菜</div>
               <div className="right-column">
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('tofu-miso-yaki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Tofu Miso Yaki</span>
-                      <span className="allergies">(V,GF)</span>
-                    </span>
-                    <span className="price">30</span>
-                  </div>
-                  <div className="description1">Charcoal Grilled Tofu, Shiso Miso</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('grilled-vegetables')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Grilled Summer Vegetables</span>
-                      <span className="allergies">(V,GF)</span>
-                    </span>
-                    <span className="price">35</span>
-                  </div>
-                  <div className="description1">Yukari Salt, Shiso Miso</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('nasu-dengaku')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Nasu Dengaku</span>
-                      <span className="allergies">(V,N,GF)</span>
-                    </span>
-                    <span className="price">38</span>
-                  </div>
-                  <div className="description1">Grilled Eggplant, Saikyo Miso</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-
-
-
-
+                  {
+                    props.allItems.filter(item=>item.section == 'Market').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                      </div>
+                    )
+                  }
 
               </div>
 

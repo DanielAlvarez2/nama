@@ -416,47 +416,53 @@ produce.               </div>
               <div className="left-column">Fish<br/>魚</div>
               <div className="right-column">
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('gindara')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Gindara</span>
-                      <span className="allergies">(GF)</span>
-                    </span>
-                    <span className="price">50</span>
-                  </div>
-                  <div className="description1">Miso Black Cod</div>
-                  <div className="description2"></div>
-                </div>
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('hamachi-kama')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Hamachi Kama</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">52</span>
-                  </div>
-                  <div className="description1">Charcoal Grilled Yellowtail Collar</div>
-                  <div className="description2"></div>
-                </div>
+                  {
+                    props.allItems.filter(item=>item.section == 'Fish').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                      </div>
+                    )
+                  }
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('lobster-uni-ogonyaki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Lobster & Uni Ogonyaki</span>
-                      <span className="allergies">(GF)</span>
-                    </span>
-                    <span className="price">86</span>
-                  </div>
-                  <div className="description1">Grilled Lobster, Uni Miso, Lobster Oil</div>
-                  <div className="description2"></div>
-                </div>
+
+
 
               </div>
             </div>
@@ -501,87 +507,54 @@ produce.               </div>
               <div className="left-column">Meat<br/>肉</div>
               <div className="right-column">
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('jidori-chicken')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Shio Koji Jidori Sumibi Yaki</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">38</span>
-                  </div>
-                  <div className="description1">Charcoal Grilled Chicken, Yuzu Sesame Ponzu, Daikon Oroshi</div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('kamo-miso-yaki')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Kamo Miso Yaki</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">70</span>
-                  </div>
-                  <div className="description1">Charcoal Grilled Duck Breast, Shiso Miso</div>
-                  <div className="description2"></div>
-                </div>
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('lamb-chops')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Moromi Lamb Sumibi Yaki</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">98</span>
-                  </div>
-                  <div className="description1">Moromi Marinated Lamb, Wasabi Oil</div>
-                  <div className="description2"></div>
-                </div>
-
-
+                  {
+                    props.allItems.filter(item=>item.section == 'Meat').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                      </div>
+                    )
+                  }
 
 
 
 
 
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('tenderloin')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">A5 Kobe Charcoal Grilled Tenderloin</span>
-                      <span className="allergies">(GF)</span>
-                    </span>
-                    <span className="price">220</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('sirloin')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">A5 Kobe Charcoal Grilled Sirloin</span>
-                      <span className="allergies">(GF)</span>
-                    </span>
-                    <span className="price">205</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
 
 
               </div>

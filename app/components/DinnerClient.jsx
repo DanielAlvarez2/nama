@@ -1062,101 +1062,58 @@ produce.               </div>
 
             
             <div className="section">
-              <div className="left-column">麺類<br/>Noodles</div>
+              <div className="left-column">Noodles<br/>麺類</div>
 
               <div className="right-column">
-            
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('zaru-soba')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Zaru Soba</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">28</span>
-                  </div>
-                  <div className="description1">Cold Soba, Karajiru</div>
-                  <div className="description2"></div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Vegetable Tempura</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">38</span>
-                  </div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Tempura Moriawase</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">42</span>
-                  </div>
 
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('kake-soba')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Kake Soba</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">28</span>
-                  </div>
-                  <div className="description1">Hot Soba, Amajiru</div>
-                  <div className="description2"></div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Kamo (Duck)</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">42</span>
-                  </div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Vegetable Tempura</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">38</span>
-                  </div>
-                  <div className="upgrade">
-                    <span>
-                      <span className='upgrade-description'>With Tempura Moriawase</span>
-                      <span className='allergies'></span>
-                    </span>
-                    <span className="upgrade-price">42</span>
-                  </div>
-
-                </div>
+                  {
+                    props.allItems.filter(item=>item.section == 'Noodles').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                        <div className='typo'>{data.typos}</div>
+                      </div>
+                    )
+                  }
 
 
 
 
-                <div  className="dinner-menu-item"
-                      onClick={()=>showModal('kamatama-udon')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">A5 Kobe Kamatama Udon</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">84</span>
-                  </div>
-                  <div className="description1">Ontama, Mushrooms, Non-Soup Udon Noodles</div>
-                  <div className="description2"></div>
-                </div>
 
 
 

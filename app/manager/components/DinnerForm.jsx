@@ -68,7 +68,7 @@ export default function DinnerForm(props){
         // document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form h1').textContent = `ADD NEW ${props.toUpperCase()}`
         document.querySelector('#form').style.background = 'lightgreen'
-        document.querySelector('#submit-button-form').innerHTML = `+ New ${props}`
+        document.querySelector('#submit-button-form').innerHTML = `+ ${props}`
         setEditMode(false)
         document.querySelector('#image-file').value = ''
         setPreviewImage('')
@@ -90,7 +90,7 @@ function toggleCheckbox(){
             <form   action={handleSubmit}
                     id='form'
             >
-                {<h1>ADD NEW {props.section.toUpperCase()}</h1>}
+                {<h1 style={{fontSize:'25px'}}>ADD NEW {props.section.toUpperCase()}</h1>}
                 <br/><br/>
 
                 <input  type='hidden' 

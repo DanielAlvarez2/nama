@@ -786,187 +786,54 @@ produce.               </div>
               <div className="left-column">Sashimi & Nigiri<br/>刺⾝ / にぎり</div>
 
               <div className="right-column">
-              
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('hamachi')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Hamachi (Yellowtail)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">13</span>
-                  </div>
-                </div>
 
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('madai')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Madai (Red Snapper)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">13</span>
-                  </div>
-                  <div className="description1"></div>
-                  <div className="description2"></div>
-                </div>
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('kinme-dai')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Kinme Dai (Golden Eye Snapper)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">17</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('akami')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Akami (Lean Tuna)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">16</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('chutoro')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Chutoro (Medium Fatty Tuna)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">23</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('otoro')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Otoro (Fatty Tuna)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">29</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('ora')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Ora King Salmon</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">14</span>
-                  </div>
-                </div>
-
-                <div className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('unagi')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Unagi (Eel)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">13</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('hotate')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Hotate (Scallop)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">15</span>
-                  </div>
-                </div>
+                  {
+                    props.allItems.filter(item=>item.section == 'Sashimi & Nigiri').map(data=>
+                      <div  className="dinner-menu-item"
+                            style={{marginBottom:'2px'}}
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                        <div className='typo'>{data.typos}</div>
+                      </div>
+                    )
+                  }
 
 
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('shima-aji')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Shimaaji (Striped Jack)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">19</span>
-                  </div>
-                </div>
-
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('ebi')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Botan Ebi (Shrimp)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">19</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('santa-barbara-uni')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Santa Barbara Uni (Sea Urchin)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">MP</span>
-                  </div>
-                </div>
-
-                <div  className="dinner-menu-item nigiri"
-                      onClick={()=>showModal('hokkaido-uni')}
-                >
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Hokkaido Uni (Japanese Sea Urchin)</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">MP</span>
-                  </div>
-                </div>
-
-                <div className="dinner-menu-item nigiri">
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Chef's Selection of 5</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">60</span>
-                  </div>
-                </div>
-
-                <div className="dinner-menu-item nigiri">
-                  <div className="name-price">
-                    <span>
-                      <span className="name">Chef's Selection of 8</span>
-                      <span className="allergies"></span>
-                    </span>
-                    <span className="price">92</span>
-                  </div>
-                </div>
 
 
 

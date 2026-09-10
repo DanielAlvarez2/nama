@@ -1112,16 +1112,6 @@ produce.               </div>
             
            </div> {/* .menu-items */}
 
-          <div className="legal">
-            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
-            <br/><br/>
-            All prices are in USD and subject to 8.875% government tax. 
-            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
-            Please let us know if you have any 
-            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
-            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
-          </div>
-
        </div> {/* .letter-paper */}
 
       <br className='no-print' />

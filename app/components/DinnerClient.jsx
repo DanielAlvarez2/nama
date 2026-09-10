@@ -1043,6 +1043,89 @@ produce.               </div>
       <br className='no-print' />
 
 
+      <div className="letter-paper">
+
+
+                                            
+          <div className="menu-items">
+
+
+
+
+            <div className="section">
+              <div className="left-column">New Menu<br/>新しいメニュー</div>
+
+              <div className="right-column">
+
+                  {
+                    props.allItems.filter(item=>item.section == 'New Menu').map(data=>
+                      <div  className="dinner-menu-item"
+                            key={data._id}
+                            onClick={()=>openDinnerModal(                              
+                              data.name1,
+                              data.allergies,
+                              data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
+                              data.typos,
+                              data.staffInfo,
+                              data.cloudinary_secure_url
+                            )}
+                      >
+                        <div className="name-price">
+                          <span>
+                            <span className="name">{data.name1}</span>
+                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                          </span>
+                          <span className="price">{data.price}</span>
+                        </div>
+                        <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
+                        <div className='typo'>{data.typos}</div>
+                      </div>
+                    )
+                  }
+
+
+
+
+              </div>
+            </div>
+
+
+            
+           </div> {/* .menu-items */}
+
+          <div className="legal">
+            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
+            <br/><br/>
+            All prices are in USD and subject to 8.875% government tax. 
+            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
+            Please let us know if you have any 
+            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
+            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
+          </div>
+
+       </div> {/* .letter-paper */}
+
+      <br className='no-print' />
+
 
 
 

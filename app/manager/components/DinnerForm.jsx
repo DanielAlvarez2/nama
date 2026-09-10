@@ -66,7 +66,7 @@ export default function DinnerForm(props){
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
         // document.querySelector('#current-image-label').style.display = 'none'
-        document.querySelector('#form h1').textContent = `ADD NEW ${props.toUpperCase()}`
+        document.querySelector('#form h1').textContent = `ADD ${props.toUpperCase()}`
         document.querySelector('#form').style.background = 'lightgreen'
         document.querySelector('#submit-button-form').innerHTML = `+ ${props}`
         setEditMode(false)
@@ -90,7 +90,7 @@ function toggleCheckbox(){
             <form   action={handleSubmit}
                     id='form'
             >
-                {<h1 style={{fontSize:'25px'}}>ADD NEW {props.section.toUpperCase()}</h1>}
+                {<h1 style={{fontSize:'25px'}}>ADD {props.section.toUpperCase()}</h1>}
                 <br/><br/>
 
                 <input  type='hidden' 

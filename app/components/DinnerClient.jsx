@@ -192,8 +192,14 @@ produce.               </div>
                             onClick={()=>openDinnerModal(                              
                               data.name1,
                               data.allergies,
-                              data.price,
                               data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
                               data.typos,
                               data.staffInfo,
                               data.cloudinary_secure_url
@@ -207,9 +213,22 @@ produce.               </div>
                           <span className="price">{data.price}</span>
                         </div>
                         <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
                       </div>
                     )
                   }
+
 
               
 
@@ -232,8 +251,14 @@ produce.               </div>
                             onClick={()=>openDinnerModal(                              
                               data.name1,
                               data.allergies,
-                              data.price,
                               data.description1,
+                              data.price,
+                              data.upgrade1,
+                              data.upgrade2,
+                              data.upgrade3,
+                              data.price1,
+                              data.price2,
+                              data.price3,
                               data.typos,
                               data.staffInfo,
                               data.cloudinary_secure_url
@@ -247,6 +272,18 @@ produce.               </div>
                           <span className="price">{data.price}</span>
                         </div>
                         <div className="description1">{data.description1}</div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade1}</span>
+                          <span>{data.price1}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade2}</span>
+                          <span>{data.price2}</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>{data.upgrade3}</span>
+                          <span>{data.price3}</span>
+                        </div>
                       </div>
                     )
                   }

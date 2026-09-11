@@ -61,6 +61,7 @@ export default function DinnerItem(props){
           ,10)
     }
     return(
+      
         <> 
                 <div  className="dinner-menu-item"
                       style={{border:'1px solid #888',

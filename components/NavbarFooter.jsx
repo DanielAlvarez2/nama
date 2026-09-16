@@ -1,5 +1,6 @@
 import Logo from './Logo.jsx'
 import NavbarLinks from './NavbarLinks.jsx'
+import Link from 'next/link'
 
 export default function NavbarFooter({page}){
     
@@ -10,7 +11,7 @@ export default function NavbarFooter({page}){
                 <br/>        
                 <NavbarLinks page={page} />
                 <br/>
-                <Logo />
+                <Link href='/'><Logo /></Link>
             </div>
         
     )

@@ -1,5 +1,6 @@
 import Logo from './Logo.jsx'
 import NavbarLinksMenuManager from './NavbarLinksMenuManager.jsx'
+import Link from 'next/link'
 
 export default function NavbarMenuManager({page}){
     
@@ -10,8 +11,8 @@ export default function NavbarMenuManager({page}){
                 <NavbarLinksMenuManager page={page} />
                 <br/>
                 <h1 style={{color:'red'}}>MENU MANAGER</h1>
-                <Logo />
-                <br/>        
+                <Link href='/'><Logo /></Link>
+                <br/><br/>        
             </div>
         
     )

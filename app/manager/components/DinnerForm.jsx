@@ -6,18 +6,30 @@ import { useState } from "react"
 import { TiDeleteOutline } from "react-icons/ti";
 import {useEditModeContext} from '@/context/EditModeContext'
 import {useExistingImageContext} from '@/context/ExistingImageContext'
+import '@/app/globals.css'
 
 
 export default function DinnerForm(props){
 
     const {editMode,setEditMode} = useEditModeContext()   
     const {existingImage,setExistingImage} = useExistingImageContext()
+    
 
     const [previewImage, setPreviewImage] = useState()
     // const [existingImage, setExistingImage] = useState()
 
     function handleFileInputChange(e){
         const file = e.target.files[0]
+        if(file.size > 1000000){
+            alert(`
+Image file is too large.
+Resize to smaller dimensions and try again.
+
+Maximum Recommended Dimensions:
+  1000x1000 pixels
+`)
+            return
+        }
         previewFile(file)
     }
     function previewFile(file){
@@ -27,19 +39,21 @@ export default function DinnerForm(props){
     }
 
     async function handleSubmit(formData){
-        if (!formData.get('name1').trim() || !formData.get('price').trim()) {
-            alert('Name and Price are required')
-            setTimeout(()=>{
-                document.querySelector('#name1').value = formData.get('name1')
-                document.querySelector('#allergies').value = formData.get('allergies')
-                document.querySelector('#typos').value = formData.get('typos')
-                document.querySelector('#description1').value = formData.get('description1')
-                document.querySelector('#price').value = formData.get('price')
-                document.querySelector('#typos').value = formData.get('typos')
-                document.querySelector('#staff-info').value = formData.get('staff-info')
-            },10)
-            return
-        }
+      if (!formData.get('name1').trim() || !formData.get('price').trim()) {
+        alert('Name and Price are required')
+        setTimeout(()=>{
+          document.querySelector('#name1').value = formData.get('name1')
+          document.querySelector('#allergies').value = formData.get('allergies')
+          document.querySelector('#typos').value = formData.get('typos')
+          document.querySelector('#description1').value = formData.get('description1')
+          document.querySelector('#price').value = formData.get('price')
+          document.querySelector('#typos').value = formData.get('typos')
+          document.querySelector('#staff-info').value = formData.get('staff-info')
+        },10)
+        return
+      }
+        document.querySelector('#uploading-button').style.display = 'block'
+        document.querySelector('#submit-button-form').style.display = 'none'
         if(editMode){
             await editMenuItem(formData)
             setEditMode(false)
@@ -68,11 +82,14 @@ export default function DinnerForm(props){
         // document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form h1').textContent = `ADD ${props.toUpperCase()}`
         document.querySelector('#form').style.background = 'lightgreen'
-        document.querySelector('#submit-button-form').innerHTML = `+ ${props}`
+        // document.querySelector('#submit-button-form').innerHTML = `+ ${props}`
         setEditMode(false)
         document.querySelector('#image-file').value = ''
         setPreviewImage('')
         setExistingImage(null)
+        document.querySelector('#uploading-button').style.display = 'none'
+        document.querySelector('#submit-button-form').style.display = 'block'
+
     }
 
 function toggleCheckbox(){
@@ -310,7 +327,11 @@ function toggleCheckbox(){
                     }
                 <br/><br/>
                 <div style={{display:'flex'}}>
-                    <button id='submit-button-form' type='submit'>+ {`${props.section}`}</button>
+                    
+                      <button id='uploading-button' disabled className="blinking" style={{cursor:'wait',display:'none'}}>UPLOADING...</button>
+                      
+                      <button id='submit-button-form' type='submit'> {`+ ${props.section}`}</button>
+                    
                     <button type='button'
                             onClick={()=>resetForm(props.section)} 
                             style={{background:'red'}}>Cancel</button>

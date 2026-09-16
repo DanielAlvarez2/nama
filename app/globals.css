@@ -269,9 +269,7 @@ body,.webpage{
  /* font-style: italic; */
  font-size: 13px;
 }
-.upgrade-description{
- /* font-style: italic; */
-}
+
 .dinner-menu-item{
  margin-bottom:20px;
  line-height: 1.5;
@@ -712,4 +710,19 @@ input[type='text']{
 }
 .name-price{
   line-height:14px;
+}
+.blinking{
+  font-size: 20px;
+  animation-name: blink;
+  animation-duration:1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes blink{
+  from{
+    color:#ffffff;
+  }
+  to{
+    color:#00000000;
+  }
 }

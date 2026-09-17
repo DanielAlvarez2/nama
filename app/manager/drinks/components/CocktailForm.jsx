@@ -52,6 +52,8 @@ Maximum Recommended Dimensions:
             },10)
             return
         }
+        document.querySelector('#uploading-button').style.display = 'block'
+        document.querySelector('#submit-button-cocktail-form').style.display = 'none'        
         if(editMode){
             await editMenuItem(formData)
             setEditMode(false)
@@ -78,13 +80,15 @@ Maximum Recommended Dimensions:
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
         // document.querySelector('#current-image-label').style.display = 'none'
-        document.querySelector('#form-cocktail h1').textContent = 'ADD NEW COCKTAIL'
+        document.querySelector('#form-cocktail h1').textContent = 'ADD COCKTAIL'
         document.querySelector('#form-cocktail').style.background = 'lightgreen'
         document.querySelector('#submit-button-cocktail-form').innerHTML = `+ New Cocktail`
         setEditMode(false)
         document.querySelector('#image-file-cocktail').value = ''
         setPreviewImage('')
         setExistingImage(null)
+        document.querySelector('#uploading-button').style.display = 'none'
+        document.querySelector('#submit-button-cocktail-form').style.display = 'block'        
     }
 
 function toggleCheckbox(){
@@ -102,7 +106,7 @@ function toggleCheckbox(){
             <form   action={handleSubmit}
                     id='form-cocktail'
             >
-                <h1>ADD NEW COCKTAIL</h1>
+                <h1>ADD COCKTAIL</h1>
                 <br/><br/>
 
                 <input  type='hidden' 
@@ -244,6 +248,8 @@ function toggleCheckbox(){
                     }
                 <br/><br/>
                 <div style={{display:'flex'}}>
+
+                    <button id='uploading-button' disabled className="blinking" style={{cursor:'wait',display:'none'}}>UPLOADING...</button>
                     <button id='submit-button-cocktail-form' type='submit'>+ Cocktail</button>
                     <button type='button'
                             onClick={resetForm} 

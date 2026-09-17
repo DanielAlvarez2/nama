@@ -33,7 +33,7 @@ export default function CoffeeForm(){
         document.querySelector('#id').value = ''
         document.querySelector('#name1').value = ''
         document.querySelector('#price').value = ''
-        document.querySelector('#form h1').textContent = 'ADD NEW COFFEE/TEA'
+        document.querySelector('#form h1').textContent = 'ADD COFFEE/TEA'
         document.querySelector('#form').style.background = 'lightgreen'
         document.querySelector('#submit-button').innerHTML = `+ New Coffee/Tea`
         setEditMode(false)
@@ -46,7 +46,7 @@ export default function CoffeeForm(){
                     style={{marginBottom:'0px'}}
                     id='form'
             >
-                <h1>ADD NEW COFFEE/TEA</h1>
+                <h1>ADD COFFEE/TEA</h1>
                 <br/><br/>
 
                 <input  type='hidden' 

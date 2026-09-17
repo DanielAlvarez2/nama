@@ -52,6 +52,8 @@ Maximum Recommended Dimensions:
             },10)
             return
         }
+        document.querySelector('#uploading-button').style.display = 'block'
+        document.querySelector('#submit-button-mocktail-form').style.display = 'none'        
         if(editMode){
             await editMenuItem(formData)
             setEditMode(false)
@@ -78,13 +80,15 @@ Maximum Recommended Dimensions:
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
         // document.querySelector('#current-image-label').style.display = 'none'
-        document.querySelector('#form-mocktail h1').textContent = 'ADD NEW MOCKTAIL'
+        document.querySelector('#form-mocktail h1').textContent = 'ADD MOCKTAIL'
         document.querySelector('#form-mocktail').style.background = 'lightgreen'
         document.querySelector('#submit-button-mocktail-form').innerHTML = `+ New Mocktail`
         setEditMode(false)
         document.querySelector('#image-file-mocktail').value = ''
         setPreviewImage('')
         setExistingImage(null)
+        document.querySelector('#uploading-button').style.display = 'none'
+        document.querySelector('#submit-button-mocktail-form').style.display = 'block'        
     }
 
 function toggleCheckbox(){
@@ -102,7 +106,7 @@ function toggleCheckbox(){
             <form   action={handleSubmit}
                     id='form-mocktail'
             >
-                <h1>ADD NEW MOCKTAIL</h1>
+                <h1>ADD MOCKTAIL</h1>
                 <br/><br/>
 
                 <input  type='hidden' 
@@ -244,6 +248,7 @@ function toggleCheckbox(){
                     }
                 <br/><br/>
                 <div style={{display:'flex'}}>
+                    <button id='uploading-button' disabled className="blinking" style={{cursor:'wait',display:'none'}}>UPLOADING...</button>                    
                     <button id='submit-button-mocktail-form' type='submit'>+ Mocktail</button>
                     <button type='button'
                             onClick={resetForm} 

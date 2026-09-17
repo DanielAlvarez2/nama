@@ -51,6 +51,8 @@ Maximum Recommended Dimensions:
             },10)
             return
         }
+        document.querySelector('#uploading-button').style.display = 'block'
+        document.querySelector('#submit-button-dessert-wine-form').style.display = 'none'
         if(editMode){
             await editMenuItem(formData)
             setEditMode(false)
@@ -74,13 +76,15 @@ Maximum Recommended Dimensions:
         document.querySelector('#current-image-url-dessert-wine').value = ''
         document.querySelector('#current-image-id-dessert-wine').value = ''
         document.querySelector('#image-text-dessert-wine').textContent = ''
-        document.querySelector('#form-dessert-wine h1').textContent = 'ADD NEW DESSERT WINE'
+        document.querySelector('#form-dessert-wine h1').textContent = 'ADD DESSERT WINE'
         document.querySelector('#form-dessert-wine').style.background = 'lightgreen'
         document.querySelector('#submit-button-dessert-wine-form').innerHTML = `+ New Dessert Wine`
         setEditMode(false)
         document.querySelector('#image-file-dessert-wine').value = ''
         setPreviewImage('')
         setExistingImage(null)
+        document.querySelector('#uploading-button').style.display = 'none'
+        document.querySelector('#submit-button-dessert-wine-form').style.display = 'block'
     }
 
 function toggleCheckbox(){
@@ -99,7 +103,7 @@ function toggleCheckbox(){
                     style={{marginBottom:'0px'}}
                     id='form-dessert-wine'
             >
-                <h1>ADD NEW DESSERT WINE</h1>
+                <h1>ADD DESSERT WINE</h1>
                 <br/><br/>
 
                 <input  type='hidden' 
@@ -239,6 +243,8 @@ function toggleCheckbox(){
                     }
                 <br/><br/>
                 <div style={{display:'flex'}}>
+
+                    <button id='uploading-button' disabled className="blinking" style={{cursor:'wait',display:'none'}}>UPLOADING...</button>
                     <button id='submit-button-dessert-wine-form' type='submit'>+ Dessert Wine</button>
                     <button type='button'
                             onClick={resetFormDessertWine} 

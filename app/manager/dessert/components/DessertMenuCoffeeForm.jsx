@@ -33,7 +33,7 @@ export default function DessertMenuCoffeeForm({addDessertMenuCoffeeTea,editDesse
         document.querySelector('#id-dessert-menu-coffee').value = ''
         document.querySelector('#name-dessert-menu-coffee').value = ''
         document.querySelector('#price-dessert-menu-coffee').value = ''
-        document.querySelector('#form-dessert-menu-coffee h1').textContent = 'ADD NEW COFFEE/TEA'
+        document.querySelector('#form-dessert-menu-coffee h1').textContent = 'ADD COFFEE/TEA'
         document.querySelector('#form-dessert-menu-coffee').style.background = 'lightgreen'
         document.querySelector('#submit-button-dessert-menu-coffee').innerHTML = `+ New Coffee/Tea`
         setEditMode(false)
@@ -46,7 +46,7 @@ export default function DessertMenuCoffeeForm({addDessertMenuCoffeeTea,editDesse
                     style={{marginBottom:'0px'}}
                     id='form-dessert-menu-coffee'
             >
-                <h1>ADD NEW COFFEE/TEA</h1>
+                <h1>ADD COFFEE/TEA</h1>
                 <br/><br/>
 
                 <input  type='hidden' 

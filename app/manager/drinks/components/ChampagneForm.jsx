@@ -18,7 +18,7 @@ export default function ChampagneForm(){
 
     function handleFileInputChange(e){
         const file = e.target.files[0]
-        if(file.size > 1000000){
+        if(file.size > 4500000){
             document.querySelector('#image-file').value = ''
             alert(`
 Image file is too large.

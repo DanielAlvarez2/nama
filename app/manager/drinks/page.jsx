@@ -3,6 +3,7 @@ import DrinksClient from './components/DrinksClient.jsx'
 import MenuItem from '@/models/MenuItem.js'
 import connectMongoDB from '@/libs/mongodb.js'
 
+export const dynamic = 'force-dynamic'
 
 export default async function ManagerDrinksPage(){
 

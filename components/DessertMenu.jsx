@@ -320,6 +320,7 @@ export default function DessertMenu({menuItems}){
 
       <br className='no-print' />
 
+      
       <NavbarFooter page='dessert' />
       <br className='no-print'/>
 

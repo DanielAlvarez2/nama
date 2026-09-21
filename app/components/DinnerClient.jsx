@@ -1182,7 +1182,7 @@ produce.               </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>1st Course</div>
-            <div className='tasting-right-micros'>Hassun or Cold Appetizer</div>
+            <div className='tasting-right-micros'>Hassun</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>2nd Course</div>
@@ -1194,14 +1194,10 @@ produce.               </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>4th Course</div>
-            <div className='tasting-right-micros'>Hand Roll<br/>Miso Soup</div>
+            <div className='tasting-right-micros'>Hand Roll<br/>Miso Soup<br/>Tamago</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>5th Course</div>
-            <div className='tasting-right-micros'>Tamago</div>
-          </div>
-          <div className='tasting-row'>
-            <div className='tasting-left-micros'>6th Course</div>
             <div className='tasting-right-micros'>Dessert</div>
           </div>
         </div>{/* .tasting-wrapper */}
@@ -1217,14 +1213,12 @@ produce.               </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'></div>
             <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
-              Kitchen Tasting $388 (For 1)
-              <br/>
-              Hana/Flower
+              Hana/Flower Tasting $388 (For 1)            
             </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>1st Course</div>
-            <div className='tasting-right-micros'>Chawanmushi<br/>Shima Aji Tataki (3pc)</div>
+            <div className='tasting-right-micros'>Chawanmushi (Hot, Individual)<br/>Katsuo Tataki (3pc)</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>2nd Course</div>
@@ -1236,7 +1230,7 @@ produce.               </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>4th Course</div>
-            <div className='tasting-right-micros'>Gindara (1pc)<br/>Miyazaki Steak or Moromi Lamb</div>
+            <div className='tasting-right-micros'>Gindara (1pc)<br/>Miyazaki Steak or Sukiyaki</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>5th Course</div>
@@ -1249,9 +1243,6 @@ produce.               </div>
             <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
-          </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
           </div>
         </div>{/* .tasting-wrapper */}
 
@@ -1266,14 +1257,12 @@ produce.               </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'></div>
             <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
-              Kitchen Tasting $388 (For 2)
-              <br/>
-              Hana/Flower
+              Hana/Flower Tasting $388 (For 2)
             </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>1st Course</div>
-            <div className='tasting-right-micros'>Chawanmushi (Individual)<br/>Shima Aji Tataki (6pc)</div>
+            <div className='tasting-right-micros'>Chawanmushi (Hot, Individual)<br/>Katsuo Tataki (6pc)</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>2nd Course</div>
@@ -1285,7 +1274,7 @@ produce.               </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>4th Course</div>
-            <div className='tasting-right-micros'>SSC<br/>Miyazaki Steak or Moromi Lamb</div>
+            <div className='tasting-right-micros'>Lobster Uni<br/>Miyazaki Steak or Sukiyaki</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>5th Course</div>
@@ -1413,14 +1402,12 @@ produce.               </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'></div>
             <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
-              Kitchen Tasting $388 (For 3)
-              <br/>
-              Hana/Flower
+              Hana/Flower Tasting $388 (For 3)
             </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>1st Course</div>
-            <div className='tasting-right-micros'>Chawanmushi (Individual)<br/>Shima Aji Tataki (6pc)</div>
+            <div className='tasting-right-micros'>Chawanmushi (Hot, Individual)<br/>Katsuo Tataki (6pc)</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>2nd Course</div>
@@ -1432,7 +1419,7 @@ produce.               </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>4th Course</div>
-            <div className='tasting-right-micros'>Kamo Miso Yaki<br/>SSC<br/>Miyazaki Steak or Moromi Lamb</div>
+            <div className='tasting-right-micros'>Kamo Miso Yaki<br/>Lobster Uni<br/>Miyazaki Steak or Sukiyaki</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>5th Course</div>
@@ -1462,14 +1449,12 @@ produce.               </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'></div>
             <div className='tasting-right-micros' style={{background:'pink',fontWeight:'900'}}>
-              Kitchen Tasting $388 (For 5)
-              <br/>
-              Hana/Flower
+              Hana/Flower Tasting $388 (For 5)
             </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>1st Course</div>
-            <div className='tasting-right-micros'>2x Aigamo (5pc)<br/>2x Shima Aji Tataki (5pc)<br/>2x Hamachi Usuzukuri (5pc)</div>
+            <div className='tasting-right-micros'>2x Aigamo (5pc)<br/>2x Katsuo Tataki (5pc)<br/>2x Kue Usuzukuri (5pc)</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>2nd Course</div>
@@ -1477,11 +1462,11 @@ produce.               </div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>3rd Course</div>
-            <div className='tasting-right-micros'>Pre Platter (Individual)<br/>Aman NY Roll<br/>Lobster Roll<br/>Spider Roll</div>
+            <div className='tasting-right-micros'>Pre Platter (Individual)<br/>Aman NY Roll<br/>Lobster Roll<br/>Wagyu Roll</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>4th Course</div>
-            <div className='tasting-right-micros'>2x Yakimeshi<br/>Gindara (5pc)<br/>2x Miyazaki Steak or Moromi Lamb</div>
+            <div className='tasting-right-micros'>2x Yakimeshi<br/>Gindara (5pc)<br/>2x Miyazaki Steak or Sukiyaki</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>5th Course</div>

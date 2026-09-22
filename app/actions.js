@@ -81,7 +81,7 @@ export async function addMenuItem(formData){
 
 export async function editMenuItem(formData){
     try{
-        console.log(`actions.js editMenuItem(${formData.get('id')})`)        
+        console.log(`actions.js editMenuItem(${formData.get('name1')})`)        
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''  
         await connectMongoDB()
@@ -218,7 +218,7 @@ export async function addDessertWine(formData){
 
 export async function editDessertWine(formData){
     try{
-        console.log(`actions.js editDessertWine(${formData.get('id')})`)        
+        console.log(`actions.js editDessertWine(${formData.get('name1')})`)        
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''  
         await connectMongoDB()

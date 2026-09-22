@@ -95,16 +95,16 @@ export default function DinnerClient(props) {
                           // border:'1px solid red'
                   }}
             >
-              
               <div  className="tasting-left" 
                     style={{width:'150px',alignSelf:'flex-start'}}>
                 Tsuki/Moon<br/>月
               </div>
 
               <div className="tasting-middle">
-An individually served sushi-focused tasting 
-menu highlighting the freshest seasonal 
-produce.               </div>
+                An individually served sushi-focused tasting 
+                menu highlighting the freshest seasonal 
+                produce.               
+              </div>
 
               <span className="tasting-right" style={{width:'20ch',textAlign:'right'}}>288</span>
 

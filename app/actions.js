@@ -11,6 +11,7 @@ import {revalidatePath} from 'next/cache'
 import {cloudinary} from '@/libs/cloudinary.js'
 
 export async function deleteMenuItem(id,menu,section,path){
+    console.log(`actions.js deleteMenuItem(${id})`)
     if(!id || !menu || !section || !path) return
     await connectMongoDB()
     const target = await MenuItem.findById(id)
@@ -35,6 +36,7 @@ export async function deleteMenuItem(id,menu,section,path){
 
 export async function addMenuItem(formData){
     try{
+        console.log(`actions.js addMenuItem(${formData.get('name1')})`)        
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''    
 
@@ -79,6 +81,7 @@ export async function addMenuItem(formData){
 
 export async function editMenuItem(formData){
     try{
+        console.log(`actions.js editMenuItem(${formData.get('id')})`)        
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''  
         await connectMongoDB()
@@ -184,6 +187,7 @@ export async function editDessertMenuCoffeeTea(formData){
 
 export async function addDessertWine(formData){
     try{
+        console.log(`actions.js addDessertWine(${formData.get('name1')})`)        
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''    
 
@@ -214,6 +218,7 @@ export async function addDessertWine(formData){
 
 export async function editDessertWine(formData){
     try{
+        console.log(`actions.js editDessertWine(${formData.get('id')})`)        
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''  
         await connectMongoDB()
@@ -272,6 +277,7 @@ export async function editDessertWine(formData){
 
 export async function deleteItem(Model,id){
     if(!Model || !id) return
+    console.log(`actions.js deleteItem(${id})`)    
     await connectMongoDB()
     const target = await mongoose.model(Model).findById(id)
     if(target.cloudinary_public_id){

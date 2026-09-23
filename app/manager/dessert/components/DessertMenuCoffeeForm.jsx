@@ -35,7 +35,7 @@ export default function DessertMenuCoffeeForm({addDessertMenuCoffeeTea,editDesse
         document.querySelector('#price-dessert-menu-coffee').value = ''
         document.querySelector('#form-dessert-menu-coffee h1').textContent = 'ADD COFFEE/TEA'
         document.querySelector('#form-dessert-menu-coffee').style.background = 'lightgreen'
-        document.querySelector('#submit-button-dessert-menu-coffee').innerHTML = `+ New Coffee/Tea`
+        document.querySelector('#submit-button-dessert-menu-coffee').innerHTML = `+ Coffee/Tea`
         setEditMode(false)
     }
 

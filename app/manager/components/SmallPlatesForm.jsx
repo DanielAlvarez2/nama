@@ -66,9 +66,9 @@ export default function SmallPlatesForm(){
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
         // document.querySelector('#current-image-label').style.display = 'none'
-        document.querySelector('#form h1').textContent = 'ADD NEW SMALL PLATE'
+        document.querySelector('#form h1').textContent = 'ADD SMALL PLATE'
         document.querySelector('#form').style.background = 'lightgreen'
-        document.querySelector('#submit-button-form').innerHTML = `+ New Small Plate`
+        document.querySelector('#submit-button-form').innerHTML = `+  Small Plate`
         setEditMode(false)
         document.querySelector('#image-file').value = ''
         setPreviewImage('')
@@ -90,7 +90,7 @@ function toggleCheckbox(){
             <form   action={handleSubmit}
                     id='form'
             >
-                <h1>ADD NEW SMALL PLATE</h1>
+                <h1>ADD SMALL PLATE</h1>
                 <br/><br/>
 
                 <input  type='hidden' 

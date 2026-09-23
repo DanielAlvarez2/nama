@@ -82,7 +82,7 @@ Maximum Recommended Dimensions:
         // document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form-dessert h1').textContent = 'ADD DESSERT'
         document.querySelector('#form-dessert').style.background = 'lightgreen'
-        document.querySelector('#submit-button-dessert-form').innerHTML = `+ New Dessert`
+        document.querySelector('#submit-button-dessert-form').innerHTML = `+ Dessert`
         setEditMode(false)
         document.querySelector('#image-file-dessert').value = ''
         setPreviewImage('')

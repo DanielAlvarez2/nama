@@ -78,7 +78,7 @@ Maximum Recommended Dimensions:
         document.querySelector('#image-text-dessert-wine').textContent = ''
         document.querySelector('#form-dessert-wine h1').textContent = 'ADD DESSERT WINE'
         document.querySelector('#form-dessert-wine').style.background = 'lightgreen'
-        document.querySelector('#submit-button-dessert-wine-form').innerHTML = `+ New Dessert Wine`
+        document.querySelector('#submit-button-dessert-wine-form').innerHTML = `+ Dessert Wine`
         setEditMode(false)
         document.querySelector('#image-file-dessert-wine').value = ''
         setPreviewImage('')

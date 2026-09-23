@@ -81,7 +81,7 @@ Maximum Recommended Dimensions:
         // document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form h1').textContent = 'ADD CHAMPAGNE'
         document.querySelector('#form').style.background = 'lightgreen'
-        document.querySelector('#submit-button-form').innerHTML = `+ New Champagne`
+        document.querySelector('#submit-button-form').innerHTML = `+ Champagne`
         setEditMode(false)
         document.querySelector('#image-file').value = ''
         setPreviewImage('')

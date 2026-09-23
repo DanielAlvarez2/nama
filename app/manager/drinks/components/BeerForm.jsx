@@ -79,7 +79,7 @@ Maximum Recommended Dimensions:
         // document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form h1').textContent = 'ADD BEER'
         document.querySelector('#form').style.background = 'lightgreen'
-        document.querySelector('#submit-button-form').innerHTML = `+ New Beer`
+        document.querySelector('#submit-button-form').innerHTML = `+ Beer`
         setEditMode(false)
         document.querySelector('#image-file').value = ''
         setPreviewImage('')

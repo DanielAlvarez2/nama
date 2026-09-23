@@ -85,7 +85,18 @@ export default function MocktailItem(props){
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteMenuItem(props.id,'drink','mocktails','/manager/drinks')}
+                            // onClick={()=>deleteMenuItem(props.id,'drink','mocktails','/manager/drinks')}
+                            onClick={()=>{
+                              if(confirm(`
+Are you sure you want to permanently delete this menu item:
+
+ - ${props.name1}                                
+                                `)){
+                                deleteMenuItem(props.id,'drink','mocktails','/manager/drinks')
+                              }else{
+                                return
+                              }
+                            }}                                                        
                     >
                         DELETE
                     </span>

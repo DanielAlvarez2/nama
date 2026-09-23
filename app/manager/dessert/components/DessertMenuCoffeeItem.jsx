@@ -47,7 +47,18 @@ export default function DessertMenuCoffeeItem(props){
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteMenuItem(props.id,'dessert','coffee','/manager/dessert')}
+                            // onClick={()=>deleteMenuItem(props.id,'dessert','coffee','/manager/dessert')}
+                            onClick={()=>{
+                              if(confirm(`
+Are you sure you want to permanently delete this menu item:
+
+ - ${props.name1}                                
+                                `)){
+                                deleteMenuItem(props.id,'dessert','coffee','/manager/dessert')
+                              }else{
+                                return
+                              }
+                            }}                                                        
                     >
                         DELETE
                     </span>

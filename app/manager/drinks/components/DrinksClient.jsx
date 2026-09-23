@@ -13,6 +13,10 @@ import WhitesForm from './WhitesForm.jsx'
 import RedsForm from './RedsForm.jsx'
 import RoseForm from './RoseForm.jsx'
 import WineItem from './WineItem.jsx'
+import ChampagneItem from './ChampagneItem.jsx'
+import WhiteWineItem from './WhiteWineItem.jsx'
+import RoseWineItem from './RoseWineItem.jsx'
+import RedWineItem from './RedWineItem.jsx'
 import CoffeeItem from './CoffeeItem.jsx'
 import CoffeeForm from './CoffeeForm.jsx'
 import SakeItem from './SakeItem.jsx'
@@ -486,7 +490,7 @@ export default function DrinksClient(props){
                           {props.allDrinks.filter(item=>item.section == 'champagne').map(data=>{
                             return(
                               <div key={data._id}>
-                                <WineItem id={data._id}
+                                <ChampagneItem id={data._id}
                                               vintage={data.vintage} 
                                               name1={data.name1} 
                                               name2={data.name2} 
@@ -553,7 +557,7 @@ export default function DrinksClient(props){
                           {props.allDrinks.filter(item=>item.section == 'whites').map(data=>{
                             return(
                               <div key={data._id}>
-                                <WineItem id={data._id}
+                                <WhiteWineItem id={data._id}
                                               vintage={data.vintage} 
                                               name1={data.name1} 
                                               name2={data.name2} 
@@ -623,7 +627,7 @@ export default function DrinksClient(props){
                           {props.allDrinks.filter(item=>item.section == 'rose').map(data=>{
                             return(
                               <div key={data._id}>
-                                <WineItem id={data._id}
+                                <RoseWineItem id={data._id}
                                               vintage={data.vintage} 
                                               name1={data.name1} 
                                               name2={data.name2} 
@@ -697,7 +701,7 @@ export default function DrinksClient(props){
                           {props.allDrinks.filter(item=>item.section == 'red').map(data=>{
                             return(
                               <div key={data._id}>
-                                <WineItem id={data._id}
+                                <RedWineItem id={data._id}
                                               vintage={data.vintage} 
                                               name1={data.name1} 
                                               name2={data.name2} 

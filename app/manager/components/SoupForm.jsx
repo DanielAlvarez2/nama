@@ -66,9 +66,9 @@ export default function SoupForm(){
         document.querySelector('#current-image-id').value = ''
         document.querySelector('#image-text').textContent = ''
         // document.querySelector('#current-image-label').style.display = 'none'
-        document.querySelector('#form h1').textContent = 'ADD NEW SOUP'
+        document.querySelector('#form h1').textContent = 'ADD SOUP'
         document.querySelector('#form').style.background = 'lightgreen'
-        document.querySelector('#submit-button-form').innerHTML = `+ New Soup`
+        document.querySelector('#submit-button-form').innerHTML = `+ Soup`
         setEditMode(false)
         document.querySelector('#image-file').value = ''
         setPreviewImage('')
@@ -90,7 +90,7 @@ function toggleCheckbox(){
             <form   action={handleSubmit}
                     id='form'
             >
-                <h1>ADD NEW SOUP</h1>
+                <h1>ADD SOUP</h1>
                 <br/><br/>
 
                 <input  type='hidden' 

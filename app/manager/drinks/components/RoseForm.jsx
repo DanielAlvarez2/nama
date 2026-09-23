@@ -81,7 +81,7 @@ Maximum Recommended Dimensions:
         // document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form h1').textContent = 'ADD ROSÉ WINE'
         document.querySelector('#form').style.background = 'lightgreen'
-        document.querySelector('#submit-button-form').innerHTML = `+ New Rosé Wine`
+        document.querySelector('#submit-button-form').innerHTML = `+ Rosé Wine`
         setEditMode(false)
         document.querySelector('#image-file').value = ''
         setPreviewImage('')

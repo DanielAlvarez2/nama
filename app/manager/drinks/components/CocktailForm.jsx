@@ -82,7 +82,7 @@ Maximum Recommended Dimensions:
         // document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form-cocktail h1').textContent = 'ADD COCKTAIL'
         document.querySelector('#form-cocktail').style.background = 'lightgreen'
-        document.querySelector('#submit-button-cocktail-form').innerHTML = `+ New Cocktail`
+        document.querySelector('#submit-button-cocktail-form').innerHTML = `+ Cocktail`
         setEditMode(false)
         document.querySelector('#image-file-cocktail').value = ''
         setPreviewImage('')

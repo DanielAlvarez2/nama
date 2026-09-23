@@ -7,28 +7,26 @@ import { useState } from "react";
 import {useEditModeContext} from '@/context/EditModeContext'
 import {useExistingImageContext} from '@/context/ExistingImageContext'
 
-export default function DessertItem(props){
+export default function RedWineItem(props){
 
     const {editMode,setEditMode} = useEditModeContext()
     const {existingImage,setExistingImage} = useExistingImageContext()
 
-    function editDessert(id,
-                          name,
-                          allergies,
-                          description1,
-                          description2,
-                          typos,
-                          price,
-                          staffInfo,
-                          currentImageURL,
-                          currentImageID){
-        document.getElementById('id-dessert').value = id  
-        document.querySelector('#name-dessert').value = name
-        document.querySelector('#allergies-dessert').value = allergies
-        document.querySelector('#description1-dessert').value = description1
-        document.querySelector('#description2-dessert').value = description2
-        document.querySelector('#typos').value = typos ? typos : ''
-        document.querySelector('#price-dessert').value = price
+    function editWine(id,
+                      vintage,
+                      name1,
+                      name2,
+                      typos,
+                      price,
+                      staffInfo,
+                      currentImageURL,
+                      currentImageID){
+        document.getElementById('id').value = id  
+        document.querySelector('#vintage').value = vintage
+        document.querySelector('#name1').value = name1
+        document.querySelector('#name2').value = name2
+        document.querySelector('#typos').value = typos
+        document.querySelector('#price').value = price
         document.querySelector('#staff-info').value = staffInfo 
         // document.querySelector('#current-img').src = currentImageURL ? currentImageURL : '/no-image.jpg'
         document.querySelector('#current-image-url').value = currentImageURL
@@ -36,14 +34,14 @@ export default function DessertItem(props){
         // document.querySelector('#current-image-id').value = 'TESTING123'
         document.querySelector('#image-text').textContent = currentImageURL ? 'Replace ' : 'Add '
         // document.querySelector('#current-image-label').style.display = 'block'
-        document.querySelector('#form-dessert h1').textContent = 'EDIT DESSERT'
-        document.querySelector('#form-dessert').style.background = 'lightblue'
-        document.querySelector('#submit-button-dessert-form').innerHTML = `Update Dessert`
+        document.querySelector('#form h1').textContent = 'EDIT RED WINE'
+        document.querySelector('#form').style.background = 'lightblue'
+        document.querySelector('#submit-button-form').innerHTML = `Update Red Wine`
         setEditMode(true)
         setExistingImage(currentImageURL ? currentImageURL : null)
         document.querySelector('#delete-image-checkbox') && (document.querySelector('#delete-image-checkbox').checked = false)
         setTimeout(()=>{
-          document.getElementById('form-dessert').scrollIntoView({behavior:'smooth'})
+          document.getElementById('form').scrollIntoView({behavior:'smooth'})
         }
           ,10)
     }
@@ -65,24 +63,23 @@ export default function DessertItem(props){
                               }}
                         id={`img-${props.id}`}
                   />
-                  <div className="name-price">
-                    <span>
-                      <span className="name">{props.name}</span>
-                      {props.allergies && 
-                        <span className="allergies">({props.allergies})</span>
-                      }
-                    </span>
-                    <span className="price">{props.price}</span>
+                  <div style={{display:'flex',width:'100%'}}>
+                    <div style={{width:'7ch'}}>{props.vintage}</div>
+                    <div className="name-price" style={{width:'100%',justifyContent:'space-between'}}>
+                      <span>
+                        <span className="name">{props.name1}</span><br/>
+                        <span className="name">{props.name2}</span>
+                      </span>
+                      <span className="price">{props.price}</span>
+                    </div>
                   </div>
-                  <div className="description1" dangerouslySetInnerHTML={{__html:props.description1}}></div>
-                  <div className="description2" dangerouslySetInnerHTML={{__html:props.description2}}></div>
+
                   <div className="typos" style={{color:'red'}} dangerouslySetInnerHTML={{__html:props.typos}}></div>
                     <span   className="item-button edit-button"
-                            onClick={()=>editDessert(   props.id,
-                                                        props.name,
-                                                        props.allergies,
-                                                        props.description1,
-                                                        props.description2,
+                            onClick={()=>editWine( props.id,
+                                                        props.vintage,
+                                                        props.name1,
+                                                        props.name2,
                                                         props.typos,
                                                         props.price,
                                                         props.staffInfo,
@@ -91,28 +88,29 @@ export default function DessertItem(props){
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            // onClick={()=>deleteMenuItem(props.id,'dessert','desserts','/manager/dessert')}
+                            // onClick={()=>deleteMenuItem(props.id,'drink','red','/manager/drinks')}
                             onClick={()=>{
                               if(confirm(`
 Are you sure you want to permanently delete this menu item:
 
- - ${props.name}                                
+  ${props.name1}                                
+  ${props.name2}                                
                                 `)){
-                                deleteMenuItem(props.id,'dessert','desserts','/manager/dessert')
+                                deleteMenuItem(props.id,'drink','red','/manager/drinks')
                               }else{
                                 return
                               }
-                            }}                            
+                            }}                                                        
                     >
                         DELETE
                     </span>
-                    <span onClick={()=>moveUp(props.id,'dessert','desserts','/manager/dessert')}
+                    <span onClick={()=>moveUp(props.id,'drink','red','/manager/drinks')}
                           className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
                         <ImArrowUp style={{ position:'relative',
                                             
                                             top:'1px'}} />
                     </span>
-                    <span onClick={()=>moveDown(props.id,'dessert','desserts','/manager/dessert')}
+                    <span onClick={()=>moveDown(props.id,'drink','red','/manager/drinks')}
                           className={`item-button arrow-button ${props.sequence == props.maxSequence ? 'visibility-hidden' : ''}`}>
                         <ImArrowDown style={{position:'relative',top:'2px'}} />
                     </span>

@@ -89,11 +89,24 @@ export default function DessertWineItem(props){
                                     )}
                     >EDIT</span>
                     <span   className="item-button delete-button"
-                            onClick={()=>deleteMenuItem(props.id,'dessert','dessert wines','/manager/dessert')}
+                            // onClick={()=>deleteMenuItem(props.id,'dessert','dessert wines','/manager/dessert')}
+                            onClick={()=>{
+                              if(confirm(`
+Are you sure you want to permanently delete this menu item:
+
+ ${props.name1}                                
+ ${props.name2}                                
+                                `)){
+                                deleteMenuItem(props.id,'dessert','dessert wines','/manager/dessert')
+                              }else{
+                                return
+                              }
+                            }}                                                        
                     >
                         DELETE
                     </span>
-                    <span onClick={()=>moveUp(props.id,'dessert','dessert wines','/manager/dessert')}
+                    <span 
+                          onClick={()=>moveUp(props.id,'dessert','dessert wines','/manager/dessert')}                          
                           className={`item-button arrow-button ${props.sequence == 1 ? 'visibility-hidden' : ''}`}>
                         <ImArrowUp style={{ position:'relative',
                                             

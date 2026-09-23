@@ -35,7 +35,7 @@ export default function CoffeeForm(){
         document.querySelector('#price').value = ''
         document.querySelector('#form h1').textContent = 'ADD COFFEE/TEA'
         document.querySelector('#form').style.background = 'lightgreen'
-        document.querySelector('#submit-button').innerHTML = `+ New Coffee/Tea`
+        document.querySelector('#submit-button').innerHTML = `+ Coffee/Tea`
         setEditMode(false)
     }
 

@@ -82,7 +82,7 @@ Maximum Recommended Dimensions:
         // document.querySelector('#current-image-label').style.display = 'none'
         document.querySelector('#form-mocktail h1').textContent = 'ADD MOCKTAIL'
         document.querySelector('#form-mocktail').style.background = 'lightgreen'
-        document.querySelector('#submit-button-mocktail-form').innerHTML = `+ New Mocktail`
+        document.querySelector('#submit-button-mocktail-form').innerHTML = `+ Mocktail`
         setEditMode(false)
         document.querySelector('#image-file-mocktail').value = ''
         setPreviewImage('')

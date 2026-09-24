@@ -17,6 +17,7 @@ import {cloudinary} from '@/libs/cloudinary.js'
 export async function addSakeBottle(formData){
     try{
         console.log(`actions.js addSakeBottle(${formData.get('name')})`)        
+     
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''    
 
@@ -48,6 +49,50 @@ export async function addSakeBottle(formData){
         console.log(err)
     }
 } // addMenuItem()
+
+export async function deleteSakeBottle(id,section,path){
+    console.log(`actions.js deleteSakeBottle(${id})`)
+    if(!id || !section || !path) return
+    await connectMongoDB()
+    const target = await SakeBottle.findById(id)
+    if(target.cloudinary_public_id){
+        await cloudinary.uploader.destroy(target.cloudinary_public_id)
+    }
+    const allSakeBottles = await SakeBottle.find({section}).sort({sequence:-1})
+    // console.log(allMenuItems)
+    const maxSequence = allSakeBottles[0].sequence
+    
+    if(target.sequence != maxSequence){
+        for(let i=target.sequence+1;i<=maxSequence;i++){
+            await SakeBottle.findOneAndUpdate({sequence:i,section},{$set:{sequence:i-1}})
+        }
+    }
+    await SakeBottle.findByIdAndDelete(id)
+    revalidatePath(path)
+    return
+}
+
+export async function deleteMenuItem(id,menu,section,path){
+    console.log(`actions.js deleteMenuItem(${id})`)
+    if(!id || !menu || !section || !path) return
+    await connectMongoDB()
+    const target = await MenuItem.findById(id)
+    if(target.cloudinary_public_id){
+        await cloudinary.uploader.destroy(target.cloudinary_public_id)
+    }
+    const allMenuItems = await MenuItem.find({menu,section}).sort({sequence:-1})
+    // console.log(allMenuItems)
+    const maxSequence = allMenuItems[0].sequence
+    
+    if(target.sequence != maxSequence){
+        for(let i=target.sequence+1;i<=maxSequence;i++){
+            await MenuItem.findOneAndUpdate({sequence:i,menu,section},{$set:{sequence:i-1}})
+        }
+    }
+    await MenuItem.findByIdAndDelete(id)
+    revalidatePath(path)
+    return
+}
 
 export async function addMenuItem(formData){
     try{
@@ -94,27 +139,6 @@ export async function addMenuItem(formData){
     }
 } // addMenuItem()
 
-export async function deleteMenuItem(id,menu,section,path){
-    console.log(`actions.js deleteMenuItem(${id})`)
-    if(!id || !menu || !section || !path) return
-    await connectMongoDB()
-    const target = await MenuItem.findById(id)
-    if(target.cloudinary_public_id){
-        await cloudinary.uploader.destroy(target.cloudinary_public_id)
-    }
-    const allMenuItems = await MenuItem.find({menu,section}).sort({sequence:-1})
-    // console.log(allMenuItems)
-    const maxSequence = allMenuItems[0].sequence
-    
-    if(target.sequence != maxSequence){
-        for(let i=target.sequence+1;i<=maxSequence;i++){
-            await MenuItem.findOneAndUpdate({sequence:i,menu,section},{$set:{sequence:i-1}})
-        }
-    }
-    await MenuItem.findByIdAndDelete(id)
-    revalidatePath(path)
-    return
-}
 
 
 export async function editMenuItem(formData){

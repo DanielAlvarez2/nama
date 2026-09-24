@@ -7,6 +7,7 @@ const SakeBottleSchema = new Schema({
     name: String,
     size: String,
     price: String,
+    abv: String,
     staffInfo: String,
     sequence: Number,
     cloudinary_public_id: String,

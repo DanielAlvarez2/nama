@@ -5,9 +5,9 @@ import NavbarFooterMenuManager from "@/components/NavbarFooterMenuManager"
 import {useState} from 'react'
 import {useEditModeContext} from '@/context/EditModeContext'
 import {useExistingImageContext} from '@/context/ExistingImageContext'
-import {addSakeBottle} from '@/app/actions.js'
+import {addSakeBottle,deleteSakeBottle} from '@/app/actions.js'
 
-export default function SakeClient(){
+export default function SakeClient(props){
 
   const [sakePage, setSakePage] = useState('Sparkling')
 
@@ -71,7 +71,7 @@ Maximum Recommended Dimensions:
             await addSakeBottle(formData)
         }
         setTimeout(()=>{
-            // document.querySelector('.section-dessert').scrollIntoView({behavior:'smooth'})
+            document.querySelector('#last-entry').scrollIntoView({behavior:'smooth'})
         },10)        
         resetForm()
     }
@@ -129,70 +129,47 @@ function toggleCheckbox(){
                     <option value='Specialty'>Specialty</option>
                     <option value='Sweet'>Sweet</option>
                 </select>
-            </div>          
+            </div>
+            <br/>          
 
-      {
-        sakePage == 'Sparkling' && 
-        <div>
-          <h1>Sparkling</h1>
+        <div className="small-paper" style={{height:'auto'}}>
+          <br/>
+          <h1>SAKE BOTTLES</h1>
+          <br/>
+          <h1>SECTION: {sakePage}</h1>
+          <br/>
+          {props.allSakes.filter(sake=>sake.section == sakePage).map(sake=>
+            <div key={sake._id} style={{border:'1px solid grey',margin:'10px 10px',padding:'10px 10px'}}>
+              <div style={{fontWeight:'900'}}>{sake.producer}</div>
+              {sake.name}<br/>
+              <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                <span>{sake.bin}</span>
+                <span>{sake.size}</span>
+                <span>{sake.price}</span>
+              </div>
+                                  <span   className="item-button delete-button"
+                                          onClick={()=>{
+                                            if(confirm(`
+Are you sure you want to permanently delete this menu item:
+              
+  ${sake.producer}                                
+  ${sake.name}                                
+                                              `)){
+                                              deleteSakeBottle(sake._id,sake.section,'/manager/sake')
+                                            }else{
+                                              return
+                                            }
+                                          }}
+                                  >
+                                      DELETE
+                                  </span>
+              
+            </div>)
+          }
+          <div id='last-entry' style={{scrollMarginTop:'100px'}}></div>        
         </div>
-      }
+        <br/><br/>
          
-      {
-        sakePage == 'Nigori' && 
-        <div>
-          <h1>Nigori</h1>
-        </div>
-      }
-         
-      {
-        sakePage == 'Junmai' && 
-        <div>
-          <h1>Junmai</h1>
-        </div>
-      }
-         
-      {
-        sakePage == 'Daiginjo' && 
-        <div>
-          <h1>Daiginjo</h1>
-        </div>
-      }
-         
-      {
-        sakePage == 'Junmai Daiginjo' && 
-        <div>
-          <h1>Junmai Daiginjo</h1>
-        </div>
-      }
-         
-      {
-        sakePage == 'Ginjo' && 
-        <div>
-          <h1>Ginjo</h1>
-        </div>
-      }
-         
-      {
-        sakePage == 'Junmai Ginjo' && 
-        <div>
-          <h1>Junmai Ginjo</h1>
-        </div>
-      }
-         
-      {
-        sakePage == 'Specialty' && 
-        <div>
-          <h1>Specialty</h1>
-        </div>
-      }
-         
-      {
-        sakePage == 'Sweet' && 
-        <div>
-          <h1>Sweet</h1>
-        </div>
-      }
 
 
 

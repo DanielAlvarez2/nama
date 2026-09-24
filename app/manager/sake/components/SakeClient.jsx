@@ -388,7 +388,7 @@ Are you sure you want to permanently delete this menu item:
                 <br/><br/>
                 <div style={{display:'flex'}}>
                     <button id='uploading-button' disabled className="blinking" style={{cursor:'wait',display:'none'}}>UPLOADING...</button>                    
-                    <button id='submit-button-form' type='submit'>+ {sakePage}</button>
+                    <button id='submit-button-form' type='submit'>{editMode ? <>&#8710;</> : '+'} {sakePage}</button>
                     <button type='button'
                             onClick={()=>{
                               resetForm()

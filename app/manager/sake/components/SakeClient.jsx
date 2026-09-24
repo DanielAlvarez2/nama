@@ -4,8 +4,9 @@ import NavbarMenuManager from "@/components/NavbarMenuManager"
 import NavbarFooterMenuManager from "@/components/NavbarFooterMenuManager"
 import {useState} from 'react'
 import {useEditModeContext} from '@/context/EditModeContext'
-import {useExistingImageContext} from '@/context/ExistingImageContext'
-import {addSakeBottle,deleteSakeBottle} from '@/app/actions.js'
+// import {useExistingImageContext} from '@/context/ExistingImageContext'
+import {addSakeBottle,deleteSakeBottle,updateSakeBottle} from '@/app/actions.js'
+import { TiDeleteOutline } from "react-icons/ti";
 
 export default function SakeClient(props){
 
@@ -15,10 +16,12 @@ export default function SakeClient(props){
       setSakePage(value)
     }
 
-    const {editMode,setEditMode} = useEditModeContext()   
-    const {existingImage,setExistingImage} = useExistingImageContext()
+    // const {editMode,setEditMode} = useEditModeContext()   
+    const [editMode, setEditMode] = useState(false)
+    const [existingImage,setExistingImage] = useState('')
+    // const {existingImage,setExistingImage} = useExistingImageContext()
 
-    const [previewImage, setPreviewImage] = useState()
+    const [previewImage, setPreviewImage] = useState('')
     // const [existingImage, setExistingImage] = useState()
 
     function handleFileInputChange(e){
@@ -58,22 +61,25 @@ Maximum Recommended Dimensions:
                 document.querySelector('#size').value = formData.get('size')
                 document.querySelector('#price').value = formData.get('price')
                 document.querySelector('#producer').value = formData.get('producer')
-                document.querySelector('#staff-info').value = formData.get('staff-info')
+                document.querySelector('#staff-info').value = formData.get('staffInfo')
             },10)
             return
         }
         document.querySelector('#uploading-button').style.display = 'block'
         document.querySelector('#submit-button-form').style.display = 'none'        
         if(editMode){
-            await editSakeBottle(formData)
+            await updateSakeBottle(formData)
             setEditMode(false)
+            setTimeout(()=>{
+              document.querySelector('#sake-bottle-form').scrollIntoView({behavior:'smooth'})
+            },10)                     
         }else{
             await addSakeBottle(formData)
-        }
-        setTimeout(()=>{
-            document.querySelector('#last-entry').scrollIntoView({behavior:'smooth'})
-        },10)        
-        resetForm()
+            setTimeout(()=>{
+              document.querySelector('#last-entry').scrollIntoView({behavior:'smooth'})
+            },10)        
+          }
+          resetForm()
     }
 
     function resetForm(){
@@ -89,17 +95,17 @@ Maximum Recommended Dimensions:
         // document.querySelector('#current-img').src = ''
         document.querySelector('#current-image-url').value = ''
         document.querySelector('#current-image-id').value = ''
-        document.querySelector('#image-text').textContent = ''
+        // document.querySelector('#image-text').textContent = ''
         // document.querySelector('#current-image-label').style.display = 'none'
         // document.querySelector('#form h1').textContent = 'ADD SAKE BOTTLE'
-        document.querySelector('#form').style.background = 'lightgreen'
+        document.querySelector('#sake-bottle-form').style.background = 'lightgreen'
         // document.querySelector('#submit-button-form').innerHTML = `+ Sake Bottle`
         setEditMode(false)
         document.querySelector('#image-file').value = ''
         setPreviewImage('')
         setExistingImage(null)
         document.querySelector('#uploading-button').style.display = 'none'
-        document.querySelector('#submit-button-form').style.display = 'block'        
+        document.querySelector('#submit-button-form').style.display = 'block'   
     }
 
 function toggleCheckbox(){
@@ -110,6 +116,37 @@ function toggleCheckbox(){
     }else{
         document.querySelector('#delete-icon').style.color = 'transparent'
     }
+}
+
+function populateEditForm(id,
+                          producer,
+                          name,
+                          bin,
+                          size,
+                          price,
+                          abv,
+                          staffInfo,
+                          secure_url,
+                          public_id){
+  resetForm()
+  setEditMode(true)
+  document.querySelector('#id').value = id
+  document.querySelector('#producer').value = producer
+  document.querySelector('#name').value = name
+  document.querySelector('#bin').value = bin
+  document.querySelector('#size').value = size
+  document.querySelector('#price').value = price
+  document.querySelector('#abv').value = abv ? abv : ''
+  document.querySelector('#staff-info').value = staffInfo ? staffInfo : ''
+  document.querySelector('#current-image-url').value = secure_url ? secure_url : ''
+  document.querySelector('#current-image-id').value = public_id ? public_id : ''
+  if(secure_url){
+    setExistingImage(secure_url)
+  }
+  setTimeout(()=>{
+    document.querySelector('#sake-bottle-form').scrollIntoView({behavior:'smooth'})
+  },10)        
+
 }
 
   return(
@@ -147,22 +184,34 @@ function toggleCheckbox(){
                 <span>{sake.size}</span>
                 <span>{sake.price}</span>
               </div>
-                                  <span   className="item-button delete-button"
-                                          onClick={()=>{
-                                            if(confirm(`
+              <span className="item-button edit-button"
+                    onClick={()=>populateEditForm(      
+                              sake._id,
+                              sake.producer,
+                              sake.name,
+                              sake.bin,
+                              sake.size,
+                              sake.price,
+                              sake.abv,
+                              sake.staffInfo,                                                    
+                              sake.cloudinary_secure_url,
+                              sake.cloudinary_public_id,
+                                    )}
+                    >EDIT</span>
+              <span className="item-button delete-button"
+                    onClick={()=>{
+                                  if(confirm(`
 Are you sure you want to permanently delete this menu item:
               
   ${sake.producer}                                
   ${sake.name}                                
-                                              `)){
-                                              deleteSakeBottle(sake._id,sake.section,'/manager/sake')
-                                            }else{
-                                              return
-                                            }
-                                          }}
-                                  >
-                                      DELETE
-                                  </span>
+                                    `)){
+                                        deleteSakeBottle(sake._id,sake.section,'/manager/sake')
+                                        }else{
+                                          return
+                                        }
+                                      }}
+                                  >DELETE</span>
               
             </div>)
           }
@@ -179,10 +228,11 @@ Are you sure you want to permanently delete this menu item:
 
 
             <form   action={handleSubmit}
-                    id='form'
+                    style={{background:editMode ? 'lightblue':'#90ee90'}}
+                    id='sake-bottle-form'
             >
                 <h1>SAKE BOTTLE</h1>
-                <h1>ADD: {sakePage}</h1>
+                <h1>{editMode ? 'EDIT' : 'ADD'}: {sakePage}</h1>
                 <br/><br/>
 
                 <input  type='hidden' 
@@ -272,7 +322,7 @@ Are you sure you want to permanently delete this menu item:
                     Staff Info:<br/>
                     <textarea   style={{width:'100%',height:'150px'}}
                                 id='staff-info'
-                                name='staff-info' />
+                                name='staffInfo' />
                 </label>
                 <br/><br/>
 
@@ -307,7 +357,9 @@ Are you sure you want to permanently delete this menu item:
                                 name='current-image-id' />
 
                 <label>
-                    <span id='image-text' style={{fontSize:'inherit'}}></span>Image File: (optional)<br/>
+                    <div id='image-text' style={{fontSize:'20px'}}>
+                    {existingImage && <>Replace </>}
+                    Image File: (optional)<br/></div>
                     <input  type='file' 
                             name='image-file'
                             id='image-file'
@@ -338,7 +390,12 @@ Are you sure you want to permanently delete this menu item:
                     <button id='uploading-button' disabled className="blinking" style={{cursor:'wait',display:'none'}}>UPLOADING...</button>                    
                     <button id='submit-button-form' type='submit'>+ {sakePage}</button>
                     <button type='button'
-                            onClick={resetForm} 
+                            onClick={()=>{
+                              resetForm()
+                              setTimeout(()=>{
+                                document.querySelector('#sake-bottle-form').scrollIntoView({behavior:'smooth'})
+                              },10)                     
+                            }} 
                             style={{background:'red'}}>Cancel</button>
                 </div>
                 

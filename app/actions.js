@@ -12,6 +12,67 @@ import {revalidatePath} from 'next/cache'
 import {cloudinary} from '@/libs/cloudinary.js'
 
 
+export async function updateSakeBottle(formData){
+    try{
+        console.log(`actions.js updateSakeBottle(${formData.get('producer')})`)        
+        console.log(`actions.js updateSakeBottle(${formData.get('name')})`)        
+        let cloudinary_public_id = ''
+        let cloudinary_secure_url = ''  
+        await connectMongoDB()
+
+            // NO PIC -> NO PIC COMPLETE
+
+            // NO PIC -> ADD PIC COMPLETE
+            if(!formData.get('current-image-url') && formData.get('preview-image')){
+                console.log('NO PIC => ADD PIC')
+                const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
+                cloudinary_public_id = cloudinaryResponse.public_id
+                cloudinary_secure_url = cloudinaryResponse.secure_url                
+            }
+            
+            // OLD PIC -> SAME PIC COMPLETE
+            if(formData.get('current-image-url') && !formData.get('preview-image') && !formData.get('delete-image-checkbox')){
+                console.log('OLD PIC -> SAME PIC')
+                cloudinary_secure_url = formData.get('current-image-url')
+                cloudinary_public_id = formData.get('current-image-id')
+            }
+            
+            // OLD PIC -> NEW PIC COMPLETE
+            if(formData.get('current-image-url') && formData.get('preview-image')){
+                console.log('OLD PIC -> NEW PIC')
+                await cloudinary.uploader.destroy(formData.get('current-image-id'))
+                const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
+                cloudinary_public_id = cloudinaryResponse.public_id
+                cloudinary_secure_url = cloudinaryResponse.secure_url                
+            }
+            
+            // OLD PIC -> NO PIC COMPLETE
+            if(formData.get('current-image-url') && formData.get('delete-image-checkbox')){
+                // console.log('OLD PIC -> NO PIC')
+                // console.log('cloudinary.destroy: ' + formData.get('current-image-id'))
+                await cloudinary.uploader.destroy(formData.get('current-image-id'))
+            }
+
+        await SakeBottle.findByIdAndUpdate(formData.get('id'),{
+            producer: formData.get('producer').trim(),
+            name: formData.get('name').trim(),
+            bin: formData.get('bin').trim(),
+            size: formData.get('size').trim(),
+            price: formData.get('price').trim(),
+            abv: formData.get('abv') ? formData.get('abv').trim() : '',
+            staffInfo: formData.get('staffInfo') ? formData.get('staffInfo') : '',
+            cloudinary_public_id,
+            cloudinary_secure_url
+        })
+        
+        revalidatePath('/manager/sake')
+        return
+
+    }catch(err){
+        console.log(err)
+    }
+} 
+// editMenuItem() 
 
 
 export async function addSakeBottle(formData){
@@ -38,12 +99,13 @@ export async function addSakeBottle(formData){
             size: formData.get('size').trim(),
             price: formData.get('price').trim(),
             abv: formData.get('abv') ? formData.get('abv').trim() : '',
-            staffInfo: formData.get('staff-info') ? formData.get('staff-info').trim() : '',
+            staffInfo: formData.get('staffInfo') ? formData.get('staffInfo') : '',
             sequence: highestSequence + 1,
             cloudinary_public_id,
             cloudinary_secure_url
         })
-        revalidatePath(formData.get('path'))
+        // console.log(`SERVER: SAKE BOTTLE CREATED`)
+        revalidatePath('/manager/sake')
         return 
     }catch(err){
         console.log(err)
@@ -127,7 +189,7 @@ export async function addMenuItem(formData){
             description2: formData.get('description2') ? formData.get('description2').trim() : '',
             typos: formData.get('typos') ? formData.get('typos').trim() : '',
             price: formData.get('price').trim(),
-            staffInfo: formData.get('staff-info') ? formData.get('staff-info').trim() : '',
+            staffInfo: formData.get('staff-info') ? formData.get('staff-info') : '',
             sequence: highestSequence + 1,
             cloudinary_public_id,
             cloudinary_secure_url
@@ -195,7 +257,7 @@ export async function editMenuItem(formData){
             price1: formData.get('price1') ? formData.get('price1').trim() : '',
             price: formData.get('price').trim(),
             typos: formData.get('typos') ? formData.get('typos').trim() : '',
-            staffInfo: formData.get('staff-info') ? formData.get('staff-info').trim() : '',
+            staffInfo: formData.get('staff-info') ? formData.get('staff-info') : '',
             cloudinary_public_id,
             cloudinary_secure_url
         })
@@ -266,7 +328,7 @@ export async function addDessertWine(formData){
             typos: formData.get('typos').trim(),
             price: formData.get('price').trim(),
             vintage: formData.get('vintage').trim(),
-            staffInfo: formData.get('staff-info').trim(),
+            staffInfo: formData.get('staff-info'),
             sequence: highestSequenceDessertWine[0] ? highestSequenceDessertWine[0].sequence + 1 : 1,
             cloudinary_public_id,
             cloudinary_secure_url
@@ -322,7 +384,7 @@ export async function editDessertWine(formData){
             name2: formData.get('name2').trim(),
             price: formData.get('price').trim(),
             typos: formData.get('typos').trim(),
-            staffInfo: formData.get('staff-info').trim(),
+            staffInfo: formData.get('staff-info'),
             cloudinary_public_id,
             cloudinary_secure_url
         })

@@ -177,46 +177,59 @@ function populateEditForm(id,
           <br/>
           {props.allSakes.filter(sake=>sake.section == sakePage).map(sake=>
             <div key={sake._id} style={{border:'1px solid grey',margin:'10px 10px',padding:'10px 10px'}}>
-              <div style={{fontWeight:'900'}}>{sake.producer}</div>
-              {sake.name}<br/>
-              <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                <span>{sake.bin}</span>
-                <span>{sake.size}</span>
-                <span>{sake.price}</span>
-              </div>
-              <span className="item-button edit-button"
-                    onClick={()=>populateEditForm(      
-                              sake._id,
-                              sake.producer,
-                              sake.name,
-                              sake.bin,
-                              sake.size,
-                              sake.price,
-                              sake.abv,
-                              sake.staffInfo,                                                    
-                              sake.cloudinary_secure_url,
-                              sake.cloudinary_public_id,
-                                    )}
-                    >EDIT</span>
-              <span className="item-button delete-button"
-                    onClick={()=>{
-                                  if(confirm(`
-Are you sure you want to permanently delete this menu item:
               
-  ${sake.producer}                                
-  ${sake.name}                                
-                                    `)){
-                                        deleteSakeBottle(sake._id,sake.section,'/manager/sake')
-                                        }else{
-                                          return
-                                        }
-                                      }}
-                                  >DELETE</span>
-              
-            </div>)
-          }
+              <div className="sake-flexbox" style={{display:'flex',width:'100%'}}>
+
+                <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div style={{fontWeight:'900'}}>{sake.producer}</div>
+                    {sake.name}<br/>
+                    <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                      <span>{sake.bin}</span>
+                      <span>{sake.size}</span>
+                      <span>{sake.price}</span>
+                    </div>
+                    <span className="item-button edit-button"
+                          onClick={()=>populateEditForm(      
+                                    sake._id,
+                                    sake.producer,
+                                    sake.name,
+                                    sake.bin,
+                                    sake.size,
+                                    sake.price,
+                                    sake.abv,
+                                    sake.staffInfo,                                                    
+                                    sake.cloudinary_secure_url,
+                                    sake.cloudinary_public_id,
+                                          )}
+                          >EDIT</span>
+                    <span className="item-button delete-button"
+                          onClick={()=>{
+                                        if(confirm(`
+      Are you sure you want to permanently delete this menu item:
+                    
+        ${sake.producer}                                
+        ${sake.name}                                
+                                          `)){
+                                              deleteSakeBottle(sake._id,sake.section,'/manager/sake')
+                                              }else{
+                                                return
+                                              }
+                                            }}
+                                        >DELETE</span>
+                    
+                  </div>{/* .sake-info */}
+                
+                <img src={sake.cloudinary_secure_url} height='100px' />
+                </div>{/* .sake-flexbox */}
+
+            {/* .key */}
+            </div> 
+
+
+)
+}
           <div id='last-entry' style={{scrollMarginTop:'100px'}}></div>        
-        </div>
+        </div>{/* .small-paper */}
         <br/><br/>
          
 

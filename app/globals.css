@@ -582,7 +582,7 @@ input[type='text']{
 }
 .sake-abv{
   width:5ch;
-  display:none;
+  /* display:none; */
   /* display:none; */
 }
 .tasting-left{

@@ -71,7 +71,7 @@ Maximum Recommended Dimensions:
             await updateSakeBottle(formData)
             setEditMode(false)
             setTimeout(()=>{
-              document.querySelector('#sake-bottle-form').scrollIntoView({behavior:'smooth'})
+              document.getElementById(`${formData.get('id')}`).scrollIntoView({behavior:'smooth'})
             },10)                     
         }else{
             await addSakeBottle(formData)
@@ -176,7 +176,7 @@ function populateEditForm(id,
           <h1>SECTION: {sakePage}</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == sakePage).map(sake=>
-            <div key={sake._id} style={{border:'1px solid grey',margin:'10px 10px',padding:'10px 10px'}}>
+            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',margin:'10px 10px',padding:'10px 10px'}}>
               
               <div className="sake-flexbox" style={{display:'flex',width:'100%'}}>
 
@@ -189,6 +189,7 @@ function populateEditForm(id,
                       <span>{sake.price}</span>
                     </div>
                       {sake.abv && <div>{sake.abv}%abv</div>}
+                      <br/>
                     <span className="item-button edit-button"
                           onClick={()=>populateEditForm(      
                                     sake._id,

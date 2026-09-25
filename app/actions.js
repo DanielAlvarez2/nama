@@ -66,7 +66,7 @@ export async function updateSakeBottle(formData){
         })
         
         revalidatePath('/manager/sake')
-        return
+        return formData.get('id')
 
     }catch(err){
         console.log(err)

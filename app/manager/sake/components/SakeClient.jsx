@@ -184,8 +184,8 @@ function populateEditForm(id,
                     <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                     <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                     <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                      <span>{sake.bin}</span>
-                      <span>{sake.size}</span>
+                      <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
+                      <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
                       <span>{sake.price}</span>
                     </div>
                       {sake.abv && <div>{sake.abv}%abv</div>}

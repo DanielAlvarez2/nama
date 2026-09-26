@@ -4,7 +4,7 @@ import { AiTwotoneCloseCircle } from "react-icons/ai";
 import Navbar from '@/components/Navbar.jsx'
 import NavbarFooter from '@/components/NavbarFooter';
 
-export default function SakePage(){
+export default function SakePage(props){
 
     function openModal(section,producer,bin,size,price,description,image){
         document.querySelector('#sake-modal').style.display = 'grid'
@@ -29,6 +29,8 @@ export default function SakePage(){
         document.querySelector('.sake-modal-description').innerHTML = ''
         document.querySelector('#sake-modal-image').src = ''
     }
+
+    let nigoriProducers = []
 
     return(
     <div className="webpage sake-webpage">
@@ -118,128 +120,42 @@ export default function SakePage(){
 
                 
 
-                    <div className='sake-producer'>    
+                {
+                  props.allSakes.filter(sake=>sake.section == 'Nigori').map(sake=>
+
+                      <div className='sake-producer' key={sake._id}>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
-                            Kamoizumi
+                            {!nigoriProducers.includes(sake.producer) && sake.producer}
                         </div>{/* .sake-producer-name */}
                         <div className='sake' onClick={()=>openModal(
-                                                                    'NIGORI',
-                                                                    'Kamoizumi',
-                                                                    '3100',
-                                                                    '500 ml',
-                                                                    '90',
-                                                                    'Summer Snow - Nigori Ginjo, Hiroshima',
-                                                                    'summer-snow.jpg'
+                                                                    `${sake.section}`,
+                                                                    `${sake.producer}`,
+                                                                    `${sake.bin}`,
+                                                                    `${sake.size}`,
+                                                                    `${sake.price}`,
+                                                                    `${sake.name}`,
+                                                                    `${sake.cloudinary_secure_url}`
                                                                     )}>
                             <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3100</span>
-                                <span className='sake-description'>Summer Snow <span className='typo'>-</span> Nigori Ginjo, Hiroshima</span>
+                                <span className='bin-left'>{sake.bin}</span>
+                                <span className='sake-description'>{sake.name}</span>
                             </div>{/* .sake-flexbox-left */}
                             <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3100</span>
-                                <span className='sake-size'>500 ml</span>
-                                <span className='sake-price'>90</span>
-                                <span className='sake-abv'>18.1%abv</span>
+                                <span className='bin-mobile'>{sake.bin}</span>
+                                <span className='sake-size'>{sake.size}</span>
+                                <span className='sake-price'>{sake.price}</span>
+                                <span className='sake-abv'>{sake.abv}%abv</span>
                             </div>{/* .sake-flexbox-right */}
                         </div>{/* .sake */}
-                    </div>{/* .sake-producer */}
+                    {/* .sake-producer */}                                                                       
+                    </div>
 
-                    <div className='sake-producer'>    
-                        <div className='sake-producer-name'><span className='bin-left'></span>
-                            Nagurayama
-                        </div>{/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'NIGORI',
-                                                                    'Nagurayama',
-                                                                    '3101',
-                                                                    '720 ml',
-                                                                    '125',
-                                                                    'Snow White Nigori Ginjo, Fukushima',
-                                                                    'snow-white.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3101</span>
-                                <span className='sake-description'>Snow White Nigori Ginjo, Fukushima</span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3101</span>
-                                <span className='sake-size'>720 ml</span>
-                                <span className='sake-price'>125</span>
-                                <span className='sake-abv'>16%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
-                    </div>{/* .sake-producer */}
+                  )
+                }
 
 
-                    <div className='sake-producer'>    
-                        <div className='sake-producer-name'><span className='bin-left'></span>
-                            Rihaku
-                        </div>{/* .sake-producer-name */}
 
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'NIGORI',
-                                                                    'Rihaku',
-                                                                    '3601',
-                                                                    '300 ml',
-                                                                    '75',
-                                                                    'Dreamy Clouds Tokubetsu Junmai Nigori, Shimane Prefecture',
-                                                                    'rihaku-dreamy-clouds-300ml.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3601</span>
-                                <span className='sake-description'>Dreamy Clouds Tokubetsu Junmai Nigori, Shimane Prefecture</span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3601</span>
-                                <span className='sake-size'>300 ml</span>
-                                <span className='sake-price'>75</span>
-                                <span className='sake-abv'>15%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
 
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'NIGORI',
-                                                                    'Rihaku',
-                                                                    '3103',
-                                                                    '720 ml',
-                                                                    '165',
-                                                                    'Dreamy Clouds Tokubetsu Junmai Nigori, Shimane Prefecture',
-                                                                    'dreamy-clouds.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3103</span>
-                                <span className='sake-description'>Dreamy Clouds Tokubetsu Junmai Nigori, Shimane Prefecture</span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3103</span>
-                                <span className='sake-size'>720 ml</span>
-                                <span className='sake-price'>165</span>
-                                <span className='sake-abv'>15%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
-
-                        <div className='sake' onClick={()=>openModal(
-                                                                    'NIGORI',
-                                                                    'Rihaku',
-                                                                    '3102',
-                                                                    '720 ml',
-                                                                    '175',
-                                                                    'Dreamy Clouds Nigori Tokubetsu Namazake, Shimane Prefecture',
-                                                                    'dreamy-clouds-namazake.jpg'
-                                                                    )}>
-                            <div className='sake-flexbox-left'>
-                                <span className='bin-left'>3102</span>
-                                <span className='sake-description'>Dreamy Clouds Tokubetsu Junmai Nigori Namazake, Shimane Prefecture</span>
-                            </div>{/* .sake-flexbox-left */}
-                            <div className='sake-flexbox-right'>
-                                <span className='bin-mobile'>3102</span>
-                                <span className='sake-size'>720 ml</span>
-                                <span className='sake-price'>175</span>
-                                <span className='sake-abv'>15%abv</span>
-                            </div>{/* .sake-flexbox-right */}
-                        </div>{/* .sake */}
-
-                    </div>{/* .sake-producer */}
 
 
             </div>{/* .sake-section */}

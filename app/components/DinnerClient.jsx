@@ -1222,8 +1222,54 @@ export default function DinnerClient(props) {
             <div className='tasting-left-micros'>5th Course</div>
             <div className='tasting-right-micros'>Dessert</div>
           </div>
+          <br/>
+
+        <div style={{width:'100%',paddingLeft:'80px',display:'flex',justifyContent:'space-around'}}>
+          <span className='hana-button' onClick={()=>showModal('moon')} style={{background:'#779bda'}}>Individual</span>
+          <span className='hana-button' onClick={()=>showModal('moon-vegan')} style={{background:'yellow'}}>Vegan</span>
+        </div>
+
         </div>{/* .tasting-wrapper */}
 
+      </div>{/* .modal-content */}
+    </div>{/* #moon */}
+
+    <div id="moon-vegan" className='modal'>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />          
+      <div className='modal-content'>
+        <div className='tasting-wrapper'>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'></div>
+            <div className='tasting-right-micros' style={{background:'yellow',fontWeight:'900'}}>VEGAN Sushi Tasting $288 (Individual)<br/>Tsuki/Moon</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>1st Course</div>
+            <div className='tasting-right-micros'>(V) Hassun</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>2nd Course</div>
+            <div className='tasting-right-micros'>Akari Tofu or Tofu Kaiso Salad</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>3rd Course</div>
+            <div className='tasting-right-micros'>Veg Nigiri 5pcs<br/>2 Kind Maki (Hald each Roll)</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>4th Course</div>
+            <div className='tasting-right-micros'>Veg Tempura Hand Roll<br/>(V) Miso Soup<br/>Maruju</div>
+          </div>
+          <div className='tasting-row'>
+            <div className='tasting-left-micros'>5th Course</div>
+            <div className='tasting-right-micros'>Sorbet</div>
+          </div>
+          <br/>
+
+        <div style={{width:'100%',paddingLeft:'80px',display:'flex',justifyContent:'space-around'}}>
+          <span className='hana-button' onClick={()=>showModal('moon')} style={{background:'#779bda'}}>Individual</span>
+          <span className='hana-button' onClick={()=>showModal('moon-vegan')} style={{background:'yellow'}}>Vegan</span>
+        </div>
+
+        </div>{/* .tasting-wrapper */}
 
       </div>{/* .modal-content */}
     </div>{/* #moon */}
@@ -1310,9 +1356,6 @@ export default function DinnerClient(props) {
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
           </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
-          </div>
         </div>{/* .tasting-wrapper */}
 
 
@@ -1358,9 +1401,6 @@ export default function DinnerClient(props) {
             <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
-          </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
           </div>
         </div>{/* .tasting-wrapper */}
 
@@ -1408,9 +1448,6 @@ export default function DinnerClient(props) {
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
           </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
-          </div>
         </div>{/* .tasting-wrapper */}
 
 
@@ -1455,9 +1492,6 @@ export default function DinnerClient(props) {
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
           </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
-          </div>
         </div>{/* .tasting-wrapper */}
 
 
@@ -1501,9 +1535,6 @@ export default function DinnerClient(props) {
             <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
-          </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
           </div>
         </div>{/* .tasting-wrapper */}
 

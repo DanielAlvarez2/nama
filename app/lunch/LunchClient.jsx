@@ -1180,9 +1180,6 @@ produce.               </div>
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
           </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
-          </div>
         </div>{/* .tasting-wrapper */}
 
 
@@ -1228,9 +1225,6 @@ produce.               </div>
             <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
-          </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
           </div>
         </div>{/* .tasting-wrapper */}
 
@@ -1278,9 +1272,6 @@ produce.               </div>
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
           </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
-          </div>
         </div>{/* .tasting-wrapper */}
 
 
@@ -1327,9 +1318,6 @@ produce.               </div>
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
           </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
-          </div>
         </div>{/* .tasting-wrapper */}
 
 
@@ -1375,9 +1363,6 @@ produce.               </div>
             <div className='hana-button' onClick={()=>showModal('flower2')} >For 2</div>
             <div className='hana-button' onClick={()=>showModal('flower3')} >For 3</div>
             <div className='hana-button' onClick={()=>showModal('flower5')} >For 5</div>
-          </div>
-          <div style={{textAlign:'center'}}>
-            <div className='hana-button' onClick={()=>showModal('flower2noShellfish')} >For 2 No Shellfish</div>
           </div>
         </div>{/* .tasting-wrapper */}
 

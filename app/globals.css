@@ -685,6 +685,7 @@ input[type='text']{
   border-radius: 10px;
   cursor:pointer;
   margin-bottom: 20px;
+  border:1px solid black;
 }
 .drink-menu-page{
   width:5.5in;

@@ -1256,7 +1256,7 @@ export default function DinnerClient(props) {
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>4th Course</div>
-            <div className='tasting-right-micros'>Veg Tempura Hand Roll<br/>(V) Miso Soup<br/>Maruju</div>
+            <div className='tasting-right-micros'>Veg Tempura Hand Roll<br/>(V) Miso Soup<br/>Maruju/Sweet Potato</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>5th Course</div>

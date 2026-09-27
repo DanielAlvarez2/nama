@@ -1252,7 +1252,7 @@ export default function DinnerClient(props) {
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>3rd Course</div>
-            <div className='tasting-right-micros'>Veg Nigiri 5pcs<br/>2 Kind Maki (Hald each Roll)</div>
+            <div className='tasting-right-micros'>Veg Nigiri 5pcs<br/>2 Kind Maki (Half each Roll)</div>
           </div>
           <div className='tasting-row'>
             <div className='tasting-left-micros'>4th Course</div>

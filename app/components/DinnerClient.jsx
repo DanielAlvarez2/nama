@@ -57,6 +57,12 @@ export default function DinnerClient(props) {
       
       <Navbar page='dinner' />
 
+      <div style={{width:'100%',display:'flex',justifyContent:'center',gap:'50px'}}>
+        <span onClick={()=>showModal('modal-allergy-chart')} style={{cursor:'pointer'}}>Allergies</span>
+        <span onClick={()=>showModal('modal-allergies-sauces')} style={{cursor:'pointer'}}>Allergies: Sauces</span>
+      </div>
+      <br/>
+
         <div className="letter-paper">
 
 
@@ -1542,6 +1548,32 @@ export default function DinnerClient(props) {
     </div>{/* #modal-dinner */}
 
 
+
+
+
+    <div id="modal-allergy-chart" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+            <div>
+              <img src='./allergy-chart.png' style={{maxWidth:'100%',maxHeight:'100vh'}} />
+            </div>      
+          </div>
+      </div>
+    </div>
+
+    <div id="modal-allergies-sauces" className='modal'>
+      <div>
+          <AiTwotoneCloseCircle className="close-button" onClick={closeModals} />    
+          <div className='modal-content'>
+          
+            <div>
+              <img src='./allergies-sauces.jpg' style={{maxWidth:'100%',maxHeight:'100vh'}} />
+            </div>      
+          </div>
+      </div>
+    </div>
 
     {/* .webpage */}
     </div>    

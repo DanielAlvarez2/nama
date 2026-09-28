@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { AiTwotoneCloseCircle } from "react-icons/ai";
 import Navbar from '@/components/Navbar.jsx'
 import NavbarFooter from '@/components/NavbarFooter';
+import {useState} from 'react'
 
 export default function SakePage(props){
 
@@ -30,7 +31,7 @@ export default function SakePage(props){
         document.querySelector('#sake-modal-image').src = ''
     }
 
-    let nigoriProducers = []
+    const [currentProducer, setCurrentProducer] = useState('')
 
     return(
     <div className="webpage sake-webpage">
@@ -125,7 +126,9 @@ export default function SakePage(props){
 
                       <div className='sake-producer' key={sake._id}>    
                         <div className='sake-producer-name'><span className='bin-left'></span>
-                            {!nigoriProducers.includes(sake.producer) && sake.producer}
+                            {
+                              sake.producer != currentProducer ? sake.producer : setCurrentProducer(sake.producer)
+                            }
                         </div>{/* .sake-producer-name */}
                         <div className='sake' onClick={()=>openModal(
                                                                     `${sake.section}`,

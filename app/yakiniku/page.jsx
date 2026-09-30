@@ -32,7 +32,7 @@ export default function Yakiniku(){
         Osuzai / Side Dish<br/>
         Ohitashi<br/>
         blanched spinach<br/>
-        dashi oil and sesame oil<br/>
+        dashi soy and sesame oil<br/>
         nori<br/>
         bonito powder<br/>
 

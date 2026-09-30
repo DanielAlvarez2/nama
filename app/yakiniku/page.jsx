@@ -69,8 +69,8 @@ export default function Yakiniku(){
         <br/><br/>
         <img src='gyu-tan.jpg' />
         4 ounces<br/>
-        Gyū-Tan<br/>
-        Gyū=cow<br/>
+        Gyū Tan<br/>
+        Gyū=cow, 
         Tan=tongue (from English)<br/>
         Beef Tongue<br/>
         marinated in shio koji<br/>
@@ -84,16 +84,19 @@ export default function Yakiniku(){
         
         <br/><br/>
         <img src='gem-lettuce.jpg' />
+        Gem Lettuce<br/>
         1 serving to share<br/>
 
         <br/><br/>
         <img src='garlic-rice.jpg' />
+        Garlic Rice<br/>
         Served 1 per guest<br/>
         
         <br/><br/>
         <img src='sauces.jpg' />
+        SAUCES:<br/>
         1 Negi Miso / Scallion Miso<br/>
-        2 Yakiniku Tare: teriyaki sauce, garlic, sesame seeds, apple koji<br/>
+        2 Yakiniku Tare: teriyaki sauce, sesame seeds, garlic, apple koji<br/>
         3 Sesame Oil & Black Pepper<br/>
         4 Lemon<br/>
         5 Maldon Salt: hand-harvested sea salt from England<br/>

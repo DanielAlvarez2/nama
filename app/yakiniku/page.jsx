@@ -19,7 +19,7 @@ export default function Yakiniku(){
         Osuzai / Side Dish<br/>
         House Made Kimchi(fermented vegetables)<br/>
         
-        <br/>
+        <br/><br/>
         <img src='nanban-miso.jpg' />
         Osuzai / Side Dish<br/>
         Nanban Miso<br/>
@@ -27,7 +27,7 @@ export default function Yakiniku(){
         chopped ginger and garlic<br/>
         serrano peppers are more spicy than jalapeños<br/>
 
-        <br/>
+        <br/><br/>
         <img src='ohitashi.jpg' />
         Osuzai / Side Dish<br/>
         Ohitashi<br/>
@@ -36,13 +36,13 @@ export default function Yakiniku(){
         nori<br/>
         bonito powder<br/>
 
-        <br/>
+        <br/><br/>
         <img src='tsukemono-moriawase.jpg' />
         Osuzai / Side Dish<br/>
         Tsukemono Moriawase<br/>
         house made pickled vegetables<br/>
 
-        <br/>
+        <br/><br/>
         <img src='aonori-kinoko.jpg' />
         Osuzai / Side Dish<br/>
         grilled mushrooms<br/>
@@ -50,56 +50,55 @@ export default function Yakiniku(){
         aonori seaweed<br/>
         soy sauce<br/>
 
-        <br/>
+        <br/><br/>
         <img src='tofu-kaiso-salad.jpg' />
         Tofu Kaiso Salad<br/>
+        kaiso=seaweed<br/>
         house made tofu<br/>
         wakame seaweed<br/>
         tosaka nori<br/>
         white sesame dressing(pour tableside)<br/>
-        kaiso=seaweed<br/>
 
 
-        <br/>
+        <br/><br/>
         <img src='kalbi.jpg' />
         5 ounces<br/>
         Kalbi<br/>
         U.S. Prime Short Ribs<br/>
         
-        <br/>
+        <br/><br/>
         <img src='gyu-tan.jpg' />
         4 ounces<br/>
         Gyū-Tan<br/>
         Gyū=cow<br/>
-        Tan=tongue (from English)
+        Tan=tongue (from English)<br/>
         Beef Tongue<br/>
         marinated in shio koji<br/>
-        <br/>
         
-        <br/>
+        <br/><br/>
         <img src='hanasaki-zabuton.jpg' />
         5 ounces<br/>
         Hanasaki Zabuton<br/>
         Mishima U.S. Wagyu Chuck Flap Tail<br/>
         a.k.a. "Denver Steak"<br/>
         
-        <br/>
+        <br/><br/>
         <img src='gem-lettuce.jpg' />
         1 serving to share<br/>
 
-        <br/>
+        <br/><br/>
         <img src='garlic-rice.jpg' />
         Served 1 per guest<br/>
         
-        <br/>
+        <br/><br/>
         <img src='sauces.jpg' />
         1 Negi Miso / Scallion Miso<br/>
         2 Yakiniku Tare: teriyaki sauce, garlic, sesame seeds, apple koji<br/>
         3 Sesame Oil & Black Pepper<br/>
         4 Lemon<br/>
-        5 Maldon Salt: hand-harvested sea salt from England
-        <br/>
-        <br/>
+        5 Maldon Salt: hand-harvested sea salt from England<br/>
+
+        <br/><br/>
         
 
       </div>{/* .small-paper */}

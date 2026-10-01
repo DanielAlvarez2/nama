@@ -6,7 +6,7 @@ export default function Yakiniku(){
     <>
       <Navbar page='yakiniku' />
       <br/>
-      <div className="small-paper" style={{height:'auto',padding:'5px'}}>
+      <div className="small-paper" style={{height:'auto',padding:'10px'}}>
         <br/>
         <h1>YAKINIKU</h1><br/>
         <h2 style={{textAlign:'center'}}>yaki=grilled niku=meat</h2> 

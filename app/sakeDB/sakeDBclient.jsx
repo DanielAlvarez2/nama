@@ -31,7 +31,10 @@ export default function SakePage(props){
         document.querySelector('#sake-modal-image').src = ''
     }
 
-    const [currentProducer, setCurrentProducer] = useState('')
+    const [previousProducer, setPreviousProducer] = useState('')
+
+    let currentProducer = ''
+
 
     return(
     <div className="webpage sake-webpage">
@@ -125,11 +128,15 @@ export default function SakePage(props){
                   props.allSakes.filter(sake=>sake.section == 'Nigori').map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
-                        <div className='sake-producer-name'><span className='bin-left'></span>
+                        
                             {
-                              sake.producer != currentProducer ? sake.producer : setCurrentProducer(sake.producer)
+                              sake.producer != currentProducer && 
+                              <div className='sake-producer-name'><span className='bin-left'></span>{(currentProducer = sake.producer)}</div>
+                            }{
+                                
+                            // setCurrentProducer(sake.producer)
                             }
-                        </div>{/* .sake-producer-name */}
+                        {/* .sake-producer-name */}
                         <div className='sake' onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,

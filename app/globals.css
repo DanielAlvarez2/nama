@@ -383,7 +383,7 @@ h1{
   font-size:13px;
   font-weight: 900;
   letter-spacing: 0.1px;
-  margin-bottom: 4px;
+  margin-top: 15px;
 }
 .bin-left{
   letter-spacing: 0.4px;
@@ -406,9 +406,9 @@ h1{
   font-size:12px;
   letter-spacing: 0.1px;
 }
-.sake-producer{
+/* .sake-producer{
   margin-bottom: 17.5px;
-}
+} */
 .sake-page footer{
   /* color:red; */
   font-family: serif;

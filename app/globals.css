@@ -582,8 +582,7 @@ input[type='text']{
 }
 .sake-abv{
   width:5ch;
-  /* display:none; */
-  /* display:none; */
+  display:none;
 }
 .tasting-left{
   /* background:pink; */
@@ -729,4 +728,5 @@ input[type='text']{
 }
 .sake-page h3{
   margin-top:40px;
+  /* color:blue; */
 }

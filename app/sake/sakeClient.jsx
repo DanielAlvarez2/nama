@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar.jsx'
 import NavbarFooter from '@/components/NavbarFooter';
 import {useState} from 'react'
 
-export default function SakePage(props){
+export default function SakeClient(props){
 
     function openModal(section,producer,bin,size,price,description,image){
         document.querySelector('#sake-modal').style.display = 'grid'

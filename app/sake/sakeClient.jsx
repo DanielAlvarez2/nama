@@ -31,7 +31,6 @@ export default function SakeClient(props){
         document.querySelector('#sake-modal-image').src = ''
     }
 
-    const [previousProducer, setPreviousProducer] = useState('')
 
     let currentProducer = ''
 

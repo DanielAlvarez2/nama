@@ -14,6 +14,7 @@ import { deleteMenuItem,moveSakeBottleDown,moveSakeBottleUp } from "@/app/action
 export default function SakeClient(props){
 
   const [sakePage, setSakePage] = useState('Sparkling')
+  const allSakesDescendingSequence = props.allSakes.toReversed()
 
     function handlePageUpdate(value){
       setSakePage(value)
@@ -227,8 +228,9 @@ function populateEditForm(id,
                                             
                                             top:'1px'}} />
                     </span>
-                    <span onClick={()=>moveSakeBottleDown(sake._id,sake.section,'/manager/sake')}
-                          className={`item-button arrow-button`}>
+                    <span 
+                          onClick={()=>moveSakeBottleDown(sake._id,sake.section,'/manager/sake')}
+                          className={`item-button arrow-button ${sake.sequence == allSakesDescendingSequence.find(data=>data.section == sake.section).sequence ? 'visibility-hidden' : ''}`}>
                         <ImArrowDown style={{position:'relative',top:'2px'}} />
                     </span>                                        
                     

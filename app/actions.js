@@ -134,6 +134,32 @@ export async function deleteSakeBottle(id,section,path){
     return
 }
 
+export async function moveSakeBottleUp(id,section,path){
+    console.log(`actions.js moveSakeBottleUp(${id})`)
+    if(!id || !section || !path) return
+    await connectMongoDB()
+    const target = await SakeBottle.findById(id)
+    const aboveTarget = (await SakeBottle.find({section,sequence:target.sequence - 1}))[0]
+    const oldTargetSequence = target.sequence
+    await SakeBottle.findByIdAndUpdate(target._id,{$set:{sequence:aboveTarget.sequence}})
+    await SakeBottle.findByIdAndUpdate(aboveTarget._id,{$set:{sequence:oldTargetSequence}})
+    revalidatePath(path)
+    return
+}
+
+export async function moveSakeBottleDown(id,section,path){
+    console.log(`actions.js moveSakeBottleUp(${id})`)
+    if(!id || !section || !path) return
+    await connectMongoDB()
+    const target = await SakeBottle.findById(id)
+    const belowTarget = (await SakeBottle.find({section,sequence:target.sequence + 1}))[0]
+    const oldTargetSequence = target.sequence
+    await SakeBottle.findByIdAndUpdate(target._id,{$set:{sequence:belowTarget.sequence}})
+    await SakeBottle.findByIdAndUpdate(belowTarget._id,{$set:{sequence:oldTargetSequence}})
+    revalidatePath(path)
+    return
+}
+
 export async function deleteMenuItem(id,menu,section,path){
     console.log(`actions.js deleteMenuItem(${id})`)
     if(!id || !menu || !section || !path) return

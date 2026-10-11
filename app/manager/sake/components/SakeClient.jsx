@@ -7,6 +7,9 @@ import {useEditModeContext} from '@/context/EditModeContext'
 // import {useExistingImageContext} from '@/context/ExistingImageContext'
 import {addSakeBottle,deleteSakeBottle,updateSakeBottle} from '@/app/actions.js'
 import { TiDeleteOutline } from "react-icons/ti";
+import { ImArrowUp } from "react-icons/im";
+import { ImArrowDown } from "react-icons/im";
+import { deleteMenuItem,moveSakeBottleDown,moveSakeBottleUp } from "@/app/actions.js"
 
 export default function SakeClient(props){
 
@@ -218,6 +221,16 @@ function populateEditForm(id,
                                               }
                                             }}
                                         >DELETE</span>
+                    <span onClick={()=>moveSakeBottleUp(sake._id,sake.section,'/manager/sake')}
+                          className={`item-button arrow-button ${sake.sequence == 1 ? 'visibility-hidden' : ''}`}>
+                        <ImArrowUp style={{ position:'relative',
+                                            
+                                            top:'1px'}} />
+                    </span>
+                    <span onClick={()=>moveSakeBottleDown(sake._id,sake.section,'/manager/sake')}
+                          className={`item-button arrow-button`}>
+                        <ImArrowDown style={{position:'relative',top:'2px'}} />
+                    </span>                                        
                     
                   </div>{/* .sake-info */}
                 

@@ -10,6 +10,7 @@ const SakeBottleSchema = new Schema({
     abv: String,
     staffInfo: String,
     sequence: Number,
+    archivedAt: Number,
     cloudinary_public_id: String,
     cloudinary_secure_url: String
 },{timestamps:true})

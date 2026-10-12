@@ -564,11 +564,16 @@ input[type='text']{
   background:blue;
   color:white;
 }
+.archive-button{
+  background:yellow;
+  color:#666;
+}
 .arrow-button{
   background:grey;
   color:white;
 }
 .item-button{
+  border:1px solid black;
   padding:3px 7px;
   border-radius: 5px;
   margin-top: 1px;

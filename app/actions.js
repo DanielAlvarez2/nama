@@ -11,11 +11,26 @@ import {revalidatePath} from 'next/cache'
 
 import {cloudinary} from '@/libs/cloudinary.js'
 
+export async function archiveSakeBottle(id){
+    try{
+        await connectMongoDB()
+        const target = await SakeBottle.findById(id)
+        const targetSectionArray = await SakeBottle.find({section: target.section})
+        targetSectionArray.forEach(async sake=>{
+            if(sake.sequence && sake.sequence > target.sequence) await SakeBottle.findByIdAndUpdate(sake._id,{sequence:sake.sequence - 1})
+        })
+        await SakeBottle.findByIdAndUpdate(target._id,{sequence:0,archivedAt:Date.now()})
 
+        console.log('Sake Bottle Archived')
+        revalidatePath('/manager/sake')
+        return 'Sake Bottle Archived'
+        
+    }catch(err){
+        console.log(err)
+    }
+}
 export async function updateSakeBottle(formData){
     try{
-        console.log(`actions.js updateSakeBottle(${formData.get('producer')})`)        
-        console.log(`actions.js updateSakeBottle(${formData.get('name')})`)        
         let cloudinary_public_id = ''
         let cloudinary_secure_url = ''  
         await connectMongoDB()
@@ -24,7 +39,7 @@ export async function updateSakeBottle(formData){
 
             // NO PIC -> ADD PIC COMPLETE
             if(!formData.get('current-image-url') && formData.get('preview-image')){
-                console.log('NO PIC => ADD PIC')
+                // console.log('NO PIC => ADD PIC')
                 const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
                 cloudinary_public_id = cloudinaryResponse.public_id
                 cloudinary_secure_url = cloudinaryResponse.secure_url                
@@ -32,14 +47,14 @@ export async function updateSakeBottle(formData){
             
             // OLD PIC -> SAME PIC COMPLETE
             if(formData.get('current-image-url') && !formData.get('preview-image') && !formData.get('delete-image-checkbox')){
-                console.log('OLD PIC -> SAME PIC')
+                // console.log('OLD PIC -> SAME PIC')
                 cloudinary_secure_url = formData.get('current-image-url')
                 cloudinary_public_id = formData.get('current-image-id')
             }
             
             // OLD PIC -> NEW PIC COMPLETE
             if(formData.get('current-image-url') && formData.get('preview-image')){
-                console.log('OLD PIC -> NEW PIC')
+                // console.log('OLD PIC -> NEW PIC')
                 await cloudinary.uploader.destroy(formData.get('current-image-id'))
                 const cloudinaryResponse = await cloudinary.uploader.upload(formData.get('preview-image'))
                 cloudinary_public_id = cloudinaryResponse.public_id
@@ -124,7 +139,7 @@ export async function deleteSakeBottle(id,section,path){
     // console.log(allMenuItems)
     const maxSequence = allSakeBottles[0].sequence
     
-    if(target.sequence != maxSequence){
+    if(target.sequence && target.sequence != maxSequence){
         for(let i=target.sequence+1;i<=maxSequence;i++){
             await SakeBottle.findOneAndUpdate({sequence:i,section},{$set:{sequence:i-1}})
         }

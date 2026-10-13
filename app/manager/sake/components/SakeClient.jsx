@@ -5,7 +5,7 @@ import NavbarFooterMenuManager from "@/components/NavbarFooterMenuManager"
 import {useState} from 'react'
 import {useEditModeContext} from '@/context/EditModeContext'
 // import {useExistingImageContext} from '@/context/ExistingImageContext'
-import {addSakeBottle,deleteSakeBottle,updateSakeBottle,moveSakeBottleDown,moveSakeBottleUp,archiveSakeBottle} from '@/app/actions.js'
+import {addSakeBottle,deleteSakeBottle,updateSakeBottle,moveSakeBottleDown,moveSakeBottleUp,archiveSakeBottle,unarchiveSakeBottle} from '@/app/actions.js'
 import { TiDeleteOutline } from "react-icons/ti";
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
@@ -447,12 +447,11 @@ function populateEditForm(id,
             </form>
      
 
-<br/>
-<br/>
-<br/>
 
 
-        <div className="small-paper" style={{height:'auto'}}>
+      {
+        allSakesArchive.filter(sake=>sake.section == sakePage && sake.sequence == 0).length &&
+        <div className="small-paper" style={{height:'auto',marginBottom:'30px',marginTop:'30px'}}>
           <br/>
           <h1>SAKE BOTTLES ARCHIVE</h1>
           <br/>
@@ -492,7 +491,7 @@ function populateEditForm(id,
 
                     <span className="item-button archive-button"
                           style={{border:'1px solid black',background:'yellow'}}
-                          onClick={()=>archiveSakeBottle(sake._id)}
+                          onClick={()=>unarchiveSakeBottle(sake._id)}
                           >UNARCHIVE</span>
 
                     <span className="item-button delete-button"
@@ -525,8 +524,12 @@ function populateEditForm(id,
 )
 }
           <div id='last-entry' style={{scrollMarginTop:'100px'}}></div>        
-        </div>{/* .small-paper */}
-        <br/><br/>
+        
+        {/* .small-paper */}
+        </div>
+
+      }
+      
          
 
 

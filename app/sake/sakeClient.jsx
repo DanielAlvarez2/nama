@@ -94,7 +94,7 @@ export default function SakeClient(props){
 
                 {currentProducer = ''}
                 {
-                  props.allSakes.filter(sake=>sake.section == 'Sparkling').map(sake=>
+                  props.allSakes.filter(sake=>sake.section == 'Sparkling' && sake.sequence).map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
                         
@@ -144,7 +144,7 @@ export default function SakeClient(props){
 
                 {currentProducer = ''}
                 {
-                  props.allSakes.filter(sake=>sake.section == 'Nigori').map(sake=>
+                  props.allSakes.filter(sake=>sake.section == 'Nigori' && sake.sequence).map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
                         
@@ -197,7 +197,7 @@ export default function SakeClient(props){
 
                 {currentProducer = ''}
                 {
-                  props.allSakes.filter(sake=>sake.section == 'Junmai').map(sake=>
+                  props.allSakes.filter(sake=>sake.section == 'Junmai' && sake.sequence).map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
                         
@@ -252,7 +252,7 @@ export default function SakeClient(props){
 
                 {currentProducer = ''}
                 {
-                  props.allSakes.filter(sake=>sake.section == 'Daiginjo').map(sake=>
+                  props.allSakes.filter(sake=>sake.section == 'Daiginjo' && sake.sequence).map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
                         
@@ -313,7 +313,7 @@ export default function SakeClient(props){
 
                 {currentProducer = ''}
                 {
-                  props.allSakes.filter(sake=>sake.section == 'Junmai Daiginjo').map(sake=>
+                  props.allSakes.filter(sake=>sake.section == 'Junmai Daiginjo' && sake.sequence).map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
                         
@@ -372,7 +372,7 @@ export default function SakeClient(props){
 
                 {currentProducer = ''}
                 {
-                  props.allSakes.filter(sake=>sake.section == 'Ginjo').map(sake=>
+                  props.allSakes.filter(sake=>sake.section == 'Ginjo' && sake.sequence).map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
                         
@@ -435,7 +435,7 @@ export default function SakeClient(props){
 
                 {currentProducer = ''}
                 {
-                  props.allSakes.filter(sake=>sake.section == 'Junmai Ginjo').map(sake=>
+                  props.allSakes.filter(sake=>sake.section == 'Junmai Ginjo' && sake.sequence).map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
                         
@@ -499,7 +499,7 @@ export default function SakeClient(props){
 
                 {currentProducer = ''}
                 {
-                  props.allSakes.filter(sake=>sake.section == 'Specialty').map(sake=>
+                  props.allSakes.filter(sake=>sake.section == 'Specialty' && sake.sequence).map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
                         
@@ -564,7 +564,7 @@ export default function SakeClient(props){
 
                 {currentProducer = ''}
                 {
-                  props.allSakes.filter(sake=>sake.section == 'Sweet').map(sake=>
+                  props.allSakes.filter(sake=>sake.section == 'Sweet' && sake.sequence).map(sake=>
 
                       <div className='sake-producer' key={sake._id}>    
                         

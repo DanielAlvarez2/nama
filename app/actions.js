@@ -29,6 +29,22 @@ export async function archiveSakeBottle(id){
         console.log(err)
     }
 }
+
+export async function unarchiveSakeBottle(id){
+    try{
+        await connectMongoDB()
+        const target = await SakeBottle.findById(id)
+        const sectionMaxSequence = (await SakeBottle.find({section: target.section}).sort({sequence:-1}))[0].sequence
+        await SakeBottle.findByIdAndUpdate(id,{sequence:sectionMaxSequence + 1})
+
+        revalidatePath('/manager/sake')
+        return 'Sake Bottle Unarchived'
+        
+    }catch(err){
+        console.log(err)
+    }
+}
+
 export async function updateSakeBottle(formData){
     try{
         let cloudinary_public_id = ''

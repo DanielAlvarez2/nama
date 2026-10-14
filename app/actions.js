@@ -105,6 +105,16 @@ export async function updateSakeBottle(formData){
 } 
 // editMenuItem() 
 
+export async function eightySixSakeBottle(id){
+    try{
+        const target = await SakeBottle.findById(id,{})
+        await SakeBottle.findByIdAndUpdate(target._id,{eightySix: target.eightySix ? false : true})
+        revalidatePath('/manager/sake')
+        return         
+    }catch(err){
+        console.log(err)
+    }
+}
 
 export async function addSakeBottle(formData){
     try{
@@ -132,6 +142,7 @@ export async function addSakeBottle(formData){
             abv: formData.get('abv') ? formData.get('abv').trim() : '',
             staffInfo: formData.get('staffInfo') ? formData.get('staffInfo') : '',
             sequence: highestSequence + 1,
+            eightySix: false,
             cloudinary_public_id,
             cloudinary_secure_url
         })

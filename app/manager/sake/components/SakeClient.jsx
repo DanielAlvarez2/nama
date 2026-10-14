@@ -5,7 +5,14 @@ import NavbarFooterMenuManager from "@/components/NavbarFooterMenuManager"
 import {useState} from 'react'
 import {useEditModeContext} from '@/context/EditModeContext'
 // import {useExistingImageContext} from '@/context/ExistingImageContext'
-import {addSakeBottle,deleteSakeBottle,updateSakeBottle,moveSakeBottleDown,moveSakeBottleUp,archiveSakeBottle,unarchiveSakeBottle} from '@/app/actions.js'
+import {addSakeBottle,
+        deleteSakeBottle,
+        updateSakeBottle,
+        moveSakeBottleDown,
+        moveSakeBottleUp,
+        eightySixSakeBottle,
+        archiveSakeBottle,
+        unarchiveSakeBottle} from '@/app/actions.js'
 import { TiDeleteOutline } from "react-icons/ti";
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
@@ -182,7 +189,10 @@ function populateEditForm(id,
           <h1>SECTION: {sakePage}</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == sakePage && sake.sequence).map(sake=>
-            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',margin:'10px 10px',padding:'10px 10px'}}>
+            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
+                                                      opacity:sake.eightySix ? '0.3' : '1',
+                                                      margin:'10px 10px',
+                                                      padding:'10px 10px'}}>
               
               <div className="sake-flexbox" style={{display:'flex',width:'100%'}}>
 
@@ -233,6 +243,12 @@ function populateEditForm(id,
                                               }
                                             }}
                                         >DELETE</span>
+
+                    <span className="item-button archive-button"
+                          style={{border:'1px solid black',background:'black',color:'white'}}
+                          onClick={()=>eightySixSakeBottle(sake._id)}
+                          >86</span>
+
                     <span onClick={()=>moveSakeBottleUp(sake._id,sake.section,'/manager/sake')}
                           className={`item-button arrow-button ${sake.sequence == 1 ? 'visibility-hidden' : ''}`}>
                         <ImArrowUp style={{ position:'relative',
@@ -509,7 +525,7 @@ function populateEditForm(id,
                                               }
                                             }}
                                         >DELETE</span>
-                    
+
                   </div>{/* .sake-info */}
                 {
                   sake.cloudinary_secure_url && 

@@ -109,7 +109,9 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
+                        <div className='sake' 
+                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                                onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
                                                                     `${sake.bin}`,
@@ -159,7 +161,9 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
+                        <div className='sake' 
+                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                                onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
                                                                     `${sake.bin}`,
@@ -212,7 +216,9 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
+                        <div className='sake' 
+                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                                onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
                                                                     `${sake.bin}`,
@@ -267,7 +273,9 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
+                        <div className='sake' 
+                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                                onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
                                                                     `${sake.bin}`,
@@ -328,7 +336,9 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
+                        <div className='sake' 
+                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                                onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
                                                                     `${sake.bin}`,
@@ -387,7 +397,9 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
+                        <div className='sake' 
+                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                                onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
                                                                     `${sake.bin}`,
@@ -450,7 +462,9 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
+                        <div className='sake' 
+                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                                onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
                                                                     `${sake.bin}`,
@@ -514,7 +528,9 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
+                        <div className='sake' 
+                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                                onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
                                                                     `${sake.bin}`,
@@ -579,7 +595,9 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' onClick={()=>openModal(
+                        <div className='sake' 
+                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                                onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
                                                                     `${sake.bin}`,

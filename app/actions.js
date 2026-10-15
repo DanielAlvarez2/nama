@@ -105,11 +105,13 @@ export async function updateSakeBottle(formData){
 } 
 // editMenuItem() 
 
-export async function eightySixSakeBottle(id){
+export async function eightySix(id,model,path){
     try{
-        const target = await SakeBottle.findById(id,{})
-        await SakeBottle.findByIdAndUpdate(target._id,{eightySix: target.eightySix ? false : true})
-        revalidatePath('/manager/sake')
+        if(model == 'SakeBottle'){
+            const target = await SakeBottle.findById(id,{})
+            await SakeBottle.findByIdAndUpdate(target._id,{eightySix: target.eightySix ? false : true})
+        }
+        revalidatePath(path)
         return         
     }catch(err){
         console.log(err)

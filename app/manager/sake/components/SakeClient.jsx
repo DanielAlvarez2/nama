@@ -10,7 +10,7 @@ import {addSakeBottle,
         updateSakeBottle,
         moveSakeBottleDown,
         moveSakeBottleUp,
-        eightySixSakeBottle,
+        eightySix,
         archiveSakeBottle,
         unarchiveSakeBottle} from '@/app/actions.js'
 import { TiDeleteOutline } from "react-icons/ti";
@@ -190,11 +190,12 @@ function populateEditForm(id,
           <br/>
           {props.allSakes.filter(sake=>sake.section == sakePage && sake.sequence).map(sake=>
             <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
-                                                      opacity:sake.eightySix ? '0.3' : '1',
+                                                      
                                                       margin:'10px 10px',
                                                       padding:'10px 10px'}}>
               
-              <div className="sake-flexbox" style={{display:'flex',width:'100%'}}>
+              <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
+                    style={{display:'flex',width:'100%'}}>
 
                 <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
                     <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
@@ -246,7 +247,7 @@ function populateEditForm(id,
 
                     <span className="item-button archive-button"
                           style={{border:'1px solid black',background:'black',color:'white'}}
-                          onClick={()=>eightySixSakeBottle(sake._id)}
+                          onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
                           >86</span>
 
                     <span onClick={()=>moveSakeBottleUp(sake._id,sake.section,'/manager/sake')}

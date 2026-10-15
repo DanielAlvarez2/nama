@@ -109,8 +109,8 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' 
-                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                        <div className={`sake ${sake.eightySix && 'eighty-six'}`} 
+                                 
                                 onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,

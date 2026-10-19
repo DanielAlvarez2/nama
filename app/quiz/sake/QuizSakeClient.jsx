@@ -2,12 +2,20 @@
 
 import Navbar from '@/components/Navbar.jsx'
 import NavbarFooter from '@/components/NavbarFooter.jsx'
+import {useState} from 'react'
 
 export default function QuizPage(props){
 
-    const randomSake = props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)]
-    // const randomSake = props.allSakeBottles[Math.random() * props.allSakeBottles.length]
-console.log(randomSake)
+    const [randomSake, setRandomSake] = useState(props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)])
+
+    function next(id){
+        do{
+            setRandomSake(props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)])
+        }while(randomSake._id != id)
+
+        document.querySelector('#sake-quiz-heading').scrollIntoView({behavior:'smooth'})            
+    }
+
     return(
 
 <>
@@ -20,7 +28,7 @@ console.log(randomSake)
             // style={{backgroundImage:'url(akari-dessert-1.jpg)',backgroundSize:'5.5in'}}
       >
         <br/>
-        <h1>Sake Quiz</h1>
+        <h1 id='sake-quiz-heading'>Sake Quiz</h1>
         <br/>
 
 
@@ -57,6 +65,16 @@ console.log(randomSake)
             </div>{/* .sake-modal-content */}
         </div>{/* .sake-modal */}
 
+<div style={{marginTop:'50px',
+            border:'1px solid black',
+            borderRadius:'5px',
+            background:'white',
+            cursor:'pointer',
+            padding:'5px 10px'}}
+    onClick={()=>next(randomSake._id)}
+            >
+    NEXT &rarr;
+</div>
 
       </div> {/* .dessert-menu-page */}
       <NavbarFooter />

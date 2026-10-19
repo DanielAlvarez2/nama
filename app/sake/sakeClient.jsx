@@ -693,10 +693,22 @@ export default function SakeClient(props){
 
 
 
+<div style={{textAlign:'center'}}>
 
-    <div style={{textAlign:'center'}}>
-        <Link href='/quiz/sake' style={{textDecoration:'none',color:'black',fontSize:'17px'}}>Sake Quiz</Link>
-    </div>
+        <Link href='/quiz/sake' style={{textDecoration:'none',color:'black',fontSize:'17px'}}>
+        <span style={{marginTop:'50px',
+            border:'1px solid black',
+            borderRadius:'5px',
+            background:'white',
+            cursor:'pointer',
+            margin:'0 auto',
+            padding:'5px 10px'}}
+            >
+    SAKE QUIZ &rarr;
+</span>
+        </Link>
+                </div>
+
 
 
     <NavbarFooter page='sake' />                                                                

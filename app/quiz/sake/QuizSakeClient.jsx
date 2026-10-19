@@ -11,7 +11,7 @@ console.log(randomSake)
     return(
 
 <>
-    <div className='webpage sake-webpage'>
+    <div className='webpage sake-webpage' style={{width:'100%'}}>
 
       <Navbar />
     

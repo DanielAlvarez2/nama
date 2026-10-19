@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic'
+'use client'
 
 import Navbar from '@/components/Navbar.jsx'
 import NavbarFooter from '@/components/NavbarFooter.jsx'
@@ -11,7 +11,7 @@ console.log(randomSake)
     return(
 
 <>
-    <div className='webpage sake-webpage' style={{width:'100%'}}>
+    <div className='webpage sake-webpage'>
 
       <Navbar />
     

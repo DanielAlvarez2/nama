@@ -3,7 +3,7 @@
 import Navbar from '@/components/Navbar.jsx'
 import NavbarFooter from '@/components/NavbarFooter.jsx'
 
-export default async function QuizPage(props){
+export default function QuizPage(props){
 
     const randomSake = props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)]
     // const randomSake = props.allSakeBottles[Math.random() * props.allSakeBottles.length]
@@ -37,17 +37,17 @@ console.log(randomSake)
                         <h3 id='sake-modal-section'></h3>
                             <div className='sake-producer'>    
                                 <div className='sake-producer-name'><span className='bin-left'></span>
-                                    <span id='sake-modal-producer-name'>{randomSake.producer}</span>
+                                    <span id='sake-modal-producer-name' dangerouslySetInnerHTML={{__html:randomSake.producer}}></span>
                                 </div>{/* .sake-producer-name */}
                                 <div className='sake'>
                                     <div className='sake-flexbox-left'>
-                                        <span className='bin-left sake-modal-bin-left'>{randomSake.bin}</span>
-                                        <span className='sake-description sake-modal-description'>{randomSake.name}</span>
+                                        <span className='bin-left sake-modal-bin-left' dangerouslySetInnerHTML={{__html:randomSake.bin}}></span>
+                                        <span className='sake-description sake-modal-description' dangerouslySetInnerHTML={{__html:randomSake.name}}></span>
                                     </div>{/* .sake-flexbox-left */}
                                     <div className='sake-flexbox-right'>
-                                        <span className='bin-mobile sake-modal-bin-mobile'>{randomSake.bin}</span>
-                                        <span className='sake-size sake-modal-size'>{randomSake.size}</span>
-                                        <span className='sake-price sake-modal-price'>{randomSake.price}</span>
+                                        <span className='bin-mobile sake-modal-bin-mobile' dangerouslySetInnerHTML={{__html:randomSake.bin}}></span>
+                                        <span className='sake-size sake-modal-size' dangerouslySetInnerHTML={{__html:randomSake.size}}></span>
+                                        <span className='sake-price sake-modal-price' dangerouslySetInnerHTML={{__html:randomSake.price}}></span>
                                     </div>{/* .sake-flexbox-right */}
                                 </div>{/* .sake */}
                             </div>{/* .sake-producer */}

@@ -9,17 +9,17 @@ export default function QuizPage(props){
     const [randomSake, setRandomSake] = useState(props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)])
 
     function next(id){
+        document.querySelector('.sake-quiz-page').scrollIntoView({behavior:'smooth'})            
         do{
             setRandomSake(props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)])
         }while(randomSake._id != id)
 
-        document.querySelector('#sake-quiz-heading').scrollIntoView({behavior:'smooth'})            
     }
 
     return(
 
 <>
-    <div className='webpage sake-webpage'>
+    <div className='webpage sake-webpage sake-quiz-page'>
 
       <Navbar />
     

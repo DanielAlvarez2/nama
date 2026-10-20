@@ -9,13 +9,12 @@ export default function QuizPage(props){
     const [randomSake, setRandomSake] = useState(props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)])
 
     function next(id){
+        let nextSake
         document.querySelector('.sake-quiz-page').scrollIntoView({behavior:'smooth'})
-        setTimeout(()=>{
-            do{
-                setRandomSake(props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)])
-            }while(randomSake._id != id && !randomSake.eightySix && randomSake.cloudinary_secure_url && randomSake.sequence)
-        },200)            
-
+        do{
+            nextSake = props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)]
+        }while(!nextSake.sequence || !nextSake.cloudinary_secure_url || nextSake.eightySix)
+        setRandomSake(nextSake)
     }
 
     return(
@@ -44,7 +43,7 @@ export default function QuizPage(props){
                 <br/>
                 <div id='sake-modal-info'>
                     <div className='sake-section'>
-                        <h3 id='sake-modal-section' dangerouslySetInnerHTML={{__html:randomSake.section}}></h3>
+                        <h3 id='sake-modal-section' dangerouslySetInnerHTML={{__html:randomSake.section.toUpperCase()}}></h3>
                             <div className='sake-producer'>    
                                 <div className='sake-producer-name'><span className='bin-left'></span>
                                     <span id='sake-modal-producer-name' dangerouslySetInnerHTML={{__html:randomSake.producer}}></span>
@@ -62,7 +61,6 @@ export default function QuizPage(props){
                                 </div>{/* .sake */}
                             </div>{/* .sake-producer */}
                     </div>{/* .sake-section */}
-
                 </div>{/* .sake-modal-info */}
             </div>{/* .sake-modal-content */}
         </div>{/* .sake-modal */}

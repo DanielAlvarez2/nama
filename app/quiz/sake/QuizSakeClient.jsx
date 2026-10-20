@@ -13,8 +13,8 @@ export default function QuizPage(props){
         document.querySelector('.sake-quiz-page').scrollIntoView({behavior:'smooth'})
         do{
             nextSake = props.allSakeBottles[Math.floor(Math.random() * props.allSakeBottles.length)]
-        }while(!nextSake.sequence || !nextSake.cloudinary_secure_url || nextSake.eightySix)
-        setRandomSake(nextSake)
+        }while(!nextSake.sequence || !nextSake.cloudinary_secure_url || nextSake.eightySix || nextSake._id == id)
+        setTimeout(()=>setRandomSake(nextSake),200)
     }
 
     return(

@@ -7,7 +7,7 @@ import {useState} from 'react'
 
 export default function SakeClient(props){
 
-    function openModal(section,producer,bin,size,price,description,image){
+    function openModal(section,producer,bin,size,price,description,image,staffInfo){
         document.querySelector('#sake-modal').style.display = 'grid'
         document.querySelector('#sake-modal-section').innerText = section
         document.querySelector('#sake-modal-producer-name').innerHTML = producer
@@ -15,6 +15,7 @@ export default function SakeClient(props){
         document.querySelector('.sake-modal-bin-mobile').innerText = bin
         document.querySelector('.sake-modal-size').innerHTML = size
         document.querySelector('.sake-modal-price').innerText = price
+        document.querySelector('.sake-modal-staff-info').innerText = staffInfo
         document.querySelector('.sake-modal-description').innerHTML = description
         document.querySelector('#sake-modal-image').src = image
 
@@ -27,6 +28,7 @@ export default function SakeClient(props){
         document.querySelector('.sake-modal-bin-mobile').innerText = ''
         document.querySelector('.sake-modal-size').innerHTML = ''
         document.querySelector('.sake-modal-price').innerText = ''
+        document.querySelector('.sake-modal-staff-info').innerText = ''
         document.querySelector('.sake-modal-description').innerHTML = ''
         document.querySelector('#sake-modal-image').src = ''
     }
@@ -66,6 +68,8 @@ export default function SakeClient(props){
                                         <span className='sake-price sake-modal-price'></span>
                                     </div>{/* .sake-flexbox-right */}
                                 </div>{/* .sake */}
+                                <br/>
+                                <div className='sake-modal-staff-info'></div>
                             </div>{/* .sake-producer */}
                     </div>{/* .sake-section */}
 
@@ -118,7 +122,8 @@ export default function SakeClient(props){
                                                                     `${sake.size}`,
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`
+                                                                    `${sake.cloudinary_secure_url}`,
+                                                                    `${sake.staffInfo}`
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -170,7 +175,8 @@ export default function SakeClient(props){
                                                                     `${sake.size}`,
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`
+                                                                    `${sake.cloudinary_secure_url}`,
+                                                                    `${sake.staffInfo}`,
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -225,7 +231,8 @@ export default function SakeClient(props){
                                                                     `${sake.size}`,
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`
+                                                                    `${sake.cloudinary_secure_url}`,
+                                                                    `${sake.staffInfo}`,
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -282,7 +289,8 @@ export default function SakeClient(props){
                                                                     `${sake.size}`,
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`
+                                                                    `${sake.cloudinary_secure_url}`,
+                                                                    `${sake.staffInfo}`,
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -345,7 +353,8 @@ export default function SakeClient(props){
                                                                     `${sake.size}`,
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`
+                                                                    `${sake.cloudinary_secure_url}`,
+                                                                    `${sake.staffInfo}`,
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -406,7 +415,8 @@ export default function SakeClient(props){
                                                                     `${sake.size}`,
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`
+                                                                    `${sake.cloudinary_secure_url}`,
+                                                                    `${sake.staffInfo}`,
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -471,7 +481,8 @@ export default function SakeClient(props){
                                                                     `${sake.size}`,
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`
+                                                                    `${sake.cloudinary_secure_url}`,
+                                                                    `${sake.staffInfo}`,
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -537,7 +548,8 @@ export default function SakeClient(props){
                                                                     `${sake.size}`,
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`
+                                                                    `${sake.cloudinary_secure_url}`,
+                                                                    `${sake.staffInfo}`,
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -604,7 +616,8 @@ export default function SakeClient(props){
                                                                     `${sake.size}`,
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`
+                                                                    `${sake.cloudinary_secure_url}`,
+                                                                    `${sake.staffInfo}`,
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>

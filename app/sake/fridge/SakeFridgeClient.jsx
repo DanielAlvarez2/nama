@@ -4,6 +4,12 @@ import NavbarMenuManager from "@/components/NavbarMenuManager"
 import NavbarFooterMenuManager from "@/components/NavbarFooterMenuManager"
 import {useState} from 'react'
 import {useEditModeContext} from '@/context/EditModeContext'
+import { ImCheckboxUnchecked } from "react-icons/im";
+import { ImCheckboxChecked } from "react-icons/im";
+import {resetSakeFridge} from '@/app/actions.js'
+import {toggleFridgeStocked} from '@/app/actions.js'
+
+
 // import {useExistingImageContext} from '@/context/ExistingImageContext'
 import {addSakeBottle,
         deleteSakeBottle,
@@ -17,13 +23,14 @@ import { TiDeleteOutline } from "react-icons/ti";
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 
-export default function SakeClient(props){
+export default function SakeFridgeClient(props){
+
 
   const [sakePage, setSakePage] = useState('Sparkling')
   const allSakesDescendingSequence = props.allSakes.toReversed()
   const allSakesArchive = props.allSakes.filter(sake=>sake.sequence == 0).sort((a,b)=>b.archivedAt - a.archivedAt)
   // console.log('allSakesArchive:')
-  console.log(allSakesArchive)
+  // console.log(allSakesArchive)
 
     function handlePageUpdate(value){
       setSakePage(value)
@@ -166,6 +173,12 @@ function populateEditForm(id,
     <div className='webpage'>
 
       <NavbarMenuManager page='sake' />
+
+      <br/>
+      <div style={{textAlign:'center'}}>
+        <div onClick={resetSakeFridge} style={{background:'red',color:'white',display:'inline-block',padding:'5px 15px',borderRadius:'5px',cursor:'pointer'}}>RESET</div>
+      </div>
+      <br/><br/>
               
 
         <div className="small-paper" style={{height:'auto'}}>
@@ -176,248 +189,303 @@ function populateEditForm(id,
           <h1>SPARKLING</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Sparkling' && sake.sequence).map(sake=>
-            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
-                                                      
-                                                      margin:'10px 10px',
-                                                      padding:'10px 10px'}}>
-              
-              <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                    style={{display:'flex',width:'100%'}}>
+           
 
-                <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
-                    <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
-                    <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
-                    <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                      <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
-                      <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
-                      <span>{sake.price}</span>
-                    </div>
-                      {sake.abv && <div>{sake.abv}%abv</div>}
-                      <br/>
-
-
-
-                    <span className="item-button archive-button"
-                          style={{border:'1px solid black',background:'black',color:'white'}}
-                          onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
-                          >86</span>
-
-                    
-                  </div>{/* .sake-info */}
+            
+            <div key={sake._id} style={{display:'flex',alignItems:'center'}}>
+              {sake.fridgeStocked ? 
+                <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                :
+                <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+              }
+              <div id={sake._id} style={{border:'1px solid grey',
+                                                        width:'100%',
+                                                        margin:'10px 10px',
+                                                        padding:'10px 10px'}}>
                 
-                {
-                  sake.cloudinary_secure_url && 
-                    <img src={sake.cloudinary_secure_url} height='100px' />
-                }
-                </div>{/* .sake-flexbox */}
+                <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
+                      style={{display:'flex',width:'100%'}}>
 
-            {/* .key */}
-            </div> 
+                  <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                      <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
+                      <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
+                      <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                        <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
+                        <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
+                        <span>{sake.price}</span>
+                      </div>
+                        {sake.abv && <div>{sake.abv}%abv</div>}
+                        <br/>
+
+
+
+                      <span className="item-button archive-button"
+                            style={{border:'1px solid black',background:'black',color:'white'}}
+                            onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
+                            >86</span>
+
+                      
+                    </div>{/* .sake-info */}
+                  
+                  {
+                    sake.cloudinary_secure_url && 
+                      <img src={sake.cloudinary_secure_url} height='100px' />
+                  }
+                  </div>{/* .sake-flexbox */}
+
+              {/* .key */}
+              </div> 
+            </div>
+            
           )}
 
           <h1>NIGORI</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Nigori' && sake.sequence).map(sake=>
-            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
-                                                      
-                                                      margin:'10px 10px',
-                                                      padding:'10px 10px'}}>
-              
-              <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                    style={{display:'flex',width:'100%'}}>
+             
 
-                <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
-                    <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
-                    <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
-                    <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                      <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
-                      <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
-                      <span>{sake.price}</span>
-                    </div>
-                      {sake.abv && <div>{sake.abv}%abv</div>}
-                      <br/>
-
-
-
-                    <span className="item-button archive-button"
-                          style={{border:'1px solid black',background:'black',color:'white'}}
-                          onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
-                          >86</span>
-
-                  </div>{/* .sake-info */}
+            
+            <div key={sake._id} style={{display:'flex',alignItems:'center'}}>
+              {sake.fridgeStocked ? 
+                <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                :
+                <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+              }
+              <div id={sake._id} style={{border:'1px solid grey',
+                                                        width:'100%',
+                                                        margin:'10px 10px',
+                                                        padding:'10px 10px'}}>
                 
-                {
-                  sake.cloudinary_secure_url && 
-                    <img src={sake.cloudinary_secure_url} height='100px' />
-                }
-                </div>{/* .sake-flexbox */}
+                <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
+                      style={{display:'flex',width:'100%'}}>
 
-            {/* .key */}
-            </div> 
+                  <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                      <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
+                      <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
+                      <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                        <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
+                        <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
+                        <span>{sake.price}</span>
+                      </div>
+                        {sake.abv && <div>{sake.abv}%abv</div>}
+                        <br/>
+
+
+
+                      <span className="item-button archive-button"
+                            style={{border:'1px solid black',background:'black',color:'white'}}
+                            onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
+                            >86</span>
+
+                      
+                    </div>{/* .sake-info */}
+                  
+                  {
+                    sake.cloudinary_secure_url && 
+                      <img src={sake.cloudinary_secure_url} height='100px' />
+                  }
+                  </div>{/* .sake-flexbox */}
+
+              {/* .key */}
+              </div> 
+            </div>
+            
           )}
 
           <h1>JUNMAI</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Junmai' && sake.sequence).map(sake=>
-            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
-                                                      
-                                                      margin:'10px 10px',
-                                                      padding:'10px 10px'}}>
-              
-              <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                    style={{display:'flex',width:'100%'}}>
-
-                <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
-                    <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
-                    <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
-                    <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                      <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
-                      <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
-                      <span>{sake.price}</span>
-                    </div>
-                      {sake.abv && <div>{sake.abv}%abv</div>}
-                      <br/>
-
-
-
-                    <span className="item-button archive-button"
-                          style={{border:'1px solid black',background:'black',color:'white'}}
-                          onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
-                          >86</span>
-
-                  </div>{/* .sake-info */}
+            <div key={sake._id} style={{display:'flex',alignItems:'center'}}>
+              {sake.fridgeStocked ? 
+                <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                :
+                <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+              }
+              <div id={sake._id} style={{border:'1px solid grey',
+                                                        width:'100%',
+                                                        margin:'10px 10px',
+                                                        padding:'10px 10px'}}>
                 
-                {
-                  sake.cloudinary_secure_url && 
-                    <img src={sake.cloudinary_secure_url} height='100px' />
-                }
-                </div>{/* .sake-flexbox */}
+                <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
+                      style={{display:'flex',width:'100%'}}>
 
-            {/* .key */}
-            </div> 
+                  <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                      <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
+                      <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
+                      <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                        <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
+                        <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
+                        <span>{sake.price}</span>
+                      </div>
+                        {sake.abv && <div>{sake.abv}%abv</div>}
+                        <br/>
+
+
+
+                      <span className="item-button archive-button"
+                            style={{border:'1px solid black',background:'black',color:'white'}}
+                            onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
+                            >86</span>
+
+                      
+                    </div>{/* .sake-info */}
+                  
+                  {
+                    sake.cloudinary_secure_url && 
+                      <img src={sake.cloudinary_secure_url} height='100px' />
+                  }
+                  </div>{/* .sake-flexbox */}
+
+              {/* .key */}
+              </div> 
+            </div>
           )}
 
           <h1>DAIGINJO</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Daiginjo' && sake.sequence).map(sake=>
-            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
-                                                      
-                                                      margin:'10px 10px',
-                                                      padding:'10px 10px'}}>
-              
-              <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                    style={{display:'flex',width:'100%'}}>
-
-                <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
-                    <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
-                    <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
-                    <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                      <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
-                      <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
-                      <span>{sake.price}</span>
-                    </div>
-                      {sake.abv && <div>{sake.abv}%abv</div>}
-                      <br/>
-
-
-
-                    <span className="item-button archive-button"
-                          style={{border:'1px solid black',background:'black',color:'white'}}
-                          onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
-                          >86</span>
-
-                  </div>{/* .sake-info */}
+            <div key={sake._id} style={{display:'flex',alignItems:'center'}}>
+              {sake.fridgeStocked ? 
+                <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                :
+                <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+              }
+              <div id={sake._id} style={{border:'1px solid grey',
+                                                        width:'100%',
+                                                        margin:'10px 10px',
+                                                        padding:'10px 10px'}}>
                 
-                {
-                  sake.cloudinary_secure_url && 
-                    <img src={sake.cloudinary_secure_url} height='100px' />
-                }
-                </div>{/* .sake-flexbox */}
+                <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
+                      style={{display:'flex',width:'100%'}}>
 
-            {/* .key */}
-            </div> 
+                  <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                      <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
+                      <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
+                      <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                        <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
+                        <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
+                        <span>{sake.price}</span>
+                      </div>
+                        {sake.abv && <div>{sake.abv}%abv</div>}
+                        <br/>
+
+
+
+                      <span className="item-button archive-button"
+                            style={{border:'1px solid black',background:'black',color:'white'}}
+                            onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
+                            >86</span>
+
+                      
+                    </div>{/* .sake-info */}
+                  
+                  {
+                    sake.cloudinary_secure_url && 
+                      <img src={sake.cloudinary_secure_url} height='100px' />
+                  }
+                  </div>{/* .sake-flexbox */}
+
+              {/* .key */}
+              </div> 
+            </div>
           )}
 
           <h1>JUNMAI DAIGINJO</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Junmai Daiginjo' && sake.sequence).map(sake=>
-            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
-                                                      
-                                                      margin:'10px 10px',
-                                                      padding:'10px 10px'}}>
-              
-              <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                    style={{display:'flex',width:'100%'}}>
-
-                <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
-                    <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
-                    <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
-                    <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                      <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
-                      <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
-                      <span>{sake.price}</span>
-                    </div>
-                      {sake.abv && <div>{sake.abv}%abv</div>}
-                      <br/>
-
-
-
-                    <span className="item-button archive-button"
-                          style={{border:'1px solid black',background:'black',color:'white'}}
-                          onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
-                          >86</span>
-
-                  </div>{/* .sake-info */}
+            <div key={sake._id} style={{display:'flex',alignItems:'center'}}>
+              {sake.fridgeStocked ? 
+                <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                :
+                <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+              }
+              <div id={sake._id} style={{border:'1px solid grey',
+                                                        width:'100%',
+                                                        margin:'10px 10px',
+                                                        padding:'10px 10px'}}>
                 
-                {
-                  sake.cloudinary_secure_url && 
-                    <img src={sake.cloudinary_secure_url} height='100px' />
-                }
-                </div>{/* .sake-flexbox */}
+                <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
+                      style={{display:'flex',width:'100%'}}>
 
-            {/* .key */}
-            </div> 
+                  <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                      <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
+                      <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
+                      <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                        <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
+                        <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
+                        <span>{sake.price}</span>
+                      </div>
+                        {sake.abv && <div>{sake.abv}%abv</div>}
+                        <br/>
+
+
+
+                      <span className="item-button archive-button"
+                            style={{border:'1px solid black',background:'black',color:'white'}}
+                            onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
+                            >86</span>
+
+                      
+                    </div>{/* .sake-info */}
+                  
+                  {
+                    sake.cloudinary_secure_url && 
+                      <img src={sake.cloudinary_secure_url} height='100px' />
+                  }
+                  </div>{/* .sake-flexbox */}
+
+              {/* .key */}
+              </div> 
+            </div>
           )}
 
           <h1>GINJO</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Ginjo' && sake.sequence).map(sake=>
-            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
-                                                      
-                                                      margin:'10px 10px',
-                                                      padding:'10px 10px'}}>
-              
-              <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                    style={{display:'flex',width:'100%'}}>
-
-                <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
-                    <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
-                    <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
-                    <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                      <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
-                      <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
-                      <span>{sake.price}</span>
-                    </div>
-                      {sake.abv && <div>{sake.abv}%abv</div>}
-                      <br/>
-
-
-
-                    <span className="item-button archive-button"
-                          style={{border:'1px solid black',background:'black',color:'white'}}
-                          onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
-                          >86</span>
-
-                  </div>{/* .sake-info */}
+            <div key={sake._id} style={{display:'flex',alignItems:'center'}}>
+              {sake.fridgeStocked ? 
+                <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                :
+                <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+              }
+              <div id={sake._id} style={{border:'1px solid grey',
+                                                        width:'100%',
+                                                        margin:'10px 10px',
+                                                        padding:'10px 10px'}}>
                 
-                {
-                  sake.cloudinary_secure_url && 
-                    <img src={sake.cloudinary_secure_url} height='100px' />
-                }
-                </div>{/* .sake-flexbox */}
+                <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
+                      style={{display:'flex',width:'100%'}}>
 
-            {/* .key */}
-            </div> 
+                  <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                      <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
+                      <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
+                      <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                        <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
+                        <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
+                        <span>{sake.price}</span>
+                      </div>
+                        {sake.abv && <div>{sake.abv}%abv</div>}
+                        <br/>
+
+
+
+                      <span className="item-button archive-button"
+                            style={{border:'1px solid black',background:'black',color:'white'}}
+                            onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
+                            >86</span>
+
+                      
+                    </div>{/* .sake-info */}
+                  
+                  {
+                    sake.cloudinary_secure_url && 
+                      <img src={sake.cloudinary_secure_url} height='100px' />
+                  }
+                  </div>{/* .sake-flexbox */}
+
+              {/* .key */}
+              </div> 
+            </div>
           )}
 
           <h1>JUNMAI GINJO</h1>
@@ -464,83 +532,99 @@ function populateEditForm(id,
           <h1>SPECIALTY</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Specialty' && sake.sequence).map(sake=>
-            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
-                                                      
-                                                      margin:'10px 10px',
-                                                      padding:'10px 10px'}}>
-              
-              <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                    style={{display:'flex',width:'100%'}}>
-
-                <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
-                    <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
-                    <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
-                    <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                      <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
-                      <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
-                      <span>{sake.price}</span>
-                    </div>
-                      {sake.abv && <div>{sake.abv}%abv</div>}
-                      <br/>
-
-
-
-                    <span className="item-button archive-button"
-                          style={{border:'1px solid black',background:'black',color:'white'}}
-                          onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
-                          >86</span>
-
-                  </div>{/* .sake-info */}
+            <div key={sake._id} style={{display:'flex',alignItems:'center'}}>
+              {sake.fridgeStocked ? 
+                <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                :
+                <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+              }
+              <div id={sake._id} style={{border:'1px solid grey',
+                                                        width:'100%',
+                                                        margin:'10px 10px',
+                                                        padding:'10px 10px'}}>
                 
-                {
-                  sake.cloudinary_secure_url && 
-                    <img src={sake.cloudinary_secure_url} height='100px' />
-                }
-                </div>{/* .sake-flexbox */}
+                <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
+                      style={{display:'flex',width:'100%'}}>
 
-            {/* .key */}
-            </div> 
+                  <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                      <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
+                      <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
+                      <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                        <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
+                        <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
+                        <span>{sake.price}</span>
+                      </div>
+                        {sake.abv && <div>{sake.abv}%abv</div>}
+                        <br/>
+
+
+
+                      <span className="item-button archive-button"
+                            style={{border:'1px solid black',background:'black',color:'white'}}
+                            onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
+                            >86</span>
+
+                      
+                    </div>{/* .sake-info */}
+                  
+                  {
+                    sake.cloudinary_secure_url && 
+                      <img src={sake.cloudinary_secure_url} height='100px' />
+                  }
+                  </div>{/* .sake-flexbox */}
+
+              {/* .key */}
+              </div> 
+            </div>
           )}
 
           <h1>SWEET</h1>
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Sweet' && sake.sequence).map(sake=>
-            <div key={sake._id} id={sake._id} style={{border:'1px solid grey',
-                                                      
-                                                      margin:'10px 10px',
-                                                      padding:'10px 10px'}}>
-              
-              <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                    style={{display:'flex',width:'100%'}}>
-
-                <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
-                    <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
-                    <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
-                    <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-                      <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
-                      <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
-                      <span>{sake.price}</span>
-                    </div>
-                      {sake.abv && <div>{sake.abv}%abv</div>}
-                      <br/>
-
-
-
-                    <span className="item-button archive-button"
-                          style={{border:'1px solid black',background:'black',color:'white'}}
-                          onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
-                          >86</span>
-
-                  </div>{/* .sake-info */}
+            <div key={sake._id} style={{display:'flex',alignItems:'center'}}>
+              {sake.fridgeStocked ? 
+                <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                :
+                <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+              }
+              <div id={sake._id} style={{border:'1px solid grey',
+                                                        width:'100%',
+                                                        margin:'10px 10px',
+                                                        padding:'10px 10px'}}>
                 
-                {
-                  sake.cloudinary_secure_url && 
-                    <img src={sake.cloudinary_secure_url} height='100px' />
-                }
-                </div>{/* .sake-flexbox */}
+                <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
+                      style={{display:'flex',width:'100%'}}>
 
-            {/* .key */}
-            </div> 
+                  <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                      <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
+                      <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
+                      <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
+                        <span dangerouslySetInnerHTML={{__html:sake.bin}}></span>
+                        <span dangerouslySetInnerHTML={{__html:sake.size}}></span>
+                        <span>{sake.price}</span>
+                      </div>
+                        {sake.abv && <div>{sake.abv}%abv</div>}
+                        <br/>
+
+
+
+                      <span className="item-button archive-button"
+                            style={{border:'1px solid black',background:'black',color:'white'}}
+                            onClick={()=>eightySix(sake._id,'SakeBottle','/manager/sake')}
+                            >86</span>
+
+                      
+                    </div>{/* .sake-info */}
+                  
+                  {
+                    sake.cloudinary_secure_url && 
+                      <img src={sake.cloudinary_secure_url} height='100px' />
+                  }
+                  </div>{/* .sake-flexbox */}
+
+              {/* .key */}
+              </div> 
+            </div>
           )}
 
 

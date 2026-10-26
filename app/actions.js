@@ -145,6 +145,7 @@ export async function addSakeBottle(formData){
             staffInfo: formData.get('staffInfo') ? formData.get('staffInfo') : '',
             sequence: highestSequence + 1,
             eightySix: false,
+            fridgeStocked: false,
             cloudinary_public_id,
             cloudinary_secure_url
         })
@@ -508,3 +509,14 @@ export async function moveUp(id,menu,section,path){
     return
 }
 
+export async function resetSakeFridge(){
+    await connectMongoDB()
+    await SakeBottle.updateMany({},{fridgeStocked:false})
+}
+
+export async function toggleFridgeStocked(id){
+    await connectMongoDB()
+    const target = await SakeBottle.findById(id)
+    await SakeBottle.findByIdAndUpdate(id,{fridgeStocked:!target.fridgeStocked})
+    revalidatePath('/sake/fridge')
+}

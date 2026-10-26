@@ -13,7 +13,8 @@ const SakeBottleSchema = new Schema({
     eightySix: Boolean,
     archivedAt: Number,
     cloudinary_public_id: String,
-    cloudinary_secure_url: String
+    cloudinary_secure_url: String,
+    fridgeStocked: Boolean,
 },{timestamps:true})
 
 const SakeBottle = mongoose.models.SakeBottle || mongoose.model('SakeBottle', SakeBottleSchema)

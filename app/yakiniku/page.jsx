@@ -6,6 +6,19 @@ export default function Yakiniku(){
     <>
       <Navbar page='yakiniku' />
       <br/>
+
+      <div className='small-paper' style={{height:'auto',padding:'0'}}>
+        <img src='yakiniku-1.jpg' />
+      </div>
+
+      <br/><br/>
+
+      <div className='small-paper' style={{height:'auto',padding:'0'}}>
+        <img src='yakiniku-2.jpg' />
+      </div>
+
+      <br/><br/>
+
       <div className="small-paper" style={{height:'auto',padding:'10px'}}>
         <br/>
         <h1>YAKINIKU</h1><br/>

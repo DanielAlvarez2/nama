@@ -512,6 +512,7 @@ export async function moveUp(id,menu,section,path){
 export async function resetSakeFridge(){
     await connectMongoDB()
     await SakeBottle.updateMany({},{fridgeStocked:false})
+    revalidatePath('/sake/fridge')
 }
 
 export async function toggleFridgeStocked(id){

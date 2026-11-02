@@ -27,10 +27,16 @@ export default function SakeFridgeClient(props){
 
 
   const [sakePage, setSakePage] = useState('Sparkling')
+  const [sakeHeadings, setSakeHeadings] = useState([])
   const allSakesDescendingSequence = props.allSakes.toReversed()
   const allSakesArchive = props.allSakes.filter(sake=>sake.sequence == 0).sort((a,b)=>b.archivedAt - a.archivedAt)
   // console.log('allSakesArchive:')
   // console.log(allSakesArchive)
+
+  function toggle(id){
+    document.getElementById(`${id}`).style.background = 'pink'
+    setTimeout(()=>toggleFridgeStocked(id),150)
+  }
 
     function handlePageUpdate(value){
       setSakePage(value)
@@ -169,6 +175,12 @@ function populateEditForm(id,
 
 }
 
+function addHeading(heading){
+  setSakeHeadings(prev=>[...prev,heading])
+  console.log(sakeHeadings)
+}
+const headings = new Set
+
   return(
     <div className='webpage'>
 
@@ -186,19 +198,26 @@ function populateEditForm(id,
           <h1>SAKE FRIDGE</h1>
           <br/><br/>
 
-          <h1>SPARKLING</h1>
+          {/* <h1>SPARKLING</h1> */}
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Sparkling' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
                 !sake.fridgeStocked &&
 
-              
+              <>
+              {
+                !headings.has(sake.section) &&
+
+              <h1>
+              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+              </h1>
+              }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -238,24 +257,32 @@ function populateEditForm(id,
 
                 {/* .key */}
                 </div> 
-              </div>   
+              </div>
+              </>   
               }
             </div>            
           )}
 
-          <h1>NIGORI</h1>
+          {/* <h1>NIGORI!!!!</h1> */}
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Nigori' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
                 !sake.fridgeStocked &&
 
-              
+              <>
+              {
+                !headings.has(sake.section) &&
+
+              <h1>
+              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+              </h1>
+              }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -295,24 +322,32 @@ function populateEditForm(id,
 
                 {/* .key */}
                 </div> 
-              </div>   
+              </div>
+              </>   
               }
             </div>            
           )}
 
-          <h1>JUNMAI</h1>
+          {/* <h1>JUNMAI</h1> */}
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Junmai' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
                 !sake.fridgeStocked &&
 
-              
+              <>
+              {
+                !headings.has(sake.section) &&
+
+              <h1>
+              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+              </h1>
+              }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -352,24 +387,32 @@ function populateEditForm(id,
 
                 {/* .key */}
                 </div> 
-              </div>   
+              </div>
+              </>   
               }
             </div>            
           )}
 
-          <h1>DAIGINJO</h1>
+          {/* <h1>DAIGINJO</h1> */}
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Daiginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
                 !sake.fridgeStocked &&
 
-              
+              <>
+              {
+                !headings.has(sake.section) &&
+
+              <h1>
+              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+              </h1>
+              }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -409,24 +452,32 @@ function populateEditForm(id,
 
                 {/* .key */}
                 </div> 
-              </div>   
+              </div>
+              </>   
               }
             </div>            
           )}
 
-          <h1>JUNMAI DAIGINJO</h1>
+          {/* <h1>JUNMAI DAIGINJO</h1> */}
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Junmai Daiginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
                 !sake.fridgeStocked &&
 
-              
+              <>
+              {
+                !headings.has(sake.section) &&
+
+              <h1>
+              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+              </h1>
+              }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -466,24 +517,32 @@ function populateEditForm(id,
 
                 {/* .key */}
                 </div> 
-              </div>   
+              </div>
+              </>   
               }
             </div>            
           )}
 
-          <h1>GINJO</h1>
+          {/* <h1>GINJO</h1> */}
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Ginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
                 !sake.fridgeStocked &&
 
-              
+              <>
+              {
+                !headings.has(sake.section) &&
+
+              <h1>
+              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+              </h1>
+              }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -523,24 +582,32 @@ function populateEditForm(id,
 
                 {/* .key */}
                 </div> 
-              </div>   
+              </div>
+              </>   
               }
             </div>            
           )}
 
-          <h1>JUNMAI GINJO</h1>
+          {/* <h1>JUNMAI GINJO</h1> */}
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Junmai Ginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
                 !sake.fridgeStocked &&
 
-              
+              <>
+              {
+                !headings.has(sake.section) &&
+
+              <h1>
+              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+              </h1>
+              }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -580,24 +647,32 @@ function populateEditForm(id,
 
                 {/* .key */}
                 </div> 
-              </div>   
+              </div>
+              </>   
               }
             </div>            
           )}
 
-          <h1>SPECIALTY</h1>
+          {/* <h1>SPECIALTY</h1> */}
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Specialty' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
                 !sake.fridgeStocked &&
 
-              
+              <>
+              {
+                !headings.has(sake.section) &&
+
+              <h1>
+              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+              </h1>
+              }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -637,24 +712,32 @@ function populateEditForm(id,
 
                 {/* .key */}
                 </div> 
-              </div>   
+              </div>
+              </>   
               }
             </div>            
           )}
 
-          <h1>SWEET</h1>
+          {/* <h1>SWEET</h1> */}
           <br/>
           {props.allSakes.filter(sake=>sake.section == 'Sweet' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
                 !sake.fridgeStocked &&
 
-              
+              <>
+              {
+                !headings.has(sake.section) &&
+
+              <h1>
+              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+              </h1>
+              }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -694,7 +777,8 @@ function populateEditForm(id,
 
                 {/* .key */}
                 </div> 
-              </div>   
+              </div>
+              </>   
               }
             </div>            
           )}

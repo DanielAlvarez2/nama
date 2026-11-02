@@ -35,6 +35,8 @@ export default function SakeFridgeClient(props){
 
   function toggle(id){
     document.getElementById(`${id}`).style.background = 'pink'
+    document.getElementById(`checked-${id}`).style.display = 'block'
+    document.getElementById(`unchecked-${id}`).style.display = 'none'
     setTimeout(()=>toggleFridgeStocked(id),150)
   }
 
@@ -196,10 +198,9 @@ const headings = new Set
         <div className="small-paper" style={{height:'auto'}}>
           <br/>
           <h1>SAKE FRIDGE</h1>
-          <br/><br/>
-
-          {/* <h1>SPARKLING</h1> */}
           <br/>
+
+          
           {props.allSakes.filter(sake=>sake.section == 'Sparkling' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
@@ -208,16 +209,21 @@ const headings = new Set
               <>
               {
                 !headings.has(sake.section) &&
-
-              <h1>
-              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
-              </h1>
+                <>
+                  <br/>
+                  <h1>
+                  {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+                  </h1>
+                </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <>
+                    <ImCheckboxChecked id={`checked-${sake._id}`} size='25' style={{marginLeft:'10px',display:'none'}} />
+                    <ImCheckboxUnchecked id={`unchecked-${sake._id}`} onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  </>
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -263,8 +269,6 @@ const headings = new Set
             </div>            
           )}
 
-          {/* <h1>NIGORI!!!!</h1> */}
-          <br/>
           {props.allSakes.filter(sake=>sake.section == 'Nigori' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
@@ -273,16 +277,21 @@ const headings = new Set
               <>
               {
                 !headings.has(sake.section) &&
-
-              <h1>
-              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
-              </h1>
+                <>
+                  <br/>
+                  <h1>
+                  {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+                  </h1>
+                </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <>
+                    <ImCheckboxChecked id={`checked-${sake._id}`} size='25' style={{marginLeft:'10px',display:'none'}} />
+                    <ImCheckboxUnchecked id={`unchecked-${sake._id}`} onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  </>
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -328,8 +337,6 @@ const headings = new Set
             </div>            
           )}
 
-          {/* <h1>JUNMAI</h1> */}
-          <br/>
           {props.allSakes.filter(sake=>sake.section == 'Junmai' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
@@ -338,16 +345,21 @@ const headings = new Set
               <>
               {
                 !headings.has(sake.section) &&
-
-              <h1>
-              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
-              </h1>
+                <>
+                  <br/>
+                  <h1>
+                  {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+                  </h1>
+                </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <>
+                    <ImCheckboxChecked id={`checked-${sake._id}`} size='25' style={{marginLeft:'10px',display:'none'}} />
+                    <ImCheckboxUnchecked id={`unchecked-${sake._id}`} onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  </>
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -393,8 +405,6 @@ const headings = new Set
             </div>            
           )}
 
-          {/* <h1>DAIGINJO</h1> */}
-          <br/>
           {props.allSakes.filter(sake=>sake.section == 'Daiginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
@@ -403,16 +413,21 @@ const headings = new Set
               <>
               {
                 !headings.has(sake.section) &&
-
-              <h1>
-              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
-              </h1>
+                <>
+                  <br/>
+                  <h1>
+                  {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+                  </h1>
+                </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <>
+                    <ImCheckboxChecked id={`checked-${sake._id}`} size='25' style={{marginLeft:'10px',display:'none'}} />
+                    <ImCheckboxUnchecked id={`unchecked-${sake._id}`} onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  </>
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -458,8 +473,6 @@ const headings = new Set
             </div>            
           )}
 
-          {/* <h1>JUNMAI DAIGINJO</h1> */}
-          <br/>
           {props.allSakes.filter(sake=>sake.section == 'Junmai Daiginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
@@ -468,16 +481,21 @@ const headings = new Set
               <>
               {
                 !headings.has(sake.section) &&
-
-              <h1>
-              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
-              </h1>
+                <>
+                  <br/>
+                  <h1>
+                  {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+                  </h1>
+                </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <>
+                    <ImCheckboxChecked id={`checked-${sake._id}`} size='25' style={{marginLeft:'10px',display:'none'}} />
+                    <ImCheckboxUnchecked id={`unchecked-${sake._id}`} onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  </>
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -523,8 +541,6 @@ const headings = new Set
             </div>            
           )}
 
-          {/* <h1>GINJO</h1> */}
-          <br/>
           {props.allSakes.filter(sake=>sake.section == 'Ginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
@@ -533,16 +549,21 @@ const headings = new Set
               <>
               {
                 !headings.has(sake.section) &&
-
-              <h1>
-              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
-              </h1>
+                <>
+                  <br/>
+                  <h1>
+                  {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+                  </h1>
+                </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <>
+                    <ImCheckboxChecked id={`checked-${sake._id}`} size='25' style={{marginLeft:'10px',display:'none'}} />
+                    <ImCheckboxUnchecked id={`unchecked-${sake._id}`} onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  </>
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -588,8 +609,6 @@ const headings = new Set
             </div>            
           )}
 
-          {/* <h1>JUNMAI GINJO</h1> */}
-          <br/>
           {props.allSakes.filter(sake=>sake.section == 'Junmai Ginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
@@ -598,16 +617,21 @@ const headings = new Set
               <>
               {
                 !headings.has(sake.section) &&
-
-              <h1>
-              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
-              </h1>
+                <>
+                  <br/>
+                  <h1>
+                  {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+                  </h1>
+                </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <>
+                    <ImCheckboxChecked id={`checked-${sake._id}`} size='25' style={{marginLeft:'10px',display:'none'}} />
+                    <ImCheckboxUnchecked id={`unchecked-${sake._id}`} onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  </>
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -653,8 +677,6 @@ const headings = new Set
             </div>            
           )}
 
-          {/* <h1>SPECIALTY</h1> */}
-          <br/>
           {props.allSakes.filter(sake=>sake.section == 'Specialty' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
@@ -663,16 +685,21 @@ const headings = new Set
               <>
               {
                 !headings.has(sake.section) &&
-
-              <h1>
-              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
-              </h1>
+                <>
+                  <br/>
+                  <h1>
+                  {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+                  </h1>
+                </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <>
+                    <ImCheckboxChecked id={`checked-${sake._id}`} size='25' style={{marginLeft:'10px',display:'none'}} />
+                    <ImCheckboxUnchecked id={`unchecked-${sake._id}`} onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  </>
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',
@@ -718,8 +745,6 @@ const headings = new Set
             </div>            
           )}
 
-          {/* <h1>SWEET</h1> */}
-          <br/>
           {props.allSakes.filter(sake=>sake.section == 'Sweet' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
@@ -728,16 +753,21 @@ const headings = new Set
               <>
               {
                 !headings.has(sake.section) &&
-
-              <h1>
-              {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
-              </h1>
+                <>
+                  <br/>
+                  <h1>
+                  {sake.section.toUpperCase()}<span style={{display:'none'}}>{headings.add(sake.section)}</span>
+                  </h1>
+                </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
-                  <ImCheckboxUnchecked onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  <>
+                    <ImCheckboxChecked id={`checked-${sake._id}`} size='25' style={{marginLeft:'10px',display:'none'}} />
+                    <ImCheckboxUnchecked id={`unchecked-${sake._id}`} onClick={()=>toggle(sake._id)} size='25' style={{marginLeft:'10px'}} />
+                  </>
                 }
 
                 <div id={sake._id} style={{border:'1px solid grey',

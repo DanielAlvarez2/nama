@@ -184,14 +184,11 @@ function addHeading(heading){
 const headings = new Set
 
   return(
-    <div className='webpage'>
+    <div className='webpage' style={{position:'relative'}}>
 
       <NavbarMenuManager page='sake' />
 
-      <br/>
-      <div style={{textAlign:'center'}}>
-        <div onClick={resetSakeFridge} style={{background:'red',color:'white',display:'inline-block',padding:'5px 15px',borderRadius:'5px',cursor:'pointer'}}>RESET</div>
-      </div>
+      
       <br/><br/>
               
 
@@ -846,6 +843,20 @@ const headings = new Set
 
          
       <NavbarFooterMenuManager page='sake' />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+
+    <div style={{zIndex:'1000',background:'black',height:'50px',position:'fixed',bottom:'0',left:'0',right:'0'}}>
+      <div style={{display:'flex',height:'100%',width:'100%',justifyContent:'center',alignItems:'center'}}>
+        <div onClick={resetSakeFridge} style={{background:'red',color:'white',display:'inline-block',padding:'5px 15px',borderRadius:'5px',cursor:'pointer'}}>RESET</div>
+      </div>
+    </div>
+
     {/* .webpage */}
     </div> 
              

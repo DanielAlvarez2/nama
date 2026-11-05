@@ -8,6 +8,8 @@ import { ImCheckboxUnchecked } from "react-icons/im";
 import { ImCheckboxChecked } from "react-icons/im";
 import {resetSakeFridge} from '@/app/actions.js'
 import {toggleFridgeStocked} from '@/app/actions.js'
+import { FaToggleOff } from "react-icons/fa6";
+import { FaToggleOn } from "react-icons/fa6";
 
 
 // import {useExistingImageContext} from '@/context/ExistingImageContext'
@@ -25,13 +27,17 @@ import { ImArrowDown } from "react-icons/im";
 
 export default function SakeFridgeClient(props){
 
-
+  const [showAll, setShowAll] = useState(false)
   const [sakePage, setSakePage] = useState('Sparkling')
   const [sakeHeadings, setSakeHeadings] = useState([])
   const allSakesDescendingSequence = props.allSakes.toReversed()
   const allSakesArchive = props.allSakes.filter(sake=>sake.sequence == 0).sort((a,b)=>b.archivedAt - a.archivedAt)
   // console.log('allSakesArchive:')
   // console.log(allSakesArchive)
+
+  function toggleShowAll(){
+    setShowAll(!showAll)
+  } 
 
   function toggle(id){
     document.getElementById(`${id}`).style.background = 'pink'
@@ -852,7 +858,18 @@ const headings = new Set
 
 
     <div style={{zIndex:'1000',background:'black',height:'50px',position:'fixed',bottom:'0',left:'0',right:'0'}}>
-      <div style={{display:'flex',height:'100%',width:'100%',justifyContent:'center',alignItems:'center'}}>
+      <div style={{display:'flex',height:'100%',gap:'100px',width:'100%',justifyContent:'center',alignItems:'center'}}>
+        <div style={{color:'white',display:'flex',gap:'10px'}}>
+          <div style={{textAlign:'center'}}>hide<br/>stocked</div>
+          {
+            showAll ?
+                      <FaToggleOn size='35' onClick={toggleShowAll} />
+            :
+
+                      <FaToggleOff size='35' onClick={toggleShowAll} />
+          }
+          <div style={{textAlign:'center'}}>show<br/>all</div>
+        </div>
         <div onClick={resetSakeFridge} style={{background:'red',color:'white',display:'inline-block',padding:'5px 15px',borderRadius:'5px',cursor:'pointer'}}>RESET</div>
       </div>
     </div>

@@ -41,6 +41,7 @@ export default function SakeFridgeClient(props){
 
   function toggle(id){
     document.getElementById(`${id}`).style.background = 'pink'
+    setTimeout(()=>document.getElementById(`${id}`).style.background = 'transparent',1000)
     document.getElementById(`checked-${id}`).style.display = 'block'
     document.getElementById(`unchecked-${id}`).style.display = 'none'
     setTimeout(()=>toggleFridgeStocked(id),150)
@@ -207,7 +208,7 @@ const headings = new Set
           {props.allSakes.filter(sake=>sake.section == 'Sparkling' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
-                !sake.fridgeStocked &&
+                (!sake.fridgeStocked || showAll) &&
 
               <>
               {
@@ -275,7 +276,7 @@ const headings = new Set
           {props.allSakes.filter(sake=>sake.section == 'Nigori' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
-                !sake.fridgeStocked &&
+                (!sake.fridgeStocked || showAll) &&
 
               <>
               {
@@ -343,7 +344,7 @@ const headings = new Set
           {props.allSakes.filter(sake=>sake.section == 'Junmai' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
-                !sake.fridgeStocked &&
+                (!sake.fridgeStocked || showAll) &&
 
               <>
               {
@@ -411,7 +412,7 @@ const headings = new Set
           {props.allSakes.filter(sake=>sake.section == 'Daiginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
-                !sake.fridgeStocked &&
+                (!sake.fridgeStocked || showAll) &&
 
               <>
               {
@@ -479,7 +480,7 @@ const headings = new Set
           {props.allSakes.filter(sake=>sake.section == 'Junmai Daiginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
-                !sake.fridgeStocked &&
+                (!sake.fridgeStocked || showAll) &&
 
               <>
               {
@@ -547,7 +548,7 @@ const headings = new Set
           {props.allSakes.filter(sake=>sake.section == 'Ginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
-                !sake.fridgeStocked &&
+                (!sake.fridgeStocked || showAll) &&
 
               <>
               {
@@ -615,7 +616,7 @@ const headings = new Set
           {props.allSakes.filter(sake=>sake.section == 'Junmai Ginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
-                !sake.fridgeStocked &&
+                (!sake.fridgeStocked || showAll) &&
 
               <>
               {
@@ -683,7 +684,7 @@ const headings = new Set
           {props.allSakes.filter(sake=>sake.section == 'Specialty' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
-                !sake.fridgeStocked &&
+                (!sake.fridgeStocked || showAll) &&
 
               <>
               {
@@ -751,7 +752,7 @@ const headings = new Set
           {props.allSakes.filter(sake=>sake.section == 'Sweet' && sake.sequence).map(sake=>
             <div key={sake._id}>
               {
-                !sake.fridgeStocked &&
+                (!sake.fridgeStocked || showAll) &&
 
               <>
               {

@@ -301,13 +301,13 @@ const headings = new Set
 
                 <div id={sake._id} style={{border:'1px solid grey',
                                                           width:'100%',
-                                                          margin:'10px 10px',
-                                                          padding:'10px 10px'}}>
+                                                          margin:'5px 5px',
+                                                          padding:'5px 5px'}}>
                  
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                        style={{display:'flex',width:'100%'}}>
+                        style={{display:'flex',flexDirection:'row-reverse',width:'100%'}}>
 
-                    <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div className="sake-info" style={{width:'100%'}}>
                         <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                         <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                         <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
@@ -330,20 +330,23 @@ const headings = new Set
                     
                     {
                       sake.cloudinary_secure_url && 
-                        <img  src={sake.cloudinary_secure_url} 
-                              height='100px' 
-                              style={{cursor:'pointer'}}
-                              onClick={()=>openModal(
-                                                                    `${sake.section}`,
-                                                                    `${sake.producer}`,
-                                                                    `${sake.bin}`,
-                                                                    `${sake.size}`,
-                                                                    `${sake.price}`,
-                                                                    `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
-                                                                    )}
-                        />
+                        <div style={{width:'50px',marginRight:'5px',display:'grid',placeContent:'center'}}>
+
+                          <img  src={sake.cloudinary_secure_url} 
+                                // height='100px' 
+                                style={{cursor:'pointer',maxHeight:'100px',maxWidth:'45px'}}
+                                onClick={()=>openModal(
+                                  `${sake.section}`,
+                                  `${sake.producer}`,
+                                  `${sake.bin}`,
+                                  `${sake.size}`,
+                                  `${sake.price}`,
+                                  `${sake.name}`,
+                                  `${sake.cloudinary_secure_url}`,
+                                  `${sake.staffInfo}`
+                                )}
+                                />
+                        </div>
                     }
                     </div>{/* .sake-flexbox */}
 
@@ -385,13 +388,13 @@ const headings = new Set
 
                 <div id={sake._id} style={{border:'1px solid grey',
                                                           width:'100%',
-                                                          margin:'10px 10px',
-                                                          padding:'10px 10px'}}>
+                                                          margin:'5px 5px',
+                                                          padding:'5px 5px'}}>
                  
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                        style={{display:'flex',width:'100%'}}>
+                        style={{display:'flex',flexDirection:'row-reverse',width:'100%'}}>
 
-                    <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div className="sake-info" style={{width:'100%'}}>
                         <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                         <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                         <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
@@ -414,20 +417,23 @@ const headings = new Set
                     
                     {
                       sake.cloudinary_secure_url && 
-                        <img  src={sake.cloudinary_secure_url} 
-                              height='100px' 
-                              style={{cursor:'pointer'}}
-                              onClick={()=>openModal(
-                                                                    `${sake.section}`,
-                                                                    `${sake.producer}`,
-                                                                    `${sake.bin}`,
-                                                                    `${sake.size}`,
-                                                                    `${sake.price}`,
-                                                                    `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
-                                                                    )}
-                        />
+                        <div style={{width:'50px',marginRight:'5px',display:'grid',placeContent:'center'}}>
+
+                          <img  src={sake.cloudinary_secure_url} 
+                                // height='100px' 
+                                style={{cursor:'pointer',maxHeight:'100px',maxWidth:'45px'}}
+                                onClick={()=>openModal(
+                                  `${sake.section}`,
+                                  `${sake.producer}`,
+                                  `${sake.bin}`,
+                                  `${sake.size}`,
+                                  `${sake.price}`,
+                                  `${sake.name}`,
+                                  `${sake.cloudinary_secure_url}`,
+                                  `${sake.staffInfo}`
+                                )}
+                                />
+                        </div>
                     }
                     </div>{/* .sake-flexbox */}
 
@@ -469,13 +475,13 @@ const headings = new Set
 
                 <div id={sake._id} style={{border:'1px solid grey',
                                                           width:'100%',
-                                                          margin:'10px 10px',
-                                                          padding:'10px 10px'}}>
+                                                          margin:'5px 5px',
+                                                          padding:'5px 5px'}}>
                  
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                        style={{display:'flex',width:'100%'}}>
+                        style={{display:'flex',flexDirection:'row-reverse',width:'100%'}}>
 
-                    <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div className="sake-info" style={{width:'100%'}}>
                         <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                         <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                         <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
@@ -498,20 +504,23 @@ const headings = new Set
                     
                     {
                       sake.cloudinary_secure_url && 
-                        <img  src={sake.cloudinary_secure_url} 
-                              height='100px' 
-                              style={{cursor:'pointer'}}
-                              onClick={()=>openModal(
-                                                                    `${sake.section}`,
-                                                                    `${sake.producer}`,
-                                                                    `${sake.bin}`,
-                                                                    `${sake.size}`,
-                                                                    `${sake.price}`,
-                                                                    `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
-                                                                    )}
-                        />
+                        <div style={{width:'50px',marginRight:'5px',display:'grid',placeContent:'center'}}>
+
+                          <img  src={sake.cloudinary_secure_url} 
+                                // height='100px' 
+                                style={{cursor:'pointer',maxHeight:'100px',maxWidth:'45px'}}
+                                onClick={()=>openModal(
+                                  `${sake.section}`,
+                                  `${sake.producer}`,
+                                  `${sake.bin}`,
+                                  `${sake.size}`,
+                                  `${sake.price}`,
+                                  `${sake.name}`,
+                                  `${sake.cloudinary_secure_url}`,
+                                  `${sake.staffInfo}`
+                                )}
+                                />
+                        </div>
                     }
                     </div>{/* .sake-flexbox */}
 
@@ -553,13 +562,13 @@ const headings = new Set
 
                 <div id={sake._id} style={{border:'1px solid grey',
                                                           width:'100%',
-                                                          margin:'10px 10px',
-                                                          padding:'10px 10px'}}>
+                                                          margin:'5px 5px',
+                                                          padding:'5px 5px'}}>
                  
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                        style={{display:'flex',width:'100%'}}>
+                        style={{display:'flex',flexDirection:'row-reverse',width:'100%'}}>
 
-                    <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div className="sake-info" style={{width:'100%'}}>
                         <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                         <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                         <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
@@ -582,20 +591,23 @@ const headings = new Set
                     
                     {
                       sake.cloudinary_secure_url && 
-                        <img  src={sake.cloudinary_secure_url} 
-                              height='100px' 
-                              style={{cursor:'pointer'}}
-                              onClick={()=>openModal(
-                                                                    `${sake.section}`,
-                                                                    `${sake.producer}`,
-                                                                    `${sake.bin}`,
-                                                                    `${sake.size}`,
-                                                                    `${sake.price}`,
-                                                                    `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
-                                                                    )}
-                        />
+                        <div style={{width:'50px',marginRight:'5px',display:'grid',placeContent:'center'}}>
+
+                          <img  src={sake.cloudinary_secure_url} 
+                                // height='100px' 
+                                style={{cursor:'pointer',maxHeight:'100px',maxWidth:'45px'}}
+                                onClick={()=>openModal(
+                                  `${sake.section}`,
+                                  `${sake.producer}`,
+                                  `${sake.bin}`,
+                                  `${sake.size}`,
+                                  `${sake.price}`,
+                                  `${sake.name}`,
+                                  `${sake.cloudinary_secure_url}`,
+                                  `${sake.staffInfo}`
+                                )}
+                                />
+                        </div>
                     }
                     </div>{/* .sake-flexbox */}
 
@@ -637,13 +649,13 @@ const headings = new Set
 
                 <div id={sake._id} style={{border:'1px solid grey',
                                                           width:'100%',
-                                                          margin:'10px 10px',
-                                                          padding:'10px 10px'}}>
+                                                          margin:'5px 5px',
+                                                          padding:'5px 5px'}}>
                  
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                        style={{display:'flex',width:'100%'}}>
+                        style={{display:'flex',flexDirection:'row-reverse',width:'100%'}}>
 
-                    <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div className="sake-info" style={{width:'100%'}}>
                         <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                         <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                         <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
@@ -666,20 +678,23 @@ const headings = new Set
                     
                     {
                       sake.cloudinary_secure_url && 
-                        <img  src={sake.cloudinary_secure_url} 
-                              height='100px' 
-                              style={{cursor:'pointer'}}
-                              onClick={()=>openModal(
-                                                                    `${sake.section}`,
-                                                                    `${sake.producer}`,
-                                                                    `${sake.bin}`,
-                                                                    `${sake.size}`,
-                                                                    `${sake.price}`,
-                                                                    `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
-                                                                    )}
-                        />
+                        <div style={{width:'50px',marginRight:'5px',display:'grid',placeContent:'center'}}>
+
+                          <img  src={sake.cloudinary_secure_url} 
+                                // height='100px' 
+                                style={{cursor:'pointer',maxHeight:'100px',maxWidth:'45px'}}
+                                onClick={()=>openModal(
+                                  `${sake.section}`,
+                                  `${sake.producer}`,
+                                  `${sake.bin}`,
+                                  `${sake.size}`,
+                                  `${sake.price}`,
+                                  `${sake.name}`,
+                                  `${sake.cloudinary_secure_url}`,
+                                  `${sake.staffInfo}`
+                                )}
+                                />
+                        </div>
                     }
                     </div>{/* .sake-flexbox */}
 
@@ -721,13 +736,13 @@ const headings = new Set
 
                 <div id={sake._id} style={{border:'1px solid grey',
                                                           width:'100%',
-                                                          margin:'10px 10px',
-                                                          padding:'10px 10px'}}>
+                                                          margin:'5px 5px',
+                                                          padding:'5px 5px'}}>
                  
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                        style={{display:'flex',width:'100%'}}>
+                        style={{display:'flex',flexDirection:'row-reverse',width:'100%'}}>
 
-                    <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div className="sake-info" style={{width:'100%'}}>
                         <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                         <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                         <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
@@ -750,20 +765,23 @@ const headings = new Set
                     
                     {
                       sake.cloudinary_secure_url && 
-                        <img  src={sake.cloudinary_secure_url} 
-                              height='100px' 
-                              style={{cursor:'pointer'}}
-                              onClick={()=>openModal(
-                                                                    `${sake.section}`,
-                                                                    `${sake.producer}`,
-                                                                    `${sake.bin}`,
-                                                                    `${sake.size}`,
-                                                                    `${sake.price}`,
-                                                                    `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
-                                                                    )}
-                        />
+                        <div style={{width:'50px',marginRight:'5px',display:'grid',placeContent:'center'}}>
+
+                          <img  src={sake.cloudinary_secure_url} 
+                                // height='100px' 
+                                style={{cursor:'pointer',maxHeight:'100px',maxWidth:'45px'}}
+                                onClick={()=>openModal(
+                                  `${sake.section}`,
+                                  `${sake.producer}`,
+                                  `${sake.bin}`,
+                                  `${sake.size}`,
+                                  `${sake.price}`,
+                                  `${sake.name}`,
+                                  `${sake.cloudinary_secure_url}`,
+                                  `${sake.staffInfo}`
+                                )}
+                                />
+                        </div>
                     }
                     </div>{/* .sake-flexbox */}
 
@@ -805,13 +823,13 @@ const headings = new Set
 
                 <div id={sake._id} style={{border:'1px solid grey',
                                                           width:'100%',
-                                                          margin:'10px 10px',
-                                                          padding:'10px 10px'}}>
+                                                          margin:'5px 5px',
+                                                          padding:'5px 5px'}}>
                  
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                        style={{display:'flex',width:'100%'}}>
+                        style={{display:'flex',flexDirection:'row-reverse',width:'100%'}}>
 
-                    <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div className="sake-info" style={{width:'100%'}}>
                         <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                         <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                         <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
@@ -834,20 +852,23 @@ const headings = new Set
                     
                     {
                       sake.cloudinary_secure_url && 
-                        <img  src={sake.cloudinary_secure_url} 
-                              height='100px' 
-                              style={{cursor:'pointer'}}
-                              onClick={()=>openModal(
-                                                                    `${sake.section}`,
-                                                                    `${sake.producer}`,
-                                                                    `${sake.bin}`,
-                                                                    `${sake.size}`,
-                                                                    `${sake.price}`,
-                                                                    `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
-                                                                    )}
-                        />
+                        <div style={{width:'50px',marginRight:'5px',display:'grid',placeContent:'center'}}>
+
+                          <img  src={sake.cloudinary_secure_url} 
+                                // height='100px' 
+                                style={{cursor:'pointer',maxHeight:'100px',maxWidth:'45px'}}
+                                onClick={()=>openModal(
+                                  `${sake.section}`,
+                                  `${sake.producer}`,
+                                  `${sake.bin}`,
+                                  `${sake.size}`,
+                                  `${sake.price}`,
+                                  `${sake.name}`,
+                                  `${sake.cloudinary_secure_url}`,
+                                  `${sake.staffInfo}`
+                                )}
+                                />
+                        </div>
                     }
                     </div>{/* .sake-flexbox */}
 
@@ -889,13 +910,13 @@ const headings = new Set
 
                 <div id={sake._id} style={{border:'1px solid grey',
                                                           width:'100%',
-                                                          margin:'10px 10px',
-                                                          padding:'10px 10px'}}>
+                                                          margin:'5px 5px',
+                                                          padding:'5px 5px'}}>
                  
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                        style={{display:'flex',width:'100%'}}>
+                        style={{display:'flex',flexDirection:'row-reverse',width:'100%'}}>
 
-                    <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div className="sake-info" style={{width:'100%'}}>
                         <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                         <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                         <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
@@ -918,20 +939,23 @@ const headings = new Set
                     
                     {
                       sake.cloudinary_secure_url && 
-                        <img  src={sake.cloudinary_secure_url} 
-                              height='100px' 
-                              style={{cursor:'pointer'}}
-                              onClick={()=>openModal(
-                                                                    `${sake.section}`,
-                                                                    `${sake.producer}`,
-                                                                    `${sake.bin}`,
-                                                                    `${sake.size}`,
-                                                                    `${sake.price}`,
-                                                                    `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
-                                                                    )}
-                        />
+                        <div style={{width:'50px',marginRight:'5px',display:'grid',placeContent:'center'}}>
+
+                          <img  src={sake.cloudinary_secure_url} 
+                                // height='100px' 
+                                style={{cursor:'pointer',maxHeight:'100px',maxWidth:'45px'}}
+                                onClick={()=>openModal(
+                                  `${sake.section}`,
+                                  `${sake.producer}`,
+                                  `${sake.bin}`,
+                                  `${sake.size}`,
+                                  `${sake.price}`,
+                                  `${sake.name}`,
+                                  `${sake.cloudinary_secure_url}`,
+                                  `${sake.staffInfo}`
+                                )}
+                                />
+                        </div>
                     }
                     </div>{/* .sake-flexbox */}
 
@@ -973,13 +997,13 @@ const headings = new Set
 
                 <div id={sake._id} style={{border:'1px solid grey',
                                                           width:'100%',
-                                                          margin:'10px 10px',
-                                                          padding:'10px 10px'}}>
+                                                          margin:'5px 5px',
+                                                          padding:'5px 5px'}}>
                  
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
-                        style={{display:'flex',width:'100%'}}>
+                        style={{display:'flex',flexDirection:'row-reverse',width:'100%'}}>
 
-                    <div className="sake-info" style={{width:'100%',paddingRight:'10px'}}>
+                    <div className="sake-info" style={{width:'100%'}}>
                         <div style={{fontWeight:'900'}}  dangerouslySetInnerHTML={{__html:sake.producer}}></div>
                         <div dangerouslySetInnerHTML={{__html:sake.name}}></div>
                         <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
@@ -1002,20 +1026,23 @@ const headings = new Set
                     
                     {
                       sake.cloudinary_secure_url && 
-                        <img  src={sake.cloudinary_secure_url} 
-                              height='100px' 
-                              style={{cursor:'pointer'}}
-                              onClick={()=>openModal(
-                                                                    `${sake.section}`,
-                                                                    `${sake.producer}`,
-                                                                    `${sake.bin}`,
-                                                                    `${sake.size}`,
-                                                                    `${sake.price}`,
-                                                                    `${sake.name}`,
-                                                                    `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
-                                                                    )}
-                        />
+                        <div style={{width:'50px',marginRight:'5px',display:'grid',placeContent:'center'}}>
+
+                          <img  src={sake.cloudinary_secure_url} 
+                                // height='100px' 
+                                style={{cursor:'pointer',maxHeight:'100px',maxWidth:'45px'}}
+                                onClick={()=>openModal(
+                                  `${sake.section}`,
+                                  `${sake.producer}`,
+                                  `${sake.bin}`,
+                                  `${sake.size}`,
+                                  `${sake.price}`,
+                                  `${sake.name}`,
+                                  `${sake.cloudinary_secure_url}`,
+                                  `${sake.staffInfo}`
+                                )}
+                                />
+                        </div>
                     }
                     </div>{/* .sake-flexbox */}
 
@@ -1027,6 +1054,7 @@ const headings = new Set
              
             </div>            
           )}
+
 
 
 

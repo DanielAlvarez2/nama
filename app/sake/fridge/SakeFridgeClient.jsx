@@ -28,6 +28,7 @@ import { ImArrowDown } from "react-icons/im";
 
 export default function SakeFridgeClient(props){
 
+  let count = 0
   const [showAll, setShowAll] = useState(false)
   const [sakePage, setSakePage] = useState('Sparkling')
   const [sakeHeadings, setSakeHeadings] = useState([])
@@ -67,11 +68,13 @@ export default function SakeFridgeClient(props){
   } 
 
   function toggle(id){
+    count = count-1
+    document.getElementById('count').innerHTML = count
     document.getElementById(`${id}`).style.background = 'pink'
-    setTimeout(()=>document.getElementById(`${id}`).style.background = 'transparent',1000)
+    setTimeout(()=> document.getElementById(`${id}`).style.background = 'transparent',175)
     document.getElementById(`checked-${id}`).style.display = 'block'
     document.getElementById(`unchecked-${id}`).style.display = 'none'
-    setTimeout(()=>toggleFridgeStocked(id),150)
+    setTimeout(()=>toggleFridgeStocked(id),200)
   }
 
     function handlePageUpdate(value){
@@ -260,18 +263,19 @@ const headings = new Set
       <NavbarMenuManager page='sake' />
 
       
-      <br/><br/>
+      <br/>
               
+          <h1 style={{color:'red'}}>SAKE FRIDGE</h1>
+          <br/>
 
         <div className="small-paper" style={{height:'auto'}}>
-          <br/>
-          <h1>SAKE FRIDGE</h1>
-          <br/>
+          
 
           
           {props.allSakes.filter(sake=>sake.section == 'Sparkling' && sake.sequence).map(sake=>
             <div key={sake._id}>
-              {
+              {!sake.fridgeStocked > 0 && <div style={{display:'none'}}>{count++}</div>}
+              { 
                 (!sake.fridgeStocked || showAll) &&
 
               <>
@@ -285,6 +289,7 @@ const headings = new Set
                 </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
+                
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
@@ -298,7 +303,7 @@ const headings = new Set
                                                           width:'100%',
                                                           margin:'10px 10px',
                                                           padding:'10px 10px'}}>
-                  
+                 
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
                         style={{display:'flex',width:'100%'}}>
 
@@ -347,12 +352,14 @@ const headings = new Set
               </div>
               </>   
               }
+             
             </div>            
           )}
 
           {props.allSakes.filter(sake=>sake.section == 'Nigori' && sake.sequence).map(sake=>
             <div key={sake._id}>
-              {
+              {!sake.fridgeStocked > 0 && <div style={{display:'none'}}>{count++}</div>}
+              { 
                 (!sake.fridgeStocked || showAll) &&
 
               <>
@@ -366,6 +373,7 @@ const headings = new Set
                 </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
+                
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
@@ -379,7 +387,7 @@ const headings = new Set
                                                           width:'100%',
                                                           margin:'10px 10px',
                                                           padding:'10px 10px'}}>
-                  
+                 
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
                         style={{display:'flex',width:'100%'}}>
 
@@ -428,12 +436,14 @@ const headings = new Set
               </div>
               </>   
               }
+             
             </div>            
           )}
 
           {props.allSakes.filter(sake=>sake.section == 'Junmai' && sake.sequence).map(sake=>
             <div key={sake._id}>
-              {
+              {!sake.fridgeStocked > 0 && <div style={{display:'none'}}>{count++}</div>}
+              { 
                 (!sake.fridgeStocked || showAll) &&
 
               <>
@@ -447,6 +457,7 @@ const headings = new Set
                 </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
+                
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
@@ -460,7 +471,7 @@ const headings = new Set
                                                           width:'100%',
                                                           margin:'10px 10px',
                                                           padding:'10px 10px'}}>
-                  
+                 
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
                         style={{display:'flex',width:'100%'}}>
 
@@ -509,12 +520,14 @@ const headings = new Set
               </div>
               </>   
               }
+             
             </div>            
           )}
 
           {props.allSakes.filter(sake=>sake.section == 'Daiginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
-              {
+              {!sake.fridgeStocked > 0 && <div style={{display:'none'}}>{count++}</div>}
+              { 
                 (!sake.fridgeStocked || showAll) &&
 
               <>
@@ -528,6 +541,7 @@ const headings = new Set
                 </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
+                
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
@@ -541,7 +555,7 @@ const headings = new Set
                                                           width:'100%',
                                                           margin:'10px 10px',
                                                           padding:'10px 10px'}}>
-                  
+                 
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
                         style={{display:'flex',width:'100%'}}>
 
@@ -590,12 +604,14 @@ const headings = new Set
               </div>
               </>   
               }
+             
             </div>            
           )}
 
           {props.allSakes.filter(sake=>sake.section == 'Junmai Daiginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
-              {
+              {!sake.fridgeStocked > 0 && <div style={{display:'none'}}>{count++}</div>}
+              { 
                 (!sake.fridgeStocked || showAll) &&
 
               <>
@@ -609,6 +625,7 @@ const headings = new Set
                 </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
+                
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
@@ -622,7 +639,7 @@ const headings = new Set
                                                           width:'100%',
                                                           margin:'10px 10px',
                                                           padding:'10px 10px'}}>
-                  
+                 
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
                         style={{display:'flex',width:'100%'}}>
 
@@ -671,12 +688,14 @@ const headings = new Set
               </div>
               </>   
               }
+             
             </div>            
           )}
 
           {props.allSakes.filter(sake=>sake.section == 'Ginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
-              {
+              {!sake.fridgeStocked > 0 && <div style={{display:'none'}}>{count++}</div>}
+              { 
                 (!sake.fridgeStocked || showAll) &&
 
               <>
@@ -690,6 +709,7 @@ const headings = new Set
                 </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
+                
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
@@ -703,7 +723,7 @@ const headings = new Set
                                                           width:'100%',
                                                           margin:'10px 10px',
                                                           padding:'10px 10px'}}>
-                  
+                 
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
                         style={{display:'flex',width:'100%'}}>
 
@@ -752,12 +772,14 @@ const headings = new Set
               </div>
               </>   
               }
+             
             </div>            
           )}
 
           {props.allSakes.filter(sake=>sake.section == 'Junmai Ginjo' && sake.sequence).map(sake=>
             <div key={sake._id}>
-              {
+              {!sake.fridgeStocked > 0 && <div style={{display:'none'}}>{count++}</div>}
+              { 
                 (!sake.fridgeStocked || showAll) &&
 
               <>
@@ -771,6 +793,7 @@ const headings = new Set
                 </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
+                
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
@@ -784,7 +807,7 @@ const headings = new Set
                                                           width:'100%',
                                                           margin:'10px 10px',
                                                           padding:'10px 10px'}}>
-                  
+                 
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
                         style={{display:'flex',width:'100%'}}>
 
@@ -833,12 +856,14 @@ const headings = new Set
               </div>
               </>   
               }
+             
             </div>            
           )}
 
           {props.allSakes.filter(sake=>sake.section == 'Specialty' && sake.sequence).map(sake=>
             <div key={sake._id}>
-              {
+              {!sake.fridgeStocked > 0 && <div style={{display:'none'}}>{count++}</div>}
+              { 
                 (!sake.fridgeStocked || showAll) &&
 
               <>
@@ -852,6 +877,7 @@ const headings = new Set
                 </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
+                
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
@@ -865,7 +891,7 @@ const headings = new Set
                                                           width:'100%',
                                                           margin:'10px 10px',
                                                           padding:'10px 10px'}}>
-                  
+                 
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
                         style={{display:'flex',width:'100%'}}>
 
@@ -914,12 +940,14 @@ const headings = new Set
               </div>
               </>   
               }
+             
             </div>            
           )}
 
           {props.allSakes.filter(sake=>sake.section == 'Sweet' && sake.sequence).map(sake=>
             <div key={sake._id}>
-              {
+              {!sake.fridgeStocked > 0 && <div style={{display:'none'}}>{count++}</div>}
+              { 
                 (!sake.fridgeStocked || showAll) &&
 
               <>
@@ -933,6 +961,7 @@ const headings = new Set
                 </>
               }
               <div style={{display:'flex',alignItems:'center'}}>
+                
                 {sake.fridgeStocked ? 
                   <ImCheckboxChecked onClick={()=>toggleFridgeStocked(sake._id)} size='25' style={{marginLeft:'10px'}} />
                   :
@@ -946,7 +975,7 @@ const headings = new Set
                                                           width:'100%',
                                                           margin:'10px 10px',
                                                           padding:'10px 10px'}}>
-                  
+                 
                   <div className={`sake-flexbox ${sake.eightySix && 'eighty-six'}`} 
                         style={{display:'flex',width:'100%'}}>
 
@@ -995,6 +1024,7 @@ const headings = new Set
               </div>
               </>   
               }
+             
             </div>            
           )}
 
@@ -1053,6 +1083,7 @@ const headings = new Set
           <div style={{textAlign:'center'}}>show<br/>all</div>
         </div>
         <div onClick={resetSakeFridge} style={{background:'red',color:'white',display:'inline-block',padding:'5px 15px',borderRadius:'5px',cursor:'pointer'}}>RESET</div>
+        <div id='count' style={{color:'white'}}>{count}</div>
       </div>
     </div>
 

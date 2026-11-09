@@ -489,7 +489,6 @@ h1{
   inset:0;
   width:100%;
   height:100vh;
-  height:100svh;
   background:#f3eee7;
   z-index: 100;
   display: none;
@@ -501,7 +500,7 @@ h1{
 }
 #sake-modal-image{
   max-width:95%;
-  max-height:55vh;
+  max-height:50vh;
   margin:0 auto;
   display: inline-block;
   border-radius: 10px;

@@ -260,7 +260,7 @@ const headings = new Set
             </div>{/* .sake-modal-content */}
         </div>{/* .sake-modal */}
 
-      <NavbarMenuManager page='sake' />
+      <NavbarMenuManager page='' />
 
       
       <br/>
@@ -1088,7 +1088,7 @@ const headings = new Set
 
 
          
-      <NavbarFooterMenuManager page='sake' />
+      <NavbarFooterMenuManager page='' />
       <br/>
       <br/>
       <br/>

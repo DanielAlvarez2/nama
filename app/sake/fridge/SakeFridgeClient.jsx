@@ -69,12 +69,12 @@ export default function SakeFridgeClient(props){
 
   function toggle(id){
     count = count-1
-    document.getElementById('count').innerHTML = count
     document.getElementById(`${id}`).style.background = 'pink'
-    setTimeout(()=> document.getElementById(`${id}`).style.background = 'transparent',175)
     document.getElementById(`checked-${id}`).style.display = 'block'
     document.getElementById(`unchecked-${id}`).style.display = 'none'
-    setTimeout(()=>toggleFridgeStocked(id),200)
+    setTimeout(()=> document.getElementById(`${id}`).style.background = 'transparent',475)
+    setTimeout(()=>document.getElementById('count').innerHTML = count,500)
+    setTimeout(()=>toggleFridgeStocked(id),500)
   }
 
     function handlePageUpdate(value){

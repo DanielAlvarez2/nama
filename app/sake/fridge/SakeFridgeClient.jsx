@@ -1069,9 +1069,9 @@ const headings = new Set
       <br/>
 
 
-    <div style={{zIndex:'1000',background:'black',height:'50px',position:'fixed',bottom:'0',left:'0',right:'0'}}>
-      <div style={{display:'flex',height:'100%',gap:'100px',width:'100%',justifyContent:'center',alignItems:'center'}}>
-        <div style={{color:'white',display:'flex',gap:'10px'}}>
+    <div style={{zIndex:'1000',background:'black',height:'50px',position:'fixed',textAlign:'center',width:'100%',bottom:'0',left:'0',right:'0'}}>
+      <div style={{padding:'0 15px',display:'flex',height:'100%',maxWidth:'5.5in',width:'100%',margin:'0 auto',justifyContent:'center',alignItems:'center'}}>
+        <div style={{color:'white',display:'flex',gap:'10px',flex:'1'}}>
           <div style={{textAlign:'center'}}>hide<br/>stocked</div>
           {
             showAll ?
@@ -1082,8 +1082,10 @@ const headings = new Set
           }
           <div style={{textAlign:'center'}}>show<br/>all</div>
         </div>
-        <div onClick={resetSakeFridge} style={{background:'red',color:'white',display:'inline-block',padding:'5px 15px',borderRadius:'5px',cursor:'pointer'}}>RESET</div>
-        <div id='count' style={{color:'white'}}>{count}</div>
+        <div style={{flex:'1'}}>
+          <div onClick={resetSakeFridge} style={{background:'red',color:'white',display:'inline-block',border:'1px solid white',padding:'7px 15px',borderRadius:'5px',cursor:'pointer'}}>RESET</div>
+        </div>
+        <div id='count' style={{color:'white',flex:'1'}}>{count}</div>
       </div>
     </div>
 

@@ -24,7 +24,7 @@ export default function Yakiniku(){
         <h1>YAKINIKU</h1><br/>
         <h2 style={{textAlign:'center'}}>yaki=grilled niku=meat</h2> 
         <h2 style={{textAlign:'center'}}>a.k.a. "Japanese BBQ"</h2>
-        <h2 style={{textAlign:'center'}}>ONLY First Sunday of the Month</h2>
+        <h2 style={{textAlign:'center'}}>Every Sunday</h2>
 
         <br/>
 

@@ -37,7 +37,7 @@ export default function SakeFridgeClient(props){
   // console.log('allSakesArchive:')
   // console.log(allSakesArchive)
 
-    function openModal(section,producer,bin,size,price,description,image,staffInfo){
+    function openModal(section,producer,bin,size,price,description,image,staffInfo,abv){
         document.querySelector('#sake-modal').style.display = 'grid'
         document.querySelector('#sake-modal-section').innerText = section
         document.querySelector('#sake-modal-producer-name').innerHTML = producer
@@ -48,7 +48,7 @@ export default function SakeFridgeClient(props){
         document.querySelector('.sake-modal-staff-info').innerText = staffInfo
         document.querySelector('.sake-modal-description').innerHTML = description
         document.querySelector('#sake-modal-image').src = image
-
+        document.querySelector('.sake-modal-abv').innerHTML = `${abv}% abv`
     }
     function closeModal(){
         document.querySelector('#sake-modal').style.display = 'none'
@@ -61,6 +61,7 @@ export default function SakeFridgeClient(props){
         document.querySelector('.sake-modal-staff-info').innerText = ''
         document.querySelector('.sake-modal-description').innerHTML = ''
         document.querySelector('#sake-modal-image').src = ''
+        document.querySelector('.sake-modal-abv').innerHTML = ``
     }
 
   function toggleShowAll(){
@@ -251,7 +252,16 @@ const headings = new Set
                                         <span className='sake-price sake-modal-price'></span>
                                     </div>{/* .sake-flexbox-right */}
                                 </div>{/* .sake */}
+                                
+                                <div className='sake'>
+                                    <div className='sake-flexbox-left'>
+                                        <span className='bin-left sake-modal-bin-left'></span>
+                                        <span className='sake-modal-abv sake-description sake-modal-description'></span>
+                                    </div>{/* .sake-flexbox-left */}
+                                </div>{/* .sake */}
+
                                 <br/>
+
                                 <div className='sake-modal-staff-info'></div>
                             </div>{/* .sake-producer */}
                     </div>{/* .sake-section */}
@@ -343,7 +353,8 @@ const headings = new Set
                                   `${sake.price}`,
                                   `${sake.name}`,
                                   `${sake.cloudinary_secure_url}`,
-                                  `${sake.staffInfo}`
+                                  `${sake.staffInfo}`,
+                                  `${sake.abv}`,
                                 )}
                                 />
                         </div>
@@ -430,7 +441,8 @@ const headings = new Set
                                   `${sake.price}`,
                                   `${sake.name}`,
                                   `${sake.cloudinary_secure_url}`,
-                                  `${sake.staffInfo}`
+                                  `${sake.staffInfo}`,
+                                  `${sake.abv}`,
                                 )}
                                 />
                         </div>
@@ -517,7 +529,8 @@ const headings = new Set
                                   `${sake.price}`,
                                   `${sake.name}`,
                                   `${sake.cloudinary_secure_url}`,
-                                  `${sake.staffInfo}`
+                                  `${sake.staffInfo}`,
+                                  `${sake.abv}`,
                                 )}
                                 />
                         </div>
@@ -604,7 +617,8 @@ const headings = new Set
                                   `${sake.price}`,
                                   `${sake.name}`,
                                   `${sake.cloudinary_secure_url}`,
-                                  `${sake.staffInfo}`
+                                  `${sake.staffInfo}`,
+                                  `${sake.abv}`,
                                 )}
                                 />
                         </div>
@@ -691,7 +705,8 @@ const headings = new Set
                                   `${sake.price}`,
                                   `${sake.name}`,
                                   `${sake.cloudinary_secure_url}`,
-                                  `${sake.staffInfo}`
+                                  `${sake.staffInfo}`,
+                                  `${sake.abv}`,
                                 )}
                                 />
                         </div>
@@ -778,7 +793,8 @@ const headings = new Set
                                   `${sake.price}`,
                                   `${sake.name}`,
                                   `${sake.cloudinary_secure_url}`,
-                                  `${sake.staffInfo}`
+                                  `${sake.staffInfo}`,
+                                  `${sake.abv}`,
                                 )}
                                 />
                         </div>
@@ -865,7 +881,8 @@ const headings = new Set
                                   `${sake.price}`,
                                   `${sake.name}`,
                                   `${sake.cloudinary_secure_url}`,
-                                  `${sake.staffInfo}`
+                                  `${sake.staffInfo}`,
+                                  `${sake.abv}`,
                                 )}
                                 />
                         </div>
@@ -952,7 +969,8 @@ const headings = new Set
                                   `${sake.price}`,
                                   `${sake.name}`,
                                   `${sake.cloudinary_secure_url}`,
-                                  `${sake.staffInfo}`
+                                  `${sake.staffInfo}`,
+                                  `${sake.abv}`,
                                 )}
                                 />
                         </div>
@@ -1039,7 +1057,8 @@ const headings = new Set
                                   `${sake.price}`,
                                   `${sake.name}`,
                                   `${sake.cloudinary_secure_url}`,
-                                  `${sake.staffInfo}`
+                                  `${sake.staffInfo}`,
+                                  `${sake.abv}`,
                                 )}
                                 />
                         </div>

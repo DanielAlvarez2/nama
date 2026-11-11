@@ -7,7 +7,7 @@ import {useState} from 'react'
 
 export default function SakeClient(props){
 
-    function openModal(section,producer,bin,size,price,description,image,staffInfo){
+    function openModal(section,producer,bin,size,price,description,image,staffInfo,abv){
         document.querySelector('#sake-modal').style.display = 'grid'
         document.querySelector('#sake-modal-section').innerText = section
         document.querySelector('#sake-modal-producer-name').innerHTML = producer
@@ -18,7 +18,7 @@ export default function SakeClient(props){
         document.querySelector('.sake-modal-staff-info').innerText = staffInfo
         document.querySelector('.sake-modal-description').innerHTML = description
         document.querySelector('#sake-modal-image').src = image
-
+        document.querySelector('.sake-modal-abv').innerHTML = `${abv}% abv`
     }
     function closeModal(){
         document.querySelector('#sake-modal').style.display = 'none'
@@ -31,6 +31,7 @@ export default function SakeClient(props){
         document.querySelector('.sake-modal-staff-info').innerText = ''
         document.querySelector('.sake-modal-description').innerHTML = ''
         document.querySelector('#sake-modal-image').src = ''
+        document.querySelector('.sake-modal-abv').innerHTML = ``
     }
 
 
@@ -57,6 +58,7 @@ export default function SakeClient(props){
                                 <div className='sake-producer-name'><span className='bin-left'></span>
                                     <span id='sake-modal-producer-name'></span>
                                 </div>{/* .sake-producer-name */}
+                                
                                 <div className='sake'>
                                     <div className='sake-flexbox-left'>
                                         <span className='bin-left sake-modal-bin-left'></span>
@@ -68,7 +70,14 @@ export default function SakeClient(props){
                                         <span className='sake-price sake-modal-price'></span>
                                     </div>{/* .sake-flexbox-right */}
                                 </div>{/* .sake */}
-                                <br/>
+                                
+                                <div className='sake'>
+                                    <div className='sake-flexbox-left'>
+                                        <span className='bin-left sake-modal-bin-left'></span>
+                                        <span className='sake-modal-abv sake-description sake-modal-description'></span>
+                                    </div>{/* .sake-flexbox-left */}
+                                </div>{/* .sake */}
+                                
                                 <div className='sake-modal-staff-info'></div>
                             </div>{/* .sake-producer */}
                     </div>{/* .sake-section */}
@@ -123,7 +132,9 @@ export default function SakeClient(props){
                                                                     `${sake.price}`,
                                                                     `${sake.name}`,
                                                                     `${sake.cloudinary_secure_url}`,
-                                                                    `${sake.staffInfo}`
+                                                                    `${sake.staffInfo}`,
+                                                                    `${sake.abv}`,
+
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -166,8 +177,8 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' 
-                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                        <div className={`sake ${sake.eightySix && 'eighty-six'}`} 
+                                 
                                 onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
@@ -177,6 +188,8 @@ export default function SakeClient(props){
                                                                     `${sake.name}`,
                                                                     `${sake.cloudinary_secure_url}`,
                                                                     `${sake.staffInfo}`,
+                                                                    `${sake.abv}`,
+
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -222,8 +235,8 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' 
-                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                        <div className={`sake ${sake.eightySix && 'eighty-six'}`} 
+                                 
                                 onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
@@ -233,6 +246,8 @@ export default function SakeClient(props){
                                                                     `${sake.name}`,
                                                                     `${sake.cloudinary_secure_url}`,
                                                                     `${sake.staffInfo}`,
+                                                                    `${sake.abv}`,
+
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -280,8 +295,8 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' 
-                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                        <div className={`sake ${sake.eightySix && 'eighty-six'}`} 
+                                 
                                 onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
@@ -291,6 +306,8 @@ export default function SakeClient(props){
                                                                     `${sake.name}`,
                                                                     `${sake.cloudinary_secure_url}`,
                                                                     `${sake.staffInfo}`,
+                                                                    `${sake.abv}`,
+
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -344,8 +361,8 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' 
-                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                        <div className={`sake ${sake.eightySix && 'eighty-six'}`} 
+                                 
                                 onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
@@ -355,6 +372,8 @@ export default function SakeClient(props){
                                                                     `${sake.name}`,
                                                                     `${sake.cloudinary_secure_url}`,
                                                                     `${sake.staffInfo}`,
+                                                                    `${sake.abv}`,
+
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -406,8 +425,8 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' 
-                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                        <div className={`sake ${sake.eightySix && 'eighty-six'}`} 
+                                 
                                 onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
@@ -417,6 +436,8 @@ export default function SakeClient(props){
                                                                     `${sake.name}`,
                                                                     `${sake.cloudinary_secure_url}`,
                                                                     `${sake.staffInfo}`,
+                                                                    `${sake.abv}`,
+
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -472,8 +493,8 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' 
-                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                        <div className={`sake ${sake.eightySix && 'eighty-six'}`} 
+                                 
                                 onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
@@ -483,6 +504,8 @@ export default function SakeClient(props){
                                                                     `${sake.name}`,
                                                                     `${sake.cloudinary_secure_url}`,
                                                                     `${sake.staffInfo}`,
+                                                                    `${sake.abv}`,
+
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -539,8 +562,8 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' 
-                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                        <div className={`sake ${sake.eightySix && 'eighty-six'}`} 
+                                 
                                 onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
@@ -550,6 +573,8 @@ export default function SakeClient(props){
                                                                     `${sake.name}`,
                                                                     `${sake.cloudinary_secure_url}`,
                                                                     `${sake.staffInfo}`,
+                                                                    `${sake.abv}`,
+
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>
@@ -607,8 +632,8 @@ export default function SakeClient(props){
                             // setCurrentProducer(sake.producer)
                             }
                         {/* .sake-producer-name */}
-                        <div className='sake' 
-                                 style={{opacity:sake.eightySix ? '0.3' : '1',}}
+                        <div className={`sake ${sake.eightySix && 'eighty-six'}`} 
+                                 
                                 onClick={()=>openModal(
                                                                     `${sake.section}`,
                                                                     `${sake.producer}`,
@@ -618,6 +643,8 @@ export default function SakeClient(props){
                                                                     `${sake.name}`,
                                                                     `${sake.cloudinary_secure_url}`,
                                                                     `${sake.staffInfo}`,
+                                                                    `${sake.abv}`,
+
                                                                     )}>
                             <div className='sake-flexbox-left'>
                                 <span className='bin-left'>{sake.bin}</span>

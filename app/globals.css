@@ -739,3 +739,7 @@ input[type='text']{
 .eighty-six{
   opacity:0.3;
 }
+
+.sake-abv-chart:hover{
+  z-index: 1000;
+}

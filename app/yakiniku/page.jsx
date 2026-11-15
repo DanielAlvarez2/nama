@@ -108,10 +108,11 @@ export default function Yakiniku(){
         <img src='sauces.jpg' />
         SAUCES:<br/>
         1 Negi Miso / Scallion Miso<br/>
-        2 Yakiniku Tare: teriyaki sauce, sesame seeds, garlic, apple koji<br/>
+        2 Yakiniku Tare: teriyaki sauce, sesame seeds, garlic, apple, koji<br/>
         3 Sesame Oil & Black Pepper<br/>
         4 Lemon<br/>
         5 Maldon Salt: hand-harvested sea salt from England<br/>
+        6 Shio Koji, Tokyo Negi, Sesame Oil<br/>
 
         <br/><br/>
         

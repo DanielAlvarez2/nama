@@ -86,7 +86,6 @@ export default function Yakiniku(){
         Gyū=cow, 
         Tan=tongue (from English)<br/>
         Beef Tongue<br/>
-        marinated in shio koji<br/>
         
         <br/><br/>
         <img src='hanasaki-zabuton.jpg' />

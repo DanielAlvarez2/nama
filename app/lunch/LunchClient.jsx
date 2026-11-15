@@ -51,99 +51,39 @@ export default function LunchClient(props) {
 
     <div className="webpage">
       
-      <Navbar page='dinner' />
+      <Navbar page='lunch' />
 
         <div className="letter-paper">
 
-
-                                            
           <div className="menu-items">
+            <div className="section">
+              <div className="left-column">Chef's Prix Fixe<br/>椀物</div>
 
-            <div className='tasting-menu-flexbox' 
-                  style={{maxWidth:'5.25in',
-                          margin:'0 auto',
-                          marginTop:'50px',
-                          display:'flex',
-                          // border:'1px solid red'
-                  }}
-            >
-              <h1>Lunch Menu</h1>
-              <div className="tasting-left" style={{width:'150px',alignSelf:'flex-start'}}>
-                Chef's Tasting Menu<br/>
-                テイスティング
-              </div>
+              <div className="right-column">
 
-              <div className="tasting-middle">
-                    Akari's Tasting Menu presents two seasonal expressions, 
-                    crafted with the finest ingredients selected daily from the 
-                    Tokyo Toyosu Market. Named Tsuki (Moon) and Hana 
-                    (Flower), each menu draws inspiration from enduring motifs 
-                    in Japanese aesthetics that honour nature's perpetual cycle 
-                    and the beauty found in every fleeting moment. 
-              </div>
 
-              <span className="tasting-right" style={{width:'20ch'}}></span>
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Two Courses</span>
+                            
+                          </span>
+                          <span className="price">70</span>
+                        </div>
+                      </div>
+                    
+                  
 
-            </div>{/* .tasting-menu-flexbox */}
-            
-            <div  className='tasting-menu-flexbox' 
-                  onClick={()=>showModal('moon')}
-                  style={{maxWidth:'5.25in',
-                          margin:'0 auto',
-                          cursor:'pointer',
-                          display:'flex',
-                          // border:'1px solid red'
-                  }}
-            >
+
               
-              <div  className="tasting-left" 
-                    style={{width:'150px',alignSelf:'flex-start'}}>
-                Tsuki/Moon<br/>月
+
+
+
+
               </div>
+            </div>
 
-              <div className="tasting-middle">
-An individually served sushi-focused tasting 
-menu highlighting the freshest seasonal 
-produce.               </div>
-
-              <span className="tasting-right" style={{width:'20ch',textAlign:'right'}}>288</span>
-
-            </div>{/* .tasting-menu-flexbox */}
-            
-            <div  className='tasting-menu-flexbox' 
-                  onClick={()=>showModal('flower')}
-                  style={{maxWidth:'5.25in',
-                          margin:'0 auto',
-                          cursor:'pointer',
-                          display:'flex',
-                          // border:'1px solid red'
-                  }}
-            >
-              
-              <div  className="tasting-left" 
-                    style={{width:'150px',alignSelf:'flex-start'}}>
-                Hana/Flower<br/>花</div>
-
-              <div className="tasting-middle">
-                    A comprehensive tasting menu, transforming ingredients 
-                    sourced at their peak into expertly crafted dishes.  
-              </div>
-
-              <span className="tasting-right" style={{width:'20ch',textAlign:'right'}}>388</span>
-
-            </div>{/* .tasting-menu-flexbox */}
-            
-            
-
-
-          </div>{/* .menu-items */}
-          <div className='legal'>
-            All prices are in USD and subject to 8.875% government tax. 
-            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
-            Please let us know if you have any 
-            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
-            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
-          </div>
+          </div>                                    
         </div>{/* .letter-paper */}
 
 
@@ -4001,7 +3941,7 @@ produce.               </div>
       </div>
     </div>{/* #spider-roll */}
 
-    <NavbarFooter page='dinner' />
+    <NavbarFooter page='lunch' />
 
 
     <div id="modal-dinner" className='modal'>

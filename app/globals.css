@@ -741,5 +741,6 @@ input[type='text']{
 }
 
 .sake-abv-chart:hover{
-  z-index: 1000;
+  z-index: 99;
+  transform: scale(2);
 }

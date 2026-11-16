@@ -13,7 +13,7 @@ export default function CoffeeItem(props){
                                       name1,
                                       price,){
         document.querySelector('#id').value = id
-        document.querySelector('#name').value = name1
+        document.querySelector('#name1').value = name1
         document.querySelector('#price').value = price
         document.querySelector('#form h1').textContent = 'EDIT COFFEE/TEA'
         document.querySelector('#form').style.background = 'lightblue'

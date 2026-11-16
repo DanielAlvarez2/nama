@@ -56,6 +56,7 @@ export default function LunchClient(props) {
         <div className="letter-paper">
 
           <div className="menu-items">
+
             <div className="section">
               <div className="left-column">Chef's Prix Fixe<br/>椀物</div>
 
@@ -72,6 +73,16 @@ export default function LunchClient(props) {
                         </div>
                       </div>
                     
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Three Courses</span>
+                            
+                          </span>
+                          <span className="price">80</span>
+                        </div>
+                      </div>
+                    
                   
 
 
@@ -82,6 +93,148 @@ export default function LunchClient(props) {
 
               </div>
             </div>
+
+            <div className="section">
+              <div className="left-column">First Course<br/>椀物</div>
+
+              <div className="right-column">
+
+                <div>Served with Edamame and Miso Soup</div><br/>
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Hassun</span>
+                            
+                          </span>
+                          <span className="price"></span>
+                        </div>
+                        <div className="description1">Assorted Seasonal Appetizers</div>
+                      </div>
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Kurumi Salad</span>
+                            <span className="allergies">(V, GF)</span>
+                          </span>
+                          <span className="price"></span>
+                        </div>
+                        <div className="description1">
+                          Mizuna, Kabocha Mochi, Walnut Ponzu Dressing
+                        </div>
+                      </div>
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Goma Miso Kanpachi</span>
+                            <span className="allergies">(GF)</span>
+                          </span>
+                          <span className="price"></span>
+                        </div>
+                        <div className="description1">Aged Kanpachi, Sesame Sauce</div>
+                      </div>
+
+
+              
+
+
+
+
+              </div>
+            </div>
+
+            <div className="section">
+              <div className="left-column">Second Course<br/>椀物</div>
+
+              <div className="right-column">
+
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Kinoko Kamatama Udon</span>
+                            
+                          </span>
+                          <span className="price"></span>
+                        </div>
+                        <div className="description1">Mushrooms, Kishimen Noodle, Ontama Egg</div>
+                      </div>
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Fish & Chips</span>
+                            
+                          </span>
+                          <span className="price"></span>
+                        </div>
+                        <div className="description1">
+                          Saikyo Miso Marinated Black Cod, Japanese Potato Rosti
+                        </div>
+                      </div>
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Imperial Wagyu Sukiyaki</span>
+                            <span className="allergies">(GF)</span>
+                          </span>
+                          <span className="price"></span>
+                        </div>
+                        <div className="description1">Ribeye, Napa Cabbage, Tofu, Ontama Egg, White Rice</div>
+                      </div>
+
+
+              
+
+
+
+
+              </div>
+            </div>
+
+            <div className="section">
+              <div className="left-column">Desserts<br/>椀物</div>
+
+              <div className="right-column">
+
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Ringo and Hojicha</span>
+                            <span className="allergies">(D)</span>
+                          </span>
+                          <span className="price"></span>
+                        </div>
+                        <div className="description1">Apple Yogurt Mousse, Yuzu Jelly, Hojicha Sponge</div>
+                      </div>
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Red Bean Zenzai</span>
+                            <span className="allergies">(D)</span>
+                          </span>
+                          <span className="price"></span>
+                        </div>
+                        <div className="description1">
+                          Shiratama Mochi, Butter Cookies
+                        </div>
+                      </div>
+
+
+
+              
+
+
+
+
+              </div>
+            </div>
+
 
           </div>                                    
         </div>{/* .letter-paper */}

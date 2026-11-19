@@ -272,119 +272,182 @@ export default function LunchClient(props) {
 
                                             
           <div className="menu-items">
+
             <div className="section">
-              <div className="left-column">Soup<br/>椀物</div>
+              <div className="left-column">Snacks<br/>椀物</div>
 
               <div className="right-column">
 
 
-                  {
-                    props.allItems.filter(item=>item.section == 'Soup').map(data=>
-                      <div  className="dinner-menu-item"
-                            key={data._id}
-                            onClick={()=>openDinnerModal(                              
-                              data.name1,
-                              data.allergies,
-                              data.description1,
-                              data.price,
-                              data.upgrade1,
-                              data.upgrade2,
-                              data.upgrade3,
-                              data.price1,
-                              data.price2,
-                              data.price3,
-                              data.typos,
-                              data.staffInfo,
-                              data.cloudinary_secure_url
-                            )}
-                      >
+                      <div  className="dinner-menu-item">
                         <div className="name-price">
                           <span>
-                            <span className="name">{data.name1}</span>
-                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                            <span className="name">Miso Soup</span>
+                            <span className="allergies">(GF)</span>
                           </span>
-                          <span className="price">{data.price}</span>
+                          <span className="price">11</span>
                         </div>
-                        <div className="description1">{data.description1}</div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade1}</span>
-                          <span>{data.price1}</span>
+                        <div className="description1">Awase Miso, Seaweed, Tofu, Chives</div>
+                      </div>
+
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Chamame</span>
+                            <span className="allergies">(V, GF)</span>
+                          </span>
+                          <span className="price">11</span>
                         </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade2}</span>
-                          <span>{data.price2}</span>
+                        <div className="description1">Edamame, Shichimi Salt</div>
+                      </div>
+
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Shishito Peppers</span>
+                            <span className="allergies"></span>
+                          </span>
+                          <span className="price">19</span>
                         </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade3}</span>
-                          <span>{data.price3}</span>
+                        <div className="description1">Bonito Flakes</div>
+                      </div>
+
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Goma Ae</span>
+                            <span className="allergies">(V, GF)</span>
+                          </span>
+                          <span className="price">19</span>
+                        </div>
+                        <div className="description1">
+                          Spinach, Mixed Mushrooms, Sesame Soy
                         </div>
                       </div>
-                    )
-                  }
+              </div>
+            </div>
+
+            <div className="section">
+              <div className="left-column">Salad<br/>サラダ</div>
+              <div className="right-column">
 
 
-              
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Green Market</span>
+                            <span className="allergies">(V, GF)</span>
+                          </span>
+                          <span className="price">20</span>
+                        </div>
+                        <div className="description1">
+                          Autumn Vegetables, Goma Miso
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>With Tofu (V, GF)</span>
+                          <span>29</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>With Grilled Chicken (GF)</span>
+                          <span>41</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>With Grilled Salmon (GF)</span>
+                          <span>49</span>
+                        </div>
+                      </div>
+
+
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Tofu Kaiso Salad</span>
+                            <span className="allergies">(V, GF)</span>
+                          </span>
+                          <span className="price">29</span>
+                        </div>
+                        <div className="description1">
+                          Tofu, Wakame, Tosaka Nori, Sesame Dressing
+                        </div>
+                      </div>
+
 
 
 
 
               </div>
+
+
             </div>
 
             <div className="section">
-              <div className="left-column">Small Plates<br/>前菜</div>
+              <div className="left-column">Mains<br/>椀物</div>
+
               <div className="right-column">
 
 
-
-                  {
-                    props.allItems.filter(item=>item.section == 'Small Plates').map(data=>
-                      <div  className="dinner-menu-item"
-                            key={data._id}
-                            onClick={()=>openDinnerModal(                              
-                              data.name1,
-                              data.allergies,
-                              data.description1,
-                              data.price,
-                              data.upgrade1,
-                              data.upgrade2,
-                              data.upgrade3,
-                              data.price1,
-                              data.price2,
-                              data.price3,
-                              data.typos,
-                              data.staffInfo,
-                              data.cloudinary_secure_url
-                            )}
-                      >
+                      <div  className="dinner-menu-item">
                         <div className="name-price">
                           <span>
-                            <span className="name">{data.name1}</span>
-                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                            <span className="name">Maitake Steak</span>
+                            <span className="allergies typo">(V, GF)</span>
                           </span>
-                          <span className="price">{data.price}</span>
+                          <span className="price">35</span>
                         </div>
-                        <div className="description1">{data.description1}</div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade1}</span>
-                          <span>{data.price1}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade2}</span>
-                          <span>{data.price2}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade3}</span>
-                          <span>{data.price3}</span>
+                        <div className="description1">
+                          Teriyaki Sauce or Yushu Kosho Ponzu
                         </div>
                       </div>
-                    )
-                  }
 
 
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Charcoal Grilled Shio Koji Chicken</span>
+                            <span className="allergies"></span>
+                          </span>
+                          <span className="price">40</span>
+                        </div>
+                        <div className="description1">
+                          Teriyaki Sauce or Yushu Kosho Ponzu
+                        </div>
+                      </div>
 
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Charcoal Grilled Salmon</span>
+                            <span className="allergies"></span>
+                          </span>
+                          <span className="price">46</span>
+                        </div>
+                        <div className="description1">
+                          Teriyaki Sauce or Yushu Kosho Ponzu
+                        </div>
+                      </div>
+
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">A5 Miyazaki Wagyu Beef</span>
+                            <span className="allergies"></span>
+                          </span>
+                          <span className="price">125</span>
+                        </div>
+                        <div className="description1">
+                          Grilled Japanese Striploin, Shishito
+                        </div>
+                      </div>
               </div>
             </div>
+
+
 
            </div> {/* .menu-items */}
 
@@ -428,53 +491,84 @@ export default function LunchClient(props) {
           <div className="menu-items">
 
             <div className="section">
-              <div className="left-column">Salad<br/>サラダ</div>
+              <div className="left-column">Donburi<br/>サラダ</div>
               <div className="right-column">
 
 
-                  {
-                    props.allItems.filter(item=>item.section == 'Salad').map(data=>
-                      <div  className="dinner-menu-item"
-                            key={data._id}
-                            onClick={()=>openDinnerModal(                              
-                              data.name1,
-                              data.allergies,
-                              data.description1,
-                              data.price,
-                              data.upgrade1,
-                              data.upgrade2,
-                              data.upgrade3,
-                              data.price1,
-                              data.price2,
-                              data.price3,
-                              data.typos,
-                              data.staffInfo,
-                              data.cloudinary_secure_url
-                            )}
-                      >
+                      <div  className="dinner-menu-item">
                         <div className="name-price">
                           <span>
-                            <span className="name">{data.name1}</span>
-                            {data.allergies && <span className="allergies">({data.allergies})</span>}
+                            <span className="name">Unagi Kabayaki Donburi</span>
+                            <span className="allergies"></span>
                           </span>
-                          <span className="price">{data.price}</span>
+                          <span className="price">55</span>
                         </div>
-                        <div className="description1">{data.description1}</div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade1}</span>
-                          <span>{data.price1}</span>
+                        <div className="description1">
+                          Chracoal Grilled Eel, Sweet Soy Rice, Sansho Pepper
                         </div>
                         <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade2}</span>
-                          <span>{data.price2}</span>
+                          <span></span>
+                          <span></span>
                         </div>
                         <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade3}</span>
-                          <span>{data.price3}</span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span></span>
+                          <span></span>
                         </div>
                       </div>
-                    )
-                  }
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Salmon and Ikura Donburi</span>
+                            <span className="allergies"></span>
+                          </span>
+                          <span className="price">65</span>
+                        </div>
+                        <div className="description1">
+                          Sushi Rice, Shiso
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div  className="dinner-menu-item">
+                        <div className="name-price">
+                          <span>
+                            <span className="name">Chirashizushi</span>
+                            <span className="allergies"></span>
+                          </span>
+                          <span className="price">78</span>
+                        </div>
+                        <div className="description1">
+                          Chef's Selection of Variety Sashimi Over Sushi Rice
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>With Hokkaido Uni</span>
+                          <span>115</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span>With Caviar</span>
+                          <span>128</span>
+                        </div>
+                        <div style={{display:'flex',justifyContent:'space-between'}}>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </div>
 
 
 
@@ -484,17 +578,17 @@ export default function LunchClient(props) {
 
 
             </div>
-
 
 
             <div className="section">
-              <div className="left-column">Fried<br/>揚げ物</div>
+              <div className="left-column">Sashimi & Nigiri<br/>刺⾝ / にぎり</div>
 
               <div className="right-column">
 
                   {
-                    props.allItems.filter(item=>item.section == 'Fried').map(data=>
+                    props.allItems.filter(item=>item.section == 'Sashimi & Nigiri').map(data=>
                       <div  className="dinner-menu-item"
+                            style={{marginBottom:'2px'}}
                             key={data._id}
                             onClick={()=>openDinnerModal(                              
                               data.name1,
@@ -532,6 +626,8 @@ export default function LunchClient(props) {
                           <span>{data.upgrade3}</span>
                           <span>{data.price3}</span>
                         </div>
+                        <div className='typo'>{data.typos}</div>
+                        <br/>
                       </div>
                     )
                   }
@@ -539,63 +635,13 @@ export default function LunchClient(props) {
 
 
 
-              </div>
-            </div>
-
-            <div className="section">
-              <div className="left-column">Fish<br/>魚</div>
-              <div className="right-column">
-
-
-                  {
-                    props.allItems.filter(item=>item.section == 'Fish').map(data=>
-                      <div  className="dinner-menu-item"
-                            key={data._id}
-                            onClick={()=>openDinnerModal(                              
-                              data.name1,
-                              data.allergies,
-                              data.description1,
-                              data.price,
-                              data.upgrade1,
-                              data.upgrade2,
-                              data.upgrade3,
-                              data.price1,
-                              data.price2,
-                              data.price3,
-                              data.typos,
-                              data.staffInfo,
-                              data.cloudinary_secure_url
-                            )}
-                      >
-                        <div className="name-price">
-                          <span>
-                            <span className="name">{data.name1}</span>
-                            {data.allergies && <span className="allergies">({data.allergies})</span>}
-                          </span>
-                          <span className="price">{data.price}</span>
-                        </div>
-                        <div className="description1">{data.description1}</div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade1}</span>
-                          <span>{data.price1}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade2}</span>
-                          <span>{data.price2}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade3}</span>
-                          <span>{data.price3}</span>
-                        </div>
-                      </div>
-                    )
-                  }
 
 
 
 
               </div>
             </div>
+
 
 
 
@@ -632,138 +678,6 @@ export default function LunchClient(props) {
 
                                             
           <div className="menu-items">
-
-            <div className="section">
-              <div className="left-column">Meat<br/>肉</div>
-              <div className="right-column">
-
-                  {
-                    props.allItems.filter(item=>item.section == 'Meat').map(data=>
-                      <div  className="dinner-menu-item"
-                            key={data._id}
-                            onClick={()=>openDinnerModal(                              
-                              data.name1,
-                              data.allergies,
-                              data.description1,
-                              data.price,
-                              data.upgrade1,
-                              data.upgrade2,
-                              data.upgrade3,
-                              data.price1,
-                              data.price2,
-                              data.price3,
-                              data.typos,
-                              data.staffInfo,
-                              data.cloudinary_secure_url
-                            )}
-                      >
-                        <div className="name-price">
-                          <span>
-                            <span className="name">{data.name1}</span>
-                            {data.allergies && <span className="allergies">({data.allergies})</span>}
-                          </span>
-                          <span className="price">{data.price}</span>
-                        </div>
-                        <div className="description1">{data.description1}</div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade1}</span>
-                          <span>{data.price1}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade2}</span>
-                          <span>{data.price2}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade3}</span>
-                          <span>{data.price3}</span>
-                        </div>
-                      </div>
-                    )
-                  }
-
-
-
-
-
-
-
-              </div>
-
-
-            </div>
-
-            <div className="section">
-              <div className="left-column">Market<br/>野菜</div>
-              <div className="right-column">
-
-                  {
-                    props.allItems.filter(item=>item.section == 'Market').map(data=>
-                      <div  className="dinner-menu-item"
-                            key={data._id}
-                            onClick={()=>openDinnerModal(                              
-                              data.name1,
-                              data.allergies,
-                              data.description1,
-                              data.price,
-                              data.upgrade1,
-                              data.upgrade2,
-                              data.upgrade3,
-                              data.price1,
-                              data.price2,
-                              data.price3,
-                              data.typos,
-                              data.staffInfo,
-                              data.cloudinary_secure_url
-                            )}
-                      >
-                        <div className="name-price">
-                          <span>
-                            <span className="name">{data.name1}</span>
-                            {data.allergies && <span className="allergies">({data.allergies})</span>}
-                          </span>
-                          <span className="price">{data.price}</span>
-                        </div>
-                        <div className="description1">{data.description1}</div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade1}</span>
-                          <span>{data.price1}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade2}</span>
-                          <span>{data.price2}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade3}</span>
-                          <span>{data.price3}</span>
-                        </div>
-                      </div>
-                    )
-                  }
-
-              </div>
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -823,41 +737,6 @@ export default function LunchClient(props) {
             </div>
 
 
-
-           </div> {/* .menu-items */}
-          <div className="legal">
-            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
-            <br/><br/>
-            All prices are in USD and subject to 8.875% government tax. 
-            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
-            Please let us know if you have any 
-            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
-            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
-          </div>
-
-
-       </div> {/* .letter-paper */}
-    
-      <br className='no-print' />
-
-
-
-
-
-
-
-
-
-
-
-
-      <div className="letter-paper">
-
-
-                                            
-          <div className="menu-items">
-
-
             <div className="section">
               <div className="left-column">Sushi Roll<span className='typo'>s</span><br/>ロール</div>
 
@@ -912,72 +791,7 @@ export default function LunchClient(props) {
               </div>{/* .right-column */}
             </div>{/* .section */}
 
-            <div className="section">
-              <div className="left-column">Sashimi & Nigiri<br/>刺⾝ / にぎり</div>
-
-              <div className="right-column">
-
-                  {
-                    props.allItems.filter(item=>item.section == 'Sashimi & Nigiri').map(data=>
-                      <div  className="dinner-menu-item"
-                            style={{marginBottom:'2px'}}
-                            key={data._id}
-                            onClick={()=>openDinnerModal(                              
-                              data.name1,
-                              data.allergies,
-                              data.description1,
-                              data.price,
-                              data.upgrade1,
-                              data.upgrade2,
-                              data.upgrade3,
-                              data.price1,
-                              data.price2,
-                              data.price3,
-                              data.typos,
-                              data.staffInfo,
-                              data.cloudinary_secure_url
-                            )}
-                      >
-                        <div className="name-price">
-                          <span>
-                            <span className="name">{data.name1}</span>
-                            {data.allergies && <span className="allergies">({data.allergies})</span>}
-                          </span>
-                          <span className="price">{data.price}</span>
-                        </div>
-                        <div className="description1">{data.description1}</div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade1}</span>
-                          <span>{data.price1}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade2}</span>
-                          <span>{data.price2}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade3}</span>
-                          <span>{data.price3}</span>
-                        </div>
-                        <div className='typo'>{data.typos}</div>
-                      </div>
-                    )
-                  }
-
-
-
-
-
-
-
-
-              </div>
-            </div>
-
-
-
-            
            </div> {/* .menu-items */}
-
           <div className="legal">
             (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
             <br/><br/>
@@ -988,125 +802,11 @@ export default function LunchClient(props) {
             produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
           </div>
 
-       </div> {/* .letter-paper */}
 
+       </div> {/* .letter-paper */}
+    
       <br className='no-print' />
 
-      <div className="letter-paper">
-
-
-                                            
-          <div className="menu-items">
-
-
-
-
-            <div className="section">
-              <div className="left-column">Rice<br/>御飯</div>
-
-              <div className="right-column">
-
-                  {
-                    props.allItems.filter(item=>item.section == 'Rice').map(data=>
-                      <div  className="dinner-menu-item"
-                            key={data._id}
-                            onClick={()=>openDinnerModal(                              
-                              data.name1,
-                              data.allergies,
-                              data.description1,
-                              data.price,
-                              data.upgrade1,
-                              data.upgrade2,
-                              data.upgrade3,
-                              data.price1,
-                              data.price2,
-                              data.price3,
-                              data.typos,
-                              data.staffInfo,
-                              data.cloudinary_secure_url
-                            )}
-                      >
-                        <div className="name-price">
-                          <span>
-                            <span className="name">{data.name1}</span>
-                            {data.allergies && <span className="allergies">({data.allergies})</span>}
-                          </span>
-                          <span className="price">{data.price}</span>
-                        </div>
-                        <div className="description1">{data.description1}</div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade1}</span>
-                          <span>{data.price1}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade2}</span>
-                          <span>{data.price2}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade3}</span>
-                          <span>{data.price3}</span>
-                        </div>
-                        <div className='typo'>{data.typos}</div>
-                      </div>
-                    )
-                  }
-
-
-
-
-              </div>
-            </div>
-
-            
-            <div className="section">
-              <div className="left-column">Noodles<br/>麺類</div>
-
-              <div className="right-column">
-
-                  {
-                    props.allItems.filter(item=>item.section == 'Noodles').map(data=>
-                      <div  className="dinner-menu-item"
-                            key={data._id}
-                            onClick={()=>openDinnerModal(                              
-                              data.name1,
-                              data.allergies,
-                              data.description1,
-                              data.price,
-                              data.upgrade1,
-                              data.upgrade2,
-                              data.upgrade3,
-                              data.price1,
-                              data.price2,
-                              data.price3,
-                              data.typos,
-                              data.staffInfo,
-                              data.cloudinary_secure_url
-                            )}
-                      >
-                        <div className="name-price">
-                          <span>
-                            <span className="name">{data.name1}</span>
-                            {data.allergies && <span className="allergies">({data.allergies})</span>}
-                          </span>
-                          <span className="price">{data.price}</span>
-                        </div>
-                        <div className="description1">{data.description1}</div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade1}</span>
-                          <span>{data.price1}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade2}</span>
-                          <span>{data.price2}</span>
-                        </div>
-                        <div style={{display:'flex',justifyContent:'space-between'}}>
-                          <span>{data.upgrade3}</span>
-                          <span>{data.price3}</span>
-                        </div>
-                        <div className='typo'>{data.typos}</div>
-                      </div>
-                    )
-                  }
 
 
 
@@ -1115,23 +815,8 @@ export default function LunchClient(props) {
 
 
 
-              </div>
-            </div>
 
-            
-           </div> {/* .menu-items */}
 
-          <div className="legal">
-            (D)Dairy (GF)Gluten Free (N)Nuts (V)Vegan
-            <br/><br/>
-            All prices are in USD and subject to 8.875% government tax. 
-            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness. 
-            Please let us know if you have any 
-            allergies or special dietary requirements, or if you require any further information. Our choice of suppliers and local 
-            produce - including fish, meat, dairy, fruits and vegetables - is informed by our commitment to sustainability.
-          </div>
-
-       </div> {/* .letter-paper */}
 
       <br className='no-print' />
 

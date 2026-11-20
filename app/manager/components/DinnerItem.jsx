@@ -32,7 +32,7 @@ export default function DinnerItem(props){
         document.querySelector('#id').value = id  
         document.querySelector('#section').value = section  
         document.querySelector('#name1').value = name1
-        document.querySelector('#allergies').value = allergies
+        if (document.querySelector('#allergies')) document.querySelector('#allergies').value = allergies
         document.querySelector('#description1').value = description1
         document.querySelector('#upgrade1').value = upgrade1
         document.querySelector('#price1').value = price1

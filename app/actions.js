@@ -326,7 +326,7 @@ export async function editMenuItem(formData){
             price3: formData.get('price3') ? formData.get('price3').trim() : '',
             price2: formData.get('price2') ? formData.get('price2').trim() : '',
             price1: formData.get('price1') ? formData.get('price1').trim() : '',
-            price: formData.get('price').trim(),
+            price: formData.get('price') ? formData.get('price').trim() : '',
             typos: formData.get('typos') ? formData.get('typos').trim() : '',
             staffInfo: formData.get('staff-info') ? formData.get('staff-info') : '',
             cloudinary_public_id,

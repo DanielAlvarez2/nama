@@ -259,7 +259,7 @@ export async function addMenuItem(formData){
             description1: formData.get('description1') ? formData.get('description1').trim() : '',
             description2: formData.get('description2') ? formData.get('description2').trim() : '',
             typos: formData.get('typos') ? formData.get('typos').trim() : '',
-            price: formData.get('price').trim(),
+            price: formData.get('price') ? formData.get('price').trim() : '',
             staffInfo: formData.get('staff-info') ? formData.get('staff-info') : '',
             sequence: highestSequence + 1,
             cloudinary_public_id,

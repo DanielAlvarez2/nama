@@ -41,7 +41,7 @@ export default function DinnerItem(props){
         document.querySelector('#upgrade2').value = upgrade2
         document.querySelector('#upgrade3').value = upgrade3
         document.querySelector('#typos').value = typos
-        document.querySelector('#price').value = price
+        if (document.querySelector('#price')) document.querySelector('#price').value = price
         document.querySelector('#staff-info').value = staffInfo 
         // document.querySelector('#current-img').src = currentImageURL ? currentImageURL : '/no-image.jpg'
         document.querySelector('#current-image-url').value = currentImageURL

@@ -13,7 +13,7 @@ export default async function HomePage() {
   
   await connectMongoDB()
 
-  const allItems = JSON.parse(JSON.stringify(await MenuItem.find().sort({sequence:1})))
+  const allItems = JSON.parse(JSON.stringify(await MenuItem.find({menu:'dinner'}).sort({sequence:1})))
 
   return (
     <DinnerClient allItems={allItems} />

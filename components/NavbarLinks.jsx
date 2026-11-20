@@ -3,6 +3,7 @@ import Link from 'next/link'
 export default function NavbarLinks({page}){
     return(
             <nav>
+                <Link href='/lunch' className={page == 'lunch' ? 'current-page' : ''}>Lunch</Link> | 
                 <Link href='/' className={page == 'dinner' ? 'current-page' : ''}>Dinner</Link> | 
                 <Link href='/dessert' className={page == 'dessert' ? 'current-page' : ''} >Dessert</Link> | 
                 <Link href='/drinks' className={page == 'drinks' ? 'current-page' : ''}>Drinks</Link> | 

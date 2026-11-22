@@ -63,7 +63,7 @@ export default function LunchClient(props) {
               <div className="right-column">
 
 
-                      <div  className="dinner-menu-item" style={{cursor:'default !important'}}>
+                      <div  className="dinner-menu-item" style={{cursor:'text !important'}}>
                         <div className="name-price">
                           <span>
                             <span className="name">Two Courses</span>
@@ -73,7 +73,7 @@ export default function LunchClient(props) {
                         </div>
                       </div>
                     
-                      <div  className="dinner-menu-item" style={{cursor:'default !important'}}>
+                      <div  className="dinner-menu-item" style={{cursor:'text !important'}}>
                         <div className="name-price">
                           <span>
                             <span className="name">Three Courses</span>

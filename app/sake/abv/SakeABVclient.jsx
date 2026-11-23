@@ -86,7 +86,65 @@ export default function SakeABVclient(props){
                   minHeight:'2000px',
                   }}>
 
-      
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'10px',left:`calc(2 * 250px)`}}>$250</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'10px',left:`calc(2 * 500px)`}}>$500</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'10px',left:`calc(2 * 1000px)`}}>$1000</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'10px',left:`calc(2 * 1500px)`}}>$1500</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'10px',left:`calc(2 * 2000px)`}}>$2000</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'10px',left:`calc(2 * 2500px)`}}>$2500</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'10px',left:`calc(2 * 3000px)`}}>$3000</div>
+
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'95vh',left:`calc(2 * 250px)`}}>$250</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'95vh',left:`calc(2 * 500px)`}}>$500</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'95vh',left:`calc(2 * 1000px)`}}>$1000</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'95vh',left:`calc(2 * 1500px)`}}>$1500</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'95vh',left:`calc(2 * 2000px)`}}>$2000</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'95vh',left:`calc(2 * 2500px)`}}>$2500</div>
+      <div style={{background:'black',color:'white',padding:'5px',position:'absolute',top:'95vh',left:`calc(2 * 3000px)`}}>$3000</div>
+
+
+      <div style={{position:'absolute',left:'10px',bottom:`calc(7 * 100px)`}}>7%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(8 * 100px)`}}>8%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(9 * 100px)`}}>9%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(10 * 100px)`}}>10%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(11 * 100px)`}}>11%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(12 * 100px)`}}>12%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(13 * 100px)`}}>13%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(14 * 100px)`}}>14%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(15 * 100px)`}}>15%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(16 * 100px)`}}>16%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(17 * 100px)`}}>17%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(18 * 100px)`}}>18%abv</div>
+      <div style={{position:'absolute',left:'10px',bottom:`calc(19 * 100px)`}}>19%abv</div>
+
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(7 * 100px)`}}>7%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(8 * 100px)`}}>8%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(9 * 100px)`}}>9%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(10 * 100px)`}}>10%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(11 * 100px)`}}>11%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(12 * 100px)`}}>12%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(13 * 100px)`}}>13%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(14 * 100px)`}}>14%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(15 * 100px)`}}>15%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(16 * 100px)`}}>16%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(17 * 100px)`}}>17%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(18 * 100px)`}}>18%abv</div>
+      <div style={{position:'absolute',left:'95vw',bottom:`calc(19 * 100px)`}}>19%abv</div>
+
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(7 * 100px)`}}>7%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(8 * 100px)`}}>8%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(9 * 100px)`}}>9%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(10 * 100px)`}}>10%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(11 * 100px)`}}>11%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(12 * 100px)`}}>12%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(13 * 100px)`}}>13%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(14 * 100px)`}}>14%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(15 * 100px)`}}>15%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(16 * 100px)`}}>16%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(17 * 100px)`}}>17%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(18 * 100px)`}}>18%abv</div>
+      <div style={{position:'absolute',left:'200vw',bottom:`calc(19 * 100px)`}}>19%abv</div>
+
       <div style={{height:'1px',background:'red',position:'absolute',bottom:'1550px',width:'6250px'}}></div>
 
       {props.allSakes.filter(sake=>sake.sequence && !sake.eightySix).map(sake=>
@@ -103,12 +161,17 @@ export default function SakeABVclient(props){
                                                             sake.abv)}
                                     style={{
                                             cursor:'pointer',
+                                            background:'red',
                                             position:'absolute',
                                             bottom:`${sake.abv*100}px`,
                                             left:`${sake.price*2}px`,
-                                            border:'2px solid black'}}
+                                            borderRadius:'5px',
+                                            overflow:'hidden',
+                                            border:'1px solid black',
+                                            translate: '0 50%',
+                                        }}
                               >
-                                <img src={sake.cloudinary_secure_url} style={{width:'30px'}} />
+                                <img src={sake.cloudinary_secure_url} style={{width:'30px',display:'block',borderRadius:'0'}} />
                               </div>
                             )}
     </div>

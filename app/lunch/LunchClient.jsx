@@ -423,7 +423,7 @@ export default function LunchClient(props) {
             </div>
 
             <div className="section">
-              <div className="left-column">Mains<br/>椀物</div>
+              <div className="left-column">Mains<br/>主菜</div>
 
               <div className="right-column">
 
@@ -519,7 +519,7 @@ export default function LunchClient(props) {
           <div className="menu-items">
 
             <div className="section">
-              <div className="left-column">Donburi<br/>サラダ</div>
+              <div className="left-column">Donburi<br/>丼</div>
               <div className="right-column">
 
                   {
@@ -578,7 +578,7 @@ export default function LunchClient(props) {
 
 
             <div className="section">
-              <div className="left-column">Sashimi & Nigiri<br/>刺⾝ / にぎり</div>
+              <div className="left-column">Sashimi & Nigiri<br/>刺身/握り</div>
 
               <div className="right-column">
 

@@ -744,3 +744,6 @@ input[type='text']{
   z-index: 99;
   transform: translateY(50%) scale(2);
 }
+nav{
+  font-size: 14px;
+}
